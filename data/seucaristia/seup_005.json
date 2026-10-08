@@ -1,0 +1,79 @@
+{
+  "id": "seup_005",
+  "title": "Viernes de la 1ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 1ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 88, 16-17. 18-19 (R.: cf. 2a)",
+  "salmo": "Salmo responsorial: Salmo 88, 16-17. 18-19 (R.: cf. 2a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5015,
+  "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el pueblo que sabe aclamarte:",
+      "caminará, ¡oh Señor!, a la luz de tu rostro;",
+      "tu nombre es su gozo cada día,",
+      "tu justicia es su orgullo. R."
+    ],
+    [
+      "Porque tú eres su honor y su fuerza,",
+      "y con tu favor realzas nuestro poder.",
+      "Porque el Señor es nuestro escudo,",
+      "y el Santo de Israel, nuestro rey. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el pueblo que sabe aclamarte:\ncaminará, ¡oh Señor!, a la luz de tu rostro;\ntu nombre es su gozo cada día,\ntu justicia es su orgullo. R.\n\nPorque tú eres su honor y su fuerza,\ny con tu favor realzas nuestro poder.\nPorque el Señor es nuestro escudo,\ny el Santo de Israel, nuestro rey. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 1 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 88 16 17 18 19 r cf 2a semana 1 semana i viernes 1 i r cantare eternamente tus misericordias senor dichoso el pueblo que sabe aclamarte caminara oh senor a la luz de tu rostro tu nombre es su gozo cada dia tu justicia es su orgullo r porque tu eres su honor y su fuerza y con tu favor realzas nuestro poder porque el senor es nuestro escudo y el santo de israel nuestro rey r",
+  "lizq": [
+    {
+      "line": "R. Cantaré eternamente tus misericordias, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el pueblo que sabe aclamarte:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "caminará, ¡oh Señor!, a la luz de tu rostro;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu nombre es su gozo cada día,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu justicia es su orgullo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque tú eres su honor y su fuerza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y con tu favor realzas nuestro poder.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Porque el Señor es nuestro escudo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y el Santo de Israel, nuestro rey. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

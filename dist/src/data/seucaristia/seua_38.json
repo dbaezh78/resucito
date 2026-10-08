@@ -9,15 +9,35 @@
   "dia": "Domingo",
   "orden": 410,
   "respuesta": "R. Aclamad al Señor, tierra entera.",
-  "respuestaOpcional": "",
+  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
-    "R. Aleluya.",
-    "Aclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.",
-    "Que se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.",
-    "Transformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna eternamente. R.",
-    "Fieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo.\nBendito sea Dios, que no rechazó mi suplica\nni me retiró su favor. R."
+    [
+      "Aclamad al Señor, tierra entera;",
+      "tocad en honor de su nombre,",
+      "cantad himnos a su gloria.",
+      "Decid a Dios: «¡Qué temibles son tus obras!». R."
+    ],
+    [
+      "Que se postre ante ti la tierra entera,",
+      "que toquen en tu honor,",
+      "que toquen para tu nombre.",
+      "Venid a ver las obras de Dios,",
+      "sus temibles proezas en favor de los hombres. R."
+    ],
+    [
+      "Transformó el mar en tierra firme,",
+      "a pie atravesaron el río.",
+      "Alegrémonos con Dios,",
+      "que con su poder gobierna eternamente. R."
+    ],
+    [
+      "Fieles de Dios, venid a escuchar,",
+      "os contaré lo que ha hecho conmigo.",
+      "Bendito sea Dios, que no rechazó mi suplica",
+      "ni me retiró su favor. R."
+    ]
   ],
-  "textoCompleto": "R. Aleluya.\n\nAclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.\n\nQue se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.\n\nTransformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna eternamente. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo.\nBendito sea Dios, que no rechazó mi suplica\nni me retiró su favor. R.",
+  "textoCompleto": "Aclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.\n\nQue se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.\n\nTransformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna eternamente. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo.\nBendito sea Dios, que no rechazó mi suplica\nni me retiró su favor. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,100 +46,103 @@
   "lizq": [
     {
       "line": "R. Aclamad al Señor, tierra entera.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Aclamad al Señor, tierra entera;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tocad en honor de su nombre,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "cantad himnos a su gloria.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Decid a Dios: «¡Qué temibles son tus obras!». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que se postre ante ti la tierra entera,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "que toquen en tu honor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que toquen para tu nombre.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Venid a ver las obras de Dios,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "sus temibles proezas en favor de los hombres. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Transformó el mar en tierra firme,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "a pie atravesaron el río.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Alegrémonos con Dios,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que con su poder gobierna eternamente. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Fieles de Dios, venid a escuchar,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "os contaré lo que ha hecho conmigo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Bendito sea Dios, que no rechazó mi suplica",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ni me retiró su favor. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

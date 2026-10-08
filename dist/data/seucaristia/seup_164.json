@@ -1,0 +1,123 @@
+{
+  "id": "seup_164",
+  "title": "Martes de la 28ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 28ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 41. 43. 44. 45. 47. 48 (R.: 41a)",
+  "salmo": "Salmo responsorial: Salmo 118, 41. 43. 44. 45. 47. 48 (R.: 41a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5282,
+  "respuesta": "R. Señor, que me alcance tu favor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, que me alcance tu favor,",
+      "tu salvación según tu promesa. R."
+    ],
+    [
+      "No quites de mi boca las palabras sinceras,",
+      "porque yo espero en tus mandamientos. R."
+    ],
+    [
+      "Cumpliré sin cesar tu voluntad,",
+      "por siempre jamás. R."
+    ],
+    [
+      "Andaré por un camino ancho,",
+      "buscando tus decretos. R."
+    ],
+    [
+      "Serán mi delicia tus mandatos,",
+      "que tanto amo. R."
+    ],
+    [
+      "Levantaré mis manos hacia ti",
+      "recitando tus mandatos. R."
+    ]
+  ],
+  "textoCompleto": "Señor, que me alcance tu favor,\ntu salvación según tu promesa. R.\n\nNo quites de mi boca las palabras sinceras,\nporque yo espero en tus mandamientos. R.\n\nCumpliré sin cesar tu voluntad,\npor siempre jamás. R.\n\nAndaré por un camino ancho,\nbuscando tus decretos. R.\n\nSerán mi delicia tus mandatos,\nque tanto amo. R.\n\nLevantaré mis manos hacia ti\nrecitando tus mandatos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 28 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 118 41 43 44 45 47 48 r 41a semana 28 semana xxviii martes 28 xxviii r senor que me alcance tu favor senor que me alcance tu favor tu salvacion segun tu promesa r no quites de mi boca las palabras sinceras porque yo espero en tus mandamientos r cumplire sin cesar tu voluntad por siempre jamas r andare por un camino ancho buscando tus decretos r seran mi delicia tus mandatos que tanto amo r levantare mis manos hacia ti recitando tus mandatos r",
+  "lizq": [
+    {
+      "line": "R. Señor, que me alcance tu favor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, que me alcance tu favor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tu salvación según tu promesa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No quites de mi boca las palabras sinceras,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque yo espero en tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cumpliré sin cesar tu voluntad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por siempre jamás. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Andaré por un camino ancho,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "buscando tus decretos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Serán mi delicia tus mandatos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que tanto amo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Levantaré mis manos hacia ti",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "recitando tus mandatos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

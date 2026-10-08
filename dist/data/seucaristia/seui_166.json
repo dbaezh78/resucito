@@ -1,0 +1,104 @@
+{
+  "id": "seui_166",
+  "title": "Jueves de la 28ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 28ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 129, 1-2. 3-4. 5 (R.: 7)",
+  "salmo": "Salmo responsorial: Salmo 129, 1-2. 3-4. 5 (R.: 7)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5284,
+  "respuesta": "R. Del Señor viene la misericordia, la redención copiosa.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Desde lo hondo a ti grito, Señor;",
+      "Señor, escucha mi voz;",
+      "estén tus oídos atentos",
+      "a la voz de mi súplica. R."
+    ],
+    [
+      "Si llevas cuenta de los delitos, Señor,",
+      "¿quién podrá resistir?",
+      "Pero de ti procede el perdón,",
+      "y así infundes respeto. R."
+    ],
+    [
+      "Mi alma espera en el Señor,",
+      "espera en tu palabra;",
+      "mi alma aguarda al Señor. R."
+    ]
+  ],
+  "textoCompleto": "Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos, Señor,\n¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en tu palabra;\nmi alma aguarda al Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 28 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 129 1 2 3 4 5 r 7 semana 28 semana xxviii jueves 28 xxviii r del senor viene la misericordia la redencion copiosa desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuenta de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r mi alma espera en el senor espera en tu palabra mi alma aguarda al senor r",
+  "lizq": [
+    {
+      "line": "R. Del Señor viene la misericordia,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "la redención copiosa.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Desde lo hondo a ti grito, Señor;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor, escucha mi voz;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "estén tus oídos atentos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a la voz de mi súplica. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Si llevas cuenta de los delitos, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿quién podrá resistir?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Pero de ti procede el perdón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y así infundes respeto. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi alma espera en el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "espera en tu palabra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi alma aguarda al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

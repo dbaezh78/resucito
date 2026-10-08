@@ -1,0 +1,105 @@
+{
+  "id": "seui_179",
+  "title": "Viernes de la 30ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 30ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
+  "salmo": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5305,
+  "respuesta": "R. Glorifica al Señor, Jerusalén.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Glorifica al Señor, Jerusalén;",
+      "alaba a tu Dios, Sión:",
+      "que ha reforzado los cerrojos de tus puertas,",
+      "y ha bendecido a tus hijos dentro de ti. R."
+    ],
+    [
+      "Ha puesto paz en tus fronteras,",
+      "te sacia con flor de harina.",
+      "Él envía su mensaje a la tierra,",
+      "y su palabra corre veloz. R."
+    ],
+    [
+      "Anuncia su palabra a Jacob,",
+      "sus decretos y mandatos a Israel;",
+      "con ninguna nación obró así,",
+      "ni les dio a conocer sus mandatos. R."
+    ]
+  ],
+  "textoCompleto": "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 30 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 147 12 13 14 15 19 20 r 12a semana 30 semana xxx viernes 30 xxx r glorifica al senor jerusalen glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r ha puesto paz en tus fronteras te sacia con flor de harina el envia su mensaje a la tierra y su palabra corre veloz r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
+  "lizq": [
+    {
+      "line": "R. Glorifica al Señor, Jerusalén.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Glorifica al Señor, Jerusalén;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alaba a tu Dios, Sión:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que ha reforzado los cerrojos de tus puertas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y ha bendecido a tus hijos dentro de ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ha puesto paz en tus fronteras,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "te sacia con flor de harina.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él envía su mensaje a la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y su palabra corre veloz. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Anuncia su palabra a Jacob,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sus decretos y mandatos a Israel;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "con ninguna nación obró así,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni les dio a conocer sus mandatos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

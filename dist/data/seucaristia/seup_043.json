@@ -1,0 +1,112 @@
+{
+  "id": "seup_043",
+  "title": "Lunes de la 8ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 8ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 5-6. 9 y 10c (R.: 5b)",
+  "salmo": "Salmo responsorial: Salmo 110, 1-2. 5-6. 9 y 10c (R.: 5b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5081,
+  "respuesta": "R. El Señor recuerda siempre su alianza.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Doy gracias al Señor de todo corazón,",
+      "en compañía de los rectos, en la asamblea.",
+      "Grandes son las obras del Señor,",
+      "dignas de estudio para los que las aman. R."
+    ],
+    [
+      "Él da alimento a sus fieles,",
+      "recordando siempre su alianza;",
+      "mostró a su pueblo la fuerza de su obrar,",
+      "dándoles la heredad de los gentiles. R."
+    ],
+    [
+      "Envió la redención a su pueblo,",
+      "ratificó para siempre su alianza;",
+      "la alabanza del Señor dura por siempre. R."
+    ]
+  ],
+  "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en la asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nÉl da alimento a sus fieles,\nrecordando siempre su alianza;\nmostró a su pueblo la fuerza de su obrar,\ndándoles la heredad de los gentiles. R.\n\nEnvió la redención a su pueblo,\nratificó para siempre su alianza;\nla alabanza del Señor dura por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 8 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 110 1 2 5 6 9 y 10c r 5b semana 8 semana viii lunes 8 viii r el senor recuerda siempre su alianza r aleluya doy gracias al senor de todo corazon en compania de los rectos en la asamblea grandes son las obras del senor dignas de estudio para los que las aman r el da alimento a sus fieles recordando siempre su alianza mostro a su pueblo la fuerza de su obrar dandoles la heredad de los gentiles r envio la redencion a su pueblo ratifico para siempre su alianza la alabanza del senor dura por siempre r",
+  "lizq": [
+    {
+      "line": "R. El Señor recuerda siempre su alianza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Doy gracias al Señor de todo corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en compañía de los rectos, en la asamblea.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Grandes son las obras del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dignas de estudio para los que las aman. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él da alimento a sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "recordando siempre su alianza;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mostró a su pueblo la fuerza de su obrar,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dándoles la heredad de los gentiles. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Envió la redención a su pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ratificó para siempre su alianza;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la alabanza del Señor dura por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

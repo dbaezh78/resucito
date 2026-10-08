@@ -8,106 +8,114 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 534,
-  "respuesta": "",
+  "respuesta": "R. El Señor es mi pastor, nada me falta.",
   "respuestaOpcional": "",
   "estrofas": [
-    "S. El Señor es mi pastor, nada me falta.",
-    "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar. R.",
-    "Me conduce hacia fuentes tranquilas\ny repara mis fuerzas;\nme guía por el sendero justo,\npor el honor de su nombre. R.",
-    "Preparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.",
-    "Tu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R."
+    [
+      "El Señor es mi pastor, nada me falta:",
+      "en verdes praderas me hace recostar. R."
+    ],
+    [
+      "Me conduce hacia fuentes tranquilas",
+      "y repara mis fuerzas;",
+      "me guía por el sendero justo,",
+      "por el honor de su nombre. R."
+    ],
+    [
+      "Preparas una mesa ante mí,",
+      "enfrente de mis enemigos;",
+      "me unges la cabeza con perfume,",
+      "y mi copa rebosa. R."
+    ],
+    [
+      "Tu bondad y tu misericordia me acompañan",
+      "todos los días de mi vida,",
+      "y habitaré en la casa del Señor",
+      "por años sin término. R."
+    ]
   ],
-  "textoCompleto": "S. El Señor es mi pastor, nada me falta.\n\nEl Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar. R.\n\nMe conduce hacia fuentes tranquilas\ny repara mis fuerzas;\nme guía por el sendero justo,\npor el honor de su nombre. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
+  "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar. R.\n\nMe conduce hacia fuentes tranquilas\ny repara mis fuerzas;\nme guía por el sendero justo,\npor el honor de su nombre. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "domingo de la 34 semana de tiempo ordinario jesucristo rey del universo ciclo a tiempo ordinario domingo salmo responsorial 22 1 2a 2b 3 5 6 r 1 s el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar r me conduce hacia fuentes tranquilas y repara mis fuerzas me guia por el sendero justo por el honor de su nombre r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
+  "searchPool": "domingo de la 34 semana de tiempo ordinario jesucristo rey del universo ciclo a tiempo ordinario domingo salmo responsorial 22 1 2a 2b 3 5 6 r 1 r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar r me conduce hacia fuentes tranquilas y repara mis fuerzas me guia por el sendero justo por el honor de su nombre r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
   "lizq": [
     {
-      "line": "",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "line": "R. El Señor es mi pastor, nada me falta.",
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "S. El Señor es mi pastor, nada me falta.",
-      "sC": ""
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es mi pastor, nada me falta:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "en verdes praderas me hace recostar. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Me conduce hacia fuentes tranquilas",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y repara mis fuerzas;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "me guía por el sendero justo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "por el honor de su nombre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Preparas una mesa ante mí,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "enfrente de mis enemigos;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "me unges la cabeza con perfume,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y mi copa rebosa. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tu bondad y tu misericordia me acompañan",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "todos los días de mi vida,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y habitaré en la casa del Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "por años sin término. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

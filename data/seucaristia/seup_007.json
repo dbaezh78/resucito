@@ -1,0 +1,130 @@
+{
+  "id": "seup_007",
+  "title": "Lunes de la 2ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 49, 8-9. 16bc-17. 21 y 23 (R.: 23b)",
+  "salmo": "Salmo responsorial: Salmo 49, 8-9. 16bc-17. 21 y 23 (R.: 23b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5021,
+  "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "No te reprocho tus sacrificios,",
+      "pues siempre están tus holocaustos ante mí.",
+      "Pero no aceptaré un becerro de tu casa",
+      "ni un cabrito de tus rebaños. R."
+    ],
+    [
+      "¿Por qué recitas mis preceptos",
+      "y tienes siempre en la boca mi alianza,",
+      "tú que detestas mi enseñanza",
+      "y te echas a la espalda mis mandamientos? R."
+    ],
+    [
+      "Esto haces, ¿y me voy a callar?",
+      "¿Crees que soy como tú?",
+      "Te acusaré, te lo echaré en cara. R."
+    ],
+    [
+      "El que me ofrece acción de gracias,",
+      "ése me honra;",
+      "al que sigue buen camino le haré",
+      "ver la salvación de Dios. R."
+    ]
+  ],
+  "textoCompleto": "No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí.\nPero no aceptaré un becerro de tu casa\nni un cabrito de tus rebaños. R.\n\n¿Por qué recitas mis preceptos\ny tienes siempre en la boca mi alianza,\ntú que detestas mi enseñanza\ny te echas a la espalda mis mandamientos? R.\n\nEsto haces, ¿y me voy a callar?\n¿Crees que soy como tú?\nTe acusaré, te lo echaré en cara. R.\n\nEl que me ofrece acción de gracias,\nése me honra;\nal que sigue buen camino le haré\nver la salvación de Dios. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 2 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 49 8 9 16bc 17 21 y 23 r 23b semana 2 semana ii lunes 2 ii r al que sigue buen camino le hare ver la salvacion de dios no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi pero no aceptare un becerro de tu casa ni un cabrito de tus rebanos r por que recitas mis preceptos y tienes siempre en la boca mi alianza tu que detestas mi ensenanza y te echas a la espalda mis mandamientos r esto haces y me voy a callar crees que soy como tu te acusare te lo echare en cara r el que me ofrece accion de gracias ese me honra al que sigue buen camino le hare ver la salvacion de dios r",
+  "lizq": [
+    {
+      "line": "R. Al que sigue buen camino",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "le haré ver la salvación de Dios.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No te reprocho tus sacrificios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "pues siempre están tus holocaustos ante mí.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Pero no aceptaré un becerro de tu casa",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni un cabrito de tus rebaños. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Por qué recitas mis preceptos",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y tienes siempre en la boca mi alianza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú que detestas mi enseñanza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y te echas a la espalda mis mandamientos? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Esto haces, ¿y me voy a callar?",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿Crees que soy como tú?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te acusaré, te lo echaré en cara. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El que me ofrece acción de gracias,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ése me honra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "al que sigue buen camino le haré",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ver la salvación de Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

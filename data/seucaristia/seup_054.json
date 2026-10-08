@@ -1,0 +1,131 @@
+{
+  "id": "seup_054",
+  "title": "Sábado de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 9ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 70, 8-9. 14-15ab. 16-17. 22 (R.: cf. 15)",
+  "salmo": "Salmo responsorial: Salmo 70, 8-9. 14-15ab. 16-17. 22 (R.: cf. 15)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5096,
+  "respuesta": "R. Mi boca contará tu salvación, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Llena estaba mi boca de tu alabanza",
+      "y de tu gloria, todo el día.",
+      "No me rechaces ahora en la vejez,",
+      "me van faltando las fuerzas, no me abandones. R."
+    ],
+    [
+      "Yo, en cambio, seguiré esperando,",
+      "redoblaré tus alabanzas;",
+      "mi boca contará tu auxilio,",
+      "y todo el día tu salvación. R."
+    ],
+    [
+      "Contaré tus proezas, Señor mío,",
+      "narraré tu victoria, tuya entera.",
+      "Dios mío, me instruiste desde mi juventud,",
+      "y hasta hoy relato tus maravillas. R."
+    ],
+    [
+      "Y yo te daré gracias, Dios mío,",
+      "con el arpa, por tu lealtad;",
+      "tocaré para ti la cítara,",
+      "Santo de Israel. R."
+    ]
+  ],
+  "textoCompleto": "Llena estaba mi boca de tu alabanza\ny de tu gloria, todo el día.\nNo me rechaces ahora en la vejez,\nme van faltando las fuerzas, no me abandones. R.\n\nYo, en cambio, seguiré esperando,\nredoblaré tus alabanzas;\nmi boca contará tu auxilio,\ny todo el día tu salvación. R.\n\nContaré tus proezas, Señor mío,\nnarraré tu victoria, tuya entera.\nDios mío, me instruiste desde mi juventud,\ny hasta hoy relato tus maravillas. R.\n\nY yo te daré gracias, Dios mío,\ncon el arpa, por tu lealtad;\ntocaré para ti la cítara,\nSanto de Israel. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 9 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 70 8 9 14 15ab 16 17 22 r cf 15 semana 9 semana ix sabado 9 ix r mi boca contara tu salvacion senor llena estaba mi boca de tu alabanza y de tu gloria todo el dia no me rechaces ahora en la vejez me van faltando las fuerzas no me abandones r yo en cambio seguire esperando redoblare tus alabanzas mi boca contara tu auxilio y todo el dia tu salvacion r contare tus proezas senor mio narrare tu victoria tuya entera dios mio me instruiste desde mi juventud y hasta hoy relato tus maravillas r y yo te dare gracias dios mio con el arpa por tu lealtad tocare para ti la citara santo de israel r",
+  "lizq": [
+    {
+      "line": "R. Mi boca contará tu salvación, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Llena estaba mi boca de tu alabanza",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y de tu gloria, todo el día.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No me rechaces ahora en la vejez,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me van faltando las fuerzas, no me abandones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo, en cambio, seguiré esperando,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "redoblaré tus alabanzas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi boca contará tu auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y todo el día tu salvación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Contaré tus proezas, Señor mío,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "narraré tu victoria, tuya entera.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios mío, me instruiste desde mi juventud,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y hasta hoy relato tus maravillas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Y yo te daré gracias, Dios mío,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "con el arpa, por tu lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tocaré para ti la cítara,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Santo de Israel. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

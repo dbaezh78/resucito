@@ -1,0 +1,136 @@
+{
+  "id": "seup_131",
+  "title": "Viernes de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 36, 3-4. 5-6. 27-28. 39-40 (R.: 39a)",
+  "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 27-28. 39-40 (R.: 39a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5225,
+  "respuesta": "R. El Señor es quien salva a los justos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Confía en el Señor y haz el bien,",
+      "habita tu tierra y practica la lealtad;",
+      "sea el Señor tu delicia,",
+      "y él te dará lo que pide tu corazón. R."
+    ],
+    [
+      "Encomienda tu camino al Señor,",
+      "confía en él, y él actuará:",
+      "hará tu justicia como el amanecer,",
+      "tu derecho como el mediodía. R."
+    ],
+    [
+      "Apártate del mal y haz el bien,",
+      "y siempre tendrás una casa;",
+      "porque el Señor ama la justicia",
+      "y no abandona a sus fieles. R."
+    ],
+    [
+      "El Señor es quien salva a los justos,",
+      "él es su alcázar en el peligro;",
+      "el Señor los protege y los libra,",
+      "los libra de los malvados y los salva",
+      "porque se acogen a él. R."
+    ]
+  ],
+  "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nApártate del mal y haz el bien,\ny siempre tendrás una casa;\nporque el Señor ama la justicia\ny no abandona a sus fieles. R.\n\nEl Señor es quien salva a los justos,\nél es su alcázar en el peligro;\nel Señor los protege y los libra,\nlos libra de los malvados y los salva\nporque se acogen a él. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 22 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 36 3 4 5 6 27 28 39 40 r 39a semana 22 semana xxii viernes 22 xxii r el senor es quien salva a los justos confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r apartate del mal y haz el bien y siempre tendras una casa porque el senor ama la justicia y no abandona a sus fieles r el senor es quien salva a los justos el es su alcazar en el peligro el senor los protege y los libra los libra de los malvados y los salva porque se acogen a el r",
+  "lizq": [
+    {
+      "line": "R. El Señor es quien salva a los justos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Confía en el Señor y haz el bien,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "habita tu tierra y practica la lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sea el Señor tu delicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y él te dará lo que pide tu corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Encomienda tu camino al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "confía en él, y él actuará:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hará tu justicia como el amanecer,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu derecho como el mediodía. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Apártate del mal y haz el bien,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y siempre tendrás una casa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque el Señor ama la justicia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no abandona a sus fieles. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es quien salva a los justos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "él es su alcázar en el peligro;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor los protege y los libra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los libra de los malvados y los salva",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque se acogen a él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

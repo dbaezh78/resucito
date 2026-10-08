@@ -11,9 +11,23 @@
   "respuesta": "R. El Señor sostiene mi vida.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Oh Dios, sálvame por tu nombre,\nsal por mí con tu poder.\nOh Dios, escucha mi súplica,\natiende mis palabras. R.",
-    "Porque unos insolentes se alzan contra mí,\ny hombres violentos me persiguen a muerte,\nsin tener presente a Dios. R.",
-    "Pero Dios es mi auxilio,\nel Señor sostiene mi vida.\nTe ofreceré un sacrificio voluntario,\ndando gracias a tu nombre, que es bueno. R."
+    [
+      "Oh Dios, sálvame por tu nombre,",
+      "sal por mí con tu poder.",
+      "Oh Dios, escucha mi súplica,",
+      "atiende mis palabras. R."
+    ],
+    [
+      "Porque unos insolentes se alzan contra mí,",
+      "y hombres violentos me persiguen a muerte,",
+      "sin tener presente a Dios. R."
+    ],
+    [
+      "Pero Dios es mi auxilio,",
+      "el Señor sostiene mi vida.",
+      "Te ofreceré un sacrificio voluntario,",
+      "dando gracias a tu nombre, que es bueno. R."
+    ]
   ],
   "textoCompleto": "Oh Dios, sálvame por tu nombre,\nsal por mí con tu poder.\nOh Dios, escucha mi súplica,\natiende mis palabras. R.\n\nPorque unos insolentes se alzan contra mí,\ny hombres violentos me persiguen a muerte,\nsin tener presente a Dios. R.\n\nPero Dios es mi auxilio,\nel Señor sostiene mi vida.\nTe ofreceré un sacrificio voluntario,\ndando gracias a tu nombre, que es bueno. R.",
   "sourceBook": "eucaristia",
@@ -24,64 +38,63 @@
   "lizq": [
     {
       "line": "R. El Señor sostiene mi vida.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Oh Dios, sálvame por tu nombre,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "sal por mí con tu poder.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Oh Dios, escucha mi súplica,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "atiende mis palabras. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Porque unos insolentes se alzan contra mí,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y hombres violentos me persiguen a muerte,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "sin tener presente a Dios. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pero Dios es mi auxilio,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "el Señor sostiene mi vida.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Te ofreceré un sacrificio voluntario,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "dando gracias a tu nombre, que es bueno. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

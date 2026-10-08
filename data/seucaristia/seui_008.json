@@ -1,0 +1,117 @@
+{
+  "id": "seui_008",
+  "title": "Martes de la 2ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 4-5. 9 y 10c (R.: 5b)",
+  "salmo": "Salmo responsorial: Salmo 110, 1-2. 4-5. 9 y 10c (R.: 5b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5022,
+  "respuesta": "R. El Señor recuerda siempre su alianza.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Doy gracias al Señor de todo corazón,",
+      "en compañía de los rectos, en la asamblea.",
+      "Grandes son las obras del Señor,",
+      "dignas de estudio para los que las aman. R."
+    ],
+    [
+      "Ha hecho maravillas memorables,",
+      "el Señor es piadoso y clemente.",
+      "Él da alimento a sus fieles,",
+      "recordando siempre su alianza. R."
+    ],
+    [
+      "Envió la redención a su pueblo,",
+      "ratificó para siempre su alianza,",
+      "su nombre es sagrado y temible.",
+      "La alabanza del Señor dura por siempre. R."
+    ]
+  ],
+  "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en la asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nHa hecho maravillas memorables,\nel Señor es piadoso y clemente.\nÉl da alimento a sus fieles,\nrecordando siempre su alianza. R.\n\nEnvió la redención a su pueblo,\nratificó para siempre su alianza,\nsu nombre es sagrado y temible.\nLa alabanza del Señor dura por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 2 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 110 1 2 4 5 9 y 10c r 5b semana 2 semana ii martes 2 ii r el senor recuerda siempre su alianza r aleluya doy gracias al senor de todo corazon en compania de los rectos en la asamblea grandes son las obras del senor dignas de estudio para los que las aman r ha hecho maravillas memorables el senor es piadoso y clemente el da alimento a sus fieles recordando siempre su alianza r envio la redencion a su pueblo ratifico para siempre su alianza su nombre es sagrado y temible la alabanza del senor dura por siempre r",
+  "lizq": [
+    {
+      "line": "R. El Señor recuerda siempre su alianza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Doy gracias al Señor de todo corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en compañía de los rectos, en la asamblea.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Grandes son las obras del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dignas de estudio para los que las aman. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ha hecho maravillas memorables,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el Señor es piadoso y clemente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él da alimento a sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "recordando siempre su alianza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Envió la redención a su pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ratificó para siempre su alianza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su nombre es sagrado y temible.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "La alabanza del Señor dura por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

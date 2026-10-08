@@ -8,15 +8,30 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 515,
-  "respuesta": "R. Muéstranos, Señor, tu misericordia",
+  "respuesta": "R. Muéstranos, Señor, tu misericordia y danos tu salvación.",
   "respuestaOpcional": "",
   "estrofas": [
-    "y danos tu salvación.",
-    "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.",
-    "La misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.",
-    "El Señor nos dará lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R."
+    [
+      "Voy a escuchar lo que dice el Señor:",
+      "«Dios anuncia la paz",
+      "a su pueblo y a sus amigos».",
+      "La salvación está ya cerca de sus fieles,",
+      "y la gloria habitará en nuestra tierra. R."
+    ],
+    [
+      "La misericordia y la fidelidad se encuentran,",
+      "la justicia y la paz se besan;",
+      "la fidelidad brota de la tierra,",
+      "y la justicia mira desde el cielo. R."
+    ],
+    [
+      "El Señor nos dará lluvia,",
+      "y nuestra tierra dará su fruto.",
+      "La justicia marchará ante él,",
+      "la salvación seguirá sus pasos. R."
+    ]
   ],
-  "textoCompleto": "y danos tu salvación.\n\nVoy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
+  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,80 +40,75 @@
   "lizq": [
     {
       "line": "R. Muéstranos, Señor, tu misericordia",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "y danos tu salvación.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Voy a escuchar lo que dice el Señor:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "«Dios anuncia la paz",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "a su pueblo y a sus amigos».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "La salvación está ya cerca de sus fieles,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y la gloria habitará en nuestra tierra. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La misericordia y la fidelidad se encuentran,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "la justicia y la paz se besan;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la fidelidad brota de la tierra,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y la justicia mira desde el cielo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor nos dará lluvia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y nuestra tierra dará su fruto.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "La justicia marchará ante él,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la salvación seguirá sus pasos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

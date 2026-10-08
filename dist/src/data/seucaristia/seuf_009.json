@@ -1,0 +1,112 @@
+{
+  "id": "seuf_009",
+  "title": "Miércoles de la 2ª semana de Adviento",
+  "celebracion": "Miércoles de la 2ª semana de Adviento",
+  "subtitle": "Salmo 102, 1-2. 3-4. 8 y 10 (R.: 1a)",
+  "salmo": "Salmo 102, 1-2. 3-4. 8 y 10 (R.: 1a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Miércoles",
+  "orden": 123,
+  "respuesta": "R. Bendice, alma mía, al Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Bendice, alma mía, al Señor,",
+      "y todo mi ser a su santo nombre.",
+      "Bendice, alma mía, al Señor,",
+      "y no olvides sus beneficios. R."
+    ],
+    [
+      "Él perdona todas tus culpas",
+      "y cura todas tus enfermedades;",
+      "él rescata tu vida de la fosa",
+      "y te colma de gracia y de ternura. R."
+    ],
+    [
+      "El Señor es compasivo y misericordioso,",
+      "lento a la ira y rico en clemencia;",
+      "no nos trata como merecen nuestro pecados",
+      "ni nos paga según nuestras culpas. R."
+    ]
+  ],
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno nos trata como merecen nuestro pecados\nni nos paga según nuestras culpas. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento miercoles salmo 102 1 2 3 4 8 y 10 r 1a semana 2 semana ii miercoles feria r bendice alma mia al senor bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no nos trata como merecen nuestro pecados ni nos paga segun nuestras culpas r",
+  "lizq": [
+    {
+      "line": "R. Bendice, alma mía, al Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todo mi ser a su santo nombre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no olvides sus beneficios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él perdona todas tus culpas",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y cura todas tus enfermedades;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él rescata tu vida de la fosa",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y te colma de gracia y de ternura. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es compasivo y misericordioso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lento a la ira y rico en clemencia;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no nos trata como merecen nuestro pecados",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni nos paga según nuestras culpas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

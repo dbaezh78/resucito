@@ -1,0 +1,104 @@
+{
+  "id": "seui_203",
+  "title": "Viernes de la 34ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 34ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Daniel 3, 75. 76. 77. 78. 79. 80. 81",
+  "salmo": "Interleccional: Daniel 3, 75. 76. 77. 78. 79. 80. 81",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5345,
+  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Montes y cumbres, bendecid al Señor. R."
+    ],
+    [
+      "Cuanto germina en la tierra, bendiga al Señor. R."
+    ],
+    [
+      "Manantiales, bendecid al Señor. R."
+    ],
+    [
+      "Mares y ríos, bendecid al Señor. R."
+    ],
+    [
+      "Cetáceos y peces, bendecid al Señor. R."
+    ],
+    [
+      "Aves del cielo, bendecid al Señor. R."
+    ],
+    [
+      "Fieras y ganados, bendecid al Señor. R."
+    ]
+  ],
+  "textoCompleto": "Montes y cumbres, bendecid al Señor. R.\n\nCuanto germina en la tierra, bendiga al Señor. R.\n\nManantiales, bendecid al Señor. R.\n\nMares y ríos, bendecid al Señor. R.\n\nCetáceos y peces, bendecid al Señor. R.\n\nAves del cielo, bendecid al Señor. R.\n\nFieras y ganados, bendecid al Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 34 semana de tiempo ordinario ano impar tiempo ordinario viernes interleccional daniel 3 75 76 77 78 79 80 81 semana 34 semana xxxiv viernes 34 xxxiv r ensalzadlo con himnos por los siglos montes y cumbres bendecid al senor r cuanto germina en la tierra bendiga al senor r manantiales bendecid al senor r mares y rios bendecid al senor r cetaceos y peces bendecid al senor r aves del cielo bendecid al senor r fieras y ganados bendecid al senor r",
+  "lizq": [
+    {
+      "line": "R. Ensalzadlo con himnos por los siglos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Montes y cumbres, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuanto germina en la tierra, bendiga al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Manantiales, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mares y ríos, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cetáceos y peces, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aves del cielo, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Fieras y ganados, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    }
+  ]
+}

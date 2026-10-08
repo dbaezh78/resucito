@@ -1,0 +1,105 @@
+{
+  "id": "seui_031",
+  "title": "Lunes de la 6ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 6ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 49, 1 y 8. 16bc-17. 20-21 (R.: 14a)",
+  "salmo": "Salmo responsorial: Salmo 49, 1 y 8. 16bc-17. 20-21 (R.: 14a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5061,
+  "respuesta": "R. Ofrece al Señor un sacrificio de alabanza.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El Dios de los dioses, el Señor, habla:",
+      "convoca la tierra de Oriente a Occidente.",
+      "No te reprocho tus sacrificios,",
+      "pues siempre están tus holocaustos ante mí. R."
+    ],
+    [
+      "¿Por qué recitas mis preceptos,",
+      "tú que detestas mi enseñanza,",
+      "y te echas a la espalda mis mandatos? R."
+    ],
+    [
+      "Te sientas a hablar contra tu hermano,",
+      "deshonras al hijo de tu madre:",
+      "esto haces, ¿y me voy a callar?",
+      "¿crees que soy como tú?",
+      "Te acusare, te lo echaré en cara. R."
+    ]
+  ],
+  "textoCompleto": "El Dios de los dioses, el Señor, habla:\nconvoca la tierra de Oriente a Occidente.\nNo te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí. R.\n\n¿Por qué recitas mis preceptos,\ntú que detestas mi enseñanza,\ny te echas a la espalda mis mandatos? R.\n\nTe sientas a hablar contra tu hermano,\ndeshonras al hijo de tu madre:\nesto haces, ¿y me voy a callar?\n¿crees que soy como tú?\nTe acusare, te lo echaré en cara. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 6 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 49 1 y 8 16bc 17 20 21 r 14a semana 6 semana vi lunes 6 vi r ofrece al senor un sacrificio de alabanza el dios de los dioses el senor habla convoca la tierra de oriente a occidente no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi r por que recitas mis preceptos tu que detestas mi ensenanza y te echas a la espalda mis mandatos r te sientas a hablar contra tu hermano deshonras al hijo de tu madre esto haces y me voy a callar crees que soy como tu te acusare te lo echare en cara r",
+  "lizq": [
+    {
+      "line": "R. Ofrece al Señor un sacrificio de alabanza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Dios de los dioses, el Señor, habla:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "convoca la tierra de Oriente a Occidente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No te reprocho tus sacrificios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pues siempre están tus holocaustos ante mí. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Por qué recitas mis preceptos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tú que detestas mi enseñanza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y te echas a la espalda mis mandatos? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te sientas a hablar contra tu hermano,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "deshonras al hijo de tu madre:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "esto haces, ¿y me voy a callar?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿crees que soy como tú?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te acusare, te lo echaré en cara. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

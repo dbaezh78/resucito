@@ -1,0 +1,112 @@
+{
+  "id": "seuf_025",
+  "title": "Día 24 de diciembre.",
+  "celebracion": "Día 24 de diciembre.",
+  "subtitle": "Salmo 88, 2-3. 4-5. 27 y 29 (R.: cf. 2a)",
+  "salmo": "Salmo 88, 2-3. 4-5. 27 y 29 (R.: cf. 2a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Feria",
+  "orden": 178,
+  "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Cantaré eternamente las misericordias del Señor,",
+      "anunciaré tu fidelidad por todas las edades.",
+      "Porque dije: «Tu misericordia es un edificio eterno,",
+      "más que el cielo has afianzado tu fidelidad». R."
+    ],
+    [
+      "Sellé una alianza con mi elegido,",
+      "jurando a David, mi siervo:",
+      "«Te fundaré un linaje perpetuo,",
+      "edificaré tu trono para todas las edades». R."
+    ],
+    [
+      "Él me invocará: «Tú eres mi padre,",
+      "mi Dios, mi Roca salvadora».",
+      "Le mantendré eternamente mi favor,",
+      "y mi alianza con él será estable. R."
+    ]
+  ],
+  "textoCompleto": "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: «Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.\n\nSellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora».\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "dia 24 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 88 2 3 4 5 27 y 29 r cf 2a feria r cantare eternamente tus misericordias senor cantare eternamente las misericordias del senor anunciare tu fidelidad por todas las edades porque dije tu misericordia es un edificio eterno mas que el cielo has afianzado tu fidelidad r selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r el me invocara tu eres mi padre mi dios mi roca salvadora le mantendre eternamente mi favor y mi alianza con el sera estable r",
+  "lizq": [
+    {
+      "line": "R. Cantaré eternamente tus misericordias, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantaré eternamente las misericordias del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "anunciaré tu fidelidad por todas las edades.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Porque dije: «Tu misericordia es un edificio eterno,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "más que el cielo has afianzado tu fidelidad». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sellé una alianza con mi elegido,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "jurando a David, mi siervo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Te fundaré un linaje perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "edificaré tu trono para todas las edades». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él me invocará: «Tú eres mi padre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mi Dios, mi Roca salvadora».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Le mantendré eternamente mi favor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y mi alianza con él será estable. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

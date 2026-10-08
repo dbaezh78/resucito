@@ -1,0 +1,110 @@
+{
+  "id": "seui_117",
+  "title": "Miércoles de la 20ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 20ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 20, 2-3. 4-5. 6-7 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 20, 2-3. 4-5. 6-7 (R.: 2a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5203,
+  "respuesta": "R. Señor, el rey se alegra por tu fuerza.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, el rey se alegra por tu fuerza,",
+      "¡y cuánto goza con tu victoria!",
+      "Le has concedido el deseo de su corazón,",
+      "no le has negado lo que pedían sus labios. R."
+    ],
+    [
+      "Te adelantaste a bendecirlo con el éxito,",
+      "y has puesto en su cabeza",
+      "una corona de oro fino.",
+      "Te pidió vida, y se la has concedido,",
+      "años que se prolongan sin término. R."
+    ],
+    [
+      "Tu victoria ha engrandecido su fama,",
+      "lo has vestido de honor y de majestad.",
+      "Le concedes bendiciones incesantes,",
+      "lo colmas de gozo en tu presencia. R."
+    ]
+  ],
+  "textoCompleto": "Señor, el rey se alegra por tu fuerza,\n¡y cuánto goza con tu victoria!\nLe has concedido el deseo de su corazón,\nno le has negado lo que pedían sus labios. R.\n\nTe adelantaste a bendecirlo con el éxito,\ny has puesto en su cabeza\nuna corona de oro fino.\nTe pidió vida, y se la has concedido,\naños que se prolongan sin término. R.\n\nTu victoria ha engrandecido su fama,\nlo has vestido de honor y de majestad.\nLe concedes bendiciones incesantes,\nlo colmas de gozo en tu presencia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 20 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 20 2 3 4 5 6 7 r 2a semana 20 semana xx miercoles 20 xx r senor el rey se alegra por tu fuerza senor el rey se alegra por tu fuerza y cuanto goza con tu victoria le has concedido el deseo de su corazon no le has negado lo que pedian sus labios r te adelantaste a bendecirlo con el exito y has puesto en su cabeza una corona de oro fino te pidio vida y se la has concedido anos que se prolongan sin termino r tu victoria ha engrandecido su fama lo has vestido de honor y de majestad le concedes bendiciones incesantes lo colmas de gozo en tu presencia r",
+  "lizq": [
+    {
+      "line": "R. Señor, el rey se alegra por tu fuerza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, el rey se alegra por tu fuerza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¡y cuánto goza con tu victoria!",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Le has concedido el deseo de su corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no le has negado lo que pedían sus labios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te adelantaste a bendecirlo con el éxito,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y has puesto en su cabeza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "una corona de oro fino.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te pidió vida, y se la has concedido,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "años que se prolongan sin término. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tu victoria ha engrandecido su fama,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lo has vestido de honor y de majestad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Le concedes bendiciones incesantes,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lo colmas de gozo en tu presencia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "seuc_70",
+  "title": "Domingo de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 12-13. 17 y 19 (R.: Lc 15, 18)",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4. 12-13. 17 y 19 (R.: Lc 15, 18)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 524,
+  "respuesta": "R. Me pondré en camino a donde esta mi padre.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa;",
+      "lava del todo mi delito, limpia mi pecado. R."
+    ],
+    [
+      "Oh Dios, crea en mí un corazón puro,",
+      "renuévame por dentro con espíritu firme;",
+      "no me arrojes lejos de tu rostro,",
+      "no me quites tu santo espíritu. R."
+    ],
+    [
+      "Señor, me abrirás los labios,",
+      "y mi boca proclamará tu alabanza.",
+      "Mi sacrificio es un espíritu quebrantado;",
+      "un corazón quebrantado y humillado,",
+      "tú no lo desprecias. R."
+    ]
+  ],
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito, limpia mi pecado. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza.\nMi sacrificio es un espíritu quebrantado;\nun corazón quebrantado y humillado,\ntú no lo desprecias. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 24 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 50 3 4 12 13 17 y 19 r lc 15 18 r me pondre en camino a donde esta mi padre misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r senor me abriras los labios y mi boca proclamara tu alabanza mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r",
+  "lizq": [
+    {
+      "line": "R. Me pondré en camino a donde esta mi padre.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Misericordia, Dios mío, por tu bondad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por tu inmensa compasión borra mi culpa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lava del todo mi delito, limpia mi pecado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oh Dios, crea en mí un corazón puro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "renuévame por dentro con espíritu firme;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no me arrojes lejos de tu rostro,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no me quites tu santo espíritu. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, me abrirás los labios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y mi boca proclamará tu alabanza.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mi sacrificio es un espíritu quebrantado;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "un corazón quebrantado y humillado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú no lo desprecias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

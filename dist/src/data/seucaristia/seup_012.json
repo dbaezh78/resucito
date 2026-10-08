@@ -1,0 +1,110 @@
+{
+  "id": "seup_012",
+  "title": "Sábado de la 2ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 79, 2-3. 5-7 (R.: 4b)",
+  "salmo": "Salmo responsorial: Salmo 79, 2-3. 5-7 (R.: 4b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5026,
+  "respuesta": "R. Que brille tu rostro, Señor, y nos salve.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Pastor de Israel, escucha,",
+      "tú que guías a José como a un rebaño;",
+      "tú que te sientas sobre querubines,",
+      "resplandece ante",
+      "Efraín, Benjamín y Manasés. R."
+    ],
+    [
+      "Despierta tu poder y ven a salvarnos.",
+      "Señor Dios de los ejércitos,",
+      "¿hasta cuándo estarás airado",
+      "mientras tu pueblo te suplica? R."
+    ],
+    [
+      "Les diste a comer llanto,",
+      "a beber lágrimas a tragos;",
+      "nos entregaste a las contiendas de nuestros vecinos,",
+      "nuestros enemigos se burlan de nosotros. R."
+    ]
+  ],
+  "textoCompleto": "Pastor de Israel, escucha,\ntú que guías a José como a un rebaño;\ntú que te sientas sobre querubines,\nresplandece ante\nEfraín, Benjamín y Manasés. R.\n\nDespierta tu poder y ven a salvarnos.\nSeñor Dios de los ejércitos,\n¿hasta cuándo estarás airado\nmientras tu pueblo te suplica? R.\n\nLes diste a comer llanto,\na beber lágrimas a tragos;\nnos entregaste a las contiendas de nuestros vecinos,\nnuestros enemigos se burlan de nosotros. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 2 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 79 2 3 5 7 r 4b semana 2 semana ii sabado 2 ii r que brille tu rostro senor y nos salve pastor de israel escucha tu que guias a jose como a un rebano tu que te sientas sobre querubines resplandece ante efrain benjamin y manases r despierta tu poder y ven a salvarnos senor dios de los ejercitos hasta cuando estaras airado mientras tu pueblo te suplica r les diste a comer llanto a beber lagrimas a tragos nos entregaste a las contiendas de nuestros vecinos nuestros enemigos se burlan de nosotros r",
+  "lizq": [
+    {
+      "line": "R. Que brille tu rostro, Señor, y nos salve.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pastor de Israel, escucha,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tú que guías a José como a un rebaño;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú que te sientas sobre querubines,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "resplandece ante",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Efraín, Benjamín y Manasés. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Despierta tu poder y ven a salvarnos.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor Dios de los ejércitos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿hasta cuándo estarás airado",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mientras tu pueblo te suplica? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Les diste a comer llanto,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a beber lágrimas a tragos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "nos entregaste a las contiendas de nuestros vecinos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "nuestros enemigos se burlan de nosotros. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

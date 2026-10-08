@@ -9,14 +9,28 @@
   "dia": "Domingo",
   "orden": 505,
   "respuesta": "R. Alabad al Señor, que sana los corazones destrozados.",
-  "respuestaOpcional": "",
+  "respuestaOpcional": "R. Aleluya",
   "estrofas": [
-    "R. Aleluya",
-    "Alabad al Señor, que la música es buena;\nnuestro Dios merece una alabanza armoniosa.\nEl Señor reconstruye Jerusalén,\nreúne a los deportados de Israel. R.",
-    "Él sana los corazones destrozados,\nvenda sus heridas.\nCuenta el número de las estrellas,\na cada una la llama por su nombre. R.",
-    "Nuestro Señor es grande y poderoso,\nsu sabiduría no tiene medida.\nEl Señor sostiene a los humildes,\nhumilla hasta el polvo a los malvados. R."
+    [
+      "Alabad al Señor, que la música es buena;",
+      "nuestro Dios merece una alabanza armoniosa.",
+      "El Señor reconstruye Jerusalén,",
+      "reúne a los deportados de Israel. R."
+    ],
+    [
+      "Él sana los corazones destrozados,",
+      "venda sus heridas.",
+      "Cuenta el número de las estrellas,",
+      "a cada una la llama por su nombre. R."
+    ],
+    [
+      "Nuestro Señor es grande y poderoso,",
+      "su sabiduría no tiene medida.",
+      "El Señor sostiene a los humildes,",
+      "humilla hasta el polvo a los malvados. R."
+    ]
   ],
-  "textoCompleto": "R. Aleluya\n\nAlabad al Señor, que la música es buena;\nnuestro Dios merece una alabanza armoniosa.\nEl Señor reconstruye Jerusalén,\nreúne a los deportados de Israel. R.\n\nÉl sana los corazones destrozados,\nvenda sus heridas.\nCuenta el número de las estrellas,\na cada una la llama por su nombre. R.\n\nNuestro Señor es grande y poderoso,\nsu sabiduría no tiene medida.\nEl Señor sostiene a los humildes,\nhumilla hasta el polvo a los malvados. R.",
+  "textoCompleto": "Alabad al Señor, que la música es buena;\nnuestro Dios merece una alabanza armoniosa.\nEl Señor reconstruye Jerusalén,\nreúne a los deportados de Israel. R.\n\nÉl sana los corazones destrozados,\nvenda sus heridas.\nCuenta el número de las estrellas,\na cada una la llama por su nombre. R.\n\nNuestro Señor es grande y poderoso,\nsu sabiduría no tiene medida.\nEl Señor sostiene a los humildes,\nhumilla hasta el polvo a los malvados. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,76 +39,79 @@
   "lizq": [
     {
       "line": "R. Alabad al Señor, que sana los corazones destrozados.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Alabad al Señor, que la música es buena;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "nuestro Dios merece una alabanza armoniosa.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "El Señor reconstruye Jerusalén,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "reúne a los deportados de Israel. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Él sana los corazones destrozados,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "venda sus heridas.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Cuenta el número de las estrellas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "a cada una la llama por su nombre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Nuestro Señor es grande y poderoso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "su sabiduría no tiene medida.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "El Señor sostiene a los humildes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "humilla hasta el polvo a los malvados. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

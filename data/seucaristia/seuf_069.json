@@ -1,0 +1,122 @@
+{
+  "id": "seuf_069",
+  "title": "Sábado de la 4ª semana de Cuaresma",
+  "celebracion": "Sábado de la 4ª semana de Cuaresma",
+  "subtitle": "Salmo 7, 2-3. 9bc-10. 11-12 (R.: 2a)",
+  "salmo": "Salmo 7, 2-3. 9bc-10. 11-12 (R.: 2a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Sábado",
+  "orden": 346,
+  "respuesta": "R. Señor, Dios mío, a ti me acojo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, Dios mío, a ti me acojo,",
+      "líbrame de mis perseguidores y sálvame,",
+      "que no me atrapen como leones",
+      "y me desgarren sin remedio. R."
+    ],
+    [
+      "Júzgame, Señor, según mi justicia,",
+      "según la inocencia que hay en mí.",
+      "Cese la maldad de los culpables,",
+      "y apoya tú al inocente,",
+      "tú que sondeas el corazón y las entrañas,",
+      "tú, el Dios justo. R."
+    ],
+    [
+      "Mi escudo es Dios,",
+      "que salva a los rectos de corazón.",
+      "Dios es un juez justo,",
+      "Dios amenaza cada día. R."
+    ]
+  ],
+  "textoCompleto": "Señor, Dios mío, a ti me acojo,\nlíbrame de mis perseguidores y sálvame,\nque no me atrapen como leones\ny me desgarren sin remedio. R.\n\nJúzgame, Señor, según mi justicia,\nsegún la inocencia que hay en mí.\nCese la maldad de los culpables,\ny apoya tú al inocente,\ntú que sondeas el corazón y las entrañas,\ntú, el Dios justo. R.\n\nMi escudo es Dios,\nque salva a los rectos de corazón.\nDios es un juez justo,\nDios amenaza cada día. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 4 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma sabado salmo 7 2 3 9bc 10 11 12 r 2a semana 4 semana iv sabado feria r senor dios mio a ti me acojo senor dios mio a ti me acojo librame de mis perseguidores y salvame que no me atrapen como leones y me desgarren sin remedio r juzgame senor segun mi justicia segun la inocencia que hay en mi cese la maldad de los culpables y apoya tu al inocente tu que sondeas el corazon y las entranas tu el dios justo r mi escudo es dios que salva a los rectos de corazon dios es un juez justo dios amenaza cada dia r",
+  "lizq": [
+    {
+      "line": "R. Señor, Dios mío, a ti me acojo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, Dios mío, a ti me acojo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "líbrame de mis perseguidores y sálvame,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que no me atrapen como leones",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me desgarren sin remedio. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Júzgame, Señor, según mi justicia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "según la inocencia que hay en mí.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cese la maldad de los culpables,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y apoya tú al inocente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú que sondeas el corazón y las entrañas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú, el Dios justo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi escudo es Dios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que salva a los rectos de corazón.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios es un juez justo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios amenaza cada día. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

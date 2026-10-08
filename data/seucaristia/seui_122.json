@@ -1,0 +1,94 @@
+{
+  "id": "seui_122",
+  "title": "Martes de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 138, 1-3. 4-6 (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 138, 1-3. 4-6 (R.: 1a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5212,
+  "respuesta": "R. Señor, tú me sondeas y me conoces.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, tú me sondeas y me conoces;",
+      "me conoces cuando me siento o me levanto,",
+      "de lejos penetras mis pensamientos;",
+      "distingues mi camino y mi descanso,",
+      "todas mis sendas te son familiares. R."
+    ],
+    [
+      "No ha llegado la palabra a mi lengua,",
+      "y ya, Señor, te la sabes toda.",
+      "Me estrechas detrás y delante,",
+      "me cubres con tu palma.",
+      "Tanto saber me sobrepasa,",
+      "es sublime, y no lo abarco. R."
+    ]
+  ],
+  "textoCompleto": "Señor, tú me sondeas y me conoces;\nme conoces cuando me siento o me levanto,\nde lejos penetras mis pensamientos;\ndistingues mi camino y mi descanso,\ntodas mis sendas te son familiares. R.\n\nNo ha llegado la palabra a mi lengua,\ny ya, Señor, te la sabes toda.\nMe estrechas detrás y delante,\nme cubres con tu palma.\nTanto saber me sobrepasa,\nes sublime, y no lo abarco. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 21 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 138 1 3 4 6 r 1a semana 21 semana xxi martes 21 xxi r senor tu me sondeas y me conoces senor tu me sondeas y me conoces me conoces cuando me siento o me levanto de lejos penetras mis pensamientos distingues mi camino y mi descanso todas mis sendas te son familiares r no ha llegado la palabra a mi lengua y ya senor te la sabes toda me estrechas detras y delante me cubres con tu palma tanto saber me sobrepasa es sublime y no lo abarco r",
+  "lizq": [
+    {
+      "line": "R. Señor, tú me sondeas y me conoces.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, tú me sondeas y me conoces;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "me conoces cuando me siento o me levanto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de lejos penetras mis pensamientos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "distingues mi camino y mi descanso,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "todas mis sendas te son familiares. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No ha llegado la palabra a mi lengua,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y ya, Señor, te la sabes toda.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Me estrechas detrás y delante,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me cubres con tu palma.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tanto saber me sobrepasa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es sublime, y no lo abarco. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "seui_092",
+  "title": "Martes de la 16ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 16ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Éxodo 15, 8-9. 10 y 12. 17, 17 (R.: 1a)",
+  "salmo": "Salmo responsorial: Éxodo 15, 8-9. 10 y 12. 17, 17 (R.: 1a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5162,
+  "respuesta": "R. Cantaré al Señor, sublime es su victoria.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Al soplo de tu nariz,",
+      "se amontonaron las aguas,",
+      "las corrientes se alzaron como un dique,",
+      "las olas se cuajaron en el mar.",
+      "Decía el enemigo: «Los perseguiré y alcanzaré,",
+      "repartiré el botín, se saciará mi codicia,",
+      "empuñaré la espada, los agarrará mi mano». R."
+    ],
+    [
+      "Pero sopló tu aliento, y los cubrió el mar,",
+      "se hundieron como plomo en las aguas formidables",
+      "Extendiste tu diestra: se los tragó la tierra. R."
+    ],
+    [
+      "Introduces a tu pueblo y lo plantas en el monte de tu heredad,",
+      "lugar del que hiciste tu trono, Señor;",
+      "santuario, Señor, que fundaron tus manos. R."
+    ]
+  ],
+  "textoCompleto": "Al soplo de tu nariz,\nse amontonaron las aguas,\nlas corrientes se alzaron como un dique,\nlas olas se cuajaron en el mar.\nDecía el enemigo: «Los perseguiré y alcanzaré,\nrepartiré el botín, se saciará mi codicia,\nempuñaré la espada, los agarrará mi mano». R.\n\nPero sopló tu aliento, y los cubrió el mar,\nse hundieron como plomo en las aguas formidables\nExtendiste tu diestra: se los tragó la tierra. R.\n\nIntroduces a tu pueblo y lo plantas en el monte de tu heredad,\nlugar del que hiciste tu trono, Señor;\nsantuario, Señor, que fundaron tus manos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 16 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial exodo 15 8 9 10 y 12 17 17 r 1a semana 16 semana xvi martes 16 xvi r cantare al senor sublime es su victoria al soplo de tu nariz se amontonaron las aguas las corrientes se alzaron como un dique las olas se cuajaron en el mar decia el enemigo los perseguire y alcanzare repartire el botin se saciara mi codicia empunare la espada los agarrara mi mano r pero soplo tu aliento y los cubrio el mar se hundieron como plomo en las aguas formidables extendiste tu diestra se los trago la tierra r introduces a tu pueblo y lo plantas en el monte de tu heredad lugar del que hiciste tu trono senor santuario senor que fundaron tus manos r",
+  "lizq": [
+    {
+      "line": "R. Cantaré al Señor, sublime es su victoria.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Al soplo de tu nariz,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "se amontonaron las aguas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "las corrientes se alzaron como un dique,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "las olas se cuajaron en el mar.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Decía el enemigo: «Los perseguiré y alcanzaré,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "repartiré el botín, se saciará mi codicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "empuñaré la espada, los agarrará mi mano». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero sopló tu aliento, y los cubrió el mar,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "se hundieron como plomo en las aguas formidables",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Extendiste tu diestra: se los tragó la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Introduces a tu pueblo y lo plantas en el monte de tu heredad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lugar del que hiciste tu trono, Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "santuario, Señor, que fundaron tus manos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

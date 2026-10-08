@@ -11,9 +11,30 @@
   "respuesta": "R. Que me escuche tu gran bondad, Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Por ti he aguantado afrentas,\nla vergüenza cubrió mi rostro.\nSoy un extraño para mis hermanos,\nun extranjero para los hijos de mi madre;\nporque me devora el celo de tu templo,\ny las afrentas con que te afrentan caen sobre mí. R.",
-    "Pero mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude.\nRespóndeme, Señor, con la bondad de tu gracia;\npor tu gran compasión, vuélvete hacia mí. R.",
-    "Miradlo, los humildes, y alegraos,\nbuscad al Señor, y vivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos.\nAlábenlo el cielo y la tierra,\nlas aguas y cuanto bulle en ellas. R."
+    [
+      "Por ti he aguantado afrentas,",
+      "la vergüenza cubrió mi rostro.",
+      "Soy un extraño para mis hermanos,",
+      "un extranjero para los hijos de mi madre;",
+      "porque me devora el celo de tu templo,",
+      "y las afrentas con que te afrentan caen sobre mí. R."
+    ],
+    [
+      "Pero mi oración se dirige a ti,",
+      "Dios mío, el día de tu favor;",
+      "que me escuche tu gran bondad,",
+      "que tu fidelidad me ayude.",
+      "Respóndeme, Señor, con la bondad de tu gracia;",
+      "por tu gran compasión, vuélvete hacia mí. R."
+    ],
+    [
+      "Miradlo, los humildes, y alegraos,",
+      "buscad al Señor, y vivirá vuestro corazón.",
+      "Que el Señor escucha a sus pobres,",
+      "no desprecia a sus cautivos.",
+      "Alábenlo el cielo y la tierra,",
+      "las aguas y cuanto bulle en ellas. R."
+    ]
   ],
   "textoCompleto": "Por ti he aguantado afrentas,\nla vergüenza cubrió mi rostro.\nSoy un extraño para mis hermanos,\nun extranjero para los hijos de mi madre;\nporque me devora el celo de tu templo,\ny las afrentas con que te afrentan caen sobre mí. R.\n\nPero mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude.\nRespóndeme, Señor, con la bondad de tu gracia;\npor tu gran compasión, vuélvete hacia mí. R.\n\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y vivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos.\nAlábenlo el cielo y la tierra,\nlas aguas y cuanto bulle en ellas. R.",
   "sourceBook": "eucaristia",
@@ -24,92 +45,91 @@
   "lizq": [
     {
       "line": "R. Que me escuche tu gran bondad, Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Por ti he aguantado afrentas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "la vergüenza cubrió mi rostro.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Soy un extraño para mis hermanos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "un extranjero para los hijos de mi madre;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "porque me devora el celo de tu templo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y las afrentas con que te afrentan caen sobre mí. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pero mi oración se dirige a ti,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "Dios mío, el día de tu favor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que me escuche tu gran bondad,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que tu fidelidad me ayude.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Respóndeme, Señor, con la bondad de tu gracia;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "por tu gran compasión, vuélvete hacia mí. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Miradlo, los humildes, y alegraos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "buscad al Señor, y vivirá vuestro corazón.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Que el Señor escucha a sus pobres,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no desprecia a sus cautivos.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Alábenlo el cielo y la tierra,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "las aguas y cuanto bulle en ellas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

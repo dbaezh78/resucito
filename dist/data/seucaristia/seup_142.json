@@ -1,0 +1,107 @@
+{
+  "id": "seup_142",
+  "title": "Jueves de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 117, 1-2. 16ab-17, 28 (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 117, 1-2. 16ab-17, 28 (R.: 1a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5244,
+  "respuesta": "R. Dad gracias al Señor porque es bueno.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Dad gracias al Señor porque es bueno,",
+      "porque es eterna su misericordia.",
+      "Diga la casa de Israel:",
+      "eterna es su misericordia. R."
+    ],
+    [
+      "«La diestra del Señor es poderosa,",
+      "la diestra del Señor es excelsa».",
+      "No he de morir, viviré",
+      "para contar las hazañas del Señor. R."
+    ],
+    [
+      "Tú eres mi Dios, te doy gracias;",
+      "Dios mío, yo te ensalzo. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\neterna es su misericordia. R.\n\n«La diestra del Señor es poderosa,\nla diestra del Señor es excelsa».\nNo he de morir, viviré\npara contar las hazañas del Señor. R.\n\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 24 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 117 1 2 16ab 17 28 r 1a semana 24 semana xxiv jueves 24 xxiv r dad gracias al senor porque es bueno r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia r la diestra del senor es poderosa la diestra del senor es excelsa no he de morir vivire para contar las hazanas del senor r tu eres mi dios te doy gracias dios mio yo te ensalzo r",
+  "lizq": [
+    {
+      "line": "R. Dad gracias al Señor porque es bueno.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Diga la casa de Israel:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "eterna es su misericordia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«La diestra del Señor es poderosa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la diestra del Señor es excelsa».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No he de morir, viviré",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para contar las hazañas del Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú eres mi Dios, te doy gracias;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios mío, yo te ensalzo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

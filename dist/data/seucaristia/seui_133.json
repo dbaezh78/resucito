@@ -1,0 +1,74 @@
+{
+  "id": "seui_133",
+  "title": "Lunes de la 23ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 23ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 61, 6-7. 9 (R.: 8a)",
+  "salmo": "Salmo responsorial: Salmo 61, 6-7. 9 (R.: 8a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5231,
+  "respuesta": "R. De Dios viene mi salvación y mi gloria.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Descansa sólo en Dios, alma mía,",
+      "porque él es mi esperanza;",
+      "sólo él es mi roca y mi salvación,",
+      "mi alcázar: no vacilaré. R."
+    ],
+    [
+      "Pueblo suyo, confiad en él,",
+      "desahogad ante él vuestro corazón,",
+      "que Dios es nuestro refugio. R."
+    ]
+  ],
+  "textoCompleto": "Descansa sólo en Dios, alma mía,\nporque él es mi esperanza;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nPueblo suyo, confiad en él,\ndesahogad ante él vuestro corazón,\nque Dios es nuestro refugio. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 23 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 61 6 7 9 r 8a semana 23 semana xxiii lunes 23 xxiii r de dios viene mi salvacion y mi gloria descansa solo en dios alma mia porque el es mi esperanza solo el es mi roca y mi salvacion mi alcazar no vacilare r pueblo suyo confiad en el desahogad ante el vuestro corazon que dios es nuestro refugio r",
+  "lizq": [
+    {
+      "line": "R. De Dios viene mi salvación y mi gloria.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Descansa sólo en Dios, alma mía,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque él es mi esperanza;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sólo él es mi roca y mi salvación,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi alcázar: no vacilaré. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pueblo suyo, confiad en él,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "desahogad ante él vuestro corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que Dios es nuestro refugio. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

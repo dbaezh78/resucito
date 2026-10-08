@@ -1,0 +1,131 @@
+{
+  "id": "seui_014",
+  "title": "Martes de la 3ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 3ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 39, 2 y 4ab. 7-8a. 10. 11 (R.: cf. 8a y 9a)",
+  "salmo": "Salmo responsorial: Salmo 39, 2 y 4ab. 7-8a. 10. 11 (R.: cf. 8a y 9a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5032,
+  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Yo esperaba con ansia al Señor;",
+      "él se inclinó y escuchó mi grito;",
+      "me puso en la boca un cántico nuevo,",
+      "un himno a nuestro Dios. R."
+    ],
+    [
+      "Tú no quieres sacrificios ni ofrendas,",
+      "y, en cambio, me abriste el oído;",
+      "no pides sacrificio expiatorio,",
+      "entonces yo digo: «Aquí estoy». R."
+    ],
+    [
+      "He proclamado tu salvación",
+      "ante la gran asamblea;",
+      "no he cerrado los labios:",
+      "Señor, tú lo sabes. R."
+    ],
+    [
+      "No me he guardado en el pecho tu defensa,",
+      "he contado tu fidelidad y tu salvación,",
+      "no he negado tu misericordia y tu lealtad",
+      "ante la gran asamblea. R."
+    ]
+  ],
+  "textoCompleto": "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito;\nme puso en la boca un cántico nuevo,\nun himno a nuestro Dios. R.\n\nTú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.\n\nNo me he guardado en el pecho tu defensa,\nhe contado tu fidelidad y tu salvación,\nno he negado tu misericordia y tu lealtad\nante la gran asamblea. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 3 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 39 2 y 4ab 7 8a 10 11 r cf 8a y 9a semana 3 semana iii martes 3 iii r aqui estoy senor para hacer tu voluntad yo esperaba con ansia al senor el se inclino y escucho mi grito me puso en la boca un cantico nuevo un himno a nuestro dios r tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r no me he guardado en el pecho tu defensa he contado tu fidelidad y tu salvacion no he negado tu misericordia y tu lealtad ante la gran asamblea r",
+  "lizq": [
+    {
+      "line": "R. Aquí estoy, Señor, para hacer tu voluntad.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo esperaba con ansia al Señor;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "él se inclinó y escuchó mi grito;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me puso en la boca un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "un himno a nuestro Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú no quieres sacrificios ni ofrendas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y, en cambio, me abriste el oído;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no pides sacrificio expiatorio,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "entonces yo digo: «Aquí estoy». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "He proclamado tu salvación",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ante la gran asamblea;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no he cerrado los labios:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Señor, tú lo sabes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No me he guardado en el pecho tu defensa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "he contado tu fidelidad y tu salvación,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no he negado tu misericordia y tu lealtad",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ante la gran asamblea. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

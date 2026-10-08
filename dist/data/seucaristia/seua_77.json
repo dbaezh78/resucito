@@ -11,9 +11,25 @@
   "respuesta": "R. Dichoso el que teme al Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.",
-    "Tu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.",
-    "Ésta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R."
+    [
+      "Dichoso el que teme al Señor",
+      "y sigue sus caminos.",
+      "Comerás del fruto de tu trabajo,",
+      "serás dichoso, te irá bien. R."
+    ],
+    [
+      "Tu mujer, como parra fecunda,",
+      "en medio de tu casa;",
+      "tus hijos, como renuevos de olivo,",
+      "alrededor de tu mesa. R."
+    ],
+    [
+      "Ésta es la bendición del hombre",
+      "que teme al Señor.",
+      "Que el Señor te bendiga desde Sión,",
+      "que veas la prosperidad de Jerusalén",
+      "todos los días de tu vida. R."
+    ]
   ],
   "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
   "sourceBook": "eucaristia",
@@ -24,72 +40,71 @@
   "lizq": [
     {
       "line": "R. Dichoso el que teme al Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dichoso el que teme al Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y sigue sus caminos.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Comerás del fruto de tu trabajo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "serás dichoso, te irá bien. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tu mujer, como parra fecunda,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "en medio de tu casa;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tus hijos, como renuevos de olivo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "alrededor de tu mesa. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Ésta es la bendición del hombre",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "que teme al Señor.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Que el Señor te bendiga desde Sión,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que veas la prosperidad de Jerusalén",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "todos los días de tu vida. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

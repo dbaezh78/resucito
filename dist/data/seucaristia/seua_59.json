@@ -8,16 +8,33 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 515,
-  "respuesta": "R. La semilla cayó en tierra buena",
+  "respuesta": "R. La semilla cayó en tierra buena y dio fruto.",
   "respuestaOpcional": "",
   "estrofas": [
-    "y dio fruto.",
-    "Tú cuidas de la tierra, la riegas\ny la enriqueces sin medida;\nla acequia de Dios va llena de agua,\npreparas los trigales. R.",
-    "Riegas los surcos, igualas los terrones,\ntu llovizna los deja mullidos,\nbendices sus brotes. R.",
-    "Coronas el año con tus bienes,\ntus carriles rezuman abundancia;\nrezuman los pastos del páramo,\ny las colinas se orlan de alegría. R.",
-    "Las praderas se cubren de rebaños,\ny los valles se visten de mieses,\nque aclaman y cantan. R."
+    [
+      "Tú cuidas de la tierra, la riegas",
+      "y la enriqueces sin medida;",
+      "la acequia de Dios va llena de agua,",
+      "preparas los trigales. R."
+    ],
+    [
+      "Riegas los surcos, igualas los terrones,",
+      "tu llovizna los deja mullidos,",
+      "bendices sus brotes. R."
+    ],
+    [
+      "Coronas el año con tus bienes,",
+      "tus carriles rezuman abundancia;",
+      "rezuman los pastos del páramo,",
+      "y las colinas se orlan de alegría. R."
+    ],
+    [
+      "Las praderas se cubren de rebaños,",
+      "y los valles se visten de mieses,",
+      "que aclaman y cantan. R."
+    ]
   ],
-  "textoCompleto": "y dio fruto.\n\nTú cuidas de la tierra, la riegas\ny la enriqueces sin medida;\nla acequia de Dios va llena de agua,\npreparas los trigales. R.\n\nRiegas los surcos, igualas los terrones,\ntu llovizna los deja mullidos,\nbendices sus brotes. R.\n\nCoronas el año con tus bienes,\ntus carriles rezuman abundancia;\nrezuman los pastos del páramo,\ny las colinas se orlan de alegría. R.\n\nLas praderas se cubren de rebaños,\ny los valles se visten de mieses,\nque aclaman y cantan. R.",
+  "textoCompleto": "Tú cuidas de la tierra, la riegas\ny la enriqueces sin medida;\nla acequia de Dios va llena de agua,\npreparas los trigales. R.\n\nRiegas los surcos, igualas los terrones,\ntu llovizna los deja mullidos,\nbendices sus brotes. R.\n\nCoronas el año con tus bienes,\ntus carriles rezuman abundancia;\nrezuman los pastos del páramo,\ny las colinas se orlan de alegría. R.\n\nLas praderas se cubren de rebaños,\ny los valles se visten de mieses,\nque aclaman y cantan. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,88 +43,83 @@
   "lizq": [
     {
       "line": "R. La semilla cayó en tierra buena",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "y dio fruto.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tú cuidas de la tierra, la riegas",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y la enriqueces sin medida;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la acequia de Dios va llena de agua,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "preparas los trigales. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Riegas los surcos, igualas los terrones,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tu llovizna los deja mullidos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "bendices sus brotes. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Coronas el año con tus bienes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tus carriles rezuman abundancia;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "rezuman los pastos del páramo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y las colinas se orlan de alegría. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Las praderas se cubren de rebaños,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y los valles se visten de mieses,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que aclaman y cantan. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

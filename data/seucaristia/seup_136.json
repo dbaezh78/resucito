@@ -1,0 +1,115 @@
+{
+  "id": "seup_136",
+  "title": "Jueves de la 23ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 23ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 138, 1-3. 13-14ab. 23-24 (R.: 24b)",
+  "salmo": "Salmo responsorial: Salmo 138, 1-3. 13-14ab. 23-24 (R.: 24b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5234,
+  "respuesta": "R. Guíame, Señor, por el camino eterno.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, tú me sondeas y me conoces;",
+      "me conoces cuando me siento o me levanto,",
+      "de lejos penetras mis pensamientos;",
+      "distingues mi camino y mi descanso,",
+      "todas mis sendas te son familiares. R."
+    ],
+    [
+      "Tú has creado mis entrañas,",
+      "me has tejido en el seno materno.",
+      "Te doy gracias,",
+      "porque me has escogido portentosamente,",
+      "porque son admirables tus obras. R."
+    ],
+    [
+      "Señor, sondéame y conoce mi corazón,",
+      "ponme a prueba y conoce mis sentimientos,",
+      "mira si mi camino se desvía,",
+      "guíame por el camino eterno. R."
+    ]
+  ],
+  "textoCompleto": "Señor, tú me sondeas y me conoces;\nme conoces cuando me siento o me levanto,\nde lejos penetras mis pensamientos;\ndistingues mi camino y mi descanso,\ntodas mis sendas te son familiares. R.\n\nTú has creado mis entrañas,\nme has tejido en el seno materno.\nTe doy gracias,\nporque me has escogido portentosamente,\nporque son admirables tus obras. R.\n\nSeñor, sondéame y conoce mi corazón,\nponme a prueba y conoce mis sentimientos,\nmira si mi camino se desvía,\nguíame por el camino eterno. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 23 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 138 1 3 13 14ab 23 24 r 24b semana 23 semana xxiii jueves 23 xxiii r guiame senor por el camino eterno senor tu me sondeas y me conoces me conoces cuando me siento o me levanto de lejos penetras mis pensamientos distingues mi camino y mi descanso todas mis sendas te son familiares r tu has creado mis entranas me has tejido en el seno materno te doy gracias porque me has escogido portentosamente porque son admirables tus obras r senor sondeame y conoce mi corazon ponme a prueba y conoce mis sentimientos mira si mi camino se desvia guiame por el camino eterno r",
+  "lizq": [
+    {
+      "line": "R. Guíame, Señor, por el camino eterno.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, tú me sondeas y me conoces;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "me conoces cuando me siento o me levanto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de lejos penetras mis pensamientos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "distingues mi camino y mi descanso,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "todas mis sendas te son familiares. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú has creado mis entrañas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "me has tejido en el seno materno.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te doy gracias,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque me has escogido portentosamente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque son admirables tus obras. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, sondéame y conoce mi corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ponme a prueba y conoce mis sentimientos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mira si mi camino se desvía,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "guíame por el camino eterno. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

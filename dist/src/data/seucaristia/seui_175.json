@@ -1,0 +1,115 @@
+{
+  "id": "seui_175",
+  "title": "Lunes de la 30ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 30ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 67, 2 y 4. 6-7ab. 20-21 (R.: 21a)",
+  "salmo": "Salmo responsorial: Salmo 67, 2 y 4. 6-7ab. 20-21 (R.: 21a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5301,
+  "respuesta": "R. Nuestro Dios es un Dios que salva.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Se levanta Dios, y se dispersan sus enemigos,",
+      "huyen de su presencia los que lo odian.",
+      "En cambio, los justos se alegran,",
+      "gozan en la presencia de Dios,",
+      "rebosando de alegría. R."
+    ],
+    [
+      "Padre de huérfanos, protector de viudas,",
+      "Dios vive en su santa morada.",
+      "Dios prepara casa a los desvalidos,",
+      "libera a los cautivos y los enriquece. R."
+    ],
+    [
+      "Bendito el Señor cada día,",
+      "Dios lleva nuestras cargas,",
+      "es nuestra salvación.",
+      "Nuestro Dios es un Dios que salva,",
+      "el Señor Dios nos hace escapar de la muerte. R."
+    ]
+  ],
+  "textoCompleto": "Se levanta Dios, y se dispersan sus enemigos,\nhuyen de su presencia los que lo odian.\nEn cambio, los justos se alegran,\ngozan en la presencia de Dios,\nrebosando de alegría. R.\n\nPadre de huérfanos, protector de viudas,\nDios vive en su santa morada.\nDios prepara casa a los desvalidos,\nlibera a los cautivos y los enriquece. R.\n\nBendito el Señor cada día,\nDios lleva nuestras cargas,\nes nuestra salvación.\nNuestro Dios es un Dios que salva,\nel Señor Dios nos hace escapar de la muerte. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 30 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 67 2 y 4 6 7ab 20 21 r 21a semana 30 semana xxx lunes 30 xxx r nuestro dios es un dios que salva se levanta dios y se dispersan sus enemigos huyen de su presencia los que lo odian en cambio los justos se alegran gozan en la presencia de dios rebosando de alegria r padre de huerfanos protector de viudas dios vive en su santa morada dios prepara casa a los desvalidos libera a los cautivos y los enriquece r bendito el senor cada dia dios lleva nuestras cargas es nuestra salvacion nuestro dios es un dios que salva el senor dios nos hace escapar de la muerte r",
+  "lizq": [
+    {
+      "line": "R. Nuestro Dios es un Dios que salva.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Se levanta Dios, y se dispersan sus enemigos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "huyen de su presencia los que lo odian.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "En cambio, los justos se alegran,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "gozan en la presencia de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "rebosando de alegría. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Padre de huérfanos, protector de viudas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios vive en su santa morada.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios prepara casa a los desvalidos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "libera a los cautivos y los enriquece. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendito el Señor cada día,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios lleva nuestras cargas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es nuestra salvación.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Nuestro Dios es un Dios que salva,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor Dios nos hace escapar de la muerte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

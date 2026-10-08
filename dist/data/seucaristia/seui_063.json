@@ -1,0 +1,112 @@
+{
+  "id": "seui_063",
+  "title": "Miércoles de la 11ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 11ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 9 (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 9 (R.: 1a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5113,
+  "respuesta": "R. Dichoso quien teme al Señor.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Dichoso quien teme al Señor",
+      "y ama de corazón sus mandatos.",
+      "Su linaje será poderoso en la tierra,",
+      "la descendencia del justo será bendita. R."
+    ],
+    [
+      "En su casa habrá riquezas y abundancia,",
+      "su caridad es constante, sin falta.",
+      "En las tinieblas brilla como una luz",
+      "el que es justo, clemente y compasivo. R."
+    ],
+    [
+      "Reparte limosna a los pobres;",
+      "su caridad es constante, sin falta,",
+      "y alzará la frente con dignidad. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 11 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 111 1 2 3 4 9 r 1a semana 11 semana xi miercoles 11 xi r dichoso quien teme al senor r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
+  "lizq": [
+    {
+      "line": "R. Dichoso quien teme al Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso quien teme al Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y ama de corazón sus mandatos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Su linaje será poderoso en la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la descendencia del justo será bendita. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En su casa habrá riquezas y abundancia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su caridad es constante, sin falta.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "En las tinieblas brilla como una luz",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el que es justo, clemente y compasivo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Reparte limosna a los pobres;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su caridad es constante, sin falta,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y alzará la frente con dignidad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

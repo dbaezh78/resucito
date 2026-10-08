@@ -1,0 +1,112 @@
+{
+  "id": "seuf_052",
+  "title": "Miércoles de la 2ª semana de Cuaresma",
+  "celebracion": "Miércoles de la 2ª semana de Cuaresma",
+  "subtitle": "Salmo 30, 5-6. 14.15-16 (R.: 17b)",
+  "salmo": "Salmo 30, 5-6. 14.15-16 (R.: 17b)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Miércoles",
+  "orden": 323,
+  "respuesta": "R. Sálvame, Señor, por tu misericordia.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Sácame de la red que me han tendido,",
+      "porque tú eres mi amparo.",
+      "A tus manos encomiendo mi espíritu:",
+      "tú, el Dios leal, me librarás. R."
+    ],
+    [
+      "Oigo el cuchicheo de la gente,",
+      "y todo me da miedo;",
+      "se conjuran contra mí",
+      "y traman quitarme la vida. R."
+    ],
+    [
+      "Pero yo confío en ti, Señor,",
+      "te digo: «Tú eres mi Dios».",
+      "En tu mano están mis azares:",
+      "líbrame de los enemigos que me persiguen. R."
+    ]
+  ],
+  "textoCompleto": "Sácame de la red que me han tendido,\nporque tú eres mi amparo.\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás. R.\n\nOigo el cuchicheo de la gente,\ny todo me da miedo;\nse conjuran contra mí\ny traman quitarme la vida. R.\n\nPero yo confío en ti, Señor,\nte digo: «Tú eres mi Dios».\nEn tu mano están mis azares:\nlíbrame de los enemigos que me persiguen. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 2 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 30 5 6 14 15 16 r 17b semana 2 semana ii miercoles feria r salvame senor por tu misericordia sacame de la red que me han tendido porque tu eres mi amparo a tus manos encomiendo mi espiritu tu el dios leal me libraras r oigo el cuchicheo de la gente y todo me da miedo se conjuran contra mi y traman quitarme la vida r pero yo confio en ti senor te digo tu eres mi dios en tu mano estan mis azares librame de los enemigos que me persiguen r",
+  "lizq": [
+    {
+      "line": "R. Sálvame, Señor, por tu misericordia.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sácame de la red que me han tendido,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque tú eres mi amparo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "A tus manos encomiendo mi espíritu:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú, el Dios leal, me librarás. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oigo el cuchicheo de la gente,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todo me da miedo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se conjuran contra mí",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y traman quitarme la vida. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero yo confío en ti, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "te digo: «Tú eres mi Dios».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "En tu mano están mis azares:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "líbrame de los enemigos que me persiguen. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

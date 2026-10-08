@@ -1,0 +1,117 @@
+{
+  "id": "seui_139",
+  "title": "Lunes de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 27, 2. 7. 8-9 (R.: 6)",
+  "salmo": "Salmo responsorial: Salmo 27, 2. 7. 8-9 (R.: 6)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5241,
+  "respuesta": "R. Bendito el Señor, que escuchó mi voz suplicante.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Escucha mi voz suplicante",
+      "cuando te pido auxilio,",
+      "cuando alzo las manos",
+      "hacia tu santuario. R."
+    ],
+    [
+      "El Señor es mi fuerza y mi escudo:",
+      "en él confía mi corazón;",
+      "me socorrió, y mi corazón se alegra",
+      "y le canta agradecido. R."
+    ],
+    [
+      "El Señor es fuerza para su pueblo,",
+      "apoyo y salvación para su Ungido.",
+      "Salva a tu pueblo y bendice tu heredad,",
+      "sé su pastor y llévalos siempre. R."
+    ]
+  ],
+  "textoCompleto": "Escucha mi voz suplicante\ncuando te pido auxilio,\ncuando alzo las manos\nhacia tu santuario. R.\n\nEl Señor es mi fuerza y mi escudo:\nen él confía mi corazón;\nme socorrió, y mi corazón se alegra\ny le canta agradecido. R.\n\nEl Señor es fuerza para su pueblo,\napoyo y salvación para su Ungido.\nSalva a tu pueblo y bendice tu heredad,\nsé su pastor y llévalos siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 24 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 27 2 7 8 9 r 6 semana 24 semana xxiv lunes 24 xxiv r bendito el senor que escucho mi voz suplicante r aleluya escucha mi voz suplicante cuando te pido auxilio cuando alzo las manos hacia tu santuario r el senor es mi fuerza y mi escudo en el confia mi corazon me socorrio y mi corazon se alegra y le canta agradecido r el senor es fuerza para su pueblo apoyo y salvacion para su ungido salva a tu pueblo y bendice tu heredad se su pastor y llevalos siempre r",
+  "lizq": [
+    {
+      "line": "R. Bendito el Señor, que escuchó mi voz suplicante.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Escucha mi voz suplicante",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cuando te pido auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando alzo las manos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hacia tu santuario. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es mi fuerza y mi escudo:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en él confía mi corazón;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me socorrió, y mi corazón se alegra",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y le canta agradecido. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es fuerza para su pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "apoyo y salvación para su Ungido.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Salva a tu pueblo y bendice tu heredad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sé su pastor y llévalos siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

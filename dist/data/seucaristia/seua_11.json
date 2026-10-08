@@ -8,16 +8,29 @@
   "tiempo": "Navidad",
   "dia": "Domingo",
   "orden": 207,
-  "respuesta": "R. La Palabra se hizo carne",
-  "respuestaOpcional": "",
+  "respuesta": "R. La Palabra se hizo carne y acampó entre nosotros.",
+  "respuestaOpcional": "R. Aleluya",
   "estrofas": [
-    "y acampó entre nosotros.",
-    "R. Aleluya",
-    "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.",
-    "Ha puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.",
-    "Anuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R."
+    [
+      "Glorifica al Señor, Jerusalén;",
+      "alaba a tu Dios, Sión:",
+      "que ha reforzado los cerrojos de tus puertas,",
+      "y ha bendecido a tus hijos dentro de ti. R."
+    ],
+    [
+      "Ha puesto paz en tus fronteras,",
+      "te sacia con flor de harina.",
+      "Él envía su mensaje a la tierra,",
+      "y su palabra corre veloz. R."
+    ],
+    [
+      "Anuncia su palabra a Jacob,",
+      "sus decretos y mandatos a Israel;",
+      "con ninguna nación obró así,",
+      "ni les dio a conocer sus mandatos. R."
+    ]
   ],
-  "textoCompleto": "y acampó entre nosotros.\n\nR. Aleluya\n\nGlorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
+  "textoCompleto": "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,84 +39,83 @@
   "lizq": [
     {
       "line": "R. La Palabra se hizo carne",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "y acampó entre nosotros.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Glorifica al Señor, Jerusalén;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "alaba a tu Dios, Sión:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que ha reforzado los cerrojos de tus puertas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y ha bendecido a tus hijos dentro de ti. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Ha puesto paz en tus fronteras,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "te sacia con flor de harina.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Él envía su mensaje a la tierra,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y su palabra corre veloz. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Anuncia su palabra a Jacob,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "sus decretos y mandatos a Israel;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "con ninguna nación obró así,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ni les dio a conocer sus mandatos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

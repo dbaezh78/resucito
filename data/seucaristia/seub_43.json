@@ -8,15 +8,32 @@
   "tiempo": "Pascua",
   "dia": "Domingo",
   "orden": 430,
-  "respuesta": "R. Sacaréis aguas con gozo",
+  "respuesta": "R. Sacaréis aguas con gozo de las fuentes de la salvación.",
   "respuestaOpcional": "",
   "estrofas": [
-    "de las fuentes de la salvación.",
-    "El Señor es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.",
-    "Dad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.",
-    "Tañed para el Señor, que hizo proezas,\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n«Qué grande es en medio de ti\nel santo de Israel». R."
+    [
+      "El Señor es mi Dios y Salvador:",
+      "confiaré y no temeré,",
+      "porque mi fuerza y mi poder es el Señor,",
+      "él fue mi salvación.",
+      "Y sacaréis aguas con gozo",
+      "de las fuentes de la salvación. R."
+    ],
+    [
+      "Dad gracias al Señor,",
+      "invocad su nombre,",
+      "contad a los pueblos sus hazañas,",
+      "proclamad que su nombre es excelso. R."
+    ],
+    [
+      "Tañed para el Señor, que hizo proezas,",
+      "anunciadlas a toda la tierra;",
+      "gritad jubilosos, habitantes de Sión:",
+      "«Qué grande es en medio de ti",
+      "el santo de Israel». R."
+    ]
   ],
-  "textoCompleto": "de las fuentes de la salvación.\n\nEl Señor es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas,\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n«Qué grande es en medio de ti\nel santo de Israel». R.",
+  "textoCompleto": "El Señor es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas,\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n«Qué grande es en medio de ti\nel santo de Israel». R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,88 +42,83 @@
   "lizq": [
     {
       "line": "R. Sacaréis aguas con gozo",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "de las fuentes de la salvación.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es mi Dios y Salvador:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "confiaré y no temeré,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "porque mi fuerza y mi poder es el Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "él fue mi salvación.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Y sacaréis aguas con gozo",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "de las fuentes de la salvación. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dad gracias al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "invocad su nombre,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "contad a los pueblos sus hazañas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "proclamad que su nombre es excelso. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tañed para el Señor, que hizo proezas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "anunciadlas a toda la tierra;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "gritad jubilosos, habitantes de Sión:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "«Qué grande es en medio de ti",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el santo de Israel». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

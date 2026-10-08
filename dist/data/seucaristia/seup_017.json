@@ -1,0 +1,131 @@
+{
+  "id": "seup_017",
+  "title": "Viernes de la 3ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 3ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 6bc-7. 10-11 (R.: cf. 3a)",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 6bc-7. 10-11 (R.: cf. 3a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5035,
+  "respuesta": "R. Misericordia, Señor: hemos pecado.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa;",
+      "lava del todo mi delito,",
+      "limpia mi pecado. R."
+    ],
+    [
+      "Pues yo reconozco mi culpa,",
+      "tengo siempre presente mi pecado:",
+      "contra ti, contra ti solo pequé,",
+      "cometí la maldad que aborreces. R."
+    ],
+    [
+      "En la sentencia tendrás razón,",
+      "en el juicio resultarás inocente.",
+      "Mira, en la culpa nací,",
+      "pecador me concibió mi madre. R."
+    ],
+    [
+      "Hazme oír el gozo y la alegría,",
+      "que se alegren los huesos quebrantados.",
+      "Aparta de mi pecado tu vista,",
+      "borra en mí la culpa. R."
+    ]
+  ],
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nEn la sentencia tendrás razón,\nen el juicio resultarás inocente.\nMira, en la culpa nací,\npecador me concibió mi madre. R.\n\nHazme oír el gozo y la alegría,\nque se alegren los huesos quebrantados.\nAparta de mi pecado tu vista,\nborra en mí la culpa. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 3 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 50 3 4 5 6a 6bc 7 10 11 r cf 3a semana 3 semana iii viernes 3 iii r misericordia senor hemos pecado misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r en la sentencia tendras razon en el juicio resultaras inocente mira en la culpa naci pecador me concibio mi madre r hazme oir el gozo y la alegria que se alegren los huesos quebrantados aparta de mi pecado tu vista borra en mi la culpa r",
+  "lizq": [
+    {
+      "line": "R. Misericordia, Señor: hemos pecado.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Misericordia, Dios mío, por tu bondad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por tu inmensa compasión borra mi culpa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lava del todo mi delito,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "limpia mi pecado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pues yo reconozco mi culpa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tengo siempre presente mi pecado:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "contra ti, contra ti solo pequé,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cometí la maldad que aborreces. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En la sentencia tendrás razón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en el juicio resultarás inocente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mira, en la culpa nací,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pecador me concibió mi madre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Hazme oír el gozo y la alegría,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que se alegren los huesos quebrantados.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Aparta de mi pecado tu vista,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "borra en mí la culpa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

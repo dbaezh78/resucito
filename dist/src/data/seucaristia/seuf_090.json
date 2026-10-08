@@ -1,0 +1,128 @@
+{
+  "id": "seuf_090",
+  "title": "Jueves de la segunda semana de Pascua",
+  "celebracion": "Jueves de la segunda semana de Pascua",
+  "subtitle": "Salmo 33, 2 y 9. 17-18.19-20 (R.: 7a)",
+  "salmo": "Salmo 33, 2 y 9. 17-18.19-20 (R.: 7a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Jueves",
+  "orden": 424,
+  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Bendigo al Señor en todo momento,",
+      "su alabanza está siempre en mi boca.",
+      "Gustad y ved qué bueno es el Señor,",
+      "dichoso el que se acoge a él. R."
+    ],
+    [
+      "El Señor se enfrenta con los malhechores,",
+      "para borrar de la tierra su memoria.",
+      "Cuando uno grita, el Señor lo escucha",
+      "y lo libra de sus angustias. R."
+    ],
+    [
+      "El Señor está cerca de los atribulados,",
+      "salva a los abatidos.",
+      "Aunque el justo sufra muchos males,",
+      "de todos lo libra el Señor. R."
+    ]
+  ],
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.\n\nEl Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria.\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias. R.\n\nEl Señor está cerca de los atribulados,\nsalva a los abatidos.\nAunque el justo sufra muchos males,\nde todos lo libra el Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 33 2 y 9 17 18 19 20 r 7a semana 2 semana ii jueves feria r si el afligido invoca al senor el lo escucha r aleluya bendigo al senor en todo momento su alabanza esta siempre en mi boca gustad y ved que bueno es el senor dichoso el que se acoge a el r el senor se enfrenta con los malhechores para borrar de la tierra su memoria cuando uno grita el senor lo escucha y lo libra de sus angustias r el senor esta cerca de los atribulados salva a los abatidos aunque el justo sufra muchos males de todos lo libra el senor r",
+  "lizq": [
+    {
+      "line": "R. Si el afligido invoca al Señor,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "él lo escucha.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendigo al Señor en todo momento,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su alabanza está siempre en mi boca.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Gustad y ved qué bueno es el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dichoso el que se acoge a él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor se enfrenta con los malhechores,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para borrar de la tierra su memoria.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cuando uno grita, el Señor lo escucha",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y lo libra de sus angustias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor está cerca de los atribulados,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "salva a los abatidos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Aunque el justo sufra muchos males,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de todos lo libra el Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

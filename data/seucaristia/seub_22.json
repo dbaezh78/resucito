@@ -11,102 +11,147 @@
   "respuesta": "R. Envía tu espíritu, Señor, y repuebla la faz de la tierra.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Bendice, alma mía, al Señor;\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.",
-    "Asentaste la tierra sobre sus cimientos,\ny no vacilará jamás;\nla cubriste con el manto del océano,\ny las aguas se posaron sobre las montañas. R.",
-    "De los manantiales sacas los ríos\npara que fluyan entre los montes,\njunto a ellos habitan las aves del cielo,\ny entre las frondas se oye su canto. R.",
-    "Desde tu morada riegas los montes,\ny la tierra se sacia de tu acción fecunda;\nhaces brotar hierba para los ganados\ny forraje para los que sirven al hombre. R."
+    [
+      "Bendice, alma mía, al Señor;",
+      "¡Dios mío, qué grande eres!",
+      "Te vistes de belleza y majestad,",
+      "la luz te envuelve como un manto. R."
+    ],
+    [
+      "Asentaste la tierra sobre sus cimientos,",
+      "y no vacilará jamás;",
+      "la cubriste con el manto del océano,",
+      "y las aguas se posaron sobre las montañas. R."
+    ],
+    [
+      "De los manantiales sacas los ríos",
+      "para que fluyan entre los montes,",
+      "junto a ellos habitan las aves del cielo,",
+      "y entre las frondas se oye su canto. R."
+    ],
+    [
+      "Desde tu morada riegas los montes,",
+      "y la tierra se sacia de tu acción fecunda;",
+      "haces brotar hierba para los ganados",
+      "y forraje para los que sirven al hombre. R."
+    ],
+    [
+      "¡Cuántas son tus obras, Señor!,",
+      "y todas las hiciste con sabiduría;",
+      "la tierra está llena de tus criaturas.",
+      "¡Bendice, alma mía, al Señor! R."
+    ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor;\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nAsentaste la tierra sobre sus cimientos,\ny no vacilará jamás;\nla cubriste con el manto del océano,\ny las aguas se posaron sobre las montañas. R.\n\nDe los manantiales sacas los ríos\npara que fluyan entre los montes,\njunto a ellos habitan las aves del cielo,\ny entre las frondas se oye su canto. R.\n\nDesde tu morada riegas los montes,\ny la tierra se sacia de tu acción fecunda;\nhaces brotar hierba para los ganados\ny forraje para los que sirven al hombre. R.",
+  "textoCompleto": "Bendice, alma mía, al Señor;\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nAsentaste la tierra sobre sus cimientos,\ny no vacilará jamás;\nla cubriste con el manto del océano,\ny las aguas se posaron sobre las montañas. R.\n\nDe los manantiales sacas los ríos\npara que fluyan entre los montes,\njunto a ellos habitan las aves del cielo,\ny entre las frondas se oye su canto. R.\n\nDesde tu morada riegas los montes,\ny la tierra se sacia de tu acción fecunda;\nhaces brotar hierba para los ganados\ny forraje para los que sirven al hombre. R.\n\n¡Cuántas son tus obras, Señor!,\ny todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas.\n¡Bendice, alma mía, al Señor! R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "vigilia pascual primer salmo opcion 1 ciclo b pascua sabado salmo responsorial salmo 103 1 2a 5 6 10 y 12 13 14 24 y 35c r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r asentaste la tierra sobre sus cimientos y no vacilara jamas la cubriste con el manto del oceano y las aguas se posaron sobre las montanas r de los manantiales sacas los rios para que fluyan entre los montes junto a ellos habitan las aves del cielo y entre las frondas se oye su canto r desde tu morada riegas los montes y la tierra se sacia de tu accion fecunda haces brotar hierba para los ganados y forraje para los que sirven al hombre r",
+  "searchPool": "vigilia pascual primer salmo opcion 1 ciclo b pascua sabado salmo responsorial salmo 103 1 2a 5 6 10 y 12 13 14 24 y 35c r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r asentaste la tierra sobre sus cimientos y no vacilara jamas la cubriste con el manto del oceano y las aguas se posaron sobre las montanas r de los manantiales sacas los rios para que fluyan entre los montes junto a ellos habitan las aves del cielo y entre las frondas se oye su canto r desde tu morada riegas los montes y la tierra se sacia de tu accion fecunda haces brotar hierba para los ganados y forraje para los que sirven al hombre r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas bendice alma mia al senor r",
   "lizq": [
     {
       "line": "R. Envía tu espíritu, Señor, y repuebla la faz de la tierra.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendice, alma mía, al Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "¡Dios mío, qué grande eres!",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Te vistes de belleza y majestad,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la luz te envuelve como un manto. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Asentaste la tierra sobre sus cimientos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y no vacilará jamás;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la cubriste con el manto del océano,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y las aguas se posaron sobre las montañas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "De los manantiales sacas los ríos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "para que fluyan entre los montes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "junto a ellos habitan las aves del cielo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y entre las frondas se oye su canto. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Desde tu morada riegas los montes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y la tierra se sacia de tu acción fecunda;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "haces brotar hierba para los ganados",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y forraje para los que sirven al hombre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Cuántas son tus obras, Señor!,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todas las hiciste con sabiduría;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la tierra está llena de tus criaturas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¡Bendice, alma mía, al Señor! R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

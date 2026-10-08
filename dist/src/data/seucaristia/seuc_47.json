@@ -1,0 +1,116 @@
+{
+  "id": "seuc_47",
+  "title": "Domingo de la 2ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 95, 1-2a. 2b-3. 7-8a. 9-10a y c (R.: 3)",
+  "salmo": "Salmo responsorial: Salmo 95, 1-2a. 2b-3. 7-8a. 9-10a y c (R.: 3)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 502,
+  "respuesta": "R. Contad las maravillas del Señor a todas las naciones.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "cantad al Señor, toda la tierra;",
+      "cantad al Señor, bendecid su nombre. R."
+    ],
+    [
+      "Proclamad día tras día su victoria,",
+      "contad a los pueblos su gloria,",
+      "sus maravillas a todas las naciones. R."
+    ],
+    [
+      "Familias de los pueblos, aclamad al Señor,",
+      "aclamad la gloria y el poder del Señor,",
+      "aclamad la gloria del nombre del Señor. R."
+    ],
+    [
+      "Postraos ante el Señor en el atrio sagrado,",
+      "tiemble en su presencia la tierra toda.",
+      "Decid a los pueblos: «El Señor es rey,",
+      "él gobierna a los pueblos rectamente». R."
+    ]
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre. R.\n\nProclamad día tras día su victoria,\ncontad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nFamilias de los pueblos, aclamad al Señor,\naclamad la gloria y el poder del Señor,\naclamad la gloria del nombre del Señor. R.\n\nPostraos ante el Señor en el atrio sagrado,\ntiemble en su presencia la tierra toda.\nDecid a los pueblos: «El Señor es rey,\nél gobierna a los pueblos rectamente». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 2 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 95 1 2a 2b 3 7 8a 9 10a y c r 3 r contad las maravillas del senor a todas las naciones cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre r proclamad dia tras dia su victoria contad a los pueblos su gloria sus maravillas a todas las naciones r familias de los pueblos aclamad al senor aclamad la gloria y el poder del senor aclamad la gloria del nombre del senor r postraos ante el senor en el atrio sagrado tiemble en su presencia la tierra toda decid a los pueblos el senor es rey el gobierna a los pueblos rectamente r",
+  "lizq": [
+    {
+      "line": "R. Contad las maravillas del Señor a todas las naciones.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cantad al Señor, toda la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cantad al Señor, bendecid su nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Proclamad día tras día su victoria,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "contad a los pueblos su gloria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sus maravillas a todas las naciones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Familias de los pueblos, aclamad al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "aclamad la gloria y el poder del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aclamad la gloria del nombre del Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Postraos ante el Señor en el atrio sagrado,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tiemble en su presencia la tierra toda.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Decid a los pueblos: «El Señor es rey,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él gobierna a los pueblos rectamente». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

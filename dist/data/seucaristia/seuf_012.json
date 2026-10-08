@@ -1,0 +1,116 @@
+{
+  "id": "seuf_012",
+  "title": "Sábado de la 2ª semana de Adviento",
+  "celebracion": "Sábado de la 2ª semana de Adviento",
+  "subtitle": "Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
+  "salmo": "Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Sábado",
+  "orden": 126,
+  "respuesta": "R. Oh Dios, restáuranos, que brille tu rostro y nos salve.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Pastor de Israel, escucha,",
+      "tú que te sientas sobre querubines, resplandece;",
+      "despierta tu poder y ven a salvarnos. R."
+    ],
+    [
+      "Dios de los ejércitos, vuélvete:",
+      "mira desde el cielo, fíjate,",
+      "ven a visitar tu viña,",
+      "la cepa que tu diestra plantó,",
+      "y que tú hiciste vigorosa. R."
+    ],
+    [
+      "Que tu mano proteja a tu escogido,",
+      "al hombre que tú fortaleciste.",
+      "No nos alejaremos de ti:",
+      "danos vida, para que invoquemos tu nombre. R."
+    ]
+  ],
+  "textoCompleto": "Pastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece;\ndespierta tu poder y ven a salvarnos. R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nQue tu mano proteja a tu escogido,\nal hombre que tú fortaleciste.\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento sabado salmo 79 2ac y 3b 15 16 18 19 r 4 semana 2 semana ii sabado feria r oh dios restauranos que brille tu rostro y nos salve pastor de israel escucha tu que te sientas sobre querubines resplandece despierta tu poder y ven a salvarnos r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r que tu mano proteja a tu escogido al hombre que tu fortaleciste no nos alejaremos de ti danos vida para que invoquemos tu nombre r",
+  "lizq": [
+    {
+      "line": "R. Oh Dios, restáuranos,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "que brille tu rostro y nos salve.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pastor de Israel, escucha,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tú que te sientas sobre querubines, resplandece;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "despierta tu poder y ven a salvarnos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios de los ejércitos, vuélvete:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mira desde el cielo, fíjate,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ven a visitar tu viña,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la cepa que tu diestra plantó,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y que tú hiciste vigorosa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que tu mano proteja a tu escogido,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "al hombre que tú fortaleciste.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No nos alejaremos de ti:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "danos vida, para que invoquemos tu nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

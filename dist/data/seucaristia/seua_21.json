@@ -11,10 +11,33 @@
   "respuesta": "R. Padre, a tus manos encomiendo mi espíritu.",
   "respuestaOpcional": "",
   "estrofas": [
-    "A ti, Señor, me acojo:\nno quede yo nunca defraudado;\ntú, que eres justo, ponme a salvo.\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás. R.",
-    "Soy la burla de todos mis enemigos,\nla irrisión de mis vecinos,\nel espanto de mis conocidos;\nme ven por la calle, y escapan de mí.\nMe han olvidado como a un muerto,\nme han desechado como a un cachorro inútil. R.",
-    "Pero yo confío en ti, Señor,\nte digo: «Tú eres mi Dios».\nEn tu mano están mis azares;\nlíbrame de los enemigos que me persiguen. R.",
-    "Haz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nSed fuertes y valientes de corazón,\nlos que esperáis en el Señor. R."
+    [
+      "A ti, Señor, me acojo:",
+      "no quede yo nunca defraudado;",
+      "tú, que eres justo, ponme a salvo.",
+      "A tus manos encomiendo mi espíritu:",
+      "tú, el Dios leal, me librarás. R."
+    ],
+    [
+      "Soy la burla de todos mis enemigos,",
+      "la irrisión de mis vecinos,",
+      "el espanto de mis conocidos;",
+      "me ven por la calle, y escapan de mí.",
+      "Me han olvidado como a un muerto,",
+      "me han desechado como a un cachorro inútil. R."
+    ],
+    [
+      "Pero yo confío en ti, Señor,",
+      "te digo: «Tú eres mi Dios».",
+      "En tu mano están mis azares;",
+      "líbrame de los enemigos que me persiguen. R."
+    ],
+    [
+      "Haz brillar tu rostro sobre tu siervo,",
+      "sálvame por tu misericordia.",
+      "Sed fuertes y valientes de corazón,",
+      "los que esperáis en el Señor. R."
+    ]
   ],
   "textoCompleto": "A ti, Señor, me acojo:\nno quede yo nunca defraudado;\ntú, que eres justo, ponme a salvo.\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás. R.\n\nSoy la burla de todos mis enemigos,\nla irrisión de mis vecinos,\nel espanto de mis conocidos;\nme ven por la calle, y escapan de mí.\nMe han olvidado como a un muerto,\nme han desechado como a un cachorro inútil. R.\n\nPero yo confío en ti, Señor,\nte digo: «Tú eres mi Dios».\nEn tu mano están mis azares;\nlíbrame de los enemigos que me persiguen. R.\n\nHaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nSed fuertes y valientes de corazón,\nlos que esperáis en el Señor. R.",
   "sourceBook": "eucaristia",
@@ -25,100 +48,99 @@
   "lizq": [
     {
       "line": "R. Padre, a tus manos encomiendo mi espíritu.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "A ti, Señor, me acojo:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "no quede yo nunca defraudado;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tú, que eres justo, ponme a salvo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "A tus manos encomiendo mi espíritu:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tú, el Dios leal, me librarás. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Soy la burla de todos mis enemigos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "la irrisión de mis vecinos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el espanto de mis conocidos;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "me ven por la calle, y escapan de mí.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Me han olvidado como a un muerto,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "me han desechado como a un cachorro inútil. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pero yo confío en ti, Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "te digo: «Tú eres mi Dios».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "En tu mano están mis azares;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "líbrame de los enemigos que me persiguen. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Haz brillar tu rostro sobre tu siervo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "sálvame por tu misericordia.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Sed fuertes y valientes de corazón,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "los que esperáis en el Señor. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

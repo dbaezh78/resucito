@@ -1,0 +1,129 @@
+{
+  "id": "seuf_103",
+  "title": "Viernes de la cuarta semana de Pascua",
+  "celebracion": "Viernes de la cuarta semana de Pascua",
+  "subtitle": "Salmo 2, 6-7. 8-9. 10-11 (R.: 7)",
+  "salmo": "Salmo 2, 6-7. 8-9. 10-11 (R.: 7)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Viernes",
+  "orden": 445,
+  "respuesta": "R. Tú eres mi Hijo: yo te he engendrado hoy.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "«Yo mismo he establecido a mi rey",
+      "en Sión, mi monte santo».",
+      "Voy a proclamar el decreto del Señor;",
+      "él me ha dicho:",
+      "«Tú eres mi Hijo: yo te he engendrado hoy». R."
+    ],
+    [
+      "«Pídemelo: te daré en herencia las naciones,",
+      "en posesión, los confines de la tierra:",
+      "los gobernarás con cetro de hierro,",
+      "los quebrarás como jarro de loza». R."
+    ],
+    [
+      "Y ahora, reyes, sed sensatos;",
+      "escarmentad, los que regís la tierra:",
+      "servid al Señor con temor,",
+      "rendidle homenaje temblando. R."
+    ]
+  ],
+  "textoCompleto": "«Yo mismo he establecido a mi rey\nen Sión, mi monte santo».\nVoy a proclamar el decreto del Señor;\nél me ha dicho:\n«Tú eres mi Hijo: yo te he engendrado hoy». R.\n\n«Pídemelo: te daré en herencia las naciones,\nen posesión, los confines de la tierra:\nlos gobernarás con cetro de hierro,\nlos quebrarás como jarro de loza». R.\n\nY ahora, reyes, sed sensatos;\nescarmentad, los que regís la tierra:\nservid al Señor con temor,\nrendidle homenaje temblando. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la cuarta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 2 6 7 8 9 10 11 r 7 semana 4 semana iv viernes feria r tu eres mi hijo yo te he engendrado hoy r aleluya yo mismo he establecido a mi rey en sion mi monte santo voy a proclamar el decreto del senor el me ha dicho tu eres mi hijo yo te he engendrado hoy r pidemelo te dare en herencia las naciones en posesion los confines de la tierra los gobernaras con cetro de hierro los quebraras como jarro de loza r y ahora reyes sed sensatos escarmentad los que regis la tierra servid al senor con temor rendidle homenaje temblando r",
+  "lizq": [
+    {
+      "line": "R. Tú eres mi Hijo: yo te he engendrado hoy.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Yo mismo he establecido a mi rey",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en Sión, mi monte santo».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Voy a proclamar el decreto del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él me ha dicho:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Tú eres mi Hijo: yo te he engendrado hoy». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Pídemelo: te daré en herencia las naciones,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en posesión, los confines de la tierra:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los gobernarás con cetro de hierro,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los quebrarás como jarro de loza». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Y ahora, reyes, sed sensatos;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "escarmentad, los que regís la tierra:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "servid al Señor con temor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "rendidle homenaje temblando. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

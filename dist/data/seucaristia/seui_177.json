@@ -1,0 +1,79 @@
+{
+  "id": "seui_177",
+  "title": "Miércoles de la 30ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 30ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 12, 4-5. 6 (R.: 6a)",
+  "salmo": "Salmo responsorial: Salmo 12, 4-5. 6 (R.: 6a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5303,
+  "respuesta": "R. Yo confío, Señor, en tu misericordia.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Atiende y respóndeme, Señor, Dios mío;",
+      "da luz a mis ojos",
+      "para que no me duerma en la muerte,",
+      "para que no diga mi enemigo: «Le he podido»,",
+      "ni se alegre mi adversario de mi fracaso. R."
+    ],
+    [
+      "Porque yo confío en tu misericordia:",
+      "alegra mi corazón con tu auxilio,",
+      "y cantaré al Señor por el bien que me ha hecho. R."
+    ]
+  ],
+  "textoCompleto": "Atiende y respóndeme, Señor, Dios mío;\nda luz a mis ojos\npara que no me duerma en la muerte,\npara que no diga mi enemigo: «Le he podido»,\nni se alegre mi adversario de mi fracaso. R.\n\nPorque yo confío en tu misericordia:\nalegra mi corazón con tu auxilio,\ny cantaré al Señor por el bien que me ha hecho. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 30 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 12 4 5 6 r 6a semana 30 semana xxx miercoles 30 xxx r yo confio senor en tu misericordia atiende y respondeme senor dios mio da luz a mis ojos para que no me duerma en la muerte para que no diga mi enemigo le he podido ni se alegre mi adversario de mi fracaso r porque yo confio en tu misericordia alegra mi corazon con tu auxilio y cantare al senor por el bien que me ha hecho r",
+  "lizq": [
+    {
+      "line": "R. Yo confío, Señor, en tu misericordia.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Atiende y respóndeme, Señor, Dios mío;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "da luz a mis ojos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que no me duerma en la muerte,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que no diga mi enemigo: «Le he podido»,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni se alegre mi adversario de mi fracaso. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque yo confío en tu misericordia:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alegra mi corazón con tu auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y cantaré al Señor por el bien que me ha hecho. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

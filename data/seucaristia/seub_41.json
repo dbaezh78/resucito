@@ -8,16 +8,35 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 535,
-  "respuesta": "R. Dichoso el pueblo que el Señor se",
+  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
   "respuestaOpcional": "",
   "estrofas": [
-    "escogió como heredad.",
-    "La palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.",
-    "La palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos,\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.",
-    "Los ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.",
-    "Nosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\nque tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R."
+    [
+      "La palabra del Señor es sincera,",
+      "y todas sus acciones son leales;",
+      "él ama la justicia y el derecho,",
+      "y su misericordia llena la tierra. R."
+    ],
+    [
+      "La palabra del Señor hizo el cielo;",
+      "el aliento de su boca, sus ejércitos,",
+      "porque él lo dijo, y existió,",
+      "él lo mandó, y surgió. R."
+    ],
+    [
+      "Los ojos del Señor están puestos en sus fieles,",
+      "en los que esperan en su misericordia,",
+      "para librar sus vidas de la muerte",
+      "y reanimarlos en tiempo de hambre. R."
+    ],
+    [
+      "Nosotros aguardamos al Señor:",
+      "él es nuestro auxilio y escudo;",
+      "que tu misericordia, Señor, venga sobre nosotros,",
+      "como lo esperamos de ti. R."
+    ]
   ],
-  "textoCompleto": "escogió como heredad.\n\nLa palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLa palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos,\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\nque tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
+  "textoCompleto": "La palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLa palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos,\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\nque tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,96 +45,91 @@
   "lizq": [
     {
       "line": "R. Dichoso el pueblo que el Señor se",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "escogió como heredad.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La palabra del Señor es sincera,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y todas sus acciones son leales;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "él ama la justicia y el derecho,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y su misericordia llena la tierra. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La palabra del Señor hizo el cielo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "el aliento de su boca, sus ejércitos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "porque él lo dijo, y existió,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "él lo mandó, y surgió. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Los ojos del Señor están puestos en sus fieles,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "en los que esperan en su misericordia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para librar sus vidas de la muerte",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y reanimarlos en tiempo de hambre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Nosotros aguardamos al Señor:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "él es nuestro auxilio y escudo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que tu misericordia, Señor, venga sobre nosotros,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "como lo esperamos de ti. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -1,0 +1,115 @@
+{
+  "id": "seup_014",
+  "title": "Martes de la 3ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 3ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 23, 7. 8. 9. 10 (R.: cf. 8a)",
+  "salmo": "Salmo responsorial: Salmo 23, 7. 8. 9. 10 (R.: cf. 8a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5032,
+  "respuesta": "R. ¿Quién es ese Rey de la gloria? Es el Señor en persona.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "¡Portones!, alzad los dinteles,",
+      "que se alcen las antiguas compuertas:",
+      "va a entrar el Rey de la gloria. R."
+    ],
+    [
+      "¿Quién es ese Rey de la gloria?",
+      "El Señor, héroe valeroso;",
+      "el Señor, héroe de la guerra. R."
+    ],
+    [
+      "¡Portones!, alzad los dinteles,",
+      "que se alcen las antiguas compuertas:",
+      "va a entrar el Rey de la gloria. R."
+    ],
+    [
+      "¿Quién es ese Rey de la gloria?",
+      "El Señor, Dios de los ejércitos.",
+      "Él es el Rey de la gloria. R."
+    ]
+  ],
+  "textoCompleto": "¡Portones!, alzad los dinteles,\nque se alcen las antiguas compuertas:\nva a entrar el Rey de la gloria. R.\n\n¿Quién es ese Rey de la gloria?\nEl Señor, héroe valeroso;\nel Señor, héroe de la guerra. R.\n\n¡Portones!, alzad los dinteles,\nque se alcen las antiguas compuertas:\nva a entrar el Rey de la gloria. R.\n\n¿Quién es ese Rey de la gloria?\nEl Señor, Dios de los ejércitos.\nÉl es el Rey de la gloria. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 3 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 23 7 8 9 10 r cf 8a semana 3 semana iii martes 3 iii r quien es ese rey de la gloria es el senor en persona portones alzad los dinteles que se alcen las antiguas compuertas va a entrar el rey de la gloria r quien es ese rey de la gloria el senor heroe valeroso el senor heroe de la guerra r portones alzad los dinteles que se alcen las antiguas compuertas va a entrar el rey de la gloria r quien es ese rey de la gloria el senor dios de los ejercitos el es el rey de la gloria r",
+  "lizq": [
+    {
+      "line": "R. ¿Quién es ese Rey de la gloria?",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "Es el Señor en persona.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Portones!, alzad los dinteles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que se alcen las antiguas compuertas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "va a entrar el Rey de la gloria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Quién es ese Rey de la gloria?",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "El Señor, héroe valeroso;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor, héroe de la guerra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Portones!, alzad los dinteles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que se alcen las antiguas compuertas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "va a entrar el Rey de la gloria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Quién es ese Rey de la gloria?",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "El Señor, Dios de los ejércitos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él es el Rey de la gloria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

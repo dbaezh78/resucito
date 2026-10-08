@@ -1,0 +1,105 @@
+{
+  "id": "seui_111",
+  "title": "Miércoles de la 19ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 19ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 65, 1-3a. 5 y 8. 16-17 (R.: cf. 20a y 9a)",
+  "salmo": "Salmo responsorial: Salmo 65, 1-3a. 5 y 8. 16-17 (R.: cf. 20a y 9a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5193,
+  "respuesta": "R. Bendito sea Dios, que me ha devuelto la vida.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Aclama al Señor, tierra entera;",
+      "tocad en honor de su nombre,",
+      "cantad himnos a su gloria.",
+      "Decid a Dios: «¡Qué temibles son tus obras!». R."
+    ],
+    [
+      "Venid a ver las obras de Dios,",
+      "sus temibles proezas en favor de los hombres.",
+      "Bendecid, pueblos, a nuestro Dios,",
+      "haced resonar sus alabanzas. R."
+    ],
+    [
+      "Fieles de Dios, venid a escuchar,",
+      "os contaré lo que ha hecho conmigo:",
+      "a él gritó mi boca",
+      "y lo ensalzó mi lengua. R."
+    ]
+  ],
+  "textoCompleto": "Aclama al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.\n\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres.\nBendecid, pueblos, a nuestro Dios,\nhaced resonar sus alabanzas. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo:\na él gritó mi boca\ny lo ensalzó mi lengua. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 19 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 65 1 3a 5 y 8 16 17 r cf 20a y 9a semana 19 semana xix miercoles 19 xix r bendito sea dios que me ha devuelto la vida aclama al senor tierra entera tocad en honor de su nombre cantad himnos a su gloria decid a dios que temibles son tus obras r venid a ver las obras de dios sus temibles proezas en favor de los hombres bendecid pueblos a nuestro dios haced resonar sus alabanzas r fieles de dios venid a escuchar os contare lo que ha hecho conmigo a el grito mi boca y lo ensalzo mi lengua r",
+  "lizq": [
+    {
+      "line": "R. Bendito sea Dios, que me ha devuelto la vida.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aclama al Señor, tierra entera;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tocad en honor de su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cantad himnos a su gloria.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Decid a Dios: «¡Qué temibles son tus obras!». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Venid a ver las obras de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sus temibles proezas en favor de los hombres.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Bendecid, pueblos, a nuestro Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "haced resonar sus alabanzas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Fieles de Dios, venid a escuchar,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "os contaré lo que ha hecho conmigo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a él gritó mi boca",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y lo ensalzó mi lengua. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

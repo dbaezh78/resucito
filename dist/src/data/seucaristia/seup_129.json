@@ -1,0 +1,105 @@
+{
+  "id": "seup_129",
+  "title": "Miércoles de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 32, 12-13. 14-15. 20-21 (R.: 12b)",
+  "salmo": "Salmo responsorial: Salmo 32, 12-13. 14-15. 20-21 (R.: 12b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5223,
+  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichosa la nación cuyo Dios es el Señor,",
+      "el pueblo que él se escogió como heredad.",
+      "El Señor mira desde el cielo,",
+      "se fija en todos los hombres. R."
+    ],
+    [
+      "Desde su morada observa",
+      "a todos los habitantes de la tierra:",
+      "él modeló cada corazón,",
+      "y comprende todas sus acciones. R."
+    ],
+    [
+      "Nosotros aguardamos al Señor:",
+      "él es nuestro auxilio y escudo;",
+      "con él se alegra nuestro corazón,",
+      "en su santo nombre confiamos. R."
+    ]
+  ],
+  "textoCompleto": "Dichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.\n\nDesde su morada observa\na todos los habitantes de la tierra:\nél modeló cada corazón,\ny comprende todas sus acciones. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\ncon él se alegra nuestro corazón,\nen su santo nombre confiamos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 22 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 32 12 13 14 15 20 21 r 12b semana 22 semana xxii miercoles 22 xxii r dichoso el pueblo que el senor se escogio como heredad dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad el senor mira desde el cielo se fija en todos los hombres r desde su morada observa a todos los habitantes de la tierra el modelo cada corazon y comprende todas sus acciones r nosotros aguardamos al senor el es nuestro auxilio y escudo con el se alegra nuestro corazon en su santo nombre confiamos r",
+  "lizq": [
+    {
+      "line": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichosa la nación cuyo Dios es el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el pueblo que él se escogió como heredad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor mira desde el cielo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se fija en todos los hombres. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Desde su morada observa",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a todos los habitantes de la tierra:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él modeló cada corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y comprende todas sus acciones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Nosotros aguardamos al Señor:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "él es nuestro auxilio y escudo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "con él se alegra nuestro corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en su santo nombre confiamos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

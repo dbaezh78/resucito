@@ -1,0 +1,105 @@
+{
+  "id": "seup_153",
+  "title": "Miércoles de la 26ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 26ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 87, 10bc-11. 12-13. 14-15 (R.: 3a)",
+  "salmo": "Salmo responsorial: Salmo 87, 10bc-11. 12-13. 14-15 (R.: 3a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5263,
+  "respuesta": "R. Llegue hasta ti mi súplica, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Todo el día te estoy invocando,",
+      "tendiendo las manos hacia ti.",
+      "¿Harás tú maravillas por los muertos?",
+      "¿Se alzarán las sombras para darte gracias? R."
+    ],
+    [
+      "¿Se anuncia en el sepulcro tu misericordia,",
+      "o tu fidelidad en el reino de la muerte?",
+      "¿Se conocen tus maravillas en las tinieblas,",
+      "o tu justicia en el país del olvido? R."
+    ],
+    [
+      "Pero yo te pido auxilio,",
+      "por la mañana irá a tu encuentro mi súplica.",
+      "¿Por qué, Señor, me rechazas",
+      "y me escondes tu rostro? R."
+    ]
+  ],
+  "textoCompleto": "Todo el día te estoy invocando,\ntendiendo las manos hacia ti.\n¿Harás tú maravillas por los muertos?\n¿Se alzarán las sombras para darte gracias? R.\n\n¿Se anuncia en el sepulcro tu misericordia,\no tu fidelidad en el reino de la muerte?\n¿Se conocen tus maravillas en las tinieblas,\no tu justicia en el país del olvido? R.\n\nPero yo te pido auxilio,\npor la mañana irá a tu encuentro mi súplica.\n¿Por qué, Señor, me rechazas\ny me escondes tu rostro? R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 26 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 87 10bc 11 12 13 14 15 r 3a semana 26 semana xxvi miercoles 26 xxvi r llegue hasta ti mi suplica senor todo el dia te estoy invocando tendiendo las manos hacia ti haras tu maravillas por los muertos se alzaran las sombras para darte gracias r se anuncia en el sepulcro tu misericordia o tu fidelidad en el reino de la muerte se conocen tus maravillas en las tinieblas o tu justicia en el pais del olvido r pero yo te pido auxilio por la manana ira a tu encuentro mi suplica por que senor me rechazas y me escondes tu rostro r",
+  "lizq": [
+    {
+      "line": "R. Llegue hasta ti mi súplica, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Todo el día te estoy invocando,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tendiendo las manos hacia ti.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Harás tú maravillas por los muertos?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Se alzarán las sombras para darte gracias? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Se anuncia en el sepulcro tu misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "o tu fidelidad en el reino de la muerte?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Se conocen tus maravillas en las tinieblas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "o tu justicia en el país del olvido? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero yo te pido auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por la mañana irá a tu encuentro mi súplica.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Por qué, Señor, me rechazas",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me escondes tu rostro? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "seui_140",
+  "title": "Martes de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 100, 1-2ab. 2cd-3ab. 5. 6(R.: 2c)",
+  "salmo": "Salmo responsorial: Salmo 100, 1-2ab. 2cd-3ab. 5. 6(R.: 2c)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5242,
+  "respuesta": "R. Andaré con rectitud de corazón.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Voy a cantar la bondad y la justicia,",
+      "para ti es mi música, Señor;",
+      "voy a explicar el camino perfecto:",
+      "¿cuándo vendrás a mí? R."
+    ],
+    [
+      "Andaré con rectitud de corazón",
+      "dentro de mi casa;",
+      "no pondré mis ojos",
+      "en intenciones viles.",
+      "Aborrezco al que obra mal. R."
+    ],
+    [
+      "Al que en secreto difama a su prójimo",
+      "lo haré callar;",
+      "ojos engreídos, corazones arrogantes,",
+      "no los soportaré. R."
+    ],
+    [
+      "Pongo mis ojos en los que son leales,",
+      "ellos vivirán conmigo;",
+      "el que sigue un camino perfecto,",
+      "ése me servirá. R."
+    ]
+  ],
+  "textoCompleto": "Voy a cantar la bondad y la justicia,\npara ti es mi música, Señor;\nvoy a explicar el camino perfecto:\n¿cuándo vendrás a mí? R.\n\nAndaré con rectitud de corazón\ndentro de mi casa;\nno pondré mis ojos\nen intenciones viles.\nAborrezco al que obra mal. R.\n\nAl que en secreto difama a su prójimo\nlo haré callar;\nojos engreídos, corazones arrogantes,\nno los soportaré. R.\n\nPongo mis ojos en los que son leales,\nellos vivirán conmigo;\nel que sigue un camino perfecto,\nése me servirá. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 24 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 100 1 2ab 2cd 3ab 5 6 r 2c semana 24 semana xxiv martes 24 xxiv r andare con rectitud de corazon voy a cantar la bondad y la justicia para ti es mi musica senor voy a explicar el camino perfecto cuando vendras a mi r andare con rectitud de corazon dentro de mi casa no pondre mis ojos en intenciones viles aborrezco al que obra mal r al que en secreto difama a su projimo lo hare callar ojos engreidos corazones arrogantes no los soportare r pongo mis ojos en los que son leales ellos viviran conmigo el que sigue un camino perfecto ese me servira r",
+  "lizq": [
+    {
+      "line": "R. Andaré con rectitud de corazón.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Voy a cantar la bondad y la justicia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para ti es mi música, Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "voy a explicar el camino perfecto:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿cuándo vendrás a mí? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Andaré con rectitud de corazón",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "dentro de mi casa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no pondré mis ojos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en intenciones viles.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Aborrezco al que obra mal. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Al que en secreto difama a su prójimo",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lo haré callar;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ojos engreídos, corazones arrogantes,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no los soportaré. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pongo mis ojos en los que son leales,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ellos vivirán conmigo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el que sigue un camino perfecto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ése me servirá. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

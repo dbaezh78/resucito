@@ -1,0 +1,79 @@
+{
+  "id": "seui_132",
+  "title": "Sábado de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 53, 3-4. 6 y 8",
+  "salmo": "Salmo responsorial: Salmo 53, 3-4. 6 y 8",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5226,
+  "respuesta": "R. Dios es mi auxilio.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Oh Dios, sálvame por tu nombre,",
+      "sal por mí con tu poder.",
+      "Oh Dios, escucha mi súplica,",
+      "atiende a mis palabras. R."
+    ],
+    [
+      "Pero Dios es mi auxilio,",
+      "el Señor sostiene mi vida.",
+      "Te ofreceré un sacrificio voluntario,",
+      "dando gracias a tu nombre, que es bueno. R."
+    ]
+  ],
+  "textoCompleto": "Oh Dios, sálvame por tu nombre,\nsal por mí con tu poder.\nOh Dios, escucha mi súplica,\natiende a mis palabras. R.\n\nPero Dios es mi auxilio,\nel Señor sostiene mi vida.\nTe ofreceré un sacrificio voluntario,\ndando gracias a tu nombre, que es bueno. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 22 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 53 3 4 6 y 8 semana 22 semana xxii sabado 22 xxii r dios es mi auxilio oh dios salvame por tu nombre sal por mi con tu poder oh dios escucha mi suplica atiende a mis palabras r pero dios es mi auxilio el senor sostiene mi vida te ofrecere un sacrificio voluntario dando gracias a tu nombre que es bueno r",
+  "lizq": [
+    {
+      "line": "R. Dios es mi auxilio.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oh Dios, sálvame por tu nombre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sal por mí con tu poder.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Oh Dios, escucha mi súplica,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "atiende a mis palabras. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero Dios es mi auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el Señor sostiene mi vida.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te ofreceré un sacrificio voluntario,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dando gracias a tu nombre, que es bueno. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

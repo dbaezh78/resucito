@@ -11,9 +11,24 @@
   "respuesta": "R. El Señor les dio un trigo celeste.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Lo que oímos y aprendimos,\nlo que nuestros padres nos contaron,\nlo contaremos a la futura generación:\nlas alabanzas del Señor, su poder. R.",
-    "Dio orden a las altas nubes,\nabrió las compuertas del cielo:\nhizo llover sobre ellos maná,\nles dio un trigo celeste. R.",
-    "Y el hombre comió pan de ángeles,\nles mandó provisiones hasta la hartura.\nLos hizo entrar por las santas fronteras,\nhasta el monte que su diestra había adquirido. R."
+    [
+      "Lo que oímos y aprendimos,",
+      "lo que nuestros padres nos contaron,",
+      "lo contaremos a la futura generación:",
+      "las alabanzas del Señor, su poder. R."
+    ],
+    [
+      "Dio orden a las altas nubes,",
+      "abrió las compuertas del cielo:",
+      "hizo llover sobre ellos maná,",
+      "les dio un trigo celeste. R."
+    ],
+    [
+      "Y el hombre comió pan de ángeles,",
+      "les mandó provisiones hasta la hartura.",
+      "Los hizo entrar por las santas fronteras,",
+      "hasta el monte que su diestra había adquirido. R."
+    ]
   ],
   "textoCompleto": "Lo que oímos y aprendimos,\nlo que nuestros padres nos contaron,\nlo contaremos a la futura generación:\nlas alabanzas del Señor, su poder. R.\n\nDio orden a las altas nubes,\nabrió las compuertas del cielo:\nhizo llover sobre ellos maná,\nles dio un trigo celeste. R.\n\nY el hombre comió pan de ángeles,\nles mandó provisiones hasta la hartura.\nLos hizo entrar por las santas fronteras,\nhasta el monte que su diestra había adquirido. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. El Señor les dio un trigo celeste.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Lo que oímos y aprendimos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "lo que nuestros padres nos contaron,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "lo contaremos a la futura generación:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "las alabanzas del Señor, su poder. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dio orden a las altas nubes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "abrió las compuertas del cielo:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "hizo llover sobre ellos maná,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "les dio un trigo celeste. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Y el hombre comió pan de ángeles,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "les mandó provisiones hasta la hartura.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Los hizo entrar por las santas fronteras,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "hasta el monte que su diestra había adquirido. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

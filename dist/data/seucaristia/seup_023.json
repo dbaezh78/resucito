@@ -1,0 +1,95 @@
+{
+  "id": "seup_023",
+  "title": "Viernes de la 4ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 4ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 17, 31. 47 y 50. 51 (R.: cf 47b)",
+  "salmo": "Salmo responsorial: Salmo 17, 31. 47 y 50. 51 (R.: cf 47b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5045,
+  "respuesta": "R. Bendito sea mi Dios y Salvador.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Perfecto es el camino de Dios,",
+      "acendrada es la promesa del Señor;",
+      "él es escudo para los que a él se acogen. R."
+    ],
+    [
+      "Viva el Señor, bendita sea mi Roca,",
+      "sea ensalzado mi Dios y Salvador.",
+      "Por eso te daré gracias entre las naciones, Señor,",
+      "y tañeré en honor de tu nombre. R."
+    ],
+    [
+      "Tú diste gran victoria a tu rey,",
+      "tuviste misericordia de tu Ungido,",
+      "de David y su linaje por siempre. R."
+    ]
+  ],
+  "textoCompleto": "Perfecto es el camino de Dios,\nacendrada es la promesa del Señor;\nél es escudo para los que a él se acogen. R.\n\nViva el Señor, bendita sea mi Roca,\nsea ensalzado mi Dios y Salvador.\nPor eso te daré gracias entre las naciones, Señor,\ny tañeré en honor de tu nombre. R.\n\nTú diste gran victoria a tu rey,\ntuviste misericordia de tu Ungido,\nde David y su linaje por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 4 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 17 31 47 y 50 51 r cf 47b semana 4 semana iv viernes 4 iv r bendito sea mi dios y salvador perfecto es el camino de dios acendrada es la promesa del senor el es escudo para los que a el se acogen r viva el senor bendita sea mi roca sea ensalzado mi dios y salvador por eso te dare gracias entre las naciones senor y tanere en honor de tu nombre r tu diste gran victoria a tu rey tuviste misericordia de tu ungido de david y su linaje por siempre r",
+  "lizq": [
+    {
+      "line": "R. Bendito sea mi Dios y Salvador.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Perfecto es el camino de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "acendrada es la promesa del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él es escudo para los que a él se acogen. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Viva el Señor, bendita sea mi Roca,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sea ensalzado mi Dios y Salvador.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Por eso te daré gracias entre las naciones, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y tañeré en honor de tu nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú diste gran victoria a tu rey,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tuviste misericordia de tu Ungido,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de David y su linaje por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "id": "seuc_15",
+  "title": "Vigilia Pascual",
+  "celebracion": "Vigilia Pascual",
+  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 2b-4. 24-25. 27-28. 29-30 (R.: 1)",
+  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 2b-4. 24-25. 27-28. 29-30 (R.: 1)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Pascua",
+  "dia": "Sábado",
+  "orden": 401,
+  "respuesta": "R. Bendice, alma mía, al Señor: ¡Dios mío, qué grande eres!",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Bendice, alma mía, al Señor:",
+      "¡Dios mío, qué grande eres!",
+      "Te vistes de belleza y majestad,",
+      "la luz te envuelve como un manto. R."
+    ],
+    [
+      "Extiendes los cielos como una tienda,",
+      "construyes tu morada sobre las aguas;",
+      "las nubes te sirven de carroza,",
+      "avanzas en las alas del viento;",
+      "los vientos te sirven de mensajeros,",
+      "el fuego llameante, de ministro. R."
+    ],
+    [
+      "Cuántas son tus obras, Señor,",
+      "y todas las hiciste con sabiduría;",
+      "la tierra está llena de tus criaturas.",
+      "Ahí está el mar: ancho y dilatado,",
+      "en él bullen, sin número,",
+      "animales pequeños y grandes. R."
+    ],
+    [
+      "Todos ellos aguardan",
+      "a que les eches comida a su tiempo:",
+      "se la echas, y la atrapan;",
+      "abres tu mano, y se sacian de bienes. R."
+    ],
+    [
+      "Escondes tu rostro, y se espantan;",
+      "les retiras el aliento, y expiran",
+      "y vuelven a ser polvo;",
+      "envías tu aliento, y los creas,",
+      "y repueblas la faz de la tierra. R."
+    ]
+  ],
+  "textoCompleto": "Bendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nExtiendes los cielos como una tienda,\nconstruyes tu morada sobre las aguas;\nlas nubes te sirven de carroza,\navanzas en las alas del viento;\nlos vientos te sirven de mensajeros,\nel fuego llameante, de ministro. R.\n\nCuántas son tus obras, Señor,\ny todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas.\nAhí está el mar: ancho y dilatado,\nen él bullen, sin número,\nanimales pequeños y grandes. R.\n\nTodos ellos aguardan\na que les eches comida a su tiempo:\nse la echas, y la atrapan;\nabres tu mano, y se sacian de bienes. R.\n\nEscondes tu rostro, y se espantan;\nles retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "vigilia pascual ciclo c pascua sabado salmo responsorial salmo 103 1 2a 2b 4 24 25 27 28 29 30 r 1 r bendice alma mia al senor dios mio que grande eres bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r extiendes los cielos como una tienda construyes tu morada sobre las aguas las nubes te sirven de carroza avanzas en las alas del viento los vientos te sirven de mensajeros el fuego llameante de ministro r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas ahi esta el mar ancho y dilatado en el bullen sin numero animales pequenos y grandes r todos ellos aguardan a que les eches comida a su tiempo se la echas y la atrapan abres tu mano y se sacian de bienes r escondes tu rostro y se espantan les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r",
+  "lizq": [
+    {
+      "line": "R. Bendice, alma mía, al Señor:",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "¡Dios mío, qué grande eres!",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¡Dios mío, qué grande eres!",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te vistes de belleza y majestad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la luz te envuelve como un manto. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Extiendes los cielos como una tienda,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "construyes tu morada sobre las aguas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "las nubes te sirven de carroza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "avanzas en las alas del viento;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los vientos te sirven de mensajeros,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el fuego llameante, de ministro. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuántas son tus obras, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todas las hiciste con sabiduría;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la tierra está llena de tus criaturas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Ahí está el mar: ancho y dilatado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en él bullen, sin número,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "animales pequeños y grandes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Todos ellos aguardan",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a que les eches comida a su tiempo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se la echas, y la atrapan;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "abres tu mano, y se sacian de bienes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Escondes tu rostro, y se espantan;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "les retiras el aliento, y expiran",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y vuelven a ser polvo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "envías tu aliento, y los creas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y repueblas la faz de la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

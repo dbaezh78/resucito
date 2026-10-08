@@ -11,10 +11,32 @@
   "respuesta": "R. Vamos alegres a la casa del Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.",
-    "Allá suben las tribus,\nlas tribus del Señor\nsegún la costumbre de Israel,\na celebrar el nombre Señor;\nen ella están los tribunales de justicia,\nen el palacio de David. R.",
-    "Desead la paz a Jerusalén:\n«Vivan seguros los que te aman,\nhaya paz dentro de tus muros,\nseguridad en tus palacios». R.",
-    "Por mis hermanos y compañeros,\nvoy a decir: «La paz contigo».\nPor la casa del Señor, nuestro Dios,\nte deseo todo bien. R."
+    [
+      "¡Qué alegría cuando me dijeron:",
+      "«Vamos a la casa del Señor»!",
+      "Ya están pisando nuestros pies",
+      "tus umbrales, Jerusalén. R."
+    ],
+    [
+      "Allá suben las tribus,",
+      "las tribus del Señor",
+      "según la costumbre de Israel,",
+      "a celebrar el nombre Señor;",
+      "en ella están los tribunales de justicia,",
+      "en el palacio de David. R."
+    ],
+    [
+      "Desead la paz a Jerusalén:",
+      "«Vivan seguros los que te aman,",
+      "haya paz dentro de tus muros,",
+      "seguridad en tus palacios». R."
+    ],
+    [
+      "Por mis hermanos y compañeros,",
+      "voy a decir: «La paz contigo».",
+      "Por la casa del Señor, nuestro Dios,",
+      "te deseo todo bien. R."
+    ]
   ],
   "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nAllá suben las tribus,\nlas tribus del Señor\nsegún la costumbre de Israel,\na celebrar el nombre Señor;\nen ella están los tribunales de justicia,\nen el palacio de David. R.\n\nDesead la paz a Jerusalén:\n«Vivan seguros los que te aman,\nhaya paz dentro de tus muros,\nseguridad en tus palacios». R.\n\nPor mis hermanos y compañeros,\nvoy a decir: «La paz contigo».\nPor la casa del Señor, nuestro Dios,\nte deseo todo bien. R.",
   "sourceBook": "eucaristia",
@@ -25,96 +47,95 @@
   "lizq": [
     {
       "line": "R. Vamos alegres a la casa del Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "¡Qué alegría cuando me dijeron:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "«Vamos a la casa del Señor»!",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Ya están pisando nuestros pies",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tus umbrales, Jerusalén. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Allá suben las tribus,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "las tribus del Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "según la costumbre de Israel,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "a celebrar el nombre Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en ella están los tribunales de justicia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en el palacio de David. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Desead la paz a Jerusalén:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "«Vivan seguros los que te aman,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "haya paz dentro de tus muros,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "seguridad en tus palacios». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Por mis hermanos y compañeros,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "voy a decir: «La paz contigo».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Por la casa del Señor, nuestro Dios,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "te deseo todo bien. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -1,0 +1,136 @@
+{
+  "id": "seup_090",
+  "title": "Sábado de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 9, 22-23. 24-25. 28-29. 35 (R.: 33b)",
+  "salmo": "Salmo responsorial: Salmo 9, 22-23. 24-25. 28-29. 35 (R.: 33b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5156,
+  "respuesta": "R. No te olvides de los humildes, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "¿Por qué te quedas lejos, Señor,",
+      "y te escondes en el momento del aprieto?",
+      "La soberbia del impío oprime al infeliz",
+      "y lo enreda en las intrigas que ha tramado. R."
+    ],
+    [
+      "El malvado se gloría de su ambición,",
+      "el codicioso blasfema y desprecia al Señor.",
+      "El malvado dice con insolencia:",
+      "«No hay Dios que me pida cuentas». R."
+    ],
+    [
+      "Su boca está llena de maldiciones,",
+      "de engaños y de fraudes;",
+      "su lengua encubre maldad y opresión;",
+      "en el zaguán se sienta al acecho",
+      "para matar a escondidas al inocente. R."
+    ],
+    [
+      "Pero tú ves las penas y los trabajos,",
+      "tú miras y los tomas en tus manos.",
+      "A ti se encomienda el pobre,",
+      "tú socorres al huérfano. R."
+    ]
+  ],
+  "textoCompleto": "¿Por qué te quedas lejos, Señor,\ny te escondes en el momento del aprieto?\nLa soberbia del impío oprime al infeliz\ny lo enreda en las intrigas que ha tramado. R.\n\nEl malvado se gloría de su ambición,\nel codicioso blasfema y desprecia al Señor.\nEl malvado dice con insolencia:\n«No hay Dios que me pida cuentas». R.\n\nSu boca está llena de maldiciones,\nde engaños y de fraudes;\nsu lengua encubre maldad y opresión;\nen el zaguán se sienta al acecho\npara matar a escondidas al inocente. R.\n\nPero tú ves las penas y los trabajos,\ntú miras y los tomas en tus manos.\nA ti se encomienda el pobre,\ntú socorres al huérfano. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 15 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 9 22 23 24 25 28 29 35 r 33b semana 15 semana xv sabado 15 xv r no te olvides de los humildes senor por que te quedas lejos senor y te escondes en el momento del aprieto la soberbia del impio oprime al infeliz y lo enreda en las intrigas que ha tramado r el malvado se gloria de su ambicion el codicioso blasfema y desprecia al senor el malvado dice con insolencia no hay dios que me pida cuentas r su boca esta llena de maldiciones de enganos y de fraudes su lengua encubre maldad y opresion en el zaguan se sienta al acecho para matar a escondidas al inocente r pero tu ves las penas y los trabajos tu miras y los tomas en tus manos a ti se encomienda el pobre tu socorres al huerfano r",
+  "lizq": [
+    {
+      "line": "R. No te olvides de los humildes, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Por qué te quedas lejos, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y te escondes en el momento del aprieto?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "La soberbia del impío oprime al infeliz",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y lo enreda en las intrigas que ha tramado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El malvado se gloría de su ambición,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el codicioso blasfema y desprecia al Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El malvado dice con insolencia:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«No hay Dios que me pida cuentas». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Su boca está llena de maldiciones,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "de engaños y de fraudes;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su lengua encubre maldad y opresión;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en el zaguán se sienta al acecho",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para matar a escondidas al inocente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero tú ves las penas y los trabajos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tú miras y los tomas en tus manos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "A ti se encomienda el pobre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú socorres al huérfano. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "seui_005",
+  "title": "Viernes de la 1ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 1ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 77, 3 y 4bc. 6c-7. 8 (R.: cf. 7c)",
+  "salmo": "Salmo responsorial: Salmo 77, 3 y 4bc. 6c-7. 8 (R.: cf. 7c)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5015,
+  "respuesta": "R. No olvidéis las acciones de Dios.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Lo que oímos y aprendimos,",
+      "lo que nuestros padres nos contaron,",
+      "lo contaremos a la futura generación:",
+      "las alabanzas del Señor, su poder. R."
+    ],
+    [
+      "Que surjan y lo cuenten a sus hijos,",
+      "para que pongan en Dios su confianza",
+      "y no olviden las acciones de Dios,",
+      "sino que guarden sus mandamientos. R."
+    ],
+    [
+      "Para que no imiten a sus padres,",
+      "generación rebelde y pertinaz;",
+      "generación de corazón inconstante,",
+      "de espíritu infiel a Dios. R."
+    ]
+  ],
+  "textoCompleto": "Lo que oímos y aprendimos,\nlo que nuestros padres nos contaron,\nlo contaremos a la futura generación:\nlas alabanzas del Señor, su poder. R.\n\nQue surjan y lo cuenten a sus hijos,\npara que pongan en Dios su confianza\ny no olviden las acciones de Dios,\nsino que guarden sus mandamientos. R.\n\nPara que no imiten a sus padres,\ngeneración rebelde y pertinaz;\ngeneración de corazón inconstante,\nde espíritu infiel a Dios. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 1 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 77 3 y 4bc 6c 7 8 r cf 7c semana 1 semana i viernes 1 i r no olvideis las acciones de dios lo que oimos y aprendimos lo que nuestros padres nos contaron lo contaremos a la futura generacion las alabanzas del senor su poder r que surjan y lo cuenten a sus hijos para que pongan en dios su confianza y no olviden las acciones de dios sino que guarden sus mandamientos r para que no imiten a sus padres generacion rebelde y pertinaz generacion de corazon inconstante de espiritu infiel a dios r",
+  "lizq": [
+    {
+      "line": "R. No olvidéis las acciones de Dios.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Lo que oímos y aprendimos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lo que nuestros padres nos contaron,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lo contaremos a la futura generación:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "las alabanzas del Señor, su poder. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que surjan y lo cuenten a sus hijos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para que pongan en Dios su confianza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no olviden las acciones de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sino que guarden sus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Para que no imiten a sus padres,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "generación rebelde y pertinaz;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "generación de corazón inconstante,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de espíritu infiel a Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

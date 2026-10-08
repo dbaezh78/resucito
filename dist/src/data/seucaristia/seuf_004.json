@@ -1,0 +1,149 @@
+{
+  "id": "seuf_004",
+  "title": "Jueves de la 1ª semana de Adviento",
+  "celebracion": "Jueves de la 1ª semana de Adviento",
+  "subtitle": "Salmo 117, 1 y 8-9. 19-21. 25-27a (R/.: 26a)",
+  "salmo": "Salmo 117, 1 y 8-9. 19-21. 25-27a (R/.: 26a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Jueves",
+  "orden": 114,
+  "respuesta": "R. Bendito el que viene en nombre del Señor.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Dad gracias al Señor porque es bueno,",
+      "porque es eterna su misericordia.",
+      "Mejor es refugiarse en el Señor",
+      "que fiarse de los hombres,",
+      "mejor es refugiarse en el Señor",
+      "que fiarse de los jefes. R."
+    ],
+    [
+      "Abridme las puertas del triunfo,",
+      "y entraré para dar gracias al Señor.",
+      "Esta es la puerta del Señor:",
+      "los vencedores entrarán por ella.",
+      "Te doy gracias porque me escuchaste",
+      "y fuiste mi salvación. R."
+    ],
+    [
+      "Señor, danos la salvación;",
+      "Señor, danos prosperidad.",
+      "Bendito el que viene en nombre del Señor,",
+      "os bendecimos desde la casa del Señor;",
+      "el Señor es Dios, él nos ilumina. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nAbridme las puertas del triunfo,\ny entraré para dar gracias al Señor.\nEsta es la puerta del Señor:\nlos vencedores entrarán por ella.\nTe doy gracias porque me escuchaste\ny fuiste mi salvación. R.\n\nSeñor, danos la salvación;\nSeñor, danos prosperidad.\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor;\nel Señor es Dios, él nos ilumina. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 1 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento jueves salmo 117 1 y 8 9 19 21 25 27a r 26a semana 1 semana i jueves feria r bendito el que viene en nombre del senor r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia mejor es refugiarse en el senor que fiarse de los hombres mejor es refugiarse en el senor que fiarse de los jefes r abridme las puertas del triunfo y entrare para dar gracias al senor esta es la puerta del senor los vencedores entraran por ella te doy gracias porque me escuchaste y fuiste mi salvacion r senor danos la salvacion senor danos prosperidad bendito el que viene en nombre del senor os bendecimos desde la casa del senor el senor es dios el nos ilumina r",
+  "lizq": [
+    {
+      "line": "R. Bendito el que viene en nombre del Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mejor es refugiarse en el Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que fiarse de los hombres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mejor es refugiarse en el Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que fiarse de los jefes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Abridme las puertas del triunfo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y entraré para dar gracias al Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Esta es la puerta del Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los vencedores entrarán por ella.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te doy gracias porque me escuchaste",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y fuiste mi salvación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, danos la salvación;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor, danos prosperidad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Bendito el que viene en nombre del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "os bendecimos desde la casa del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor es Dios, él nos ilumina. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

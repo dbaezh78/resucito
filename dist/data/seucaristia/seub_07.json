@@ -8,14 +8,23 @@
   "tiempo": "Navidad",
   "dia": "Domingo",
   "orden": 203,
-  "respuesta": "R. Hoy brillará una luz sobre nosotros,",
+  "respuesta": "R. Hoy brillará una luz sobre nosotros, porque nos ha nacido el Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "porque nos ha nacido el Señor.",
-    "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.",
-    "Amanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R."
+    [
+      "El Señor reina, la tierra goza,",
+      "se alegran las islas innumerables.",
+      "Los cielos pregonan su justicia,",
+      "y todos los pueblos contemplan su gloria. R."
+    ],
+    [
+      "Amanece la luz para el justo,",
+      "y la alegría para los rectos de corazón.",
+      "Alegraos, justos, con el Señor,",
+      "celebrad su santo nombre. R."
+    ]
   ],
-  "textoCompleto": "porque nos ha nacido el Señor.\n\nEl Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -24,56 +33,51 @@
   "lizq": [
     {
       "line": "R. Hoy brillará una luz sobre nosotros,",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "porque nos ha nacido el Señor.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor reina, la tierra goza,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "se alegran las islas innumerables.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Los cielos pregonan su justicia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y todos los pueblos contemplan su gloria. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Amanece la luz para el justo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y la alegría para los rectos de corazón.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Alegraos, justos, con el Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "celebrad su santo nombre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

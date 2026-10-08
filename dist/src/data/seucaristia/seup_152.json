@@ -1,0 +1,131 @@
+{
+  "id": "seup_152",
+  "title": "Martes de la 26ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 26ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 87, 2-3. 4-5. 6. 7-8 (R.: 3a)",
+  "salmo": "Salmo responsorial: Salmo 87, 2-3. 4-5. 6. 7-8 (R.: 3a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5262,
+  "respuesta": "R. Llegue hasta ti mi súplica, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, Dios mío, de día te pido auxilio,",
+      "de noche grito en tu presencia;",
+      "llegue hasta ti mi súplica,",
+      "inclina tu oído a mi clamor. R."
+    ],
+    [
+      "Porque mi alma está colmada de desdichas,",
+      "y mi vida está al borde del abismo;",
+      "ya me cuentan con los que bajan a la fosa,",
+      "soy como un inválido. R."
+    ],
+    [
+      "Tengo mi cama entre los muertos,",
+      "como los caídos que yacen en el sepulcro,",
+      "de los cuales ya no guardas memoria,",
+      "porque fueron arrancados de tu mano. R."
+    ],
+    [
+      "Me has colocado en lo hondo de la fosa,",
+      "en las tinieblas del fondo;",
+      "tu cólera pesa sobre mí,",
+      "me echas encima todas tus olas. R."
+    ]
+  ],
+  "textoCompleto": "Señor, Dios mío, de día te pido auxilio,\nde noche grito en tu presencia;\nllegue hasta ti mi súplica,\ninclina tu oído a mi clamor. R.\n\nPorque mi alma está colmada de desdichas,\ny mi vida está al borde del abismo;\nya me cuentan con los que bajan a la fosa,\nsoy como un inválido. R.\n\nTengo mi cama entre los muertos,\ncomo los caídos que yacen en el sepulcro,\nde los cuales ya no guardas memoria,\nporque fueron arrancados de tu mano. R.\n\nMe has colocado en lo hondo de la fosa,\nen las tinieblas del fondo;\ntu cólera pesa sobre mí,\nme echas encima todas tus olas. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 26 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 87 2 3 4 5 6 7 8 r 3a semana 26 semana xxvi martes 26 xxvi r llegue hasta ti mi suplica senor senor dios mio de dia te pido auxilio de noche grito en tu presencia llegue hasta ti mi suplica inclina tu oido a mi clamor r porque mi alma esta colmada de desdichas y mi vida esta al borde del abismo ya me cuentan con los que bajan a la fosa soy como un invalido r tengo mi cama entre los muertos como los caidos que yacen en el sepulcro de los cuales ya no guardas memoria porque fueron arrancados de tu mano r me has colocado en lo hondo de la fosa en las tinieblas del fondo tu colera pesa sobre mi me echas encima todas tus olas r",
+  "lizq": [
+    {
+      "line": "R. Llegue hasta ti mi súplica, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, Dios mío, de día te pido auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "de noche grito en tu presencia;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "llegue hasta ti mi súplica,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "inclina tu oído a mi clamor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque mi alma está colmada de desdichas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y mi vida está al borde del abismo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ya me cuentan con los que bajan a la fosa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "soy como un inválido. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tengo mi cama entre los muertos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "como los caídos que yacen en el sepulcro,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de los cuales ya no guardas memoria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque fueron arrancados de tu mano. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Me has colocado en lo hondo de la fosa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en las tinieblas del fondo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu cólera pesa sobre mí,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me echas encima todas tus olas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

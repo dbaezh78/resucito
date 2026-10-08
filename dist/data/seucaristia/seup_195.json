@@ -1,0 +1,105 @@
+{
+  "id": "seup_195",
+  "title": "Miércoles de la 33ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 33ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 150, 1-2. 3-4. 5-6 (R.: Ap 4, 8b)",
+  "salmo": "Salmo responsorial: Salmo 150, 1-2. 3-4. 5-6 (R.: Ap 4, 8b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5333,
+  "respuesta": "R. Santo, Santo, Santo es el Señor, soberano de todo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Alabad al Señor en su templo,",
+      "alabadlo en su fuerte firmamento.",
+      "Alabadlo por sus obras magníficas,",
+      "alabadlo por su inmensa grandeza. R."
+    ],
+    [
+      "Alabadlo tocando trompetas,",
+      "alabadlo con arpas y cítaras,",
+      "alabadlo con tambores y danzas,",
+      "alabadlo con trompas y flautas. R."
+    ],
+    [
+      "Alabadlo con platillos sonoros,",
+      "alabadlo con platillos vibrantes.",
+      "Todo ser que alienta",
+      "alabe al Señor. R."
+    ]
+  ],
+  "textoCompleto": "Alabad al Señor en su templo,\nalabadlo en su fuerte firmamento.\nAlabadlo por sus obras magníficas,\nalabadlo por su inmensa grandeza. R.\n\nAlabadlo tocando trompetas,\nalabadlo con arpas y cítaras,\nalabadlo con tambores y danzas,\nalabadlo con trompas y flautas. R.\n\nAlabadlo con platillos sonoros,\nalabadlo con platillos vibrantes.\nTodo ser que alienta\nalabe al Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 33 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 150 1 2 3 4 5 6 r ap 4 8b semana 33 semana xxxiii miercoles 33 xxxiii r santo santo santo es el senor soberano de todo alabad al senor en su templo alabadlo en su fuerte firmamento alabadlo por sus obras magnificas alabadlo por su inmensa grandeza r alabadlo tocando trompetas alabadlo con arpas y citaras alabadlo con tambores y danzas alabadlo con trompas y flautas r alabadlo con platillos sonoros alabadlo con platillos vibrantes todo ser que alienta alabe al senor r",
+  "lizq": [
+    {
+      "line": "R. Santo, Santo, Santo es el Señor, soberano de todo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabad al Señor en su templo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabadlo en su fuerte firmamento.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alabadlo por sus obras magníficas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabadlo por su inmensa grandeza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabadlo tocando trompetas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabadlo con arpas y cítaras,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabadlo con tambores y danzas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabadlo con trompas y flautas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabadlo con platillos sonoros,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabadlo con platillos vibrantes.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Todo ser que alienta",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabe al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

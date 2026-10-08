@@ -11,9 +11,24 @@
   "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.",
-    "«Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n\"Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades\"». R.",
-    "Él me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora».\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable. R."
+    [
+      "Cantaré eternamente las misericordias del Señor,",
+      "anunciaré tu fidelidad por todas las edades.",
+      "Porque dije: Tu misericordia es un edificio eterno,",
+      "más que el cielo has afianzado tu fidelidad». R."
+    ],
+    [
+      "«Sellé una alianza con mi elegido,",
+      "jurando a David, mi siervo:",
+      "\"Te fundaré un linaje perpetuo,",
+      "edificaré tu trono para todas las edades\"». R."
+    ],
+    [
+      "Él me invocará: «Tú eres mi padre,",
+      "mi Dios, mi Roca salvadora».",
+      "Le mantendré eternamente mi favor,",
+      "y mi alianza con él será estable. R."
+    ]
   ],
   "textoCompleto": "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.\n\n«Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n\"Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades\"». R.\n\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora».\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. Cantaré eternamente tus misericordias, Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cantaré eternamente las misericordias del Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "anunciaré tu fidelidad por todas las edades.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Porque dije: Tu misericordia es un edificio eterno,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "más que el cielo has afianzado tu fidelidad». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "«Sellé una alianza con mi elegido,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "jurando a David, mi siervo:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "\"Te fundaré un linaje perpetuo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "edificaré tu trono para todas las edades\"». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Él me invocará: «Tú eres mi padre,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "mi Dios, mi Roca salvadora».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Le mantendré eternamente mi favor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y mi alianza con él será estable. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

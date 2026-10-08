@@ -1,0 +1,119 @@
+{
+  "id": "seup_160",
+  "title": "Jueves de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 27ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Lucas 1. 69-70, 71-72. 73-75 (R.: cf. 68)",
+  "salmo": "Interleccional: Lucas 1. 69-70, 71-72. 73-75 (R.: cf. 68)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5274,
+  "respuesta": "R. Bendito sea el Señor, Dios de Israel, porque ha visitado a su pueblo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Nos ha suscitado una fuerza de salvación",
+      "en la casa de David, su siervo,",
+      "según lo había predicho desde antiguo",
+      "por boca de sus santos profetas. R."
+    ],
+    [
+      "Es la salvación que nos libra de nuestros enemigos",
+      "y de la mano de todos los que nos odian;",
+      "realizando la misericordia",
+      "que tuvo con nuestros padres,",
+      "recordando su santa alianza. R."
+    ],
+    [
+      "Y el juramento que juró a nuestro padre Abrahán.",
+      "Para concedernos que, libres de temor,",
+      "arrancados de la mano de los enemigos,",
+      "le sirvamos con santidad y justicia,",
+      "en su presencia, todos nuestros días. R."
+    ]
+  ],
+  "textoCompleto": "Nos ha suscitado una fuerza de salvación\nen la casa de David, su siervo,\nsegún lo había predicho desde antiguo\npor boca de sus santos profetas. R.\n\nEs la salvación que nos libra de nuestros enemigos\ny de la mano de todos los que nos odian;\nrealizando la misericordia\nque tuvo con nuestros padres,\nrecordando su santa alianza. R.\n\nY el juramento que juró a nuestro padre Abrahán.\nPara concedernos que, libres de temor,\narrancados de la mano de los enemigos,\nle sirvamos con santidad y justicia,\nen su presencia, todos nuestros días. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 27 semana de tiempo ordinario ano par tiempo ordinario jueves interleccional lucas 1 69 70 71 72 73 75 r cf 68 semana 27 semana xxvii jueves 27 xxvii r bendito sea el senor dios de israel porque ha visitado a su pueblo nos ha suscitado una fuerza de salvacion en la casa de david su siervo segun lo habia predicho desde antiguo por boca de sus santos profetas r es la salvacion que nos libra de nuestros enemigos y de la mano de todos los que nos odian realizando la misericordia que tuvo con nuestros padres recordando su santa alianza r y el juramento que juro a nuestro padre abrahan para concedernos que libres de temor arrancados de la mano de los enemigos le sirvamos con santidad y justicia en su presencia todos nuestros dias r",
+  "lizq": [
+    {
+      "line": "R. Bendito sea el Señor, Dios de Israel,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "porque ha visitado a su pueblo.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Nos ha suscitado una fuerza de salvación",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en la casa de David, su siervo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "según lo había predicho desde antiguo",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por boca de sus santos profetas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Es la salvación que nos libra de nuestros enemigos",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y de la mano de todos los que nos odian;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "realizando la misericordia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tuvo con nuestros padres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "recordando su santa alianza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Y el juramento que juró a nuestro padre Abrahán.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Para concedernos que, libres de temor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "arrancados de la mano de los enemigos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "le sirvamos con santidad y justicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en su presencia, todos nuestros días. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

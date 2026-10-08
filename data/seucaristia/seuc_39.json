@@ -1,0 +1,121 @@
+{
+  "id": "seuc_39",
+  "title": "Quinto domingo de Pascua",
+  "celebracion": "Quinto domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 144, 8-9. 10-11. 12-13ab (R.: cf. 1)",
+  "salmo": "Salmo responsorial: Salmo 144, 8-9. 10-11. 12-13ab (R.: cf. 1)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Bendeciré tu nombre por siempre jamás, Dios mío, mi rey.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "El Señor es clemente y misericordioso,",
+      "lento a la cólera y rico en piedad;",
+      "el Señor es bueno con todos,",
+      "es cariñoso con todas sus criaturas. R."
+    ],
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ],
+    [
+      "Explicando tus hazañas a los hombres,",
+      "la gloria y majestad de tu reinado.",
+      "Tu reinado es un reinado perpetuo,",
+      "tu gobierno va de edad en edad. R."
+    ]
+  ],
+  "textoCompleto": "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nExplicando tus hazañas a los hombres,\nla gloria y majestad de tu reinado.\nTu reinado es un reinado perpetuo,\ntu gobierno va de edad en edad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "quinto domingo de pascua ciclo c pascua domingo salmo responsorial salmo 144 8 9 10 11 12 13ab r cf 1 r bendecire tu nombre por siempre jamas dios mio mi rey r aleluya el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r explicando tus hazanas a los hombres la gloria y majestad de tu reinado tu reinado es un reinado perpetuo tu gobierno va de edad en edad r",
+  "lizq": [
+    {
+      "line": "R. Bendeciré tu nombre por siempre jamás,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "Dios mío, mi rey.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es clemente y misericordioso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lento a la cólera y rico en piedad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor es bueno con todos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es cariñoso con todas sus criaturas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que todas tus criaturas te den gracias, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que te bendigan tus fieles;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que proclamen la gloria de tu reinado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hablen de tus hazañas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Explicando tus hazañas a los hombres,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la gloria y majestad de tu reinado.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tu reinado es un reinado perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu gobierno va de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

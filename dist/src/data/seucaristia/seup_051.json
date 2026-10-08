@@ -1,0 +1,84 @@
+{
+  "id": "seup_051",
+  "title": "Miércoles de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 9ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 122, 1-2a. 2bcd (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 122, 1-2a. 2bcd (R.: 1a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5093,
+  "respuesta": "R. A ti, Señor, levanto mis ojos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "A ti levanto mis ojos,",
+      "a ti que habitas en el cielo.",
+      "Como están los ojos de los esclavos",
+      "fijos en las manos de sus señores. R."
+    ],
+    [
+      "Como están los ojos de la esclava",
+      "fijos en las manos de su señora,",
+      "así están nuestros ojos",
+      "en el Señor, Dios nuestro,",
+      "esperando su misericordia. R."
+    ]
+  ],
+  "textoCompleto": "A ti levanto mis ojos,\na ti que habitas en el cielo.\nComo están los ojos de los esclavos\nfijos en las manos de sus señores. R.\n\nComo están los ojos de la esclava\nfijos en las manos de su señora,\nasí están nuestros ojos\nen el Señor, Dios nuestro,\nesperando su misericordia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 9 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 122 1 2a 2bcd r 1a semana 9 semana ix miercoles 9 ix r a ti senor levanto mis ojos a ti levanto mis ojos a ti que habitas en el cielo como estan los ojos de los esclavos fijos en las manos de sus senores r como estan los ojos de la esclava fijos en las manos de su senora asi estan nuestros ojos en el senor dios nuestro esperando su misericordia r",
+  "lizq": [
+    {
+      "line": "R. A ti, Señor, levanto mis ojos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "A ti levanto mis ojos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a ti que habitas en el cielo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Como están los ojos de los esclavos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "fijos en las manos de sus señores. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Como están los ojos de la esclava",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "fijos en las manos de su señora,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "así están nuestros ojos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en el Señor, Dios nuestro,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "esperando su misericordia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

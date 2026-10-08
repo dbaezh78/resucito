@@ -1,0 +1,105 @@
+{
+  "id": "seup_124",
+  "title": "Jueves de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 4-5. 6-7 (R.: 1)",
+  "salmo": "Salmo responsorial: Salmo 144, 2-3. 4-5. 6-7 (R.: 1)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5214,
+  "respuesta": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Día tras día, te bendeciré",
+      "y alabaré tu nombre por siempre jamás.",
+      "Grande es el Señor, merece toda alabanza,",
+      "es incalculable su grandeza. R."
+    ],
+    [
+      "Una generación pondera tus obras a la otra,",
+      "y le cuenta tus hazañas.",
+      "Alaban ellos la gloria de tu majestad,",
+      "y yo repito tus maravillas. R."
+    ],
+    [
+      "Encarecen ellos tus temibles proezas,",
+      "y yo narro tus grandes acciones;",
+      "difunden la memoria de tu inmensa bondad,",
+      "y aclaman tus victorias. R."
+    ]
+  ],
+  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nUna generación pondera tus obras a la otra,\ny le cuenta tus hazañas.\nAlaban ellos la gloria de tu majestad,\ny yo repito tus maravillas. R.\n\nEncarecen ellos tus temibles proezas,\ny yo narro tus grandes acciones;\ndifunden la memoria de tu inmensa bondad,\ny aclaman tus victorias. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 21 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 144 2 3 4 5 6 7 r 1 semana 21 semana xxi jueves 21 xxi r bendecire tu nombre por siempre dios mio mi rey dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r una generacion pondera tus obras a la otra y le cuenta tus hazanas alaban ellos la gloria de tu majestad y yo repito tus maravillas r encarecen ellos tus temibles proezas y yo narro tus grandes acciones difunden la memoria de tu inmensa bondad y aclaman tus victorias r",
+  "lizq": [
+    {
+      "line": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Día tras día, te bendeciré",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y alabaré tu nombre por siempre jamás.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Grande es el Señor, merece toda alabanza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es incalculable su grandeza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Una generación pondera tus obras a la otra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y le cuenta tus hazañas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alaban ellos la gloria de tu majestad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y yo repito tus maravillas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Encarecen ellos tus temibles proezas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y yo narro tus grandes acciones;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "difunden la memoria de tu inmensa bondad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y aclaman tus victorias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

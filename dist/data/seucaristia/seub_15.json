@@ -8,15 +8,30 @@
   "tiempo": "Cuaresma",
   "dia": "Domingo",
   "orden": 302,
-  "respuesta": "R. Caminaré en presencia del Señor",
+  "respuesta": "R. Caminaré en presencia del Señor en el país de la vida.",
   "respuestaOpcional": "",
   "estrofas": [
-    "en el país de la vida.",
-    "Tenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nMucho le cuesta al Señor\nla muerte de sus fieles. R.",
-    "Señor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.",
-    "Cumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R."
+    [
+      "Tenía fe, aun cuando dije:",
+      "«¡Qué desgraciado soy!».",
+      "Mucho le cuesta al Señor",
+      "la muerte de sus fieles. R."
+    ],
+    [
+      "Señor, yo soy tu siervo,",
+      "siervo tuyo, hijo de tu esclava:",
+      "rompiste mis cadenas.",
+      "Te ofreceré un sacrificio de alabanza,",
+      "invocando tu nombre, Señor. R."
+    ],
+    [
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo,",
+      "en el atrio de la casa del Señor,",
+      "en medio de ti, Jerusalén. R."
+    ]
   ],
-  "textoCompleto": "en el país de la vida.\n\nTenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
+  "textoCompleto": "Tenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,80 +40,75 @@
   "lizq": [
     {
       "line": "R. Caminaré en presencia del Señor",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "en el país de la vida.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tenía fe, aun cuando dije:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "«¡Qué desgraciado soy!».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Mucho le cuesta al Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la muerte de sus fieles. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Señor, yo soy tu siervo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "siervo tuyo, hijo de tu esclava:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "rompiste mis cadenas.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Te ofreceré un sacrificio de alabanza,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "invocando tu nombre, Señor. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cumpliré al Señor mis votos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "en presencia de todo el pueblo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en el atrio de la casa del Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en medio de ti, Jerusalén. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

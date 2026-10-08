@@ -11,10 +11,30 @@
   "respuesta": "R. Los mandatos del Señor son rectos y alegran el corazón.",
   "respuestaOpcional": "",
   "estrofas": [
-    "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.",
-    "La voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.",
-    "Aunque tu siervo vigila\npara guardarlos con cuidado,\n¿quién conoce sus faltas?\nAbsuélveme de lo que se me oculta. R.",
-    "Preserva a tu siervo de la arrogancia,\npara que no me domine:\nasí quedaré libre e inocente\ndel gran pecado. R."
+    [
+      "La ley del Señor es perfecta",
+      "y es descanso del alma;",
+      "el precepto del Señor es fiel",
+      "e instruye al ignorante. R."
+    ],
+    [
+      "La voluntad del Señor es pura",
+      "y eternamente estable;",
+      "los mandamientos del Señor son verdaderos",
+      "y enteramente justos. R."
+    ],
+    [
+      "Aunque tu siervo vigila",
+      "para guardarlos con cuidado,",
+      "¿quién conoce sus faltas?",
+      "Absuélveme de lo que se me oculta. R."
+    ],
+    [
+      "Preserva a tu siervo de la arrogancia,",
+      "para que no me domine:",
+      "así quedaré libre e inocente",
+      "del gran pecado. R."
+    ]
   ],
   "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nAunque tu siervo vigila\npara guardarlos con cuidado,\n¿quién conoce sus faltas?\nAbsuélveme de lo que se me oculta. R.\n\nPreserva a tu siervo de la arrogancia,\npara que no me domine:\nasí quedaré libre e inocente\ndel gran pecado. R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. Los mandatos del Señor son rectos y alegran el corazón.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La ley del Señor es perfecta",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y es descanso del alma;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el precepto del Señor es fiel",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "e instruye al ignorante. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La voluntad del Señor es pura",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y eternamente estable;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "los mandamientos del Señor son verdaderos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y enteramente justos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Aunque tu siervo vigila",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "para guardarlos con cuidado,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "¿quién conoce sus faltas?",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Absuélveme de lo que se me oculta. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Preserva a tu siervo de la arrogancia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "para que no me domine:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "así quedaré libre e inocente",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "del gran pecado. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

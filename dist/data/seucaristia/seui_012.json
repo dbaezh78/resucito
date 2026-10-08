@@ -1,0 +1,109 @@
+{
+  "id": "seui_012",
+  "title": "Sábado de la 2ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 46, 2-3. 6-7. 8-9 (R.: 6)",
+  "salmo": "Salmo responsorial: Salmo 46, 2-3. 6-7. 8-9 (R.: 6)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5026,
+  "respuesta": "R. Dios asciende entre aclamaciones; el Señor, al son de trompetas.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Pueblos todos, batid palmas,",
+      "aclamad a Dios con gritos de júbilo;",
+      "porque el Señor es sublime y terrible,",
+      "emperador de toda la tierra. R."
+    ],
+    [
+      "Dios asciende entre aclamaciones;",
+      "el Señor, al son de trompetas:",
+      "tocad para Dios, tocad,",
+      "tocad para nuestro Rey, tocad. R."
+    ],
+    [
+      "Porque Dios es el rey del mundo:",
+      "tocad con maestría.",
+      "Dios reina sobre las naciones,",
+      "Dios se sienta en su trono sagrado. R."
+    ]
+  ],
+  "textoCompleto": "Pueblos todos, batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nDios asciende entre aclamaciones;\nel Señor, al son de trompetas:\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.\n\nPorque Dios es el rey del mundo:\ntocad con maestría.\nDios reina sobre las naciones,\nDios se sienta en su trono sagrado. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 2 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 46 2 3 6 7 8 9 r 6 semana 2 semana ii sabado 2 ii r dios asciende entre aclamaciones el senor al son de trompetas pueblos todos batid palmas aclamad a dios con gritos de jubilo porque el senor es sublime y terrible emperador de toda la tierra r dios asciende entre aclamaciones el senor al son de trompetas tocad para dios tocad tocad para nuestro rey tocad r porque dios es el rey del mundo tocad con maestria dios reina sobre las naciones dios se sienta en su trono sagrado r",
+  "lizq": [
+    {
+      "line": "R. Dios asciende entre aclamaciones;",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "el Señor, al son de trompetas.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pueblos todos, batid palmas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "aclamad a Dios con gritos de júbilo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque el Señor es sublime y terrible,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "emperador de toda la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios asciende entre aclamaciones;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el Señor, al son de trompetas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tocad para Dios, tocad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tocad para nuestro Rey, tocad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque Dios es el rey del mundo:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tocad con maestría.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios reina sobre las naciones,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios se sienta en su trono sagrado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

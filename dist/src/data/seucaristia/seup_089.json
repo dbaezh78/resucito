@@ -1,0 +1,121 @@
+{
+  "id": "seup_089",
+  "title": "Viernes de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Isaías 38, 10. 11. 12abcd. 16 (R.: 17b)",
+  "salmo": "Interleccional: Isaías 38, 10. 11. 12abcd. 16 (R.: 17b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5155,
+  "respuesta": "R. Señor, detuviste mi alma ante la tumba vacía.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Yo pensé: «En medio de mis días",
+      "tengo que marchar hacia las puertas del abismo;",
+      "me privan del resto de mis años». R."
+    ],
+    [
+      "Yo pensé: «Ya no veré más al Señor",
+      "en la tierra de los vivos,",
+      "ya no miraré a los hombres",
+      "entre los habitantes del mundo». R."
+    ],
+    [
+      "«Levantan y enrollan mi vida",
+      "como una tienda de pastores.",
+      "Como un tejedor, devanaba yo mi vida,",
+      "y me cortan la trama». R."
+    ],
+    [
+      "Los que Dios protege viven,",
+      "y entre ellos vivirá mi espíritu;",
+      "me has curado, me has hecho revivir. R."
+    ]
+  ],
+  "textoCompleto": "Yo pensé: «En medio de mis días\ntengo que marchar hacia las puertas del abismo;\nme privan del resto de mis años». R.\n\nYo pensé: «Ya no veré más al Señor\nen la tierra de los vivos,\nya no miraré a los hombres\nentre los habitantes del mundo». R.\n\n«Levantan y enrollan mi vida\ncomo una tienda de pastores.\nComo un tejedor, devanaba yo mi vida,\ny me cortan la trama». R.\n\nLos que Dios protege viven,\ny entre ellos vivirá mi espíritu;\nme has curado, me has hecho revivir. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 15 semana de tiempo ordinario ano par tiempo ordinario viernes interleccional isaias 38 10 11 12abcd 16 r 17b semana 15 semana xv viernes 15 xv r senor detuviste mi alma ante la tumba vacia yo pense en medio de mis dias tengo que marchar hacia las puertas del abismo me privan del resto de mis anos r yo pense ya no vere mas al senor en la tierra de los vivos ya no mirare a los hombres entre los habitantes del mundo r levantan y enrollan mi vida como una tienda de pastores como un tejedor devanaba yo mi vida y me cortan la trama r los que dios protege viven y entre ellos vivira mi espiritu me has curado me has hecho revivir r",
+  "lizq": [
+    {
+      "line": "R. Señor, detuviste mi alma ante la tumba vacía.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo pensé: «En medio de mis días",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tengo que marchar hacia las puertas del abismo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me privan del resto de mis años». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo pensé: «Ya no veré más al Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en la tierra de los vivos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ya no miraré a los hombres",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "entre los habitantes del mundo». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Levantan y enrollan mi vida",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "como una tienda de pastores.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Como un tejedor, devanaba yo mi vida,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me cortan la trama». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los que Dios protege viven,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y entre ellos vivirá mi espíritu;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me has curado, me has hecho revivir. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

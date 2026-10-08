@@ -1,0 +1,117 @@
+{
+  "id": "seui_082",
+  "title": "Jueves de la 14ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 14ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 104, 16-17. 18-19. 20-21 (R.: 5a)",
+  "salmo": "Salmo responsorial: Salmo 104, 16-17. 18-19. 20-21 (R.: 5a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5144,
+  "respuesta": "R. Recordad las maravillas que hizo el Señor.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Llamó al hambre sobre aquella tierra:",
+      "cortando el sustento del pan;",
+      "por delante había enviado a un hombre,",
+      "a José, vendido como esclavo. R."
+    ],
+    [
+      "Le trabaron los pies con grillos,",
+      "le metieron el cuello en la argolla,",
+      "hasta que se cumplió su predicción,",
+      "y la palabra del Señor lo acreditó. R."
+    ],
+    [
+      "El rey lo mandó desatar,",
+      "el Señor de pueblos le abrió la prisión,",
+      "lo nombró administrador de su casa,",
+      "señor de todas sus posesiones. R."
+    ]
+  ],
+  "textoCompleto": "Llamó al hambre sobre aquella tierra:\ncortando el sustento del pan;\npor delante había enviado a un hombre,\na José, vendido como esclavo. R.\n\nLe trabaron los pies con grillos,\nle metieron el cuello en la argolla,\nhasta que se cumplió su predicción,\ny la palabra del Señor lo acreditó. R.\n\nEl rey lo mandó desatar,\nel Señor de pueblos le abrió la prisión,\nlo nombró administrador de su casa,\nseñor de todas sus posesiones. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 14 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 104 16 17 18 19 20 21 r 5a semana 14 semana xiv jueves 14 xiv r recordad las maravillas que hizo el senor r aleluya llamo al hambre sobre aquella tierra cortando el sustento del pan por delante habia enviado a un hombre a jose vendido como esclavo r le trabaron los pies con grillos le metieron el cuello en la argolla hasta que se cumplio su prediccion y la palabra del senor lo acredito r el rey lo mando desatar el senor de pueblos le abrio la prision lo nombro administrador de su casa senor de todas sus posesiones r",
+  "lizq": [
+    {
+      "line": "R. Recordad las maravillas que hizo el Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Llamó al hambre sobre aquella tierra:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cortando el sustento del pan;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por delante había enviado a un hombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a José, vendido como esclavo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Le trabaron los pies con grillos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "le metieron el cuello en la argolla,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hasta que se cumplió su predicción,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y la palabra del Señor lo acreditó. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El rey lo mandó desatar,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el Señor de pueblos le abrió la prisión,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lo nombró administrador de su casa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "señor de todas sus posesiones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "seui_158",
+  "title": "Martes de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 27ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 129, 1-2. 3-4. 7bc-8 (R.: 3)",
+  "salmo": "Salmo responsorial: Salmo 129, 1-2. 3-4. 7bc-8 (R.: 3)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5272,
+  "respuesta": "R. Si llevas cuentas de los delitos, Señor, ¿quién podrá resistir?",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Desde lo hondo a ti grito, Señor;",
+      "Señor, escucha mi voz;",
+      "estén tus oídos atentos",
+      "a la voz de mi súplica. R."
+    ],
+    [
+      "Si llevas cuentas de los delitos, Señor,",
+      "¿quién podrá resistir?",
+      "Pero de ti procede el perdón,",
+      "y así infundes respeto. R."
+    ],
+    [
+      "Porque del Señor viene la misericordia,",
+      "la redención copiosa;",
+      "y él redimirá a Israel",
+      "de todos sus delitos. R."
+    ]
+  ],
+  "textoCompleto": "Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuentas de los delitos, Señor,\n¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nPorque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 27 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 129 1 2 3 4 7bc 8 r 3 semana 27 semana xxvii martes 27 xxvii r si llevas cuentas de los delitos senor quien podra resistir desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuentas de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r",
+  "lizq": [
+    {
+      "line": "R. Si llevas cuentas de los delitos,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "Señor, ¿quién podrá resistir?",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Desde lo hondo a ti grito, Señor;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor, escucha mi voz;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "estén tus oídos atentos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a la voz de mi súplica. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Si llevas cuentas de los delitos, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿quién podrá resistir?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Pero de ti procede el perdón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y así infundes respeto. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque del Señor viene la misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la redención copiosa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y él redimirá a Israel",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de todos sus delitos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

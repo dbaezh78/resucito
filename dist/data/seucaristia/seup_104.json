@@ -1,0 +1,139 @@
+{
+  "id": "seup_104",
+  "title": "Martes de la 18ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 18ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 101, 16-18. 19-21. 29 y 22-23 (R.: cf. 17)",
+  "salmo": "Salmo responsorial: Salmo 101, 16-18. 19-21. 29 y 22-23 (R.: cf. 17)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5182,
+  "respuesta": "R. El Señor reconstruyó Sión, y apareció en su gloria.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Los gentiles temerán tu nombre,",
+      "los reyes del mundo, tu gloria.",
+      "Cuando el Señor reconstruya Sión,",
+      "y aparezca su gloria,",
+      "y se vuelva a las súplicas de los indefensos,",
+      "y no desprecie sus peticiones. R."
+    ],
+    [
+      "Quede esto escrito para la generación futura,",
+      "y el pueblo que será creado alabará al Señor.",
+      "Que el Señor ha mirado desde su excelso santuario,",
+      "desde el cielo se ha fijado en la tierra,",
+      "para escuchar los gemidos de los cautivos",
+      "y librar a los condenados a muerte. R."
+    ],
+    [
+      "Los hijos de tus siervos vivirán seguros,",
+      "su linaje durará en tu presencia.",
+      "Para anunciar en Sión el nombre del Señor,",
+      "y su alabanza en Jerusalén,",
+      "cuando se reúnan unánimes los pueblos",
+      "y los reyes para dar culto al Señor. R."
+    ]
+  ],
+  "textoCompleto": "Los gentiles temerán tu nombre,\nlos reyes del mundo, tu gloria.\nCuando el Señor reconstruya Sión,\ny aparezca su gloria,\ny se vuelva a las súplicas de los indefensos,\ny no desprecie sus peticiones. R.\n\nQuede esto escrito para la generación futura,\ny el pueblo que será creado alabará al Señor.\nQue el Señor ha mirado desde su excelso santuario,\ndesde el cielo se ha fijado en la tierra,\npara escuchar los gemidos de los cautivos\ny librar a los condenados a muerte. R.\n\nLos hijos de tus siervos vivirán seguros,\nsu linaje durará en tu presencia.\nPara anunciar en Sión el nombre del Señor,\ny su alabanza en Jerusalén,\ncuando se reúnan unánimes los pueblos\ny los reyes para dar culto al Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 18 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 101 16 18 19 21 29 y 22 23 r cf 17 semana 18 semana xviii martes 18 xviii r el senor reconstruyo sion y aparecio en su gloria los gentiles temeran tu nombre los reyes del mundo tu gloria cuando el senor reconstruya sion y aparezca su gloria y se vuelva a las suplicas de los indefensos y no desprecie sus peticiones r quede esto escrito para la generacion futura y el pueblo que sera creado alabara al senor que el senor ha mirado desde su excelso santuario desde el cielo se ha fijado en la tierra para escuchar los gemidos de los cautivos y librar a los condenados a muerte r los hijos de tus siervos viviran seguros su linaje durara en tu presencia para anunciar en sion el nombre del senor y su alabanza en jerusalen cuando se reunan unanimes los pueblos y los reyes para dar culto al senor r",
+  "lizq": [
+    {
+      "line": "R. El Señor reconstruyó Sión,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "y apareció en su gloria.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los gentiles temerán tu nombre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los reyes del mundo, tu gloria.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cuando el Señor reconstruya Sión,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y aparezca su gloria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y se vuelva a las súplicas de los indefensos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no desprecie sus peticiones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Quede esto escrito para la generación futura,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y el pueblo que será creado alabará al Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor ha mirado desde su excelso santuario,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "desde el cielo se ha fijado en la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para escuchar los gemidos de los cautivos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y librar a los condenados a muerte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los hijos de tus siervos vivirán seguros,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su linaje durará en tu presencia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Para anunciar en Sión el nombre del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y su alabanza en Jerusalén,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando se reúnan unánimes los pueblos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y los reyes para dar culto al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

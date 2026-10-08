@@ -1,0 +1,120 @@
+{
+  "id": "seup_151",
+  "title": "Lunes de la 26ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 26ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 16, 1. 2-3. 6-7 (R.: 6b)",
+  "salmo": "Salmo responsorial: Salmo 16, 1. 2-3. 6-7 (R.: 6b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5261,
+  "respuesta": "R. Inclina el oído y escucha mis palabras.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, escucha mi apelación,",
+      "atiende a mis clamores,",
+      "presta oído a mi súplica,",
+      "que en mis labios no hay engaño. R."
+    ],
+    [
+      "Emane de ti la sentencia,",
+      "miren tus ojos la rectitud.",
+      "Aunque sondees mi corazón,",
+      "visitándolo de noche,",
+      "aunque me pruebes al fuego,",
+      "no encontrarás malicia en mí. R."
+    ],
+    [
+      "Yo te invoco porque tú me respondes, Dios mío;",
+      "inclina el oído y escucha mis palabras.",
+      "Muestra las maravillas de tu misericordia,",
+      "tú que salvas de los adversarios",
+      "a quien se refugia a tu derecha. R."
+    ]
+  ],
+  "textoCompleto": "Señor, escucha mi apelación,\natiende a mis clamores,\npresta oído a mi súplica,\nque en mis labios no hay engaño. R.\n\nEmane de ti la sentencia,\nmiren tus ojos la rectitud.\nAunque sondees mi corazón,\nvisitándolo de noche,\naunque me pruebes al fuego,\nno encontrarás malicia en mí. R.\n\nYo te invoco porque tú me respondes, Dios mío;\ninclina el oído y escucha mis palabras.\nMuestra las maravillas de tu misericordia,\ntú que salvas de los adversarios\na quien se refugia a tu derecha. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 26 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 16 1 2 3 6 7 r 6b semana 26 semana xxvi lunes 26 xxvi r inclina el oido y escucha mis palabras senor escucha mi apelacion atiende a mis clamores presta oido a mi suplica que en mis labios no hay engano r emane de ti la sentencia miren tus ojos la rectitud aunque sondees mi corazon visitandolo de noche aunque me pruebes al fuego no encontraras malicia en mi r yo te invoco porque tu me respondes dios mio inclina el oido y escucha mis palabras muestra las maravillas de tu misericordia tu que salvas de los adversarios a quien se refugia a tu derecha r",
+  "lizq": [
+    {
+      "line": "R. Inclina el oído y escucha mis palabras.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, escucha mi apelación,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "atiende a mis clamores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "presta oído a mi súplica,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que en mis labios no hay engaño. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Emane de ti la sentencia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "miren tus ojos la rectitud.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Aunque sondees mi corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "visitándolo de noche,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aunque me pruebes al fuego,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no encontrarás malicia en mí. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo te invoco porque tú me respondes, Dios mío;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "inclina el oído y escucha mis palabras.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Muestra las maravillas de tu misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú que salvas de los adversarios",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a quien se refugia a tu derecha. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

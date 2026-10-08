@@ -1,0 +1,105 @@
+{
+  "id": "seui_074",
+  "title": "Martes de la 13ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 13ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 25. 2-3. 9-10. 11-12 (R.: 3a)",
+  "salmo": "Salmo responsorial: Salmo 25. 2-3. 9-10. 11-12 (R.: 3a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5132,
+  "respuesta": "R. Tengo ante los ojos, Señor, tu bondad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Escrútame, Señor, ponme a prueba,",
+      "sondea mis entrañas y mi corazón,",
+      "porque tengo ante los ojos tu bondad,",
+      "y camino en tu verdad. R."
+    ],
+    [
+      "No arrebates mi alma con los pecadores,",
+      "ni mi vida con los sanguinarios,",
+      "que en su izquierda llevan infamias,",
+      "y su derecha está llena de sobornos. R."
+    ],
+    [
+      "Yo, en cambio, camino en la integridad;",
+      "sálvame, ten misericordia de mí.",
+      "Mi pie se mantiene en el camino llano;",
+      "en la asamblea bendeciré al Señor. R."
+    ]
+  ],
+  "textoCompleto": "Escrútame, Señor, ponme a prueba,\nsondea mis entrañas y mi corazón,\nporque tengo ante los ojos tu bondad,\ny camino en tu verdad. R.\n\nNo arrebates mi alma con los pecadores,\nni mi vida con los sanguinarios,\nque en su izquierda llevan infamias,\ny su derecha está llena de sobornos. R.\n\nYo, en cambio, camino en la integridad;\nsálvame, ten misericordia de mí.\nMi pie se mantiene en el camino llano;\nen la asamblea bendeciré al Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 13 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 25 2 3 9 10 11 12 r 3a semana 13 semana xiii martes 13 xiii r tengo ante los ojos senor tu bondad escrutame senor ponme a prueba sondea mis entranas y mi corazon porque tengo ante los ojos tu bondad y camino en tu verdad r no arrebates mi alma con los pecadores ni mi vida con los sanguinarios que en su izquierda llevan infamias y su derecha esta llena de sobornos r yo en cambio camino en la integridad salvame ten misericordia de mi mi pie se mantiene en el camino llano en la asamblea bendecire al senor r",
+  "lizq": [
+    {
+      "line": "R. Tengo ante los ojos, Señor, tu bondad.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Escrútame, Señor, ponme a prueba,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sondea mis entrañas y mi corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque tengo ante los ojos tu bondad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y camino en tu verdad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No arrebates mi alma con los pecadores,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni mi vida con los sanguinarios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que en su izquierda llevan infamias,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y su derecha está llena de sobornos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo, en cambio, camino en la integridad;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sálvame, ten misericordia de mí.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mi pie se mantiene en el camino llano;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en la asamblea bendeciré al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

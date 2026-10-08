@@ -1,0 +1,115 @@
+{
+  "id": "seup_102",
+  "title": "Sábado de la 17ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 17ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 68, 15-16. 30-31. 33-34 (R.: cf. 14)",
+  "salmo": "Salmo responsorial: Salmo 68, 15-16. 30-31. 33-34 (R.: cf. 14)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5176,
+  "respuesta": "R. Escúchame, Señor, el día de tu favor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Arráncame del cieno, que no me hunda;",
+      "líbrame de los que me aborrecen,",
+      "y de las aguas sin fondo.",
+      "Que no me arrastre la corriente,",
+      "que no me trague el torbellino,",
+      "que no se cierre la poza sobre mí. R."
+    ],
+    [
+      "Yo soy un pobre malherido;",
+      "Dios mío, tu salvación me levante.",
+      "Alabaré el nombre de Dios con cantos,",
+      "proclamaré su grandeza con acción de gracias. R."
+    ],
+    [
+      "Miradlo, los humildes, y alegraos,",
+      "buscad al Señor, y revivirá vuestro corazón.",
+      "Que el Señor escucha a sus pobres,",
+      "no desprecia a sus cautivos. R."
+    ]
+  ],
+  "textoCompleto": "Arráncame del cieno, que no me hunda;\nlíbrame de los que me aborrecen,\ny de las aguas sin fondo.\nQue no me arrastre la corriente,\nque no me trague el torbellino,\nque no se cierre la poza sobre mí. R.\n\nYo soy un pobre malherido;\nDios mío, tu salvación me levante.\nAlabaré el nombre de Dios con cantos,\nproclamaré su grandeza con acción de gracias. R.\n\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y revivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 17 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 68 15 16 30 31 33 34 r cf 14 semana 17 semana xvii sabado 17 xvii r escuchame senor el dia de tu favor arrancame del cieno que no me hunda librame de los que me aborrecen y de las aguas sin fondo que no me arrastre la corriente que no me trague el torbellino que no se cierre la poza sobre mi r yo soy un pobre malherido dios mio tu salvacion me levante alabare el nombre de dios con cantos proclamare su grandeza con accion de gracias r miradlo los humildes y alegraos buscad al senor y revivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos r",
+  "lizq": [
+    {
+      "line": "R. Escúchame, Señor, el día de tu favor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Arráncame del cieno, que no me hunda;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "líbrame de los que me aborrecen,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y de las aguas sin fondo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que no me arrastre la corriente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que no me trague el torbellino,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que no se cierre la poza sobre mí. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo soy un pobre malherido;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios mío, tu salvación me levante.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alabaré el nombre de Dios con cantos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "proclamaré su grandeza con acción de gracias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Miradlo, los humildes, y alegraos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "buscad al Señor, y revivirá vuestro corazón.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor escucha a sus pobres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no desprecia a sus cautivos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

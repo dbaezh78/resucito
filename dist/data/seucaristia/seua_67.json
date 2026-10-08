@@ -8,15 +8,31 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 523,
-  "respuesta": "R. Ojalá escuchéis hoy la voz del Señor:",
+  "respuesta": "R. Ojalá escuchéis hoy la voz del Señor: «No endurezcáis vuestro corazón».",
   "respuestaOpcional": "",
   "estrofas": [
-    "«No endurezcáis vuestro corazón».",
-    "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos. R.",
-    "Entrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.",
-    "Ojalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny me tentaron, aunque habían visto mis obras». R."
+    [
+      "Venid, aclamemos al Señor,",
+      "demos vítores a la Roca que nos salva;",
+      "entremos a su presencia dándole gracias,",
+      "aclamándolo con cantos. R."
+    ],
+    [
+      "Entrad, postrémonos por tierra,",
+      "bendiciendo al Señor, creador nuestro.",
+      "Porque él es nuestro Dios,",
+      "y nosotros su pueblo,",
+      "el rebaño que él guía. R."
+    ],
+    [
+      "Ojalá escuchéis hoy su voz:",
+      "«No endurezcáis el corazón como en Meribá,",
+      "como el día de Masá en el desierto;",
+      "cuando vuestros padres me pusieron a prueba",
+      "y me tentaron, aunque habían visto mis obras». R."
+    ]
   ],
-  "textoCompleto": "«No endurezcáis vuestro corazón».\n\nVenid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos. R.\n\nEntrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny me tentaron, aunque habían visto mis obras». R.",
+  "textoCompleto": "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos. R.\n\nEntrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny me tentaron, aunque habían visto mis obras». R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,84 +41,79 @@
   "lizq": [
     {
       "line": "R. Ojalá escuchéis hoy la voz del Señor:",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "«No endurezcáis vuestro corazón».",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Venid, aclamemos al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "demos vítores a la Roca que nos salva;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "entremos a su presencia dándole gracias,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "aclamándolo con cantos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Entrad, postrémonos por tierra,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "bendiciendo al Señor, creador nuestro.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Porque él es nuestro Dios,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y nosotros su pueblo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el rebaño que él guía. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Ojalá escuchéis hoy su voz:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "«No endurezcáis el corazón como en Meribá,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "como el día de Masá en el desierto;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "cuando vuestros padres me pusieron a prueba",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y me tentaron, aunque habían visto mis obras». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -11,10 +11,30 @@
   "respuesta": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.",
-    "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.",
-    "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
-    "El Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R."
+    [
+      "Te ensalzaré, Dios mío, mi rey;",
+      "bendeciré tu nombre por siempre jamás.",
+      "Día tras día, te bendeciré",
+      "y alabaré tu nombre por siempre jamás. R."
+    ],
+    [
+      "El Señor es clemente y misericordioso,",
+      "lento a la cólera y rico en piedad;",
+      "el Señor es bueno con todos,",
+      "es cariñoso con todas sus criaturas. R."
+    ],
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ],
+    [
+      "El Señor es fiel a sus palabras,",
+      "bondadoso en todas sus acciones.",
+      "El Señor sostiene a los que van a caer,",
+      "endereza a los que ya se doblan. R."
+    ]
   ],
   "textoCompleto": "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Te ensalzaré, Dios mío, mi rey;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "bendeciré tu nombre por siempre jamás.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Día tras día, te bendeciré",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y alabaré tu nombre por siempre jamás. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es clemente y misericordioso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "lento a la cólera y rico en piedad;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el Señor es bueno con todos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "es cariñoso con todas sus criaturas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que todas tus criaturas te den gracias, Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "que te bendigan tus fieles;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que proclamen la gloria de tu reinado,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que hablen de tus hazañas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es fiel a sus palabras,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "bondadoso en todas sus acciones.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "El Señor sostiene a los que van a caer,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "endereza a los que ya se doblan. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

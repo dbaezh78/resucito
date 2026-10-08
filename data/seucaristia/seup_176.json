@@ -1,0 +1,110 @@
+{
+  "id": "seup_176",
+  "title": "Martes de la 30ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 30ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1a)",
+  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5302,
+  "respuesta": "R. Dichosos los que temen al Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el que teme al Señor",
+      "y sigue sus caminos.",
+      "Comerás del fruto de tu trabajo,",
+      "serás dichoso, te irá bien. R."
+    ],
+    [
+      "Tu mujer, como parra fecunda,",
+      "en medio de tu casa;",
+      "tus hijos, como renuevos de olivo,",
+      "alrededor de tu mesa. R."
+    ],
+    [
+      "Esta es la bendición del hombre",
+      "que teme al Señor.",
+      "Que el Señor te bendiga desde Sión,",
+      "que veas la prosperidad de Jerusalén",
+      "todos los días de tu vida. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nEsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 30 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 127 1 2 3 4 5 r cf 1a semana 30 semana xxx martes 30 xxx r dichosos los que temen al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
+  "lizq": [
+    {
+      "line": "R. Dichosos los que temen al Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el que teme al Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y sigue sus caminos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Comerás del fruto de tu trabajo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "serás dichoso, te irá bien. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tu mujer, como parra fecunda,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en medio de tu casa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tus hijos, como renuevos de olivo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alrededor de tu mesa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Esta es la bendición del hombre",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que teme al Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor te bendiga desde Sión,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que veas la prosperidad de Jerusalén",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "todos los días de tu vida. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": "seuf_072",
+  "title": "Martes de la 5ª semana de Cuaresma",
+  "celebracion": "Martes de la 5ª semana de Cuaresma",
+  "subtitle": "Salmo 101, 2-3. 16-18. 19-21 (R.: 2)",
+  "salmo": "Salmo 101, 2-3. 16-18. 19-21 (R.: 2)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Martes",
+  "orden": 352,
+  "respuesta": "R. Señor, escucha mi oración, que mi grito llegue hasta ti.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, escucha mi oración,",
+      "que mi grito llegue hasta ti;",
+      "no me escondas tu rostro",
+      "el día de la desgracia.",
+      "Inclina tu oído hacia mí;",
+      "cuando te invoco, escúchame en seguida. R."
+    ],
+    [
+      "Los gentiles temerán tu nombre,",
+      "los reyes del mundo, tu gloria.",
+      "Cuando el Señor reconstruya Sión",
+      "y aparezca en su gloria,",
+      "y se vuelva a las súplicas de los indefensos,",
+      "y no desprecie sus peticiones. R."
+    ],
+    [
+      "Quede esto escrito para la generación futura,",
+      "y el pueblo que será creado alabará al Señor.",
+      "Que el Señor ha mirado desde su excelso santuario,",
+      "desde el cielo se ha fijado en la tierra,",
+      "para escuchar los gemidos de los cautivos",
+      "y librar a los condenados a muerte. R."
+    ]
+  ],
+  "textoCompleto": "Señor, escucha mi oración,\nque mi grito llegue hasta ti;\nno me escondas tu rostro\nel día de la desgracia.\nInclina tu oído hacia mí;\ncuando te invoco, escúchame en seguida. R.\n\nLos gentiles temerán tu nombre,\nlos reyes del mundo, tu gloria.\nCuando el Señor reconstruya Sión\ny aparezca en su gloria,\ny se vuelva a las súplicas de los indefensos,\ny no desprecie sus peticiones. R.\n\nQuede esto escrito para la generación futura,\ny el pueblo que será creado alabará al Señor.\nQue el Señor ha mirado desde su excelso santuario,\ndesde el cielo se ha fijado en la tierra,\npara escuchar los gemidos de los cautivos\ny librar a los condenados a muerte. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 5 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma martes salmo 101 2 3 16 18 19 21 r 2 semana 5 semana v martes feria r senor escucha mi oracion que mi grito llegue hasta ti senor escucha mi oracion que mi grito llegue hasta ti no me escondas tu rostro el dia de la desgracia inclina tu oido hacia mi cuando te invoco escuchame en seguida r los gentiles temeran tu nombre los reyes del mundo tu gloria cuando el senor reconstruya sion y aparezca en su gloria y se vuelva a las suplicas de los indefensos y no desprecie sus peticiones r quede esto escrito para la generacion futura y el pueblo que sera creado alabara al senor que el senor ha mirado desde su excelso santuario desde el cielo se ha fijado en la tierra para escuchar los gemidos de los cautivos y librar a los condenados a muerte r",
+  "lizq": [
+    {
+      "line": "R. Señor, escucha mi oración,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "que mi grito llegue hasta ti.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, escucha mi oración,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que mi grito llegue hasta ti;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no me escondas tu rostro",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el día de la desgracia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Inclina tu oído hacia mí;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando te invoco, escúchame en seguida. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los gentiles temerán tu nombre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los reyes del mundo, tu gloria.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cuando el Señor reconstruya Sión",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y aparezca en su gloria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y se vuelva a las súplicas de los indefensos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no desprecie sus peticiones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Quede esto escrito para la generación futura,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y el pueblo que será creado alabará al Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor ha mirado desde su excelso santuario,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "desde el cielo se ha fijado en la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para escuchar los gemidos de los cautivos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y librar a los condenados a muerte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

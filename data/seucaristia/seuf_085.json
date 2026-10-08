@@ -1,0 +1,153 @@
+{
+  "id": "seuf_085",
+  "title": "Viernes de la octava de Pascua",
+  "celebracion": "Viernes de la octava de Pascua",
+  "subtitle": "Salmo 117, 1-2 y 4. 22-24. 25-27a (R.: 22)",
+  "salmo": "Salmo 117, 1-2 y 4. 22-24. 25-27a (R.: 22)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Viernes",
+  "orden": 405,
+  "respuesta": "R. La piedra que desecharon los arquitectos es ahora la piedra angular.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Dad gracias al Señor porque es bueno,",
+      "porque es eterna su misericordia.",
+      "Diga la casa de Israel:",
+      "eterna es su misericordia.",
+      "Digan los fieles del Señor:",
+      "eterna es su misericordia. R."
+    ],
+    [
+      "La piedra que desecharon los arquitectos",
+      "es ahora la piedra angular.",
+      "Es el Señor quien lo ha hecho,",
+      "ha sido un milagro patente.",
+      "Éste es el día en que actuó el Señor:",
+      "sea nuestra alegría y nuestro gozo. R."
+    ],
+    [
+      "Señor, danos la salvación;",
+      "Señor, danos prosperidad.",
+      "Bendito el que viene en nombre del Señor,",
+      "os bendecimos desde la casa del Señor;",
+      "el Señor es Dios, él nos ilumina. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.\n\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R.\n\nSeñor, danos la salvación;\nSeñor, danos prosperidad.\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor;\nel Señor es Dios, él nos ilumina. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la octava de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 117 1 2 y 4 22 24 25 27a r 22 viernes feria r la piedra que desecharon los arquitectos es ahora la piedra angular r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia digan los fieles del senor eterna es su misericordia r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r senor danos la salvacion senor danos prosperidad bendito el que viene en nombre del senor os bendecimos desde la casa del senor el senor es dios el nos ilumina r",
+  "lizq": [
+    {
+      "line": "R. La piedra que desecharon los arquitectos",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Diga la casa de Israel:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "eterna es su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Digan los fieles del Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "eterna es su misericordia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La piedra que desecharon los arquitectos",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Es el Señor quien lo ha hecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ha sido un milagro patente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Éste es el día en que actuó el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sea nuestra alegría y nuestro gozo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, danos la salvación;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor, danos prosperidad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Bendito el que viene en nombre del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "os bendecimos desde la casa del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor es Dios, él nos ilumina. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

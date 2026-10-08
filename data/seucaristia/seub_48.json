@@ -8,15 +8,27 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 506,
-  "respuesta": "R. Tú eres mi refugio,",
+  "respuesta": "R. Tú eres mi refugio, me rodeas de cantos de liberación.",
   "respuestaOpcional": "",
   "estrofas": [
-    "me rodeas de cantos de liberación.",
-    "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.",
-    "Había pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»\ny tú perdonaste mi culpa y mi pecado. R.",
-    "Alegraos, justos, y gozad con el Señor;\naclamadlo, los de corazón sincero. R."
+    [
+      "Dichoso el que está absuelto de su culpa,",
+      "a quien le han sepultado su pecado;",
+      "dichoso el hombre a quien el Señor",
+      "no le apunta el delito. R."
+    ],
+    [
+      "Había pecado, lo reconocí,",
+      "no te encubrí mi delito;",
+      "propuse: «Confesaré al Señor mi culpa»",
+      "y tú perdonaste mi culpa y mi pecado. R."
+    ],
+    [
+      "Alegraos, justos, y gozad con el Señor;",
+      "aclamadlo, los de corazón sincero. R."
+    ]
   ],
-  "textoCompleto": "me rodeas de cantos de liberación.\n\nDichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»\ny tú perdonaste mi culpa y mi pecado. R.\n\nAlegraos, justos, y gozad con el Señor;\naclamadlo, los de corazón sincero. R.",
+  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»\ny tú perdonaste mi culpa y mi pecado. R.\n\nAlegraos, justos, y gozad con el Señor;\naclamadlo, los de corazón sincero. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,68 +37,63 @@
   "lizq": [
     {
       "line": "R. Tú eres mi refugio,",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "me rodeas de cantos de liberación.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dichoso el que está absuelto de su culpa,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "a quien le han sepultado su pecado;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "dichoso el hombre a quien el Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no le apunta el delito. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Había pecado, lo reconocí,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "no te encubrí mi delito;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "propuse: «Confesaré al Señor mi culpa»",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y tú perdonaste mi culpa y mi pecado. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Alegraos, justos, y gozad con el Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "aclamadlo, los de corazón sincero. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

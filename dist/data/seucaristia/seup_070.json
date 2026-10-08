@@ -1,0 +1,166 @@
+{
+  "id": "seup_070",
+  "title": "Jueves de la 12ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 12ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 78, 1-2. 3-5. 8. 9 (R.: 9bc)",
+  "salmo": "Salmo responsorial: Salmo 78, 1-2. 3-5. 8. 9 (R.: 9bc)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5124,
+  "respuesta": "R. Líbranos, Señor, por el honor de tu nombre.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dios mío, los gentiles han entrado en tu heredad,",
+      "han profanado tu santo templo,",
+      "han reducido Jerusalén a ruinas.",
+      "Echaron los cadáveres de tus siervos",
+      "en pasto a las aves del cielo,",
+      "y la carne de tus fieles",
+      "a las fieras de la tierra. R."
+    ],
+    [
+      "Derramaron su sangre como agua",
+      "en torno a Jerusalén,",
+      "y nadie la enterraba.",
+      "Fuimos el escarnio de nuestros vecinos,",
+      "la irrisión y la burla de los que nos rodean.",
+      "¿Hasta cuándo, Señor?",
+      "¿Vas a estar siempre enojado?",
+      "¿Arderá como fuego tu cólera? R."
+    ],
+    [
+      "No recuerdes contra nosotros",
+      "las culpas de nuestros padres;",
+      "que tu compasión nos alcance pronto,",
+      "pues estamos agotados. R."
+    ],
+    [
+      "Socórrenos, Dios, salvador nuestro,",
+      "por el honor de tu nombre;",
+      "líbranos y perdona nuestros pecados",
+      "a causa de tu nombre. R."
+    ]
+  ],
+  "textoCompleto": "Dios mío, los gentiles han entrado en tu heredad,\nhan profanado tu santo templo,\nhan reducido Jerusalén a ruinas.\nEcharon los cadáveres de tus siervos\nen pasto a las aves del cielo,\ny la carne de tus fieles\na las fieras de la tierra. R.\n\nDerramaron su sangre como agua\nen torno a Jerusalén,\ny nadie la enterraba.\nFuimos el escarnio de nuestros vecinos,\nla irrisión y la burla de los que nos rodean.\n¿Hasta cuándo, Señor?\n¿Vas a estar siempre enojado?\n¿Arderá como fuego tu cólera? R.\n\nNo recuerdes contra nosotros\nlas culpas de nuestros padres;\nque tu compasión nos alcance pronto,\npues estamos agotados. R.\n\nSocórrenos, Dios, salvador nuestro,\npor el honor de tu nombre;\nlíbranos y perdona nuestros pecados\na causa de tu nombre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 12 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 78 1 2 3 5 8 9 r 9bc semana 12 semana xii jueves 12 xii r libranos senor por el honor de tu nombre dios mio los gentiles han entrado en tu heredad han profanado tu santo templo han reducido jerusalen a ruinas echaron los cadaveres de tus siervos en pasto a las aves del cielo y la carne de tus fieles a las fieras de la tierra r derramaron su sangre como agua en torno a jerusalen y nadie la enterraba fuimos el escarnio de nuestros vecinos la irrision y la burla de los que nos rodean hasta cuando senor vas a estar siempre enojado ardera como fuego tu colera r no recuerdes contra nosotros las culpas de nuestros padres que tu compasion nos alcance pronto pues estamos agotados r socorrenos dios salvador nuestro por el honor de tu nombre libranos y perdona nuestros pecados a causa de tu nombre r",
+  "lizq": [
+    {
+      "line": "R. Líbranos, Señor, por el honor de tu nombre.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios mío, los gentiles han entrado en tu heredad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "han profanado tu santo templo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "han reducido Jerusalén a ruinas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Echaron los cadáveres de tus siervos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en pasto a las aves del cielo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y la carne de tus fieles",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a las fieras de la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Derramaron su sangre como agua",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en torno a Jerusalén,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y nadie la enterraba.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Fuimos el escarnio de nuestros vecinos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la irrisión y la burla de los que nos rodean.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Hasta cuándo, Señor?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Vas a estar siempre enojado?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Arderá como fuego tu cólera? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No recuerdes contra nosotros",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "las culpas de nuestros padres;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tu compasión nos alcance pronto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pues estamos agotados. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Socórrenos, Dios, salvador nuestro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por el honor de tu nombre;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "líbranos y perdona nuestros pecados",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a causa de tu nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

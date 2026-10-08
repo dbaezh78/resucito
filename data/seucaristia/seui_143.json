@@ -1,0 +1,145 @@
+{
+  "id": "seui_143",
+  "title": "Viernes de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 48, 6-7. 8-10. 17-18. 19-20 (R.: Mt 5,3)",
+  "salmo": "Salmo responsorial: Salmo 48, 6-7. 8-10. 17-18. 19-20 (R.: Mt 5,3)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5245,
+  "respuesta": "R. Dichosos los pobres en el espíritu, porque de ellos es el reino de los cielos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "¿Por qué habré de temer los días aciagos,",
+      "cuando me cerquen y acechen los malvados,",
+      "que confían en su opulencia",
+      "y se jactan de sus inmensas riquezas?",
+      "¿Si nadie puede salvarse",
+      "ni dar a Dios un rescate? R."
+    ],
+    [
+      "Es tan caro el rescate de la vida,",
+      "que nunca les bastará",
+      "para vivir perpetuamente",
+      "sin bajar a la fosa. R."
+    ],
+    [
+      "No te preocupes si se enriquece un hombre",
+      "y aumenta el fasto de su casa:",
+      "cuando muera, no se llevará nada,",
+      "su fasto no bajará con él. R."
+    ],
+    [
+      "Aunque en vida se felicitaba:",
+      "«Ponderan lo bien que lo pasas»,",
+      "irá a reunirse con sus antepasados,",
+      "que no verán nunca la luz. R."
+    ]
+  ],
+  "textoCompleto": "¿Por qué habré de temer los días aciagos,\ncuando me cerquen y acechen los malvados,\nque confían en su opulencia\ny se jactan de sus inmensas riquezas?\n¿Si nadie puede salvarse\nni dar a Dios un rescate? R.\n\nEs tan caro el rescate de la vida,\nque nunca les bastará\npara vivir perpetuamente\nsin bajar a la fosa. R.\n\nNo te preocupes si se enriquece un hombre\ny aumenta el fasto de su casa:\ncuando muera, no se llevará nada,\nsu fasto no bajará con él. R.\n\nAunque en vida se felicitaba:\n«Ponderan lo bien que lo pasas»,\nirá a reunirse con sus antepasados,\nque no verán nunca la luz. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 24 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 48 6 7 8 10 17 18 19 20 r mt 5 3 semana 24 semana xxiv viernes 24 xxiv r dichosos los pobres en el espiritu porque de ellos es el reino de los cielos por que habre de temer los dias aciagos cuando me cerquen y acechen los malvados que confian en su opulencia y se jactan de sus inmensas riquezas si nadie puede salvarse ni dar a dios un rescate r es tan caro el rescate de la vida que nunca les bastara para vivir perpetuamente sin bajar a la fosa r no te preocupes si se enriquece un hombre y aumenta el fasto de su casa cuando muera no se llevara nada su fasto no bajara con el r aunque en vida se felicitaba ponderan lo bien que lo pasas ira a reunirse con sus antepasados que no veran nunca la luz r",
+  "lizq": [
+    {
+      "line": "R. Dichosos los pobres en el espíritu,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "porque de ellos es el reino de los cielos.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Por qué habré de temer los días aciagos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cuando me cerquen y acechen los malvados,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que confían en su opulencia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y se jactan de sus inmensas riquezas?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Si nadie puede salvarse",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni dar a Dios un rescate? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Es tan caro el rescate de la vida,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que nunca les bastará",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para vivir perpetuamente",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sin bajar a la fosa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No te preocupes si se enriquece un hombre",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y aumenta el fasto de su casa:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando muera, no se llevará nada,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su fasto no bajará con él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aunque en vida se felicitaba:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "«Ponderan lo bien que lo pasas»,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "irá a reunirse con sus antepasados,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que no verán nunca la luz. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -11,9 +11,24 @@
   "respuesta": "R. Es bueno darte gracias, Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Es bueno dar gracias al Señor\ny tocar para tu nombre, oh Altísimo,\nproclamar por la mañana tu misericordia\ny de noche tu fidelidad. R.",
-    "El justo crecerá como una palmera,\nse alzará como un cedro del Líbano;\nplantado en la casa del Señor,\ncrecerá en los atrios de nuestro Dios. R.",
-    "En la vejez seguirá dando fruto\ny estará lozano y frondoso,\npara proclamar que el Señor es justo,\nque en mi Roca no existe la maldad. R."
+    [
+      "Es bueno dar gracias al Señor",
+      "y tocar para tu nombre, oh Altísimo,",
+      "proclamar por la mañana tu misericordia",
+      "y de noche tu fidelidad. R."
+    ],
+    [
+      "El justo crecerá como una palmera,",
+      "se alzará como un cedro del Líbano;",
+      "plantado en la casa del Señor,",
+      "crecerá en los atrios de nuestro Dios. R."
+    ],
+    [
+      "En la vejez seguirá dando fruto",
+      "y estará lozano y frondoso,",
+      "para proclamar que el Señor es justo,",
+      "que en mi Roca no existe la maldad. R."
+    ]
   ],
   "textoCompleto": "Es bueno dar gracias al Señor\ny tocar para tu nombre, oh Altísimo,\nproclamar por la mañana tu misericordia\ny de noche tu fidelidad. R.\n\nEl justo crecerá como una palmera,\nse alzará como un cedro del Líbano;\nplantado en la casa del Señor,\ncrecerá en los atrios de nuestro Dios. R.\n\nEn la vejez seguirá dando fruto\ny estará lozano y frondoso,\npara proclamar que el Señor es justo,\nque en mi Roca no existe la maldad. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. Es bueno darte gracias, Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Es bueno dar gracias al Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y tocar para tu nombre, oh Altísimo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "proclamar por la mañana tu misericordia",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y de noche tu fidelidad. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El justo crecerá como una palmera,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "se alzará como un cedro del Líbano;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "plantado en la casa del Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "crecerá en los atrios de nuestro Dios. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "En la vejez seguirá dando fruto",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y estará lozano y frondoso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para proclamar que el Señor es justo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que en mi Roca no existe la maldad. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

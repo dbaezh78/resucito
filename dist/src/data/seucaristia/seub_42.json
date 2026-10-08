@@ -8,16 +8,29 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 536,
-  "respuesta": "R. Alzaré la copa de la salvación,",
-  "respuestaOpcional": "",
+  "respuesta": "R. Alzaré la copa de la salvación, invocando el nombre del Señor.",
+  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
-    "invocando el nombre del Señor.",
-    "R. Aleluya.",
-    "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.",
-    "Mucho le cuesta al Señor\nla muerte de sus fieles.\nSeñor, yo soy tu siervo, hijo de tu esclava;\nrompiste mis cadenas. R.",
-    "Te ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R."
+    [
+      "¿Cómo pagaré al Señor",
+      "todo el bien que me ha hecho?",
+      "Alzaré la copa de la salvación,",
+      "invocando su nombre. R."
+    ],
+    [
+      "Mucho le cuesta al Señor",
+      "la muerte de sus fieles.",
+      "Señor, yo soy tu siervo, hijo de tu esclava;",
+      "rompiste mis cadenas. R."
+    ],
+    [
+      "Te ofreceré un sacrificio de alabanza,",
+      "invocando tu nombre, Señor.",
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo. R."
+    ]
   ],
-  "textoCompleto": "invocando el nombre del Señor.\n\nR. Aleluya.\n\n¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSeñor, yo soy tu siervo, hijo de tu esclava;\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
+  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSeñor, yo soy tu siervo, hijo de tu esclava;\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,84 +39,83 @@
   "lizq": [
     {
       "line": "R. Alzaré la copa de la salvación,",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "invocando el nombre del Señor.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "¿Cómo pagaré al Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "todo el bien que me ha hecho?",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Alzaré la copa de la salvación,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "invocando su nombre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Mucho le cuesta al Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "la muerte de sus fieles.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Señor, yo soy tu siervo, hijo de tu esclava;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "rompiste mis cadenas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Te ofreceré un sacrificio de alabanza,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "invocando tu nombre, Señor.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Cumpliré al Señor mis votos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en presencia de todo el pueblo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -11,11 +11,23 @@
   "respuesta": "R. A ti gloria y alabanza por los siglos.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre santo y glorioso. R.",
-    "Bendito eres en el templo de tu santa gloria. R.",
-    "Bendito eres sobre el trono de tu reino. R.",
-    "Bendito eres tú, que, sentado sobre querubines,\nsondeas los abismos. R.",
-    "Bendito eres en la bóveda del cielo. R."
+    [
+      "Bendito eres, Señor, Dios de nuestros padres,",
+      "bendito tu nombre santo y glorioso. R."
+    ],
+    [
+      "Bendito eres en el templo de tu santa gloria. R."
+    ],
+    [
+      "Bendito eres sobre el trono de tu reino. R."
+    ],
+    [
+      "Bendito eres tú, que, sentado sobre querubines,",
+      "sondeas los abismos. R."
+    ],
+    [
+      "Bendito eres en la bóveda del cielo. R."
+    ]
   ],
   "textoCompleto": "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre santo y glorioso. R.\n\nBendito eres en el templo de tu santa gloria. R.\n\nBendito eres sobre el trono de tu reino. R.\n\nBendito eres tú, que, sentado sobre querubines,\nsondeas los abismos. R.\n\nBendito eres en la bóveda del cielo. R.",
   "sourceBook": "eucaristia",
@@ -26,56 +38,55 @@
   "lizq": [
     {
       "line": "R. A ti gloria y alabanza por los siglos.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendito eres, Señor, Dios de nuestros padres,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "bendito tu nombre santo y glorioso. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendito eres en el templo de tu santa gloria. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendito eres sobre el trono de tu reino. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendito eres tú, que, sentado sobre querubines,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "sondeas los abismos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendito eres en la bóveda del cielo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     }
   ]
 }

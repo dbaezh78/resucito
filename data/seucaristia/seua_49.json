@@ -11,9 +11,24 @@
   "respuesta": "R. El justo brilla en las tinieblas como una luz.",
   "respuestaOpcional": "",
   "estrofas": [
-    "En las tinieblas brilla como una luz\nel que es justo, clemente y compasivo.\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos. R.",
-    "El justo jamás vacilará,\nsu recuerdo será perpetuo.\nNo temerá las malas noticias,\nsu corazón está firme en el Señor. R.",
-    "Su corazón está seguro, sin temor.\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R."
+    [
+      "En las tinieblas brilla como una luz",
+      "el que es justo, clemente y compasivo.",
+      "Dichoso el que se apiada y presta,",
+      "y administra rectamente sus asuntos. R."
+    ],
+    [
+      "El justo jamás vacilará,",
+      "su recuerdo será perpetuo.",
+      "No temerá las malas noticias,",
+      "su corazón está firme en el Señor. R."
+    ],
+    [
+      "Su corazón está seguro, sin temor.",
+      "Reparte limosna a los pobres;",
+      "su caridad es constante, sin falta,",
+      "y alzará la frente con dignidad. R."
+    ]
   ],
   "textoCompleto": "En las tinieblas brilla como una luz\nel que es justo, clemente y compasivo.\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos. R.\n\nEl justo jamás vacilará,\nsu recuerdo será perpetuo.\nNo temerá las malas noticias,\nsu corazón está firme en el Señor. R.\n\nSu corazón está seguro, sin temor.\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. El justo brilla en las tinieblas como una luz.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "En las tinieblas brilla como una luz",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "el que es justo, clemente y compasivo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dichoso el que se apiada y presta,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y administra rectamente sus asuntos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El justo jamás vacilará,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "su recuerdo será perpetuo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "No temerá las malas noticias,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "su corazón está firme en el Señor. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Su corazón está seguro, sin temor.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "Reparte limosna a los pobres;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "su caridad es constante, sin falta,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y alzará la frente con dignidad. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

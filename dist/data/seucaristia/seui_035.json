@@ -1,0 +1,105 @@
+{
+  "id": "seui_035",
+  "title": "Viernes de la 6ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 6ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 32, 10-11. 12-13. 14-15 (R.: 12b)",
+  "salmo": "Salmo responsorial: Salmo 32, 10-11. 12-13. 14-15 (R.: 12b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5065,
+  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El Señor deshace los planes de las naciones,",
+      "frustra los proyectos de los pueblos;",
+      "pero el plan del Señor subsiste por siempre,",
+      "los proyectos de su corazón, de edad en edad. R."
+    ],
+    [
+      "Dichosa la nación cuyo Dios es el Señor,",
+      "el pueblo que él se escogió como heredad.",
+      "El Señor mira desde el cielo,",
+      "se fija en todos los hombres. R."
+    ],
+    [
+      "Desde su morada observa",
+      "a todos los habitantes de la tierra:",
+      "él modeló cada corazón,",
+      "y comprende todas sus acciones. R."
+    ]
+  ],
+  "textoCompleto": "El Señor deshace los planes de las naciones,\nfrustra los proyectos de los pueblos;\npero el plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad. R.\n\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.\n\nDesde su morada observa\na todos los habitantes de la tierra:\nél modeló cada corazón,\ny comprende todas sus acciones. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 6 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 32 10 11 12 13 14 15 r 12b semana 6 semana vi viernes 6 vi r dichoso el pueblo que el senor se escogio como heredad el senor deshace los planes de las naciones frustra los proyectos de los pueblos pero el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad r dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad el senor mira desde el cielo se fija en todos los hombres r desde su morada observa a todos los habitantes de la tierra el modelo cada corazon y comprende todas sus acciones r",
+  "lizq": [
+    {
+      "line": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor deshace los planes de las naciones,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "frustra los proyectos de los pueblos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el plan del Señor subsiste por siempre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los proyectos de su corazón, de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichosa la nación cuyo Dios es el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el pueblo que él se escogió como heredad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor mira desde el cielo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se fija en todos los hombres. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Desde su morada observa",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a todos los habitantes de la tierra:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él modeló cada corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y comprende todas sus acciones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

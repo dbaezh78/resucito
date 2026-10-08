@@ -8,15 +8,26 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 511,
-  "respuesta": "R. Nosotros somos su pueblo",
+  "respuesta": "R. Nosotros somos su pueblo y ovejas de su rebaño.",
   "respuestaOpcional": "",
   "estrofas": [
-    "y ovejas de su rebaño.",
-    "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores, R.",
-    "Sabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.",
-    "El Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades. R."
+    [
+      "Aclama al Señor, tierra entera,",
+      "servid al Señor con alegría,",
+      "entrad en su presencia con vítores, R."
+    ],
+    [
+      "Sabed que el Señor es Dios:",
+      "que él nos hizo y somos suyos,",
+      "su pueblo y ovejas de su rebaño. R."
+    ],
+    [
+      "El Señor es bueno,",
+      "su misericordia es eterna,",
+      "su fidelidad por todas las edades. R."
+    ]
   ],
-  "textoCompleto": "y ovejas de su rebaño.\n\nAclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores, R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\nEl Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades. R.",
+  "textoCompleto": "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores, R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\nEl Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,64 +36,59 @@
   "lizq": [
     {
       "line": "R. Nosotros somos su pueblo",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "y ovejas de su rebaño.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Aclama al Señor, tierra entera,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "servid al Señor con alegría,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "entrad en su presencia con vítores, R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Sabed que el Señor es Dios:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "que él nos hizo y somos suyos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "su pueblo y ovejas de su rebaño. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es bueno,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "su misericordia es eterna,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "su fidelidad por todas las edades. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

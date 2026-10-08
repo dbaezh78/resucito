@@ -1,0 +1,112 @@
+{
+  "id": "seuf_059",
+  "title": "Miércoles de la 3ª semana de Cuaresma",
+  "celebracion": "Miércoles de la 3ª semana de Cuaresma",
+  "subtitle": "Salmo 147,12-13.15-16. 19-20 (R.: 12a)",
+  "salmo": "Salmo 147,12-13.15-16. 19-20 (R.: 12a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Miércoles",
+  "orden": 333,
+  "respuesta": "R. Glorifica al Señor, Jerusalén.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Glorifica al Señor, Jerusalén;",
+      "alaba a tu Dios, Sión:",
+      "que ha reforzado los cerrojos de tus puertas,",
+      "y ha bendecido a tus hijos dentro de ti. R."
+    ],
+    [
+      "Él envía su mensaje a la tierra,",
+      "y su palabra corre veloz;",
+      "manda la nieve como lana,",
+      "esparce la escarcha como ceniza. R."
+    ],
+    [
+      "Anuncia su palabra a Jacob,",
+      "sus decretos y mandatos a Israel;",
+      "con ninguna nación obró así,",
+      "ni les dio a conocer sus mandatos. R."
+    ]
+  ],
+  "textoCompleto": "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz;\nmanda la nieve como lana,\nesparce la escarcha como ceniza. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 3 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 147 12 13 15 16 19 20 r 12a semana 3 semana iii miercoles feria r glorifica al senor jerusalen glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r el envia su mensaje a la tierra y su palabra corre veloz manda la nieve como lana esparce la escarcha como ceniza r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
+  "lizq": [
+    {
+      "line": "R. Glorifica al Señor, Jerusalén.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Glorifica al Señor, Jerusalén;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alaba a tu Dios, Sión:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que ha reforzado los cerrojos de tus puertas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y ha bendecido a tus hijos dentro de ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él envía su mensaje a la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y su palabra corre veloz;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "manda la nieve como lana,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "esparce la escarcha como ceniza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Anuncia su palabra a Jacob,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sus decretos y mandatos a Israel;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "con ninguna nación obró así,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni les dio a conocer sus mandatos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

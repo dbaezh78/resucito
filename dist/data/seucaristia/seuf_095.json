@@ -1,0 +1,129 @@
+{
+  "id": "seuf_095",
+  "title": "Miércoles de la tercera semana de Pascua",
+  "celebracion": "Miércoles de la tercera semana de Pascua",
+  "subtitle": "Salmo 65, 1-3a. 4-5. 6-7a (R.: 1)",
+  "salmo": "Salmo 65, 1-3a. 4-5. 6-7a (R.: 1)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Miércoles",
+  "orden": 433,
+  "respuesta": "R. Aclamad al Señor, tierra entera.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Aclamad al Señor, tierra entera;",
+      "tocad en honor de su nombre,",
+      "cantad himnos a su gloria.",
+      "Decid a Dios: «¡Qué terribles son tus obras!»». R."
+    ],
+    [
+      "Que se postre ante ti la tierra entera,",
+      "que toquen en tu honor,",
+      "que toquen para tu nombre.",
+      "Venid a ver las obras de Dios,",
+      "sus temibles proezas en favor de los hombres. R."
+    ],
+    [
+      "Transformó el mar en tierra firme,",
+      "a pie atravesaron el río.",
+      "Alegrémonos con Dios,",
+      "que con su poder gobierna enteramente. R."
+    ]
+  ],
+  "textoCompleto": "Aclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué terribles son tus obras!»». R.\n\nQue se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.\n\nTransformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna enteramente. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 65 1 3a 4 5 6 7a r 1 semana 3 semana iii miercoles feria r aclamad al senor tierra entera r aleluya aclamad al senor tierra entera tocad en honor de su nombre cantad himnos a su gloria decid a dios que terribles son tus obras r que se postre ante ti la tierra entera que toquen en tu honor que toquen para tu nombre venid a ver las obras de dios sus temibles proezas en favor de los hombres r transformo el mar en tierra firme a pie atravesaron el rio alegremonos con dios que con su poder gobierna enteramente r",
+  "lizq": [
+    {
+      "line": "R. Aclamad al Señor, tierra entera.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aclamad al Señor, tierra entera;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tocad en honor de su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cantad himnos a su gloria.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Decid a Dios: «¡Qué terribles son tus obras!»». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que se postre ante ti la tierra entera,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que toquen en tu honor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que toquen para tu nombre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Venid a ver las obras de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sus temibles proezas en favor de los hombres. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Transformó el mar en tierra firme,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a pie atravesaron el río.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alegrémonos con Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que con su poder gobierna enteramente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

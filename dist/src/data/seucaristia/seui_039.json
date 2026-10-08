@@ -1,0 +1,123 @@
+{
+  "id": "seui_039",
+  "title": "Miércoles de la 7ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 7ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 165. 168. 171. 172. 174. 175 (R.: 165a)",
+  "salmo": "Salmo responsorial: Salmo 118, 165. 168. 171. 172. 174. 175 (R.: 165a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5073,
+  "respuesta": "R. Mucha paz tienen los que aman tus leyes, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Mucha paz tienen los que aman tus leyes,",
+      "y nada los hace tropezar. R."
+    ],
+    [
+      "Guardo tus decretos,",
+      "y tú tienes presentes mis caminos. R."
+    ],
+    [
+      "De mis labios brota la alabanza,",
+      "porque me enseñaste tus leyes. R."
+    ],
+    [
+      "Mi lengua canta tu fidelidad,",
+      "porque todos tus preceptos son justos. R."
+    ],
+    [
+      "Ansío tu salvación, Señor;",
+      "tu voluntad es mi delicia. R."
+    ],
+    [
+      "Que mi alma viva para alabarte,",
+      "que tus mandamientos me auxilien. R."
+    ]
+  ],
+  "textoCompleto": "Mucha paz tienen los que aman tus leyes,\ny nada los hace tropezar. R.\n\nGuardo tus decretos,\ny tú tienes presentes mis caminos. R.\n\nDe mis labios brota la alabanza,\nporque me enseñaste tus leyes. R.\n\nMi lengua canta tu fidelidad,\nporque todos tus preceptos son justos. R.\n\nAnsío tu salvación, Señor;\ntu voluntad es mi delicia. R.\n\nQue mi alma viva para alabarte,\nque tus mandamientos me auxilien. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 7 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 118 165 168 171 172 174 175 r 165a semana 7 semana vii miercoles 7 vii r mucha paz tienen los que aman tus leyes senor mucha paz tienen los que aman tus leyes y nada los hace tropezar r guardo tus decretos y tu tienes presentes mis caminos r de mis labios brota la alabanza porque me ensenaste tus leyes r mi lengua canta tu fidelidad porque todos tus preceptos son justos r ansio tu salvacion senor tu voluntad es mi delicia r que mi alma viva para alabarte que tus mandamientos me auxilien r",
+  "lizq": [
+    {
+      "line": "R. Mucha paz tienen los que aman tus leyes, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mucha paz tienen los que aman tus leyes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y nada los hace tropezar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Guardo tus decretos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y tú tienes presentes mis caminos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "De mis labios brota la alabanza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque me enseñaste tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi lengua canta tu fidelidad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque todos tus preceptos son justos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ansío tu salvación, Señor;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tu voluntad es mi delicia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que mi alma viva para alabarte,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que tus mandamientos me auxilien. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

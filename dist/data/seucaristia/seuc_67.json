@@ -1,0 +1,59 @@
+{
+  "id": "seuc_67",
+  "title": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "salmo": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 521,
+  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Alabad al Señor, todas las naciones,",
+      "aclamadlo, todos los pueblos. R."
+    ],
+    [
+      "Firme es su misericordia con nosotros,",
+      "su fidelidad dura por siempre. R."
+    ]
+  ],
+  "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 21 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 116 1 2 r mc 16 15 r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
+  "lizq": [
+    {
+      "line": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabad al Señor, todas las naciones,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "aclamadlo, todos los pueblos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Firme es su misericordia con nosotros,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su fidelidad dura por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

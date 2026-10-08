@@ -1,0 +1,151 @@
+{
+  "id": "seui_019",
+  "title": "Lunes de la 4ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 4ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 30, 20. 21. 22. 23. 24 (R.: 25)",
+  "salmo": "Salmo responsorial: Salmo 30, 20. 21. 22. 23. 24 (R.: 25)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5041,
+  "respuesta": "R. Sed fuertes y valientes de corazón, los que esperáis en el Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Qué bondad tan grande, Señor,",
+      "reservas para tus fieles,",
+      "y concedes a los que a ti se acogen",
+      "a la vista de todos. R."
+    ],
+    [
+      "En el asilo de tu presencia los escondes",
+      "de las conjuras humanas;",
+      "los ocultas en tu tabernáculo,",
+      "frente a las lenguas pendencieras. R."
+    ],
+    [
+      "Bendito el Señor, que ha hecho por mí",
+      "prodigios de misericordia",
+      "en la ciudad amurallada. R."
+    ],
+    [
+      "Yo decía en mi ansiedad:",
+      "«Me has arrojado de tu vista»;",
+      "pero tú escuchaste mi voz suplicante",
+      "cuando yo te gritaba. R."
+    ],
+    [
+      "Amad al Señor, fieles suyos;",
+      "el Señor guarda a sus leales,",
+      "y a los soberbios les paga con creces. R."
+    ]
+  ],
+  "textoCompleto": "Qué bondad tan grande, Señor,\nreservas para tus fieles,\ny concedes a los que a ti se acogen\na la vista de todos. R.\n\nEn el asilo de tu presencia los escondes\nde las conjuras humanas;\nlos ocultas en tu tabernáculo,\nfrente a las lenguas pendencieras. R.\n\nBendito el Señor, que ha hecho por mí\nprodigios de misericordia\nen la ciudad amurallada. R.\n\nYo decía en mi ansiedad:\n«Me has arrojado de tu vista»;\npero tú escuchaste mi voz suplicante\ncuando yo te gritaba. R.\n\nAmad al Señor, fieles suyos;\nel Señor guarda a sus leales,\ny a los soberbios les paga con creces. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 4 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 30 20 21 22 23 24 r 25 semana 4 semana iv lunes 4 iv r sed fuertes y valientes de corazon los que esperais en el senor que bondad tan grande senor reservas para tus fieles y concedes a los que a ti se acogen a la vista de todos r en el asilo de tu presencia los escondes de las conjuras humanas los ocultas en tu tabernaculo frente a las lenguas pendencieras r bendito el senor que ha hecho por mi prodigios de misericordia en la ciudad amurallada r yo decia en mi ansiedad me has arrojado de tu vista pero tu escuchaste mi voz suplicante cuando yo te gritaba r amad al senor fieles suyos el senor guarda a sus leales y a los soberbios les paga con creces r",
+  "lizq": [
+    {
+      "line": "R. Sed fuertes y valientes de corazón,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "los que esperáis en el Señor.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Qué bondad tan grande, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "reservas para tus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y concedes a los que a ti se acogen",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a la vista de todos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En el asilo de tu presencia los escondes",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "de las conjuras humanas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los ocultas en tu tabernáculo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "frente a las lenguas pendencieras. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendito el Señor, que ha hecho por mí",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "prodigios de misericordia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en la ciudad amurallada. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo decía en mi ansiedad:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "«Me has arrojado de tu vista»;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero tú escuchaste mi voz suplicante",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando yo te gritaba. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Amad al Señor, fieles suyos;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el Señor guarda a sus leales,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y a los soberbios les paga con creces. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

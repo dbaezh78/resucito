@@ -1,0 +1,131 @@
+{
+  "id": "seui_046",
+  "title": "Jueves de la 8ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 8ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 32, 2-3. 4-5. 6-7. 8-9 (R.: 6a)",
+  "salmo": "Salmo responsorial: Salmo 32, 2-3. 4-5. 6-7. 8-9 (R.: 6a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5084,
+  "respuesta": "R. La palabra del Señor hizo el cielo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dad gracias al Señor con la cítara,",
+      "tocad en su honor el arpa de diez cuerdas;",
+      "cantadle un cántico nuevo,",
+      "acompañando los vítores con bordones. R."
+    ],
+    [
+      "Que la palabra del Señor es sincera,",
+      "y todas sus acciones son leales;",
+      "él ama la justicia y el derecho,",
+      "y su misericordia llena la tierra. R."
+    ],
+    [
+      "La palabra del Señor hizo el cielo;",
+      "el aliento de su boca, sus ejércitos;",
+      "encierra en un odre las aguas marinas,",
+      "mete en un depósito el océano. R."
+    ],
+    [
+      "Tema al Señor la tierra entera,",
+      "tiemblen ante él los habitantes del orbe:",
+      "porque él lo dijo, y existió,",
+      "él lo mandó, y surgió. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLa palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos;\nencierra en un odre las aguas marinas,\nmete en un depósito el océano. R.\n\nTema al Señor la tierra entera,\ntiemblen ante él los habitantes del orbe:\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 8 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 32 2 3 4 5 6 7 8 9 r 6a semana 8 semana viii jueves 8 viii r la palabra del senor hizo el cielo dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r la palabra del senor hizo el cielo el aliento de su boca sus ejercitos encierra en un odre las aguas marinas mete en un deposito el oceano r tema al senor la tierra entera tiemblen ante el los habitantes del orbe porque el lo dijo y existio el lo mando y surgio r",
+  "lizq": [
+    {
+      "line": "R. La palabra del Señor hizo el cielo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor con la cítara,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tocad en su honor el arpa de diez cuerdas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cantadle un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "acompañando los vítores con bordones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que la palabra del Señor es sincera,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todas sus acciones son leales;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él ama la justicia y el derecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y su misericordia llena la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La palabra del Señor hizo el cielo;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el aliento de su boca, sus ejércitos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "encierra en un odre las aguas marinas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mete en un depósito el océano. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tema al Señor la tierra entera,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tiemblen ante él los habitantes del orbe:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque él lo dijo, y existió,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él lo mandó, y surgió. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "seui_103",
+  "title": "Lunes de la 18ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 18ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 80, 12-13. 14-15. 16-17 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 80, 12-13. 14-15. 16-17 (R.: 2a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5181,
+  "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Mi pueblo no escuchó mi voz,",
+      "Israel no quiso obedecer:",
+      "los entregué a su corazón obstinado,",
+      "para que anduviesen según sus antojos. R."
+    ],
+    [
+      "¡Ojalá me escuchase mi pueblo",
+      "y caminase Israel por mi camino!:",
+      "en un momento humillaría a sus enemigos",
+      "y volvería mi mano contra sus adversarios. R."
+    ],
+    [
+      "Los que aborrecen al Señor te adularían,",
+      "y su suerte quedaría fijada;",
+      "te alimentaría con flor de harina,",
+      "te saciaría con miel silvestre. R."
+    ]
+  ],
+  "textoCompleto": "Mi pueblo no escuchó mi voz,\nIsrael no quiso obedecer:\nlos entregué a su corazón obstinado,\npara que anduviesen según sus antojos. R.\n\n¡Ojalá me escuchase mi pueblo\ny caminase Israel por mi camino!:\nen un momento humillaría a sus enemigos\ny volvería mi mano contra sus adversarios. R.\n\nLos que aborrecen al Señor te adularían,\ny su suerte quedaría fijada;\nte alimentaría con flor de harina,\nte saciaría con miel silvestre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 18 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 80 12 13 14 15 16 17 r 2a semana 18 semana xviii lunes 18 xviii r aclamad a dios nuestra fuerza mi pueblo no escucho mi voz israel no quiso obedecer los entregue a su corazon obstinado para que anduviesen segun sus antojos r ojala me escuchase mi pueblo y caminase israel por mi camino en un momento humillaria a sus enemigos y volveria mi mano contra sus adversarios r los que aborrecen al senor te adularian y su suerte quedaria fijada te alimentaria con flor de harina te saciaria con miel silvestre r",
+  "lizq": [
+    {
+      "line": "R. Aclamad a Dios, nuestra fuerza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi pueblo no escuchó mi voz,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Israel no quiso obedecer:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los entregué a su corazón obstinado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que anduviesen según sus antojos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Ojalá me escuchase mi pueblo",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y caminase Israel por mi camino!:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en un momento humillaría a sus enemigos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y volvería mi mano contra sus adversarios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los que aborrecen al Señor te adularían,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y su suerte quedaría fijada;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "te alimentaría con flor de harina,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "te saciaría con miel silvestre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "seup_150",
+  "title": "Sábado de la 25ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 25ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 89, 3-4. 5-6. 12-13. 14 y 17 (R.: 1)",
+  "salmo": "Salmo responsorial: Salmo 89, 3-4. 5-6. 12-13. 14 y 17 (R.: 1)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5256,
+  "respuesta": "R. Señor, tú has sido nuestro refugio de generación en generación.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Tú reduces el hombre a polvo,",
+      "diciendo: «Retornad, hijos de Adán».",
+      "Mil años en tu presencia",
+      "son un ayer, que pasó;",
+      "una vela nocturna. R."
+    ],
+    [
+      "Los siembras año por año,",
+      "como hierba que se renueva:",
+      "que florece y se renueva por la mañana,",
+      "y por la tarde la siegan y se seca. R."
+    ],
+    [
+      "Enséñanos a calcular nuestros años",
+      "para que adquiramos un corazón sensato.",
+      "Vuélvete, Señor, ¿hasta cuándo?",
+      "Ten compasión de tus siervos. R."
+    ],
+    [
+      "Por la mañana sácianos de tu misericordia,",
+      "y toda nuestra vida será alegría y júbilo.",
+      "Baje a nosotros la bondad del Señor",
+      "y haga prósperas las obras de nuestras manos. R."
+    ]
+  ],
+  "textoCompleto": "Tú reduces el hombre a polvo,\ndiciendo: «Retornad, hijos de Adán».\nMil años en tu presencia\nson un ayer, que pasó;\nuna vela nocturna. R.\n\nLos siembras año por año,\ncomo hierba que se renueva:\nque florece y se renueva por la mañana,\ny por la tarde la siegan y se seca. R.\n\nEnséñanos a calcular nuestros años\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nBaje a nosotros la bondad del Señor\ny haga prósperas las obras de nuestras manos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 25 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 89 3 4 5 6 12 13 14 y 17 r 1 semana 25 semana xxv sabado 25 xxv r senor tu has sido nuestro refugio de generacion en generacion tu reduces el hombre a polvo diciendo retornad hijos de adan mil anos en tu presencia son un ayer que paso una vela nocturna r los siembras ano por ano como hierba que se renueva que florece y se renueva por la manana y por la tarde la siegan y se seca r ensenanos a calcular nuestros anos para que adquiramos un corazon sensato vuelvete senor hasta cuando ten compasion de tus siervos r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo baje a nosotros la bondad del senor y haga prosperas las obras de nuestras manos r",
+  "lizq": [
+    {
+      "line": "R. Señor, tú has sido nuestro refugio",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "de generación en generación.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú reduces el hombre a polvo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "diciendo: «Retornad, hijos de Adán».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mil años en tu presencia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "son un ayer, que pasó;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "una vela nocturna. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los siembras año por año,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "como hierba que se renueva:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que florece y se renueva por la mañana,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y por la tarde la siegan y se seca. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Enséñanos a calcular nuestros años",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para que adquiramos un corazón sensato.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Vuélvete, Señor, ¿hasta cuándo?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Ten compasión de tus siervos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Por la mañana sácianos de tu misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y toda nuestra vida será alegría y júbilo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Baje a nosotros la bondad del Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y haga prósperas las obras de nuestras manos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

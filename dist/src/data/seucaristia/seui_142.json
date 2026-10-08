@@ -1,0 +1,107 @@
+{
+  "id": "seui_142",
+  "title": "Jueves de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 110, 7-8. 9. 10 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 110, 7-8. 9. 10 (R.: 2a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5244,
+  "respuesta": "R. Grandes son las obras del Señor.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Justicia y verdad son las obras de sus manos,",
+      "todos sus preceptos merecen confianza:",
+      "son estables para siempre jamás,",
+      "se han de cumplir con verdad y rectitud. R."
+    ],
+    [
+      "Envió la redención a su pueblo,",
+      "ratificó para siempre su alianza,",
+      "su nombre es sagrado y temible. R."
+    ],
+    [
+      "Primicia de la sabiduría es el temor del Señor,",
+      "tienen buen juicio los que lo practican;",
+      "la alabanza del Señor dura por siempre. R."
+    ]
+  ],
+  "textoCompleto": "Justicia y verdad son las obras de sus manos,\ntodos sus preceptos merecen confianza:\nson estables para siempre jamás,\nse han de cumplir con verdad y rectitud. R.\n\nEnvió la redención a su pueblo,\nratificó para siempre su alianza,\nsu nombre es sagrado y temible. R.\n\nPrimicia de la sabiduría es el temor del Señor,\ntienen buen juicio los que lo practican;\nla alabanza del Señor dura por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 24 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 110 7 8 9 10 r 2a semana 24 semana xxiv jueves 24 xxiv r grandes son las obras del senor r aleluya justicia y verdad son las obras de sus manos todos sus preceptos merecen confianza son estables para siempre jamas se han de cumplir con verdad y rectitud r envio la redencion a su pueblo ratifico para siempre su alianza su nombre es sagrado y temible r primicia de la sabiduria es el temor del senor tienen buen juicio los que lo practican la alabanza del senor dura por siempre r",
+  "lizq": [
+    {
+      "line": "R. Grandes son las obras del Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Justicia y verdad son las obras de sus manos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "todos sus preceptos merecen confianza:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "son estables para siempre jamás,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se han de cumplir con verdad y rectitud. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Envió la redención a su pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ratificó para siempre su alianza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su nombre es sagrado y temible. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Primicia de la sabiduría es el temor del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tienen buen juicio los que lo practican;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la alabanza del Señor dura por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

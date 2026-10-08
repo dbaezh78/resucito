@@ -1,0 +1,105 @@
+{
+  "id": "seup_108",
+  "title": "Sábado de la 18ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 18ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 9, 8-9. 10-11. 12-13 (R.: 11b)",
+  "salmo": "Salmo responsorial: Salmo 9, 8-9. 10-11. 12-13 (R.: 11b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5186,
+  "respuesta": "R. No abandonas, Señor, a los que te buscan.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dios está sentado por siempre",
+      "en el trono que ha colocado para juzgar.",
+      "Él juzgará el orbe con justicia",
+      "y regirá las naciones con rectitud. R."
+    ],
+    [
+      "El será refugio del oprimido,",
+      "su refugio en los momentos de peligro.",
+      "Confiarán en ti los que conocen tu nombre,",
+      "porque no abandonas a los que te buscan. R."
+    ],
+    [
+      "Tañed en honor del Señor, que reside en Sión;",
+      "narrad sus hazañas a los pueblos;",
+      "él venga la sangre, él recuerda",
+      "y no olvida los gritos de los humildes. R."
+    ]
+  ],
+  "textoCompleto": "Dios está sentado por siempre\nen el trono que ha colocado para juzgar.\nÉl juzgará el orbe con justicia\ny regirá las naciones con rectitud. R.\n\nEl será refugio del oprimido,\nsu refugio en los momentos de peligro.\nConfiarán en ti los que conocen tu nombre,\nporque no abandonas a los que te buscan. R.\n\nTañed en honor del Señor, que reside en Sión;\nnarrad sus hazañas a los pueblos;\nél venga la sangre, él recuerda\ny no olvida los gritos de los humildes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 18 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 9 8 9 10 11 12 13 r 11b semana 18 semana xviii sabado 18 xviii r no abandonas senor a los que te buscan dios esta sentado por siempre en el trono que ha colocado para juzgar el juzgara el orbe con justicia y regira las naciones con rectitud r el sera refugio del oprimido su refugio en los momentos de peligro confiaran en ti los que conocen tu nombre porque no abandonas a los que te buscan r taned en honor del senor que reside en sion narrad sus hazanas a los pueblos el venga la sangre el recuerda y no olvida los gritos de los humildes r",
+  "lizq": [
+    {
+      "line": "R. No abandonas, Señor, a los que te buscan.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios está sentado por siempre",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en el trono que ha colocado para juzgar.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él juzgará el orbe con justicia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y regirá las naciones con rectitud. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El será refugio del oprimido,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su refugio en los momentos de peligro.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Confiarán en ti los que conocen tu nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque no abandonas a los que te buscan. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tañed en honor del Señor, que reside en Sión;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "narrad sus hazañas a los pueblos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él venga la sangre, él recuerda",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no olvida los gritos de los humildes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

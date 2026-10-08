@@ -1,0 +1,123 @@
+{
+  "id": "seui_190",
+  "title": "Jueves de la 32ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 32ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 89. 90. 91. 130. 135. 175 (R.: 89a)",
+  "salmo": "Salmo responsorial: Salmo 118, 89. 90. 91. 130. 135. 175 (R.: 89a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5324,
+  "respuesta": "R. Tu palabra, Señor, es eterna.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Tu palabra, Señor, es eterna,",
+      "más estable que el cielo. R."
+    ],
+    [
+      "Tu fidelidad de generación en generación,",
+      "igual que fundaste la tierra y permanece. R."
+    ],
+    [
+      "Por tu mandamiento subsisten hasta hoy,",
+      "porque todo está a tu servicio. R."
+    ],
+    [
+      "La explicación de tus palabras ilumina,",
+      "da inteligencia a los ignorantes. R."
+    ],
+    [
+      "Haz brillar tu rostro sobre tu siervo,",
+      "enséñame tus leyes. R."
+    ],
+    [
+      "Que mi alma viva para alabarte,",
+      "que tus mandamientos me auxilien. R."
+    ]
+  ],
+  "textoCompleto": "Tu palabra, Señor, es eterna,\nmás estable que el cielo. R.\n\nTu fidelidad de generación en generación,\nigual que fundaste la tierra y permanece. R.\n\nPor tu mandamiento subsisten hasta hoy,\nporque todo está a tu servicio. R.\n\nLa explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.\n\nHaz brillar tu rostro sobre tu siervo,\nenséñame tus leyes. R.\n\nQue mi alma viva para alabarte,\nque tus mandamientos me auxilien. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 32 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 118 89 90 91 130 135 175 r 89a semana 32 semana xxxii jueves 32 xxxii r tu palabra senor es eterna tu palabra senor es eterna mas estable que el cielo r tu fidelidad de generacion en generacion igual que fundaste la tierra y permanece r por tu mandamiento subsisten hasta hoy porque todo esta a tu servicio r la explicacion de tus palabras ilumina da inteligencia a los ignorantes r haz brillar tu rostro sobre tu siervo ensename tus leyes r que mi alma viva para alabarte que tus mandamientos me auxilien r",
+  "lizq": [
+    {
+      "line": "R. Tu palabra, Señor, es eterna.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tu palabra, Señor, es eterna,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "más estable que el cielo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tu fidelidad de generación en generación,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "igual que fundaste la tierra y permanece. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Por tu mandamiento subsisten hasta hoy,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque todo está a tu servicio. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La explicación de tus palabras ilumina,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "da inteligencia a los ignorantes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Haz brillar tu rostro sobre tu siervo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "enséñame tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que mi alma viva para alabarte,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que tus mandamientos me auxilien. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

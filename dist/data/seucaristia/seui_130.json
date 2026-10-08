@@ -1,0 +1,105 @@
+{
+  "id": "seui_130",
+  "title": "Jueves de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 97, 2-3ab. 3cd-4. 5-6 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 97, 2-3ab. 3cd-4. 5-6 (R.: 2a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5224,
+  "respuesta": "R. El Señor da a conocer su victoria.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El Señor da a conocer su victoria,",
+      "revela a las naciones su justicia:",
+      "se acordó de su misericordia y de su fidelidad",
+      "en favor de la casa de Israel. R."
+    ],
+    [
+      "Los confines de la tierra han contemplado",
+      "la victoria de nuestro Dios.",
+      "Aclama al Señor, tierra entera;",
+      "gritad, vitoread, tocad. R."
+    ],
+    [
+      "Tocad la cítara para el Señor,",
+      "suenen los instrumentos:",
+      "con clarines y al son de trompetas,",
+      "aclamad al Rey y Señor. R."
+    ]
+  ],
+  "textoCompleto": "El Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y de su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclama al Señor, tierra entera;\ngritad, vitoread, tocad. R.\n\nTocad la cítara para el Señor,\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 22 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 97 2 3ab 3cd 4 5 6 r 2a semana 22 semana xxii jueves 22 xxii r el senor da a conocer su victoria el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y de su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclama al senor tierra entera gritad vitoread tocad r tocad la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r",
+  "lizq": [
+    {
+      "line": "R. El Señor da a conocer su victoria.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor da a conocer su victoria,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "revela a las naciones su justicia:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se acordó de su misericordia y de su fidelidad",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en favor de la casa de Israel. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los confines de la tierra han contemplado",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la victoria de nuestro Dios.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Aclama al Señor, tierra entera;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "gritad, vitoread, tocad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tocad la cítara para el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "suenen los instrumentos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "con clarines y al son de trompetas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aclamad al Rey y Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

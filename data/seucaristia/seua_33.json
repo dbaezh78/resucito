@@ -8,16 +8,29 @@
   "tiempo": "Pascua",
   "dia": "Domingo",
   "orden": 410,
-  "respuesta": "R. Este es el día en que actuó el Señor:",
-  "respuestaOpcional": "",
+  "respuesta": "R. Este es el día en que actuó el Señor: sea nuestra alegría y nuestro gozo.",
+  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
-    "sea nuestra alegría y nuestro gozo.",
-    "R. Aleluya.",
-    "Dad gracias al Señor, porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\nEterna es su misericordia. R.",
-    "La diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor. R.",
-    "La piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R."
+    [
+      "Dad gracias al Señor, porque es bueno,",
+      "porque es eterna su misericordia.",
+      "Diga la casa de Israel:",
+      "Eterna es su misericordia. R."
+    ],
+    [
+      "La diestra del Señor es poderosa,",
+      "la diestra del Señor es excelsa.",
+      "No he de morir, viviré",
+      "para contar las hazañas del Señor. R."
+    ],
+    [
+      "La piedra que desecharon los arquitectos,",
+      "es ahora la piedra angular.",
+      "Es el Señor quien lo ha hecho,",
+      "ha sido un milagro patente. R."
+    ]
   ],
-  "textoCompleto": "sea nuestra alegría y nuestro gozo.\n\nR. Aleluya.\n\nDad gracias al Señor, porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\nEterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor. R.\n\nLa piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.",
+  "textoCompleto": "Dad gracias al Señor, porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\nEterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor. R.\n\nLa piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,84 +39,83 @@
   "lizq": [
     {
       "line": "R. Este es el día en que actuó el Señor:",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "sea nuestra alegría y nuestro gozo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dad gracias al Señor, porque es bueno,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "porque es eterna su misericordia.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Diga la casa de Israel:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Eterna es su misericordia. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La diestra del Señor es poderosa,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "la diestra del Señor es excelsa.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "No he de morir, viviré",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para contar las hazañas del Señor. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La piedra que desecharon los arquitectos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "es ahora la piedra angular.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Es el Señor quien lo ha hecho,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ha sido un milagro patente. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

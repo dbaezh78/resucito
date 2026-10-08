@@ -8,15 +8,29 @@
   "tiempo": "Adviento",
   "dia": "Domingo",
   "orden": 101,
-  "respuesta": "R. Oh Dios, restáuranos,",
+  "respuesta": "R. Oh Dios, restáuranos, que brille tu rostro y nos salve.",
   "respuestaOpcional": "",
   "estrofas": [
-    "que brille tu rostro y nos salve.",
-    "Pastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece.\nDespierta tu poder y ven a salvarnos. R.",
-    "Dios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.",
-    "Que tu mano proteja a tu escogido,\nal hombre que tú fortaleciste.\nNo nos alejaremos de ti;\ndanos vida, para que invoquemos tu nombre. R."
+    [
+      "Pastor de Israel, escucha,",
+      "tú que te sientas sobre querubines, resplandece.",
+      "Despierta tu poder y ven a salvarnos. R."
+    ],
+    [
+      "Dios de los ejércitos, vuélvete:",
+      "mira desde el cielo, fíjate,",
+      "ven a visitar tu viña,",
+      "la cepa que tu diestra plantó,",
+      "y que tú hiciste vigorosa. R."
+    ],
+    [
+      "Que tu mano proteja a tu escogido,",
+      "al hombre que tú fortaleciste.",
+      "No nos alejaremos de ti;",
+      "danos vida, para que invoquemos tu nombre. R."
+    ]
   ],
-  "textoCompleto": "que brille tu rostro y nos salve.\n\nPastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece.\nDespierta tu poder y ven a salvarnos. R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nQue tu mano proteja a tu escogido,\nal hombre que tú fortaleciste.\nNo nos alejaremos de ti;\ndanos vida, para que invoquemos tu nombre. R.",
+  "textoCompleto": "Pastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece.\nDespierta tu poder y ven a salvarnos. R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nQue tu mano proteja a tu escogido,\nal hombre que tú fortaleciste.\nNo nos alejaremos de ti;\ndanos vida, para que invoquemos tu nombre. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,76 +39,71 @@
   "lizq": [
     {
       "line": "R. Oh Dios, restáuranos,",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "que brille tu rostro y nos salve.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pastor de Israel, escucha,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tú que te sientas sobre querubines, resplandece.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Despierta tu poder y ven a salvarnos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dios de los ejércitos, vuélvete:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "mira desde el cielo, fíjate,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ven a visitar tu viña,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la cepa que tu diestra plantó,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y que tú hiciste vigorosa. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que tu mano proteja a tu escogido,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "al hombre que tú fortaleciste.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "No nos alejaremos de ti;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "danos vida, para que invoquemos tu nombre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

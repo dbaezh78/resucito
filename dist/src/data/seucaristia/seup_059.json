@@ -1,0 +1,100 @@
+{
+  "id": "seup_059",
+  "title": "Viernes de la 10ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 10ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 26, 7-8a. 8b-9abc. 13-14 (R.: 8b)",
+  "salmo": "Salmo responsorial: Salmo 26, 7-8a. 8b-9abc. 13-14 (R.: 8b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5105,
+  "respuesta": "R. Tu rostro buscaré, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Escúchame, Señor, que te llamo;",
+      "ten piedad, respóndeme.",
+      "Oigo en mi corazón: «Buscad mi rostro». R."
+    ],
+    [
+      "Tu rostro buscaré, Señor,",
+      "no me escondas tu rostro.",
+      "No rechaces con ira a tu siervo,",
+      "que tú eres mi auxilio; no me deseches. R."
+    ],
+    [
+      "Espero gozar de la dicha del Señor",
+      "en el país de la vida.",
+      "Espera en el Señor, sé valiente,",
+      "ten ánimo, espera en el Señor. R."
+    ]
+  ],
+  "textoCompleto": "Escúchame, Señor, que te llamo;\nten piedad, respóndeme.\nOigo en mi corazón: «Buscad mi rostro». R.\n\nTu rostro buscaré, Señor,\nno me escondas tu rostro.\nNo rechaces con ira a tu siervo,\nque tú eres mi auxilio; no me deseches. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 10 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 26 7 8a 8b 9abc 13 14 r 8b semana 10 semana x viernes 10 x r tu rostro buscare senor escuchame senor que te llamo ten piedad respondeme oigo en mi corazon buscad mi rostro r tu rostro buscare senor no me escondas tu rostro no rechaces con ira a tu siervo que tu eres mi auxilio no me deseches r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "lizq": [
+    {
+      "line": "R. Tu rostro buscaré, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Escúchame, Señor, que te llamo;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ten piedad, respóndeme.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Oigo en mi corazón: «Buscad mi rostro». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tu rostro buscaré, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "no me escondas tu rostro.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No rechaces con ira a tu siervo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tú eres mi auxilio; no me deseches. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Espero gozar de la dicha del Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en el país de la vida.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Espera en el Señor, sé valiente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ten ánimo, espera en el Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

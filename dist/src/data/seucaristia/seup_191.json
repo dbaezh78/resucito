@@ -1,0 +1,123 @@
+{
+  "id": "seup_191",
+  "title": "Viernes de la 32ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 32ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 1. 2. 10. 11. 17. 18 (R.: 1b)",
+  "salmo": "Salmo responsorial: Salmo 118, 1. 2. 10. 11. 17. 18 (R.: 1b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5325,
+  "respuesta": "R. Dichoso el que camina en la voluntad del Señor",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el que, con vida intachable,",
+      "camina en la voluntad del Señor. R."
+    ],
+    [
+      "Dichoso el que, guardando sus preceptos,",
+      "lo busca de todo corazón. R."
+    ],
+    [
+      "Te busco de todo corazón,",
+      "no consientas que me desvíe de tus mandamientos. R."
+    ],
+    [
+      "En mi corazón escondo tus consignas,",
+      "así no pecaré contra ti. R."
+    ],
+    [
+      "Haz bien a tu siervo: viviré",
+      "y cumpliré tus palabras. R."
+    ],
+    [
+      "Ábreme los ojos, y contemplaré",
+      "las maravillas de tu voluntad. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor. R.\n\nDichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.\n\nTe busco de todo corazón,\nno consientas que me desvíe de tus mandamientos. R.\n\nEn mi corazón escondo tus consignas,\nasí no pecaré contra ti. R.\n\nHaz bien a tu siervo: viviré\ny cumpliré tus palabras. R.\n\nÁbreme los ojos, y contemplaré\nlas maravillas de tu voluntad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 32 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 118 1 2 10 11 17 18 r 1b semana 32 semana xxxii viernes 32 xxxii r dichoso el que camina en la voluntad del senor dichoso el que con vida intachable camina en la voluntad del senor r dichoso el que guardando sus preceptos lo busca de todo corazon r te busco de todo corazon no consientas que me desvie de tus mandamientos r en mi corazon escondo tus consignas asi no pecare contra ti r haz bien a tu siervo vivire y cumplire tus palabras r abreme los ojos y contemplare las maravillas de tu voluntad r",
+  "lizq": [
+    {
+      "line": "R. Dichoso el que camina en la voluntad del Señor",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el que, con vida intachable,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "camina en la voluntad del Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el que, guardando sus preceptos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lo busca de todo corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te busco de todo corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "no consientas que me desvíe de tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En mi corazón escondo tus consignas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "así no pecaré contra ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Haz bien a tu siervo: viviré",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y cumpliré tus palabras. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ábreme los ojos, y contemplaré",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "las maravillas de tu voluntad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

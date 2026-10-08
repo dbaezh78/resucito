@@ -1,0 +1,136 @@
+{
+  "id": "seui_051",
+  "title": "Miércoles de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 9ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 24, 2-3a. 4-5ab. 6-7bc. 8-9 (R.: 1b)",
+  "salmo": "Salmo responsorial: Salmo 24, 2-3a. 4-5ab. 6-7bc. 8-9 (R.: 1b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5093,
+  "respuesta": "R. A ti, Señor, levanto mi alma.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dios mío, en ti confío,",
+      "no quede yo defraudado,",
+      "que no triunfen de mí mis enemigos;",
+      "pues los que esperan en ti no quedan defraudados,",
+      "mientras que el fracaso malogra a los traidores. R."
+    ],
+    [
+      "Señor, enséñame tus caminos,",
+      "instrúyeme en tus sendas:",
+      "haz que camine con lealtad;",
+      "enséñame, porque tú eres mi Dios y Salvador. R."
+    ],
+    [
+      "Recuerda, Señor, que tu ternura",
+      "y tu misericordia son eternas;",
+      "acuérdate de mí con misericordia,",
+      "por tu bondad, Señor. R."
+    ],
+    [
+      "El Señor es bueno y es recto,",
+      "y enseña el camino a los pecadores;",
+      "hace caminar a los humildes con rectitud,",
+      "enseña su camino a los humildes. R."
+    ]
+  ],
+  "textoCompleto": "Dios mío, en ti confío,\nno quede yo defraudado,\nque no triunfen de mí mis enemigos;\npues los que esperan en ti no quedan defraudados,\nmientras que el fracaso malogra a los traidores. R.\n\nSeñor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 9 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 24 2 3a 4 5ab 6 7bc 8 9 r 1b semana 9 semana ix miercoles 9 ix r a ti senor levanto mi alma dios mio en ti confio no quede yo defraudado que no triunfen de mi mis enemigos pues los que esperan en ti no quedan defraudados mientras que el fracaso malogra a los traidores r senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "lizq": [
+    {
+      "line": "R. A ti, Señor, levanto mi alma.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios mío, en ti confío,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "no quede yo defraudado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que no triunfen de mí mis enemigos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pues los que esperan en ti no quedan defraudados,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mientras que el fracaso malogra a los traidores. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, enséñame tus caminos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "instrúyeme en tus sendas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "haz que camine con lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Recuerda, Señor, que tu ternura",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y tu misericordia son eternas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "acuérdate de mí con misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por tu bondad, Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es bueno y es recto,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y enseña el camino a los pecadores;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hace caminar a los humildes con rectitud,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "enseña su camino a los humildes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

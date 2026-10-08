@@ -1,0 +1,116 @@
+{
+  "id": "seuf_036",
+  "title": "9 DE ENERO: Miércoles después de Epifanía",
+  "celebracion": "9 DE ENERO: Miércoles después de Epifanía",
+  "subtitle": "Salmo 71, 1-2. 10-11. 12-13 (R.: cf. 11)",
+  "salmo": "Salmo 71, 1-2. 10-11. 12-13 (R.: cf. 11)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Navidad",
+  "dia": "Miércoles",
+  "orden": 233,
+  "respuesta": "R. Se postrarán ante ti, Señor, todos los pueblos de la tierra.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dios mío, confía tu juicio al rey,",
+      "tu justicia al hijo de reyes,",
+      "para que rija a tu pueblo con justicia,",
+      "a tus humildes con rectitud. R."
+    ],
+    [
+      "Que los reyes de Tarsis y de las islas",
+      "le paguen tributo.",
+      "Que los reyes de Saba y de Arabia",
+      "le ofrezcan sus dones; R."
+    ],
+    [
+      "Él librará al pobre que clamaba,",
+      "al afligido que no tenía protector;",
+      "él se apiadará del pobre y del indigente,",
+      "y salvará la vida de los pobres. R."
+    ]
+  ],
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue los reyes de Tarsis y de las islas\nle paguen tributo.\nQue los reyes de Saba y de Arabia\nle ofrezcan sus dones; R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "9 de enero miercoles despues de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad miercoles salmo 71 1 2 10 11 12 13 r cf 11 miercoles feria r se postraran ante ti senor todos los pueblos de la tierra dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que los reyes de tarsis y de las islas le paguen tributo que los reyes de saba y de arabia le ofrezcan sus dones r el librara al pobre que clamaba al afligido que no tenia protector el se apiadara del pobre y del indigente y salvara la vida de los pobres r",
+  "lizq": [
+    {
+      "line": "R. Se postrarán ante ti, Señor,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "todos los pueblos de la tierra.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios mío, confía tu juicio al rey,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tu justicia al hijo de reyes,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que rija a tu pueblo con justicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a tus humildes con rectitud. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que los reyes de Tarsis y de las islas",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "le paguen tributo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que los reyes de Saba y de Arabia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "le ofrezcan sus dones; R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él librará al pobre que clamaba,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "al afligido que no tenía protector;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él se apiadará del pobre y del indigente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y salvará la vida de los pobres. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

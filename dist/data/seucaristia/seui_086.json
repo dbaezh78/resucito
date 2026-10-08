@@ -1,0 +1,131 @@
+{
+  "id": "seui_086",
+  "title": "Martes de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 68, 3. 14. 30-31. 33-34 (R.: cf. 33)",
+  "salmo": "Salmo responsorial: Salmo 68, 3. 14. 30-31. 33-34 (R.: cf. 33)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5152,
+  "respuesta": "R. Humildes, buscad al Señor, y vivirá vuestro corazón.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Me estoy hundiendo en un cieno profundo",
+      "y no puedo hacer pie;",
+      "he entrado en la hondura del agua,",
+      "me arrastra la corriente. R."
+    ],
+    [
+      "Pero mi oración se dirige a ti,",
+      "Dios mío, el día de tu favor;",
+      "que me escuche tu gran bondad,",
+      "que tu fidelidad me ayude. R."
+    ],
+    [
+      "Yo soy un pobre malherido;",
+      "Dios mío, tu salvación me levante.",
+      "Alabaré el nombre de Dios con cantos,",
+      "proclamaré su grandeza con acción de gracias. R."
+    ],
+    [
+      "Miradlo, los humildes y alegraos,",
+      "buscad al Señor, y revivirá vuestro corazón.",
+      "Que el señor escucha a sus pobres,",
+      "no desprecia a sus cautivos. R."
+    ]
+  ],
+  "textoCompleto": "Me estoy hundiendo en un cieno profundo\ny no puedo hacer pie;\nhe entrado en la hondura del agua,\nme arrastra la corriente. R.\n\nPero mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude. R.\n\nYo soy un pobre malherido;\nDios mío, tu salvación me levante.\nAlabaré el nombre de Dios con cantos,\nproclamaré su grandeza con acción de gracias. R.\n\nMiradlo, los humildes y alegraos,\nbuscad al Señor, y revivirá vuestro corazón.\nQue el señor escucha a sus pobres,\nno desprecia a sus cautivos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 15 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 68 3 14 30 31 33 34 r cf 33 semana 15 semana xv martes 15 xv r humildes buscad al senor y vivira vuestro corazon me estoy hundiendo en un cieno profundo y no puedo hacer pie he entrado en la hondura del agua me arrastra la corriente r pero mi oracion se dirige a ti dios mio el dia de tu favor que me escuche tu gran bondad que tu fidelidad me ayude r yo soy un pobre malherido dios mio tu salvacion me levante alabare el nombre de dios con cantos proclamare su grandeza con accion de gracias r miradlo los humildes y alegraos buscad al senor y revivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos r",
+  "lizq": [
+    {
+      "line": "R. Humildes, buscad al Señor, y vivirá vuestro corazón.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Me estoy hundiendo en un cieno profundo",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y no puedo hacer pie;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "he entrado en la hondura del agua,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me arrastra la corriente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero mi oración se dirige a ti,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios mío, el día de tu favor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que me escuche tu gran bondad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tu fidelidad me ayude. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo soy un pobre malherido;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios mío, tu salvación me levante.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alabaré el nombre de Dios con cantos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "proclamaré su grandeza con acción de gracias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Miradlo, los humildes y alegraos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "buscad al Señor, y revivirá vuestro corazón.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el señor escucha a sus pobres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no desprecia a sus cautivos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

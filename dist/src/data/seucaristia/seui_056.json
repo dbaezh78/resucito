@@ -1,0 +1,123 @@
+{
+  "id": "seui_056",
+  "title": "Martes de la 10ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 10ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 129. 130. 131. 132. 133. 135 (R.: 135a)",
+  "salmo": "Salmo responsorial: Salmo 118, 129. 130. 131. 132. 133. 135 (R.: 135a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5102,
+  "respuesta": "R. Haz brillar, Señor, tu rostro sobre tu siervo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Tus preceptos son admirables,",
+      "por eso los guarda mi alma. R."
+    ],
+    [
+      "La explicación de tus palabras ilumina,",
+      "da inteligencia a los ignorantes. R."
+    ],
+    [
+      "Abro la boca y respiro,",
+      "ansiando tus mandamientos. R."
+    ],
+    [
+      "Vuélvete a mí y ten misericordia,",
+      "como es tu norma con los que aman tu nombre. R."
+    ],
+    [
+      "Asegura mis pasos con tu promesa,",
+      "que ninguna maldad me domine. R."
+    ],
+    [
+      "Haz brillar tu rostro sobre tu siervo,",
+      "enséñame tus leyes. R."
+    ]
+  ],
+  "textoCompleto": "Tus preceptos son admirables,\npor eso los guarda mi alma. R.\n\nLa explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.\n\nAbro la boca y respiro,\nansiando tus mandamientos. R.\n\nVuélvete a mí y ten misericordia,\ncomo es tu norma con los que aman tu nombre. R.\n\nAsegura mis pasos con tu promesa,\nque ninguna maldad me domine. R.\n\nHaz brillar tu rostro sobre tu siervo,\nenséñame tus leyes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 10 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 118 129 130 131 132 133 135 r 135a semana 10 semana x martes 10 x r haz brillar senor tu rostro sobre tu siervo tus preceptos son admirables por eso los guarda mi alma r la explicacion de tus palabras ilumina da inteligencia a los ignorantes r abro la boca y respiro ansiando tus mandamientos r vuelvete a mi y ten misericordia como es tu norma con los que aman tu nombre r asegura mis pasos con tu promesa que ninguna maldad me domine r haz brillar tu rostro sobre tu siervo ensename tus leyes r",
+  "lizq": [
+    {
+      "line": "R. Haz brillar, Señor, tu rostro sobre tu siervo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tus preceptos son admirables,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por eso los guarda mi alma. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La explicación de tus palabras ilumina,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "da inteligencia a los ignorantes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Abro la boca y respiro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ansiando tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Vuélvete a mí y ten misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "como es tu norma con los que aman tu nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Asegura mis pasos con tu promesa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que ninguna maldad me domine. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Haz brillar tu rostro sobre tu siervo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "enséñame tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

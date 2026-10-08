@@ -1,0 +1,112 @@
+{
+  "id": "seuf_010",
+  "title": "Jueves de la 2ª semana de Adviento",
+  "celebracion": "Jueves de la 2ª semana de Adviento",
+  "subtitle": "Salmo 144, 1 y 9. 10-11. 12-13ab (R.: 8)",
+  "salmo": "Salmo 144, 1 y 9. 10-11. 12-13ab (R.: 8)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Jueves",
+  "orden": 124,
+  "respuesta": "R. El Señor es clemente y misericordioso, lento a la cólera y rico en piedad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Te ensalzaré, Dios mío, mi rey;",
+      "bendeciré tu nombre por siempre jamás.",
+      "El Señor es bueno con todos,",
+      "es cariñoso con todas sus criaturas. R."
+    ],
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas; R."
+    ],
+    [
+      "Explicando tus hazañas a los hombres,",
+      "la gloria y majestad de tu reinado.",
+      "Tu reinado es un reinado perpetuo,",
+      "tu gobierno va de edad en edad. R."
+    ]
+  ],
+  "textoCompleto": "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nEl Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas; R.\n\nExplicando tus hazañas a los hombres,\nla gloria y majestad de tu reinado.\nTu reinado es un reinado perpetuo,\ntu gobierno va de edad en edad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento jueves salmo 144 1 y 9 10 11 12 13ab r 8 semana 2 semana ii jueves feria r el senor es clemente y misericordioso lento a la colera y rico en piedad te ensalzare dios mio mi rey bendecire tu nombre por siempre jamas el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r explicando tus hazanas a los hombres la gloria y majestad de tu reinado tu reinado es un reinado perpetuo tu gobierno va de edad en edad r",
+  "lizq": [
+    {
+      "line": "R. El Señor es clemente y misericordioso, lento a la cólera y rico en piedad.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te ensalzaré, Dios mío, mi rey;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "bendeciré tu nombre por siempre jamás.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor es bueno con todos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es cariñoso con todas sus criaturas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que todas tus criaturas te den gracias, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que te bendigan tus fieles;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que proclamen la gloria de tu reinado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hablen de tus hazañas; R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Explicando tus hazañas a los hombres,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la gloria y majestad de tu reinado.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tu reinado es un reinado perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu gobierno va de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "seuc_25",
+  "title": "Primer Salmo - Opcion 2",
+  "celebracion": "Primer Salmo - Opcion 2",
+  "subtitle": "Salmo responsorial: Salmo 32, 4-5. 6-7. 12-13. 20 y 22 (R.: 5b)",
+  "salmo": "Salmo responsorial: Salmo 32, 4-5. 6-7. 12-13. 20 y 22 (R.: 5b)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Solemnidades y Fiestas",
+  "dia": "Domingo",
+  "orden": 600,
+  "respuesta": "R. La misericordia del Señor llena la tierra.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "La palabra del Señor es sincera,",
+      "y todas sus acciones son leales.",
+      "El ama la justicia y el derecho,",
+      "y su misericordia llena la tierra. R."
+    ],
+    [
+      "La palabra del Señor hizo el cielo,",
+      "el aliento de su boca, sus ejércitos;",
+      "encierra en un orbe las aguas marinas,",
+      "mete en un depósito el océano. R."
+    ],
+    [
+      "Dichosa la nación cuyo Dios es el Señor,",
+      "el pueblo que él escogió como heredad.",
+      "El Señor mira desde el cielo,",
+      "se fija en todos los hombres. R."
+    ],
+    [
+      "Nosotros aguardamos al Señor:",
+      "él es nuestro auxilio y escudo.",
+      "Que tu misericordia, Señor, venga sobre nosotros,",
+      "como lo esperamos de ti. R."
+    ]
+  ],
+  "textoCompleto": "La palabra del Señor es sincera,\ny todas sus acciones son leales.\nEl ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLa palabra del Señor hizo el cielo,\nel aliento de su boca, sus ejércitos;\nencierra en un orbe las aguas marinas,\nmete en un depósito el océano. R.\n\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo.\nQue tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "primer salmo opcion 2 ciclo c solemnidades y fiestas domingo salmo responsorial salmo 32 4 5 6 7 12 13 20 y 22 r 5b r la misericordia del senor llena la tierra la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r la palabra del senor hizo el cielo el aliento de su boca sus ejercitos encierra en un orbe las aguas marinas mete en un deposito el oceano r dichosa la nacion cuyo dios es el senor el pueblo que el escogio como heredad el senor mira desde el cielo se fija en todos los hombres r nosotros aguardamos al senor el es nuestro auxilio y escudo que tu misericordia senor venga sobre nosotros como lo esperamos de ti r",
+  "lizq": [
+    {
+      "line": "R. La misericordia del Señor llena la tierra.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La palabra del Señor es sincera,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todas sus acciones son leales.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El ama la justicia y el derecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y su misericordia llena la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La palabra del Señor hizo el cielo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el aliento de su boca, sus ejércitos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "encierra en un orbe las aguas marinas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mete en un depósito el océano. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichosa la nación cuyo Dios es el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el pueblo que él escogió como heredad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor mira desde el cielo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se fija en todos los hombres. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Nosotros aguardamos al Señor:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "él es nuestro auxilio y escudo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que tu misericordia, Señor, venga sobre nosotros,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como lo esperamos de ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

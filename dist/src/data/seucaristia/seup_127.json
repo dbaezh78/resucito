@@ -1,0 +1,123 @@
+{
+  "id": "seup_127",
+  "title": "Lunes de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 97. 98. 99. 100. 101 (R.: 97a)",
+  "salmo": "Salmo responsorial: Salmo 118, 97. 98. 99. 100. 101 (R.: 97a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5221,
+  "respuesta": "R. ¡Cuánto amo tu voluntad, Señor!",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "¡Cuánto amo tu voluntad!:",
+      "todo el día estoy meditando. R."
+    ],
+    [
+      "Tu mandato me hace más sabio que mis enemigos,",
+      "siempre me acompaña. R."
+    ],
+    [
+      "Soy más docto que todos mis maestros,",
+      "porque medito tus preceptos. R."
+    ],
+    [
+      "Soy más sagaz que los ancianos,",
+      "porque cumplo tus leyes. R."
+    ],
+    [
+      "Aparto mi pie de toda senda mala,",
+      "para guardar tu palabra. R."
+    ],
+    [
+      "No me aparto de tus mandamientos,",
+      "porque tú me has instruido. R."
+    ]
+  ],
+  "textoCompleto": "¡Cuánto amo tu voluntad!:\ntodo el día estoy meditando. R.\n\nTu mandato me hace más sabio que mis enemigos,\nsiempre me acompaña. R.\n\nSoy más docto que todos mis maestros,\nporque medito tus preceptos. R.\n\nSoy más sagaz que los ancianos,\nporque cumplo tus leyes. R.\n\nAparto mi pie de toda senda mala,\npara guardar tu palabra. R.\n\nNo me aparto de tus mandamientos,\nporque tú me has instruido. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 22 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 118 97 98 99 100 101 r 97a semana 22 semana xxii lunes 22 xxii r cuanto amo tu voluntad senor cuanto amo tu voluntad todo el dia estoy meditando r tu mandato me hace mas sabio que mis enemigos siempre me acompana r soy mas docto que todos mis maestros porque medito tus preceptos r soy mas sagaz que los ancianos porque cumplo tus leyes r aparto mi pie de toda senda mala para guardar tu palabra r no me aparto de tus mandamientos porque tu me has instruido r",
+  "lizq": [
+    {
+      "line": "R. ¡Cuánto amo tu voluntad, Señor!",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Cuánto amo tu voluntad!:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "todo el día estoy meditando. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tu mandato me hace más sabio que mis enemigos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "siempre me acompaña. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Soy más docto que todos mis maestros,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque medito tus preceptos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Soy más sagaz que los ancianos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque cumplo tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aparto mi pie de toda senda mala,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para guardar tu palabra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No me aparto de tus mandamientos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque tú me has instruido. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

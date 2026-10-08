@@ -1,0 +1,95 @@
+{
+  "id": "seui_108",
+  "title": "Sábado de la 18ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 18ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 17, 28-3a. 3bc-4. 47 y 51ab (R.: 2)",
+  "salmo": "Salmo responsorial: Salmo 17, 28-3a. 3bc-4. 47 y 51ab (R.: 2)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5186,
+  "respuesta": "R. Yo te amo, Señor; tú eres mi fortaleza.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Yo te amo, Señor; tú eres mi fortaleza;",
+      "Señor, mi roca, mi alcázar, mi libertador. R."
+    ],
+    [
+      "Dios mío, peña mía, refugio mío, escudo mío,",
+      "mi fuerza salvadora, mi baluarte.",
+      "Invoco al Señor de mi alabanza",
+      "y quedo libre de mis enemigos. R."
+    ],
+    [
+      "Viva el Señor, bendita sea mi Roca,",
+      "sea ensalzado mi Dios y Salvador:",
+      "tú diste gran victoria a tu rey,",
+      "tuviste misericordia de tu Ungido. R."
+    ]
+  ],
+  "textoCompleto": "Yo te amo, Señor; tú eres mi fortaleza;\nSeñor, mi roca, mi alcázar, mi libertador. R.\n\nDios mío, peña mía, refugio mío, escudo mío,\nmi fuerza salvadora, mi baluarte.\nInvoco al Señor de mi alabanza\ny quedo libre de mis enemigos. R.\n\nViva el Señor, bendita sea mi Roca,\nsea ensalzado mi Dios y Salvador:\ntú diste gran victoria a tu rey,\ntuviste misericordia de tu Ungido. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 18 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 17 28 3a 3bc 4 47 y 51ab r 2 semana 18 semana xviii sabado 18 xviii r yo te amo senor tu eres mi fortaleza yo te amo senor tu eres mi fortaleza senor mi roca mi alcazar mi libertador r dios mio pena mia refugio mio escudo mio mi fuerza salvadora mi baluarte invoco al senor de mi alabanza y quedo libre de mis enemigos r viva el senor bendita sea mi roca sea ensalzado mi dios y salvador tu diste gran victoria a tu rey tuviste misericordia de tu ungido r",
+  "lizq": [
+    {
+      "line": "R. Yo te amo, Señor; tú eres mi fortaleza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo te amo, Señor; tú eres mi fortaleza;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor, mi roca, mi alcázar, mi libertador. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios mío, peña mía, refugio mío, escudo mío,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mi fuerza salvadora, mi baluarte.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Invoco al Señor de mi alabanza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y quedo libre de mis enemigos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Viva el Señor, bendita sea mi Roca,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sea ensalzado mi Dios y Salvador:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú diste gran victoria a tu rey,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tuviste misericordia de tu Ungido. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

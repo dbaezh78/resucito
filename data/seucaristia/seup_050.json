@@ -1,0 +1,135 @@
+{
+  "id": "seup_050",
+  "title": "Martes de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 9ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 89, 2. 3-4. 10. 14 y 16 (R.: 1)",
+  "salmo": "Salmo responsorial: Salmo 89, 2. 3-4. 10. 14 y 16 (R.: 1)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5092,
+  "respuesta": "R. Señor, tú has sido nuestro refugio de generación en generación.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Antes que naciesen los montes",
+      "o fuera engendrado el orbe de la tierra,",
+      "desde siempre y por siempre tú eres Dios. R."
+    ],
+    [
+      "Tú reduces el hombre a polvo,",
+      "diciendo: «Retornad, hijos de Adán».",
+      "Mil años en tu presencia",
+      "son un ayer, que pasó;",
+      "una vela nocturna. R."
+    ],
+    [
+      "Aunque uno viva setenta años,",
+      "y el más robusto hasta ochenta,",
+      "la mayor parte son fatiga inútil,",
+      "porque pasan aprisa y vuelan. R."
+    ],
+    [
+      "Por la mañana sácianos de tu misericordia,",
+      "y toda nuestra vida será alegría y júbilo.",
+      "Que tus siervos vean tu acción,",
+      "y sus hijos tu gloria. R."
+    ]
+  ],
+  "textoCompleto": "Antes que naciesen los montes\no fuera engendrado el orbe de la tierra,\ndesde siempre y por siempre tú eres Dios. R.\n\nTú reduces el hombre a polvo,\ndiciendo: «Retornad, hijos de Adán».\nMil años en tu presencia\nson un ayer, que pasó;\nuna vela nocturna. R.\n\nAunque uno viva setenta años,\ny el más robusto hasta ochenta,\nla mayor parte son fatiga inútil,\nporque pasan aprisa y vuelan. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nQue tus siervos vean tu acción,\ny sus hijos tu gloria. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 9 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 89 2 3 4 10 14 y 16 r 1 semana 9 semana ix martes 9 ix r senor tu has sido nuestro refugio de generacion en generacion antes que naciesen los montes o fuera engendrado el orbe de la tierra desde siempre y por siempre tu eres dios r tu reduces el hombre a polvo diciendo retornad hijos de adan mil anos en tu presencia son un ayer que paso una vela nocturna r aunque uno viva setenta anos y el mas robusto hasta ochenta la mayor parte son fatiga inutil porque pasan aprisa y vuelan r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo que tus siervos vean tu accion y sus hijos tu gloria r",
+  "lizq": [
+    {
+      "line": "R. Señor, tú has sido nuestro refugio",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "de generación en generación.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Antes que naciesen los montes",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "o fuera engendrado el orbe de la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "desde siempre y por siempre tú eres Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú reduces el hombre a polvo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "diciendo: «Retornad, hijos de Adán».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mil años en tu presencia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "son un ayer, que pasó;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "una vela nocturna. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aunque uno viva setenta años,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y el más robusto hasta ochenta,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la mayor parte son fatiga inútil,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque pasan aprisa y vuelan. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Por la mañana sácianos de tu misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y toda nuestra vida será alegría y júbilo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que tus siervos vean tu acción,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y sus hijos tu gloria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

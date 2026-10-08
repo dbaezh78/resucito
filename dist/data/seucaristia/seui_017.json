@@ -1,0 +1,136 @@
+{
+  "id": "seui_017",
+  "title": "Viernes de la 3ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 3ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 36, 3-4. 5-6. 23-24. 39-40 (R.: 39a)",
+  "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 23-24. 39-40 (R.: 39a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5035,
+  "respuesta": "R. El Señor es quien salva a los justos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Confía en el Señor y haz el bien,",
+      "habita tu tierra y practica la lealtad;",
+      "sea el Señor tu delicia,",
+      "y él te dará lo que pide tu corazón. R."
+    ],
+    [
+      "Encomienda tu camino al Señor,",
+      "confía en él, y él actuará:",
+      "hará tu justicia como el amanecer,",
+      "tu derecho como el mediodía. R."
+    ],
+    [
+      "El Señor asegura los pasos del hombre,",
+      "se complace en sus caminos;",
+      "si tropieza, no caerá,",
+      "porque el Señor lo tiene de la mano. R."
+    ],
+    [
+      "El Señor es quien salva a los justos,",
+      "él es su alcázar en el peligro;",
+      "el Señor los protege y los libra,",
+      "los libra de los malvados y los salva",
+      "porque se acogen a él. R."
+    ]
+  ],
+  "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nEl Señor asegura los pasos del hombre,\nse complace en sus caminos;\nsi tropieza, no caerá,\nporque el Señor lo tiene de la mano. R.\n\nEl Señor es quien salva a los justos,\nél es su alcázar en el peligro;\nel Señor los protege y los libra,\nlos libra de los malvados y los salva\nporque se acogen a él. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 3 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 36 3 4 5 6 23 24 39 40 r 39a semana 3 semana iii viernes 3 iii r el senor es quien salva a los justos confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r el senor asegura los pasos del hombre se complace en sus caminos si tropieza no caera porque el senor lo tiene de la mano r el senor es quien salva a los justos el es su alcazar en el peligro el senor los protege y los libra los libra de los malvados y los salva porque se acogen a el r",
+  "lizq": [
+    {
+      "line": "R. El Señor es quien salva a los justos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Confía en el Señor y haz el bien,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "habita tu tierra y practica la lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sea el Señor tu delicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y él te dará lo que pide tu corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Encomienda tu camino al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "confía en él, y él actuará:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hará tu justicia como el amanecer,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu derecho como el mediodía. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor asegura los pasos del hombre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "se complace en sus caminos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "si tropieza, no caerá,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque el Señor lo tiene de la mano. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es quien salva a los justos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "él es su alcázar en el peligro;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor los protege y los libra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los libra de los malvados y los salva",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque se acogen a él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

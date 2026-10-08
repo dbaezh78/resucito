@@ -1,0 +1,138 @@
+{
+  "id": "seuf_091",
+  "title": "Viernes de la segunda semana de Pascua",
+  "celebracion": "Viernes de la segunda semana de Pascua",
+  "subtitle": "Salmo 26, 1. 4. 13-14 (R.: cf. 4ab)",
+  "salmo": "Salmo 26, 1. 4. 13-14 (R.: cf. 4ab)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Viernes",
+  "orden": 425,
+  "respuesta": "R. Una cosa pido al Señor: habitar en su casa.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "El Señor es mi luz y mi salvación,",
+      "¿a quién temeré?",
+      "El Señor es la defensa de mi vida,",
+      "¿quién me hará temblar? R."
+    ],
+    [
+      "Una cosa pido al Señor,",
+      "eso buscaré:",
+      "habitar en la casa del Señor",
+      "por los días de mi vida;",
+      "gozar de la dulzura del Señor,",
+      "contemplando su templo. R."
+    ],
+    [
+      "Espero gozar de la dicha del Señor",
+      "en el país de la vida.",
+      "Espera en el Señor, sé valiente,",
+      "ten ánimo, espera en el Señor. R."
+    ]
+  ],
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 26 1 4 13 14 r cf 4ab semana 2 semana ii viernes feria r una cosa pido al senor habitar en su casa r aleluya el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "lizq": [
+    {
+      "line": "R. Una cosa pido al Señor:",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "habitar en su casa.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es mi luz y mi salvación,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿a quién temeré?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor es la defensa de mi vida,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿quién me hará temblar? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Una cosa pido al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "eso buscaré:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "habitar en la casa del Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por los días de mi vida;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "gozar de la dulzura del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "contemplando su templo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Espero gozar de la dicha del Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en el país de la vida.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Espera en el Señor, sé valiente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ten ánimo, espera en el Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

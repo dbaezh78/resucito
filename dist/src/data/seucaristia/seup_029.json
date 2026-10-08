@@ -1,0 +1,109 @@
+{
+  "id": "seup_029",
+  "title": "Viernes de la 5ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 5ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 80, 10-11ab. 12-13. 14-15 (R.: cf. 11a y 9a)",
+  "salmo": "Salmo responsorial: Salmo 80, 10-11ab. 12-13. 14-15 (R.: cf. 11a y 9a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5055,
+  "respuesta": "R. Yo soy el Señor, Dios tuyo: escucha mi voz.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "No tendrás un dios extraño,",
+      "no adorarás un dios extranjero;",
+      "yo soy el Señor, Dios tuyo,",
+      "que te saqué del país de Egipto. R."
+    ],
+    [
+      "Pero mi pueblo no escuchó mi voz,",
+      "Israel no quiso obedecer:",
+      "los entregué a su corazón obstinado,",
+      "para que anduviesen según sus antojos. R."
+    ],
+    [
+      "¡Ojalá me escuchase mi pueblo",
+      "y caminase Israel por mi camino!:",
+      "en un momento humillaría a sus enemigos",
+      "y volvería mi mano contra sus adversarios. R."
+    ]
+  ],
+  "textoCompleto": "No tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto. R.\n\nPero mi pueblo no escuchó mi voz,\nIsrael no quiso obedecer:\nlos entregué a su corazón obstinado,\npara que anduviesen según sus antojos. R.\n\n¡Ojalá me escuchase mi pueblo\ny caminase Israel por mi camino!:\nen un momento humillaría a sus enemigos\ny volvería mi mano contra sus adversarios. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 5 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 80 10 11ab 12 13 14 15 r cf 11a y 9a semana 5 semana v viernes 5 v r yo soy el senor dios tuyo escucha mi voz no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r pero mi pueblo no escucho mi voz israel no quiso obedecer los entregue a su corazon obstinado para que anduviesen segun sus antojos r ojala me escuchase mi pueblo y caminase israel por mi camino en un momento humillaria a sus enemigos y volveria mi mano contra sus adversarios r",
+  "lizq": [
+    {
+      "line": "R. Yo soy el Señor, Dios tuyo:",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "escucha mi voz.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No tendrás un dios extraño,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "no adorarás un dios extranjero;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "yo soy el Señor, Dios tuyo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que te saqué del país de Egipto. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero mi pueblo no escuchó mi voz,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Israel no quiso obedecer:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los entregué a su corazón obstinado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que anduviesen según sus antojos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Ojalá me escuchase mi pueblo",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y caminase Israel por mi camino!:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en un momento humillaría a sus enemigos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y volvería mi mano contra sus adversarios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

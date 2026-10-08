@@ -1,0 +1,105 @@
+{
+  "id": "seui_135",
+  "title": "Miércoles de la 23ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 23ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 10-11. 12-13ab (R.: 9a)",
+  "salmo": "Salmo responsorial: Salmo 144, 2-3. 10-11. 12-13ab (R.: 9a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5233,
+  "respuesta": "R. El Señor es bueno con todos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Día tras día, te bendeciré",
+      "y alabaré tu nombre por siempre jamás.",
+      "Grande es el Señor, merece toda alabanza,",
+      "es incalculable su grandeza. R."
+    ],
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ],
+    [
+      "Explicando tus hazañas a los hombres,",
+      "la gloria y majestad de tu reinado.",
+      "Tu reinado es un reinado perpetuo,",
+      "tu gobierno va de edad en edad. R."
+    ]
+  ],
+  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nExplicando tus hazañas a los hombres,\nla gloria y majestad de tu reinado.\nTu reinado es un reinado perpetuo,\ntu gobierno va de edad en edad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 23 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 144 2 3 10 11 12 13ab r 9a semana 23 semana xxiii miercoles 23 xxiii r el senor es bueno con todos dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r explicando tus hazanas a los hombres la gloria y majestad de tu reinado tu reinado es un reinado perpetuo tu gobierno va de edad en edad r",
+  "lizq": [
+    {
+      "line": "R. El Señor es bueno con todos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Día tras día, te bendeciré",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y alabaré tu nombre por siempre jamás.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Grande es el Señor, merece toda alabanza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es incalculable su grandeza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que todas tus criaturas te den gracias, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que te bendigan tus fieles;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que proclamen la gloria de tu reinado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hablen de tus hazañas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Explicando tus hazañas a los hombres,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la gloria y majestad de tu reinado.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tu reinado es un reinado perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu gobierno va de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

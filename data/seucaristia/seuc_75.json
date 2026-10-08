@@ -1,0 +1,135 @@
+{
+  "id": "seuc_75",
+  "title": "Domingo de la 29ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 29ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 120, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+  "salmo": "Salmo responsorial: Salmo 120, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 529,
+  "respuesta": "R. El auxilio me viene del Señor, que hizo el cielo y la tierra.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Levanto mis ojos a los montes:",
+      "¿de dónde me vendrá el auxilio?",
+      "El auxilio me viene del Señor,",
+      "que hizo el cielo y la tierra. R."
+    ],
+    [
+      "No permitirá que resbale tu pie,",
+      "tu guardián no duerme;",
+      "no duerme ni reposa",
+      "el guardián de Israel. R."
+    ],
+    [
+      "El Señor te guarda a su sombra,",
+      "está a tu derecha;",
+      "de día el sol no te hará daño,",
+      "ni la luna de noche. R."
+    ],
+    [
+      "El Señor te guarda de todo mal,",
+      "él guarda tu alma;",
+      "el Señor guarda tus entradas y salidas,",
+      "ahora y por siempre. R."
+    ]
+  ],
+  "textoCompleto": "Levanto mis ojos a los montes:\n¿de dónde me vendrá el auxilio?\nEl auxilio me viene del Señor,\nque hizo el cielo y la tierra. R.\n\nNo permitirá que resbale tu pie,\ntu guardián no duerme;\nno duerme ni reposa\nel guardián de Israel. R.\n\nEl Señor te guarda a su sombra,\nestá a tu derecha;\nde día el sol no te hará daño,\nni la luna de noche. R.\n\nEl Señor te guarda de todo mal,\nél guarda tu alma;\nel Señor guarda tus entradas y salidas,\nahora y por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 29 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 120 1 2 3 4 5 6 7 8 r 2 r el auxilio me viene del senor que hizo el cielo y la tierra levanto mis ojos a los montes de donde me vendra el auxilio el auxilio me viene del senor que hizo el cielo y la tierra r no permitira que resbale tu pie tu guardian no duerme no duerme ni reposa el guardian de israel r el senor te guarda a su sombra esta a tu derecha de dia el sol no te hara dano ni la luna de noche r el senor te guarda de todo mal el guarda tu alma el senor guarda tus entradas y salidas ahora y por siempre r",
+  "lizq": [
+    {
+      "line": "R. El auxilio me viene del Señor,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "que hizo el cielo y la tierra.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Levanto mis ojos a los montes:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿de dónde me vendrá el auxilio?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El auxilio me viene del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hizo el cielo y la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No permitirá que resbale tu pie,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tu guardián no duerme;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no duerme ni reposa",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el guardián de Israel. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor te guarda a su sombra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "está a tu derecha;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de día el sol no te hará daño,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni la luna de noche. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor te guarda de todo mal,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "él guarda tu alma;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor guarda tus entradas y salidas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ahora y por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "seuc_10",
+  "title": "Opcion 2",
+  "celebracion": "Opcion 2",
+  "subtitle": "Salmo responsorial Sal 83, 2-3. 5-6. 9-10 (R.: cf. 5a)",
+  "salmo": "Salmo responsorial Sal 83, 2-3. 5-6. 9-10 (R.: cf. 5a)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Solemnidades y Fiestas",
+  "dia": "Domingo",
+  "orden": 600,
+  "respuesta": "R. Dichosos los que viven en tu casa, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "¡Qué deseables son tus moradas,",
+      "Señor de los ejércitos!",
+      "Mi alma se consume y anhela",
+      "los atrios del Señor,",
+      "mi corazón y mi carne",
+      "retozan por el Dios vivo. R."
+    ],
+    [
+      "Dichosos los que viven en tu casa,",
+      "alabándote siempre.",
+      "Dichosos los que encuentran en ti su fuerza",
+      "al preparar su peregrinación. R."
+    ],
+    [
+      "Señor de los ejércitos, escucha mi súplica;",
+      "atiéndeme, Dios de Jacob.",
+      "Fíjate, oh Dios, en nuestro escudo,",
+      "mira el rostro de tu Ungido. R."
+    ]
+  ],
+  "textoCompleto": "¡Qué deseables son tus moradas,\nSeñor de los ejércitos!\nMi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nDichosos los que encuentran en ti su fuerza\nal preparar su peregrinación. R.\n\nSeñor de los ejércitos, escucha mi súplica;\natiéndeme, Dios de Jacob.\nFíjate, oh Dios, en nuestro escudo,\nmira el rostro de tu Ungido. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "opcion 2 ciclo c solemnidades y fiestas domingo salmo responsorial sal 83 2 3 5 6 9 10 r cf 5a r dichosos los que viven en tu casa senor que deseables son tus moradas senor de los ejercitos mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r dichosos los que viven en tu casa alabandote siempre dichosos los que encuentran en ti su fuerza al preparar su peregrinacion r senor de los ejercitos escucha mi suplica atiendeme dios de jacob fijate oh dios en nuestro escudo mira el rostro de tu ungido r",
+  "lizq": [
+    {
+      "line": "R. Dichosos los que viven en tu casa, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Qué deseables son tus moradas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor de los ejércitos!",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mi alma se consume y anhela",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los atrios del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi corazón y mi carne",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "retozan por el Dios vivo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichosos los que viven en tu casa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabándote siempre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dichosos los que encuentran en ti su fuerza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "al preparar su peregrinación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor de los ejércitos, escucha mi súplica;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "atiéndeme, Dios de Jacob.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Fíjate, oh Dios, en nuestro escudo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mira el rostro de tu Ungido. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

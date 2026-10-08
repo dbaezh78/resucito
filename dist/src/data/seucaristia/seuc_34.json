@@ -1,0 +1,105 @@
+{
+  "id": "seuc_34",
+  "title": "Octavo Salmo",
+  "celebracion": "Octavo Salmo",
+  "subtitle": "Salmo responsorial: Salmo 117, 1-2. 16ab-17. 22-23",
+  "salmo": "Salmo responsorial: Salmo 117, 1-2. 16ab-17. 22-23",
+  "ciclo": "Ciclo C",
+  "tiempo": "Solemnidades y Fiestas",
+  "dia": "Domingo",
+  "orden": 600,
+  "respuesta": "R. Aleluya, aleluya, aleluya.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dad gracias al Señor, porque es bueno,",
+      "porque es terna su misericordia.",
+      "Diga la casa de Israel:",
+      "eterna es su misericordia. R."
+    ],
+    [
+      "La diestra del Señor es poderosa,",
+      "la diestra del Señor es excelsa.",
+      "No he de morir, viviré,",
+      "para contar las hazañas del Señor. R."
+    ],
+    [
+      "La piedra que desecharon los arquitectos,",
+      "es ahora la piedra angular.",
+      "Es el Señor quien lo ha hecho,",
+      "es un milagro patente. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor, porque es bueno,\nporque es terna su misericordia.\nDiga la casa de Israel:\neterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré,\npara contar las hazañas del Señor. R.\n\nLa piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nes un milagro patente. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "octavo salmo ciclo c solemnidades y fiestas domingo salmo responsorial salmo 117 1 2 16ab 17 22 23 r aleluya aleluya aleluya dad gracias al senor porque es bueno porque es terna su misericordia diga la casa de israel eterna es su misericordia r la diestra del senor es poderosa la diestra del senor es excelsa no he de morir vivire para contar las hazanas del senor r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho es un milagro patente r",
+  "lizq": [
+    {
+      "line": "R. Aleluya, aleluya, aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor, porque es bueno,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque es terna su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Diga la casa de Israel:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "eterna es su misericordia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La diestra del Señor es poderosa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la diestra del Señor es excelsa.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No he de morir, viviré,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para contar las hazañas del Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La piedra que desecharon los arquitectos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Es el Señor quien lo ha hecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es un milagro patente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

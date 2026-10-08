@@ -1,0 +1,112 @@
+{
+  "id": "seui_136",
+  "title": "Jueves de la 23ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 23ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 150, 1. 3-4. 5-6(R.: 5c)",
+  "salmo": "Salmo responsorial: Salmo 150, 1. 3-4. 5-6(R.: 5c)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5234,
+  "respuesta": "R. Todo ser que alienta alabe al Señor.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Alabad al Señor en su templo,",
+      "alabadlo en su fuerte firmamento.",
+      "Alabadlo por sus obras magníficas,",
+      "alabadlo por su inmensa grandeza. R."
+    ],
+    [
+      "Alabadlo tocando trompetas,",
+      "alabadlo con arpas y cítaras,",
+      "alabadlo con tambores y danzas,",
+      "alabadlo con trompas y flautas. R."
+    ],
+    [
+      "Alabadlo con platillos sonoros,",
+      "alabadlo con platillos vibrantes.",
+      "Todo ser que alienta alabe al Señor. R."
+    ]
+  ],
+  "textoCompleto": "Alabad al Señor en su templo,\nalabadlo en su fuerte firmamento.\nAlabadlo por sus obras magníficas,\nalabadlo por su inmensa grandeza. R.\n\nAlabadlo tocando trompetas,\nalabadlo con arpas y cítaras,\nalabadlo con tambores y danzas,\nalabadlo con trompas y flautas. R.\n\nAlabadlo con platillos sonoros,\nalabadlo con platillos vibrantes.\nTodo ser que alienta alabe al Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 23 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 150 1 3 4 5 6 r 5c semana 23 semana xxiii jueves 23 xxiii r todo ser que alienta alabe al senor r aleluya alabad al senor en su templo alabadlo en su fuerte firmamento alabadlo por sus obras magnificas alabadlo por su inmensa grandeza r alabadlo tocando trompetas alabadlo con arpas y citaras alabadlo con tambores y danzas alabadlo con trompas y flautas r alabadlo con platillos sonoros alabadlo con platillos vibrantes todo ser que alienta alabe al senor r",
+  "lizq": [
+    {
+      "line": "R. Todo ser que alienta alabe al Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabad al Señor en su templo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabadlo en su fuerte firmamento.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alabadlo por sus obras magníficas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabadlo por su inmensa grandeza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabadlo tocando trompetas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabadlo con arpas y cítaras,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabadlo con tambores y danzas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabadlo con trompas y flautas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabadlo con platillos sonoros,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabadlo con platillos vibrantes.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Todo ser que alienta alabe al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "seuf_117",
+  "title": "Lunes de la séptima semana de Pascua",
+  "celebracion": "Lunes de la séptima semana de Pascua",
+  "subtitle": "Salmo 67, 2-3. 4-5ac. 6-7ab (R.: 33a)",
+  "salmo": "Salmo 67, 2-3. 4-5ac. 6-7ab (R.: 33a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Lunes",
+  "orden": 471,
+  "respuesta": "R. Reyes de la tierra, cantad a Dios.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Se levanta Dios, y se dispersan sus enemigos,",
+      "huyen de su presencia los que lo odian;",
+      "como el humo se disipa, se disipan ellos;",
+      "como se derrite la cera ante el fuego,",
+      "así perecen los impíos ante Dios. R."
+    ],
+    [
+      "En cambio, los justos se alegran,",
+      "gozan en la presencia de Dios,",
+      "rebosando de alegría.",
+      "Cantad a Dios, tocad en su honor,",
+      "su nombre es el Señor. R."
+    ],
+    [
+      "Padre de huérfanos, protector de viudas,",
+      "Dios vive en su santa morada.",
+      "Dios prepara casa a los desvalidos,",
+      "libera a los cautivos y los enriquece. R."
+    ]
+  ],
+  "textoCompleto": "Se levanta Dios, y se dispersan sus enemigos,\nhuyen de su presencia los que lo odian;\ncomo el humo se disipa, se disipan ellos;\ncomo se derrite la cera ante el fuego,\nasí perecen los impíos ante Dios. R.\n\nEn cambio, los justos se alegran,\ngozan en la presencia de Dios,\nrebosando de alegría.\nCantad a Dios, tocad en su honor,\nsu nombre es el Señor. R.\n\nPadre de huérfanos, protector de viudas,\nDios vive en su santa morada.\nDios prepara casa a los desvalidos,\nlibera a los cautivos y los enriquece. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 67 2 3 4 5ac 6 7ab r 33a semana 7 semana vii lunes feria r reyes de la tierra cantad a dios r aleluya se levanta dios y se dispersan sus enemigos huyen de su presencia los que lo odian como el humo se disipa se disipan ellos como se derrite la cera ante el fuego asi perecen los impios ante dios r en cambio los justos se alegran gozan en la presencia de dios rebosando de alegria cantad a dios tocad en su honor su nombre es el senor r padre de huerfanos protector de viudas dios vive en su santa morada dios prepara casa a los desvalidos libera a los cautivos y los enriquece r",
+  "lizq": [
+    {
+      "line": "R. Reyes de la tierra, cantad a Dios.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Se levanta Dios, y se dispersan sus enemigos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "huyen de su presencia los que lo odian;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como el humo se disipa, se disipan ellos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como se derrite la cera ante el fuego,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "así perecen los impíos ante Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En cambio, los justos se alegran,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "gozan en la presencia de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "rebosando de alegría.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cantad a Dios, tocad en su honor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su nombre es el Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Padre de huérfanos, protector de viudas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios vive en su santa morada.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios prepara casa a los desvalidos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "libera a los cautivos y los enriquece. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -8,16 +8,34 @@
   "tiempo": "Cuaresma",
   "dia": "Domingo",
   "orden": 304,
-  "respuesta": "R. Que se me pegue la lengua al paladar",
+  "respuesta": "R. Que se me pegue la lengua al paladar si no me acuerdo de ti.",
   "respuestaOpcional": "",
   "estrofas": [
-    "si no me acuerdo de ti.",
-    "Junto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.",
-    "Allí los que nos deportaron nos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.",
-    "¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.",
-    "Que se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R."
+    [
+      "Junto a los canales de Babilonia",
+      "nos sentamos a llorar con nostalgia de Sión;",
+      "en los sauces de sus orillas",
+      "colgábamos nuestras cítaras. R."
+    ],
+    [
+      "Allí los que nos deportaron nos invitaban a cantar;",
+      "nuestros opresores, a divertirlos:",
+      "«Cantadnos un cantar de Sión». R."
+    ],
+    [
+      "¡Cómo cantar un cántico del Señor",
+      "en tierra extranjera!",
+      "Si me olvido de ti, Jerusalén,",
+      "que se me paralice la mano derecha. R."
+    ],
+    [
+      "Que se me pegue la lengua al paladar",
+      "si no me acuerdo de ti,",
+      "si no pongo a Jerusalén",
+      "en la cumbre de mis alegrías. R."
+    ]
   ],
-  "textoCompleto": "si no me acuerdo de ti.\n\nJunto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.\n\nAllí los que nos deportaron nos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.\n\n¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.\n\nQue se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R.",
+  "textoCompleto": "Junto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.\n\nAllí los que nos deportaron nos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.\n\n¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.\n\nQue se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,92 +44,87 @@
   "lizq": [
     {
       "line": "R. Que se me pegue la lengua al paladar",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "si no me acuerdo de ti.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Junto a los canales de Babilonia",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "nos sentamos a llorar con nostalgia de Sión;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en los sauces de sus orillas",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "colgábamos nuestras cítaras. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Allí los que nos deportaron nos invitaban a cantar;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "nuestros opresores, a divertirlos:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "«Cantadnos un cantar de Sión». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "¡Cómo cantar un cántico del Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "en tierra extranjera!",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Si me olvido de ti, Jerusalén,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que se me paralice la mano derecha. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que se me pegue la lengua al paladar",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "si no me acuerdo de ti,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "si no pongo a Jerusalén",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en la cumbre de mis alegrías. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

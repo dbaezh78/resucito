@@ -1,0 +1,105 @@
+{
+  "id": "seui_075",
+  "title": "Miércoles de la 13ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 13ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 33, 7-8. 10-11. 12-13 (R.: 7a)",
+  "salmo": "Salmo responsorial: Salmo 33, 7-8. 10-11. 12-13 (R.: 7a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5133,
+  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Si el afligido invoca al Señor, él lo escucha",
+      "y lo salva de sus angustias.",
+      "El ángel del Señor acampa",
+      "en torno a sus fieles y los protege. R."
+    ],
+    [
+      "Todos sus santos, temed al Señor,",
+      "porque nada les falta a los que le temen;",
+      "los ricos empobrecen y pasan hambre,",
+      "los que buscan al Señor no carecen de nada. R."
+    ],
+    [
+      "Venid, hijos, escuchadme:",
+      "os instruiré en el temor del Señor;",
+      "¿hay alguien que ame la vida",
+      "y desee días de prosperidad? R."
+    ]
+  ],
+  "textoCompleto": "Si el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias.\nEl ángel del Señor acampa\nen torno a sus fieles y los protege. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que le temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.\n\nVenid, hijos, escuchadme:\nos instruiré en el temor del Señor;\n¿hay alguien que ame la vida\ny desee días de prosperidad? R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 13 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 33 7 8 10 11 12 13 r 7a semana 13 semana xiii miercoles 13 xiii r si el afligido invoca al senor el lo escucha si el afligido invoca al senor el lo escucha y lo salva de sus angustias el angel del senor acampa en torno a sus fieles y los protege r todos sus santos temed al senor porque nada les falta a los que le temen los ricos empobrecen y pasan hambre los que buscan al senor no carecen de nada r venid hijos escuchadme os instruire en el temor del senor hay alguien que ame la vida y desee dias de prosperidad r",
+  "lizq": [
+    {
+      "line": "R. Si el afligido invoca al Señor, él lo escucha.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Si el afligido invoca al Señor, él lo escucha",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y lo salva de sus angustias.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El ángel del Señor acampa",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en torno a sus fieles y los protege. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Todos sus santos, temed al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque nada les falta a los que le temen;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los ricos empobrecen y pasan hambre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los que buscan al Señor no carecen de nada. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Venid, hijos, escuchadme:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "os instruiré en el temor del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿hay alguien que ame la vida",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y desee días de prosperidad? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

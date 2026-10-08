@@ -1,0 +1,79 @@
+{
+  "id": "seup_149",
+  "title": "Viernes de la 25ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 25ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 143. 1a y 2abc. 3-4 (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 143. 1a y 2abc. 3-4 (R.: 1a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5255,
+  "respuesta": "R. Bendito el Señor, mi Roca.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Bendito el Señor, mi Roca,",
+      "mi bienhechor, mi alcázar,",
+      "baluarte donde me pongo a salvo,",
+      "mi escudo y mi refugio. R."
+    ],
+    [
+      "Señor, ¿qué es el hombre para que te fijes en él?;",
+      "¿qué los hijos de Adán para que pienses en ellos?",
+      "El hombre es igual que un soplo;",
+      "sus días, una sombra que pasa. R."
+    ]
+  ],
+  "textoCompleto": "Bendito el Señor, mi Roca,\nmi bienhechor, mi alcázar,\nbaluarte donde me pongo a salvo,\nmi escudo y mi refugio. R.\n\nSeñor, ¿qué es el hombre para que te fijes en él?;\n¿qué los hijos de Adán para que pienses en ellos?\nEl hombre es igual que un soplo;\nsus días, una sombra que pasa. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 25 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 143 1a y 2abc 3 4 r 1a semana 25 semana xxv viernes 25 xxv r bendito el senor mi roca bendito el senor mi roca mi bienhechor mi alcazar baluarte donde me pongo a salvo mi escudo y mi refugio r senor que es el hombre para que te fijes en el que los hijos de adan para que pienses en ellos el hombre es igual que un soplo sus dias una sombra que pasa r",
+  "lizq": [
+    {
+      "line": "R. Bendito el Señor, mi Roca.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendito el Señor, mi Roca,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mi bienhechor, mi alcázar,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "baluarte donde me pongo a salvo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi escudo y mi refugio. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, ¿qué es el hombre para que te fijes en él?;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿qué los hijos de Adán para que pienses en ellos?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El hombre es igual que un soplo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sus días, una sombra que pasa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "seup_083",
+  "title": "Viernes de la 14ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 14ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 8-9. 12-13. 14 y 17 (R.: 17b)",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4. 8-9. 12-13. 14 y 17 (R.: 17b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5145,
+  "respuesta": "R. Mi boca proclamará tu alabanza, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa;",
+      "lava del todo mi delito,",
+      "limpia mi pecado. R."
+    ],
+    [
+      "Te gusta un corazón sincero,",
+      "y en mi interior me inculcas sabiduría.",
+      "Rocíame con el hisopo: quedaré limpio;",
+      "lávame: quedaré más blanco que la nieve. R."
+    ],
+    [
+      "Oh Dios, crea en mí un corazón puro,",
+      "renuévame por dentro con espíritu firme;",
+      "no me arrojes lejos de tu rostro,",
+      "no me quites tu santo espíritu. R."
+    ],
+    [
+      "Devuélveme la alegría de tu salvación,",
+      "afiánzame con espíritu generoso.",
+      "Señor, me abrirás los labios,",
+      "y mi boca proclamará tu alabanza. R."
+    ]
+  ],
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nTe gusta un corazón sincero,\ny en mi interior me inculcas sabiduría.\nRocíame con el hisopo: quedaré limpio;\nlávame: quedaré más blanco que la nieve. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 14 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 50 3 4 8 9 12 13 14 y 17 r 17b semana 14 semana xiv viernes 14 xiv r mi boca proclamara tu alabanza senor misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r te gusta un corazon sincero y en mi interior me inculcas sabiduria rociame con el hisopo quedare limpio lavame quedare mas blanco que la nieve r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso senor me abriras los labios y mi boca proclamara tu alabanza r",
+  "lizq": [
+    {
+      "line": "R. Mi boca proclamará tu alabanza, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Misericordia, Dios mío, por tu bondad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por tu inmensa compasión borra mi culpa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lava del todo mi delito,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "limpia mi pecado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te gusta un corazón sincero,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y en mi interior me inculcas sabiduría.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Rocíame con el hisopo: quedaré limpio;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lávame: quedaré más blanco que la nieve. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oh Dios, crea en mí un corazón puro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "renuévame por dentro con espíritu firme;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no me arrojes lejos de tu rostro,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no me quites tu santo espíritu. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Devuélveme la alegría de tu salvación,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "afiánzame con espíritu generoso.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Señor, me abrirás los labios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y mi boca proclamará tu alabanza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

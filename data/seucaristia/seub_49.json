@@ -11,9 +11,25 @@
   "respuesta": "R. Sáname, Señor, porque he pecado contra ti.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Dichoso el que cuida del pobre y desvalido;\nen el día aciago lo pondrá a salvo el Señor.\nEl Señor lo guarda y lo conserva en vida,\npara que sea dichoso en la tierra,\ny no lo entrega a la saña de sus enemigos. R.",
-    "El Señor lo sostendrá en el lecho del dolor,\ncalmará los dolores de su enfermedad.\nYo dije: «Señor, ten misericordia,\nsáname, porque he pecado contra ti». R.",
-    "A mí, en cambio, me conservas la salud,\nme mantienes siempre en tu presencia.\nBendito el Señor, Dios de Israel,\nahora y por siempre. Amén. Amén. R."
+    [
+      "Dichoso el que cuida del pobre y desvalido;",
+      "en el día aciago lo pondrá a salvo el Señor.",
+      "El Señor lo guarda y lo conserva en vida,",
+      "para que sea dichoso en la tierra,",
+      "y no lo entrega a la saña de sus enemigos. R."
+    ],
+    [
+      "El Señor lo sostendrá en el lecho del dolor,",
+      "calmará los dolores de su enfermedad.",
+      "Yo dije: «Señor, ten misericordia,",
+      "sáname, porque he pecado contra ti». R."
+    ],
+    [
+      "A mí, en cambio, me conservas la salud,",
+      "me mantienes siempre en tu presencia.",
+      "Bendito el Señor, Dios de Israel,",
+      "ahora y por siempre. Amén. Amén. R."
+    ]
   ],
   "textoCompleto": "Dichoso el que cuida del pobre y desvalido;\nen el día aciago lo pondrá a salvo el Señor.\nEl Señor lo guarda y lo conserva en vida,\npara que sea dichoso en la tierra,\ny no lo entrega a la saña de sus enemigos. R.\n\nEl Señor lo sostendrá en el lecho del dolor,\ncalmará los dolores de su enfermedad.\nYo dije: «Señor, ten misericordia,\nsáname, porque he pecado contra ti». R.\n\nA mí, en cambio, me conservas la salud,\nme mantienes siempre en tu presencia.\nBendito el Señor, Dios de Israel,\nahora y por siempre. Amén. Amén. R.",
   "sourceBook": "eucaristia",
@@ -24,72 +40,71 @@
   "lizq": [
     {
       "line": "R. Sáname, Señor, porque he pecado contra ti.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dichoso el que cuida del pobre y desvalido;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "en el día aciago lo pondrá a salvo el Señor.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "El Señor lo guarda y lo conserva en vida,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para que sea dichoso en la tierra,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y no lo entrega a la saña de sus enemigos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor lo sostendrá en el lecho del dolor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "calmará los dolores de su enfermedad.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Yo dije: «Señor, ten misericordia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "sáname, porque he pecado contra ti». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "A mí, en cambio, me conservas la salud,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "me mantienes siempre en tu presencia.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Bendito el Señor, Dios de Israel,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ahora y por siempre. Amén. Amén. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

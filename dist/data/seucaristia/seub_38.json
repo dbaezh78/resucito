@@ -9,14 +9,28 @@
   "dia": "Domingo",
   "orden": 410,
   "respuesta": "R. El Señor puso en el cielo su trono.",
-  "respuestaOpcional": "",
+  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
-    "R. Aleluya.",
-    "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.",
-    "Como se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.",
-    "El Señor puso en el cielo su trono,\nsu soberanía gobierna el universo.\nBendecid al señor, ángeles suyos,\npoderosos ejecutores de sus órdenes. R."
+    [
+      "Bendice, alma mía, al Señor,",
+      "y todo mi ser a su santo nombre.",
+      "Bendice, alma mía, al Señor,",
+      "y no olvides sus beneficios. R."
+    ],
+    [
+      "Como se levanta el cielo sobre la tierra,",
+      "se levanta su bondad sobre sus fieles;",
+      "como dista el oriente del ocaso,",
+      "así aleja de nosotros nuestros delitos. R."
+    ],
+    [
+      "El Señor puso en el cielo su trono,",
+      "su soberanía gobierna el universo.",
+      "Bendecid al señor, ángeles suyos,",
+      "poderosos ejecutores de sus órdenes. R."
+    ]
   ],
-  "textoCompleto": "R. Aleluya.\n\nBendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.\n\nEl Señor puso en el cielo su trono,\nsu soberanía gobierna el universo.\nBendecid al señor, ángeles suyos,\npoderosos ejecutores de sus órdenes. R.",
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.\n\nEl Señor puso en el cielo su trono,\nsu soberanía gobierna el universo.\nBendecid al señor, ángeles suyos,\npoderosos ejecutores de sus órdenes. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,76 +39,79 @@
   "lizq": [
     {
       "line": "R. El Señor puso en el cielo su trono.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendice, alma mía, al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y todo mi ser a su santo nombre.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Bendice, alma mía, al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y no olvides sus beneficios. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Como se levanta el cielo sobre la tierra,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "se levanta su bondad sobre sus fieles;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "como dista el oriente del ocaso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "así aleja de nosotros nuestros delitos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor puso en el cielo su trono,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "su soberanía gobierna el universo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Bendecid al señor, ángeles suyos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "poderosos ejecutores de sus órdenes. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

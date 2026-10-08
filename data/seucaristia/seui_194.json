@@ -1,0 +1,105 @@
+{
+  "id": "seui_194",
+  "title": "Martes de la 33ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 33ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 3, 2-3. 4-5. 6-7 (R.: 6b)",
+  "salmo": "Salmo responsorial: Salmo 3, 2-3. 4-5. 6-7 (R.: 6b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5332,
+  "respuesta": "R. El Señor me sostiene.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, cuántos son mis enemigos,",
+      "cuántos se levantan contra mí;",
+      "cuántos dicen de mí:",
+      "«Ya no le protege Dios». R."
+    ],
+    [
+      "Pero tú, Señor, eres mi escudo y mi gloria,",
+      "tú mantienes alta mi cabeza.",
+      "Si grito invocando al Señor,",
+      "él me escucha desde su monte santo. R."
+    ],
+    [
+      "Puedo acostarme y dormir y despertar:",
+      "el Señor me sostiene.",
+      "No temeré al pueblo innumerable",
+      "que acampa a mi alrededor. R."
+    ]
+  ],
+  "textoCompleto": "Señor, cuántos son mis enemigos,\ncuántos se levantan contra mí;\ncuántos dicen de mí:\n«Ya no le protege Dios». R.\n\nPero tú, Señor, eres mi escudo y mi gloria,\ntú mantienes alta mi cabeza.\nSi grito invocando al Señor,\nél me escucha desde su monte santo. R.\n\nPuedo acostarme y dormir y despertar:\nel Señor me sostiene.\nNo temeré al pueblo innumerable\nque acampa a mi alrededor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 33 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 3 2 3 4 5 6 7 r 6b semana 33 semana xxxiii martes 33 xxxiii r el senor me sostiene senor cuantos son mis enemigos cuantos se levantan contra mi cuantos dicen de mi ya no le protege dios r pero tu senor eres mi escudo y mi gloria tu mantienes alta mi cabeza si grito invocando al senor el me escucha desde su monte santo r puedo acostarme y dormir y despertar el senor me sostiene no temere al pueblo innumerable que acampa a mi alrededor r",
+  "lizq": [
+    {
+      "line": "R. El Señor me sostiene.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, cuántos son mis enemigos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cuántos se levantan contra mí;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuántos dicen de mí:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Ya no le protege Dios». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero tú, Señor, eres mi escudo y mi gloria,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tú mantienes alta mi cabeza.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Si grito invocando al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él me escucha desde su monte santo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Puedo acostarme y dormir y despertar:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el Señor me sostiene.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No temeré al pueblo innumerable",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que acampa a mi alrededor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

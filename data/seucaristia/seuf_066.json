@@ -1,0 +1,112 @@
+{
+  "id": "seuf_066",
+  "title": "Miércoles de la 4ª semana de Cuaresma",
+  "celebracion": "Miércoles de la 4ª semana de Cuaresma",
+  "subtitle": "Salmo 144, 8-9. 13cd-14. 17-18 (R.: 8a)",
+  "salmo": "Salmo 144, 8-9. 13cd-14. 17-18 (R.: 8a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Miércoles",
+  "orden": 343,
+  "respuesta": "R. El Señor es clemente y misericordioso.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El Señor es clemente y misericordioso,",
+      "lento a la cólera y rico en piedad;",
+      "el Señor es bueno con todos,",
+      "es cariñoso con todas sus criaturas. R."
+    ],
+    [
+      "El Señor es fiel a sus palabras,",
+      "bondadoso en todas sus acciones.",
+      "El Señor sostiene a los que van a caer,",
+      "endereza a los que ya se doblan. R."
+    ],
+    [
+      "El Señor es justo en todos sus caminos,",
+      "es bondadoso en todas sus acciones;",
+      "cerca está el Señor de los que lo invocan,",
+      "de los que lo invocan sinceramente. R."
+    ]
+  ],
+  "textoCompleto": "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 4 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 144 8 9 13cd 14 17 18 r 8a semana 4 semana iv miercoles feria r el senor es clemente y misericordioso el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r el senor es fiel a sus palabras bondadoso en todas sus acciones el senor sostiene a los que van a caer endereza a los que ya se doblan r el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r",
+  "lizq": [
+    {
+      "line": "R. El Señor es clemente y misericordioso.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es clemente y misericordioso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lento a la cólera y rico en piedad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor es bueno con todos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es cariñoso con todas sus criaturas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es fiel a sus palabras,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "bondadoso en todas sus acciones.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor sostiene a los que van a caer,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "endereza a los que ya se doblan. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es justo en todos sus caminos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "es bondadoso en todas sus acciones;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cerca está el Señor de los que lo invocan,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de los que lo invocan sinceramente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

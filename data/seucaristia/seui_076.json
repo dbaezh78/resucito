@@ -1,0 +1,157 @@
+{
+  "id": "seui_076",
+  "title": "Jueves de la 13ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 13ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 114, 1-2. 3-4. 5-6. 8-9 (R.: 9)",
+  "salmo": "Salmo responsorial: Salmo 114, 1-2. 3-4. 5-6. 8-9 (R.: 9)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5134,
+  "respuesta": "R. Caminaré en presencia del Señor en el país de la vida.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Amo al Señor, porque escucha",
+      "mi voz suplicante,",
+      "porque inclina su oído hacia mí",
+      "el día que lo invoco. R."
+    ],
+    [
+      "Me envolvían redes de muerte,",
+      "me alcanzaron los lazos del abismo,",
+      "caí en tristeza y angustia.",
+      "Invoqué el nombre del Señor:",
+      "«Señor, salva mi vida». R."
+    ],
+    [
+      "El Señor es benigno y justo,",
+      "nuestro Dios es compasivo;",
+      "el Señor guarda a los sencillos:",
+      "estando yo sin fuerzas, me salvó. R."
+    ],
+    [
+      "Arrancó mi alma de la muerte,",
+      "mis ojos de las lágrimas,",
+      "mis pies de la caída.",
+      "Caminaré en presencia del Señor",
+      "en el país de la vida. R."
+    ]
+  ],
+  "textoCompleto": "Amo al Señor, porque escucha\nmi voz suplicante,\nporque inclina su oído hacia mí\nel día que lo invoco. R.\n\nMe envolvían redes de muerte,\nme alcanzaron los lazos del abismo,\ncaí en tristeza y angustia.\nInvoqué el nombre del Señor:\n«Señor, salva mi vida». R.\n\nEl Señor es benigno y justo,\nnuestro Dios es compasivo;\nel Señor guarda a los sencillos:\nestando yo sin fuerzas, me salvó. R.\n\nArrancó mi alma de la muerte,\nmis ojos de las lágrimas,\nmis pies de la caída.\nCaminaré en presencia del Señor\nen el país de la vida. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 13 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 114 1 2 3 4 5 6 8 9 r 9 semana 13 semana xiii jueves 13 xiii r caminare en presencia del senor en el pais de la vida r aleluya amo al senor porque escucha mi voz suplicante porque inclina su oido hacia mi el dia que lo invoco r me envolvian redes de muerte me alcanzaron los lazos del abismo cai en tristeza y angustia invoque el nombre del senor senor salva mi vida r el senor es benigno y justo nuestro dios es compasivo el senor guarda a los sencillos estando yo sin fuerzas me salvo r arranco mi alma de la muerte mis ojos de las lagrimas mis pies de la caida caminare en presencia del senor en el pais de la vida r",
+  "lizq": [
+    {
+      "line": "R. Caminaré en presencia del Señor",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "en el país de la vida.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Amo al Señor, porque escucha",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mi voz suplicante,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque inclina su oído hacia mí",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el día que lo invoco. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Me envolvían redes de muerte,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "me alcanzaron los lazos del abismo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "caí en tristeza y angustia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Invoqué el nombre del Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Señor, salva mi vida». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es benigno y justo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "nuestro Dios es compasivo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor guarda a los sencillos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "estando yo sin fuerzas, me salvó. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Arrancó mi alma de la muerte,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mis ojos de las lágrimas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mis pies de la caída.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Caminaré en presencia del Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en el país de la vida. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

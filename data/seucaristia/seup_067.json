@@ -1,0 +1,105 @@
+{
+  "id": "seup_067",
+  "title": "Lunes de la 12ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 12ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 59, 3. 4-5. 12-13 (R.: 7b)",
+  "salmo": "Salmo responsorial: Salmo 59, 3. 4-5. 12-13 (R.: 7b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5121,
+  "respuesta": "R. Que tu mano salvadora, Señor, nos responda.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Oh Dios, nos rechazaste y rompiste nuestras filas;",
+      "estabas airado, pero restáuranos. R."
+    ],
+    [
+      "Has sacudido y agrietado el país:",
+      "repara sus grietas, que se desmorona.",
+      "Hiciste sufrir un desastre a tu pueblo,",
+      "dándole a beber un vino de vértigo. R."
+    ],
+    [
+      "Tú, oh Dios, nos has rechazado",
+      "y no sales ya con nuestras tropas.",
+      "Auxílianos contra el enemigo,",
+      "que la ayuda del hombre es inútil.",
+      "Con Dios haremos proezas,",
+      "él pisoteará a nuestros enemigos. R."
+    ]
+  ],
+  "textoCompleto": "Oh Dios, nos rechazaste y rompiste nuestras filas;\nestabas airado, pero restáuranos. R.\n\nHas sacudido y agrietado el país:\nrepara sus grietas, que se desmorona.\nHiciste sufrir un desastre a tu pueblo,\ndándole a beber un vino de vértigo. R.\n\nTú, oh Dios, nos has rechazado\ny no sales ya con nuestras tropas.\nAuxílianos contra el enemigo,\nque la ayuda del hombre es inútil.\nCon Dios haremos proezas,\nél pisoteará a nuestros enemigos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 12 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 59 3 4 5 12 13 r 7b semana 12 semana xii lunes 12 xii r que tu mano salvadora senor nos responda oh dios nos rechazaste y rompiste nuestras filas estabas airado pero restauranos r has sacudido y agrietado el pais repara sus grietas que se desmorona hiciste sufrir un desastre a tu pueblo dandole a beber un vino de vertigo r tu oh dios nos has rechazado y no sales ya con nuestras tropas auxilianos contra el enemigo que la ayuda del hombre es inutil con dios haremos proezas el pisoteara a nuestros enemigos r",
+  "lizq": [
+    {
+      "line": "R. Que tu mano salvadora, Señor, nos responda.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oh Dios, nos rechazaste y rompiste nuestras filas;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "estabas airado, pero restáuranos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Has sacudido y agrietado el país:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "repara sus grietas, que se desmorona.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Hiciste sufrir un desastre a tu pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dándole a beber un vino de vértigo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú, oh Dios, nos has rechazado",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y no sales ya con nuestras tropas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Auxílianos contra el enemigo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que la ayuda del hombre es inútil.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Con Dios haremos proezas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él pisoteará a nuestros enemigos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

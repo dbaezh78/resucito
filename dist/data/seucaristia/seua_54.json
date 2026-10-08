@@ -8,15 +8,29 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 510,
-  "respuesta": "R. Al que sigue buen camino",
+  "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
   "respuestaOpcional": "",
   "estrofas": [
-    "le haré ver la salvación de Dios.",
-    "El Dios de los dioses, el Señor, habla:\nconvoca la tierra de oriente a occidente.\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí». R.",
-    "«Si tuviera hambre, no te lo diría;\npues el orbe y cuanto lo llena es mío.\n¿Comeré yo carne de toros,\nbeberé sangre de cabritos?». R.",
-    "«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo\ne invócame el día del peligro:\nyo te libraré, y tú me darás gloria». R."
+    [
+      "El Dios de los dioses, el Señor, habla:",
+      "convoca la tierra de oriente a occidente.",
+      "«No te reprocho tus sacrificios,",
+      "pues siempre están tus holocaustos ante mí». R."
+    ],
+    [
+      "«Si tuviera hambre, no te lo diría;",
+      "pues el orbe y cuanto lo llena es mío.",
+      "¿Comeré yo carne de toros,",
+      "beberé sangre de cabritos?». R."
+    ],
+    [
+      "«Ofrece a Dios un sacrificio de alabanza,",
+      "cumple tus votos al Altísimo",
+      "e invócame el día del peligro:",
+      "yo te libraré, y tú me darás gloria». R."
+    ]
   ],
-  "textoCompleto": "le haré ver la salvación de Dios.\n\nEl Dios de los dioses, el Señor, habla:\nconvoca la tierra de oriente a occidente.\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí». R.\n\n«Si tuviera hambre, no te lo diría;\npues el orbe y cuanto lo llena es mío.\n¿Comeré yo carne de toros,\nbeberé sangre de cabritos?». R.\n\n«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo\ne invócame el día del peligro:\nyo te libraré, y tú me darás gloria». R.",
+  "textoCompleto": "El Dios de los dioses, el Señor, habla:\nconvoca la tierra de oriente a occidente.\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí». R.\n\n«Si tuviera hambre, no te lo diría;\npues el orbe y cuanto lo llena es mío.\n¿Comeré yo carne de toros,\nbeberé sangre de cabritos?». R.\n\n«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo\ne invócame el día del peligro:\nyo te libraré, y tú me darás gloria». R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,76 +39,71 @@
   "lizq": [
     {
       "line": "R. Al que sigue buen camino",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "le haré ver la salvación de Dios.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Dios de los dioses, el Señor, habla:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "convoca la tierra de oriente a occidente.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "«No te reprocho tus sacrificios,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "pues siempre están tus holocaustos ante mí». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "«Si tuviera hambre, no te lo diría;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "pues el orbe y cuanto lo llena es mío.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "¿Comeré yo carne de toros,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "beberé sangre de cabritos?». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "«Ofrece a Dios un sacrificio de alabanza,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "cumple tus votos al Altísimo",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "e invócame el día del peligro:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "yo te libraré, y tú me darás gloria». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

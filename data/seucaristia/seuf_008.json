@@ -1,0 +1,138 @@
+{
+  "id": "seuf_008",
+  "title": "Martes de la 2ª semana de Adviento",
+  "celebracion": "Martes de la 2ª semana de Adviento",
+  "subtitle": "Salmo 95, 1-2. 3 y 10ac. 11-12. 13-14 (R.: Is 40, 9-10)",
+  "salmo": "Salmo 95, 1-2. 3 y 10ac. 11-12. 13-14 (R.: Is 40, 9-10)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Martes",
+  "orden": 122,
+  "respuesta": "R. Nuestro Dios llega con poder.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "cantad al Señor, toda la tierra;",
+      "cantad al Señor, bendecid su nombre,",
+      "proclamad día tras día su victoria. R."
+    ],
+    [
+      "Contad a los pueblos su gloria,",
+      "sus maravillas a todas las naciones.",
+      "Decid a los pueblos: «El Señor es rey,",
+      "él gobierna a los pueblos rectamente». R."
+    ],
+    [
+      "Alégrese el cielo, goce la tierra,",
+      "retumbe el mar y cuanto lo llena;",
+      "vitoreen los campos y cuanto hay en ellos,",
+      "aclamen los árboles del bosque, R."
+    ],
+    [
+      "delante del Señor, que ya llega,",
+      "ya llega a regir la tierra:",
+      "regirá el orbe con justicia",
+      "y los pueblos con fidelidad. R."
+    ]
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre,\nproclamad día tras día su victoria. R.\n\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones.\nDecid a los pueblos: «El Señor es rey,\nél gobierna a los pueblos rectamente». R.\n\nAlégrese el cielo, goce la tierra,\nretumbe el mar y cuanto lo llena;\nvitoreen los campos y cuanto hay en ellos,\naclamen los árboles del bosque, R.\n\ndelante del Señor, que ya llega,\nya llega a regir la tierra:\nregirá el orbe con justicia\ny los pueblos con fidelidad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento martes salmo 95 1 2 3 y 10ac 11 12 13 14 r is 40 9 10 semana 2 semana ii martes feria r nuestro dios llega con poder cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre proclamad dia tras dia su victoria r contad a los pueblos su gloria sus maravillas a todas las naciones decid a los pueblos el senor es rey el gobierna a los pueblos rectamente r alegrese el cielo goce la tierra retumbe el mar y cuanto lo llena vitoreen los campos y cuanto hay en ellos aclamen los arboles del bosque r delante del senor que ya llega ya llega a regir la tierra regira el orbe con justicia y los pueblos con fidelidad r",
+  "lizq": [
+    {
+      "line": "R. Nuestro Dios llega con poder.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cantad al Señor, toda la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cantad al Señor, bendecid su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "proclamad día tras día su victoria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Contad a los pueblos su gloria,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sus maravillas a todas las naciones.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Decid a los pueblos: «El Señor es rey,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él gobierna a los pueblos rectamente». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alégrese el cielo, goce la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "retumbe el mar y cuanto lo llena;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "vitoreen los campos y cuanto hay en ellos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aclamen los árboles del bosque, R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "delante del Señor, que ya llega,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ya llega a regir la tierra:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "regirá el orbe con justicia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y los pueblos con fidelidad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

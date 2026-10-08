@@ -1,0 +1,120 @@
+{
+  "id": "seuc_68",
+  "title": "Domingo de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 67, 4-5ac. 6-7ab. 10-11 (R.: cf. 11b)",
+  "salmo": "Salmo responsorial: Salmo 67, 4-5ac. 6-7ab. 10-11 (R.: cf. 11b)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 522,
+  "respuesta": "R. Preparaste, oh Dios, casa para los pobres.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Los justos se alegran,",
+      "gozan en la presencia de Dios,",
+      "rebosando de alegría.",
+      "Cantad a Dios, tocad en su honor;",
+      "su nombre es el Señor. R."
+    ],
+    [
+      "Padre de huérfanos,",
+      "protector de viudas,",
+      "Dios vive en su santa morada.",
+      "Dios prepara casa a los desvalidos,",
+      "libera a los cautivos y los enriquece. R."
+    ],
+    [
+      "Derramaste en tu heredad,",
+      "oh Dios, una lluvia copiosa,",
+      "aliviaste la tierra extenuada;",
+      "y tu rebaño habitó en la tierra",
+      "que tu bondad, oh Dios, preparó para los pobres. R."
+    ]
+  ],
+  "textoCompleto": "Los justos se alegran,\ngozan en la presencia de Dios,\nrebosando de alegría.\nCantad a Dios, tocad en su honor;\nsu nombre es el Señor. R.\n\nPadre de huérfanos,\nprotector de viudas,\nDios vive en su santa morada.\nDios prepara casa a los desvalidos,\nlibera a los cautivos y los enriquece. R.\n\nDerramaste en tu heredad,\noh Dios, una lluvia copiosa,\naliviaste la tierra extenuada;\ny tu rebaño habitó en la tierra\nque tu bondad, oh Dios, preparó para los pobres. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 22 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 67 4 5ac 6 7ab 10 11 r cf 11b r preparaste oh dios casa para los pobres los justos se alegran gozan en la presencia de dios rebosando de alegria cantad a dios tocad en su honor su nombre es el senor r padre de huerfanos protector de viudas dios vive en su santa morada dios prepara casa a los desvalidos libera a los cautivos y los enriquece r derramaste en tu heredad oh dios una lluvia copiosa aliviaste la tierra extenuada y tu rebano habito en la tierra que tu bondad oh dios preparo para los pobres r",
+  "lizq": [
+    {
+      "line": "R. Preparaste, oh Dios, casa para los pobres.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los justos se alegran,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "gozan en la presencia de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "rebosando de alegría.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cantad a Dios, tocad en su honor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su nombre es el Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Padre de huérfanos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "protector de viudas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios vive en su santa morada.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios prepara casa a los desvalidos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "libera a los cautivos y los enriquece. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Derramaste en tu heredad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "oh Dios, una lluvia copiosa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aliviaste la tierra extenuada;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y tu rebaño habitó en la tierra",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tu bondad, oh Dios, preparó para los pobres. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "seuf_013",
+  "title": "Lunes de la 3ª semana de Adviento",
+  "celebracion": "Lunes de la 3ª semana de Adviento",
+  "subtitle": "Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4b)",
+  "salmo": "Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4b)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Lunes",
+  "orden": 131,
+  "respuesta": "R. Señor, instrúyeme en tus sendas.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, enséñame tus caminos,",
+      "instrúyeme en tus sendas:",
+      "haz que camine con lealtad;",
+      "enséñame, porque tú eres mi Dios y Salvador. R."
+    ],
+    [
+      "Recuerda, Señor, que tu ternura",
+      "y tu misericordia son eternas;",
+      "acuérdate de mí con misericordia,",
+      "por tu bondad, Señor. R."
+    ],
+    [
+      "El Señor es bueno y es recto,",
+      "y enseña el camino a los pecadores;",
+      "hace caminar a los humildes con rectitud,",
+      "enseña su camino a los humildes. R."
+    ]
+  ],
+  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 3 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento lunes salmo 24 4 5ab 6 7bc 8 9 r 4b semana 3 semana iii lunes feria r senor instruyeme en tus sendas senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "lizq": [
+    {
+      "line": "R. Señor, instrúyeme en tus sendas.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, enséñame tus caminos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "instrúyeme en tus sendas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "haz que camine con lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Recuerda, Señor, que tu ternura",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y tu misericordia son eternas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "acuérdate de mí con misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por tu bondad, Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es bueno y es recto,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y enseña el camino a los pecadores;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hace caminar a los humildes con rectitud,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "enseña su camino a los humildes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

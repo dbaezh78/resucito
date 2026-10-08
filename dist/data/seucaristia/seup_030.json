@@ -1,0 +1,105 @@
+{
+  "id": "seup_030",
+  "title": "Sábado de la 5ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 5ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 105, 6-7a. 19-20. 21-22 (R.: 4a)",
+  "salmo": "Salmo responsorial: Salmo 105, 6-7a. 19-20. 21-22 (R.: 4a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5056,
+  "respuesta": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Hemos pecado con nuestros padres,",
+      "hemos cometido maldades e iniquidades.",
+      "Nuestros padres en Egipto",
+      "no comprendieron tus maravillas. R."
+    ],
+    [
+      "En Horeb se hicieron un becerro,",
+      "adoraron un ídolo de fundición;",
+      "cambiaron su gloria por la imagen",
+      "de un toro que come hierba. R."
+    ],
+    [
+      "Se olvidaron de Dios, su salvador,",
+      "que había hecho prodigios en Egipto,",
+      "maravillas en el país de Cam,",
+      "portentos junto al mar Rojo. R."
+    ]
+  ],
+  "textoCompleto": "Hemos pecado con nuestros padres,\nhemos cometido maldades e iniquidades.\nNuestros padres en Egipto\nno comprendieron tus maravillas. R.\n\nEn Horeb se hicieron un becerro,\nadoraron un ídolo de fundición;\ncambiaron su gloria por la imagen\nde un toro que come hierba. R.\n\nSe olvidaron de Dios, su salvador,\nque había hecho prodigios en Egipto,\nmaravillas en el país de Cam,\nportentos junto al mar Rojo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 5 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 105 6 7a 19 20 21 22 r 4a semana 5 semana v sabado 5 v r acuerdate de mi senor por amor a tu pueblo hemos pecado con nuestros padres hemos cometido maldades e iniquidades nuestros padres en egipto no comprendieron tus maravillas r en horeb se hicieron un becerro adoraron un idolo de fundicion cambiaron su gloria por la imagen de un toro que come hierba r se olvidaron de dios su salvador que habia hecho prodigios en egipto maravillas en el pais de cam portentos junto al mar rojo r",
+  "lizq": [
+    {
+      "line": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Hemos pecado con nuestros padres,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "hemos cometido maldades e iniquidades.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Nuestros padres en Egipto",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no comprendieron tus maravillas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En Horeb se hicieron un becerro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "adoraron un ídolo de fundición;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cambiaron su gloria por la imagen",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de un toro que come hierba. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Se olvidaron de Dios, su salvador,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que había hecho prodigios en Egipto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "maravillas en el país de Cam,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "portentos junto al mar Rojo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

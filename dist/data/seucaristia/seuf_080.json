@@ -1,0 +1,97 @@
+{
+  "id": "seuf_080",
+  "title": "Misa Crismal",
+  "celebracion": "Misa Crismal",
+  "subtitle": "Salmo 88, 21-22. 25 y 27 (R.: cf. 2a)",
+  "salmo": "Salmo 88, 21-22. 25 y 27 (R.: cf. 2a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Jueves",
+  "orden": 374,
+  "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Encontré a David, mi siervo,",
+      "y lo he ungido con óleo sagrado;",
+      "para que mi mano esté siempre con él",
+      "y mi brazo lo haga valeroso. R."
+    ],
+    [
+      "Mi fidelidad y misericordia lo acampañarán,",
+      "por mi nombre crecerá su poder.",
+      "Él me invocará: «Tú eres mi padre,",
+      "mi Dios, mi Roca salvadora». R."
+    ],
+    [
+      "TIEMPO PASCUAL R."
+    ]
+  ],
+  "textoCompleto": "Encontré a David, mi siervo,\ny lo he ungido con óleo sagrado;\npara que mi mano esté siempre con él\ny mi brazo lo haga valeroso. R.\n\nMi fidelidad y misericordia lo acampañarán,\npor mi nombre crecerá su poder.\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora». R.\n\nTIEMPO PASCUAL R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "misa crismal ciclo a ciclo b ciclo c ciclo a b y c cuaresma jueves salmo 88 21 22 25 y 27 r cf 2a jueves feria r cantare eternamente tus misericordias senor encontre a david mi siervo y lo he ungido con oleo sagrado para que mi mano este siempre con el y mi brazo lo haga valeroso r mi fidelidad y misericordia lo acampanaran por mi nombre crecera su poder el me invocara tu eres mi padre mi dios mi roca salvadora r tiempo pascual r",
+  "lizq": [
+    {
+      "line": "R. Cantaré eternamente tus misericordias, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Encontré a David, mi siervo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y lo he ungido con óleo sagrado;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que mi mano esté siempre con él",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y mi brazo lo haga valeroso. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi fidelidad y misericordia lo acampañarán,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por mi nombre crecerá su poder.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él me invocará: «Tú eres mi padre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi Dios, mi Roca salvadora». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "TIEMPO PASCUAL R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    }
+  ]
+}

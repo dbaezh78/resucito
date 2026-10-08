@@ -1,0 +1,116 @@
+{
+  "id": "seuf_022",
+  "title": "Día 21 de diciembre.",
+  "celebracion": "Día 21 de diciembre.",
+  "subtitle": "Salmo 32, 2-3. 11-12. 20-21 (R.: 1a y 3a)",
+  "salmo": "Salmo 32, 2-3. 11-12. 20-21 (R.: 1a y 3a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Adviento",
+  "dia": "Feria",
+  "orden": 175,
+  "respuesta": "R. Aclamad, justos, al Señor, cantadle un cántico nuevo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dad gracias al Señor con la cítara,",
+      "tocad en su honor el arpa de diez cuerdas;",
+      "cantadle un cántico nuevo,",
+      "acompañando los vítores con bordones. R."
+    ],
+    [
+      "El plan del Señor subsiste por siempre,",
+      "los proyectos de su corazón, de edad en edad.",
+      "Dichosa la nación cuyo Dios es el Señor,",
+      "el pueblo que él se escogió como heredad. R."
+    ],
+    [
+      "Nosotros aguardamos al Señor:",
+      "él es nuestro auxilio y escudo;",
+      "con él se alegra nuestro corazón,",
+      "en su santo nombre confiamos. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nEl plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad.\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\ncon él se alegra nuestro corazón,\nen su santo nombre confiamos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "dia 21 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 32 2 3 11 12 20 21 r 1a y 3a feria r aclamad justos al senor cantadle un cantico nuevo dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad r nosotros aguardamos al senor el es nuestro auxilio y escudo con el se alegra nuestro corazon en su santo nombre confiamos r",
+  "lizq": [
+    {
+      "line": "R. Aclamad, justos, al Señor,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "cantadle un cántico nuevo.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor con la cítara,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tocad en su honor el arpa de diez cuerdas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cantadle un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "acompañando los vítores con bordones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El plan del Señor subsiste por siempre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los proyectos de su corazón, de edad en edad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dichosa la nación cuyo Dios es el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el pueblo que él se escogió como heredad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Nosotros aguardamos al Señor:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "él es nuestro auxilio y escudo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "con él se alegra nuestro corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en su santo nombre confiamos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

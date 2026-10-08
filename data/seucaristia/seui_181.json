@@ -1,0 +1,110 @@
+{
+  "id": "seui_181",
+  "title": "Lunes de la 31ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 31ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 68, 30-31. 33-34. 36-37 (R.: 14c)",
+  "salmo": "Salmo responsorial: Salmo 68, 30-31. 33-34. 36-37 (R.: 14c)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5311,
+  "respuesta": "R. Que me escuche, Señor, tu gran bondad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Yo soy un pobre malherido;",
+      "Dios mío, tu salvación me levante.",
+      "Alabaré el nombre de Dios con cantos,",
+      "proclamaré su grandeza con acción de gracias. R."
+    ],
+    [
+      "Miradlo, los humildes, y alegraos,",
+      "buscad al Señor, y revivirá vuestro corazón.",
+      "Que el Señor escucha a sus pobres,",
+      "no desprecia a sus cautivos. R."
+    ],
+    [
+      "El Señor salvará a Sión,",
+      "reconstruirá las ciudades de Judá,",
+      "y las habitarán en posesión.",
+      "La estirpe de sus siervos la heredará,",
+      "los que aman su nombre vivirán en ella. R."
+    ]
+  ],
+  "textoCompleto": "Yo soy un pobre malherido;\nDios mío, tu salvación me levante.\nAlabaré el nombre de Dios con cantos,\nproclamaré su grandeza con acción de gracias. R.\n\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y revivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos. R.\n\nEl Señor salvará a Sión,\nreconstruirá las ciudades de Judá,\ny las habitarán en posesión.\nLa estirpe de sus siervos la heredará,\nlos que aman su nombre vivirán en ella. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 31 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 68 30 31 33 34 36 37 r 14c semana 31 semana xxxi lunes 31 xxxi r que me escuche senor tu gran bondad yo soy un pobre malherido dios mio tu salvacion me levante alabare el nombre de dios con cantos proclamare su grandeza con accion de gracias r miradlo los humildes y alegraos buscad al senor y revivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos r el senor salvara a sion reconstruira las ciudades de juda y las habitaran en posesion la estirpe de sus siervos la heredara los que aman su nombre viviran en ella r",
+  "lizq": [
+    {
+      "line": "R. Que me escuche, Señor, tu gran bondad.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo soy un pobre malherido;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios mío, tu salvación me levante.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alabaré el nombre de Dios con cantos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "proclamaré su grandeza con acción de gracias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Miradlo, los humildes, y alegraos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "buscad al Señor, y revivirá vuestro corazón.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor escucha a sus pobres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no desprecia a sus cautivos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor salvará a Sión,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "reconstruirá las ciudades de Judá,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y las habitarán en posesión.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "La estirpe de sus siervos la heredará,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los que aman su nombre vivirán en ella. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

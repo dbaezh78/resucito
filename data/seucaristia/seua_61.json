@@ -11,10 +11,30 @@
   "respuesta": "R. ¡Cuánto amo tu voluntad, Señor!",
   "respuestaOpcional": "",
   "estrofas": [
-    "Mi porción es el Señor;\nhe resuelto guardar tus palabras.\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.",
-    "Que tu bondad me consuele,\nsegún la promesa hecha a tu siervo;\ncuando me alcance tu compasión, viviré,\ny mis delicias serán tu voluntad. R.",
-    "Yo amo tus mandatos\nmás que el oro purísimo;\npor eso aprecio tus decretos\ny detesto el camino de la mentira. R.",
-    "Tus preceptos son admirables,\npor eso los guarda mi alma;\nla explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R."
+    [
+      "Mi porción es el Señor;",
+      "he resuelto guardar tus palabras.",
+      "Más estimo yo los preceptos de tu boca",
+      "que miles de monedas de oro y plata. R."
+    ],
+    [
+      "Que tu bondad me consuele,",
+      "según la promesa hecha a tu siervo;",
+      "cuando me alcance tu compasión, viviré,",
+      "y mis delicias serán tu voluntad. R."
+    ],
+    [
+      "Yo amo tus mandatos",
+      "más que el oro purísimo;",
+      "por eso aprecio tus decretos",
+      "y detesto el camino de la mentira. R."
+    ],
+    [
+      "Tus preceptos son admirables,",
+      "por eso los guarda mi alma;",
+      "la explicación de tus palabras ilumina,",
+      "da inteligencia a los ignorantes. R."
+    ]
   ],
   "textoCompleto": "Mi porción es el Señor;\nhe resuelto guardar tus palabras.\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo;\ncuando me alcance tu compasión, viviré,\ny mis delicias serán tu voluntad. R.\n\nYo amo tus mandatos\nmás que el oro purísimo;\npor eso aprecio tus decretos\ny detesto el camino de la mentira. R.\n\nTus preceptos son admirables,\npor eso los guarda mi alma;\nla explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. ¡Cuánto amo tu voluntad, Señor!",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Mi porción es el Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "he resuelto guardar tus palabras.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Más estimo yo los preceptos de tu boca",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que miles de monedas de oro y plata. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que tu bondad me consuele,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "según la promesa hecha a tu siervo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "cuando me alcance tu compasión, viviré,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y mis delicias serán tu voluntad. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Yo amo tus mandatos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "más que el oro purísimo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "por eso aprecio tus decretos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y detesto el camino de la mentira. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tus preceptos son admirables,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "por eso los guarda mi alma;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la explicación de tus palabras ilumina,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "da inteligencia a los ignorantes. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

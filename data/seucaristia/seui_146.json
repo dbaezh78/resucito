@@ -1,0 +1,105 @@
+{
+  "id": "seui_146",
+  "title": "Martes de la 25ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 25ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 121, 1-2. 3-4a. 4b-5 (R.: cf. 1)",
+  "salmo": "Salmo responsorial: Salmo 121, 1-2. 3-4a. 4b-5 (R.: cf. 1)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5252,
+  "respuesta": "R. Vamos alegres a la casa del Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "¡Qué alegría cuando me dijeron:",
+      "«Vamos a la casa del Señor»!",
+      "Ya están pisando nuestros pies",
+      "tus umbrales, Jerusalén. R."
+    ],
+    [
+      "Jerusalén está fundada",
+      "como ciudad bien compacta.",
+      "Allá suben las tribus,",
+      "las tribus del Señor, R."
+    ],
+    [
+      "Según la costumbre de Israel,",
+      "a celebrar el nombre del Señor;",
+      "en ella están los tribunales de justicia,",
+      "en el palacio de David. R."
+    ]
+  ],
+  "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nJerusalén está fundada\ncomo ciudad bien compacta.\nAllá suben las tribus,\nlas tribus del Señor, R.\n\nSegún la costumbre de Israel,\na celebrar el nombre del Señor;\nen ella están los tribunales de justicia,\nen el palacio de David. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 25 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 121 1 2 3 4a 4b 5 r cf 1 semana 25 semana xxv martes 25 xxv r vamos alegres a la casa del senor que alegria cuando me dijeron vamos a la casa del senor ya estan pisando nuestros pies tus umbrales jerusalen r jerusalen esta fundada como ciudad bien compacta alla suben las tribus las tribus del senor r segun la costumbre de israel a celebrar el nombre del senor en ella estan los tribunales de justicia en el palacio de david r",
+  "lizq": [
+    {
+      "line": "R. Vamos alegres a la casa del Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Qué alegría cuando me dijeron:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "«Vamos a la casa del Señor»!",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Ya están pisando nuestros pies",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tus umbrales, Jerusalén. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Jerusalén está fundada",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "como ciudad bien compacta.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Allá suben las tribus,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "las tribus del Señor, R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Según la costumbre de Israel,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a celebrar el nombre del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en ella están los tribunales de justicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en el palacio de David. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

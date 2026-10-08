@@ -1,0 +1,131 @@
+{
+  "id": "seup_066",
+  "title": "Sábado de la 11ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 11ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 88, 4-5. 29-30. 31-32. 33-34 (R.: 29a)",
+  "salmo": "Salmo responsorial: Salmo 88, 4-5. 29-30. 31-32. 33-34 (R.: 29a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5116,
+  "respuesta": "R. Le mantendré eternamente mi favor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Sellé una alianza con mi elegido,",
+      "jurando a David, mi siervo:",
+      "«Te fundaré un linaje perpetuo,",
+      "edificaré tu trono para todas las edades». R."
+    ],
+    [
+      "«Le mantendré eternamente mi favor,",
+      "y mi alianza con él será estable;",
+      "le daré una posteridad perpetua",
+      "y un trono duradero como el cielo». R."
+    ],
+    [
+      "«Si sus hijos abandonan mi ley",
+      "y no siguen mis mandamientos,",
+      "si profanan mis preceptos",
+      "y no guardan mis mandatos». R."
+    ],
+    [
+      "«Castigaré con la vara sus pecados",
+      "y a latigazos sus culpas;",
+      "pero no les retiraré mi favor",
+      "ni desmentiré mi fidelidad». R."
+    ]
+  ],
+  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\n«Le mantendré eternamente mi favor,\ny mi alianza con él será estable;\nle daré una posteridad perpetua\ny un trono duradero como el cielo». R.\n\n«Si sus hijos abandonan mi ley\ny no siguen mis mandamientos,\nsi profanan mis preceptos\ny no guardan mis mandatos». R.\n\n«Castigaré con la vara sus pecados\ny a latigazos sus culpas;\npero no les retiraré mi favor\nni desmentiré mi fidelidad». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 11 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 88 4 5 29 30 31 32 33 34 r 29a semana 11 semana xi sabado 11 xi r le mantendre eternamente mi favor selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r le mantendre eternamente mi favor y mi alianza con el sera estable le dare una posteridad perpetua y un trono duradero como el cielo r si sus hijos abandonan mi ley y no siguen mis mandamientos si profanan mis preceptos y no guardan mis mandatos r castigare con la vara sus pecados y a latigazos sus culpas pero no les retirare mi favor ni desmentire mi fidelidad r",
+  "lizq": [
+    {
+      "line": "R. Le mantendré eternamente mi favor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sellé una alianza con mi elegido,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "jurando a David, mi siervo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Te fundaré un linaje perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "edificaré tu trono para todas las edades». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Le mantendré eternamente mi favor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y mi alianza con él será estable;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "le daré una posteridad perpetua",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y un trono duradero como el cielo». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Si sus hijos abandonan mi ley",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y no siguen mis mandamientos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "si profanan mis preceptos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no guardan mis mandatos». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Castigaré con la vara sus pecados",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y a latigazos sus culpas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero no les retiraré mi favor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni desmentiré mi fidelidad». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

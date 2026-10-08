@@ -11,11 +11,34 @@
   "respuesta": "R. Cantaré al Señor, sublime es su victoria.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Cantaré al Señor, sublime es su victoria:\ncaballo y jinete ha arrojado en el mar.",
-    "Mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nÉl es mi Dios: yo lo alabaré;\nel Dios de mis padres: yo lo ensalzaré. R.",
-    "El Señor es un guerrero,\nsu nombre es «Yahvé».\nLos carros del faraón los lanzó al mar,\nahogó en el mar Rojo a sus mejores capitanes. R.",
-    "Las olas los cubrieron,\nbajaron hasta el fondo como piedras.\nTu diestra, Señor, es fuerte y terrible;\ntu diestra, Señor, tritura al enemigo. R.",
-    "Los introduces y los plantas en el monte de tu heredad,\nlugar del que hiciste tu trono, Señor;\nsantuario, Señor, que fundaron tus manos.\nEl Señor reina por siempre jamás. R."
+    [
+      "Cantaré al Señor, sublime es su victoria:",
+      "caballo y jinete ha arrojado en el mar."
+    ],
+    [
+      "Mi fuerza y mi poder es el Señor,",
+      "él fue mi salvación.",
+      "Él es mi Dios: yo lo alabaré;",
+      "el Dios de mis padres: yo lo ensalzaré. R."
+    ],
+    [
+      "El Señor es un guerrero,",
+      "su nombre es «Yahvé».",
+      "Los carros del faraón los lanzó al mar,",
+      "ahogó en el mar Rojo a sus mejores capitanes. R."
+    ],
+    [
+      "Las olas los cubrieron,",
+      "bajaron hasta el fondo como piedras.",
+      "Tu diestra, Señor, es fuerte y terrible;",
+      "tu diestra, Señor, tritura al enemigo. R."
+    ],
+    [
+      "Los introduces y los plantas en el monte de tu heredad,",
+      "lugar del que hiciste tu trono, Señor;",
+      "santuario, Señor, que fundaron tus manos.",
+      "El Señor reina por siempre jamás. R."
+    ]
   ],
   "textoCompleto": "Cantaré al Señor, sublime es su victoria:\ncaballo y jinete ha arrojado en el mar.\n\nMi fuerza y mi poder es el Señor,\nél fue mi salvación.\nÉl es mi Dios: yo lo alabaré;\nel Dios de mis padres: yo lo ensalzaré. R.\n\nEl Señor es un guerrero,\nsu nombre es «Yahvé».\nLos carros del faraón los lanzó al mar,\nahogó en el mar Rojo a sus mejores capitanes. R.\n\nLas olas los cubrieron,\nbajaron hasta el fondo como piedras.\nTu diestra, Señor, es fuerte y terrible;\ntu diestra, Señor, tritura al enemigo. R.\n\nLos introduces y los plantas en el monte de tu heredad,\nlugar del que hiciste tu trono, Señor;\nsantuario, Señor, que fundaron tus manos.\nEl Señor reina por siempre jamás. R.",
   "sourceBook": "eucaristia",
@@ -26,100 +49,99 @@
   "lizq": [
     {
       "line": "R. Cantaré al Señor, sublime es su victoria.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cantaré al Señor, sublime es su victoria:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "caballo y jinete ha arrojado en el mar.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Mi fuerza y mi poder es el Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "él fue mi salvación.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Él es mi Dios: yo lo alabaré;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el Dios de mis padres: yo lo ensalzaré. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es un guerrero,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "su nombre es «Yahvé».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Los carros del faraón los lanzó al mar,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ahogó en el mar Rojo a sus mejores capitanes. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Las olas los cubrieron,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "bajaron hasta el fondo como piedras.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Tu diestra, Señor, es fuerte y terrible;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tu diestra, Señor, tritura al enemigo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Los introduces y los plantas en el monte de tu heredad,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "lugar del que hiciste tu trono, Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "santuario, Señor, que fundaron tus manos.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "El Señor reina por siempre jamás. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -1,0 +1,105 @@
+{
+  "id": "seup_188",
+  "title": "Martes de la 32ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 32ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 36, 3-4. 18 y 23. 27 y 29 (R.: 39a)",
+  "salmo": "Salmo responsorial: Salmo 36, 3-4. 18 y 23. 27 y 29 (R.: 39a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5322,
+  "respuesta": "R. El Señor es quien salva a los justos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Confía en el Señor y haz el bien,",
+      "habita tu tierra y practica la lealtad;",
+      "sea el Señor tu delicia,",
+      "y él te dará lo que pide tu corazón. R."
+    ],
+    [
+      "El Señor vela por los días de los buenos,",
+      "y su herencia durará siempre.",
+      "El Señor asegura los pasos del hombre,",
+      "se complace en sus caminos. R."
+    ],
+    [
+      "Apártate del mal y haz el bien,",
+      "y siempre tendrás una casa;",
+      "pero los justos poseen la tierra,",
+      "la habitarán por siempre jamás. R."
+    ]
+  ],
+  "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEl Señor vela por los días de los buenos,\ny su herencia durará siempre.\nEl Señor asegura los pasos del hombre,\nse complace en sus caminos. R.\n\nApártate del mal y haz el bien,\ny siempre tendrás una casa;\npero los justos poseen la tierra,\nla habitarán por siempre jamás. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 32 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 36 3 4 18 y 23 27 y 29 r 39a semana 32 semana xxxii martes 32 xxxii r el senor es quien salva a los justos confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r el senor vela por los dias de los buenos y su herencia durara siempre el senor asegura los pasos del hombre se complace en sus caminos r apartate del mal y haz el bien y siempre tendras una casa pero los justos poseen la tierra la habitaran por siempre jamas r",
+  "lizq": [
+    {
+      "line": "R. El Señor es quien salva a los justos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Confía en el Señor y haz el bien,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "habita tu tierra y practica la lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sea el Señor tu delicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y él te dará lo que pide tu corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor vela por los días de los buenos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y su herencia durará siempre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor asegura los pasos del hombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se complace en sus caminos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Apártate del mal y haz el bien,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y siempre tendrás una casa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero los justos poseen la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la habitarán por siempre jamás. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "id": "seup_040",
+  "title": "Jueves de la 7ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 7ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 48, 14-15ab. 15cd-16. 17-18. 19-20 (R.: Mt 5, 3)",
+  "salmo": "Salmo responsorial: Salmo 48, 14-15ab. 15cd-16. 17-18. 19-20 (R.: Mt 5, 3)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5074,
+  "respuesta": "R. Dichosos los pobres en el espíritu, porque de ellos es el reino de los cielos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Éste es el camino de los confiados,",
+      "el destino de los hombres satisfechos:",
+      "son un rebaño para el abismo,",
+      "la muerte es su pastor. R."
+    ],
+    [
+      "Y bajan derechos a la tumba;",
+      "se desvanece su figura,",
+      "y el abismo es su casa.",
+      "Pero a mí, Dios me salva,",
+      "me saca de las garras del abismo",
+      "y me lleva consigo. R."
+    ],
+    [
+      "No te preocupes si se enriquece un hombre",
+      "y aumenta el fasto de su casa:",
+      "cuando muera, no se llevará nada,",
+      "su fasto no bajará con él. R."
+    ],
+    [
+      "Aunque en vida se felicitaba:",
+      "«Ponderan lo bien que lo pasas»,",
+      "irá a reunirse con sus antepasados,",
+      "que no verán nunca la luz. R."
+    ]
+  ],
+  "textoCompleto": "Éste es el camino de los confiados,\nel destino de los hombres satisfechos:\nson un rebaño para el abismo,\nla muerte es su pastor. R.\n\nY bajan derechos a la tumba;\nse desvanece su figura,\ny el abismo es su casa.\nPero a mí, Dios me salva,\nme saca de las garras del abismo\ny me lleva consigo. R.\n\nNo te preocupes si se enriquece un hombre\ny aumenta el fasto de su casa:\ncuando muera, no se llevará nada,\nsu fasto no bajará con él. R.\n\nAunque en vida se felicitaba:\n«Ponderan lo bien que lo pasas»,\nirá a reunirse con sus antepasados,\nque no verán nunca la luz. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 7 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 48 14 15ab 15cd 16 17 18 19 20 r mt 5 3 semana 7 semana vii jueves 7 vii r dichosos los pobres en el espiritu porque de ellos es el reino de los cielos este es el camino de los confiados el destino de los hombres satisfechos son un rebano para el abismo la muerte es su pastor r y bajan derechos a la tumba se desvanece su figura y el abismo es su casa pero a mi dios me salva me saca de las garras del abismo y me lleva consigo r no te preocupes si se enriquece un hombre y aumenta el fasto de su casa cuando muera no se llevara nada su fasto no bajara con el r aunque en vida se felicitaba ponderan lo bien que lo pasas ira a reunirse con sus antepasados que no veran nunca la luz r",
+  "lizq": [
+    {
+      "line": "R. Dichosos los pobres en el espíritu,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "porque de ellos es el reino de los cielos.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Éste es el camino de los confiados,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el destino de los hombres satisfechos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "son un rebaño para el abismo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la muerte es su pastor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Y bajan derechos a la tumba;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "se desvanece su figura,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y el abismo es su casa.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Pero a mí, Dios me salva,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me saca de las garras del abismo",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me lleva consigo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No te preocupes si se enriquece un hombre",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y aumenta el fasto de su casa:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando muera, no se llevará nada,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su fasto no bajará con él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aunque en vida se felicitaba:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "«Ponderan lo bien que lo pasas»,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "irá a reunirse con sus antepasados,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que no verán nunca la luz. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

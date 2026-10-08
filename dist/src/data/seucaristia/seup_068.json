@@ -1,0 +1,110 @@
+{
+  "id": "seup_068",
+  "title": "Martes de la 12ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 12ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 47, 2-3a. 3b-4. 10-11 (R.: cf. 9d)",
+  "salmo": "Salmo responsorial: Salmo 47, 2-3a. 3b-4. 10-11 (R.: cf. 9d)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5122,
+  "respuesta": "R. Dios ha fundado su ciudad para siempre.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Grande es el Señor y muy digno de alabanza",
+      "en la ciudad de nuestro Dios,",
+      "su monte santo, altura hermosa,",
+      "alegría de toda la tierra. R."
+    ],
+    [
+      "El monte Sión, vértice del cielo,",
+      "ciudad del gran rey;",
+      "entre sus palacios,",
+      "Dios descuella como un alcázar. R."
+    ],
+    [
+      "Oh Dios, meditamos tu misericordia",
+      "en medio de tu templo:",
+      "como tu renombre, oh Dios, tu alabanza",
+      "llega al confín de la tierra;",
+      "tu diestra está llena de justicia. R."
+    ]
+  ],
+  "textoCompleto": "Grande es el Señor y muy digno de alabanza\nen la ciudad de nuestro Dios,\nsu monte santo, altura hermosa,\nalegría de toda la tierra. R.\n\nEl monte Sión, vértice del cielo,\nciudad del gran rey;\nentre sus palacios,\nDios descuella como un alcázar. R.\n\nOh Dios, meditamos tu misericordia\nen medio de tu templo:\ncomo tu renombre, oh Dios, tu alabanza\nllega al confín de la tierra;\ntu diestra está llena de justicia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 12 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 47 2 3a 3b 4 10 11 r cf 9d semana 12 semana xii martes 12 xii r dios ha fundado su ciudad para siempre grande es el senor y muy digno de alabanza en la ciudad de nuestro dios su monte santo altura hermosa alegria de toda la tierra r el monte sion vertice del cielo ciudad del gran rey entre sus palacios dios descuella como un alcazar r oh dios meditamos tu misericordia en medio de tu templo como tu renombre oh dios tu alabanza llega al confin de la tierra tu diestra esta llena de justicia r",
+  "lizq": [
+    {
+      "line": "R. Dios ha fundado su ciudad para siempre.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Grande es el Señor y muy digno de alabanza",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en la ciudad de nuestro Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su monte santo, altura hermosa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alegría de toda la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El monte Sión, vértice del cielo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ciudad del gran rey;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "entre sus palacios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios descuella como un alcázar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oh Dios, meditamos tu misericordia",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en medio de tu templo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como tu renombre, oh Dios, tu alabanza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "llega al confín de la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu diestra está llena de justicia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

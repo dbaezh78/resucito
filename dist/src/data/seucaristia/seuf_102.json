@@ -1,0 +1,124 @@
+{
+  "id": "seuf_102",
+  "title": "Jueves de la cuarta semana de Pascua",
+  "celebracion": "Jueves de la cuarta semana de Pascua",
+  "subtitle": "Salmo 88, 2-3. 21-22. 25 y 27 (R.: cf. 2a)",
+  "salmo": "Salmo 88, 2-3. 21-22. 25 y 27 (R.: cf. 2a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Jueves",
+  "orden": 444,
+  "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Cantaré eternamente las misericordias del Señor,",
+      "anunciaré tu fidelidad por todas las edades.",
+      "Porque dije: «Tu misericordia es un edificio eterno,",
+      "más que el cielo has afianzado tu fidelidad». R."
+    ],
+    [
+      "Encontré a David, mi siervo,",
+      "y lo he ungido con óleo sagrado;",
+      "para que mi mano esté siempre con él",
+      "y mi brazo lo haga valeroso. R."
+    ],
+    [
+      "Mi fidelidad y misericordia lo acompañarán,",
+      "por mi nombre crecerá su poder.",
+      "Él me invocará: «Tú eres mi padre,",
+      "mi Dios, mi Roca salvadora». R."
+    ]
+  ],
+  "textoCompleto": "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: «Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.\n\nEncontré a David, mi siervo,\ny lo he ungido con óleo sagrado;\npara que mi mano esté siempre con él\ny mi brazo lo haga valeroso. R.\n\nMi fidelidad y misericordia lo acompañarán,\npor mi nombre crecerá su poder.\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la cuarta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 88 2 3 21 22 25 y 27 r cf 2a semana 4 semana iv jueves feria r cantare eternamente tus misericordias senor r aleluya cantare eternamente las misericordias del senor anunciare tu fidelidad por todas las edades porque dije tu misericordia es un edificio eterno mas que el cielo has afianzado tu fidelidad r encontre a david mi siervo y lo he ungido con oleo sagrado para que mi mano este siempre con el y mi brazo lo haga valeroso r mi fidelidad y misericordia lo acompanaran por mi nombre crecera su poder el me invocara tu eres mi padre mi dios mi roca salvadora r",
+  "lizq": [
+    {
+      "line": "R. Cantaré eternamente tus misericordias, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantaré eternamente las misericordias del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "anunciaré tu fidelidad por todas las edades.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Porque dije: «Tu misericordia es un edificio eterno,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "más que el cielo has afianzado tu fidelidad». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Encontré a David, mi siervo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y lo he ungido con óleo sagrado;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que mi mano esté siempre con él",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y mi brazo lo haga valeroso. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi fidelidad y misericordia lo acompañarán,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por mi nombre crecerá su poder.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él me invocará: «Tú eres mi padre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi Dios, mi Roca salvadora». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

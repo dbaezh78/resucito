@@ -1,0 +1,85 @@
+{
+  "id": "seui_182",
+  "title": "Martes de la 31ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 31ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
+  "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5312,
+  "respuesta": "R. Guarda mi alma en la paz junto a ti, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, mi corazón no es ambicioso,",
+      "ni mis ojos altaneros;",
+      "no pretendo grandezas",
+      "que superan mi capacidad. R."
+    ],
+    [
+      "Sino que acallo y modero mis deseos,",
+      "como un niño en brazos de su madre. R."
+    ],
+    [
+      "Espere Israel en el Señor",
+      "ahora y por siempre. R."
+    ]
+  ],
+  "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 31 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 130 1 2 3 semana 31 semana xxxi martes 31 xxxi r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r",
+  "lizq": [
+    {
+      "line": "R. Guarda mi alma en la paz junto a ti, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, mi corazón no es ambicioso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni mis ojos altaneros;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no pretendo grandezas",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que superan mi capacidad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sino que acallo y modero mis deseos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "como un niño en brazos de su madre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Espere Israel en el Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ahora y por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

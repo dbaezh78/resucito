@@ -1,0 +1,123 @@
+{
+  "id": "seup_146",
+  "title": "Martes de la 25ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 25ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 1. 27. 30. 34. 35. 44 (R.: 35a)",
+  "salmo": "Salmo responsorial: Salmo 118, 1. 27. 30. 34. 35. 44 (R.: 35a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5252,
+  "respuesta": "R. Guíame, Señor, por la senda de tus mandatos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el que, con vida intachable,",
+      "camina en la voluntad del Señor. R."
+    ],
+    [
+      "Instrúyeme en el camino de tus decretos,",
+      "y meditaré tus maravillas. R."
+    ],
+    [
+      "Escogí el camino verdadero,",
+      "deseé tus mandamientos. R."
+    ],
+    [
+      "Enséñame a cumplir tu voluntad",
+      "y a guardarla de todo corazón. R."
+    ],
+    [
+      "Guíame por la senda de tus mandatos,",
+      "porque ella es mi gozo. R."
+    ],
+    [
+      "Cumpliré sin cesar tu voluntad,",
+      "por siempre jamás. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor. R.\n\nInstrúyeme en el camino de tus decretos,\ny meditaré tus maravillas. R.\n\nEscogí el camino verdadero,\ndeseé tus mandamientos. R.\n\nEnséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R.\n\nGuíame por la senda de tus mandatos,\nporque ella es mi gozo. R.\n\nCumpliré sin cesar tu voluntad,\npor siempre jamás. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 25 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 118 1 27 30 34 35 44 r 35a semana 25 semana xxv martes 25 xxv r guiame senor por la senda de tus mandatos dichoso el que con vida intachable camina en la voluntad del senor r instruyeme en el camino de tus decretos y meditare tus maravillas r escogi el camino verdadero desee tus mandamientos r ensename a cumplir tu voluntad y a guardarla de todo corazon r guiame por la senda de tus mandatos porque ella es mi gozo r cumplire sin cesar tu voluntad por siempre jamas r",
+  "lizq": [
+    {
+      "line": "R. Guíame, Señor, por la senda de tus mandatos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el que, con vida intachable,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "camina en la voluntad del Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Instrúyeme en el camino de tus decretos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y meditaré tus maravillas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Escogí el camino verdadero,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "deseé tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Enséñame a cumplir tu voluntad",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y a guardarla de todo corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Guíame por la senda de tus mandatos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque ella es mi gozo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cumpliré sin cesar tu voluntad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por siempre jamás. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

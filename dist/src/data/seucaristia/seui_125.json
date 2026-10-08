@@ -1,0 +1,121 @@
+{
+  "id": "seui_125",
+  "title": "Viernes de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 96, 1 y 2b. 5-6. 10. 11-12 (R.: 12a)",
+  "salmo": "Salmo responsorial: Salmo 96, 1 y 2b. 5-6. 10. 11-12 (R.: 12a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5215,
+  "respuesta": "R. Alegraos, justos, con el Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El Señor reina, la tierra goza,",
+      "se alegran las islas innumerables.",
+      "Justicia y derecho sostienen su trono. R."
+    ],
+    [
+      "Los montes se derriten como cera",
+      "ante el dueño de toda la tierra;",
+      "los cielos pregonan su justicia,",
+      "y todos los pueblos contemplan su gloria. R."
+    ],
+    [
+      "El Señor ama al que aborrece el mal,",
+      "protege la vida de sus fieles",
+      "y los libra de los malvados. R."
+    ],
+    [
+      "Amanece la luz para el justo,",
+      "y la alegría para los rectos de corazón.",
+      "Alegraos, justos, con el Señor,",
+      "celebrad su santo nombre. R."
+    ]
+  ],
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nJusticia y derecho sostienen su trono. R.\n\nLos montes se derriten como cera\nante el dueño de toda la tierra;\nlos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nEl Señor ama al que aborrece el mal,\nprotege la vida de sus fieles\ny los libra de los malvados. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 21 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 96 1 y 2b 5 6 10 11 12 r 12a semana 21 semana xxi viernes 21 xxi r alegraos justos con el senor el senor reina la tierra goza se alegran las islas innumerables justicia y derecho sostienen su trono r los montes se derriten como cera ante el dueno de toda la tierra los cielos pregonan su justicia y todos los pueblos contemplan su gloria r el senor ama al que aborrece el mal protege la vida de sus fieles y los libra de los malvados r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
+  "lizq": [
+    {
+      "line": "R. Alegraos, justos, con el Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor reina, la tierra goza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "se alegran las islas innumerables.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Justicia y derecho sostienen su trono. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los montes se derriten como cera",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ante el dueño de toda la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los cielos pregonan su justicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y todos los pueblos contemplan su gloria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor ama al que aborrece el mal,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "protege la vida de sus fieles",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y los libra de los malvados. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Amanece la luz para el justo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y la alegría para los rectos de corazón.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alegraos, justos, con el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "celebrad su santo nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

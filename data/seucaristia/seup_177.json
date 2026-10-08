@@ -1,0 +1,105 @@
+{
+  "id": "seup_177",
+  "title": "Miércoles de la 30ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 30ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 10-11. 12-13ab. 13cd-14 (R.: 13c)",
+  "salmo": "Salmo responsorial: Salmo 144, 10-11. 12-13ab. 13cd-14 (R.: 13c)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5303,
+  "respuesta": "R. El Señor es fiel a sus palabras.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ],
+    [
+      "Explicando tus hazañas a los hombres,",
+      "la gloria y majestad de tu reinado.",
+      "Tu reinado es un reinado perpetuo,",
+      "tu gobierno va de edad en edad. R."
+    ],
+    [
+      "El Señor es fiel a sus palabras,",
+      "bondadoso en todas sus acciones.",
+      "El Señor sostiene a los que van a caer,",
+      "endereza a los que ya se doblan. R."
+    ]
+  ],
+  "textoCompleto": "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nExplicando tus hazañas a los hombres,\nla gloria y majestad de tu reinado.\nTu reinado es un reinado perpetuo,\ntu gobierno va de edad en edad. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 30 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 144 10 11 12 13ab 13cd 14 r 13c semana 30 semana xxx miercoles 30 xxx r el senor es fiel a sus palabras que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r explicando tus hazanas a los hombres la gloria y majestad de tu reinado tu reinado es un reinado perpetuo tu gobierno va de edad en edad r el senor es fiel a sus palabras bondadoso en todas sus acciones el senor sostiene a los que van a caer endereza a los que ya se doblan r",
+  "lizq": [
+    {
+      "line": "R. El Señor es fiel a sus palabras.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que todas tus criaturas te den gracias, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que te bendigan tus fieles;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que proclamen la gloria de tu reinado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hablen de tus hazañas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Explicando tus hazañas a los hombres,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la gloria y majestad de tu reinado.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tu reinado es un reinado perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu gobierno va de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es fiel a sus palabras,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "bondadoso en todas sus acciones.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor sostiene a los que van a caer,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "endereza a los que ya se doblan. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

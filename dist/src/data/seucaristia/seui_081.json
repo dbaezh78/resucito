@@ -1,0 +1,109 @@
+{
+  "id": "seui_081",
+  "title": "Miércoles de la 14ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 14ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 32, 2-3. 10-11. 18-19 (R.: 22)",
+  "salmo": "Salmo responsorial: Salmo 32, 2-3. 10-11. 18-19 (R.: 22)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5143,
+  "respuesta": "R. Que tu misericordia, Señor, venga sobre nosotros, como lo esperamos de ti.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dad gracias al Señor con la cítara,",
+      "tocad en su honor el arpa de diez cuerdas;",
+      "cantadle un cántico nuevo,",
+      "acompañando los vítores con bordones. R."
+    ],
+    [
+      "El Señor deshace los planes de las naciones,",
+      "frustra los proyectos de los pueblos;",
+      "pero el plan del Señor subsiste por siempre,",
+      "los proyectos de su corazón, de edad en edad. R."
+    ],
+    [
+      "Los ojos del Señor están puestos en sus fieles,",
+      "en los que esperan en su misericordia,",
+      "para librar sus vidas de la muerte",
+      "y a reanimarlos en tiempo de hambre. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nEl Señor deshace los planes de las naciones,\nfrustra los proyectos de los pueblos;\npero el plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny a reanimarlos en tiempo de hambre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 14 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 32 2 3 10 11 18 19 r 22 semana 14 semana xiv miercoles 14 xiv r que tu misericordia senor venga sobre nosotros como lo esperamos de ti dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r el senor deshace los planes de las naciones frustra los proyectos de los pueblos pero el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y a reanimarlos en tiempo de hambre r",
+  "lizq": [
+    {
+      "line": "R. Que tu misericordia, Señor, venga sobre nosotros,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "como lo esperamos de ti.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor con la cítara,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tocad en su honor el arpa de diez cuerdas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cantadle un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "acompañando los vítores con bordones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor deshace los planes de las naciones,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "frustra los proyectos de los pueblos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el plan del Señor subsiste por siempre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los proyectos de su corazón, de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los ojos del Señor están puestos en sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en los que esperan en su misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para librar sus vidas de la muerte",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y a reanimarlos en tiempo de hambre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -11,10 +11,30 @@
   "respuesta": "R. Misericordia, Señor: hemos pecado.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa,\nlava del todo mi delito,\nlimpia mi pecado. R.",
-    "Pues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.",
-    "Oh, Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.",
-    "Devuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R."
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa,",
+      "lava del todo mi delito,",
+      "limpia mi pecado. R."
+    ],
+    [
+      "Pues yo reconozco mi culpa,",
+      "tengo siempre presente mi pecado:",
+      "contra ti, contra ti solo pequé,",
+      "cometí la maldad que aborreces. R."
+    ],
+    [
+      "Oh, Dios, crea en mí un corazón puro,",
+      "renuévame por dentro con espíritu firme;",
+      "no me arrojes lejos de tu rostro,",
+      "no me quites tu santo espíritu. R."
+    ],
+    [
+      "Devuélveme la alegría de tu salvación,",
+      "afiánzame con espíritu generoso.",
+      "Señor, me abrirás los labios,",
+      "y mi boca proclamará tu alabanza. R."
+    ]
   ],
   "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa,\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nOh, Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. Misericordia, Señor: hemos pecado.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Misericordia, Dios mío, por tu bondad,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "por tu inmensa compasión borra mi culpa,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "lava del todo mi delito,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "limpia mi pecado. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pues yo reconozco mi culpa,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tengo siempre presente mi pecado:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "contra ti, contra ti solo pequé,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "cometí la maldad que aborreces. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Oh, Dios, crea en mí un corazón puro,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "renuévame por dentro con espíritu firme;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no me arrojes lejos de tu rostro,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no me quites tu santo espíritu. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Devuélveme la alegría de tu salvación,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "afiánzame con espíritu generoso.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Señor, me abrirás los labios,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y mi boca proclamará tu alabanza. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

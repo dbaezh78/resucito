@@ -11,9 +11,20 @@
   "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.",
-    "Sino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.",
-    "Espere Israel en el Señor\nahora y por siempre. R."
+    [
+      "Señor, mi corazón no es ambicioso,",
+      "ni mis ojos altaneros;",
+      "no pretendo grandezas",
+      "que superan mi capacidad. R."
+    ],
+    [
+      "Sino que acallo y modero mis deseos,",
+      "como un niño en brazos de su madre. R."
+    ],
+    [
+      "Espere Israel en el Señor",
+      "ahora y por siempre. R."
+    ]
   ],
   "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
   "sourceBook": "eucaristia",
@@ -24,52 +35,51 @@
   "lizq": [
     {
       "line": "R. Guarda mi alma en la paz, junto a ti, Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Señor, mi corazón no es ambicioso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "ni mis ojos altaneros;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no pretendo grandezas",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que superan mi capacidad. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Sino que acallo y modero mis deseos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "como un niño en brazos de su madre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Espere Israel en el Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "ahora y por siempre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -1,0 +1,91 @@
+{
+  "id": "seup_138",
+  "title": "Sábado de la 23ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 23ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 17-18 (R.: 17a)",
+  "salmo": "Salmo responsorial: Salmo 115, 12-13. 17-18 (R.: 17a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5236,
+  "respuesta": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "¿Cómo pagaré al Señor",
+      "todo el bien que me ha hecho?",
+      "Alzaré la copa de la salvación,",
+      "invocando su nombre. R."
+    ],
+    [
+      "Te ofreceré un sacrificio de alabanza,",
+      "invocando tu nombre, Señor.",
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo. R."
+    ]
+  ],
+  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 23 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 115 12 13 17 18 r 17a semana 23 semana xxiii sabado 23 xxiii r te ofrecere senor un sacrificio de alabanza r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
+  "lizq": [
+    {
+      "line": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Cómo pagaré al Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "todo el bien que me ha hecho?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alzaré la copa de la salvación,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "invocando su nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te ofreceré un sacrificio de alabanza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "invocando tu nombre, Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cumpliré al Señor mis votos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en presencia de todo el pueblo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

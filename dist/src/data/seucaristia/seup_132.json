@@ -1,0 +1,100 @@
+{
+  "id": "seup_132",
+  "title": "Sábado de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 17-18. 19-20. 21 (R.: 18a)",
+  "salmo": "Salmo responsorial: Salmo 144, 17-18. 19-20. 21 (R.: 18a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5226,
+  "respuesta": "R. Cerca está el Señor de los que lo invocan.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El Señor es justo en todos sus caminos,",
+      "es bondadoso en todas sus acciones;",
+      "cerca está el Señor de los que lo invocan,",
+      "de los que lo invocan sinceramente. R."
+    ],
+    [
+      "Satisface los deseos de sus fieles,",
+      "escucha sus gritos, y los salva.",
+      "El Señor guarda a los que lo aman,",
+      "pero destruye a los malvados. R."
+    ],
+    [
+      "Pronuncie mi boca la alabanza del Señor,",
+      "todo viviente bendiga su santo nombre",
+      "por siempre jamás. R."
+    ]
+  ],
+  "textoCompleto": "El Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.\n\nSatisface los deseos de sus fieles,\nescucha sus gritos, y los salva.\nEl Señor guarda a los que lo aman,\npero destruye a los malvados. R.\n\nPronuncie mi boca la alabanza del Señor,\ntodo viviente bendiga su santo nombre\npor siempre jamás. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 22 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 144 17 18 19 20 21 r 18a semana 22 semana xxii sabado 22 xxii r cerca esta el senor de los que lo invocan el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r satisface los deseos de sus fieles escucha sus gritos y los salva el senor guarda a los que lo aman pero destruye a los malvados r pronuncie mi boca la alabanza del senor todo viviente bendiga su santo nombre por siempre jamas r",
+  "lizq": [
+    {
+      "line": "R. Cerca está el Señor de los que lo invocan.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es justo en todos sus caminos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "es bondadoso en todas sus acciones;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cerca está el Señor de los que lo invocan,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de los que lo invocan sinceramente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Satisface los deseos de sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "escucha sus gritos, y los salva.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor guarda a los que lo aman,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero destruye a los malvados. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pronuncie mi boca la alabanza del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "todo viviente bendiga su santo nombre",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por siempre jamás. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

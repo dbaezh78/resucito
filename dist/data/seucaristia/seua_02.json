@@ -8,16 +8,35 @@
   "tiempo": "Adviento",
   "dia": "Domingo",
   "orden": 102,
-  "respuesta": "R. Que en sus días florezca la justicia,",
+  "respuesta": "R. Que en sus días florezca la justicia, y la paz abunde eternamente.",
   "respuestaOpcional": "",
   "estrofas": [
-    "y la paz abunde eternamente.",
-    "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.",
-    "Que en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.",
-    "Él librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.",
-    "Que su nombre sea eterno,\ny su fama dure como el sol:\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R."
+    [
+      "Dios mío, confía tu juicio al rey,",
+      "tu justicia al hijo de reyes,",
+      "para que rija a tu pueblo con justicia,",
+      "a tus humildes con rectitud. R."
+    ],
+    [
+      "Que en sus días florezca la justicia",
+      "y la paz hasta que falte la luna;",
+      "que domine de mar a mar,",
+      "del Gran Río al confín de la tierra. R."
+    ],
+    [
+      "Él librará al pobre que clamaba,",
+      "al afligido que no tenía protector;",
+      "él se apiadará del pobre y del indigente,",
+      "y salvará la vida de los pobres. R."
+    ],
+    [
+      "Que su nombre sea eterno,",
+      "y su fama dure como el sol:",
+      "que él sea la bendición de todos los pueblos,",
+      "y lo proclamen dichoso todas las razas de la tierra. R."
+    ]
   ],
-  "textoCompleto": "y la paz abunde eternamente.\n\nDios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol:\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol:\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,96 +45,91 @@
   "lizq": [
     {
       "line": "R. Que en sus días florezca la justicia,",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "y la paz abunde eternamente.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dios mío, confía tu juicio al rey,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tu justicia al hijo de reyes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para que rija a tu pueblo con justicia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "a tus humildes con rectitud. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que en sus días florezca la justicia",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y la paz hasta que falte la luna;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que domine de mar a mar,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "del Gran Río al confín de la tierra. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Él librará al pobre que clamaba,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "al afligido que no tenía protector;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "él se apiadará del pobre y del indigente,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y salvará la vida de los pobres. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que su nombre sea eterno,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y su fama dure como el sol:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que él sea la bendición de todos los pueblos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y lo proclamen dichoso todas las razas de la tierra. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

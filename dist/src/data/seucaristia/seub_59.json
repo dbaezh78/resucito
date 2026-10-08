@@ -11,9 +11,24 @@
   "respuesta": "R. Abres tú la mano, Señor, y nos sacias.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
-    "Los ojos de todos te están aguardando,\ntú les das la comida a su tiempo;\nabres tú la mano,\ny sacias de favores a todo viviente. R.",
-    "El Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R."
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ],
+    [
+      "Los ojos de todos te están aguardando,",
+      "tú les das la comida a su tiempo;",
+      "abres tú la mano,",
+      "y sacias de favores a todo viviente. R."
+    ],
+    [
+      "El Señor es justo en todos sus caminos,",
+      "es bondadoso en todas sus acciones;",
+      "cerca está el Señor de los que lo invocan,",
+      "de los que lo invocan sinceramente. R."
+    ]
   ],
   "textoCompleto": "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nLos ojos de todos te están aguardando,\ntú les das la comida a su tiempo;\nabres tú la mano,\ny sacias de favores a todo viviente. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. Abres tú la mano, Señor, y nos sacias.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que todas tus criaturas te den gracias, Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "que te bendigan tus fieles;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que proclamen la gloria de tu reinado,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que hablen de tus hazañas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Los ojos de todos te están aguardando,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tú les das la comida a su tiempo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "abres tú la mano,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y sacias de favores a todo viviente. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es justo en todos sus caminos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "es bondadoso en todas sus acciones;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "cerca está el Señor de los que lo invocan,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "de los que lo invocan sinceramente. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -4584,3 +4584,116 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
 .spa10 {
   line-height: 1.2;
 }
+
+/* ==========================================================================
+   ESTILOS ESPECIALES PARA SALMOS DE LA EUCARISTÍA
+   ========================================================================== */
+
+/* Líneas base de salmo: interlineado natural sin margen excesivo de acordes */
+.linea-canto.salmo-linea {
+  line-height: 1.45 !important;
+  min-height: 1.4rem !important;
+  padding-left: 0 !important;
+  margin-bottom: 2px !important;
+  white-space: pre-wrap !important;
+}
+
+/* Espacio vertical limpio entre la respuesta y las estrofas, y entre estrofas */
+.linea-canto.salmo-espacio {
+  min-height: calc(1.3rem * var(--font-zoom, 1)) !important;
+  height: calc(1.3rem * var(--font-zoom, 1)) !important;
+  line-height: calc(1.3rem * var(--font-zoom, 1)) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  pointer-events: none;
+}
+
+/* Respuesta: en cursiva (itálica) y alineada a la izquierda */
+.linea-canto.salmo-respuesta {
+  font-style: italic !important;
+  font-weight: 500;
+}
+
+/* Versos de estrofa: tipografía recta normal */
+.linea-canto.salmo-verso {
+  font-style: normal !important;
+}
+
+/* Primera oración de estrofa: alineada a la izquierda */
+.linea-canto.salmo-verso-primero {
+  padding-left: 0 !important;
+}
+
+/* Demás oraciones de la estrofa y respuesta: se adelantan una sangría */
+.linea-canto.salmo-sangria {
+  padding-left: calc(2.2rem * var(--font-zoom, 1)) !important;
+}
+
+@media (max-width: 600px) {
+  .linea-canto.salmo-sangria {
+    padding-left: calc(1.5rem * var(--font-zoom, 1)) !important;
+  }
+}
+
+/* Letra R. en Rojo y Negrita tanto al inicio como al final */
+.salmo-r {
+  color: #d01212 !important;
+  font-weight: 700 !important;
+}
+
+/* Modo oscuro para la letra R */
+body.theme-dark .salmo-r {
+  color: #ef4444 !important;
+}
+
+/* Indicador O bien: */
+.linea-canto.salmo-obien {
+  font-size: calc(1.1rem * var(--font-zoom, 1)) !important;
+  color: var(--text-muted, #71717a) !important;
+  font-style: italic !important;
+  padding-left: 0 !important;
+  margin-top: 6px !important;
+  margin-bottom: 2px !important;
+}
+
+/* Borde inferior rojo para la cabecera del Salmo de la Eucaristía */
+.canto-header-block.header-eucaristia {
+  border-bottom: 4px solid #d01212 !important;
+  box-shadow: 0 10px 20px -10px rgba(208, 18, 18, 0.45) !important;
+}
+
+body.theme-dark .canto-header-block.header-eucaristia {
+  border-bottom: 4px solid #ef4444 !important;
+  box-shadow: 0 10px 20px -10px rgba(239, 68, 68, 0.45) !important;
+}
+
+/* Botones de días del mes compactos para Santos en Eucaristía */
+.eucaristia-dias-mes-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.eucaristia-dias-mes-pills .aclamaciones-pill {
+  padding: 3px 8px !important;
+  min-width: 28px !important;
+  font-size: 0.82rem !important;
+  line-height: 1.2 !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Separación exclusiva para Salmos de la Eucaristía: al menos 20px a la izquierda */
+.canto-columns-container.salmo-eucaristia-viewer {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.canto-columns-container.salmo-eucaristia-viewer .variant-group-header {
+  margin-left: 0 !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+

@@ -1,0 +1,131 @@
+{
+  "id": "seup_079",
+  "title": "Lunes de la 14ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 14ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 4-5. 6-7. 8-9 (R.: 8a)",
+  "salmo": "Salmo responsorial: Salmo 144, 2-3. 4-5. 6-7. 8-9 (R.: 8a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5141,
+  "respuesta": "R. El Señor es clemente y misericordioso.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Día tras día, te bendeciré",
+      "y alabaré tu nombre por siempre jamás.",
+      "Grande es el Señor, merece toda alabanza,",
+      "es incalculable su grandeza. R."
+    ],
+    [
+      "Una generación pondera tus obras a la otra,",
+      "y le cuenta tus hazañas.",
+      "Alaban ellos la gloria de tu majestad,",
+      "y yo repito tus maravillas. R."
+    ],
+    [
+      "Encarecen ellos tus temibles proezas,",
+      "y yo narro tus grandes acciones;",
+      "difunden la memoria de tu inmensa bondad,",
+      "y aclaman tus victorias. R."
+    ],
+    [
+      "El Señor es clemente y misericordioso,",
+      "lento a la cólera y rico en piedad;",
+      "el Señor es bueno con todos,",
+      "es cariñoso con todas sus criaturas. R."
+    ]
+  ],
+  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nUna generación pondera tus obras a la otra,\ny le cuenta tus hazañas.\nAlaban ellos la gloria de tu majestad,\ny yo repito tus maravillas. R.\n\nEncarecen ellos tus temibles proezas,\ny yo narro tus grandes acciones;\ndifunden la memoria de tu inmensa bondad,\ny aclaman tus victorias. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 14 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 144 2 3 4 5 6 7 8 9 r 8a semana 14 semana xiv lunes 14 xiv r el senor es clemente y misericordioso dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r una generacion pondera tus obras a la otra y le cuenta tus hazanas alaban ellos la gloria de tu majestad y yo repito tus maravillas r encarecen ellos tus temibles proezas y yo narro tus grandes acciones difunden la memoria de tu inmensa bondad y aclaman tus victorias r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r",
+  "lizq": [
+    {
+      "line": "R. El Señor es clemente y misericordioso.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Día tras día, te bendeciré",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y alabaré tu nombre por siempre jamás.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Grande es el Señor, merece toda alabanza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es incalculable su grandeza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Una generación pondera tus obras a la otra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y le cuenta tus hazañas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alaban ellos la gloria de tu majestad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y yo repito tus maravillas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Encarecen ellos tus temibles proezas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y yo narro tus grandes acciones;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "difunden la memoria de tu inmensa bondad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y aclaman tus victorias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es clemente y misericordioso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lento a la cólera y rico en piedad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor es bueno con todos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es cariñoso con todas sus criaturas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "seui_173",
+  "title": "Viernes de la 29ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 29ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 66. 68. 76. 77. 93. 94 (R.: 68b)",
+  "salmo": "Salmo responsorial: Salmo 118, 66. 68. 76. 77. 93. 94 (R.: 68b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5295,
+  "respuesta": "R. Instrúyeme, Señor, en tus leyes.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Enséñame a gustar y a comprender,",
+      "porque me fío de tus mandatos. R."
+    ],
+    [
+      "Tú eres bueno y haces el bien;",
+      "instrúyeme en tus leyes. R."
+    ],
+    [
+      "Que tu bondad me consuele,",
+      "según la promesa hecha a tu siervo. R."
+    ],
+    [
+      "Cuando me alcance tu compasión, viviré,",
+      "y mis delicias serán tu voluntad. R."
+    ],
+    [
+      "Jamás olvidaré tus decretos,",
+      "pues con ellos me diste vida. R."
+    ],
+    [
+      "Soy tuyo, sálvame,",
+      "que yo consulto tus leyes. R."
+    ]
+  ],
+  "textoCompleto": "Enséñame a gustar y a comprender,\nporque me fío de tus mandatos. R.\n\nTú eres bueno y haces el bien;\ninstrúyeme en tus leyes. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo. R.\n\nCuando me alcance tu compasión, viviré,\ny mis delicias serán tu voluntad. R.\n\nJamás olvidaré tus decretos,\npues con ellos me diste vida. R.\n\nSoy tuyo, sálvame,\nque yo consulto tus leyes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 29 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 118 66 68 76 77 93 94 r 68b semana 29 semana xxix viernes 29 xxix r instruyeme senor en tus leyes ensename a gustar y a comprender porque me fio de tus mandatos r tu eres bueno y haces el bien instruyeme en tus leyes r que tu bondad me consuele segun la promesa hecha a tu siervo r cuando me alcance tu compasion vivire y mis delicias seran tu voluntad r jamas olvidare tus decretos pues con ellos me diste vida r soy tuyo salvame que yo consulto tus leyes r",
+  "lizq": [
+    {
+      "line": "R. Instrúyeme, Señor, en tus leyes.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Enséñame a gustar y a comprender,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque me fío de tus mandatos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú eres bueno y haces el bien;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "instrúyeme en tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que tu bondad me consuele,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "según la promesa hecha a tu siervo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuando me alcance tu compasión, viviré,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y mis delicias serán tu voluntad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Jamás olvidaré tus decretos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "pues con ellos me diste vida. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Soy tuyo, sálvame,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que yo consulto tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

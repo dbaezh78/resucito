@@ -1,0 +1,123 @@
+{
+  "id": "seup_024",
+  "title": "Sábado de la 4ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 4ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
+  "salmo": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5046,
+  "respuesta": "R. Enséñame, Señor, tus leyes.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "¿Cómo podrá un joven andar honestamente?",
+      "Cumpliendo tus palabras. R."
+    ],
+    [
+      "Te busco de todo corazón,",
+      "no consientas que me desvíe de tus mandamientos. R."
+    ],
+    [
+      "En mi corazón escondo tus consignas,",
+      "así no pecaré contra ti. R."
+    ],
+    [
+      "Bendito eres, Señor,",
+      "enséñame tus leyes. R."
+    ],
+    [
+      "Mis labios van enumerando",
+      "los mandamientos de tu boca. R."
+    ],
+    [
+      "Mi alegría es el camino de tus preceptos,",
+      "más que todas las riquezas. R."
+    ]
+  ],
+  "textoCompleto": "¿Cómo podrá un joven andar honestamente?\nCumpliendo tus palabras. R.\n\nTe busco de todo corazón,\nno consientas que me desvíe de tus mandamientos. R.\n\nEn mi corazón escondo tus consignas,\nasí no pecaré contra ti. R.\n\nBendito eres, Señor,\nenséñame tus leyes. R.\n\nMis labios van enumerando\nlos mandamientos de tu boca. R.\n\nMi alegría es el camino de tus preceptos,\nmás que todas las riquezas. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 4 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 118 9 10 11 12 13 14 r 12b semana 4 semana iv sabado 4 iv r ensename senor tus leyes como podra un joven andar honestamente cumpliendo tus palabras r te busco de todo corazon no consientas que me desvie de tus mandamientos r en mi corazon escondo tus consignas asi no pecare contra ti r bendito eres senor ensename tus leyes r mis labios van enumerando los mandamientos de tu boca r mi alegria es el camino de tus preceptos mas que todas las riquezas r",
+  "lizq": [
+    {
+      "line": "R. Enséñame, Señor, tus leyes.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Cómo podrá un joven andar honestamente?",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Cumpliendo tus palabras. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te busco de todo corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "no consientas que me desvíe de tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En mi corazón escondo tus consignas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "así no pecaré contra ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendito eres, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "enséñame tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mis labios van enumerando",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los mandamientos de tu boca. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi alegría es el camino de tus preceptos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "más que todas las riquezas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

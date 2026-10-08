@@ -8,16 +8,35 @@
   "tiempo": "Pascua",
   "dia": "Domingo",
   "orden": 430,
-  "respuesta": "R. La misericordia del Señor dura siempre,",
+  "respuesta": "R. La misericordia del Señor dura siempre, para los que cumplen sus mandatos.",
   "respuestaOpcional": "",
   "estrofas": [
-    "para los que cumplen sus mandatos.",
-    "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.",
-    "Él perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.",
-    "El Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.",
-    "El Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia.\nNo nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas. R."
+    [
+      "Bendice, alma mía, al Señor,",
+      "y todo mi ser a su santo nombre.",
+      "Bendice, alma mía, al Señor,",
+      "y no olvides sus beneficios. R."
+    ],
+    [
+      "Él perdona todas tus culpas",
+      "y cura todas tus enfermedades;",
+      "él rescata tu vida de la fosa",
+      "y te colma de gracia y de ternura. R."
+    ],
+    [
+      "El Señor hace justicia",
+      "y defiende a todos los oprimidos;",
+      "enseñó sus caminos a Moisés",
+      "y sus hazañas a los hijos de Israel. R."
+    ],
+    [
+      "El Señor es compasivo y misericordioso,",
+      "lento a la ira y rico en clemencia.",
+      "No nos trata como merecen nuestros pecados",
+      "ni nos paga según nuestras culpas. R."
+    ]
   ],
-  "textoCompleto": "para los que cumplen sus mandatos.\n\nBendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia.\nNo nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas. R.",
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia.\nNo nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,96 +45,91 @@
   "lizq": [
     {
       "line": "R. La misericordia del Señor dura siempre,",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "para los que cumplen sus mandatos.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendice, alma mía, al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y todo mi ser a su santo nombre.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Bendice, alma mía, al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y no olvides sus beneficios. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Él perdona todas tus culpas",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y cura todas tus enfermedades;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "él rescata tu vida de la fosa",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y te colma de gracia y de ternura. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor hace justicia",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y defiende a todos los oprimidos;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "enseñó sus caminos a Moisés",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y sus hazañas a los hijos de Israel. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es compasivo y misericordioso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "lento a la ira y rico en clemencia.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "No nos trata como merecen nuestros pecados",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ni nos paga según nuestras culpas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

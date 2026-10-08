@@ -1,0 +1,131 @@
+{
+  "id": "seui_127",
+  "title": "Lunes de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 95, 1 y 3. 4-5. 11-12a. 12b-13 (R.: 13b)",
+  "salmo": "Salmo responsorial: Salmo 95, 1 y 3. 4-5. 11-12a. 12b-13 (R.: 13b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5221,
+  "respuesta": "R. El Señor llega a regir la tierra.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "cantad al Señor, toda la tierra.",
+      "Contad a los pueblos su gloria,",
+      "sus maravillas a todas las naciones. R."
+    ],
+    [
+      "Porque es grande el Señor, y muy digno de alabanza,",
+      "más temible que todos los dioses.",
+      "Pues los dioses de los gentiles son apariencia,",
+      "mientras que el Señor ha hecho el cielo. R."
+    ],
+    [
+      "Alégrese el cielo, goce la tierra,",
+      "retumbe el mar y cuanto lo llena;",
+      "vitoreen los campos y cuanto hay en ellos. R."
+    ],
+    [
+      "Aclamen los árboles del bosque,",
+      "delante del Señor, que ya llega,",
+      "ya llega a regir la tierra:",
+      "regirá el orbe con justicia",
+      "y los pueblos con fidelidad. R."
+    ]
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nPorque es grande el Señor, y muy digno de alabanza,\nmás temible que todos los dioses.\nPues los dioses de los gentiles son apariencia,\nmientras que el Señor ha hecho el cielo. R.\n\nAlégrese el cielo, goce la tierra,\nretumbe el mar y cuanto lo llena;\nvitoreen los campos y cuanto hay en ellos. R.\n\nAclamen los árboles del bosque,\ndelante del Señor, que ya llega,\nya llega a regir la tierra:\nregirá el orbe con justicia\ny los pueblos con fidelidad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 22 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 95 1 y 3 4 5 11 12a 12b 13 r 13b semana 22 semana xxii lunes 22 xxii r el senor llega a regir la tierra cantad al senor un cantico nuevo cantad al senor toda la tierra contad a los pueblos su gloria sus maravillas a todas las naciones r porque es grande el senor y muy digno de alabanza mas temible que todos los dioses pues los dioses de los gentiles son apariencia mientras que el senor ha hecho el cielo r alegrese el cielo goce la tierra retumbe el mar y cuanto lo llena vitoreen los campos y cuanto hay en ellos r aclamen los arboles del bosque delante del senor que ya llega ya llega a regir la tierra regira el orbe con justicia y los pueblos con fidelidad r",
+  "lizq": [
+    {
+      "line": "R. El Señor llega a regir la tierra.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cantad al Señor, toda la tierra.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Contad a los pueblos su gloria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sus maravillas a todas las naciones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque es grande el Señor, y muy digno de alabanza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "más temible que todos los dioses.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Pues los dioses de los gentiles son apariencia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mientras que el Señor ha hecho el cielo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alégrese el cielo, goce la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "retumbe el mar y cuanto lo llena;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "vitoreen los campos y cuanto hay en ellos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aclamen los árboles del bosque,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "delante del Señor, que ya llega,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ya llega a regir la tierra:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "regirá el orbe con justicia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y los pueblos con fidelidad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

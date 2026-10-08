@@ -1,0 +1,117 @@
+{
+  "id": "seup_161",
+  "title": "Viernes de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 27ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: cf. 5b)",
+  "salmo": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: cf. 5b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5275,
+  "respuesta": "R. El Señor recuerda siempre su alianza.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Doy gracias al Señor de todo corazón,",
+      "en compañía de los rectos, en la asamblea.",
+      "Grandes son las obras del Señor,",
+      "dignas de estudio para los que las aman. R."
+    ],
+    [
+      "Esplendor y belleza son su obra,",
+      "su generosidad dura por siempre;",
+      "ha hecho maravillas memorables,",
+      "el Señor es piadoso y clemente. R."
+    ],
+    [
+      "Él da alimento a sus fieles,",
+      "recordando siempre su alianza;",
+      "mostró a su pueblo la fuerza de su obrar,",
+      "dándoles la heredad de los gentiles. R."
+    ]
+  ],
+  "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en la asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nEsplendor y belleza son su obra,\nsu generosidad dura por siempre;\nha hecho maravillas memorables,\nel Señor es piadoso y clemente. R.\n\nÉl da alimento a sus fieles,\nrecordando siempre su alianza;\nmostró a su pueblo la fuerza de su obrar,\ndándoles la heredad de los gentiles. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 27 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 110 1 2 3 4 5 6 r cf 5b semana 27 semana xxvii viernes 27 xxvii r el senor recuerda siempre su alianza r aleluya doy gracias al senor de todo corazon en compania de los rectos en la asamblea grandes son las obras del senor dignas de estudio para los que las aman r esplendor y belleza son su obra su generosidad dura por siempre ha hecho maravillas memorables el senor es piadoso y clemente r el da alimento a sus fieles recordando siempre su alianza mostro a su pueblo la fuerza de su obrar dandoles la heredad de los gentiles r",
+  "lizq": [
+    {
+      "line": "R. El Señor recuerda siempre su alianza.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Doy gracias al Señor de todo corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en compañía de los rectos, en la asamblea.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Grandes son las obras del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dignas de estudio para los que las aman. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Esplendor y belleza son su obra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su generosidad dura por siempre;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ha hecho maravillas memorables,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor es piadoso y clemente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él da alimento a sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "recordando siempre su alianza;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mostró a su pueblo la fuerza de su obrar,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dándoles la heredad de los gentiles. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

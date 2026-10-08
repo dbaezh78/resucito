@@ -1,0 +1,100 @@
+{
+  "id": "seup_061",
+  "title": "Lunes de la 11ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 11ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 5, 2-3. 5-6. 7 (R.: 2b)",
+  "salmo": "Salmo responsorial: Salmo 5, 2-3. 5-6. 7 (R.: 2b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5111,
+  "respuesta": "R. Atiende a mis gemidos, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, escucha mis palabras,",
+      "atiende a mis gemidos,",
+      "haz caso de mis gritos de auxilio,",
+      "Rey mío y Dios mío. R."
+    ],
+    [
+      "Tú no eres un Dios que ame la maldad,",
+      "ni el malvado es tu huésped,",
+      "ni el arrogante se mantiene en tu presencia. R."
+    ],
+    [
+      "Detestas a los malhechores,",
+      "destruyes a los mentirosos;",
+      "al hombre sanguinario y traicionero",
+      "lo aborrece el Señor. R."
+    ]
+  ],
+  "textoCompleto": "Señor, escucha mis palabras,\natiende a mis gemidos,\nhaz caso de mis gritos de auxilio,\nRey mío y Dios mío. R.\n\nTú no eres un Dios que ame la maldad,\nni el malvado es tu huésped,\nni el arrogante se mantiene en tu presencia. R.\n\nDetestas a los malhechores,\ndestruyes a los mentirosos;\nal hombre sanguinario y traicionero\nlo aborrece el Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 11 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 5 2 3 5 6 7 r 2b semana 11 semana xi lunes 11 xi r atiende a mis gemidos senor senor escucha mis palabras atiende a mis gemidos haz caso de mis gritos de auxilio rey mio y dios mio r tu no eres un dios que ame la maldad ni el malvado es tu huesped ni el arrogante se mantiene en tu presencia r detestas a los malhechores destruyes a los mentirosos al hombre sanguinario y traicionero lo aborrece el senor r",
+  "lizq": [
+    {
+      "line": "R. Atiende a mis gemidos, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, escucha mis palabras,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "atiende a mis gemidos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "haz caso de mis gritos de auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Rey mío y Dios mío. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú no eres un Dios que ame la maldad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni el malvado es tu huésped,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni el arrogante se mantiene en tu presencia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Detestas a los malhechores,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "destruyes a los mentirosos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "al hombre sanguinario y traicionero",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lo aborrece el Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

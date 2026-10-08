@@ -1,0 +1,135 @@
+{
+  "id": "seup_065",
+  "title": "Viernes de la 11ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 11ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 131, 11. 12. 13-14. 17-18 (R.: 13)",
+  "salmo": "Salmo responsorial: Salmo 131, 11. 12. 13-14. 17-18 (R.: 13)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5115,
+  "respuesta": "R. El Señor ha elegido a Sión, ha deseado vivir en ella.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El Señor ha jurado a David",
+      "una promesa que no retractará:",
+      "«A uno de tu linaje",
+      "pondré sobre tu trono». R."
+    ],
+    [
+      "«Si tus hijos guardan mi alianza",
+      "y los mandatos que les enseño,",
+      "también sus hijos, por siempre,",
+      "se sentarán sobre tu trono». R."
+    ],
+    [
+      "Porque el Señor ha elegido a Sión,",
+      "ha deseado vivir en ella:",
+      "«Esta es mi mansión por siempre,",
+      "aquí viviré porque la deseo». R."
+    ],
+    [
+      "«Haré germinar el vigor de David,",
+      "enciendo una lámpara para mi Ungido.",
+      "A sus enemigos los vestiré de ignominia,",
+      "sobre él brillará mi diadema». R."
+    ]
+  ],
+  "textoCompleto": "El Señor ha jurado a David\nuna promesa que no retractará:\n«A uno de tu linaje\npondré sobre tu trono». R.\n\n«Si tus hijos guardan mi alianza\ny los mandatos que les enseño,\ntambién sus hijos, por siempre,\nse sentarán sobre tu trono». R.\n\nPorque el Señor ha elegido a Sión,\nha deseado vivir en ella:\n«Esta es mi mansión por siempre,\naquí viviré porque la deseo». R.\n\n«Haré germinar el vigor de David,\nenciendo una lámpara para mi Ungido.\nA sus enemigos los vestiré de ignominia,\nsobre él brillará mi diadema». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 11 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 131 11 12 13 14 17 18 r 13 semana 11 semana xi viernes 11 xi r el senor ha elegido a sion ha deseado vivir en ella el senor ha jurado a david una promesa que no retractara a uno de tu linaje pondre sobre tu trono r si tus hijos guardan mi alianza y los mandatos que les enseno tambien sus hijos por siempre se sentaran sobre tu trono r porque el senor ha elegido a sion ha deseado vivir en ella esta es mi mansion por siempre aqui vivire porque la deseo r hare germinar el vigor de david enciendo una lampara para mi ungido a sus enemigos los vestire de ignominia sobre el brillara mi diadema r",
+  "lizq": [
+    {
+      "line": "R. El Señor ha elegido a Sión,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "ha deseado vivir en ella.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor ha jurado a David",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "una promesa que no retractará:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«A uno de tu linaje",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pondré sobre tu trono». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Si tus hijos guardan mi alianza",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y los mandatos que les enseño,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "también sus hijos, por siempre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se sentarán sobre tu trono». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque el Señor ha elegido a Sión,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ha deseado vivir en ella:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Esta es mi mansión por siempre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aquí viviré porque la deseo». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Haré germinar el vigor de David,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "enciendo una lámpara para mi Ungido.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "A sus enemigos los vestiré de ignominia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sobre él brillará mi diadema». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

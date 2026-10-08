@@ -1,0 +1,123 @@
+{
+  "id": "seup_031",
+  "title": "Lunes de la 6ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 6ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 67. 68. 71. 72. 75. 76 (R.: 77a)",
+  "salmo": "Salmo responsorial: Salmo 118, 67. 68. 71. 72. 75. 76 (R.: 77a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5061,
+  "respuesta": "R. Cuando me alcance tu compasión, viviré, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Antes de sufrir, yo andaba extraviado,",
+      "pero ahora me ajusto a tu promesa. R."
+    ],
+    [
+      "Tú eres bueno y haces el bien;",
+      "instrúyeme en tus leyes. R."
+    ],
+    [
+      "Me estuvo bien el sufrir,",
+      "así aprendí tus mandamientos. R."
+    ],
+    [
+      "Más estimo yo los preceptos de tu boca",
+      "que miles de monedas de oro y plata. R."
+    ],
+    [
+      "Reconozco, Señor, que tus mandamientos son justos,",
+      "que con razón me hiciste sufrir. R."
+    ],
+    [
+      "Que tu bondad me consuele,",
+      "según la promesa hecha a tu siervo. R."
+    ]
+  ],
+  "textoCompleto": "Antes de sufrir, yo andaba extraviado,\npero ahora me ajusto a tu promesa. R.\n\nTú eres bueno y haces el bien;\ninstrúyeme en tus leyes. R.\n\nMe estuvo bien el sufrir,\nasí aprendí tus mandamientos. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nReconozco, Señor, que tus mandamientos son justos,\nque con razón me hiciste sufrir. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 6 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 118 67 68 71 72 75 76 r 77a semana 6 semana vi lunes 6 vi r cuando me alcance tu compasion vivire senor antes de sufrir yo andaba extraviado pero ahora me ajusto a tu promesa r tu eres bueno y haces el bien instruyeme en tus leyes r me estuvo bien el sufrir asi aprendi tus mandamientos r mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r reconozco senor que tus mandamientos son justos que con razon me hiciste sufrir r que tu bondad me consuele segun la promesa hecha a tu siervo r",
+  "lizq": [
+    {
+      "line": "R. Cuando me alcance tu compasión, viviré, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Antes de sufrir, yo andaba extraviado,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "pero ahora me ajusto a tu promesa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú eres bueno y haces el bien;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "instrúyeme en tus leyes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Me estuvo bien el sufrir,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "así aprendí tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Más estimo yo los preceptos de tu boca",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que miles de monedas de oro y plata. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Reconozco, Señor, que tus mandamientos son justos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que con razón me hiciste sufrir. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que tu bondad me consuele,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "según la promesa hecha a tu siervo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "seui_129",
+  "title": "Miércoles de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 51, 10. 11 (R.: cf. 10b)",
+  "salmo": "Salmo responsorial: Salmo 51, 10. 11 (R.: cf. 10b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5223,
+  "respuesta": "R. Confío en tu misericordia, Señor, por siempre jamás.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Pero yo, como verde olivo,",
+      "en la casa de Dios,",
+      "confío en la misericordia de Dios",
+      "por siempre jamás. R."
+    ],
+    [
+      "Te daré siempre gracias",
+      "porque has actuado;",
+      "proclamaré delante de tus fieles:",
+      "«Tu nombre es bueno». R."
+    ]
+  ],
+  "textoCompleto": "Pero yo, como verde olivo,\nen la casa de Dios,\nconfío en la misericordia de Dios\npor siempre jamás. R.\n\nTe daré siempre gracias\nporque has actuado;\nproclamaré delante de tus fieles:\n«Tu nombre es bueno». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 22 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 51 10 11 r cf 10b semana 22 semana xxii miercoles 22 xxii r confio en tu misericordia senor por siempre jamas pero yo como verde olivo en la casa de dios confio en la misericordia de dios por siempre jamas r te dare siempre gracias porque has actuado proclamare delante de tus fieles tu nombre es bueno r",
+  "lizq": [
+    {
+      "line": "R. Confío en tu misericordia, Señor,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "por siempre jamás.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero yo, como verde olivo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en la casa de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "confío en la misericordia de Dios",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por siempre jamás. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te daré siempre gracias",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque has actuado;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "proclamaré delante de tus fieles:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Tu nombre es bueno». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

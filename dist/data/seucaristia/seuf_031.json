@@ -1,0 +1,106 @@
+{
+  "id": "seuf_031",
+  "title": "4 de enero: Antes de Epifanía",
+  "celebracion": "4 de enero: Antes de Epifanía",
+  "subtitle": "Salmo 97, 1-2ab. 7-8a. 8b-9 (R.: 3cd)",
+  "salmo": "Salmo 97, 1-2ab. 7-8a. 8b-9 (R.: 3cd)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Navidad",
+  "dia": "Feria",
+  "orden": 224,
+  "respuesta": "R. Los confines de la tierra han contemplado la victoria de nuestro Dios.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "porque ha hecho maravillas:",
+      "su diestra le ha dado la victoria,",
+      "su santo brazo. R."
+    ],
+    [
+      "Retumbe el mar y cuanto contiene,",
+      "la tierra y cuantos la habitan;",
+      "aplaudan los ríos, aclamen los montes. R."
+    ],
+    [
+      "Al Señor, que llega para regir la tierra.",
+      "Regirá el orbe con justicia",
+      "y los pueblos con rectitud. R."
+    ]
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nRetumbe el mar y cuanto contiene,\nla tierra y cuantos la habitan;\naplaudan los ríos, aclamen los montes. R.\n\nAl Señor, que llega para regir la tierra.\nRegirá el orbe con justicia\ny los pueblos con rectitud. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "4 de enero antes de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 97 1 2ab 7 8a 8b 9 r 3cd feria r los confines de la tierra han contemplado la victoria de nuestro dios cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r retumbe el mar y cuanto contiene la tierra y cuantos la habitan aplaudan los rios aclamen los montes r al senor que llega para regir la tierra regira el orbe con justicia y los pueblos con rectitud r",
+  "lizq": [
+    {
+      "line": "R. Los confines de la tierra han contemplado",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "la victoria de nuestro Dios.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque ha hecho maravillas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su diestra le ha dado la victoria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su santo brazo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Retumbe el mar y cuanto contiene,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la tierra y cuantos la habitan;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aplaudan los ríos, aclamen los montes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Al Señor, que llega para regir la tierra.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Regirá el orbe con justicia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y los pueblos con rectitud. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

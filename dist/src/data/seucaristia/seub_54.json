@@ -9,15 +9,34 @@
   "dia": "Domingo",
   "orden": 512,
   "respuesta": "R. Dad gracias al Señor, porque es eterna su misericordia.",
-  "respuestaOpcional": "",
+  "respuestaOpcional": "R. Aleluya",
   "estrofas": [
-    "R. Aleluya",
-    "Entraron en naves por el mar,\ncomerciando por las aguas inmensas.\nContemplaron las obras de Dios,\nsus maravillas en el océano. R.",
-    "Él habló y levantó un viento tormentoso,\nque alzaba las olas a lo alto;\nsubían al cielo, bajaban al abismo,\nel estómago revuelto por el mareo. R.",
-    "Pero gritaron al Señor en su angustia,\ny los arrancó de la tribulación.\nApaciguó la tormenta en suave brisa,\ny enmudecieron las olas del mar. R.",
-    "Se alegraron de aquella bonanza,\ny él los condujo al ansiado puerto.\nDen gracias al Señor por su misericordia,\npor las maravillas que hace con los hombres. R."
+    [
+      "Entraron en naves por el mar,",
+      "comerciando por las aguas inmensas.",
+      "Contemplaron las obras de Dios,",
+      "sus maravillas en el océano. R."
+    ],
+    [
+      "Él habló y levantó un viento tormentoso,",
+      "que alzaba las olas a lo alto;",
+      "subían al cielo, bajaban al abismo,",
+      "el estómago revuelto por el mareo. R."
+    ],
+    [
+      "Pero gritaron al Señor en su angustia,",
+      "y los arrancó de la tribulación.",
+      "Apaciguó la tormenta en suave brisa,",
+      "y enmudecieron las olas del mar. R."
+    ],
+    [
+      "Se alegraron de aquella bonanza,",
+      "y él los condujo al ansiado puerto.",
+      "Den gracias al Señor por su misericordia,",
+      "por las maravillas que hace con los hombres. R."
+    ]
   ],
-  "textoCompleto": "R. Aleluya\n\nEntraron en naves por el mar,\ncomerciando por las aguas inmensas.\nContemplaron las obras de Dios,\nsus maravillas en el océano. R.\n\nÉl habló y levantó un viento tormentoso,\nque alzaba las olas a lo alto;\nsubían al cielo, bajaban al abismo,\nel estómago revuelto por el mareo. R.\n\nPero gritaron al Señor en su angustia,\ny los arrancó de la tribulación.\nApaciguó la tormenta en suave brisa,\ny enmudecieron las olas del mar. R.\n\nSe alegraron de aquella bonanza,\ny él los condujo al ansiado puerto.\nDen gracias al Señor por su misericordia,\npor las maravillas que hace con los hombres. R.",
+  "textoCompleto": "Entraron en naves por el mar,\ncomerciando por las aguas inmensas.\nContemplaron las obras de Dios,\nsus maravillas en el océano. R.\n\nÉl habló y levantó un viento tormentoso,\nque alzaba las olas a lo alto;\nsubían al cielo, bajaban al abismo,\nel estómago revuelto por el mareo. R.\n\nPero gritaron al Señor en su angustia,\ny los arrancó de la tribulación.\nApaciguó la tormenta en suave brisa,\ny enmudecieron las olas del mar. R.\n\nSe alegraron de aquella bonanza,\ny él los condujo al ansiado puerto.\nDen gracias al Señor por su misericordia,\npor las maravillas que hace con los hombres. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,96 +45,99 @@
   "lizq": [
     {
       "line": "R. Dad gracias al Señor, porque es eterna su misericordia.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Entraron en naves por el mar,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "comerciando por las aguas inmensas.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Contemplaron las obras de Dios,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "sus maravillas en el océano. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Él habló y levantó un viento tormentoso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "que alzaba las olas a lo alto;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "subían al cielo, bajaban al abismo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el estómago revuelto por el mareo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pero gritaron al Señor en su angustia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y los arrancó de la tribulación.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Apaciguó la tormenta en suave brisa,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y enmudecieron las olas del mar. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Se alegraron de aquella bonanza,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y él los condujo al ansiado puerto.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Den gracias al Señor por su misericordia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "por las maravillas que hace con los hombres. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

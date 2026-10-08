@@ -11,10 +11,30 @@
   "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito;\nme puso en la boca un cántico nuevo,\nun himno a nuestro Dios. R.",
-    "Tú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio. R.",
-    "Entonces yo digo: «Aquí estoy\n— como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.",
-    "He proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios;\nSeñor, tú lo sabes. R."
+    [
+      "Yo esperaba con ansia al Señor;",
+      "él se inclinó y escuchó mi grito;",
+      "me puso en la boca un cántico nuevo,",
+      "un himno a nuestro Dios. R."
+    ],
+    [
+      "Tú no quieres sacrificios ni ofrendas,",
+      "y, en cambio, me abriste el oído;",
+      "no pides sacrificio expiatorio. R."
+    ],
+    [
+      "Entonces yo digo: «Aquí estoy",
+      "— como está escrito en mi libro—",
+      "para hacer tu voluntad».",
+      "Dios mío, lo quiero,",
+      "y llevo tu ley en las entrañas. R."
+    ],
+    [
+      "He proclamado tu salvación",
+      "ante la gran asamblea;",
+      "no he cerrado los labios;",
+      "Señor, tú lo sabes. R."
+    ]
   ],
   "textoCompleto": "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito;\nme puso en la boca un cántico nuevo,\nun himno a nuestro Dios. R.\n\nTú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio. R.\n\nEntonces yo digo: «Aquí estoy\n— como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios;\nSeñor, tú lo sabes. R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. Aquí estoy, Señor, para hacer tu voluntad.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Yo esperaba con ansia al Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "él se inclinó y escuchó mi grito;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "me puso en la boca un cántico nuevo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "un himno a nuestro Dios. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tú no quieres sacrificios ni ofrendas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y, en cambio, me abriste el oído;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no pides sacrificio expiatorio. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Entonces yo digo: «Aquí estoy",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "— como está escrito en mi libro—",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para hacer tu voluntad».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dios mío, lo quiero,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y llevo tu ley en las entrañas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "He proclamado tu salvación",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "ante la gran asamblea;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no he cerrado los labios;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Señor, tú lo sabes. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

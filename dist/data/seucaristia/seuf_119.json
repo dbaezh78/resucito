@@ -1,0 +1,129 @@
+{
+  "id": "seuf_119",
+  "title": "Miércoles de la séptima semana de Pascua",
+  "celebracion": "Miércoles de la séptima semana de Pascua",
+  "subtitle": "Salmo 67, 29-30. 33-35a. 35b y 36c (R.: 33a)",
+  "salmo": "Salmo 67, 29-30. 33-35a. 35b y 36c (R.: 33a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Miércoles",
+  "orden": 473,
+  "respuesta": "R. Reyes de la tierra, cantad a Dios.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "R. Oh Dios, despliega tu poder,",
+      "tu poder, oh Dios, que actúa en favor nuestro.",
+      "A tu templo de Jerusalén",
+      "traigan los reyes su tributo. R."
+    ],
+    [
+      "Reyes de la tierra, cantad a Dios,",
+      "tocad para el Señor,",
+      "que avanza por los cielos,",
+      "los cielos antiquísimos,",
+      "que lanza su voz, su voz poderosa:",
+      "«Reconoced el poder de Dios». R."
+    ],
+    [
+      "Sobre Israel resplandece su majestad,",
+      "y su poder, sobre las nubes.",
+      "¡Dios sea bendito! R."
+    ]
+  ],
+  "textoCompleto": "R. Oh Dios, despliega tu poder,\ntu poder, oh Dios, que actúa en favor nuestro.\nA tu templo de Jerusalén\ntraigan los reyes su tributo. R.\n\nReyes de la tierra, cantad a Dios,\ntocad para el Señor,\nque avanza por los cielos,\nlos cielos antiquísimos,\nque lanza su voz, su voz poderosa:\n«Reconoced el poder de Dios». R.\n\nSobre Israel resplandece su majestad,\ny su poder, sobre las nubes.\n¡Dios sea bendito! R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 67 29 30 33 35a 35b y 36c r 33a semana 7 semana vii miercoles feria r reyes de la tierra cantad a dios r aleluya r oh dios despliega tu poder tu poder oh dios que actua en favor nuestro a tu templo de jerusalen traigan los reyes su tributo r reyes de la tierra cantad a dios tocad para el senor que avanza por los cielos los cielos antiquisimos que lanza su voz su voz poderosa reconoced el poder de dios r sobre israel resplandece su majestad y su poder sobre las nubes dios sea bendito r",
+  "lizq": [
+    {
+      "line": "R. Reyes de la tierra, cantad a Dios.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "R. Oh Dios, despliega tu poder,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tu poder, oh Dios, que actúa en favor nuestro.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "A tu templo de Jerusalén",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "traigan los reyes su tributo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Reyes de la tierra, cantad a Dios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tocad para el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que avanza por los cielos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los cielos antiquísimos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que lanza su voz, su voz poderosa:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Reconoced el poder de Dios». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sobre Israel resplandece su majestad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y su poder, sobre las nubes.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¡Dios sea bendito! R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

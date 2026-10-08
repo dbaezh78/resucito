@@ -1,0 +1,114 @@
+{
+  "id": "seui_159",
+  "title": "Miércoles de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 27ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 85, 3-4. 5-6. 9-10 (R.: 15b)",
+  "salmo": "Salmo responsorial: Salmo 85, 3-4. 5-6. 9-10 (R.: 15b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5273,
+  "respuesta": "R. Tú, Señor, eres lento a la cólera, rico en piedad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Tú eres mi Dios, piedad de mí, Señor,",
+      "que a ti estoy llamando todo el día;",
+      "alegra el alma de tu siervo,",
+      "pues levanto mi alma hacia ti. R."
+    ],
+    [
+      "Porque tú, Señor, eres bueno y clemente,",
+      "rico en misericordia con los que te invocan.",
+      "Señor, escucha mi oración,",
+      "atiende la voz de mi súplica. R."
+    ],
+    [
+      "Todos los pueblos vendrán",
+      "a postrarse en tu presencia, Señor;",
+      "bendecirán tu nombre:",
+      "«Grande eres tú, y haces maravillas;",
+      "tú eres el único Dios». R."
+    ]
+  ],
+  "textoCompleto": "Tú eres mi Dios, piedad de mí, Señor,\nque a ti estoy llamando todo el día;\nalegra el alma de tu siervo,\npues levanto mi alma hacia ti. R.\n\nPorque tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende la voz de mi súplica. R.\n\nTodos los pueblos vendrán\na postrarse en tu presencia, Señor;\nbendecirán tu nombre:\n«Grande eres tú, y haces maravillas;\ntú eres el único Dios». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 27 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 85 3 4 5 6 9 10 r 15b semana 27 semana xxvii miercoles 27 xxvii r tu senor eres lento a la colera rico en piedad tu eres mi dios piedad de mi senor que a ti estoy llamando todo el dia alegra el alma de tu siervo pues levanto mi alma hacia ti r porque tu senor eres bueno y clemente rico en misericordia con los que te invocan senor escucha mi oracion atiende la voz de mi suplica r todos los pueblos vendran a postrarse en tu presencia senor bendeciran tu nombre grande eres tu y haces maravillas tu eres el unico dios r",
+  "lizq": [
+    {
+      "line": "R. Tú, Señor, eres lento a la cólera,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "rico en piedad.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú eres mi Dios, piedad de mí, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que a ti estoy llamando todo el día;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alegra el alma de tu siervo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pues levanto mi alma hacia ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque tú, Señor, eres bueno y clemente,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "rico en misericordia con los que te invocan.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Señor, escucha mi oración,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "atiende la voz de mi súplica. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Todos los pueblos vendrán",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a postrarse en tu presencia, Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "bendecirán tu nombre:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Grande eres tú, y haces maravillas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú eres el único Dios». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

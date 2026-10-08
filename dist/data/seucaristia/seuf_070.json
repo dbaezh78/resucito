@@ -1,0 +1,112 @@
+{
+  "id": "seuf_070",
+  "title": "Misa de libre elección: quinta semana de Cuaresma",
+  "celebracion": "Misa de libre elección: quinta semana de Cuaresma",
+  "subtitle": "Salmo 16, 1. 6-7. 8b y 15 (R.: 15b)",
+  "salmo": "Salmo 16, 1. 6-7. 8b y 15 (R.: 15b)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Feria",
+  "orden": 350.5,
+  "respuesta": "R. Al despertar me saciaré de tu semblante, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, escucha mi apelación,",
+      "atiende a mis clamores,",
+      "presta oído a mi súplica,",
+      "que en mis labios no hay engaño. R."
+    ],
+    [
+      "Yo te invoco porque tú me respondes, Dios mío;",
+      "inclina el oído y escucha mis palabras.",
+      "Muestra las maravillas de tu misericordia,",
+      "tú que salvas de los adversarios",
+      "a quien se refugia a tu derecha. R."
+    ],
+    [
+      "A la sombra de tus alas escóndeme.",
+      "Yo con mi apelación vengo a tu presencia,",
+      "y al despertar me saciaré de tu semblante. R."
+    ]
+  ],
+  "textoCompleto": "Señor, escucha mi apelación,\natiende a mis clamores,\npresta oído a mi súplica,\nque en mis labios no hay engaño. R.\n\nYo te invoco porque tú me respondes, Dios mío;\ninclina el oído y escucha mis palabras.\nMuestra las maravillas de tu misericordia,\ntú que salvas de los adversarios\na quien se refugia a tu derecha. R.\n\nA la sombra de tus alas escóndeme.\nYo con mi apelación vengo a tu presencia,\ny al despertar me saciaré de tu semblante. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "misa de libre eleccion quinta semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma feria salmo 16 1 6 7 8b y 15 r 15b semana 5 semana v feria r al despertar me saciare de tu semblante senor senor escucha mi apelacion atiende a mis clamores presta oido a mi suplica que en mis labios no hay engano r yo te invoco porque tu me respondes dios mio inclina el oido y escucha mis palabras muestra las maravillas de tu misericordia tu que salvas de los adversarios a quien se refugia a tu derecha r a la sombra de tus alas escondeme yo con mi apelacion vengo a tu presencia y al despertar me saciare de tu semblante r",
+  "lizq": [
+    {
+      "line": "R. Al despertar me saciaré de tu semblante, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, escucha mi apelación,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "atiende a mis clamores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "presta oído a mi súplica,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que en mis labios no hay engaño. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo te invoco porque tú me respondes, Dios mío;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "inclina el oído y escucha mis palabras.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Muestra las maravillas de tu misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú que salvas de los adversarios",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a quien se refugia a tu derecha. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "A la sombra de tus alas escóndeme.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Yo con mi apelación vengo a tu presencia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y al despertar me saciaré de tu semblante. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

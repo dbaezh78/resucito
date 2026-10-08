@@ -1,0 +1,100 @@
+{
+  "id": "seup_058",
+  "title": "Jueves de la 10ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 10ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 64, 10abcd. 10e-11. 12-13 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 64, 10abcd. 10e-11. 12-13 (R.: 2a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5104,
+  "respuesta": "R. Oh Dios, tú mereces un himno en Sión.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Tú cuidas de la tierra, la riegas",
+      "y la enriqueces sin medida;",
+      "la acequia de Dios va llena de agua,",
+      "preparas los trigales. R."
+    ],
+    [
+      "Riegas los surcos, igualas los terrenos,",
+      "tu llovizna los deja mullidos,",
+      "bendices sus brotes. R."
+    ],
+    [
+      "Coronas el año con tus bienes,",
+      "tus carriles rezuman abundancia;",
+      "rezuman los pastos del páramo,",
+      "y las colinas se orlan de alegría. R."
+    ]
+  ],
+  "textoCompleto": "Tú cuidas de la tierra, la riegas\ny la enriqueces sin medida;\nla acequia de Dios va llena de agua,\npreparas los trigales. R.\n\nRiegas los surcos, igualas los terrenos,\ntu llovizna los deja mullidos,\nbendices sus brotes. R.\n\nCoronas el año con tus bienes,\ntus carriles rezuman abundancia;\nrezuman los pastos del páramo,\ny las colinas se orlan de alegría. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 10 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 64 10abcd 10e 11 12 13 r 2a semana 10 semana x jueves 10 x r oh dios tu mereces un himno en sion tu cuidas de la tierra la riegas y la enriqueces sin medida la acequia de dios va llena de agua preparas los trigales r riegas los surcos igualas los terrenos tu llovizna los deja mullidos bendices sus brotes r coronas el ano con tus bienes tus carriles rezuman abundancia rezuman los pastos del paramo y las colinas se orlan de alegria r",
+  "lizq": [
+    {
+      "line": "R. Oh Dios, tú mereces un himno en Sión.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú cuidas de la tierra, la riegas",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y la enriqueces sin medida;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la acequia de Dios va llena de agua,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "preparas los trigales. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Riegas los surcos, igualas los terrenos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tu llovizna los deja mullidos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "bendices sus brotes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Coronas el año con tus bienes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tus carriles rezuman abundancia;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "rezuman los pastos del páramo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y las colinas se orlan de alegría. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

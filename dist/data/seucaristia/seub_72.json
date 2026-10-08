@@ -8,16 +8,35 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 530,
-  "respuesta": "R. El Señor ha estado grande con nosotros,",
+  "respuesta": "R. El Señor ha estado grande con nosotros, y estamos alegres.",
   "respuestaOpcional": "",
   "estrofas": [
-    "y estamos alegres.",
-    "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.",
-    "Hasta los gentiles decían:\n«El Señor ha estado grande con ellos».\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.",
-    "Que el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.",
-    "Al ir, iba llorando,\nllevando la semilla:\nal volver, vuelve cantando,\ntrayendo sus gavillas. R."
+    [
+      "Cuando el Señor cambió la suerte de Sión,",
+      "nos parecía soñar:",
+      "la boca se nos llenaba de risas,",
+      "la lengua de cantares. R."
+    ],
+    [
+      "Hasta los gentiles decían:",
+      "«El Señor ha estado grande con ellos».",
+      "El Señor ha estado grande con nosotros,",
+      "y estamos alegres. R."
+    ],
+    [
+      "Que el Señor cambie nuestra suerte,",
+      "como los torrentes del Negueb.",
+      "Los que sembraban con lágrimas",
+      "cosechan entre cantares. R."
+    ],
+    [
+      "Al ir, iba llorando,",
+      "llevando la semilla:",
+      "al volver, vuelve cantando,",
+      "trayendo sus gavillas. R."
+    ]
   ],
-  "textoCompleto": "y estamos alegres.\n\nCuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían:\n«El Señor ha estado grande con ellos».\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla:\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
+  "textoCompleto": "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían:\n«El Señor ha estado grande con ellos».\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla:\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,96 +45,91 @@
   "lizq": [
     {
       "line": "R. El Señor ha estado grande con nosotros,",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "y estamos alegres.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cuando el Señor cambió la suerte de Sión,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "nos parecía soñar:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la boca se nos llenaba de risas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la lengua de cantares. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Hasta los gentiles decían:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "«El Señor ha estado grande con ellos».",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "El Señor ha estado grande con nosotros,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y estamos alegres. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que el Señor cambie nuestra suerte,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "como los torrentes del Negueb.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Los que sembraban con lágrimas",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "cosechan entre cantares. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Al ir, iba llorando,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "llevando la semilla:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "al volver, vuelve cantando,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "trayendo sus gavillas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

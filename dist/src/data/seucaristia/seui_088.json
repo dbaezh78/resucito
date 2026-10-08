@@ -1,0 +1,148 @@
+{
+  "id": "seui_088",
+  "title": "Jueves de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 104, 1 y 5. 8-9. 24-25. 26-27 (R.: 8a)",
+  "salmo": "Salmo responsorial: Salmo 104, 1 y 5. 8-9. 24-25. 26-27 (R.: 8a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5154,
+  "respuesta": "R. El Señor se acuerda de su alianza eternamente.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Dad gracias al Señor, invocad su nombre,",
+      "dad a conocer sus hazañas a los pueblos.",
+      "Recordad las maravillas que hizo,",
+      "sus prodigios, las sentencias de su boca. R."
+    ],
+    [
+      "Se acuerda de su alianza eternamente,",
+      "de la palabra dada, por mil generaciones;",
+      "de la alianza sellada con Abrahán,",
+      "del juramento hecho a Isaac. R."
+    ],
+    [
+      "Dios hizo a su pueblo muy fecundo,",
+      "más poderoso que sus enemigos.",
+      "A éstos les cambió el corazón",
+      "para que odiasen a su pueblo,",
+      "y usaran malas artes con sus siervos. R."
+    ],
+    [
+      "Pero envió a Moisés, su siervo,",
+      "y a Aarón, su escogido,",
+      "que hicieron contra ellos sus signos,",
+      "prodigios en la tierra de Cam. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor, invocad su nombre,\ndad a conocer sus hazañas a los pueblos.\nRecordad las maravillas que hizo,\nsus prodigios, las sentencias de su boca. R.\n\nSe acuerda de su alianza eternamente,\nde la palabra dada, por mil generaciones;\nde la alianza sellada con Abrahán,\ndel juramento hecho a Isaac. R.\n\nDios hizo a su pueblo muy fecundo,\nmás poderoso que sus enemigos.\nA éstos les cambió el corazón\npara que odiasen a su pueblo,\ny usaran malas artes con sus siervos. R.\n\nPero envió a Moisés, su siervo,\ny a Aarón, su escogido,\nque hicieron contra ellos sus signos,\nprodigios en la tierra de Cam. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 15 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 104 1 y 5 8 9 24 25 26 27 r 8a semana 15 semana xv jueves 15 xv r el senor se acuerda de su alianza eternamente r aleluya dad gracias al senor invocad su nombre dad a conocer sus hazanas a los pueblos recordad las maravillas que hizo sus prodigios las sentencias de su boca r se acuerda de su alianza eternamente de la palabra dada por mil generaciones de la alianza sellada con abrahan del juramento hecho a isaac r dios hizo a su pueblo muy fecundo mas poderoso que sus enemigos a estos les cambio el corazon para que odiasen a su pueblo y usaran malas artes con sus siervos r pero envio a moises su siervo y a aaron su escogido que hicieron contra ellos sus signos prodigios en la tierra de cam r",
+  "lizq": [
+    {
+      "line": "R. El Señor se acuerda de su alianza eternamente.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor, invocad su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "dad a conocer sus hazañas a los pueblos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Recordad las maravillas que hizo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sus prodigios, las sentencias de su boca. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Se acuerda de su alianza eternamente,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "de la palabra dada, por mil generaciones;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de la alianza sellada con Abrahán,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "del juramento hecho a Isaac. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios hizo a su pueblo muy fecundo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "más poderoso que sus enemigos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "A éstos les cambió el corazón",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que odiasen a su pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y usaran malas artes con sus siervos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero envió a Moisés, su siervo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y a Aarón, su escogido,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hicieron contra ellos sus signos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "prodigios en la tierra de Cam. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -11,10 +11,31 @@
   "respuesta": "R. La viña del Señor es la casa de Israel.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Sacaste una vid de Egipto,\nexpulsaste a los gentiles, y la trasplantaste.\nExtendió sus sarmientos hasta el mar,\ny sus brotes hasta el Gran Río. R.",
-    "¿Por qué has derribado su cerca\npara que la saqueen los viandantes,\nla pisoteen los jabalíes\ny se la coman las alimañas? R.",
-    "Dios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.",
-    "No nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre.\nSeñor, Dios de los ejércitos, restáuranos,\nque brille tu rostro y nos salve. R."
+    [
+      "Sacaste una vid de Egipto,",
+      "expulsaste a los gentiles, y la trasplantaste.",
+      "Extendió sus sarmientos hasta el mar,",
+      "y sus brotes hasta el Gran Río. R."
+    ],
+    [
+      "¿Por qué has derribado su cerca",
+      "para que la saqueen los viandantes,",
+      "la pisoteen los jabalíes",
+      "y se la coman las alimañas? R."
+    ],
+    [
+      "Dios de los ejércitos, vuélvete:",
+      "mira desde el cielo, fíjate,",
+      "ven a visitar tu viña,",
+      "la cepa que tu diestra plantó,",
+      "y que tú hiciste vigorosa. R."
+    ],
+    [
+      "No nos alejaremos de ti:",
+      "danos vida, para que invoquemos tu nombre.",
+      "Señor, Dios de los ejércitos, restáuranos,",
+      "que brille tu rostro y nos salve. R."
+    ]
   ],
   "textoCompleto": "Sacaste una vid de Egipto,\nexpulsaste a los gentiles, y la trasplantaste.\nExtendió sus sarmientos hasta el mar,\ny sus brotes hasta el Gran Río. R.\n\n¿Por qué has derribado su cerca\npara que la saqueen los viandantes,\nla pisoteen los jabalíes\ny se la coman las alimañas? R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre.\nSeñor, Dios de los ejércitos, restáuranos,\nque brille tu rostro y nos salve. R.",
   "sourceBook": "eucaristia",
@@ -25,92 +46,91 @@
   "lizq": [
     {
       "line": "R. La viña del Señor es la casa de Israel.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Sacaste una vid de Egipto,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "expulsaste a los gentiles, y la trasplantaste.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Extendió sus sarmientos hasta el mar,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y sus brotes hasta el Gran Río. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "¿Por qué has derribado su cerca",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "para que la saqueen los viandantes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la pisoteen los jabalíes",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y se la coman las alimañas? R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dios de los ejércitos, vuélvete:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "mira desde el cielo, fíjate,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ven a visitar tu viña,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "la cepa que tu diestra plantó,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y que tú hiciste vigorosa. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "No nos alejaremos de ti:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "danos vida, para que invoquemos tu nombre.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Señor, Dios de los ejércitos, restáuranos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que brille tu rostro y nos salve. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

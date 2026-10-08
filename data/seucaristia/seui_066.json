@@ -1,0 +1,105 @@
+{
+  "id": "seui_066",
+  "title": "Sábado de la 11ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 11ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 33, 8-9. 10-11. 12-13 (R.: 9a)",
+  "salmo": "Salmo responsorial: Salmo 33, 8-9. 10-11. 12-13 (R.: 9a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5116,
+  "respuesta": "R. Gustad y ved qué bueno es el Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El ángel del Señor acampa",
+      "en torno a sus fieles y los protege.",
+      "Gustad y ved qué bueno es el Señor,",
+      "dichoso el que se acoge a él. R."
+    ],
+    [
+      "Todos sus santos, temed al Señor,",
+      "porque nada les falta a los que lo temen;",
+      "los ricos empobrecen y pasan hambre,",
+      "los que buscan al Señor no carecen de nada. R."
+    ],
+    [
+      "Venid, hijos, escuchadme:",
+      "os instruiré en el temor del Señor;",
+      "¿hay alguien que ame la vida",
+      "y desee días de prosperidad? R."
+    ]
+  ],
+  "textoCompleto": "El ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que lo temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.\n\nVenid, hijos, escuchadme:\nos instruiré en el temor del Señor;\n¿hay alguien que ame la vida\ny desee días de prosperidad? R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 11 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 33 8 9 10 11 12 13 r 9a semana 11 semana xi sabado 11 xi r gustad y ved que bueno es el senor el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r todos sus santos temed al senor porque nada les falta a los que lo temen los ricos empobrecen y pasan hambre los que buscan al senor no carecen de nada r venid hijos escuchadme os instruire en el temor del senor hay alguien que ame la vida y desee dias de prosperidad r",
+  "lizq": [
+    {
+      "line": "R. Gustad y ved qué bueno es el Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El ángel del Señor acampa",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en torno a sus fieles y los protege.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Gustad y ved qué bueno es el Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dichoso el que se acoge a él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Todos sus santos, temed al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque nada les falta a los que lo temen;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los ricos empobrecen y pasan hambre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los que buscan al Señor no carecen de nada. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Venid, hijos, escuchadme:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "os instruiré en el temor del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿hay alguien que ame la vida",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y desee días de prosperidad? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

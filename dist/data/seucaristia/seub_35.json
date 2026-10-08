@@ -9,14 +9,30 @@
   "dia": "Domingo",
   "orden": 410,
   "respuesta": "R. El Señor es mi alabanza en la gran asamblea.",
-  "respuestaOpcional": "",
+  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
-    "R. Aleluya.",
-    "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.",
-    "Lo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.",
-    "Me hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R."
+    [
+      "Cumpliré mis votos delante de sus fieles.",
+      "Los desvalidos comerán hasta saciarse,",
+      "alabarán al Señor los que lo buscan:",
+      "viva su corazón por siempre. R."
+    ],
+    [
+      "Lo recordarán y volverán al Señor",
+      "hasta de los confines del orbe;",
+      "en su presencia se postrarán",
+      "las familias de los pueblos.",
+      "Ante él se postrarán las cenizas de la tumba,",
+      "ante él se inclinarán los que bajan al polvo. R."
+    ],
+    [
+      "Me hará vivir para él, mi descendencia le servirá,",
+      "hablarán del Señor a la generación futura,",
+      "contarán su justicia al pueblo que ha de nacer:",
+      "todo lo que hizo el Señor. R."
+    ]
   ],
-  "textoCompleto": "R. Aleluya.\n\nCumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.\n\nMe hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
+  "textoCompleto": "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.\n\nMe hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -25,84 +41,87 @@
   "lizq": [
     {
       "line": "R. El Señor es mi alabanza en la gran asamblea.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cumpliré mis votos delante de sus fieles.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "Los desvalidos comerán hasta saciarse,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "alabarán al Señor los que lo buscan:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "viva su corazón por siempre. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Lo recordarán y volverán al Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "hasta de los confines del orbe;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en su presencia se postrarán",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "las familias de los pueblos.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Ante él se postrarán las cenizas de la tumba,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ante él se inclinarán los que bajan al polvo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Me hará vivir para él, mi descendencia le servirá,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "hablarán del Señor a la generación futura,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "contarán su justicia al pueblo que ha de nacer:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "todo lo que hizo el Señor. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

@@ -1,0 +1,114 @@
+{
+  "id": "seui_124",
+  "title": "Jueves de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 89, 3-4. 12-13. 14 y 17 (R.: 14)",
+  "salmo": "Salmo responsorial: Salmo 89, 3-4. 12-13. 14 y 17 (R.: 14)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5214,
+  "respuesta": "R. Sácianos de tu misericordia, Señor, y estaremos alegres.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Tú reduces al hombre a polvo,",
+      "diciendo: «Retornad, hijos de Adán».",
+      "Mil años en tu presencia",
+      "son un ayer, que pasó;",
+      "una vela nocturna. R."
+    ],
+    [
+      "Enséñanos a calcular nuestros años,",
+      "para que adquiramos un corazón sensato.",
+      "Vuélvete, Señor, ¿hasta cuándo?",
+      "Ten compasión de tus siervos. R."
+    ],
+    [
+      "Por la mañana sácianos de tu misericordia,",
+      "y toda nuestra vida será alegría y júbilo.",
+      "Baje a nosotros la bondad del Señor",
+      "y haga prósperas las obras de nuestras manos. R."
+    ]
+  ],
+  "textoCompleto": "Tú reduces al hombre a polvo,\ndiciendo: «Retornad, hijos de Adán».\nMil años en tu presencia\nson un ayer, que pasó;\nuna vela nocturna. R.\n\nEnséñanos a calcular nuestros años,\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nBaje a nosotros la bondad del Señor\ny haga prósperas las obras de nuestras manos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 21 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 89 3 4 12 13 14 y 17 r 14 semana 21 semana xxi jueves 21 xxi r sacianos de tu misericordia senor y estaremos alegres tu reduces al hombre a polvo diciendo retornad hijos de adan mil anos en tu presencia son un ayer que paso una vela nocturna r ensenanos a calcular nuestros anos para que adquiramos un corazon sensato vuelvete senor hasta cuando ten compasion de tus siervos r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo baje a nosotros la bondad del senor y haga prosperas las obras de nuestras manos r",
+  "lizq": [
+    {
+      "line": "R. Sácianos de tu misericordia,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "Señor, y estaremos alegres.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú reduces al hombre a polvo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "diciendo: «Retornad, hijos de Adán».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Mil años en tu presencia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "son un ayer, que pasó;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "una vela nocturna. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Enséñanos a calcular nuestros años,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para que adquiramos un corazón sensato.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Vuélvete, Señor, ¿hasta cuándo?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Ten compasión de tus siervos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Por la mañana sácianos de tu misericordia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y toda nuestra vida será alegría y júbilo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Baje a nosotros la bondad del Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y haga prósperas las obras de nuestras manos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "seui_011",
+  "title": "Viernes de la 2ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 84, 8 y 10. 11-12. 13-14 (R.: 11a)",
+  "salmo": "Salmo responsorial: Salmo 84, 8 y 10. 11-12. 13-14 (R.: 11a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5025,
+  "respuesta": "R. La misericordia y la fidelidad se encuentran.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Muéstranos, Señor, tu misericordia",
+      "y danos tu salvación.",
+      "La salvación está ya cerca de sus fieles,",
+      "y la gloria habitará en nuestra tierra. R."
+    ],
+    [
+      "La misericordia y la fidelidad se encuentran,",
+      "la justicia y la paz se besan;",
+      "la fidelidad brota de la tierra,",
+      "y la justicia mira desde el cielo. R."
+    ],
+    [
+      "El Señor nos dará la lluvia,",
+      "y nuestra tierra dará su fruto.",
+      "La justicia marchará ante él,",
+      "la salvación seguirá sus pasos. R."
+    ]
+  ],
+  "textoCompleto": "Muéstranos, Señor, tu misericordia\ny danos tu salvación.\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 2 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 84 8 y 10 11 12 13 14 r 11a semana 2 semana ii viernes 2 ii r la misericordia y la fidelidad se encuentran muestranos senor tu misericordia y danos tu salvacion la salvacion esta ya cerca de sus fieles y la gloria habitara en nuestra tierra r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
+  "lizq": [
+    {
+      "line": "R. La misericordia y la fidelidad se encuentran.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Muéstranos, Señor, tu misericordia",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y danos tu salvación.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "La salvación está ya cerca de sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y la gloria habitará en nuestra tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La misericordia y la fidelidad se encuentran,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la justicia y la paz se besan;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la fidelidad brota de la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y la justicia mira desde el cielo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor nos dará la lluvia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y nuestra tierra dará su fruto.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "La justicia marchará ante él,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la salvación seguirá sus pasos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

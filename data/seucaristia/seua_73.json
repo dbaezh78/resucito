@@ -11,10 +11,30 @@
   "respuesta": "R. Aclamad la gloria y el poder del Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.",
-    "Porque es grande el Señor, y muy digno de alabanza,\nmás temible que todos los dioses.\nPues los dioses de los gentiles son apariencia,\nmientras que el Señor ha hecho el cielo. R.",
-    "Familias de los pueblos, aclamad al Señor,\naclamad la gloria y el poder del Señor,\naclamad la gloria del nombre del Señor,\nentrad en sus atrios trayéndole ofrendas. R.",
-    "Postraos ante el Señor en el atrio sagrado,\ntiemble en su presencia la tierra toda;\ndecid a los pueblos: «El Señor es rey,\nél gobierna a los pueblos rectamente». R."
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "cantad al Señor, toda la tierra.",
+      "Contad a los pueblos su gloria,",
+      "sus maravillas a todas las naciones. R."
+    ],
+    [
+      "Porque es grande el Señor, y muy digno de alabanza,",
+      "más temible que todos los dioses.",
+      "Pues los dioses de los gentiles son apariencia,",
+      "mientras que el Señor ha hecho el cielo. R."
+    ],
+    [
+      "Familias de los pueblos, aclamad al Señor,",
+      "aclamad la gloria y el poder del Señor,",
+      "aclamad la gloria del nombre del Señor,",
+      "entrad en sus atrios trayéndole ofrendas. R."
+    ],
+    [
+      "Postraos ante el Señor en el atrio sagrado,",
+      "tiemble en su presencia la tierra toda;",
+      "decid a los pueblos: «El Señor es rey,",
+      "él gobierna a los pueblos rectamente». R."
+    ]
   ],
   "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nPorque es grande el Señor, y muy digno de alabanza,\nmás temible que todos los dioses.\nPues los dioses de los gentiles son apariencia,\nmientras que el Señor ha hecho el cielo. R.\n\nFamilias de los pueblos, aclamad al Señor,\naclamad la gloria y el poder del Señor,\naclamad la gloria del nombre del Señor,\nentrad en sus atrios trayéndole ofrendas. R.\n\nPostraos ante el Señor en el atrio sagrado,\ntiemble en su presencia la tierra toda;\ndecid a los pueblos: «El Señor es rey,\nél gobierna a los pueblos rectamente». R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. Aclamad la gloria y el poder del Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cantad al Señor un cántico nuevo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "cantad al Señor, toda la tierra.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Contad a los pueblos su gloria,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "sus maravillas a todas las naciones. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Porque es grande el Señor, y muy digno de alabanza,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "más temible que todos los dioses.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Pues los dioses de los gentiles son apariencia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "mientras que el Señor ha hecho el cielo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Familias de los pueblos, aclamad al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "aclamad la gloria y el poder del Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "aclamad la gloria del nombre del Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "entrad en sus atrios trayéndole ofrendas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Postraos ante el Señor en el atrio sagrado,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tiemble en su presencia la tierra toda;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "decid a los pueblos: «El Señor es rey,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "él gobierna a los pueblos rectamente». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

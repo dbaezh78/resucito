@@ -1,0 +1,114 @@
+{
+  "id": "seuc_73",
+  "title": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 94, 1-2. 6-7. 8-9 (R.: 8)",
+  "salmo": "Salmo responsorial: Salmo 94, 1-2. 6-7. 8-9 (R.: 8)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 527,
+  "respuesta": "R. Ojalá escuchéis hoy la voz del Señor: «No endurezcáis vuestro corazón».",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Venid, aclamemos al Señor,",
+      "demos vítores a la Roca que nos salva;",
+      "entremos a su presencia dándole gracias,",
+      "aclamándolo con cantos. R."
+    ],
+    [
+      "Entrad, postrémonos por tierra,",
+      "bendiciendo al Señor, creador nuestro.",
+      "Porque él es nuestro Dios,",
+      "y nosotros su pueblo, el rebaño que él guía. R."
+    ],
+    [
+      "Ojalá escuchéis hoy su voz:",
+      "«No endurezcáis el corazón como en Meribá,",
+      "como el día de Masa en el desierto;",
+      "cuando vuestros padres me pusieron a prueba",
+      "y me tentaron, aunque habían visto mis obras». R."
+    ]
+  ],
+  "textoCompleto": "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos. R.\n\nEntrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo, el rebaño que él guía. R.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masa en el desierto;\ncuando vuestros padres me pusieron a prueba\ny me tentaron, aunque habían visto mis obras». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 27 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 94 1 2 6 7 8 9 r 8 r ojala escucheis hoy la voz del senor no endurezcais vuestro corazon venid aclamemos al senor demos vitores a la roca que nos salva entremos a su presencia dandole gracias aclamandolo con cantos r entrad postremonos por tierra bendiciendo al senor creador nuestro porque el es nuestro dios y nosotros su pueblo el rebano que el guia r ojala escucheis hoy su voz no endurezcais el corazon como en meriba como el dia de masa en el desierto cuando vuestros padres me pusieron a prueba y me tentaron aunque habian visto mis obras r",
+  "lizq": [
+    {
+      "line": "R. Ojalá escuchéis hoy la voz del Señor:",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "«No endurezcáis vuestro corazón».",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Venid, aclamemos al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "demos vítores a la Roca que nos salva;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "entremos a su presencia dándole gracias,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aclamándolo con cantos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Entrad, postrémonos por tierra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "bendiciendo al Señor, creador nuestro.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Porque él es nuestro Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y nosotros su pueblo, el rebaño que él guía. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ojalá escuchéis hoy su voz:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "«No endurezcáis el corazón como en Meribá,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como el día de Masa en el desierto;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando vuestros padres me pusieron a prueba",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me tentaron, aunque habían visto mis obras». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

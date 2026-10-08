@@ -1,0 +1,100 @@
+{
+  "id": "seui_180",
+  "title": "Sábado de la 30ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 30ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 93, 12-13a. 14-15. 17-18 (R.:14a )",
+  "salmo": "Salmo responsorial: Salmo 93, 12-13a. 14-15. 17-18 (R.:14a )",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5306,
+  "respuesta": "R. El Señor no rechaza a su pueblo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el hombre a quien tú educas,",
+      "al que enseñas tu ley,",
+      "dándole descanso tras los años duros. R."
+    ],
+    [
+      "Porque el Señor no rechaza a su pueblo",
+      "ni abandona su heredad:",
+      "el justo obtendrá su derecho,",
+      "y un porvenir los rectos de corazón. R."
+    ],
+    [
+      "Si el Señor no me hubiera auxiliado,",
+      "ya estaría yo habitando en el silencio.",
+      "Cuando me parece que voy a tropezar,",
+      "tu misericordia, Señor, me sostiene. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el hombre a quien tú educas,\nal que enseñas tu ley,\ndándole descanso tras los años duros. R.\n\nPorque el Señor no rechaza a su pueblo\nni abandona su heredad:\nel justo obtendrá su derecho,\ny un porvenir los rectos de corazón. R.\n\nSi el Señor no me hubiera auxiliado,\nya estaría yo habitando en el silencio.\nCuando me parece que voy a tropezar,\ntu misericordia, Señor, me sostiene. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 30 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 93 12 13a 14 15 17 18 r 14a semana 30 semana xxx sabado 30 xxx r el senor no rechaza a su pueblo dichoso el hombre a quien tu educas al que ensenas tu ley dandole descanso tras los anos duros r porque el senor no rechaza a su pueblo ni abandona su heredad el justo obtendra su derecho y un porvenir los rectos de corazon r si el senor no me hubiera auxiliado ya estaria yo habitando en el silencio cuando me parece que voy a tropezar tu misericordia senor me sostiene r",
+  "lizq": [
+    {
+      "line": "R. El Señor no rechaza a su pueblo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el hombre a quien tú educas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "al que enseñas tu ley,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dándole descanso tras los años duros. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque el Señor no rechaza a su pueblo",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni abandona su heredad:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el justo obtendrá su derecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y un porvenir los rectos de corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Si el Señor no me hubiera auxiliado,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ya estaría yo habitando en el silencio.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cuando me parece que voy a tropezar,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu misericordia, Señor, me sostiene. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "seup_033",
+  "title": "Miércoles de la 6ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 6ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
+  "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5063,
+  "respuesta": "R. ¿Quién puede habitar en tu monte santo, Señor?",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El que procede honradamente",
+      "y practica la justicia,",
+      "el que tiene intenciones leales",
+      "y no calumnia con su lengua. R."
+    ],
+    [
+      "El que no hace mal a su prójimo",
+      "ni difama al vecino,",
+      "el que considera despreciable al impío",
+      "y honra a los que temen al Señor. R."
+    ],
+    [
+      "El que no presta dinero a usura",
+      "ni acepta soborno contra el inocente.",
+      "El que así obra nunca fallará. R."
+    ]
+  ],
+  "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 6 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 14 2 3ab 3cd 4ab 5 r 1b semana 6 semana vi miercoles 6 vi r quien puede habitar en tu monte santo senor el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r",
+  "lizq": [
+    {
+      "line": "R. ¿Quién puede habitar en tu monte santo, Señor?",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El que procede honradamente",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y practica la justicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el que tiene intenciones leales",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no calumnia con su lengua. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El que no hace mal a su prójimo",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni difama al vecino,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el que considera despreciable al impío",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y honra a los que temen al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El que no presta dinero a usura",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni acepta soborno contra el inocente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El que así obra nunca fallará. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "seup_086",
+  "title": "Martes de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 47, 2-3a. 3b-4. 5-6. 7-8 (R.: 9d)",
+  "salmo": "Salmo responsorial: Salmo 47, 2-3a. 3b-4. 5-6. 7-8 (R.: 9d)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5152,
+  "respuesta": "R. Dios ha fundado su ciudad para siempre.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Grande es el Señor y muy digno de alabanza",
+      "en la ciudad de nuestro Dios,",
+      "su monte santo, altura hermosa,",
+      "alegría de toda la tierra. R."
+    ],
+    [
+      "El monte Sión, vértice del cielo,",
+      "ciudad del gran rey;",
+      "entre sus palacios,",
+      "Dios descuella como un alcázar. R."
+    ],
+    [
+      "Mirad: los reyes se aliaron",
+      "para atacarla juntos;",
+      "pero, al verla, quedaron aterrados",
+      "y huyeron despavoridos. R."
+    ],
+    [
+      "Allí los agarró un temblor",
+      "y dolores como de parto;",
+      "como un viento del desierto,",
+      "que destroza las naves de Tarsis. R."
+    ]
+  ],
+  "textoCompleto": "Grande es el Señor y muy digno de alabanza\nen la ciudad de nuestro Dios,\nsu monte santo, altura hermosa,\nalegría de toda la tierra. R.\n\nEl monte Sión, vértice del cielo,\nciudad del gran rey;\nentre sus palacios,\nDios descuella como un alcázar. R.\n\nMirad: los reyes se aliaron\npara atacarla juntos;\npero, al verla, quedaron aterrados\ny huyeron despavoridos. R.\n\nAllí los agarró un temblor\ny dolores como de parto;\ncomo un viento del desierto,\nque destroza las naves de Tarsis. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 15 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 47 2 3a 3b 4 5 6 7 8 r 9d semana 15 semana xv martes 15 xv r dios ha fundado su ciudad para siempre grande es el senor y muy digno de alabanza en la ciudad de nuestro dios su monte santo altura hermosa alegria de toda la tierra r el monte sion vertice del cielo ciudad del gran rey entre sus palacios dios descuella como un alcazar r mirad los reyes se aliaron para atacarla juntos pero al verla quedaron aterrados y huyeron despavoridos r alli los agarro un temblor y dolores como de parto como un viento del desierto que destroza las naves de tarsis r",
+  "lizq": [
+    {
+      "line": "R. Dios ha fundado su ciudad para siempre.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Grande es el Señor y muy digno de alabanza",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en la ciudad de nuestro Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su monte santo, altura hermosa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alegría de toda la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El monte Sión, vértice del cielo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ciudad del gran rey;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "entre sus palacios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios descuella como un alcázar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mirad: los reyes se aliaron",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para atacarla juntos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero, al verla, quedaron aterrados",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y huyeron despavoridos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Allí los agarró un temblor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y dolores como de parto;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como un viento del desierto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que destroza las naves de Tarsis. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

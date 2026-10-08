@@ -1,0 +1,105 @@
+{
+  "id": "seui_112",
+  "title": "Jueves de la 19ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 19ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 113A, 1-2. 3-4. 5-6",
+  "salmo": "Salmo responsorial: Salmo 113A, 1-2. 3-4. 5-6",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5194,
+  "respuesta": "R. Aleluya.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Cuando Israel salió de Egipto,",
+      "los hijos de Jacob, de un pueblo balbuciente,",
+      "Judá fue su santuario,",
+      "Israel fue su dominio. R."
+    ],
+    [
+      "El mar, al verlos, huyó,",
+      "el Jordán se echó atrás;",
+      "los montes saltaron como carneros;",
+      "las colinas, como corderos. R."
+    ],
+    [
+      "¿Qué te pasa, mar, que huyes,",
+      "a ti, Jordán, que te echas atrás?",
+      "¿Y a vosotros, montes, que saltáis como carneros;",
+      "colinas, que saltáis como corderos? R."
+    ]
+  ],
+  "textoCompleto": "Cuando Israel salió de Egipto,\nlos hijos de Jacob, de un pueblo balbuciente,\nJudá fue su santuario,\nIsrael fue su dominio. R.\n\nEl mar, al verlos, huyó,\nel Jordán se echó atrás;\nlos montes saltaron como carneros;\nlas colinas, como corderos. R.\n\n¿Qué te pasa, mar, que huyes,\na ti, Jordán, que te echas atrás?\n¿Y a vosotros, montes, que saltáis como carneros;\ncolinas, que saltáis como corderos? R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 19 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 113a 1 2 3 4 5 6 semana 19 semana xix jueves 19 xix r aleluya cuando israel salio de egipto los hijos de jacob de un pueblo balbuciente juda fue su santuario israel fue su dominio r el mar al verlos huyo el jordan se echo atras los montes saltaron como carneros las colinas como corderos r que te pasa mar que huyes a ti jordan que te echas atras y a vosotros montes que saltais como carneros colinas que saltais como corderos r",
+  "lizq": [
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuando Israel salió de Egipto,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los hijos de Jacob, de un pueblo balbuciente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Judá fue su santuario,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Israel fue su dominio. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El mar, al verlos, huyó,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el Jordán se echó atrás;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los montes saltaron como carneros;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "las colinas, como corderos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Qué te pasa, mar, que huyes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a ti, Jordán, que te echas atrás?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Y a vosotros, montes, que saltáis como carneros;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "colinas, que saltáis como corderos? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

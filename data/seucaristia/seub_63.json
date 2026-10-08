@@ -11,11 +11,36 @@
   "respuesta": "R. Gustad y ved qué bueno es el Señor",
   "respuestaOpcional": "",
   "estrofas": [
-    "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor;\nque los humildes lo escuchen y se alegren. R.",
-    "Los ojos del Señor miran a los justos,\nsus oídos escuchan sus gritos;\npero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria. R.",
-    "Cuando uno grita, el Señor lo escucha\ny lo libra de sus angustias;\nel Señor está cerca de los atribulados,\nsalva a los abatidos. R.",
-    "Aunque el justo sufra muchos males,\nde todos lo libra el Señor;\nél cuida de todos sus huesos,\ny ni uno solo se quebrará. R.",
-    "La maldad da muerte al malvado,\ny los que odian al justo serán castigados.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R."
+    [
+      "Bendigo al Señor en todo momento,",
+      "su alabanza está siempre en mi boca;",
+      "mi alma se gloría en el Señor;",
+      "que los humildes lo escuchen y se alegren. R."
+    ],
+    [
+      "Los ojos del Señor miran a los justos,",
+      "sus oídos escuchan sus gritos;",
+      "pero el Señor se enfrenta con los malhechores,",
+      "para borrar de la tierra su memoria. R."
+    ],
+    [
+      "Cuando uno grita, el Señor lo escucha",
+      "y lo libra de sus angustias;",
+      "el Señor está cerca de los atribulados,",
+      "salva a los abatidos. R."
+    ],
+    [
+      "Aunque el justo sufra muchos males,",
+      "de todos lo libra el Señor;",
+      "él cuida de todos sus huesos,",
+      "y ni uno solo se quebrará. R."
+    ],
+    [
+      "La maldad da muerte al malvado,",
+      "y los que odian al justo serán castigados.",
+      "El Señor redime a sus siervos,",
+      "no será castigado quien se acoge a él. R."
+    ]
   ],
   "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor;\nque los humildes lo escuchen y se alegren. R.\n\nLos ojos del Señor miran a los justos,\nsus oídos escuchan sus gritos;\npero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria. R.\n\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias;\nel Señor está cerca de los atribulados,\nsalva a los abatidos. R.\n\nAunque el justo sufra muchos males,\nde todos lo libra el Señor;\nél cuida de todos sus huesos,\ny ni uno solo se quebrará. R.\n\nLa maldad da muerte al malvado,\ny los que odian al justo serán castigados.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
   "sourceBook": "eucaristia",
@@ -26,108 +51,107 @@
   "lizq": [
     {
       "line": "R. Gustad y ved qué bueno es el Señor",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendigo al Señor en todo momento,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "su alabanza está siempre en mi boca;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "mi alma se gloría en el Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que los humildes lo escuchen y se alegren. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Los ojos del Señor miran a los justos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "sus oídos escuchan sus gritos;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "pero el Señor se enfrenta con los malhechores,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para borrar de la tierra su memoria. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cuando uno grita, el Señor lo escucha",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y lo libra de sus angustias;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el Señor está cerca de los atribulados,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "salva a los abatidos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Aunque el justo sufra muchos males,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "de todos lo libra el Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "él cuida de todos sus huesos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y ni uno solo se quebrará. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "La maldad da muerte al malvado,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y los que odian al justo serán castigados.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "El Señor redime a sus siervos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "no será castigado quien se acoge a él. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

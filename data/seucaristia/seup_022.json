@@ -1,0 +1,106 @@
+{
+  "id": "seup_022",
+  "title": "Jueves de la 4ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 4ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: 1Crónicas 29, 10. 11ab. 11d-12a. 12bcd (R.: 12b)",
+  "salmo": "Interleccional: 1Crónicas 29, 10. 11ab. 11d-12a. 12bcd (R.: 12b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5044,
+  "respuesta": "R. Tú eres Señor del universo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Bendito eres, Señor,",
+      "Dios de nuestro padre Israel,",
+      "por los siglos de los siglos. R."
+    ],
+    [
+      "Tuyos son, Señor, la grandeza y el poder,",
+      "la gloria, el esplendor, la majestad,",
+      "porque tuyo es cuanto hay en cielo y tierra. R."
+    ],
+    [
+      "Tú eres rey y soberano de todo.",
+      "De ti viene la riqueza y la gloria. R."
+    ],
+    [
+      "Tú eres Señor del universo,",
+      "en tu mano está el poder y la fuerza,",
+      "tú engrandeces y confortas a todos. R."
+    ]
+  ],
+  "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 4 semana de tiempo ordinario ano par tiempo ordinario jueves interleccional 1cronicas 29 10 11ab 11d 12a 12bcd r 12b semana 4 semana iv jueves 4 iv r tu eres senor del universo bendito eres senor dios de nuestro padre israel por los siglos de los siglos r tuyos son senor la grandeza y el poder la gloria el esplendor la majestad porque tuyo es cuanto hay en cielo y tierra r tu eres rey y soberano de todo de ti viene la riqueza y la gloria r tu eres senor del universo en tu mano esta el poder y la fuerza tu engrandeces y confortas a todos r",
+  "lizq": [
+    {
+      "line": "R. Tú eres Señor del universo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendito eres, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios de nuestro padre Israel,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por los siglos de los siglos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tuyos son, Señor, la grandeza y el poder,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la gloria, el esplendor, la majestad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque tuyo es cuanto hay en cielo y tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú eres rey y soberano de todo.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "De ti viene la riqueza y la gloria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú eres Señor del universo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en tu mano está el poder y la fuerza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú engrandeces y confortas a todos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

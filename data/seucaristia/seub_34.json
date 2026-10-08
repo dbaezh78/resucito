@@ -8,16 +8,35 @@
   "tiempo": "Pascua",
   "dia": "Domingo",
   "orden": 410,
-  "respuesta": "R. La piedra que desecharon los arquitectos",
-  "respuestaOpcional": "",
+  "respuesta": "R. La piedra que desecharon los arquitectos es ahora la piedra angular.",
+  "respuestaOpcional": "R. Aleluya",
   "estrofas": [
-    "es ahora la piedra angular.",
-    "R. Aleluya",
-    "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.",
-    "Te doy gracias porque me escuchaste\ny fuiste mi salvación.\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.",
-    "Bendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor.\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo.\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia. R."
+    [
+      "Dad gracias al Señor porque es bueno,",
+      "porque es eterna su misericordia.",
+      "Mejor es refugiarse en el Señor",
+      "que fiarse de los hombres,",
+      "mejor es refugiarse en el Señor",
+      "que fiarse de los jefes. R."
+    ],
+    [
+      "Te doy gracias porque me escuchaste",
+      "y fuiste mi salvación.",
+      "La piedra que desecharon los arquitectos",
+      "es ahora la piedra angular.",
+      "Es el Señor quien lo ha hecho,",
+      "ha sido un milagro patente. R."
+    ],
+    [
+      "Bendito el que viene en nombre del Señor,",
+      "os bendecimos desde la casa del Señor.",
+      "Tú eres mi Dios, te doy gracias;",
+      "Dios mío, yo te ensalzo.",
+      "Dad gracias al Señor porque es bueno,",
+      "porque es eterna su misericordia. R."
+    ]
   ],
-  "textoCompleto": "es ahora la piedra angular.\n\nR. Aleluya\n\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nTe doy gracias porque me escuchaste\ny fuiste mi salvación.\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.\n\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor.\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo.\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia. R.",
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nTe doy gracias porque me escuchaste\ny fuiste mi salvación.\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.\n\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor.\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo.\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,108 +45,107 @@
   "lizq": [
     {
       "line": "R. La piedra que desecharon los arquitectos",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "es ahora la piedra angular.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dad gracias al Señor porque es bueno,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "porque es eterna su misericordia.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Mejor es refugiarse en el Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que fiarse de los hombres,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "mejor es refugiarse en el Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que fiarse de los jefes. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Te doy gracias porque me escuchaste",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y fuiste mi salvación.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "La piedra que desecharon los arquitectos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "es ahora la piedra angular.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Es el Señor quien lo ha hecho,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ha sido un milagro patente. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Bendito el que viene en nombre del Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "os bendecimos desde la casa del Señor.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Tú eres mi Dios, te doy gracias;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dios mío, yo te ensalzo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dad gracias al Señor porque es bueno,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "porque es eterna su misericordia. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

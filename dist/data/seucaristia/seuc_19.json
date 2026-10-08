@@ -1,0 +1,105 @@
+{
+  "id": "seuc_19",
+  "title": "Cuarto domingo de Cuaresma",
+  "celebracion": "Cuarto domingo de Cuaresma",
+  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: 9a)",
+  "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: 9a)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo",
+  "orden": 304,
+  "respuesta": "R. Gustad y ved qué bueno es el Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Bendigo al Señor en todo momento,",
+      "su alabanza está siempre en mi boca;",
+      "mi alma se gloría en el Señor:",
+      "que los humildes lo escuchen y se alegren. R."
+    ],
+    [
+      "Proclamad conmigo la grandeza del Señor,",
+      "ensalcemos juntos su nombre.",
+      "Yo consulté al Señor, y me respondió,",
+      "me libró de todas mis ansias. R."
+    ],
+    [
+      "Contempladlo, y quedaréis radiantes,",
+      "vuestro rostro no se avergonzará.",
+      "Si el afligido invoca al Señor, él lo escucha",
+      "y lo salva de sus angustias. R."
+    ]
+  ],
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "cuarto domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 33 2 3 4 5 6 7 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r",
+  "lizq": [
+    {
+      "line": "R. Gustad y ved qué bueno es el Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendigo al Señor en todo momento,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su alabanza está siempre en mi boca;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi alma se gloría en el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que los humildes lo escuchen y se alegren. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Proclamad conmigo la grandeza del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ensalcemos juntos su nombre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Yo consulté al Señor, y me respondió,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me libró de todas mis ansias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Contempladlo, y quedaréis radiantes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "vuestro rostro no se avergonzará.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Si el afligido invoca al Señor, él lo escucha",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y lo salva de sus angustias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

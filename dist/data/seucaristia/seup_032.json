@@ -1,0 +1,100 @@
+{
+  "id": "seup_032",
+  "title": "Martes de la 6ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 6ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 93, 12-13a. 14-15. 18-19 (R.: 12a)",
+  "salmo": "Salmo responsorial: Salmo 93, 12-13a. 14-15. 18-19 (R.: 12a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5062,
+  "respuesta": "R. Dichoso el hombre a quien tú educas, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el hombre a quien tú educas,",
+      "al que enseñas tu ley,",
+      "dándole descanso tras los años duros. R."
+    ],
+    [
+      "Porque el Señor no rechaza a su pueblo,",
+      "ni abandona su heredad:",
+      "el justo obtendrá su derecho,",
+      "y un porvenir los rectos de corazón. R."
+    ],
+    [
+      "Cuando me parece que voy a tropezar,",
+      "tu misericordia, Señor, me sostiene;",
+      "cuando se multiplican mis preocupaciones,",
+      "tus consuelos son mi delicia. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el hombre a quien tú educas,\nal que enseñas tu ley,\ndándole descanso tras los años duros. R.\n\nPorque el Señor no rechaza a su pueblo,\nni abandona su heredad:\nel justo obtendrá su derecho,\ny un porvenir los rectos de corazón. R.\n\nCuando me parece que voy a tropezar,\ntu misericordia, Señor, me sostiene;\ncuando se multiplican mis preocupaciones,\ntus consuelos son mi delicia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 6 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 93 12 13a 14 15 18 19 r 12a semana 6 semana vi martes 6 vi r dichoso el hombre a quien tu educas senor dichoso el hombre a quien tu educas al que ensenas tu ley dandole descanso tras los anos duros r porque el senor no rechaza a su pueblo ni abandona su heredad el justo obtendra su derecho y un porvenir los rectos de corazon r cuando me parece que voy a tropezar tu misericordia senor me sostiene cuando se multiplican mis preocupaciones tus consuelos son mi delicia r",
+  "lizq": [
+    {
+      "line": "R. Dichoso el hombre a quien tú educas, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el hombre a quien tú educas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "al que enseñas tu ley,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dándole descanso tras los años duros. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque el Señor no rechaza a su pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni abandona su heredad:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el justo obtendrá su derecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y un porvenir los rectos de corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuando me parece que voy a tropezar,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tu misericordia, Señor, me sostiene;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuando se multiplican mis preocupaciones,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tus consuelos son mi delicia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

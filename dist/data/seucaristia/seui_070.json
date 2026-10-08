@@ -1,0 +1,112 @@
+{
+  "id": "seui_070",
+  "title": "Jueves de la 12ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 12ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 105, 1-2. 3-4a. 4b-5 (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 105, 1-2. 3-4a. 4b-5 (R.: 1a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5124,
+  "respuesta": "R. Dad gracias al Señor porque es bueno.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Dad gracias al Señor porque es bueno,",
+      "porque es eterna su misericordia.",
+      "¿Quién podrá contar las hazañas de Dios,",
+      "pregonar toda su alabanza? R."
+    ],
+    [
+      "Dichosos los que respetan el derecho",
+      "y practican siempre la justicia.",
+      "Acuérdate de mí por amor a tu pueblo. R."
+    ],
+    [
+      "Visítame con tu salvación:",
+      "para que vea la dicha de tus escogidos,",
+      "y me alegre con la alegría de tu pueblo,",
+      "y me gloríe con tu heredad. R."
+    ]
+  ],
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\n¿Quién podrá contar las hazañas de Dios,\npregonar toda su alabanza? R.\n\nDichosos los que respetan el derecho\ny practican siempre la justicia.\nAcuérdate de mí por amor a tu pueblo. R.\n\nVisítame con tu salvación:\npara que vea la dicha de tus escogidos,\ny me alegre con la alegría de tu pueblo,\ny me gloríe con tu heredad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 12 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 105 1 2 3 4a 4b 5 r 1a semana 12 semana xii jueves 12 xii r dad gracias al senor porque es bueno r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia quien podra contar las hazanas de dios pregonar toda su alabanza r dichosos los que respetan el derecho y practican siempre la justicia acuerdate de mi por amor a tu pueblo r visitame con tu salvacion para que vea la dicha de tus escogidos y me alegre con la alegria de tu pueblo y me glorie con tu heredad r",
+  "lizq": [
+    {
+      "line": "R. Dad gracias al Señor porque es bueno.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Quién podrá contar las hazañas de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pregonar toda su alabanza? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichosos los que respetan el derecho",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y practican siempre la justicia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Acuérdate de mí por amor a tu pueblo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Visítame con tu salvación:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para que vea la dicha de tus escogidos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me alegre con la alegría de tu pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me gloríe con tu heredad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "seui_204",
+  "title": "Sábado de la 34ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 34ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Daniel 3, 82. 83. 84. 85. 86. 87",
+  "salmo": "Interleccional: Daniel 3, 82. 83. 84. 85. 86. 87",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5346,
+  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Hijos de los hombres, bendecid al Señor. R."
+    ],
+    [
+      "Bendiga Israel al Señor. R."
+    ],
+    [
+      "Sacerdotes del Señor, bendecid al Señor. R."
+    ],
+    [
+      "Siervos del Señor, bendecid al Señor. R."
+    ],
+    [
+      "Almas y espíritus justos, bendecid al Señor. R."
+    ],
+    [
+      "Santos y humildes de corazón, bendecid al Señor. R."
+    ]
+  ],
+  "textoCompleto": "Hijos de los hombres, bendecid al Señor. R.\n\nBendiga Israel al Señor. R.\n\nSacerdotes del Señor, bendecid al Señor. R.\n\nSiervos del Señor, bendecid al Señor. R.\n\nAlmas y espíritus justos, bendecid al Señor. R.\n\nSantos y humildes de corazón, bendecid al Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 34 semana de tiempo ordinario ano impar tiempo ordinario sabado interleccional daniel 3 82 83 84 85 86 87 semana 34 semana xxxiv sabado 34 xxxiv r ensalzadlo con himnos por los siglos hijos de los hombres bendecid al senor r bendiga israel al senor r sacerdotes del senor bendecid al senor r siervos del senor bendecid al senor r almas y espiritus justos bendecid al senor r santos y humildes de corazon bendecid al senor r",
+  "lizq": [
+    {
+      "line": "R. Ensalzadlo con himnos por los siglos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Hijos de los hombres, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendiga Israel al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sacerdotes del Señor, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Siervos del Señor, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Almas y espíritus justos, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Santos y humildes de corazón, bendecid al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    }
+  ]
+}

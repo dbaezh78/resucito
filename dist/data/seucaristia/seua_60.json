@@ -11,9 +11,24 @@
   "respuesta": "R. Tú, Señor, eres bueno y clemente.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.",
-    "Todos los pueblos vendrán\na postrarse en tu presencia, Señor;\nbendecirán tu nombre:\n«Grande eres tú, y haces maravillas;\ntú eres el único Dios». R.",
-    "Pero tú, Señor, Dios clemente y misericordioso,\nlento a la cólera, rico en piedad y leal,\nmírame, ten compasión de mí. R."
+    [
+      "Tú, Señor, eres bueno y clemente,",
+      "rico en misericordia con los que te invocan.",
+      "Señor, escucha mi oración,",
+      "atiende a la voz de mi súplica. R."
+    ],
+    [
+      "Todos los pueblos vendrán",
+      "a postrarse en tu presencia, Señor;",
+      "bendecirán tu nombre:",
+      "«Grande eres tú, y haces maravillas;",
+      "tú eres el único Dios». R."
+    ],
+    [
+      "Pero tú, Señor, Dios clemente y misericordioso,",
+      "lento a la cólera, rico en piedad y leal,",
+      "mírame, ten compasión de mí. R."
+    ]
   ],
   "textoCompleto": "Tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.\n\nTodos los pueblos vendrán\na postrarse en tu presencia, Señor;\nbendecirán tu nombre:\n«Grande eres tú, y haces maravillas;\ntú eres el único Dios». R.\n\nPero tú, Señor, Dios clemente y misericordioso,\nlento a la cólera, rico en piedad y leal,\nmírame, ten compasión de mí. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. Tú, Señor, eres bueno y clemente.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tú, Señor, eres bueno y clemente,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "rico en misericordia con los que te invocan.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Señor, escucha mi oración,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "atiende a la voz de mi súplica. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Todos los pueblos vendrán",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "a postrarse en tu presencia, Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "bendecirán tu nombre:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "«Grande eres tú, y haces maravillas;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tú eres el único Dios». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pero tú, Señor, Dios clemente y misericordioso,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "lento a la cólera, rico en piedad y leal,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "mírame, ten compasión de mí. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

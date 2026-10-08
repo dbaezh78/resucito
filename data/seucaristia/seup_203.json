@@ -1,0 +1,110 @@
+{
+  "id": "seup_203",
+  "title": "Viernes de la 34ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 34ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5-6a y 8a (R.: Ap 21, 3b)",
+  "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5-6a y 8a (R.: Ap 21, 3b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5345,
+  "respuesta": "R. Ésta es la morada de Dios con los hombres.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Mi alma se consume y anhela",
+      "los atrios del Señor,",
+      "mi corazón y mi carne",
+      "retozan por el Dios vivo. R."
+    ],
+    [
+      "Hasta el gorrión ha encontrado una casa;",
+      "la golondrina, un nido",
+      "donde colocar sus polluelos:",
+      "tus altares, Señor de los ejércitos,",
+      "Rey mío y Dios mío. R."
+    ],
+    [
+      "Dichosos los que viven en tu casa,",
+      "alabándote siempre.",
+      "Dichosos los que encuentran en ti su fuerza:",
+      "caminan de baluarte en baluarte. R."
+    ]
+  ],
+  "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nDichosos los que encuentran en ti su fuerza:\ncaminan de baluarte en baluarte. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 34 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 83 3 4 5 6a y 8a r ap 21 3b semana 34 semana xxxiv viernes 34 xxxiv r esta es la morada de dios con los hombres mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre dichosos los que encuentran en ti su fuerza caminan de baluarte en baluarte r",
+  "lizq": [
+    {
+      "line": "R. Ésta es la morada de Dios con los hombres.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi alma se consume y anhela",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los atrios del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi corazón y mi carne",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "retozan por el Dios vivo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Hasta el gorrión ha encontrado una casa;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la golondrina, un nido",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "donde colocar sus polluelos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tus altares, Señor de los ejércitos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Rey mío y Dios mío. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichosos los que viven en tu casa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabándote siempre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dichosos los que encuentran en ti su fuerza:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "caminan de baluarte en baluarte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -95,20 +95,22 @@
           </div>
         </div>
 
-        <!-- Barra de Filtros Exclusiva para Eucaristía (Ciclos, Tiempos Litúrgicos y Días de la Semana) -->
+        <!-- Barra de Filtros Exclusiva para Eucaristía (Ciclos, Tiempos Litúrgicos, Días de la Semana y Santos) -->
         <div id="eucaristia-filter-bar" class="eucaristia-filter-bar aclamaciones-filter-bar" style="display: none;">
-          <div class="aclamaciones-filter-group">
+          <div class="aclamaciones-filter-group" id="eucaristia-ciclos-group">
             <span class="aclamaciones-filter-label">Ciclo:</span>
             <div class="aclamaciones-pills" id="eucaristia-ciclos-container">
-              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Todos">Todos</button>
-              <button class="btn filter-pill aclamaciones-pill active" data-ciclo="Ciclo A">Ciclo A</button>
+              <button class="btn filter-pill aclamaciones-pill active" data-ciclo="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo A">Ciclo A</button>
               <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo B">Ciclo B</button>
               <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo C">Ciclo C</button>
               <button class="btn filter-pill aclamaciones-pill" data-ciclo="Año Par">Año Par</button>
               <button class="btn filter-pill aclamaciones-pill" data-ciclo="Año Impar">Año Impar</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Santos">Santos</button>
             </div>
           </div>
-          <div class="aclamaciones-filter-group">
+          <!-- Tiempo Litúrgico (para ciclos regulares) -->
+          <div class="aclamaciones-filter-group" id="eucaristia-tiempos-group" style="display: none;">
             <span class="aclamaciones-filter-label">Tiempo:</span>
             <div class="aclamaciones-pills" id="eucaristia-tiempos-container">
               <button class="btn filter-pill aclamaciones-pill active" data-tiempo="Todos">Todos</button>
@@ -121,7 +123,7 @@
             </div>
           </div>
           <!-- Días de la semana empezando por Domingo -->
-          <div class="aclamaciones-filter-group eucaristia-dias-group">
+          <div class="aclamaciones-filter-group eucaristia-dias-group" id="eucaristia-dias-group" style="display: none;">
             <span class="aclamaciones-filter-label">Día:</span>
             <div class="aclamaciones-pills" id="eucaristia-dias-container">
               <button class="btn filter-pill aclamaciones-pill active" data-dia="Todos">Todos</button>
@@ -132,6 +134,31 @@
               <button class="btn filter-pill aclamaciones-pill" data-dia="Jueves">Jueves</button>
               <button class="btn filter-pill aclamaciones-pill" data-dia="Viernes">Viernes</button>
               <button class="btn filter-pill aclamaciones-pill" data-dia="Sábado">Sábado</button>
+            </div>
+          </div>
+          <!-- Meses (para Santos) -->
+          <div class="aclamaciones-filter-group" id="eucaristia-meses-group" style="display: none;">
+            <span class="aclamaciones-filter-label">Mes:</span>
+            <div class="aclamaciones-pills" id="eucaristia-meses-container">
+              <button class="btn filter-pill aclamaciones-pill active" data-mes="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Enero">Enero</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Febrero">Febrero</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Marzo">Marzo</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Abril">Abril</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Mayo">Mayo</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Junio">Junio</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Julio">Julio</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Agosto">Agosto</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Septiembre">Septiembre</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Octubre">Octubre</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Noviembre">Noviembre</button>
+              <button class="btn filter-pill aclamaciones-pill" data-mes="Diciembre">Diciembre</button>
+            </div>
+          </div>
+          <!-- Días del Mes ocupados (para Santos) -->
+          <div class="aclamaciones-filter-group eucaristia-dias-mes-group" id="eucaristia-dias-mes-group" style="display: none;">
+            <span class="aclamaciones-filter-label">Día:</span>
+            <div class="aclamaciones-pills eucaristia-dias-mes-pills" id="eucaristia-dias-mes-container">
             </div>
           </div>
         </div>

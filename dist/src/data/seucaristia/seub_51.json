@@ -11,10 +11,30 @@
   "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.",
-    "Porque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.",
-    "Oigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta;\nclamaste en la aflicción, y te libré. R.",
-    "No tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R."
+    [
+      "Acompañad, tocad los panderos,",
+      "las cítaras templadas y las arpas;",
+      "tocad la trompeta por la luna nueva,",
+      "por la luna llena, que es nuestra fiesta. R."
+    ],
+    [
+      "Porque es una ley de Israel,",
+      "un precepto del Dios de Jacob,",
+      "una norma establecida para José",
+      "al salir de Egipto. R."
+    ],
+    [
+      "Oigo un lenguaje desconocido:",
+      "«Retiré sus hombros de la carga,",
+      "y sus manos dejaron la espuerta;",
+      "clamaste en la aflicción, y te libré. R."
+    ],
+    [
+      "No tendrás un dios extraño,",
+      "no adorarás un dios extranjero;",
+      "yo soy el Señor, Dios tuyo,",
+      "que te saqué del país de Egipto». R."
+    ]
   ],
   "textoCompleto": "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.\n\nPorque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.\n\nOigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta;\nclamaste en la aflicción, y te libré. R.\n\nNo tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. Aclamad a Dios, nuestra fuerza.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Acompañad, tocad los panderos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "las cítaras templadas y las arpas;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tocad la trompeta por la luna nueva,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "por la luna llena, que es nuestra fiesta. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Porque es una ley de Israel,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "un precepto del Dios de Jacob,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "una norma establecida para José",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "al salir de Egipto. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Oigo un lenguaje desconocido:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "«Retiré sus hombros de la carga,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y sus manos dejaron la espuerta;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "clamaste en la aflicción, y te libré. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "No tendrás un dios extraño,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "no adorarás un dios extranjero;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "yo soy el Señor, Dios tuyo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "que te saqué del país de Egipto». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

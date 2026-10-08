@@ -1,0 +1,79 @@
+{
+  "id": "seui_189",
+  "title": "Miércoles de la 32ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 32ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 81, 3-4. 6-7 (R.: 8a)",
+  "salmo": "Salmo responsorial: Salmo 81, 3-4. 6-7 (R.: 8a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5323,
+  "respuesta": "R. Levántate, oh Dios, y juzga la tierra.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "«Proteged al desvalido y al huérfano,",
+      "haced justicia al humilde y al necesitado,",
+      "defended al pobre y al indigente,",
+      "sacándolos de las manos del culpable». R."
+    ],
+    [
+      "Yo declaro: «Aunque seáis dioses,",
+      "e hijos del Altísimo todos,",
+      "moriréis como cualquier hombre,",
+      "caeréis, príncipes, como uno de tantos». R."
+    ]
+  ],
+  "textoCompleto": "«Proteged al desvalido y al huérfano,\nhaced justicia al humilde y al necesitado,\ndefended al pobre y al indigente,\nsacándolos de las manos del culpable». R.\n\nYo declaro: «Aunque seáis dioses,\ne hijos del Altísimo todos,\nmoriréis como cualquier hombre,\ncaeréis, príncipes, como uno de tantos». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 32 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 81 3 4 6 7 r 8a semana 32 semana xxxii miercoles 32 xxxii r levantate oh dios y juzga la tierra proteged al desvalido y al huerfano haced justicia al humilde y al necesitado defended al pobre y al indigente sacandolos de las manos del culpable r yo declaro aunque seais dioses e hijos del altisimo todos morireis como cualquier hombre caereis principes como uno de tantos r",
+  "lizq": [
+    {
+      "line": "R. Levántate, oh Dios, y juzga la tierra.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Proteged al desvalido y al huérfano,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "haced justicia al humilde y al necesitado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "defended al pobre y al indigente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sacándolos de las manos del culpable». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo declaro: «Aunque seáis dioses,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "e hijos del Altísimo todos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "moriréis como cualquier hombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "caeréis, príncipes, como uno de tantos». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

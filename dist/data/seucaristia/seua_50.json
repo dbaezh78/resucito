@@ -11,10 +11,30 @@
   "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor;\ndichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.",
-    "Tú promulgas tus decretos\npara que se observen exactamente.\nOjalá esté firme mi camino,\npara cumplir tus consignas. R.",
-    "Haz bien a tu siervo: viviré\ny cumpliré tus palabras;\nábreme los ojos, y contemplaré\nlas maravillas de tu voluntad. R.",
-    "Muéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente;\nenséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R."
+    [
+      "Dichoso el que, con vida intachable,",
+      "camina en la voluntad del Señor;",
+      "dichoso el que, guardando sus preceptos,",
+      "lo busca de todo corazón. R."
+    ],
+    [
+      "Tú promulgas tus decretos",
+      "para que se observen exactamente.",
+      "Ojalá esté firme mi camino,",
+      "para cumplir tus consignas. R."
+    ],
+    [
+      "Haz bien a tu siervo: viviré",
+      "y cumpliré tus palabras;",
+      "ábreme los ojos, y contemplaré",
+      "las maravillas de tu voluntad. R."
+    ],
+    [
+      "Muéstrame, Señor, el camino de tus leyes,",
+      "y lo seguiré puntualmente;",
+      "enséñame a cumplir tu voluntad",
+      "y a guardarla de todo corazón. R."
+    ]
   ],
   "textoCompleto": "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor;\ndichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.\n\nTú promulgas tus decretos\npara que se observen exactamente.\nOjalá esté firme mi camino,\npara cumplir tus consignas. R.\n\nHaz bien a tu siervo: viviré\ny cumpliré tus palabras;\nábreme los ojos, y contemplaré\nlas maravillas de tu voluntad. R.\n\nMuéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente;\nenséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R.",
   "sourceBook": "eucaristia",
@@ -25,88 +45,87 @@
   "lizq": [
     {
       "line": "R. Dichoso el que camina en la voluntad del Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dichoso el que, con vida intachable,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "camina en la voluntad del Señor;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "dichoso el que, guardando sus preceptos,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "lo busca de todo corazón. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Tú promulgas tus decretos",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "para que se observen exactamente.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Ojalá esté firme mi camino,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "para cumplir tus consignas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Haz bien a tu siervo: viviré",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y cumpliré tus palabras;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ábreme los ojos, y contemplaré",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "las maravillas de tu voluntad. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Muéstrame, Señor, el camino de tus leyes,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y lo seguiré puntualmente;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "enséñame a cumplir tu voluntad",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y a guardarla de todo corazón. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

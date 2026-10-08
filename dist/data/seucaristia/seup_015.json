@@ -1,0 +1,110 @@
+{
+  "id": "seup_015",
+  "title": "Miércoles de la 3ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 3ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 88, 4-5. 27-28. 29-30 (R.: 29a)",
+  "salmo": "Salmo responsorial: Salmo 88, 4-5. 27-28. 29-30 (R.: 29a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5033,
+  "respuesta": "R. Le mantendré eternamente mi favor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Sellé una alianza con mi elegido,",
+      "jurando a David, mi siervo:",
+      "«Te fundaré un linaje perpetuo,",
+      "edificaré tu trono para todas las edades». R."
+    ],
+    [
+      "«Él me invocará:",
+      "\"Tú eres mi padre,",
+      "mi Dios, mi Roca salvadora\";",
+      "y yo lo nombraré mi primogénito,",
+      "excelso entre los reyes de la tierra». R."
+    ],
+    [
+      "Le mantendré eternamente mi favor,",
+      "y mi alianza con él será estable;",
+      "le daré una posteridad perpetua",
+      "y un trono duradero como el cielo. R."
+    ]
+  ],
+  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\n«Él me invocará:\n\"Tú eres mi padre,\nmi Dios, mi Roca salvadora\";\ny yo lo nombraré mi primogénito,\nexcelso entre los reyes de la tierra». R.\n\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable;\nle daré una posteridad perpetua\ny un trono duradero como el cielo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 3 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 88 4 5 27 28 29 30 r 29a semana 3 semana iii miercoles 3 iii r le mantendre eternamente mi favor selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r el me invocara tu eres mi padre mi dios mi roca salvadora y yo lo nombrare mi primogenito excelso entre los reyes de la tierra r le mantendre eternamente mi favor y mi alianza con el sera estable le dare una posteridad perpetua y un trono duradero como el cielo r",
+  "lizq": [
+    {
+      "line": "R. Le mantendré eternamente mi favor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sellé una alianza con mi elegido,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "jurando a David, mi siervo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Te fundaré un linaje perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "edificaré tu trono para todas las edades». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Él me invocará:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "\"Tú eres mi padre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi Dios, mi Roca salvadora\";",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y yo lo nombraré mi primogénito,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "excelso entre los reyes de la tierra». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Le mantendré eternamente mi favor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y mi alianza con él será estable;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "le daré una posteridad perpetua",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y un trono duradero como el cielo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "seui_138",
+  "title": "Sábado de la 23ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 23ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5a y 6-7(R.: 2)",
+  "salmo": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5a y 6-7(R.: 2)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5236,
+  "respuesta": "R. Bendito sea el nombre del Señor, ahora y por siempre.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Alabad, siervos del Señor,",
+      "alabad el nombre del Señor.",
+      "Bendito sea el nombre del Señor,",
+      "ahora y por siempre. R."
+    ],
+    [
+      "De la salida del sol hasta su ocaso,",
+      "alabado sea el nombre del Señor.",
+      "El Señor se eleva sobre todos los pueblos,",
+      "su gloria sobre los cielos. R."
+    ],
+    [
+      "¿Quién como el Señor, Dios nuestro,",
+      "que se abaja para mirar al cielo y a la tierra?",
+      "Levanta del polvo al desvalido,",
+      "alza de la basura al pobre. R."
+    ]
+  ],
+  "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nDe la salida del sol hasta su ocaso,\nalabado sea el nombre del Señor.\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos. R.\n\n¿Quién como el Señor, Dios nuestro,\nque se abaja para mirar al cielo y a la tierra?\nLevanta del polvo al desvalido,\nalza de la basura al pobre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 23 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 112 1 2 3 4 5a y 6 7 r 2 semana 23 semana xxiii sabado 23 xxiii r bendito sea el nombre del senor ahora y por siempre r aleluya alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se abaja para mirar al cielo y a la tierra levanta del polvo al desvalido alza de la basura al pobre r",
+  "lizq": [
+    {
+      "line": "R. Bendito sea el nombre del Señor, ahora y por siempre.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabad, siervos del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabad el nombre del Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Bendito sea el nombre del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ahora y por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "De la salida del sol hasta su ocaso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabado sea el nombre del Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor se eleva sobre todos los pueblos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su gloria sobre los cielos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Quién como el Señor, Dios nuestro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que se abaja para mirar al cielo y a la tierra?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Levanta del polvo al desvalido,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alza de la basura al pobre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

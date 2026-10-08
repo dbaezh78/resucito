@@ -8,17 +8,37 @@
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 524,
-  "respuesta": "R. Caminaré en presencia del Señor",
-  "respuestaOpcional": "",
+  "respuesta": "R. Caminaré en presencia del Señor en el país de la vida.",
+  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
-    "en el país de la vida.",
-    "R. Aleluya.",
-    "Amo al Señor, porque escucha\nmi voz suplicante,\nporque inclina su oído hacia mí\nel día que lo invoco. R.",
-    "Me envolvían redes de muerte,\nme alcanzaron los lazos del abismo,\ncaí en tristeza y angustia.\nInvoqué el nombre el Señor,\n«Señor, salva mi vida». R.",
-    "El Señor es benigno y justo,\nnuestro Dios es compasivo;\nel Señor guarda a los sencillos:\nestando yo sin fuerzas, me salvó R.",
-    "Arrancó mi alma de la muerte,\nmis ojos de las lágrimas,\nmis pies de la caída.\nCaminaré en presencia del Señor\nen el país de la vida. R."
+    [
+      "Amo al Señor, porque escucha",
+      "mi voz suplicante,",
+      "porque inclina su oído hacia mí",
+      "el día que lo invoco. R."
+    ],
+    [
+      "Me envolvían redes de muerte,",
+      "me alcanzaron los lazos del abismo,",
+      "caí en tristeza y angustia.",
+      "Invoqué el nombre el Señor,",
+      "«Señor, salva mi vida». R."
+    ],
+    [
+      "El Señor es benigno y justo,",
+      "nuestro Dios es compasivo;",
+      "el Señor guarda a los sencillos:",
+      "estando yo sin fuerzas, me salvó R."
+    ],
+    [
+      "Arrancó mi alma de la muerte,",
+      "mis ojos de las lágrimas,",
+      "mis pies de la caída.",
+      "Caminaré en presencia del Señor",
+      "en el país de la vida. R."
+    ]
   ],
-  "textoCompleto": "en el país de la vida.\n\nR. Aleluya.\n\nAmo al Señor, porque escucha\nmi voz suplicante,\nporque inclina su oído hacia mí\nel día que lo invoco. R.\n\nMe envolvían redes de muerte,\nme alcanzaron los lazos del abismo,\ncaí en tristeza y angustia.\nInvoqué el nombre el Señor,\n«Señor, salva mi vida». R.\n\nEl Señor es benigno y justo,\nnuestro Dios es compasivo;\nel Señor guarda a los sencillos:\nestando yo sin fuerzas, me salvó R.\n\nArrancó mi alma de la muerte,\nmis ojos de las lágrimas,\nmis pies de la caída.\nCaminaré en presencia del Señor\nen el país de la vida. R.",
+  "textoCompleto": "Amo al Señor, porque escucha\nmi voz suplicante,\nporque inclina su oído hacia mí\nel día que lo invoco. R.\n\nMe envolvían redes de muerte,\nme alcanzaron los lazos del abismo,\ncaí en tristeza y angustia.\nInvoqué el nombre el Señor,\n«Señor, salva mi vida». R.\n\nEl Señor es benigno y justo,\nnuestro Dios es compasivo;\nel Señor guarda a los sencillos:\nestando yo sin fuerzas, me salvó R.\n\nArrancó mi alma de la muerte,\nmis ojos de las lágrimas,\nmis pies de la caída.\nCaminaré en presencia del Señor\nen el país de la vida. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -27,112 +47,111 @@
   "lizq": [
     {
       "line": "R. Caminaré en presencia del Señor",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "en el país de la vida.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Amo al Señor, porque escucha",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "mi voz suplicante,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "porque inclina su oído hacia mí",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el día que lo invoco. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Me envolvían redes de muerte,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "me alcanzaron los lazos del abismo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "caí en tristeza y angustia.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Invoqué el nombre el Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "«Señor, salva mi vida». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es benigno y justo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "nuestro Dios es compasivo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "el Señor guarda a los sencillos:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "estando yo sin fuerzas, me salvó R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Arrancó mi alma de la muerte,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "mis ojos de las lágrimas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "mis pies de la caída.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Caminaré en presencia del Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "en el país de la vida. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

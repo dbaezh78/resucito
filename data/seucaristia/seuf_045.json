@@ -1,0 +1,138 @@
+{
+  "id": "seuf_045",
+  "title": "Martes de la 1ª semana de Cuaresma",
+  "celebracion": "Martes de la 1ª semana de Cuaresma",
+  "subtitle": "Salmo 33, 4-5. 6-7. 16-17. 18-19 (R.: 18b)",
+  "salmo": "Salmo 33, 4-5. 6-7. 16-17. 18-19 (R.: 18b)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Cuaresma",
+  "dia": "Martes",
+  "orden": 312,
+  "respuesta": "R. El Señor libra de sus angustias a los justos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Proclamad conmigo la grandeza del Señor,",
+      "ensalcemos juntos su nombre.",
+      "Yo consulté al Señor, y me respondió,",
+      "me libró de todas mis ansias. R."
+    ],
+    [
+      "Contempladlo, y quedaréis radiantes,",
+      "vuestro rostro no se avergonzará.",
+      "Si el afligido invoca al Señor, él lo escucha",
+      "y lo salva de sus angustias. R."
+    ],
+    [
+      "Los ojos del Señor miran a los justos,",
+      "sus oídos escuchan sus gritos;",
+      "pero el Señor se enfrenta con los malhechores,",
+      "para borrar de la tierra su memoria. R."
+    ],
+    [
+      "Cuando uno grita, el Señor lo escucha",
+      "y lo libra de sus angustias;",
+      "el Señor está cerca de los atribulados,",
+      "salva a los abatidos. R."
+    ]
+  ],
+  "textoCompleto": "Proclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nLos ojos del Señor miran a los justos,\nsus oídos escuchan sus gritos;\npero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria. R.\n\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias;\nel Señor está cerca de los atribulados,\nsalva a los abatidos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 1 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma martes salmo 33 4 5 6 7 16 17 18 19 r 18b semana 1 semana i martes feria r el senor libra de sus angustias a los justos proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r los ojos del senor miran a los justos sus oidos escuchan sus gritos pero el senor se enfrenta con los malhechores para borrar de la tierra su memoria r cuando uno grita el senor lo escucha y lo libra de sus angustias el senor esta cerca de los atribulados salva a los abatidos r",
+  "lizq": [
+    {
+      "line": "R. El Señor libra de sus angustias a los justos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Proclamad conmigo la grandeza del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ensalcemos juntos su nombre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Yo consulté al Señor, y me respondió,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me libró de todas mis ansias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Contempladlo, y quedaréis radiantes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "vuestro rostro no se avergonzará.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Si el afligido invoca al Señor, él lo escucha",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y lo salva de sus angustias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los ojos del Señor miran a los justos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sus oídos escuchan sus gritos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el Señor se enfrenta con los malhechores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para borrar de la tierra su memoria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuando uno grita, el Señor lo escucha",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y lo libra de sus angustias;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor está cerca de los atribulados,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "salva a los abatidos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "seup_115",
+  "title": "Lunes de la 20ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 20ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Deuteronomio 32, 18-19. 20. 21 (R.: 18a)",
+  "salmo": "Interleccional: Deuteronomio 32, 18-19. 20. 21 (R.: 18a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5201,
+  "respuesta": "R. Despreciaste a la Roca que te engendró.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Despreciaste a la Roca que te engendró,",
+      "y olvidaste al Dios que te dio a luz.",
+      "Lo vio el Señor, e irritado",
+      "rechazó a sus hijos e hijas. R."
+    ],
+    [
+      "Pensando: «Les esconderé mi rostro",
+      "y veré en qué acaban,",
+      "porque son una generación depravada,",
+      "unos hijos desleales». R."
+    ],
+    [
+      "«Ellos me han dado celos con un dios ilusorio,",
+      "me han irritado con ídolos vacíos;",
+      "pues yo les daré celos con un pueblo ilusorio,",
+      "los irritaré con una nación fatua». R."
+    ]
+  ],
+  "textoCompleto": "Despreciaste a la Roca que te engendró,\ny olvidaste al Dios que te dio a luz.\nLo vio el Señor, e irritado\nrechazó a sus hijos e hijas. R.\n\nPensando: «Les esconderé mi rostro\ny veré en qué acaban,\nporque son una generación depravada,\nunos hijos desleales». R.\n\n«Ellos me han dado celos con un dios ilusorio,\nme han irritado con ídolos vacíos;\npues yo les daré celos con un pueblo ilusorio,\nlos irritaré con una nación fatua». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 20 semana de tiempo ordinario ano par tiempo ordinario lunes interleccional deuteronomio 32 18 19 20 21 r 18a semana 20 semana xx lunes 20 xx r despreciaste a la roca que te engendro despreciaste a la roca que te engendro y olvidaste al dios que te dio a luz lo vio el senor e irritado rechazo a sus hijos e hijas r pensando les escondere mi rostro y vere en que acaban porque son una generacion depravada unos hijos desleales r ellos me han dado celos con un dios ilusorio me han irritado con idolos vacios pues yo les dare celos con un pueblo ilusorio los irritare con una nacion fatua r",
+  "lizq": [
+    {
+      "line": "R. Despreciaste a la Roca que te engendró.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Despreciaste a la Roca que te engendró,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y olvidaste al Dios que te dio a luz.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Lo vio el Señor, e irritado",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "rechazó a sus hijos e hijas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pensando: «Les esconderé mi rostro",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y veré en qué acaban,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque son una generación depravada,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "unos hijos desleales». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Ellos me han dado celos con un dios ilusorio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "me han irritado con ídolos vacíos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pues yo les daré celos con un pueblo ilusorio,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los irritaré con una nación fatua». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

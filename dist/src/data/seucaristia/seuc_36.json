@@ -1,0 +1,129 @@
+{
+  "id": "seuc_36",
+  "title": "Segundo domingo de Pascua",
+  "celebracion": "Segundo domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 117, 2-4. 22-24. 25-27a (R.: 1)",
+  "salmo": "Salmo responsorial: Salmo 117, 2-4. 22-24. 25-27a (R.: 1)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Dad gracias al Señor porque es bueno, porque es eterna su misericordia.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Diga la casa de Israel:",
+      "eterna es su misericordia.",
+      "Diga la casa de Aarón:",
+      "eterna es su misericordia.",
+      "Digan los fieles del Señor:",
+      "eterna es su misericordia. R."
+    ],
+    [
+      "La piedra que desecharon los arquitectos",
+      "es ahora la piedra angular.",
+      "Es el Señor quien lo ha hecho, ha sido un milagro patente.",
+      "Éste es el día en que actuó el Señor:",
+      "sea nuestra alegría y nuestro gozo. R."
+    ],
+    [
+      "Señor, danos la salvación;",
+      "Señor, danos prosperidad.",
+      "Bendito el que viene en nombre del Señor,",
+      "os bendecimos desde la casa del Señor;",
+      "el Señor es Dios, él nos ilumina. R."
+    ]
+  ],
+  "textoCompleto": "Diga la casa de Israel:\neterna es su misericordia.\nDiga la casa de Aarón:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.\n\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho, ha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R.\n\nSeñor, danos la salvación;\nSeñor, danos prosperidad.\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor;\nel Señor es Dios, él nos ilumina. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "segundo domingo de pascua ciclo c pascua domingo salmo responsorial salmo 117 2 4 22 24 25 27a r 1 r dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia diga la casa de aaron eterna es su misericordia digan los fieles del senor eterna es su misericordia r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r senor danos la salvacion senor danos prosperidad bendito el que viene en nombre del senor os bendecimos desde la casa del senor el senor es dios el nos ilumina r",
+  "lizq": [
+    {
+      "line": "R. Dad gracias al Señor porque es bueno,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Diga la casa de Israel:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "eterna es su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Diga la casa de Aarón:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "eterna es su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Digan los fieles del Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "eterna es su misericordia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La piedra que desecharon los arquitectos",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Es el Señor quien lo ha hecho, ha sido un milagro patente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Éste es el día en que actuó el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sea nuestra alegría y nuestro gozo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, danos la salvación;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Señor, danos prosperidad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Bendito el que viene en nombre del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "os bendecimos desde la casa del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor es Dios, él nos ilumina. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

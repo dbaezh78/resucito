@@ -1,0 +1,106 @@
+{
+  "id": "seui_099",
+  "title": "Miércoles de la 17ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 17ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 98, 5. 6. 7. 9 (R.: cf. 9c)",
+  "salmo": "Salmo responsorial: Salmo 98, 5. 6. 7. 9 (R.: cf. 9c)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5173,
+  "respuesta": "R. Santo eres, Señor, Dios nuestro.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Ensalzad al Señor, Dios nuestro,",
+      "postraos ante el estrado de sus pies:",
+      "Él es santo. R."
+    ],
+    [
+      "Moisés y Aarón con sus sacerdotes,",
+      "Samuel con los que invocan su nombre,",
+      "invocaban al Señor, y él respondía. R."
+    ],
+    [
+      "Dios les hablaba desde la columna de nube;",
+      "oyeron sus mandatos y la ley que les dio. R."
+    ],
+    [
+      "Ensalzad al Señor, Dios nuestro;",
+      "postraos ante su monte santo:",
+      "Santo es el Señor, nuestro Dios. R."
+    ]
+  ],
+  "textoCompleto": "Ensalzad al Señor, Dios nuestro,\npostraos ante el estrado de sus pies:\nÉl es santo. R.\n\nMoisés y Aarón con sus sacerdotes,\nSamuel con los que invocan su nombre,\ninvocaban al Señor, y él respondía. R.\n\nDios les hablaba desde la columna de nube;\noyeron sus mandatos y la ley que les dio. R.\n\nEnsalzad al Señor, Dios nuestro;\npostraos ante su monte santo:\nSanto es el Señor, nuestro Dios. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 17 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 98 5 6 7 9 r cf 9c semana 17 semana xvii miercoles 17 xvii r santo eres senor dios nuestro ensalzad al senor dios nuestro postraos ante el estrado de sus pies el es santo r moises y aaron con sus sacerdotes samuel con los que invocan su nombre invocaban al senor y el respondia r dios les hablaba desde la columna de nube oyeron sus mandatos y la ley que les dio r ensalzad al senor dios nuestro postraos ante su monte santo santo es el senor nuestro dios r",
+  "lizq": [
+    {
+      "line": "R. Santo eres, Señor, Dios nuestro.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ensalzad al Señor, Dios nuestro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "postraos ante el estrado de sus pies:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él es santo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Moisés y Aarón con sus sacerdotes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Samuel con los que invocan su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "invocaban al Señor, y él respondía. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios les hablaba desde la columna de nube;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "oyeron sus mandatos y la ley que les dio. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ensalzad al Señor, Dios nuestro;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "postraos ante su monte santo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Santo es el Señor, nuestro Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

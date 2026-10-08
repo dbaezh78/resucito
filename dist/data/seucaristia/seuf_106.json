@@ -1,0 +1,119 @@
+{
+  "id": "seuf_106",
+  "title": "Martes de la quinta semana de Pascua",
+  "celebracion": "Martes de la quinta semana de Pascua",
+  "subtitle": "Salmo 144, 10-11. 12-13ab. 21 (R.: cf. 11)",
+  "salmo": "Salmo 144, 10-11. 12-13ab. 21 (R.: cf. 11)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Martes",
+  "orden": 452,
+  "respuesta": "R. Que tus fieles, Señor, proclamen la gloria de tu reinado.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ],
+    [
+      "Explicando tus hazañas a los hombres,",
+      "la gloria y majestad de tu reinado.",
+      "Tu reinado es un reinado perpetuo,",
+      "tu gobierno va de edad en edad. R."
+    ],
+    [
+      "Pronuncie mi boca la alabanza del Señor,",
+      "todo viviente bendiga su santo nombre",
+      "por siempre jamás. R."
+    ]
+  ],
+  "textoCompleto": "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nExplicando tus hazañas a los hombres,\nla gloria y majestad de tu reinado.\nTu reinado es un reinado perpetuo,\ntu gobierno va de edad en edad. R.\n\nPronuncie mi boca la alabanza del Señor,\ntodo viviente bendiga su santo nombre\npor siempre jamás. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la quinta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 144 10 11 12 13ab 21 r cf 11 semana 5 semana v martes feria r que tus fieles senor proclamen la gloria de tu reinado r aleluya que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r explicando tus hazanas a los hombres la gloria y majestad de tu reinado tu reinado es un reinado perpetuo tu gobierno va de edad en edad r pronuncie mi boca la alabanza del senor todo viviente bendiga su santo nombre por siempre jamas r",
+  "lizq": [
+    {
+      "line": "R. Que tus fieles, Señor, proclamen la gloria de tu reinado.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que todas tus criaturas te den gracias, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que te bendigan tus fieles;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que proclamen la gloria de tu reinado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hablen de tus hazañas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Explicando tus hazañas a los hombres,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la gloria y majestad de tu reinado.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tu reinado es un reinado perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu gobierno va de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pronuncie mi boca la alabanza del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "todo viviente bendiga su santo nombre",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por siempre jamás. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

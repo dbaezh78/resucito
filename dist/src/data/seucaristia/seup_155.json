@@ -1,0 +1,141 @@
+{
+  "id": "seup_155",
+  "title": "Viernes de la 26ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 26ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 138, 1-3, 7-8. 9-10. 13-14ab (R.: 24b)",
+  "salmo": "Salmo responsorial: Salmo 138, 1-3, 7-8. 9-10. 13-14ab (R.: 24b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5265,
+  "respuesta": "R. Guíame, Señor, por el camino eterno.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, tú me sondeas y me conoces;",
+      "me conoces cuando me siento o me levanto,",
+      "de lejos penetras mis pensamientos;",
+      "distingues mi camino y mi descanso,",
+      "todas mis sendas te son familiares. R."
+    ],
+    [
+      "¿Adónde iré lejos de tu aliento,",
+      "adónde escaparé de tu mirada?",
+      "Si escalo el cielo, allí estás tú;",
+      "si me acuesto en el abismo, allí te encuentro. R."
+    ],
+    [
+      "Si vuelo hasta el margen de la aurora,",
+      "si emigro hasta el confín del mar,",
+      "allí me alcanzará tu izquierda,",
+      "me agarrará tu derecha. R."
+    ],
+    [
+      "Tú has creado mis entrañas,",
+      "me has tejido en el seno materno.",
+      "Te doy gracias,",
+      "porque me has escogido portentosamente,",
+      "porque son admirables tus obras. R."
+    ]
+  ],
+  "textoCompleto": "Señor, tú me sondeas y me conoces;\nme conoces cuando me siento o me levanto,\nde lejos penetras mis pensamientos;\ndistingues mi camino y mi descanso,\ntodas mis sendas te son familiares. R.\n\n¿Adónde iré lejos de tu aliento,\nadónde escaparé de tu mirada?\nSi escalo el cielo, allí estás tú;\nsi me acuesto en el abismo, allí te encuentro. R.\n\nSi vuelo hasta el margen de la aurora,\nsi emigro hasta el confín del mar,\nallí me alcanzará tu izquierda,\nme agarrará tu derecha. R.\n\nTú has creado mis entrañas,\nme has tejido en el seno materno.\nTe doy gracias,\nporque me has escogido portentosamente,\nporque son admirables tus obras. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 26 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 138 1 3 7 8 9 10 13 14ab r 24b semana 26 semana xxvi viernes 26 xxvi r guiame senor por el camino eterno senor tu me sondeas y me conoces me conoces cuando me siento o me levanto de lejos penetras mis pensamientos distingues mi camino y mi descanso todas mis sendas te son familiares r adonde ire lejos de tu aliento adonde escapare de tu mirada si escalo el cielo alli estas tu si me acuesto en el abismo alli te encuentro r si vuelo hasta el margen de la aurora si emigro hasta el confin del mar alli me alcanzara tu izquierda me agarrara tu derecha r tu has creado mis entranas me has tejido en el seno materno te doy gracias porque me has escogido portentosamente porque son admirables tus obras r",
+  "lizq": [
+    {
+      "line": "R. Guíame, Señor, por el camino eterno.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, tú me sondeas y me conoces;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "me conoces cuando me siento o me levanto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de lejos penetras mis pensamientos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "distingues mi camino y mi descanso,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "todas mis sendas te son familiares. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Adónde iré lejos de tu aliento,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "adónde escaparé de tu mirada?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Si escalo el cielo, allí estás tú;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "si me acuesto en el abismo, allí te encuentro. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Si vuelo hasta el margen de la aurora,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "si emigro hasta el confín del mar,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "allí me alcanzará tu izquierda,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me agarrará tu derecha. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú has creado mis entrañas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "me has tejido en el seno materno.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Te doy gracias,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque me has escogido portentosamente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque son admirables tus obras. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

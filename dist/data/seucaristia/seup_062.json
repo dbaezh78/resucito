@@ -1,0 +1,110 @@
+{
+  "id": "seup_062",
+  "title": "Martes de la 11ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 11ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 11 y 16 (R.: cf. 3a)",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 11 y 16 (R.: cf. 3a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5112,
+  "respuesta": "R. Misericordia, Señor: hemos pecado.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa;",
+      "lava del todo mi delito,",
+      "limpia mi pecado. R."
+    ],
+    [
+      "Pues yo reconozco mi culpa,",
+      "tengo siempre presente mi pecado:",
+      "contra ti, contra ti solo pequé,",
+      "cometí la maldad que aborreces. R."
+    ],
+    [
+      "Aparta de mi pecado tu vista,",
+      "borra en mí toda culpa.",
+      "Líbrame de la sangre, oh Dios,",
+      "Dios, Salvador mío,",
+      "y cantará mi lengua tu justicia. R."
+    ]
+  ],
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nAparta de mi pecado tu vista,\nborra en mí toda culpa.\nLíbrame de la sangre, oh Dios,\nDios, Salvador mío,\ny cantará mi lengua tu justicia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 11 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 50 3 4 5 6a 11 y 16 r cf 3a semana 11 semana xi martes 11 xi r misericordia senor hemos pecado misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r aparta de mi pecado tu vista borra en mi toda culpa librame de la sangre oh dios dios salvador mio y cantara mi lengua tu justicia r",
+  "lizq": [
+    {
+      "line": "R. Misericordia, Señor: hemos pecado.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Misericordia, Dios mío, por tu bondad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por tu inmensa compasión borra mi culpa;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lava del todo mi delito,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "limpia mi pecado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pues yo reconozco mi culpa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tengo siempre presente mi pecado:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "contra ti, contra ti solo pequé,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cometí la maldad que aborreces. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Aparta de mi pecado tu vista,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "borra en mí toda culpa.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Líbrame de la sangre, oh Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios, Salvador mío,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y cantará mi lengua tu justicia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

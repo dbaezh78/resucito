@@ -1,0 +1,104 @@
+{
+  "id": "seui_042",
+  "title": "Sábado de la 7ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 7ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 102, 13-14. 15-16. 17-18a (R.: cf. 17)",
+  "salmo": "Salmo responsorial: Salmo 102, 13-14. 15-16. 17-18a (R.: cf. 17)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5076,
+  "respuesta": "R. La misericordia del Señor dura siempre, para los que cumplen sus mandatos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Como un padre siente ternura por sus hijos,",
+      "siente el Señor ternura por sus fieles;",
+      "porque él conoce nuestra masa,",
+      "se acuerda de que somos de barro. R."
+    ],
+    [
+      "Los días del hombre duran lo que la hierba,",
+      "florecen como flor del campo,",
+      "que el viento la roza, y ya no existe,",
+      "su terreno no volverá a verla. R."
+    ],
+    [
+      "Pero la misericordia del Señor dura siempre,",
+      "su justicia pasa de hijos a nietos:",
+      "para los que guardan la alianza. R."
+    ]
+  ],
+  "textoCompleto": "Como un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles;\nporque él conoce nuestra masa,\nse acuerda de que somos de barro. R.\n\nLos días del hombre duran lo que la hierba,\nflorecen como flor del campo,\nque el viento la roza, y ya no existe,\nsu terreno no volverá a verla. R.\n\nPero la misericordia del Señor dura siempre,\nsu justicia pasa de hijos a nietos:\npara los que guardan la alianza. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 7 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 102 13 14 15 16 17 18a r cf 17 semana 7 semana vii sabado 7 vii r la misericordia del senor dura siempre para los que cumplen sus mandatos como un padre siente ternura por sus hijos siente el senor ternura por sus fieles porque el conoce nuestra masa se acuerda de que somos de barro r los dias del hombre duran lo que la hierba florecen como flor del campo que el viento la roza y ya no existe su terreno no volvera a verla r pero la misericordia del senor dura siempre su justicia pasa de hijos a nietos para los que guardan la alianza r",
+  "lizq": [
+    {
+      "line": "R. La misericordia del Señor dura siempre,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "para los que cumplen sus mandatos.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Como un padre siente ternura por sus hijos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "siente el Señor ternura por sus fieles;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque él conoce nuestra masa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se acuerda de que somos de barro. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los días del hombre duran lo que la hierba,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "florecen como flor del campo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que el viento la roza, y ya no existe,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su terreno no volverá a verla. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero la misericordia del Señor dura siempre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su justicia pasa de hijos a nietos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para los que guardan la alianza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

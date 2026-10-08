@@ -1,0 +1,84 @@
+{
+  "id": "seup_123",
+  "title": "Miércoles de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 4-5 (R.: cf. 1a)",
+  "salmo": "Salmo responsorial: Salmo 127, 1-2. 4-5 (R.: cf. 1a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5213,
+  "respuesta": "R. Dichosos los que temen al Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el que teme al Señor",
+      "y sigue sus caminos.",
+      "Comerás del fruto de tu trabajo,",
+      "serás dichoso, te irá bien. R."
+    ],
+    [
+      "Ésta es la bendición del hombre",
+      "que teme al Señor.",
+      "Que el Señor te bendiga desde Sión,",
+      "que veas la prosperidad de Jerusalén",
+      "todos los días de tu vida. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 21 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 127 1 2 4 5 r cf 1a semana 21 semana xxi miercoles 21 xxi r dichosos los que temen al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
+  "lizq": [
+    {
+      "line": "R. Dichosos los que temen al Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el que teme al Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y sigue sus caminos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Comerás del fruto de tu trabajo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "serás dichoso, te irá bien. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ésta es la bendición del hombre",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que teme al Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor te bendiga desde Sión,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que veas la prosperidad de Jerusalén",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "todos los días de tu vida. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "seui_054",
+  "title": "Sábado de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 9ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Tobías 13, 2. 6. 7. 8 (R.: 2a)",
+  "salmo": "Interleccional: Tobías 13, 2. 6. 7. 8 (R.: 2a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5096,
+  "respuesta": "R. Bendito sea Dios, que vive eternamente",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Él azota y se compadece,",
+      "hunde hasta el abismo y saca de él,",
+      "y no hay quien escape de su mano. R."
+    ],
+    [
+      "Veréis lo que hará con vosotros,",
+      "le daréis gracias a boca llena,",
+      "bendeciréis al Señor de la justicia",
+      "y ensalzaréis al Rey de los siglos. R."
+    ],
+    [
+      "Yo le doy gracias en mi cautiverio,",
+      "anuncio su grandeza y su poder",
+      "a un pueblo pecador. R."
+    ],
+    [
+      "Convertíos, pecadores,",
+      "obrad rectamente en su presencia:",
+      "quizá os mostrará benevolencia",
+      "y tendrá compasión. R."
+    ]
+  ],
+  "textoCompleto": "Él azota y se compadece,\nhunde hasta el abismo y saca de él,\ny no hay quien escape de su mano. R.\n\nVeréis lo que hará con vosotros,\nle daréis gracias a boca llena,\nbendeciréis al Señor de la justicia\ny ensalzaréis al Rey de los siglos. R.\n\nYo le doy gracias en mi cautiverio,\nanuncio su grandeza y su poder\na un pueblo pecador. R.\n\nConvertíos, pecadores,\nobrad rectamente en su presencia:\nquizá os mostrará benevolencia\ny tendrá compasión. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 9 semana de tiempo ordinario ano impar tiempo ordinario sabado interleccional tobias 13 2 6 7 8 r 2a semana 9 semana ix sabado 9 ix r bendito sea dios que vive eternamente el azota y se compadece hunde hasta el abismo y saca de el y no hay quien escape de su mano r vereis lo que hara con vosotros le dareis gracias a boca llena bendecireis al senor de la justicia y ensalzareis al rey de los siglos r yo le doy gracias en mi cautiverio anuncio su grandeza y su poder a un pueblo pecador r convertios pecadores obrad rectamente en su presencia quiza os mostrara benevolencia y tendra compasion r",
+  "lizq": [
+    {
+      "line": "R. Bendito sea Dios, que vive eternamente",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él azota y se compadece,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "hunde hasta el abismo y saca de él,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no hay quien escape de su mano. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Veréis lo que hará con vosotros,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "le daréis gracias a boca llena,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "bendeciréis al Señor de la justicia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y ensalzaréis al Rey de los siglos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Yo le doy gracias en mi cautiverio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "anuncio su grandeza y su poder",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a un pueblo pecador. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Convertíos, pecadores,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "obrad rectamente en su presencia:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "quizá os mostrará benevolencia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y tendrá compasión. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

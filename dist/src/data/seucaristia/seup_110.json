@@ -1,0 +1,123 @@
+{
+  "id": "seup_110",
+  "title": "Martes de la 19ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 19ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 14. 24. 72. 103. 111. 131 (R.: 103a)",
+  "salmo": "Salmo responsorial: Salmo 118, 14. 24. 72. 103. 111. 131 (R.: 103a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5192,
+  "respuesta": "R. ¡Qué dulce al paladar tu promesa, Señor!",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Mi alegría es el camino de tus preceptos,",
+      "más que todas las riquezas. R."
+    ],
+    [
+      "Tus preceptos son mi delicia,",
+      "tus decretos son mis consejeros. R."
+    ],
+    [
+      "Más estimo yo los preceptos de tu boca",
+      "que miles de monedas de oro y plata. R."
+    ],
+    [
+      "¡Qué dulce al paladar tu promesa:",
+      "más que miel en la boca! R."
+    ],
+    [
+      "Tus preceptos son mi herencia perpetua,",
+      "la alegría de mi corazón. R."
+    ],
+    [
+      "Abro la boca y respiro,",
+      "ansiando tus mandamientos. R."
+    ]
+  ],
+  "textoCompleto": "Mi alegría es el camino de tus preceptos,\nmás que todas las riquezas. R.\n\nTus preceptos son mi delicia,\ntus decretos son mis consejeros. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\n¡Qué dulce al paladar tu promesa:\nmás que miel en la boca! R.\n\nTus preceptos son mi herencia perpetua,\nla alegría de mi corazón. R.\n\nAbro la boca y respiro,\nansiando tus mandamientos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 19 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 118 14 24 72 103 111 131 r 103a semana 19 semana xix martes 19 xix r que dulce al paladar tu promesa senor mi alegria es el camino de tus preceptos mas que todas las riquezas r tus preceptos son mi delicia tus decretos son mis consejeros r mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r que dulce al paladar tu promesa mas que miel en la boca r tus preceptos son mi herencia perpetua la alegria de mi corazon r abro la boca y respiro ansiando tus mandamientos r",
+  "lizq": [
+    {
+      "line": "R. ¡Qué dulce al paladar tu promesa, Señor!",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi alegría es el camino de tus preceptos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "más que todas las riquezas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tus preceptos son mi delicia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tus decretos son mis consejeros. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Más estimo yo los preceptos de tu boca",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que miles de monedas de oro y plata. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Qué dulce al paladar tu promesa:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "más que miel en la boca! R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tus preceptos son mi herencia perpetua,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la alegría de mi corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Abro la boca y respiro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ansiando tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

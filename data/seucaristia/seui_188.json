@@ -1,0 +1,105 @@
+{
+  "id": "seui_188",
+  "title": "Martes de la 32ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 32ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 16-17. 18-19 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 33, 2-3. 16-17. 18-19 (R.: 2a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5322,
+  "respuesta": "R. Bendigo al Señor en todo momento.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Bendigo al Señor en todo momento,",
+      "su alabanza está siempre en mi boca;",
+      "mi alma se gloría en el Señor:",
+      "que los humildes lo escuchen y se alegren. R."
+    ],
+    [
+      "Los ojos del Señor miran a los justos,",
+      "sus oídos escuchan sus gritos;",
+      "pero el Señor se enfrenta con los malhechores,",
+      "para borrar de la tierra su memoria. R."
+    ],
+    [
+      "Cuando uno grita, el Señor lo escucha",
+      "y lo libra de sus angustias;",
+      "el Señor está cerca de los atribulados,",
+      "salva a los abatidos. R."
+    ]
+  ],
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nLos ojos del Señor miran a los justos,\nsus oídos escuchan sus gritos;\npero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria. R.\n\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias;\nel Señor está cerca de los atribulados,\nsalva a los abatidos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 32 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 33 2 3 16 17 18 19 r 2a semana 32 semana xxxii martes 32 xxxii r bendigo al senor en todo momento bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r los ojos del senor miran a los justos sus oidos escuchan sus gritos pero el senor se enfrenta con los malhechores para borrar de la tierra su memoria r cuando uno grita el senor lo escucha y lo libra de sus angustias el senor esta cerca de los atribulados salva a los abatidos r",
+  "lizq": [
+    {
+      "line": "R. Bendigo al Señor en todo momento.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendigo al Señor en todo momento,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su alabanza está siempre en mi boca;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi alma se gloría en el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que los humildes lo escuchen y se alegren. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los ojos del Señor miran a los justos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sus oídos escuchan sus gritos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el Señor se enfrenta con los malhechores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para borrar de la tierra su memoria. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuando uno grita, el Señor lo escucha",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y lo libra de sus angustias;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor está cerca de los atribulados,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "salva a los abatidos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

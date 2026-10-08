@@ -1,100 +1,109 @@
 {
   "id": "seub_70",
-  "title": "Que veas a los hijos de tus hijos. - ¡Paz a Israel! R. - Domingo de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Que veas a los hijos de tus hijos. - ¡Paz a Israel! R. - Domingo de la 28ª semana de Tiempo Ordinario",
+  "title": "Domingo de la 28ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 28ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 89, 12-13.14-15. 16-17 (R.: 14)",
   "salmo": "Salmo responsorial: Salmo 89, 12-13.14-15. 16-17 (R.: 14)",
   "ciclo": "Ciclo B",
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 528,
-  "respuesta": "R. Sácianos de tu misericordia, Señor.",
+  "respuesta": "R. Sácianos de tu misericordia, Señor. Y toda nuestra vida será alegría.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Y toda nuestra vida será alegría.",
-    "Enséñanos a calcular nuestros años,\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.",
-    "Por la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nDános alegría, por los días en que nos afligiste,\npor los años en que sufrimos desdichas. R.",
-    "Que tus siervos vean tu acción,\ny sus hijos tu gloria.\nBaje a nosotros la bondad del Señor\ny haga prosperas la obras de nuestras manos. R."
+    [
+      "Enséñanos a calcular nuestros años,",
+      "para que adquiramos un corazón sensato.",
+      "Vuélvete, Señor, ¿hasta cuándo?",
+      "Ten compasión de tus siervos. R."
+    ],
+    [
+      "Por la mañana sácianos de tu misericordia,",
+      "y toda nuestra vida será alegría y júbilo.",
+      "Dános alegría, por los días en que nos afligiste,",
+      "por los años en que sufrimos desdichas. R."
+    ],
+    [
+      "Que tus siervos vean tu acción,",
+      "y sus hijos tu gloria.",
+      "Baje a nosotros la bondad del Señor",
+      "y haga prosperas la obras de nuestras manos. R."
+    ]
   ],
-  "textoCompleto": "Y toda nuestra vida será alegría.\n\nEnséñanos a calcular nuestros años,\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nDános alegría, por los días en que nos afligiste,\npor los años en que sufrimos desdichas. R.\n\nQue tus siervos vean tu acción,\ny sus hijos tu gloria.\nBaje a nosotros la bondad del Señor\ny haga prosperas la obras de nuestras manos. R.",
+  "textoCompleto": "Enséñanos a calcular nuestros años,\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nDános alegría, por los días en que nos afligiste,\npor los años en que sufrimos desdichas. R.\n\nQue tus siervos vean tu acción,\ny sus hijos tu gloria.\nBaje a nosotros la bondad del Señor\ny haga prosperas la obras de nuestras manos. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "que veas a los hijos de tus hijos paz a israel r domingo de la 28 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 89 12 13 14 15 16 17 r 14 r sacianos de tu misericordia senor y toda nuestra vida sera alegria ensenanos a calcular nuestros anos para que adquiramos un corazon sensato vuelvete senor hasta cuando ten compasion de tus siervos r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo danos alegria por los dias en que nos afligiste por los anos en que sufrimos desdichas r que tus siervos vean tu accion y sus hijos tu gloria baje a nosotros la bondad del senor y haga prosperas la obras de nuestras manos r",
+  "searchPool": "domingo de la 28 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 89 12 13 14 15 16 17 r 14 r sacianos de tu misericordia senor y toda nuestra vida sera alegria ensenanos a calcular nuestros anos para que adquiramos un corazon sensato vuelvete senor hasta cuando ten compasion de tus siervos r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo danos alegria por los dias en que nos afligiste por los anos en que sufrimos desdichas r que tus siervos vean tu accion y sus hijos tu gloria baje a nosotros la bondad del senor y haga prosperas la obras de nuestras manos r",
   "lizq": [
     {
       "line": "R. Sácianos de tu misericordia, Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "Y toda nuestra vida será alegría.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Enséñanos a calcular nuestros años,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "para que adquiramos un corazón sensato.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Vuélvete, Señor, ¿hasta cuándo?",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Ten compasión de tus siervos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Por la mañana sácianos de tu misericordia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y toda nuestra vida será alegría y júbilo.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dános alegría, por los días en que nos afligiste,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "por los años en que sufrimos desdichas. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Que tus siervos vean tu acción,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y sus hijos tu gloria.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Baje a nosotros la bondad del Señor",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y haga prosperas la obras de nuestras manos. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

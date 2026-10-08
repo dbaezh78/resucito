@@ -1,0 +1,105 @@
+{
+  "id": "seup_144",
+  "title": "Sábado de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 55, 10. 11-12. 13. 14 (R.: cf. 14c)",
+  "salmo": "Salmo responsorial: Salmo 55, 10. 11-12. 13. 14 (R.: cf. 14c)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5246,
+  "respuesta": "R. Caminaré en presencia de Dios a la luz de la vida.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Que retrocedan mis enemigos cuando te invoco,",
+      "y así sabré que eres mi Dios. R."
+    ],
+    [
+      "En Dios, cuya promesa alabo,",
+      "en el Señor, cuya promesa alabo,",
+      "en Dios confío y no temo;",
+      "¿qué podrá hacerme un hombre? R."
+    ],
+    [
+      "Te debo, Dios mío, los votos que hice,",
+      "los cumpliré con acción de gracias;",
+      "porque libraste mi alma de la muerte,",
+      "mis pies de la caída;",
+      "para que camine en presencia de Dios",
+      "a la luz de la vida. R."
+    ]
+  ],
+  "textoCompleto": "Que retrocedan mis enemigos cuando te invoco,\ny así sabré que eres mi Dios. R.\n\nEn Dios, cuya promesa alabo,\nen el Señor, cuya promesa alabo,\nen Dios confío y no temo;\n¿qué podrá hacerme un hombre? R.\n\nTe debo, Dios mío, los votos que hice,\nlos cumpliré con acción de gracias;\nporque libraste mi alma de la muerte,\nmis pies de la caída;\npara que camine en presencia de Dios\na la luz de la vida. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 24 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 55 10 11 12 13 14 r cf 14c semana 24 semana xxiv sabado 24 xxiv r caminare en presencia de dios a la luz de la vida que retrocedan mis enemigos cuando te invoco y asi sabre que eres mi dios r en dios cuya promesa alabo en el senor cuya promesa alabo en dios confio y no temo que podra hacerme un hombre r te debo dios mio los votos que hice los cumplire con accion de gracias porque libraste mi alma de la muerte mis pies de la caida para que camine en presencia de dios a la luz de la vida r",
+  "lizq": [
+    {
+      "line": "R. Caminaré en presencia de Dios a la luz de la vida.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que retrocedan mis enemigos cuando te invoco,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y así sabré que eres mi Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En Dios, cuya promesa alabo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en el Señor, cuya promesa alabo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en Dios confío y no temo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿qué podrá hacerme un hombre? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te debo, Dios mío, los votos que hice,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los cumpliré con acción de gracias;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque libraste mi alma de la muerte,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mis pies de la caída;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para que camine en presencia de Dios",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a la luz de la vida. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

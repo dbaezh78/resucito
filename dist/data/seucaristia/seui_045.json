@@ -1,0 +1,131 @@
+{
+  "id": "seui_045",
+  "title": "Miércoles de la 8ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 8ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 78, 8. 9. 11. 13 (R.: Si 36, 1b)",
+  "salmo": "Salmo responsorial: Salmo 78, 8. 9. 11. 13 (R.: Si 36, 1b)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "orden": 5083,
+  "respuesta": "R. Muéstranos, Señor la luz de tu misericordia.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "No recuerdes contra nosotros",
+      "las culpas de nuestros padres;",
+      "que tu compasión nos alcance pronto,",
+      "pues estamos agotados. R."
+    ],
+    [
+      "Socórrenos, Dios, salvador nuestro,",
+      "por el honor de tu nombre;",
+      "líbranos y perdona nuestros pecados",
+      "a causa de tu nombre. R."
+    ],
+    [
+      "Llegue a tu presencia el gemido del cautivo:",
+      "con tu brazo poderoso,",
+      "salva a los condenados a muerte. R."
+    ],
+    [
+      "Mientras, nosotros, pueblo tuyo,",
+      "ovejas de tu rebaño,",
+      "te daremos gracias siempre,",
+      "contaremos tus alabanzas",
+      "de generación en generación. R."
+    ]
+  ],
+  "textoCompleto": "No recuerdes contra nosotros\nlas culpas de nuestros padres;\nque tu compasión nos alcance pronto,\npues estamos agotados. R.\n\nSocórrenos, Dios, salvador nuestro,\npor el honor de tu nombre;\nlíbranos y perdona nuestros pecados\na causa de tu nombre. R.\n\nLlegue a tu presencia el gemido del cautivo:\ncon tu brazo poderoso,\nsalva a los condenados a muerte. R.\n\nMientras, nosotros, pueblo tuyo,\novejas de tu rebaño,\nte daremos gracias siempre,\ncontaremos tus alabanzas\nde generación en generación. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 8 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 78 8 9 11 13 r si 36 1b semana 8 semana viii miercoles 8 viii r muestranos senor la luz de tu misericordia no recuerdes contra nosotros las culpas de nuestros padres que tu compasion nos alcance pronto pues estamos agotados r socorrenos dios salvador nuestro por el honor de tu nombre libranos y perdona nuestros pecados a causa de tu nombre r llegue a tu presencia el gemido del cautivo con tu brazo poderoso salva a los condenados a muerte r mientras nosotros pueblo tuyo ovejas de tu rebano te daremos gracias siempre contaremos tus alabanzas de generacion en generacion r",
+  "lizq": [
+    {
+      "line": "R. Muéstranos, Señor la luz de tu misericordia.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No recuerdes contra nosotros",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "las culpas de nuestros padres;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tu compasión nos alcance pronto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pues estamos agotados. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Socórrenos, Dios, salvador nuestro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por el honor de tu nombre;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "líbranos y perdona nuestros pecados",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a causa de tu nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Llegue a tu presencia el gemido del cautivo:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "con tu brazo poderoso,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "salva a los condenados a muerte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mientras, nosotros, pueblo tuyo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ovejas de tu rebaño,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "te daremos gracias siempre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "contaremos tus alabanzas",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de generación en generación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

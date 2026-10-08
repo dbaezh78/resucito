@@ -1,0 +1,120 @@
+{
+  "id": "seup_038",
+  "title": "Martes de la 7ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 7ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 54, 7-8. 9-10a. 10b-11a. 23 (R.: 23a)",
+  "salmo": "Salmo responsorial: Salmo 54, 7-8. 9-10a. 10b-11a. 23 (R.: 23a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5072,
+  "respuesta": "R. Encomienda a Dios tus afanes, que él te sustentará.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Pienso: «¡Quién me diera alas de paloma",
+      "para volar y posarme!",
+      "Emigraría lejos,",
+      "habitaría en el desierto». R."
+    ],
+    [
+      "«Me pondría en seguida a salvo de la tormenta,",
+      "del huracán que devora, Señor;",
+      "del torrente de sus lenguas». R."
+    ],
+    [
+      "Violencia y discordia veo en la ciudad:",
+      "día y noche hacen la ronda",
+      "sobre sus murallas. R."
+    ],
+    [
+      "Encomienda a Dios tus afanes,",
+      "que él te sustentará;",
+      "no permitirá jamás que el justo caiga. R."
+    ]
+  ],
+  "textoCompleto": "Pienso: «¡Quién me diera alas de paloma\npara volar y posarme!\nEmigraría lejos,\nhabitaría en el desierto». R.\n\n«Me pondría en seguida a salvo de la tormenta,\ndel huracán que devora, Señor;\ndel torrente de sus lenguas». R.\n\nViolencia y discordia veo en la ciudad:\ndía y noche hacen la ronda\nsobre sus murallas. R.\n\nEncomienda a Dios tus afanes,\nque él te sustentará;\nno permitirá jamás que el justo caiga. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 7 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 54 7 8 9 10a 10b 11a 23 r 23a semana 7 semana vii martes 7 vii r encomienda a dios tus afanes que el te sustentara pienso quien me diera alas de paloma para volar y posarme emigraria lejos habitaria en el desierto r me pondria en seguida a salvo de la tormenta del huracan que devora senor del torrente de sus lenguas r violencia y discordia veo en la ciudad dia y noche hacen la ronda sobre sus murallas r encomienda a dios tus afanes que el te sustentara no permitira jamas que el justo caiga r",
+  "lizq": [
+    {
+      "line": "R. Encomienda a Dios tus afanes,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "que él te sustentará.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pienso: «¡Quién me diera alas de paloma",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para volar y posarme!",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Emigraría lejos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "habitaría en el desierto». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Me pondría en seguida a salvo de la tormenta,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "del huracán que devora, Señor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "del torrente de sus lenguas». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Violencia y discordia veo en la ciudad:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "día y noche hacen la ronda",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sobre sus murallas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Encomienda a Dios tus afanes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que él te sustentará;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no permitirá jamás que el justo caiga. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

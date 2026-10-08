@@ -1,0 +1,105 @@
+{
+  "id": "seup_004",
+  "title": "Jueves de la 1ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 1ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 43, 10-11. 14-15. 24-25 (R.: 26d)",
+  "salmo": "Salmo responsorial: Salmo 43, 10-11. 14-15. 24-25 (R.: 26d)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5014,
+  "respuesta": "R. Redímenos, Señor, por tu misericordia.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Ahora nos rechazas y nos avergüenzas,",
+      "y ya no sales, Señor, con nuestras tropas:",
+      "nos haces retroceder ante el enemigo,",
+      "y nuestro adversario nos saquea. R."
+    ],
+    [
+      "Nos haces el escarnio de nuestros vecinos,",
+      "irrisión y burla de los que nos rodean.",
+      "Nos has hecho el refrán de los gentiles,",
+      "nos hacen muecas las naciones. R."
+    ],
+    [
+      "Despierta, Señor, ¿por qué duermes?;",
+      "levántate, no nos rechaces más.",
+      "¿Por qué nos escondes tu rostro",
+      "y olvidas nuestra desgracia y opresión? R."
+    ]
+  ],
+  "textoCompleto": "Ahora nos rechazas y nos avergüenzas,\ny ya no sales, Señor, con nuestras tropas:\nnos haces retroceder ante el enemigo,\ny nuestro adversario nos saquea. R.\n\nNos haces el escarnio de nuestros vecinos,\nirrisión y burla de los que nos rodean.\nNos has hecho el refrán de los gentiles,\nnos hacen muecas las naciones. R.\n\nDespierta, Señor, ¿por qué duermes?;\nlevántate, no nos rechaces más.\n¿Por qué nos escondes tu rostro\ny olvidas nuestra desgracia y opresión? R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 1 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 43 10 11 14 15 24 25 r 26d semana 1 semana i jueves 1 i r redimenos senor por tu misericordia ahora nos rechazas y nos averguenzas y ya no sales senor con nuestras tropas nos haces retroceder ante el enemigo y nuestro adversario nos saquea r nos haces el escarnio de nuestros vecinos irrision y burla de los que nos rodean nos has hecho el refran de los gentiles nos hacen muecas las naciones r despierta senor por que duermes levantate no nos rechaces mas por que nos escondes tu rostro y olvidas nuestra desgracia y opresion r",
+  "lizq": [
+    {
+      "line": "R. Redímenos, Señor, por tu misericordia.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ahora nos rechazas y nos avergüenzas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y ya no sales, Señor, con nuestras tropas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "nos haces retroceder ante el enemigo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y nuestro adversario nos saquea. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Nos haces el escarnio de nuestros vecinos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "irrisión y burla de los que nos rodean.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Nos has hecho el refrán de los gentiles,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "nos hacen muecas las naciones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Despierta, Señor, ¿por qué duermes?;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "levántate, no nos rechaces más.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Por qué nos escondes tu rostro",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y olvidas nuestra desgracia y opresión? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

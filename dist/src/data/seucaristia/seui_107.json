@@ -1,0 +1,105 @@
+{
+  "id": "seui_107",
+  "title": "Viernes de la 18ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 18ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 76, 12-13. 14-15. 16 y 21 (R.: 12a)",
+  "salmo": "Salmo responsorial: Salmo 76, 12-13. 14-15. 16 y 21 (R.: 12a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5185,
+  "respuesta": "R. Recuerdo las proezas del Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Recuerdo las proezas del Señor;",
+      "sí, recuerdo tus antiguos portentos,",
+      "medito todas tus obras",
+      "y considero tus hazañas. R."
+    ],
+    [
+      "Dios mío, tus caminos son santos:",
+      "¿qué dios es grande como nuestro Dios?",
+      "Tú, oh Dios, haciendo maravillas,",
+      "mostraste tu poder a los pueblos. R."
+    ],
+    [
+      "Con tu brazo rescataste a tu pueblo,",
+      "a los hijos de Jacob y de José.",
+      "Guiabas a tu pueblo, como a un rebaño,",
+      "por la mano de Moisés y de Aarón. R."
+    ]
+  ],
+  "textoCompleto": "Recuerdo las proezas del Señor;\nsí, recuerdo tus antiguos portentos,\nmedito todas tus obras\ny considero tus hazañas. R.\n\nDios mío, tus caminos son santos:\n¿qué dios es grande como nuestro Dios?\nTú, oh Dios, haciendo maravillas,\nmostraste tu poder a los pueblos. R.\n\nCon tu brazo rescataste a tu pueblo,\na los hijos de Jacob y de José.\nGuiabas a tu pueblo, como a un rebaño,\npor la mano de Moisés y de Aarón. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 18 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 76 12 13 14 15 16 y 21 r 12a semana 18 semana xviii viernes 18 xviii r recuerdo las proezas del senor recuerdo las proezas del senor si recuerdo tus antiguos portentos medito todas tus obras y considero tus hazanas r dios mio tus caminos son santos que dios es grande como nuestro dios tu oh dios haciendo maravillas mostraste tu poder a los pueblos r con tu brazo rescataste a tu pueblo a los hijos de jacob y de jose guiabas a tu pueblo como a un rebano por la mano de moises y de aaron r",
+  "lizq": [
+    {
+      "line": "R. Recuerdo las proezas del Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Recuerdo las proezas del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sí, recuerdo tus antiguos portentos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "medito todas tus obras",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y considero tus hazañas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios mío, tus caminos son santos:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿qué dios es grande como nuestro Dios?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tú, oh Dios, haciendo maravillas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mostraste tu poder a los pueblos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Con tu brazo rescataste a tu pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a los hijos de Jacob y de José.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Guiabas a tu pueblo, como a un rebaño,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por la mano de Moisés y de Aarón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

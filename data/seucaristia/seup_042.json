@@ -1,0 +1,79 @@
+{
+  "id": "seup_042",
+  "title": "Sábado de la 7ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 7ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 140, 1-2. 3 y 8 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 140, 1-2. 3 y 8 (R.: 2a)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "orden": 5076,
+  "respuesta": "R. Suba mi oración como incienso en tu presencia, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Señor, te estoy llamando, ven deprisa,",
+      "escucha mi voz cuando te llamo.",
+      "Suba mi oración como incienso en tu presencia,",
+      "el alzar de mis manos como ofrenda de la tarde. R."
+    ],
+    [
+      "Coloca, Señor, una guardia en mi boca,",
+      "un centinela a la puerta de mis labios.",
+      "Señor, mis ojos están vueltos a ti,",
+      "en ti me refugio, no me dejes indefenso. R."
+    ]
+  ],
+  "textoCompleto": "Señor, te estoy llamando, ven deprisa,\nescucha mi voz cuando te llamo.\nSuba mi oración como incienso en tu presencia,\nel alzar de mis manos como ofrenda de la tarde. R.\n\nColoca, Señor, una guardia en mi boca,\nun centinela a la puerta de mis labios.\nSeñor, mis ojos están vueltos a ti,\nen ti me refugio, no me dejes indefenso. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sabado de la 7 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 140 1 2 3 y 8 r 2a semana 7 semana vii sabado 7 vii r suba mi oracion como incienso en tu presencia senor senor te estoy llamando ven deprisa escucha mi voz cuando te llamo suba mi oracion como incienso en tu presencia el alzar de mis manos como ofrenda de la tarde r coloca senor una guardia en mi boca un centinela a la puerta de mis labios senor mis ojos estan vueltos a ti en ti me refugio no me dejes indefenso r",
+  "lizq": [
+    {
+      "line": "R. Suba mi oración como incienso en tu presencia, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, te estoy llamando, ven deprisa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "escucha mi voz cuando te llamo.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Suba mi oración como incienso en tu presencia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el alzar de mis manos como ofrenda de la tarde. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Coloca, Señor, una guardia en mi boca,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "un centinela a la puerta de mis labios.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Señor, mis ojos están vueltos a ti,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en ti me refugio, no me dejes indefenso. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

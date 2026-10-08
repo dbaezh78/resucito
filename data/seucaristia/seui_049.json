@@ -1,0 +1,117 @@
+{
+  "id": "seui_049",
+  "title": "Lunes de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 9ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-6 (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-6 (R.: 1a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "orden": 5091,
+  "respuesta": "R. Dichoso quien teme al Señor.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Dichoso quien teme al Señor",
+      "y ama de corazón sus mandatos.",
+      "Su linaje será poderoso en la tierra,",
+      "la descendencia del justo será bendita. R."
+    ],
+    [
+      "En su casa habrá riquezas y abundancia,",
+      "su caridad es constante, sin falta.",
+      "En las tinieblas brilla como una luz",
+      "el que es justo, clemente y compasivo. R."
+    ],
+    [
+      "Dichoso el que se apiada y presta,",
+      "y administra rectamente sus asuntos.",
+      "El justo jamás vacilará,",
+      "su recuerdo será perpetuo. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la 9 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 111 1 2 3 4 5 6 r 1a semana 9 semana ix lunes 9 ix r dichoso quien teme al senor r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo r",
+  "lizq": [
+    {
+      "line": "R. Dichoso quien teme al Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso quien teme al Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y ama de corazón sus mandatos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Su linaje será poderoso en la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la descendencia del justo será bendita. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En su casa habrá riquezas y abundancia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su caridad es constante, sin falta.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "En las tinieblas brilla como una luz",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el que es justo, clemente y compasivo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el que se apiada y presta,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y administra rectamente sus asuntos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El justo jamás vacilará,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su recuerdo será perpetuo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

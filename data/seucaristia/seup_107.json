@@ -1,0 +1,105 @@
+{
+  "id": "seup_107",
+  "title": "Viernes de la 18ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 18ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Deuteronomio 32, 35cd-36ab. 39abcd. 41 (R.: 39c)",
+  "salmo": "Interleccional: Deuteronomio 32, 35cd-36ab. 39abcd. 41 (R.: 39c)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5185,
+  "respuesta": "R. Yo doy la muerte y la vida.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El día de su perdición se acerca",
+      "y su suerte se apresura,",
+      "porque el Señor defenderá a su pueblo",
+      "y tendrá compasión de sus siervos. R."
+    ],
+    [
+      "Pero ahora mirad: yo soy yo,",
+      "y no hay otro fuera de mí;",
+      "yo doy la muerte y la vida,",
+      "yo desgarro y yo curo. R."
+    ],
+    [
+      "Cuando afile el relámpago de mi espada",
+      "y tome en mi mano la justicia,",
+      "haré venganza del enemigo",
+      "y daré su paga al adversario. R."
+    ]
+  ],
+  "textoCompleto": "El día de su perdición se acerca\ny su suerte se apresura,\nporque el Señor defenderá a su pueblo\ny tendrá compasión de sus siervos. R.\n\nPero ahora mirad: yo soy yo,\ny no hay otro fuera de mí;\nyo doy la muerte y la vida,\nyo desgarro y yo curo. R.\n\nCuando afile el relámpago de mi espada\ny tome en mi mano la justicia,\nharé venganza del enemigo\ny daré su paga al adversario. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 18 semana de tiempo ordinario ano par tiempo ordinario viernes interleccional deuteronomio 32 35cd 36ab 39abcd 41 r 39c semana 18 semana xviii viernes 18 xviii r yo doy la muerte y la vida el dia de su perdicion se acerca y su suerte se apresura porque el senor defendera a su pueblo y tendra compasion de sus siervos r pero ahora mirad yo soy yo y no hay otro fuera de mi yo doy la muerte y la vida yo desgarro y yo curo r cuando afile el relampago de mi espada y tome en mi mano la justicia hare venganza del enemigo y dare su paga al adversario r",
+  "lizq": [
+    {
+      "line": "R. Yo doy la muerte y la vida.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El día de su perdición se acerca",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y su suerte se apresura,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque el Señor defenderá a su pueblo",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y tendrá compasión de sus siervos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero ahora mirad: yo soy yo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y no hay otro fuera de mí;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "yo doy la muerte y la vida,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "yo desgarro y yo curo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuando afile el relámpago de mi espada",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y tome en mi mano la justicia,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "haré venganza del enemigo",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y daré su paga al adversario. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

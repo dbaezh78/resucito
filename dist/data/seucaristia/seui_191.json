@@ -1,0 +1,79 @@
+{
+  "id": "seui_191",
+  "title": "Viernes de la 32ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 32ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 18, 2-3. 4-5 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 18, 2-3. 4-5 (R.: 2a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5325,
+  "respuesta": "R. El cielo proclama la gloria de Dios.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "El cielo proclama la gloria de Dios,",
+      "el firmamento pregona la obra de sus manos:",
+      "el día al día le pasa el mensaje,",
+      "la noche a la noche se lo susurra. R."
+    ],
+    [
+      "Sin que hablen, sin que pronuncien,",
+      "sin que resuene su voz,",
+      "a toda la tierra alcanza su pregón",
+      "y hasta los límites del orbe su lenguaje. R."
+    ]
+  ],
+  "textoCompleto": "El cielo proclama la gloria de Dios,\nel firmamento pregona la obra de sus manos:\nel día al día le pasa el mensaje,\nla noche a la noche se lo susurra. R.\n\nSin que hablen, sin que pronuncien,\nsin que resuene su voz,\na toda la tierra alcanza su pregón\ny hasta los límites del orbe su lenguaje. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 32 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 18 2 3 4 5 r 2a semana 32 semana xxxii viernes 32 xxxii r el cielo proclama la gloria de dios el cielo proclama la gloria de dios el firmamento pregona la obra de sus manos el dia al dia le pasa el mensaje la noche a la noche se lo susurra r sin que hablen sin que pronuncien sin que resuene su voz a toda la tierra alcanza su pregon y hasta los limites del orbe su lenguaje r",
+  "lizq": [
+    {
+      "line": "R. El cielo proclama la gloria de Dios.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El cielo proclama la gloria de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el firmamento pregona la obra de sus manos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el día al día le pasa el mensaje,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la noche a la noche se lo susurra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sin que hablen, sin que pronuncien,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sin que resuene su voz,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a toda la tierra alcanza su pregón",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y hasta los límites del orbe su lenguaje. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

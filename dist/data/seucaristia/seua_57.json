@@ -11,9 +11,24 @@
   "respuesta": "R. Cantaré eternamente las misericordias del Señor.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: «Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.",
-    "Dichoso el pueblo que sabe aclamarte:\ncamina, oh Señor, a la luz de tu rostro;\ntu nombre es su gozo cada día,\ntu justicia es su orgullo. R.",
-    "Porque tú eres su honor y su fuerza,\ny con tu favor realzas nuestro poder.\nPorque el Señor es nuestro escudo,\ny el Santo de Israel nuestro rey. R."
+    [
+      "Cantaré eternamente las misericordias del Señor,",
+      "anunciaré tu fidelidad por todas las edades.",
+      "Porque dije: «Tu misericordia es un edificio eterno,",
+      "más que el cielo has afianzado tu fidelidad». R."
+    ],
+    [
+      "Dichoso el pueblo que sabe aclamarte:",
+      "camina, oh Señor, a la luz de tu rostro;",
+      "tu nombre es su gozo cada día,",
+      "tu justicia es su orgullo. R."
+    ],
+    [
+      "Porque tú eres su honor y su fuerza,",
+      "y con tu favor realzas nuestro poder.",
+      "Porque el Señor es nuestro escudo,",
+      "y el Santo de Israel nuestro rey. R."
+    ]
   ],
   "textoCompleto": "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: «Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.\n\nDichoso el pueblo que sabe aclamarte:\ncamina, oh Señor, a la luz de tu rostro;\ntu nombre es su gozo cada día,\ntu justicia es su orgullo. R.\n\nPorque tú eres su honor y su fuerza,\ny con tu favor realzas nuestro poder.\nPorque el Señor es nuestro escudo,\ny el Santo de Israel nuestro rey. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. Cantaré eternamente las misericordias del Señor.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Cantaré eternamente las misericordias del Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "anunciaré tu fidelidad por todas las edades.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Porque dije: «Tu misericordia es un edificio eterno,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "más que el cielo has afianzado tu fidelidad». R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dichoso el pueblo que sabe aclamarte:",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "camina, oh Señor, a la luz de tu rostro;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tu nombre es su gozo cada día,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tu justicia es su orgullo. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Porque tú eres su honor y su fuerza,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "y con tu favor realzas nuestro poder.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Porque el Señor es nuestro escudo,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y el Santo de Israel nuestro rey. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

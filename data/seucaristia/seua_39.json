@@ -8,16 +8,29 @@
   "tiempo": "Pascua",
   "dia": "Domingo",
   "orden": 425,
-  "respuesta": "R. Dios asciende entre aclamaciones;",
-  "respuestaOpcional": "",
+  "respuesta": "R. Dios asciende entre aclamaciones; el Señor, al son de trompetas.",
+  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
-    "el Señor, al son de trompetas.",
-    "R. Aleluya.",
-    "Pueblos todos batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.",
-    "Dios asciende entre aclamaciones;\nel Señor, al son de trompetas;\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.",
-    "Porque Dios es el rey del mundo;\ntocad con maestría.\nDios reina sobre las naciones,\nDios se sienta en su trono sagrado. R."
+    [
+      "Pueblos todos batid palmas,",
+      "aclamad a Dios con gritos de júbilo;",
+      "porque el Señor es sublime y terrible,",
+      "emperador de toda la tierra. R."
+    ],
+    [
+      "Dios asciende entre aclamaciones;",
+      "el Señor, al son de trompetas;",
+      "tocad para Dios, tocad,",
+      "tocad para nuestro Rey, tocad. R."
+    ],
+    [
+      "Porque Dios es el rey del mundo;",
+      "tocad con maestría.",
+      "Dios reina sobre las naciones,",
+      "Dios se sienta en su trono sagrado. R."
+    ]
   ],
-  "textoCompleto": "el Señor, al son de trompetas.\n\nR. Aleluya.\n\nPueblos todos batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nDios asciende entre aclamaciones;\nel Señor, al son de trompetas;\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.\n\nPorque Dios es el rey del mundo;\ntocad con maestría.\nDios reina sobre las naciones,\nDios se sienta en su trono sagrado. R.",
+  "textoCompleto": "Pueblos todos batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nDios asciende entre aclamaciones;\nel Señor, al son de trompetas;\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.\n\nPorque Dios es el rey del mundo;\ntocad con maestría.\nDios reina sobre las naciones,\nDios se sienta en su trono sagrado. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
@@ -26,84 +39,83 @@
   "lizq": [
     {
       "line": "R. Dios asciende entre aclamaciones;",
-      "sC": "tc ta as bg",
-      "color": "red"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "el Señor, al son de trompetas.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
     },
     {
       "line": "R. Aleluya.",
-      "sC": ""
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Pueblos todos batid palmas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "aclamad a Dios con gritos de júbilo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "porque el Señor es sublime y terrible,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "emperador de toda la tierra. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Dios asciende entre aclamaciones;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "el Señor, al son de trompetas;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tocad para Dios, tocad,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "tocad para nuestro Rey, tocad. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Porque Dios es el rey del mundo;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "tocad con maestría.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dios reina sobre las naciones,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dios se sienta en su trono sagrado. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

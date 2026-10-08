@@ -1,0 +1,127 @@
+{
+  "id": "seup_077",
+  "title": "Viernes de la 13ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 13ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 2. 10. 20. 30. 40. 131 (R.: Mt 4, 4)",
+  "salmo": "Salmo responsorial: Salmo 118, 2. 10. 20. 30. 40. 131 (R.: Mt 4, 4)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "orden": 5135,
+  "respuesta": "R. No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Dichoso el que, guardando sus preceptos,",
+      "lo busca de todo corazón. R."
+    ],
+    [
+      "Te busco de todo corazón,",
+      "no consientas que me desvíe de tus mandamientos. R."
+    ],
+    [
+      "Mi alma se consume, deseando",
+      "continuamente tus mandamientos. R."
+    ],
+    [
+      "Escogí el camino verdadero,",
+      "deseé tus mandamientos. R."
+    ],
+    [
+      "Mira cómo ansío tus decretos:",
+      "dame vida con tu justicia. R."
+    ],
+    [
+      "Abro la boca y respiro,",
+      "ansiando tus mandamientos. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.\n\nTe busco de todo corazón,\nno consientas que me desvíe de tus mandamientos. R.\n\nMi alma se consume, deseando\ncontinuamente tus mandamientos. R.\n\nEscogí el camino verdadero,\ndeseé tus mandamientos. R.\n\nMira cómo ansío tus decretos:\ndame vida con tu justicia. R.\n\nAbro la boca y respiro,\nansiando tus mandamientos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "viernes de la 13 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 118 2 10 20 30 40 131 r mt 4 4 semana 13 semana xiii viernes 13 xiii r no solo de pan vive el hombre sino de toda palabra que sale de la boca de dios dichoso el que guardando sus preceptos lo busca de todo corazon r te busco de todo corazon no consientas que me desvie de tus mandamientos r mi alma se consume deseando continuamente tus mandamientos r escogi el camino verdadero desee tus mandamientos r mira como ansio tus decretos dame vida con tu justicia r abro la boca y respiro ansiando tus mandamientos r",
+  "lizq": [
+    {
+      "line": "R. No sólo de pan vive el hombre,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "sino de toda palabra que sale de la boca de Dios.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el que, guardando sus preceptos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lo busca de todo corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Te busco de todo corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "no consientas que me desvíe de tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mi alma se consume, deseando",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "continuamente tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Escogí el camino verdadero,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "deseé tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mira cómo ansío tus decretos:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "dame vida con tu justicia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Abro la boca y respiro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ansiando tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "seup_088",
+  "title": "Jueves de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 101, 13-14ab y 15. 16-18. 19-21 (R.: 20b)",
+  "salmo": "Salmo responsorial: Salmo 101, 13-14ab y 15. 16-18. 19-21 (R.: 20b)",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5154,
+  "respuesta": "R. El Señor desde el cielo se ha fijado en la tierra.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Tú permaneces para siempre,",
+      "y tu nombre de generación en generación.",
+      "Levántate y ten misericordia de Sión,",
+      "que ya es hora y tiempo de misericordia.",
+      "Tus siervos aman sus piedras,",
+      "se compadecen de sus ruinas. R."
+    ],
+    [
+      "Los gentiles temerán tu nombre,",
+      "los reyes del mundo, tu gloria.",
+      "Cuando el Señor reconstruya Sión,",
+      "y aparezca en su gloria,",
+      "y se vuelva a las súplicas de los indefensos,",
+      "y no desprecie sus peticiones. R."
+    ],
+    [
+      "Quede esto escrito para la generación futura,",
+      "y el pueblo que será creado alabará al Señor.",
+      "Que el Señor ha mirado desde su excelso santuario,",
+      "desde el cielo se ha fijado en la tierra,",
+      "para escuchar los gemidos de los cautivos",
+      "y librar a los condenados a muerte. R."
+    ]
+  ],
+  "textoCompleto": "Tú permaneces para siempre,\ny tu nombre de generación en generación.\nLevántate y ten misericordia de Sión,\nque ya es hora y tiempo de misericordia.\nTus siervos aman sus piedras,\nse compadecen de sus ruinas. R.\n\nLos gentiles temerán tu nombre,\nlos reyes del mundo, tu gloria.\nCuando el Señor reconstruya Sión,\ny aparezca en su gloria,\ny se vuelva a las súplicas de los indefensos,\ny no desprecie sus peticiones. R.\n\nQuede esto escrito para la generación futura,\ny el pueblo que será creado alabará al Señor.\nQue el Señor ha mirado desde su excelso santuario,\ndesde el cielo se ha fijado en la tierra,\npara escuchar los gemidos de los cautivos\ny librar a los condenados a muerte. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 15 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 101 13 14ab y 15 16 18 19 21 r 20b semana 15 semana xv jueves 15 xv r el senor desde el cielo se ha fijado en la tierra tu permaneces para siempre y tu nombre de generacion en generacion levantate y ten misericordia de sion que ya es hora y tiempo de misericordia tus siervos aman sus piedras se compadecen de sus ruinas r los gentiles temeran tu nombre los reyes del mundo tu gloria cuando el senor reconstruya sion y aparezca en su gloria y se vuelva a las suplicas de los indefensos y no desprecie sus peticiones r quede esto escrito para la generacion futura y el pueblo que sera creado alabara al senor que el senor ha mirado desde su excelso santuario desde el cielo se ha fijado en la tierra para escuchar los gemidos de los cautivos y librar a los condenados a muerte r",
+  "lizq": [
+    {
+      "line": "R. El Señor desde el cielo se ha fijado en la tierra.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú permaneces para siempre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y tu nombre de generación en generación.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Levántate y ten misericordia de Sión,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que ya es hora y tiempo de misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tus siervos aman sus piedras,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se compadecen de sus ruinas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los gentiles temerán tu nombre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "los reyes del mundo, tu gloria.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Cuando el Señor reconstruya Sión,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y aparezca en su gloria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y se vuelva a las súplicas de los indefensos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no desprecie sus peticiones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Quede esto escrito para la generación futura,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y el pueblo que será creado alabará al Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor ha mirado desde su excelso santuario,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "desde el cielo se ha fijado en la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para escuchar los gemidos de los cautivos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y librar a los condenados a muerte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

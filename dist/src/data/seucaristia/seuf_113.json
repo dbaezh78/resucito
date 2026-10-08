@@ -1,0 +1,119 @@
+{
+  "id": "seuf_113",
+  "title": "Miércoles de la sexta semana de Pascua",
+  "celebracion": "Miércoles de la sexta semana de Pascua",
+  "subtitle": "Salmo 148, 1-2. 11-12. 13. 14",
+  "salmo": "Salmo 148, 1-2. 11-12. 13. 14",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Miércoles",
+  "orden": 463,
+  "respuesta": "R. Llenos están el cielo y la tierra de tu gloria.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Alabad al Señor en el cielo,",
+      "alabad al Señor en lo alto.",
+      "Alabadlo, todos sus ángeles;",
+      "alabadlo, todos sus ejércitos. R."
+    ],
+    [
+      "Reyes y pueblos del orbe,",
+      "príncipes y jefes del mundo,",
+      "los jóvenes y también las doncellas,",
+      "los viejos junto con los niños. R."
+    ],
+    [
+      "Alaben el nombre del Señor,",
+      "el único nombre sublime.",
+      "Su majestad sobre el cielo y la tierra. R."
+    ]
+  ],
+  "textoCompleto": "Alabad al Señor en el cielo,\nalabad al Señor en lo alto.\nAlabadlo, todos sus ángeles;\nalabadlo, todos sus ejércitos. R.\n\nReyes y pueblos del orbe,\npríncipes y jefes del mundo,\nlos jóvenes y también las doncellas,\nlos viejos junto con los niños. R.\n\nAlaben el nombre del Señor,\nel único nombre sublime.\nSu majestad sobre el cielo y la tierra. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "miercoles de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 148 1 2 11 12 13 14 semana 6 semana vi miercoles feria r llenos estan el cielo y la tierra de tu gloria r aleluya alabad al senor en el cielo alabad al senor en lo alto alabadlo todos sus angeles alabadlo todos sus ejercitos r reyes y pueblos del orbe principes y jefes del mundo los jovenes y tambien las doncellas los viejos junto con los ninos r alaben el nombre del senor el unico nombre sublime su majestad sobre el cielo y la tierra r",
+  "lizq": [
+    {
+      "line": "R. Llenos están el cielo y la tierra de tu gloria.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabad al Señor en el cielo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabad al Señor en lo alto.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Alabadlo, todos sus ángeles;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabadlo, todos sus ejércitos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Reyes y pueblos del orbe,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "príncipes y jefes del mundo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los jóvenes y también las doncellas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los viejos junto con los niños. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alaben el nombre del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el único nombre sublime.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Su majestad sobre el cielo y la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

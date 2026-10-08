@@ -1,0 +1,135 @@
+{
+  "id": "seuc_08",
+  "title": "Natividad del Señor - Misa del día",
+  "celebracion": "Natividad del Señor - Misa del día",
+  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 3c)",
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 3c)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Navidad",
+  "dia": "Domingo",
+  "orden": 204,
+  "respuesta": "R. Los confines de la tierra han contemplado la victoria de nuestro Dios.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "porque ha hecho maravillas:",
+      "su diestra le ha dado la victoria,",
+      "su santo brazo. R."
+    ],
+    [
+      "El Señor da a conocer su victoria,",
+      "revela a las naciones su justicia:",
+      "se acordó de su misericordia y su fidelidad",
+      "en favor de la casa de Israel. R."
+    ],
+    [
+      "Los confines de la tierra han contemplado",
+      "la victoria de nuestro Dios.",
+      "Aclama al Señor, tierra entera;",
+      "gritad, vitoread, tocad. R."
+    ],
+    [
+      "Tañed la cítara para el Señor",
+      "suenen los instrumentos:",
+      "con clarines y al son de trompetas,",
+      "aclamad al Rey y Señor. R."
+    ]
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclama al Señor, tierra entera;\ngritad, vitoread, tocad. R.\n\nTañed la cítara para el Señor\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "natividad del senor misa del dia ciclo c navidad domingo salmo responsorial salmo 97 1 2 3ab 3cd 4 5 6 r 3c r los confines de la tierra han contemplado la victoria de nuestro dios cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclama al senor tierra entera gritad vitoread tocad r taned la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r",
+  "lizq": [
+    {
+      "line": "R. Los confines de la tierra han contemplado",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "la victoria de nuestro Dios.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque ha hecho maravillas:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su diestra le ha dado la victoria,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su santo brazo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor da a conocer su victoria,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "revela a las naciones su justicia:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se acordó de su misericordia y su fidelidad",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en favor de la casa de Israel. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Los confines de la tierra han contemplado",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la victoria de nuestro Dios.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Aclama al Señor, tierra entera;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "gritad, vitoread, tocad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tañed la cítara para el Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "suenen los instrumentos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "con clarines y al son de trompetas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "aclamad al Rey y Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

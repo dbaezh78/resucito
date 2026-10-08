@@ -1,0 +1,126 @@
+{
+  "id": "seui_110",
+  "title": "Martes de la 19ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 19ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial Deuteronomio 32, 3-4a. 7. 8. 9 y 12 (R.: 9a)",
+  "salmo": "Salmo responsorial Deuteronomio 32, 3-4a. 7. 8. 9 y 12 (R.: 9a)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "orden": 5192,
+  "respuesta": "R. La porción del Señor fue su pueblo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Voy a proclamar el nombre del Señor:",
+      "dad gloria a nuestro Dios.",
+      "Él es la Roca, sus obras son perfectas. R."
+    ],
+    [
+      "Acuérdate de los días remotos,",
+      "considera las edades pretéritas,",
+      "pregunta a tu padre, y te lo contará,",
+      "a tus ancianos, y te lo dirán. R."
+    ],
+    [
+      "Cuando el Altísimo daba a cada pueblo su heredad",
+      "y distribuía a los hijos de Adán,",
+      "trazando las fronteras de las naciones,",
+      "según el número de los hijos de Dios. R."
+    ],
+    [
+      "La porción del Señor fue su pueblo,",
+      "Jacob fue el lote de su heredad.",
+      "El Señor solo los condujo,",
+      "no hubo dioses extraños con él. R."
+    ]
+  ],
+  "textoCompleto": "Voy a proclamar el nombre del Señor:\ndad gloria a nuestro Dios.\nÉl es la Roca, sus obras son perfectas. R.\n\nAcuérdate de los días remotos,\nconsidera las edades pretéritas,\npregunta a tu padre, y te lo contará,\na tus ancianos, y te lo dirán. R.\n\nCuando el Altísimo daba a cada pueblo su heredad\ny distribuía a los hijos de Adán,\ntrazando las fronteras de las naciones,\nsegún el número de los hijos de Dios. R.\n\nLa porción del Señor fue su pueblo,\nJacob fue el lote de su heredad.\nEl Señor solo los condujo,\nno hubo dioses extraños con él. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "martes de la 19 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial deuteronomio 32 3 4a 7 8 9 y 12 r 9a semana 19 semana xix martes 19 xix r la porcion del senor fue su pueblo voy a proclamar el nombre del senor dad gloria a nuestro dios el es la roca sus obras son perfectas r acuerdate de los dias remotos considera las edades preteritas pregunta a tu padre y te lo contara a tus ancianos y te lo diran r cuando el altisimo daba a cada pueblo su heredad y distribuia a los hijos de adan trazando las fronteras de las naciones segun el numero de los hijos de dios r la porcion del senor fue su pueblo jacob fue el lote de su heredad el senor solo los condujo no hubo dioses extranos con el r",
+  "lizq": [
+    {
+      "line": "R. La porción del Señor fue su pueblo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Voy a proclamar el nombre del Señor:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "dad gloria a nuestro Dios.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Él es la Roca, sus obras son perfectas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Acuérdate de los días remotos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "considera las edades pretéritas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pregunta a tu padre, y te lo contará,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a tus ancianos, y te lo dirán. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cuando el Altísimo daba a cada pueblo su heredad",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y distribuía a los hijos de Adán,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "trazando las fronteras de las naciones,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "según el número de los hijos de Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La porción del Señor fue su pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Jacob fue el lote de su heredad.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor solo los condujo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no hubo dioses extraños con él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

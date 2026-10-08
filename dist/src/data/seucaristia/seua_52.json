@@ -11,9 +11,25 @@
   "respuesta": "R. Descansa sólo en Dios, alma mía.",
   "respuestaOpcional": "",
   "estrofas": [
-    "Sólo en Dios descansa mi alma,\nporque de él viene mi salvación;\nsólo él es mi roca y mi salvación;\nmi alcázar: no vacilaré. R.",
-    "Descansa sólo en Dios, alma mía,\nporque él es mi esperanza;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.",
-    "De Dios viene mi salvación y mi gloria,\nél es mi roca firme,\nDios es mi refugio.\nPueblo suyo, confiad en él,\ndesahogad ante él vuestro corazón. R."
+    [
+      "Sólo en Dios descansa mi alma,",
+      "porque de él viene mi salvación;",
+      "sólo él es mi roca y mi salvación;",
+      "mi alcázar: no vacilaré. R."
+    ],
+    [
+      "Descansa sólo en Dios, alma mía,",
+      "porque él es mi esperanza;",
+      "sólo él es mi roca y mi salvación,",
+      "mi alcázar: no vacilaré. R."
+    ],
+    [
+      "De Dios viene mi salvación y mi gloria,",
+      "él es mi roca firme,",
+      "Dios es mi refugio.",
+      "Pueblo suyo, confiad en él,",
+      "desahogad ante él vuestro corazón. R."
+    ]
   ],
   "textoCompleto": "Sólo en Dios descansa mi alma,\nporque de él viene mi salvación;\nsólo él es mi roca y mi salvación;\nmi alcázar: no vacilaré. R.\n\nDescansa sólo en Dios, alma mía,\nporque él es mi esperanza;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nDe Dios viene mi salvación y mi gloria,\nél es mi roca firme,\nDios es mi refugio.\nPueblo suyo, confiad en él,\ndesahogad ante él vuestro corazón. R.",
   "sourceBook": "eucaristia",
@@ -24,72 +40,71 @@
   "lizq": [
     {
       "line": "R. Descansa sólo en Dios, alma mía.",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Sólo en Dios descansa mi alma,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "porque de él viene mi salvación;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "sólo él es mi roca y mi salvación;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "mi alcázar: no vacilaré. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Descansa sólo en Dios, alma mía,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "porque él es mi esperanza;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "sólo él es mi roca y mi salvación,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "mi alcázar: no vacilaré. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "De Dios viene mi salvación y mi gloria,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "él es mi roca firme,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Dios es mi refugio.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Pueblo suyo, confiad en él,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "desahogad ante él vuestro corazón. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

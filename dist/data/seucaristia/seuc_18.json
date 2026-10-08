@@ -1,0 +1,131 @@
+{
+  "id": "seuc_18",
+  "title": "Tercer domingo de Cuaresma",
+  "celebracion": "Tercer domingo de Cuaresma",
+  "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 6-7. 8 y 11 (R.: 8a)",
+  "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 6-7. 8 y 11 (R.: 8a)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo",
+  "orden": 303,
+  "respuesta": "R. El Señor es compasivo y misericordioso.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Bendice, alma mía, al Señor,",
+      "y todo mi ser a su santo nombre.",
+      "Bendice, alma mía, al Señor,",
+      "y no olvides sus beneficios. R."
+    ],
+    [
+      "Él perdona todas tus culpas",
+      "y cura todas tus enfermedades;",
+      "él rescata tu vida de la fosa",
+      "y te colma de gracia y de ternura. R."
+    ],
+    [
+      "El Señor hace justicia",
+      "y defiende a todos los oprimidos;",
+      "enseñó sus caminos a Moisés",
+      "y sus hazañas a los hijos de Israel. R."
+    ],
+    [
+      "El Señor es compasivo y misericordioso,",
+      "lento a la ira y rico en clemencia;",
+      "como se levanta el cielo sobre la tierra,",
+      "se levanta su bondad sobre sus fieles. R."
+    ]
+  ],
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\ncomo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "tercer domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 102 1 2 3 4 6 7 8 y 11 r 8a r el senor es compasivo y misericordioso bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor hace justicia y defiende a todos los oprimidos enseno sus caminos a moises y sus hazanas a los hijos de israel r el senor es compasivo y misericordioso lento a la ira y rico en clemencia como se levanta el cielo sobre la tierra se levanta su bondad sobre sus fieles r",
+  "lizq": [
+    {
+      "line": "R. El Señor es compasivo y misericordioso.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todo mi ser a su santo nombre.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no olvides sus beneficios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él perdona todas tus culpas",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y cura todas tus enfermedades;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él rescata tu vida de la fosa",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y te colma de gracia y de ternura. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor hace justicia",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y defiende a todos los oprimidos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "enseñó sus caminos a Moisés",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y sus hazañas a los hijos de Israel. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es compasivo y misericordioso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "lento a la ira y rico en clemencia;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como se levanta el cielo sobre la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "se levanta su bondad sobre sus fieles. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

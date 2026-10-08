@@ -11,9 +11,24 @@
   "respuesta": "R. Protégeme, Dios mío, que me refugio en ti",
   "respuestaOpcional": "",
   "estrofas": [
-    "El Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.",
-    "Por eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.",
-    "Me enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R."
+    [
+      "El Señor es el lote de mi heredad y mi copa;",
+      "mi suerte está en tu mano.",
+      "Tengo siempre presente al Señor,",
+      "con él a mi derecha no vacilaré. R."
+    ],
+    [
+      "Por eso se me alegra el corazón,",
+      "se gozan mis entrañas,",
+      "y mi carne descansa serena.",
+      "Porque no me entregarás a la muerte,",
+      "ni dejarás a tu fiel conocer la corrupción. R."
+    ],
+    [
+      "Me enseñarás el sendero de la vida,",
+      "me saciarás de gozo en tu presencia,",
+      "de alegría perpetua a tu derecha. R."
+    ]
   ],
   "textoCompleto": "El Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
   "sourceBook": "eucaristia",
@@ -24,68 +39,67 @@
   "lizq": [
     {
       "line": "R. Protégeme, Dios mío, que me refugio en ti",
-      "sC": "tc ta as bg",
-      "color": "red"
+      "sC": "salmo-linea salmo-respuesta"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "El Señor es el lote de mi heredad y mi copa;",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "mi suerte está en tu mano.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Tengo siempre presente al Señor,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "con él a mi derecha no vacilaré. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Por eso se me alegra el corazón,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "se gozan mis entrañas,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "y mi carne descansa serena.",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "Porque no me entregarás a la muerte,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "ni dejarás a tu fiel conocer la corrupción. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "salmo-espacio"
     },
     {
       "line": "Me enseñarás el sendero de la vida,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
       "line": "me saciarás de gozo en tu presencia,",
-      "sC": ""
+      "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
       "line": "de alegría perpetua a tu derecha. R.",
-      "sC": "salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
   ]
 }

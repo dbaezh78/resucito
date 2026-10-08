@@ -1,0 +1,125 @@
+{
+  "id": "seuc_45",
+  "title": "Domingo después de la Santísima Trinidad - Santísimo Cuerpo y Sangre de Cristo",
+  "celebracion": "Domingo después de la Santísima Trinidad - Santísimo Cuerpo y Sangre de Cristo",
+  "subtitle": "Salmo responsorial: Salmo 109, 1. 2. 3. 4 (R.: 4bc)",
+  "salmo": "Salmo responsorial: Salmo 109, 1. 2. 3. 4 (R.: 4bc)",
+  "ciclo": "Ciclo C",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 535,
+  "respuesta": "R. Tú eres sacerdote eterno, según el rito de Melquisedec.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Oráculo del Señor a mi Señor:",
+      "«Siéntate a mi derecha,",
+      "y haré de tus enemigos",
+      "estrado de tus pies». R."
+    ],
+    [
+      "Desde Sión extenderá el Señor",
+      "el poder de tu cetro:",
+      "somete en la batalla a tus enemigos. R."
+    ],
+    [
+      "«Eres príncipe desde el día de tu nacimiento,",
+      "entre esplendores sagrados;",
+      "yo mismo te engendré,",
+      "como rocío, antes de la aurora». R."
+    ],
+    [
+      "El Señor lo ha jurado y no se arrepiente:",
+      "«Tú eres sacerdote eterno,",
+      "según el rito de Melquisedec». R."
+    ]
+  ],
+  "textoCompleto": "Oráculo del Señor a mi Señor:\n«Siéntate a mi derecha,\ny haré de tus enemigos\nestrado de tus pies». R.\n\nDesde Sión extenderá el Señor\nel poder de tu cetro:\nsomete en la batalla a tus enemigos. R.\n\n«Eres príncipe desde el día de tu nacimiento,\nentre esplendores sagrados;\nyo mismo te engendré,\ncomo rocío, antes de la aurora». R.\n\nEl Señor lo ha jurado y no se arrepiente:\n«Tú eres sacerdote eterno,\nsegún el rito de Melquisedec». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo despues de la santisima trinidad santisimo cuerpo y sangre de cristo ciclo c tiempo ordinario domingo salmo responsorial salmo 109 1 2 3 4 r 4bc r tu eres sacerdote eterno segun el rito de melquisedec oraculo del senor a mi senor sientate a mi derecha y hare de tus enemigos estrado de tus pies r desde sion extendera el senor el poder de tu cetro somete en la batalla a tus enemigos r eres principe desde el dia de tu nacimiento entre esplendores sagrados yo mismo te engendre como rocio antes de la aurora r el senor lo ha jurado y no se arrepiente tu eres sacerdote eterno segun el rito de melquisedec r",
+  "lizq": [
+    {
+      "line": "R. Tú eres sacerdote eterno,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "según el rito de Melquisedec.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oráculo del Señor a mi Señor:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "«Siéntate a mi derecha,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y haré de tus enemigos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "estrado de tus pies». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Desde Sión extenderá el Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "el poder de tu cetro:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "somete en la batalla a tus enemigos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Eres príncipe desde el día de tu nacimiento,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "entre esplendores sagrados;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "yo mismo te engendré,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como rocío, antes de la aurora». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor lo ha jurado y no se arrepiente:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "«Tú eres sacerdote eterno,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "según el rito de Melquisedec». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "seui_022",
+  "title": "Jueves de la 4ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 4ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 47, 2-3ab. 3cd-4. 9. 10-11 (R.: 10)",
+  "salmo": "Salmo responsorial: Salmo 47, 2-3ab. 3cd-4. 9. 10-11 (R.: 10)",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves",
+  "orden": 5044,
+  "respuesta": "R. Oh Dios, meditamos tu misericordia en medio de tu templo.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Grande es el Señor y muy digno de alabanza",
+      "en la ciudad de nuestro Dios,",
+      "su monte santo, altura hermosa,",
+      "alegría de toda la tierra. R."
+    ],
+    [
+      "El monte Sión, vértice del cielo,",
+      "ciudad del gran rey;",
+      "entre sus palacios,",
+      "Dios descuella como un alcázar. R."
+    ],
+    [
+      "Lo que habíamos oído lo hemos visto",
+      "en la ciudad del Señor de los ejércitos,",
+      "en la ciudad de nuestro Dios:",
+      "que Dios la ha fundado para siempre. R."
+    ],
+    [
+      "Oh Dios, meditamos tu misericordia",
+      "en medio de tu templo:",
+      "como tu renombre, oh Dios, tu alabanza",
+      "llega al confín de la tierra;",
+      "tu diestra está llena de justicia. R."
+    ]
+  ],
+  "textoCompleto": "Grande es el Señor y muy digno de alabanza\nen la ciudad de nuestro Dios,\nsu monte santo, altura hermosa,\nalegría de toda la tierra. R.\n\nEl monte Sión, vértice del cielo,\nciudad del gran rey;\nentre sus palacios,\nDios descuella como un alcázar. R.\n\nLo que habíamos oído lo hemos visto\nen la ciudad del Señor de los ejércitos,\nen la ciudad de nuestro Dios:\nque Dios la ha fundado para siempre. R.\n\nOh Dios, meditamos tu misericordia\nen medio de tu templo:\ncomo tu renombre, oh Dios, tu alabanza\nllega al confín de la tierra;\ntu diestra está llena de justicia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "jueves de la 4 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 47 2 3ab 3cd 4 9 10 11 r 10 semana 4 semana iv jueves 4 iv r oh dios meditamos tu misericordia en medio de tu templo grande es el senor y muy digno de alabanza en la ciudad de nuestro dios su monte santo altura hermosa alegria de toda la tierra r el monte sion vertice del cielo ciudad del gran rey entre sus palacios dios descuella como un alcazar r lo que habiamos oido lo hemos visto en la ciudad del senor de los ejercitos en la ciudad de nuestro dios que dios la ha fundado para siempre r oh dios meditamos tu misericordia en medio de tu templo como tu renombre oh dios tu alabanza llega al confin de la tierra tu diestra esta llena de justicia r",
+  "lizq": [
+    {
+      "line": "R. Oh Dios, meditamos tu misericordia",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "en medio de tu templo.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Grande es el Señor y muy digno de alabanza",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en la ciudad de nuestro Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "su monte santo, altura hermosa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alegría de toda la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El monte Sión, vértice del cielo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ciudad del gran rey;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "entre sus palacios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios descuella como un alcázar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Lo que habíamos oído lo hemos visto",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en la ciudad del Señor de los ejércitos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en la ciudad de nuestro Dios:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que Dios la ha fundado para siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Oh Dios, meditamos tu misericordia",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "en medio de tu templo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "como tu renombre, oh Dios, tu alabanza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "llega al confín de la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu diestra está llena de justicia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}

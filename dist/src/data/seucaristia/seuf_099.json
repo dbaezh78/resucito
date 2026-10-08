@@ -1,0 +1,144 @@
+{
+  "id": "seuf_099",
+  "title": "Lunes de la cuarta semana de Pascua",
+  "celebracion": "Lunes de la cuarta semana de Pascua",
+  "subtitle": "Salmo 41, 2-3; 42, 3. 4 (R.: cf. 41, 3a)",
+  "salmo": "Salmo 41, 2-3; 42, 3. 4 (R.: cf. 41, 3a)",
+  "ciclo": "Ciclo A, B y C",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "tiempo": "Pascua",
+  "dia": "Lunes",
+  "orden": 441,
+  "respuesta": "R. Mi alma tiene sed de ti, Dios vivo.",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "Como busca la cierva",
+      "corrientes de agua,",
+      "así mi alma te busca",
+      "a ti, Dios mío;",
+      "tiene sed de Dios,",
+      "del Dios vivo:",
+      "¿cuándo entraré a ver",
+      "el rostro de Dios? R."
+    ],
+    [
+      "Envía tu luz y tu verdad:",
+      "que ellas me guíen",
+      "y me conduzcan hasta tu monte santo,",
+      "hasta tu morada. R."
+    ],
+    [
+      "Que yo me acerque al altar de Dios,",
+      "al Dios de mi alegría;",
+      "que te dé gracias al son de la cítara,",
+      "Dios, Dios mío. R."
+    ]
+  ],
+  "textoCompleto": "Como busca la cierva\ncorrientes de agua,\nasí mi alma te busca\na ti, Dios mío;\ntiene sed de Dios,\ndel Dios vivo:\n¿cuándo entraré a ver\nel rostro de Dios? R.\n\nEnvía tu luz y tu verdad:\nque ellas me guíen\ny me conduzcan hasta tu monte santo,\nhasta tu morada. R.\n\nQue yo me acerque al altar de Dios,\nal Dios de mi alegría;\nque te dé gracias al son de la cítara,\nDios, Dios mío. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "lunes de la cuarta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 41 2 3 42 3 4 r cf 41 3a semana 4 semana iv lunes feria r mi alma tiene sed de ti dios vivo r aleluya como busca la cierva corrientes de agua asi mi alma te busca a ti dios mio tiene sed de dios del dios vivo cuando entrare a ver el rostro de dios r envia tu luz y tu verdad que ellas me guien y me conduzcan hasta tu monte santo hasta tu morada r que yo me acerque al altar de dios al dios de mi alegria que te de gracias al son de la citara dios dios mio r",
+  "lizq": [
+    {
+      "line": "R. Mi alma tiene sed de ti, Dios vivo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Como busca la cierva",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "corrientes de agua,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "así mi alma te busca",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a ti, Dios mío;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tiene sed de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "del Dios vivo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿cuándo entraré a ver",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el rostro de Dios? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Envía tu luz y tu verdad:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que ellas me guíen",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y me conduzcan hasta tu monte santo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hasta tu morada. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que yo me acerque al altar de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "al Dios de mi alegría;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que te dé gracias al son de la cítara,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Dios, Dios mío. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ]
+}
