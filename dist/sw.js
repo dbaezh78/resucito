@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v372'; // v2.1.36 Sincronización nube-local para salmos eucarísticos
+const CACHE_NAME = 'resucito-cache-v373'; // v2.1.37 Optimización de caché y recursos faltantes
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

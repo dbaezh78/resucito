@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.36",
+  "latestVersion": "2.1.37",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.36)",
-  "updateMessage": "Salmos de la Eucaristía: carga inteligente desde Firebase Cloud con conexión y respaldo local sin conexión.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.37)",
+  "updateMessage": "Optimización de descarga y caché: actualización ultrarrápida sin re-descargas innecesarias ni bloqueos en tablets y móviles.",
   "releaseNotes": [
-    "Sincronización completa de los 981 salmos de la Eucaristía en Firebase Firestore.",
-    "Carga inteligente: siempre consulta Firebase cuando hay internet, con respaldo automático local sin internet.",
-    "Actualización y normalización automática de salmos de todos los ciclos litúrgicos.",
-    "Sincronización en tiempo real al restablecerse la conexión a internet."
+    "Descarga de salmos eucarísticos optimizada a través de paquetes de ciclos: carga instantánea en 7 archivos en vez de 981 peticiones.",
+    "Comprobación previa de caché: ningún canto o recurso ya guardado se vuelve a descargar.",
+    "Actualización ultrarrápida del sistema para teléfonos y tablets.",
+    "Preservación completa y permanente de cantos y salmos en caché separada ('resucito-cantos-cache')."
   ]
 }

@@ -2155,25 +2155,38 @@ window.initAjustes = async function() {
   });
 
   // --- MÓDULO ESTADO RESUCITÓ ---
-  async function loadResourceIntoCache(url) {
+  async function loadResourceIntoCache(url, preOpened = null) {
     try {
       const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/');
       let cache;
-      if (isSong) {
-        cache = await caches.open('resucito-cantos-cache');
+      if (preOpened) {
+        cache = isSong ? preOpened.songsCache : preOpened.appCache;
       } else {
-        const keys = await caches.keys();
-        const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
-        cache = await caches.open(cacheName);
+        if (isSong) {
+          cache = await caches.open('resucito-cantos-cache');
+        } else {
+          const keys = await caches.keys();
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v372';
+          cache = await caches.open(cacheName);
+        }
       }
       
-      const res = await fetch(url);
+      // Comprobar si ya existe en la caché para no gastar recursos ni tiempo
+      const existing = await cache.match(url);
+      if (existing) return true;
+
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 9000);
+
+      const res = await fetch(url, { signal: controller.signal });
+      clearTimeout(timeoutId);
+
       if (res.ok) {
         await cache.put(url, res.clone());
         return true;
       }
     } catch (e) {
-      console.error('Error cargando recurso a caché:', url, e);
+      console.warn('Aviso cargando recurso a caché:', url, e.message || e);
     }
     return false;
   }
@@ -2281,9 +2294,10 @@ window.initAjustes = async function() {
   window.cargarTodosLosRecursosFaltantes = async function (onProgressCallback) {
     try {
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v372';
       const appCache = await caches.open(cacheName);
       const songsCache = await caches.open('resucito-cantos-cache');
+      const preOpened = { appCache, songsCache };
       
       const resourcesData = await getAllAppResources();
       
@@ -2319,11 +2333,11 @@ window.initAjustes = async function() {
       }
       
       let count = 0;
-      const batchSize = 12;
+      const batchSize = 18;
       for (let i = 0; i < total; i += batchSize) {
         const batch = missingUrls.slice(i, i + batchSize);
         await Promise.all(batch.map(async (url) => {
-          await loadResourceIntoCache(url);
+          await loadResourceIntoCache(url, preOpened);
           count++;
         }));
         
@@ -2349,17 +2363,16 @@ window.initAjustes = async function() {
   };
 
 
-  // Helper para garantizar que window.allSongs esté disponible para offline y estado
+  // Helper para garantizar que window.allSongs esté disponible para offline y estado (solo cantos, sin salmos eucarísticos)
   async function getOrFetchAllSongs() {
     if (window.allSongs && Array.isArray(window.allSongs) && window.allSongs.length > 0) {
-      return window.allSongs;
+      return window.allSongs.filter(s => s && s.id && !s.id.startsWith('seu'));
     }
     try {
       const res = await fetch('data/songs-index.json');
       if (res.ok) {
         const data = await res.json();
-        window.allSongs = data;
-        return data;
+        return Array.isArray(data) ? data.filter(s => s && s.id && !s.id.startsWith('seu')) : [];
       }
     } catch (e) {
       console.warn("Error cargando songs-index.json:", e);
@@ -2383,7 +2396,14 @@ window.initAjustes = async function() {
       { label: 'Índice de Búsqueda (JSON)', url: 'data/songs-index.json' },
       { label: 'Posiciones de Acordes (JSON)', url: 'data/chord_positions.json' },
       { label: 'Catequesis (JSON)', url: 'data/catequesis.json' },
-      { label: 'Paises y Diócesis (JSON)', url: 'data/paises.json' }
+      { label: 'Paises y Diócesis (JSON)', url: 'data/paises.json' },
+      { label: 'Salmos Ciclo A (JSON)', url: 'data/seucaristia/cicloa.json' },
+      { label: 'Salmos Ciclo B (JSON)', url: 'data/seucaristia/ciclob.json' },
+      { label: 'Salmos Ciclo C (JSON)', url: 'data/seucaristia/cicloc.json' },
+      { label: 'Salmos Año Par (JSON)', url: 'data/seucaristia/anopar.json' },
+      { label: 'Salmos Año Impar (JSON)', url: 'data/seucaristia/anoimpar.json' },
+      { label: 'Salmos Ferias (JSON)', url: 'data/seucaristia/ferias.json' },
+      { label: 'Salmos Santos (JSON)', url: 'data/seucaristia/santos.json' }
     ];
 
     const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html', 'bitacora.html', 'expancion.html', 'cliturgico.html', 'mantcantos.html', 'respaldo.html'];
@@ -2421,11 +2441,13 @@ window.initAjustes = async function() {
     const assetResources = Array.from(assetSet).map(url => ({ url }));
 
     const songs = await getOrFetchAllSongs();
-    const songResources = songs.map(s => {
-      const id = s.id;
-      const folder = (id && id.startsWith('aet')) ? 'data/songs-ae' : 'data/songs';
-      return { url: `${folder}/${id}.json?offline=true` };
-    });
+    const songResources = songs
+      .filter(s => s && s.id && !s.id.startsWith('seu'))
+      .map(s => {
+        const id = s.id;
+        const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+        return { url: `${folder}/${id}.json?offline=true` };
+      });
 
     return {
       htmlResources,
@@ -2734,6 +2756,11 @@ window.initAjustes = async function() {
               try {
                 const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/');
                 const targetCache = isSong ? songsCache : appCache;
+                const existing = await targetCache.match(url);
+                if (existing) {
+                  downloaded++;
+                  return;
+                }
                 const res = await fetch(url);
                 if (res.ok) {
                   await targetCache.put(url, res.clone());

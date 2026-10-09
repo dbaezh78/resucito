@@ -837,24 +837,36 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
             } else {
               // Fallback directo con los cantos
               const keys = await caches.keys();
-              const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
+              const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v372';
               const cache = await caches.open(cacheName);
               const songsCache = await caches.open('resucito-cantos-cache');
               const indexRes = await fetch('data/songs-index.json?t=' + Date.now());
               if (indexRes.ok) {
                 const songs = await indexRes.clone().json();
                 await cache.put('data/songs-index.json', indexRes);
-                for (let i = 0; i < songs.length; i += 10) {
-                  const slice = songs.slice(i, i + 10);
+                for (let i = 0; i < songs.length; i += 15) {
+                  const slice = songs.slice(i, i + 15);
                   await Promise.all(slice.map(async s => {
-                    const folder = (s.id && s.id.startsWith('aet')) ? 'data/songs-ae' : 'data/songs';
+                    if (!s || !s.id || s.id.startsWith('seu')) return;
+                    const folder = s.id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
                     const u = `${folder}/${s.id}.json?offline=true`;
+                    if (await songsCache.match(u)) return; // Ya en caché, omitir
                     try {
                       const cr = await fetch(u);
                       if (cr.ok) await songsCache.put(u, cr);
                     } catch(e) {}
                   }));
                 }
+                // Asegurar los 7 paquetes de salmos eucarísticos en caché
+                const cycleFiles = ['cicloa.json', 'ciclob.json', 'cicloc.json', 'anopar.json', 'anoimpar.json', 'ferias.json', 'santos.json'];
+                await Promise.all(cycleFiles.map(async cf => {
+                  const cu = `data/seucaristia/${cf}`;
+                  if (await songsCache.match(cu)) return;
+                  try {
+                    const cr = await fetch(cu);
+                    if (cr.ok) await songsCache.put(cu, cr);
+                  } catch(e) {}
+                }));
               }
             }
           } catch (errRecursos) {
