@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v373'; // v2.1.37 Optimización de caché y recursos faltantes
+const CACHE_NAME = 'resucito-cache-v374'; // v2.1.38 Ciclo en subtítulo (Ciclo en negro y letra en rojo)
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

@@ -1164,7 +1164,8 @@ async function loadSongView(songId) {
       }
       const stage = (currentCanto.catCanto || currentCanto.stage || 'SALMO EUCARISTÍA').toUpperCase();
       const title = (currentCanto.celebracion || currentCanto.title || currentCanto.tt || '').toUpperCase();
-      const subtitle = currentCanto.subtitle || currentCanto.salmo || '';
+      const rawSubtitle = currentCanto.subtitle || currentCanto.salmo || '';
+      const subtitle = formatSubtitleWithCiclo(rawSubtitle, currentCanto.ciclo);
       
       let cantorDeEsteCanto = '';
       if (activeCustomPlaylist && Array.isArray(activeCustomPlaylist.ids_cantos)) {
@@ -1230,7 +1231,7 @@ async function loadSongView(songId) {
       viewerSongTitle.textContent = currentCanto.celebracion || currentCanto.title || currentCanto.tt || 'Sin Título';
     }
     if (viewerSongSubtitle) {
-      viewerSongSubtitle.textContent = currentCanto.subtitle || currentCanto.salmo || '';
+      viewerSongSubtitle.innerHTML = formatSubtitleWithCiclo(currentCanto.subtitle || currentCanto.salmo || '', currentCanto.ciclo);
     }
     document.title = `${currentCanto.celebracion || currentCanto.title || currentCanto.tt || 'Sin Título'} - Resucitó`;
     
@@ -1840,8 +1841,11 @@ function renderSection(container, lines, side) {
 
       const initialChosenVar = (item.variants || []).find(v => v.id === selectEl.value);
       if (initialChosenVar && (initialChosenVar.salmo || initialChosenVar.subtitle)) {
+        const formattedSub = formatSubtitleWithCiclo(initialChosenVar.salmo || initialChosenVar.subtitle, currentCanto ? currentCanto.ciclo : '');
         const subTitleEl = document.getElementById('viewer-song-subtitle');
-        if (subTitleEl) subTitleEl.textContent = initialChosenVar.salmo || initialChosenVar.subtitle;
+        if (subTitleEl) subTitleEl.innerHTML = formattedSub;
+        const headerSubEl = document.querySelector('#canto-header-block .canto-header-subtitle');
+        if (headerSubEl) headerSubEl.innerHTML = formattedSub;
       }
 
       headerDiv.appendChild(selectEl);
@@ -1877,8 +1881,11 @@ function renderSection(container, lines, side) {
 
         const chosenVar = (item.variants || []).find(v => v.id === selectedId);
         if (chosenVar && (chosenVar.salmo || chosenVar.subtitle)) {
+          const formattedSub = formatSubtitleWithCiclo(chosenVar.salmo || chosenVar.subtitle, currentCanto ? currentCanto.ciclo : '');
           const subTitleEl = document.getElementById('viewer-song-subtitle');
-          if (subTitleEl) subTitleEl.textContent = chosenVar.salmo || chosenVar.subtitle;
+          if (subTitleEl) subTitleEl.innerHTML = formattedSub;
+          const headerSubEl = document.querySelector('#canto-header-block .canto-header-subtitle');
+          if (headerSubEl) headerSubEl.innerHTML = formattedSub;
         }
 
         if (typeof window.repositionChords === 'function') {
@@ -2041,6 +2048,59 @@ function renderSection(container, lines, side) {
       container.appendChild(renderLine(item, side, lineIdx));
     }
   });
+}
+
+// Formatear ciclo litúrgico con "Ciclo" en negro y la letra (A, B, C, etc.) en rojo
+function formatCicloHtml(ciclo) {
+  if (!ciclo) return '';
+  const cStr = String(ciclo).trim();
+  if (!cStr) return '';
+
+  // Ej: "Ciclo A", "Ciclo B", "Ciclo C", "Ciclo A, B y C"
+  const mCiclo = cStr.match(/^Ciclo\s+(.+)$/i);
+  if (mCiclo) {
+    return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${escapeHtml(mCiclo[1].trim())}</span>`;
+  }
+
+  // Ej: "A", "B", "C"
+  if (/^[ABC]$/i.test(cStr)) {
+    return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${cStr.toUpperCase()}</span>`;
+  }
+
+  // Ej: "Año Par", "Año Impar"
+  const mAno = cStr.match(/^A[ñn]o\s+(.+)$/i);
+  if (mAno) {
+    return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${escapeHtml(mAno[1].trim())}</span>`;
+  }
+
+  return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${escapeHtml(cStr)}</span>`;
+}
+
+function formatSubtitleWithCiclo(subtitle, ciclo) {
+  const rawSub = (subtitle || '').trim();
+  const cStr = (ciclo || '').trim();
+
+  if (!cStr) {
+    if (/\b(?:Ciclo|A[ñn]o)\s+[ABC]\b/i.test(rawSub)) {
+      return escapeHtml(rawSub).replace(
+        /\b(Ciclo|A[ñn]o)\s+([ABC])\b/gi,
+        '<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">$2</span>'
+      );
+    }
+    return escapeHtml(rawSub);
+  }
+
+  const cicloHtml = formatCicloHtml(cStr);
+  if (!rawSub) return cicloHtml;
+
+  if (/\b(?:Ciclo|A[ñn]o)\s+[ABC]\b/i.test(rawSub)) {
+    return escapeHtml(rawSub).replace(
+      /\b(Ciclo|A[ñn]o)\s+([ABC])\b/gi,
+      '<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">$2</span>'
+    );
+  }
+
+  return `${escapeHtml(rawSub)} &mdash; ${cicloHtml}`;
 }
 
 // Formatear líneas de salmos con sangrías y R. destacada en rojo
@@ -3698,7 +3758,7 @@ function renderSongsList(songsList) {
           ${isCurrentWeek ? '<span class="badge badge-semana-actual">✨ SEMANA ACTUAL</span>' : ''}
         </div>
         <div class="song-card-title">${info.celebracion} <span style="font-size: 0.85em; font-weight: 700; color: #0284c7; margin-left: 6px;">(${info.ciclo})</span> ${isCurrentWeek ? '<span class="tag-semana-actual-simple">★ ACTUAL</span>' : ''}</div>
-        <div class="song-card-subtitle">${song.subtitle || ''}</div>
+        <div class="song-card-subtitle">${formatSubtitleWithCiclo(song.subtitle || '', '')}</div>
         <div class="song-card-badges">
           ${song.hasAudio ? '<span class="badge badge-audio">Audio</span>' : ''}
           ${song.cejilla ? `<span class="badge badge-capo">Cejilla: ${song.cejilla}</span>` : ''}
@@ -3729,7 +3789,7 @@ function renderSongsList(songsList) {
           ${song.dia ? `<span class="badge badge-capo">${song.dia}</span>` : ''}
         </div>
         <div class="song-card-title">${song.celebracion || song.title} <span style="font-size: 0.85em; font-weight: 700; color: #0284c7; margin-left: 6px;">(${song.ciclo || ''})</span></div>
-        <div class="song-card-subtitle">${song.subtitle || song.salmo || ''}</div>
+        <div class="song-card-subtitle">${formatSubtitleWithCiclo(song.subtitle || song.salmo || '', song.ciclo)}</div>
         ${song.respuesta ? `<div class="song-card-subtitle" style="color: var(--accent-color, #c026d3); font-style: italic; margin-top: 4px;">${song.respuesta}</div>` : ''}
       `;
       songsGrid.appendChild(card);
@@ -4897,9 +4957,9 @@ async function obtenerCantoCompleto(songId) {
 // --- Generador de HTML Básico como Marcador de Posición ---
 function generarHtmlCantoBasico(song) {
   if (!song) return '';
-  const stage = (song.catCanto || '').toUpperCase();
-  const title = (song.title || song.tt || '').toUpperCase();
-  const subtitle = song.subtitle || '';
+  const stage = (song.catCanto || song.stage || '').toUpperCase();
+  const title = (song.celebracion || song.title || song.tt || '').toUpperCase();
+  const subtitle = formatSubtitleWithCiclo(song.subtitle || song.salmo || '', song.ciclo);
   const christImgSrc = isCatolicoSong(song) ? 'img/Cristo_1.png' : 'img/christ.png';
   const stageColor = getStageColor(song.catCanto || song.stage);
   
@@ -4930,9 +4990,9 @@ function generarHtmlCantoBasico(song) {
 // --- Generador de HTML Estático para las diapositivas del Carrusel ---
 function generarHtmlCanto(song) {
   if (!song) return '';
-  const stage = (song.catCanto || '').toUpperCase();
-  const title = (song.title || song.tt || '').toUpperCase();
-  const subtitle = song.subtitle || '';
+  const stage = (song.catCanto || song.stage || '').toUpperCase();
+  const title = (song.celebracion || song.title || song.tt || '').toUpperCase();
+  const subtitle = formatSubtitleWithCiclo(song.subtitle || song.salmo || '', song.ciclo);
   const christImgSrc = isCatolicoSong(song) ? 'img/Cristo_1.png' : 'img/christ.png';
   const stageColor = getStageColor(song.catCanto || song.stage);
   

@@ -1,12 +1,11 @@
 {
-  "latestVersion": "2.1.37",
+  "latestVersion": "2.1.38",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.37)",
-  "updateMessage": "Optimización de descarga y caché: actualización ultrarrápida sin re-descargas innecesarias ni bloqueos en tablets y móviles.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.38)",
+  "updateMessage": "Subtítulo litúrgico con indicador de Ciclo destacado (Ciclo en negro y letra en rojo).",
   "releaseNotes": [
-    "Descarga de salmos eucarísticos optimizada a través de paquetes de ciclos: carga instantánea en 7 archivos en vez de 981 peticiones.",
-    "Comprobación previa de caché: ningún canto o recurso ya guardado se vuelve a descargar.",
-    "Actualización ultrarrápida del sistema para teléfonos y tablets.",
-    "Preservación completa y permanente de cantos y salmos en caché separada ('resucito-cantos-cache')."
+    "Subtítulo de Salmo Eucaristía y Aclamaciones actualizado con el ciclo litúrgico destacado: palabra 'Ciclo' en negro y letra del ciclo en rojo.",
+    "Sincronización visual en el visor principal, carrusel de cantos, tarjetas del índice y vista previa de Salmo Eucarístico.",
+    "Optimización continua de caché y rendimiento."
   ]
 }

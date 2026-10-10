@@ -725,11 +725,60 @@
             <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${escapeHtml(p.title || 'Sin título')}</span>
             <span class="psalm-item-badge">${escapeHtml(p.ciclo || '')}</span>
           </div>
-          <div class="psalm-item-subtitle">${escapeHtml(p.subtitle || p.respuesta || '')}</div>
+          <div class="psalm-item-subtitle">${formatSubtitleWithCiclo(p.subtitle || p.respuesta || '', p.ciclo)}</div>
         `;
         itemEl.onclick = () => selectPsalm(p);
         psalmListEl.appendChild(itemEl);
       });
+    }
+
+    function formatCicloHtml(ciclo) {
+      if (!ciclo) return '';
+      const cStr = String(ciclo).trim();
+      if (!cStr) return '';
+
+      const mCiclo = cStr.match(/^Ciclo\s+(.+)$/i);
+      if (mCiclo) {
+        return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${escapeHtml(mCiclo[1].trim())}</span>`;
+      }
+
+      if (/^[ABC]$/i.test(cStr)) {
+        return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${cStr.toUpperCase()}</span>`;
+      }
+
+      const mAno = cStr.match(/^A[ñn]o\s+(.+)$/i);
+      if (mAno) {
+        return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${escapeHtml(mAno[1].trim())}</span>`;
+      }
+
+      return `<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">${escapeHtml(cStr)}</span>`;
+    }
+
+    function formatSubtitleWithCiclo(subtitle, ciclo) {
+      const rawSub = (subtitle || '').trim();
+      const cStr = (ciclo || '').trim();
+
+      if (!cStr) {
+        if (/\b(?:Ciclo|A[ñn]o)\s+[ABC]\b/i.test(rawSub)) {
+          return escapeHtml(rawSub).replace(
+            /\b(Ciclo|A[ñn]o)\s+([ABC])\b/gi,
+            '<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">$2</span>'
+          );
+        }
+        return escapeHtml(rawSub);
+      }
+
+      const cicloHtml = formatCicloHtml(cStr);
+      if (!rawSub) return cicloHtml;
+
+      if (/\b(?:Ciclo|A[ñn]o)\s+[ABC]\b/i.test(rawSub)) {
+        return escapeHtml(rawSub).replace(
+          /\b(Ciclo|A[ñn]o)\s+([ABC])\b/gi,
+          '<span style="color: var(--text-color, #000000); font-weight: 700;">Ciclo</span> <span style="color: #d01212; font-weight: 800;">$2</span>'
+        );
+      }
+
+      return `${escapeHtml(rawSub)} &mdash; ${cicloHtml}`;
     }
 
     // 3. Selección y Carga en el Formulario
@@ -858,12 +907,13 @@
     function updatePreview() {
       const title = fTitle.value.trim() || 'Título del Salmo';
       const subtitle = fSubtitle.value.trim() || 'Salmo responsorial: ...';
+      const ciclo = fCiclo ? fCiclo.value : '';
       const resp = fRespuesta.value.trim();
       const respOpt = fRespuestaOpt.value.trim();
       const rawText = fTexto.value;
 
       prevTitle.textContent = title;
-      prevSubtitle.textContent = subtitle;
+      prevSubtitle.innerHTML = formatSubtitleWithCiclo(subtitle, ciclo);
 
       const strophes = parseStrophesFromText(rawText);
       strophesCountLabel.textContent = `${strophes.length} estrofas detectadas`;
