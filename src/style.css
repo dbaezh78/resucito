@@ -4685,7 +4685,7 @@ body.theme-dark .canto-header-block.header-eucaristia {
 
 /* Separación exclusiva para Salmos de la Eucaristía: al menos 20px a la izquierda */
 .canto-columns-container.salmo-eucaristia-viewer {
-  padding-left: 20px !important;
+  padding-left: 70px !important;
   padding-right: 20px !important;
   box-sizing: border-box !important;
 }
@@ -4696,4 +4696,4 @@ body.theme-dark .canto-header-block.header-eucaristia {
   margin-bottom: 0.8rem !important;
 }
 
-
+
