@@ -1,0 +1,128 @@
+{
+  "id": "feliznavidad",
+  "tt": "Feliz Navidad",
+  "title": "Feliz Navidad",
+  "subtitle": "José Feliciano",
+  "category": [
+    "Católicos",
+    "Navidad"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "116",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/feliznavidad.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=esmicuerpo",
+  "sig": "/src/index.html?canto=gloriafpalazon",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "FELIZ NAVIDAD, FELIZ NAVIDAD, (Sol,,0)(La,,80)(Re,,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "FELIZ NAVIDAD, (Sol,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "PRÓSPERO AÑO Y FELICIDAD. (La,,10)(Re,,150)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "FELIZ NAVIDAD, FELIZ NAVIDAD, (Sol,,0)(La,,80)(Re,,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "FELIZ NAVIDAD, (Sol,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "PRÓSPERO AÑO Y FELICIDAD. (La,,10)(Re,,150)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "I want to wish you a Merry Christmas, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "I want to wish you a Merry Christmas, (La,,0)(Re,,180)",
+      "sC": ""
+    },
+    {
+      "line": "I want to wish you a Merry Christmas, (Si,m,0)(Sol,,180)",
+      "sC": ""
+    },
+    {
+      "line": "From the bottom of my heart. (La,,0)(Re,,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "I want to wish you a Merry Christmas, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "I want to wish you a Merry Christmas, (La,,0)(Re,,180)",
+      "sC": ""
+    },
+    {
+      "line": "I want to wish you a Merry Christmas, (Si,m,0)(Sol,,180)",
+      "sC": ""
+    },
+    {
+      "line": "From the bottom of my heart. (La,,0)(Re,,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "FELIZ NAVIDAD, FELIZ NAVIDAD, (Sol,,0)(La,,80)(Re,,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "FELIZ NAVIDAD, (Sol,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "PRÓSPERO AÑO Y FELICIDAD. (La,,10)(Re,,150)",
+      "sC": "as"
+    }
+  ]
+}

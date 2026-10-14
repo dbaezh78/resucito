@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v375'; // v2.1.39 Carpeta data/joven y canto El agua del Señor
+const CACHE_NAME = 'resucito-cache-v376'; // v2.1.40 Colección completa Canto Joven
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

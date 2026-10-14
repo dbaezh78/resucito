@@ -1,0 +1,100 @@
+{
+  "id": "corderodediosv1",
+  "tt": "Cordero de Dios",
+  "title": "Cordero de Dios v1",
+  "subtitle": "Ordinario de la Misa",
+  "category": [
+    "Católicos",
+    "Cordero"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "La",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "110",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/corderodediosv1.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=bendigamosalsenor",
+  "sig": "/src/index.html?canto=cristotenecesitaparaamar",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios (La,,0)(Mi,,100)",
+      "sC": "tc"
+    },
+    {
+      "line": "que quitas el pecado del mundo, (Re,,180)",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de nosotros, (Mi,7,140)",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de nosotros. (La,,140)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios (La,,0)(Mi,,100)",
+      "sC": ""
+    },
+    {
+      "line": "que quitas el pecado del mundo, (Re,,180)",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de nosotros, (Mi,7,140)",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de nosotros. (La,,140)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios (La,,0)(Mi,,100)",
+      "sC": "tc"
+    },
+    {
+      "line": "que quitas el pecado del mundo, (Re,,180)",
+      "sC": ""
+    },
+    {
+      "line": "danos la paz, (Mi,7,90)",
+      "sC": ""
+    },
+    {
+      "line": "danos la paz. (La,,90)",
+      "sC": ""
+    }
+  ]
+}

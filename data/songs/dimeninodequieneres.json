@@ -1,0 +1,189 @@
+{
+  "id": "dimeninodequieneres",
+  "tt": "Dime niño de quién eres",
+  "title": "Dime niño de quién eres",
+  "subtitle": "Villancico tradicional",
+  "category": [
+    "Católicos",
+    "Navidad"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "112",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/dimeninodequieneres.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cristotenecesitaparaamar",
+  "sig": "/src/index.html?canto=diosestaaqui",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dime niño de quién eres (Sol,,0)(Re,7,160)",
+      "sC": "tc"
+    },
+    {
+      "line": "todo vestido de blanco (bis) (Sol,,160)",
+      "sC": ""
+    },
+    {
+      "line": "Soy de la Virgen María (Do,,0)(Sol,,160)",
+      "sC": ""
+    },
+    {
+      "line": "y del Espíritu Santo. (bis) (Re,7,140)(Sol,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "RESUENEN CON ALEGRÍA (Re,7,0)(Sol,,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS CÁNTICOS DE MI TIERRA, (Re,,10)(Do,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "Y VIVA EL NIÑO DE DIOS (Re,7,10)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HA NACIDO EN NOCHEBUENA. (Sol,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "(BIS)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La Nochebuena se viene, (Re,7,0)(Sol,,150)",
+      "sC": "tc"
+    },
+    {
+      "line": "la Nochebuena se va, (Re,7,130)",
+      "sC": ""
+    },
+    {
+      "line": "y nosotros nos iremos, (Sol,,140)",
+      "sC": ""
+    },
+    {
+      "line": "y no volveremos más. (Re,7,140)(Sol,,190)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dime Niño, ¿de quién eres (Sol,,0)(Re,7,160)",
+      "sC": "tc"
+    },
+    {
+      "line": "y si te llamas Jesús? (Sol,,140)",
+      "sC": ""
+    },
+    {
+      "line": "Soy amor en el pesebre (Do,,0)(Sol,,150)",
+      "sC": ""
+    },
+    {
+      "line": "y sufrimiento en la cruz. (bis) (Re,7,150)(Sol,,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_dimenino_1",
+      "initialState": "collapsed",
+      "triggerLine": "RESUENEN CON ALEGRÍA... (Re,7,0)(Sol,,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LOS CÁNTICOS DE MI TIERRA, (Re,,10)(Do,,160)",
+          "sC": "as"
+        },
+        {
+          "line": "Y VIVA EL NIÑO DE DIOS (Re,7,10)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HA NACIDO EN NOCHEBUENA. (Sol,,180)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dime Niño, ¿de quién eres (Sol,,0)(Re,7,160)",
+      "sC": "tc"
+    },
+    {
+      "line": "todo vestido de blanco? (Sol,,160)",
+      "sC": ""
+    },
+    {
+      "line": "Soy de la Virgen María (Do,,0)(Sol,,160)",
+      "sC": ""
+    },
+    {
+      "line": "y del Espíritu Santo. (bis) (Re,7,140)(Sol,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "RESUENEN CON ALEGRÍA (Re,7,0)(Sol,,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "LOS CÁNTICOS DE MI TIERRA, (Re,,10)(Do,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "Y VIVA EL NIÑO DE DIOS (Re,7,10)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HA NACIDO EN NOCHEBUENA. (Sol,,180)",
+      "sC": "as"
+    }
+  ]
+}

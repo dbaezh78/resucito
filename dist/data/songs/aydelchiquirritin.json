@@ -1,0 +1,166 @@
+{
+  "id": "aydelchiquirritin",
+  "tt": "Ay del Chiquirritín",
+  "title": "Ay del Chiquirritín",
+  "subtitle": "Villancico tradicional",
+  "category": [
+    "Católicos",
+    "Navidad"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mi",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "108",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/aydelchiquirritin.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=avemariadefatima",
+  "sig": "/src/index.html?canto=bendigamosalsenor",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡AY, DEL CHIQUIRRITÍN! (Mi,,0)(Si,7,150)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
+      "sC": "as"
+    },
+    {
+      "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por debajo del arco del portalico (Mi,,0)(Si,7,210)",
+      "sC": "tc"
+    },
+    {
+      "line": "se descubre a María, José y al Niño. (Mi,,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_chiquirritin_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! ... (Mi,,0)(Si,7,150)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
+          "sC": "as"
+        },
+        {
+          "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
+          "sC": "as"
+        },
+        {
+          "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No me mires tan fiero que soy chiquito, (Mi,,0)(Si,7,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "y me asustan los ojos que me has echado. (Mi,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_chiquirritin_2",
+      "initialState": "collapsed",
+      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! ... (Mi,,0)(Si,7,150)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
+          "sC": "as"
+        },
+        {
+          "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
+          "sC": "as"
+        },
+        {
+          "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Entre un buey y una mula Dios ha nacido, (Mi,,0)(Si,7,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "y en un pobre pesebre lo han recogido. (Mi,,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡AY, DEL CHIQUIRRITÍN! (Mi,,0)(Si,7,150)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
+      "sC": "as"
+    },
+    {
+      "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
+      "sC": "as"
+    }
+  ]
+}

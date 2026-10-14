@@ -1,0 +1,184 @@
+{
+  "id": "tancercademi",
+  "tt": "Tan cerca de mí",
+  "title": "Tan cerca de mí",
+  "subtitle": "Cesáreo Gabaráin",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "130",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/tancercademi.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santocarismatico",
+  "sig": "/src/index.html?canto=venespiritudedios",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TAN CERCA DE MÍ, (Do,,0)(Sol,,70)(Do,,110)(Do,7,130)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TAN CERCA DE MÍ, (Fa,,10)(Do,,60)(Sol,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HASTA LO PUEDO TOCAR, (Do,,10)(Mi,m,60)(La,m,100)(Fa,,140)",
+      "sC": "as"
+    },
+    {
+      "line": "JESÚS ESTÁ AQUÍ. (Do,,10)(Sol,7,50)(Do,,90)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "1. Le hablaré sin miedo al oído, (Do,,0)(Sol,7,140)(Do,,190)(Do,7,210)",
+      "sC": "tc"
+    },
+    {
+      "line": "le contaré las cosas que hay en mí, (Fa,,0)(Sol,7,150)(Do,,190)(La,m,220)",
+      "sC": ""
+    },
+    {
+      "line": "y que sólo a Él le interesarán. (Re,m,0)(Sol,7,120)(Do,,160)(La,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "Él es un amigo para mí. (Re,7,0)(Sol,,120)(Sol,7,150)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "2. Míralo a tu lado caminando, (Do,,0)(Sol,7,140)(Do,,200)(Do,7,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "paseando entre la multitud, (Fa,,0)(Sol,7,130)(Do,,170)(La,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "muchos no lo ven, porque ciegos van, (Re,m,0)(Sol,7,160)(Do,,200)(La,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "ocupados sin saber mirar. (Re,7,0)(Sol,,120)(Sol,7,150)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_tancerca_1",
+      "initialState": "collapsed",
+      "triggerLine": "TAN CERCA DE MÍ... (Do,,0)(Sol,,70)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "TAN CERCA DE MÍ, (Fa,,10)(Do,,60)(Sol,7,110)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HASTA LO PUEDO TOCAR, (Do,,10)(Mi,m,60)(La,m,100)(Fa,,140)",
+          "sC": "as"
+        },
+        {
+          "line": "JESÚS ESTÁ AQUÍ. (Do,,10)(Sol,7,50)(Do,,90)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "3. No busques a Cristo en lo alto (Do,,0)(Sol,7,140)(Do,,200)(Do,7,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni lo busques en la oscuridad, (Fa,,0)(Sol,7,130)(Do,,170)(La,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "muy cerca de ti, en tu corazón (Re,m,0)(Sol,7,130)(Do,,170)(La,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "puedes adorar a tu Señor. (Re,7,0)(Sol,,120)(Sol,7,150)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "4. Ya no busco a Cristo en las alturas, (Do,,0)(Sol,7,150)(Do,,220)(Do,7,240)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni le buscaré en la oscuridad, (Fa,,0)(Sol,7,140)(Do,,180)(La,m,210)",
+      "sC": ""
+    },
+    {
+      "line": "dentro de mi ser, en mi corazón, (Re,m,0)(Sol,7,140)(Do,,180)(La,m,210)",
+      "sC": ""
+    },
+    {
+      "line": "siento que Jesús conmigo está. (Re,7,0)(Sol,,130)(Sol,7,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "5. Yo le contaré lo que me pasa, (Do,,0)(Sol,7,140)(Do,,200)(Do,7,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "como a mis amigos le hablaré, (Fa,,0)(Sol,7,130)(Do,,170)(La,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "yo no sé si es Él, quien habita en mí, (Re,m,0)(Sol,7,150)(Do,,190)(La,m,220)",
+      "sC": ""
+    },
+    {
+      "line": "o si soy yo quien habita en Él. (Re,7,0)(Sol,,120)(Sol,7,150)",
+      "sC": ""
+    }
+  ]
+}

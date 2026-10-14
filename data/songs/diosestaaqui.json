@@ -1,0 +1,192 @@
+{
+  "id": "diosestaaqui",
+  "tt": "Dios está aquí",
+  "title": "Dios está aquí",
+  "subtitle": "Javier Gacías",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "113",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/diosestaaqui.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=dimeninodequieneres",
+  "sig": "/src/index.html?canto=ensumesahayamor",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DIOS ESTÁ AQUÍ, (Do,,0)(Sol,,90)(La,m,130)",
+      "sC": "ta as"
+    },
+    {
+      "line": "tan cierto como el aire que respiro, (Fa,,10)(Sol,,190)(Do,,240)(Do,7,280)",
+      "sC": "as"
+    },
+    {
+      "line": "tan cierto como la mañana se levanta, (Fa,,10)(Sol,,190)(Do,,240)(Mi,m,270)(La,m,290)",
+      "sC": "as"
+    },
+    {
+      "line": "tan cierto como que este canto (Fa,,10)(Sol,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "lo puedes oír. (Do,,80)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lo puedes sentir (Sol,,110)",
+      "sC": "tc"
+    },
+    {
+      "line": "moviéndose entre las montañas. (Fa,,10)(Sol,,170)(Do,,220)",
+      "sC": ""
+    },
+    {
+      "line": "Lo puedes oír (Sol,,100)",
+      "sC": ""
+    },
+    {
+      "line": "cantando con nosotros aquí. (Fa,,10)(Sol,,160)(Do,,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lo puedes llevar, (Sol,,110)",
+      "sC": ""
+    },
+    {
+      "line": "cuando por esa puerta salgas. (Fa,,10)(Sol,,160)(Do,,210)",
+      "sC": ""
+    },
+    {
+      "line": "Lo puedes guardar (Sol,,110)",
+      "sC": ""
+    },
+    {
+      "line": "muy dentro de tu corazón. (Fa,,10)(Sol,,150)(Do,,200)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_diosestaaqui_1",
+      "initialState": "collapsed",
+      "triggerLine": "DIOS ESTÁ AQUÍ... (Do,,0)(Sol,,90)(La,m,130)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "tan cierto como el aire que respiro, (Fa,,10)(Sol,,190)(Do,,240)(Do,7,280)",
+          "sC": "as"
+        },
+        {
+          "line": "tan cierto como la mañana se levanta, (Fa,,10)(Sol,,190)(Do,,240)(Mi,m,270)(La,m,290)",
+          "sC": "as"
+        },
+        {
+          "line": "tan cierto como que este canto lo puedes oír. (Fa,,10)(Sol,,180)(Do,,250)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lo puedes notar (Sol,,110)",
+      "sC": "tc"
+    },
+    {
+      "line": "a tu lado en este mismo instante. (Fa,,10)(Sol,,190)(Do,,230)",
+      "sC": ""
+    },
+    {
+      "line": "No seas ya más (Sol,,100)",
+      "sC": ""
+    },
+    {
+      "line": "de los que no le quieren ver. (Fa,,10)(Sol,,170)(Do,,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Le puedes contar (Sol,,110)",
+      "sC": ""
+    },
+    {
+      "line": "ese problema que tú tienes. (Fa,,10)(Sol,,160)(Do,,210)",
+      "sC": ""
+    },
+    {
+      "line": "Jesús está aquí: (Sol,,100)",
+      "sC": ""
+    },
+    {
+      "line": "Si quieres le puedes seguir. (Fa,,10)(Sol,,160)(Do,,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DIOS ESTÁ AQUÍ, (Do,,0)(Sol,,90)(La,m,130)",
+      "sC": "ta as"
+    },
+    {
+      "line": "tan cierto como el aire que respiro, (Fa,,10)(Sol,,190)(Do,,240)(Do,7,280)",
+      "sC": "as"
+    },
+    {
+      "line": "tan cierto como la mañana se levanta, (Fa,,10)(Sol,,190)(Do,,240)(Mi,m,270)(La,m,290)",
+      "sC": "as"
+    },
+    {
+      "line": "tan cierto como que este canto (Fa,,10)(Sol,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "lo puedes oír. (Do,,80)",
+      "sC": "as"
+    }
+  ]
+}

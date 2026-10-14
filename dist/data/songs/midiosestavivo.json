@@ -1,0 +1,159 @@
+{
+  "id": "midiosestavivo",
+  "tt": "Mi Dios está vivo",
+  "title": "Mi Dios está vivo",
+  "subtitle": "Alonso-Pagan",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "126",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/midiosestavivo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=marialamadrebuena",
+  "sig": "/src/index.html?canto=mueveteenmi",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mi Dios está vivo, Él no está muerto. (Sol,,0)(Mi,m,170)",
+      "sC": "tc"
+    },
+    {
+      "line": "Mi Dios está vivo en mi corazón. (La,m,0)(Re,7,120)(Sol,,190)",
+      "sC": ""
+    },
+    {
+      "line": "Mi Dios está vivo, ha resucitado, (Sol,,0)(Mi,m,170)",
+      "sC": ""
+    },
+    {
+      "line": "lo siento en mis manos, (Do,,0)(Re,7,120)",
+      "sC": ""
+    },
+    {
+      "line": "lo siento en mis pies, (Sol,,0)(Mi,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "lo siento en mi alma y en mi ser. (La,m,0)(Re,7,120)(Sol,,190)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "OH, OH, OH, OH, (Re,7,0)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HAY QUE NACER DEL AGUA. (Sol,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "OH, OH, OH, OH, HAY QUE NACER (Re,7,10)",
+      "sC": "as"
+    },
+    {
+      "line": "DEL ESPÍRITU DE DIOS. (Sol,,10)(Sol,7,120)",
+      "sC": "as"
+    },
+    {
+      "line": "OH, OH, OH, OH, HAY QUE NACER (Do,,10)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "DEL AGUA Y DEL ESPÍRITU DE DIOS, (Si,7,10)(Mi,,90)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "HAY QUE NACER DEL SEÑOR. (Re,7,10)(Sol,,130)(Sol,7,170)",
+      "sC": "as"
+    },
+    {
+      "line": "(BIS)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PREPÁRATE PARA QUE SIENTAS, (Sol,,0)(Re,7,120)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PREPÁRATE PARA QUE SIENTAS, (Sol,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "PREPÁRATE PARA QUE SIENTAS (La,m,10)",
+      "sC": "as"
+    },
+    {
+      "line": "EL ESPÍRITU DE DIOS. (Re,7,10)(Sol,,110)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Déjalo que se mueva, (Sol,,0)(Re,7,100)",
+      "sC": "tc"
+    },
+    {
+      "line": "déjalo que se mueva, (Sol,,100)",
+      "sC": ""
+    },
+    {
+      "line": "déjalo que se mueva, (La,m,100)",
+      "sC": ""
+    },
+    {
+      "line": "dentro de tu corazón. (Re,7,0)(Sol,,100)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "OH, OH, OH, OH, HAY QUE NACER (Re,7,0)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DEL AGUA Y DEL ESPÍRITU DE DIOS, (Si,7,10)(Mi,,90)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "HAY QUE NACER DEL SEÑOR. (Re,7,10)(Sol,,130)(Sol,7,170)",
+      "sC": "as"
+    }
+  ]
+}

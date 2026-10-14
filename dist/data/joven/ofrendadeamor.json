@@ -1,0 +1,140 @@
+{
+  "id": "ofrendadeamor",
+  "tt": "Ofrenda de amor",
+  "title": "Ofrenda de amor",
+  "subtitle": "Gregorio Fernández",
+  "category": [
+    "Católicos",
+    "Ofertorio"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "1",
+  "acorde": "La",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "133",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/ofrendadeamor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=nadieteamacomoyo",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por los niños que empiezan la vida (La,,0)(Re,,170)(Mi,,230)",
+      "sC": "tc"
+    },
+    {
+      "line": "por los hombres sin techo ni hogar (La,,0)(Re,,170)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Por los pueblos que sufren la guerra (La,,0)(Re,,170)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "te ofrecemos, el vino y el pan. (Fa#,m,0)(Mi,,80)(La,,140)(La,7,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PAN Y VINO SOBRE EL ALTAR (Re,,0)(Mi,,100)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SON OFRENDA DE AMOR (Re,,10)(Do#,m,110)",
+      "sC": "as"
+    },
+    {
+      "line": "PAN Y VINO SERÁN DESPUÉS (Fa#,m,10)(Si,m,110)",
+      "sC": "as"
+    },
+    {
+      "line": "TU CUERPO Y SANGRE SEÑOR. (Mi,,10)(La,,100)(Mi,,140)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por los hombres que viven unidos (La,,0)(Re,,170)(Mi,,230)",
+      "sC": "tc"
+    },
+    {
+      "line": "Por los hombres que buscan la paz (La,,0)(Re,,170)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Por los pueblos que no te conocen (La,,0)(Re,,170)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Te ofrecemos el vino y el pan. (Fa#,m,0)(Mi,,80)(La,,140)(La,7,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por aquellos a quienes queremos (La,,0)(Re,,170)(Mi,,230)",
+      "sC": "tc"
+    },
+    {
+      "line": "Por nosotros y nuestra amistad (La,,0)(Re,,170)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Por los vivos y por los difuntos (La,,0)(Re,,170)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Te ofrecemos el vino y el pan. (Fa#,m,0)(Mi,,80)(La,,140)(La,7,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PAN Y VINO SOBRE EL ALTAR (Re,,0)(Mi,,100)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SON OFRENDA DE AMOR (Re,,10)(Do#,m,110)",
+      "sC": "as"
+    },
+    {
+      "line": "PAN Y VINO SERÁN DESPUÉS (Fa#,m,10)(Si,m,110)",
+      "sC": "as"
+    },
+    {
+      "line": "TU CUERPO Y SANGRE SEÑOR. (Mi,,10)(La,,100)(Mi,,140)",
+      "sC": "as"
+    }
+  ]
+}

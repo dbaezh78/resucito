@@ -1,0 +1,148 @@
+{
+  "id": "jesusestaentrenosotros",
+  "tt": "Jesús está entre nosotros",
+  "title": "Jesús está entre nosotros",
+  "subtitle": "Kairoi",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "120",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/jesusestaentrenosotros.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=hoyjesusvendrasami",
+  "sig": "/src/index.html?canto=lamarimorena",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "JESÚS ESTÁ ENTRE NOSOTROS, (Sol,,0)(Re,,70)(Do,,140)(Sol,,200)(Re,,230)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL VIVE HOY, Y SU ESPÍRITU A TODOS DA. (Sol,,10)(Si,m,100)(Do,,160)(Re,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "JESÚS RAZÓN DE NUESTRA VIDA, (Sol,,10)(Re,,70)(Do,,140)(Sol,,200)(Re,,230)",
+      "sC": "as"
+    },
+    {
+      "line": "ES EL SEÑOR, (Sol,,10)(Si,m,70)",
+      "sC": "as"
+    },
+    {
+      "line": "NOS REÚNE EN PUEBLO DE AMOR. (Do,,10)(Re,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cambia nuestras vidas con tu fuerza. (Mi,m,0)(Do,,180)(Sol,,240)(Re,,270)",
+      "sC": "tc"
+    },
+    {
+      "line": "Guárdanos por siempre en tu presencia. (Mi,m,0)(Do,,180)(Sol,,240)(Re,,270)",
+      "sC": ""
+    },
+    {
+      "line": "Tú eres verdad, tú eres la paz. (Mi,m,0)(Si,m,80)(Do,,140)(Sol,,190)(Re,,220)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_jesusesta_1",
+      "initialState": "collapsed",
+      "triggerLine": "JESÚS ESTÁ ENTRE NOSOTROS... (Sol,,0)(Re,,70)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ÉL VIVE HOY, Y SU ESPÍRITU A TODOS DA. (Sol,,10)(Si,m,100)(Do,,160)(Re,,220)",
+          "sC": "as"
+        },
+        {
+          "line": "JESÚS RAZÓN DE NUESTRA VIDA, (Sol,,10)(Re,,70)(Do,,140)(Sol,,200)(Re,,230)",
+          "sC": "as"
+        },
+        {
+          "line": "ES EL SEÑOR, NOS REÚNE EN PUEBLO DE AMOR. (Sol,,10)(Si,m,60)(Do,,110)(Re,,190)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Rompe las cadenas que nos atan, (Mi,m,0)(Do,,180)(Sol,,240)(Re,,270)",
+      "sC": "tc"
+    },
+    {
+      "line": "llénanos de gracia en tu palabra. (Mi,m,0)(Do,,180)(Sol,,240)(Re,,270)",
+      "sC": ""
+    },
+    {
+      "line": "Gracias Señor, gracias Salvador. (Mi,m,0)(Si,m,80)(Do,,140)(Sol,,190)(Re,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nuestras existencias hoy te alaban, (Mi,m,0)(Do,,180)(Sol,,240)(Re,,270)",
+      "sC": ""
+    },
+    {
+      "line": "nuestros corazones te dan gracias. (Mi,m,0)(Do,,180)(Sol,,240)(Re,,270)",
+      "sC": ""
+    },
+    {
+      "line": "Tú eres amor, tú eres canción. (Mi,m,0)(Si,m,80)(Do,,140)(Sol,,190)(Re,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "JESÚS ESTÁ ENTRE NOSOTROS, (Sol,,0)(Re,,70)(Do,,140)(Sol,,200)(Re,,230)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ÉL VIVE HOY, Y SU ESPÍRITU A TODOS DA. (Sol,,10)(Si,m,100)(Do,,160)(Re,,220)",
+      "sC": "as"
+    }
+  ]
+}

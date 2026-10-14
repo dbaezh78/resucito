@@ -1,0 +1,128 @@
+{
+  "id": "mariaestapasandoporaqui",
+  "tt": "María está pasando por aquí",
+  "title": "María está pasando por aquí",
+  "subtitle": "Canto Joven",
+  "category": [
+    "Católicos",
+    "Virgen María"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "124",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/mariaestapasandoporaqui.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=juntoatimaria",
+  "sig": "/src/index.html?canto=marialamadrebuena",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MARÍA ESTÁ PASANDO POR AQUÍ, (Do,,0)(Sol,7,120)(Do,,190)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MARÍA ESTÁ PASANDO POR AQUÍ, (Do,,10)(Sol,7,120)(Do,,190)",
+      "sC": "as"
+    },
+    {
+      "line": "y cuando pasa todo se transforma (Fa,,10)(Do,,170)",
+      "sC": "as"
+    },
+    {
+      "line": "la alegría viene, la tristeza va. (Sol,7,10)(Do,,110)(Do,7,140)",
+      "sC": "as"
+    },
+    {
+      "line": "y cuando pasa todo se transforma (Fa,,10)(Do,,170)",
+      "sC": "as"
+    },
+    {
+      "line": "la alegría viene, la tristeza va. (Sol,7,10)(Do,,110)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Su amor está pasando por aquí, (Do,,0)(Sol,7,120)(Do,,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "Su amor está pasando por aquí, (Do,,0)(Sol,7,120)(Do,,190)",
+      "sC": ""
+    },
+    {
+      "line": "y cuando pasa todo se transforma, (Fa,,0)(Do,,170)",
+      "sC": ""
+    },
+    {
+      "line": "la alegría viene, la tristeza va. (Sol,7,0)(Do,,110)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Su luz está pasando por aquí, (Do,,0)(Sol,7,120)(Do,,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "Su luz está pasando por aquí, (Do,,0)(Sol,7,120)(Do,,190)",
+      "sC": ""
+    },
+    {
+      "line": "y cuando pasa todo se transforma, (Fa,,0)(Do,,170)",
+      "sC": ""
+    },
+    {
+      "line": "la alegría viene, la tristeza va. (Sol,7,0)(Do,,110)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Jesús está pasando por aquí, (Do,,0)(Sol,7,120)(Do,,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "Jesús está pasando por aquí, (Do,,0)(Sol,7,120)(Do,,190)",
+      "sC": ""
+    },
+    {
+      "line": "y cuando pasa todo se transforma, (Fa,,0)(Do,,170)",
+      "sC": ""
+    },
+    {
+      "line": "la alegría viene, la tristeza va. (Sol,7,0)(Do,,110)",
+      "sC": ""
+    }
+  ]
+}

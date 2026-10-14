@@ -1,0 +1,171 @@
+{
+  "id": "nadieteamacomoyo",
+  "tt": "Nadie te ama como Yo",
+  "title": "Nadie te ama como Yo",
+  "subtitle": "Martín Valverde",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "132",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/nadieteamacomoyo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=venespiritudedios",
+  "sig": "/src/index.html?canto=ofrendadeamor",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuánto he esperado este momento, (Do,,0)(Mi,m,170)(La,m,240)",
+      "sC": "tc"
+    },
+    {
+      "line": "cuánto he esperado que estuvieras así. (Fa,,0)(Re,m,120)(Sol,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Cuánto he esperado que me hablaras, (Do,,0)(Mi,m,160)(La,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "cuánto he esperado que vinieras a mí. (Fa,,0)(Re,m,120)(Sol,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo sé bien lo que has vivido, (Do,,0)(Mi,m,160)(La,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "yo sé bien porqué has llorado. (Fa,,0)(Re,m,120)(Sol,,230)",
+      "sC": ""
+    },
+    {
+      "line": "Yo sé bien lo que has sufrido, (Do,,0)(Mi,m,160)(La,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "pues de tu lado no me he ido. (Fa,,0)(Re,m,120)(Sol,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PUES NADIE TE AMA COMO YO, (Do,,0)(Mi,m,80)(La,m,150)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PUES NADIE TE AMA COMO YO. (Fa,,10)(Re,m,90)(Sol,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "MIRA LA CRUZ, (Do,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "ESA ES MI MÁS GRANDE PRUEBA. (Mi,m,10)(La,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "NADIE TE AMA COMO YO. (Fa,,10)(Re,m,80)(Sol,,140)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PUES NADIE TE AMA COMO YO, (Do,,0)(Mi,m,80)(La,m,150)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PUES NADIE TE AMA COMO YO. (Fa,,10)(Re,m,90)(Sol,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "MIRA LA CRUZ, (Do,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "FUE POR TI, FUE PORQUE TE AMO. (Mi,m,10)(La,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "NADIE TE AMA COMO YO. (Fa,,10)(Re,m,80)(Sol,,130)(Do,,170)(Mi,m,200)(La,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO... COMO YO. (Fa,,10)(Re,m,60)(Sol,,100)(Do,,140)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo sé bien lo que me dices, (Do,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "aunque a veces no me hables, ",
+      "sC": ""
+    },
+    {
+      "line": "yo sé bien lo que en ti sientes, ",
+      "sC": ""
+    },
+    {
+      "line": "aunque nunca lo compartas. ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo a tu lado he caminado, (Do,,0)",
+      "sC": ""
+    },
+    {
+      "line": "junto a ti yo siempre he ido. ",
+      "sC": ""
+    },
+    {
+      "line": "Aún a veces te he cargado, ",
+      "sC": ""
+    },
+    {
+      "line": "yo he sido tu mejor amigo. ",
+      "sC": ""
+    }
+  ]
+}

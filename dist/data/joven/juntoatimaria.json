@@ -1,0 +1,136 @@
+{
+  "id": "juntoatimaria",
+  "tt": "Junto a ti María",
+  "title": "Madre (Junto a ti María)",
+  "subtitle": "Kairoi",
+  "category": [
+    "Católicos",
+    "Virgen María"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "123",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/juntoatimaria.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=losninoshebreos",
+  "sig": "/src/index.html?canto=mariaestapasandoporaqui",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Junto a ti María (Do,,0)(Sol,,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "como niño quiero estar, (La,m,70)(Mi,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "tómame en tus brazos (Fa,,0)(Do,,120)",
+      "sC": ""
+    },
+    {
+      "line": "guíame en mi caminar. (Re,m,60)(Sol,,140)",
+      "sC": ""
+    },
+    {
+      "line": "Quiero que me eduques (Do,,0)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "que me enseñes a rezar (La,m,80)(Mi,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "hazme transparente (Fa,,0)(Do,,110)",
+      "sC": ""
+    },
+    {
+      "line": "lléname de paz (Sol,,40)(Do,,90)(Sol,,130)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MADRE, MADRE, MADRE, MADRE (Do,,0)(Sol,,40)(La,m,80)(Mi,m,120)(Fa,,160)(Do,,190)(Re,m,230)(Sol,,270)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MADRE, MADRE, MADRE, MADRE (Do,,10)(Sol,,40)(La,m,80)(Mi,m,120)(Fa,,160)(Do,,190)(Re,m,230)(Sol,,270)(Do,,300)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gracias Madre mía (Do,,0)(Sol,,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "Por llevarnos a Jesús (La,m,80)(Mi,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "Haznos más humildes (Fa,,0)(Do,,120)",
+      "sC": ""
+    },
+    {
+      "line": "Tan sencillos como tú. (Re,m,60)(Sol,,140)",
+      "sC": ""
+    },
+    {
+      "line": "Gracias Madre mía (Do,,0)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "Por abrir tu corazón, (La,m,80)(Mi,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "Porque nos congregas (Fa,,0)(Do,,120)",
+      "sC": ""
+    },
+    {
+      "line": "Y nos das tu amor. (Sol,,40)(Do,,90)(Sol,,130)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MADRE, MADRE, MADRE, MADRE (Do,,0)(Sol,,40)(La,m,80)(Mi,m,120)(Fa,,160)(Do,,190)(Re,m,230)(Sol,,270)",
+      "sC": "ta as"
+    },
+    {
+      "line": "MADRE, MADRE, MADRE, MADRE (Do,,10)(Sol,,40)(La,m,80)(Mi,m,120)(Fa,,160)(Do,,190)(Re,m,230)(Sol,,270)(Do,,300)",
+      "sC": "as"
+    }
+  ]
+}

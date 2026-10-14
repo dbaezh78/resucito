@@ -7790,20 +7790,23 @@
     "title": "Que detalle Señor has tenico conmigo",
     "subtitle": "Brotes de Olivo",
     "category": [
-      "Católicos"
+      "Precatecumenado",
+      "Pascua",
+      "Pentecostés",
+      "Nuevo Testamento"
     ],
-    "stage": "Católicos",
+    "stage": "Precatecumenado",
     "cejilla": "",
     "acorde": "Sol",
-    "dbno": "1",
+    "dbno": "120",
     "hasAudio": true,
-    "audioSrc": "https://audio.resucito.do/quedetallesenor.mp3",
+    "audioSrc": "https://audio.resucito.do/noestaaquiresucito.mp3",
     "sourceBook": "joven",
     "searchPool": "que detalle senor has tenico conmigo brotes de olivo que detalle senor has tenido conmigo cuando me llamaste cuando me elegiste cuando me dijiste que tu eras mi amigo que detalle senor has tenido conmigo te acercaste a mi puerta y pronunciaste mi nombre yo temblando te dije aqui estoy senor tu me hablaste de un reino de un tesoro escondido de un mensaje fraterno que encendio mi ilusion que detalle senor has tenido conmigo cuando me llamaste cuando me elegiste cuando me dijiste que tu eras mi amigo que detalle senor has tenido conmigo yo deje casa y pueblo por vivir tu aventura codo a codo contigo comence a caminar han pasado los anos y aunque apriete el cansancio paso a paso te sigo sin mirar hacia atras que detalle senor has tenido conmigo cuando me llamaste cuando me elegiste cuando me dijiste que tu eras mi amigo que detalle senor has tenido conmigo"
   },
   {
     "id": "belencampanasdebelen",
-    "title": "Belén, campanas de Belén,",
+    "title": "Campana sobre campana",
     "subtitle": "Villancico",
     "category": [
       "Católicos",
@@ -7811,12 +7814,12 @@
     ],
     "stage": "Católicos",
     "cejilla": "",
-    "acorde": "Mi",
-    "dbno": "2",
+    "acorde": "Do",
+    "dbno": "103",
     "hasAudio": true,
-    "audioSrc": "/audio/belencampanasdebelen.mp3",
+    "audioSrc": "https://audio.resucito.do/catolico/campanasobrecampana.mp3",
     "sourceBook": "joven",
-    "searchPool": "belen campanas de belen villancico campana sobre campana y sobre campana una asomate a la ventana veras al nino en la cuna belen campanas de belen que los angeles tocan que nuevas me traeis recogido su rebano a donde vas pastorcito voy a llevar al portal requeson manteca y vino que los angeles tocan que nuevas me traeis campana sobre campana y sobre campana dos asomate a la ventana veras al hijo de dios que los angeles tocan que nuevas me traeis caminando a media noche donde caminas pastor le llevo al nino que nace como a dios mi corazon que los angeles tocan que nuevas me traeis"
+    "searchPool": "campana sobre campana villancico campana sobre campana y sobre campana una asomate a la ventana veras al nino en la cuna belen campanas de belen que los angeles tocan que buenas me traeis recogido tu rebano a donde vas pastorcillo voy a llevar al portal requeson manteca y vino belen campanas de belen do 0 fa 50 sol 100 do 140 fa 180 que los angeles tocan que buenas me traeis campana sobre campana y sobre campanas dos asomate a la ventana veras al nino de dios belen campanas de belen do 0 fa 50 sol 100 do 140 fa 180 que los angeles tocan que buenas me traeis campana sobre campana y sobre campana tres asomate a la ventana veras al nino nacer belen campanas de belen que los angeles tocan que buenas me traeis belen campanas de belen que los angeles tocan que buenas me traeis"
   },
   {
     "id": "lospecesenelrio",
@@ -7834,30 +7837,31 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/Los Peces en el Rio.mp3",
     "sourceBook": "joven",
-    "searchPool": "pero mira como beben los peces en el rio pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen se esta peinando entre cortina y cortina los cabellos son de oro y el peine de plata fina la virgen se esta lavando y tendiendo en el romero los angelitos cantando y el romero floreciendo la virgen se esta lavando con un cachito jabon se le picaron las manos manos de mi corazon la virgen lleva una rosa en su divina pechera que se la dio san jose el dia de nochebuena los peces en el rio"
+    "searchPool": "los peces en el rio villancico pero mira como beben los peces en el rio pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer pero mira como beben los peces en el rio la m 12 mi 260 pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen se esta peinando entre cortina y cortina los cabellos son de oro y el peine de plata fina pero mira como beben los peces en el rio la m 12 mi 260 pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen se esta lavando y tendiendo en el romero los angelitos cantando y el romero floreciendo pero mira como beben los peces en el rio la m 12 mi 260 pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen se esta lavando con un cachito jabon se le picaron las manos manos de mi corazon pero mira como beben los peces en el rio la m 12 mi 260 pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen lleva una rosa en su divina pechera que se la dio san jose el dia de nochebuena pero mira como beben los peces en el rio pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer"
   },
   {
     "id": "conmiburritosabanero",
-    "title": "Con mi burrito sabanero",
+    "title": "Con Mi Burrito Sabanero",
     "subtitle": "Villancicos",
     "category": [
-      "Católicos",
+      "Precatecumenado",
       "Adviento",
       "Navidad",
+      "Catolicos",
       "Villancicos"
     ],
-    "stage": "Católicos",
+    "stage": "Precatecumenado",
     "cejilla": "",
     "acorde": "Sol",
     "dbno": "303",
     "hasAudio": true,
     "audioSrc": "/audio/conmiburritosabanero.mp3",
     "sourceBook": "joven",
-    "searchPool": "con mi burrito sabanero villancicos con mi burrito sabanero voy camino de belen con mi burrito sabanero voy camino de belen si me ven si me ven voy camino de belen el lucerito mananero ilumina mi sendero el lucerito mananero ilumina mi sendero si me ven si me ven voy camino de belen en mi burrito voy cantando mi burrito va trotando en mi burrito voy cantando mi burrito va trotando si me ven si me ven voy camino de belen tuki tuki tuki tukituki tuki tuki ta apurate mi burrito que ya vamos a llegar tuki tuki tuki tukituki tuki tuki ta apurate mi burrito vamos a ver a jesus con mi burrito sabanero voy camino de belen con mi burrito sabanero voy camino de belen"
+    "searchPool": "con mi burrito sabanero villancicos con mi burrito sabanero voy camino de belen con mi burrito sabanero voy camino de belen si me ven si me ven voy camino de belen do m 96 sol m 207 re m 308 sol m 435 si me ven si me ven voy camino de belen el lucerito mananero ilumina mi sendero el lucerito mananero ilumina mi sendero si me ven si me ven voy camino de belen do m 96 sol m 207 re m 308 sol m 435 si me ven si me ven voy camino de belen en mi burrito voy cantando mi burrito va trotando en mi burrito voy cantando mi burrito va trotando si me ven si me ven voy camino de belen do m 96 sol m 207 re m 308 sol m 435 si me ven si me ven voy camino de belen tuki tuki tuki tuki tuki tuki tuki ta apurate mi burrito que ya vamos a llegar tuki tuki tuki tuki tuki tuki tuki ta apurate mi burrito vamos a ver a jesus con mi burrito sabanero voy camino de belen con mi burrito sabanero voy camino de belen"
   },
   {
     "id": "somosunpuebloquecamina",
-    "title": "Somos un pueblo que camina",
+    "title": "Somos Un Pueblo Que Camina",
     "subtitle": "Cancionero 54",
     "category": [
       "Católicos"
@@ -7885,7 +7889,7 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/hablame.mp3",
     "sourceBook": "joven",
-    "searchPool": "hablame canticos catolicos yo siento senor que tu me amas yo siento senor que te puedo amar hablame senor que tu siervo escucha hablame que quieres de mi senor tu has sido grande para mi en el desierto de mi vida hablame yo quiero estar dispuesto a todo toma mi ser mi corazon es para ti por eso canto tu maravillas por eso canto tu amor por eso canto tu maravillas por eso canto tu amor te alabo senor por tu grandesa mil gracias te doy por tu grande amor heme aqui senor para acompanarte heme aqui que quieres de mi por eso canto tu amor por eso canto tu maravillas por eso canto tu amor"
+    "searchPool": "hablame canticos catolicos yo siento senor que tu me amas yo siento senor que te puedo amar hablame senor que tu siervo escucha hablame que quieres de mi senor tu has sido grande para mi en el desierto de mi vida hablame yo quiero estar dispuesto a todo toma mi ser mi corazon es para ti por eso canto tu maravillas por eso canto tu amor por eso canto tu maravillas por eso canto tu amor te alabo senor por tu grandesa mil gracias te doy por tu grande amor heme aqui senor para acompanarte heme aqui que quieres de mi por eso canto tu maravillas re 12 si m 219 por eso canto tu amor por eso canto tu maravillas por eso canto tu amor"
   },
   {
     "id": "salmo5",
@@ -8003,18 +8007,18 @@
   {
     "id": "almamisionera",
     "title": "Alma Misionera",
-    "subtitle": "Cantos Catolicos",
+    "subtitle": "P. Enrique García Vélez",
     "category": [
       "Católicos"
     ],
     "stage": "Católicos",
     "cejilla": "",
-    "acorde": "Sol",
+    "acorde": "Mi",
     "dbno": "102",
     "hasAudio": true,
-    "audioSrc": "https://audio.resucito.do/almamisionera.mp3",
+    "audioSrc": "https://audio.resucito.do/catolico/almamisionera.mp3",
     "sourceBook": "joven",
-    "searchPool": "Señor Toma mi vida nueva Antes de que la espera Desgaste años en mí Estoy Dispuesto a lo que quieras No importa lo que sea Tú llámame a servir Llévame donde los hombres Necesiten Tus palabras Necesiten Tus ganas de vivir Donde falte la esperanza Donde falte la alegría Simplemente Por no saber de ti Te doy Mi corazón sincero Para gritar sin miedo Lo hermoso que es Tu amor Señor Tengo alma misionera Condúceme a la tierra Que tenga sed de Dios Y así En marcha iré cantando Por pueblos predicando Tu grandeza, Señor Tendré Mis brazos sin cansancio Tu historia entre mis labios Y fuerza en la oración Simplemente Por no saber de ti"
+    "searchPool": "alma misionera p enrique garcia velez senor toma mi vida nueva antes de que la espera desgaste anos en mi estoy dispuesto a lo que quieras no importa lo que sea tu llamame a servir llevame donde los hombres necesiten tus palabras necesiten mis ganas de vivir donde falte la esperanza donde falte la alegria simplemente por no saber de ti te doy mi corazon sincero para gritar sin miedo lo bello que es tu amor tendre mis manos sin cansancio tu historia entre mis labios y fuerza en la oracion llevame donde los hombres mi 0 si 7 180 necesiten tus palabras necesiten mis ganas de vivir donde falte la esperanza donde falte la alegria simplemente por no saber de ti y asi en marcha ire cantando por calles predicando tu grandeza senor senor tengo alma misionera conduceme a la tierra que tenga sed de ti llevame donde los hombres mi 0 si 7 180 necesiten tus palabras necesiten mis ganas de vivir donde falte la esperanza donde falte la alegria simplemente por no saber de ti"
   },
   {
     "id": "elaguadelsenor",
@@ -8030,7 +8034,7 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/elaguadelSeñor.mp3",
     "sourceBook": "joven",
-    "searchPool": "el agua del senor sano mi enfermedad el agua del senor jesus el que quiera y tenga sed que venga y beba gratis el que quiera y tenga sed beba el agua de la vida el que beba de esta agua jamas tendra sed sobre ti derramare el agua que es mi vida y tu corazon de piedra en amor transformare el que crea en mi palabra y se abra a mi fuerza de su seno brotaran torrentes de agua viva el agua del señor"
+    "searchPool": "el agua del senor cantos catolicos el agua del senor sano mi enfermedad el agua del senor jesus el agua del senor sano mi enfermedad el agua del senor jesus el que quiera y tenga sed que venga y beba gratis el que quiera y tenga sed beba el agua de la vida el agua del senor mi 12 sano mi enfermedad el agua del senor jesus el agua del senor sano mi enfermedad el agua del senor jesus el que beba de esta agua jamas tendra sed el que beba de esta agua jamas tendra sed el agua del senor mi 12 sano mi enfermedad el agua del senor jesus el agua del senor sano mi enfermedad el agua del senor jesus sobre ti derramare el agua que es mi vida y tu corazon de piedra en amor transformare el agua del senor mi 12 sano mi enfermedad el agua del senor jesus el agua del senor sano mi enfermedad el agua del senor jesus 4 el que crea en mi palabra y se abra a mi fuerza de su seno brotaran torrentes de agua viva el agua del senor mi 12 sano mi enfermedad el agua del senor jesus el agua del senor sano mi enfermedad el agua del senor jesus"
   },
   {
     "id": "venalafiesta",
@@ -8046,7 +8050,7 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/venalafiesta-cantojoven.mp3",
     "sourceBook": "joven",
-    "searchPool": "ven a la fiesta ven tu podras es el momento de rezar y de cantar cantar vamos a la fiesta hoy celebramos jesus esta que en nuestras vidas dios viviendo siempre esta ven a la fiesta a participar nos hace falta tu calor jesus te invita para celebrar su amor atento tu estaras a responder por eso ven a la fiesta para recordar milagros que renacen hoy jesus hoy viene para con todos estar y su vida y su cruz es nuestra luz por eso un cielo nuevo hoy vamos a hacer amigos comunidad puertas abiertas queremos siempre tener todos pueden entrar a compartir por eso"
+    "searchPool": "ven a la fiesta canto joven ven a la fiesta es el momento de rezar y de cantar hoy celebramos que en nuestras vidas dios viviendo siempre esta ven a la fiesta a participar nos hace falta tu calor jesus te invita para celebrar su amor atento tu estaras a responder por eso ven a la fiesta re 12 la 140 si m 230 es el momento de rezar y de cantar hoy celebramos que en nuestras vidas dios viviendo siempre esta ven a la fiesta para recordar milagros que renacen hoy jesus hoy viene para con todos estar y su vida y su cruz es nuestra luz por eso ven a la fiesta re 12 la 140 si m 230 es el momento de rezar y de cantar hoy celebramos que en nuestras vidas dios viviendo siempre esta un cielo nuevo hoy vamos a hacer amigos comunidad puertas abiertas queremos siempre tener todos pueden entrar a compartir por eso ven a la fiesta es el momento de rezar y de cantar hoy celebramos que en nuestras vidas dios viviendo siempre esta"
   },
   {
     "id": "gloriagloriaaleluya",
@@ -8062,7 +8066,7 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/Gloria, Gloria Aleluya.mp3",
     "sourceBook": "joven",
-    "searchPool": "gloria gloria aleluya gloria gloria aleluya gloria gloria aleluya en nombre del senor cuando sientas que tu hermano necesita de tu amor no le cierres las entranas ni el calor del corazon busca pronto en tu recuerdo la palabra del senor mi ley es el amor cristo dijo que quien llore su consuelo encontrara quien es pobre quien es limpio sera libre y tendra paz rompe pronto tus cadenas eres libre de verdad empieza a caminar si el camino se hace largo si te cansas bajo el sol si en tus campos no ha nacido ni la mas pequena flor coge mi mano y cantemos unidos por el amor en nombre del senor caminemos siempre unidos en la fe y en el amor anunciemos por doquiera su mensaje salvador implantemos por el mundo la justicia y el amor en nombre del senor"
+    "searchPool": "gloria gloria aleluya canto joven gloria gloria aleluya gloria gloria aleluya gloria gloria aleluya en nombre del senor cuando sientas que tu hermano necesita de tu amor no le cierres las entranas ni el calor del corazon busca pronto en tu recuerdo la palabra del senor mi ley es el amor gloria gloria aleluya mi 12 gloria gloria aleluya gloria gloria aleluya en nombre del senor cristo dijo que quien llore su consuelo encontrara quien es pobre quien es limpio sera libre y tendra paz rompe pronto tus cadenas eres libre de verdad empieza a caminar gloria gloria aleluya mi 12 gloria gloria aleluya gloria gloria aleluya en nombre del senor si el camino se hace largo si te cansas bajo el sol si en tus campos no ha nacido ni la mas pequena flor coge mi mano y cantemos unidos por el amor en nombre del senor gloria gloria aleluya mi 12 gloria gloria aleluya gloria gloria aleluya en nombre del senor caminemos siempre unidos en la fe y en el amor anunciemos por doquiera su mensaje salvador implantemos por el mundo la justicia y el amor en nombre del senor gloria gloria aleluya gloria gloria aleluya gloria gloria aleluya en nombre del senor"
   },
   {
     "id": "saberquevendras",
@@ -8078,7 +8082,7 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/Saber que vendrás.mp3",
     "sourceBook": "joven",
-    "searchPool": "en este mundo que cristo nos da hacemos la ofrenda del pan el pan de nuestro trabajo sin fin el vino de nuestro cantar traigo ante ti nuestra justa inquietud amar la justicia y la paz saber que vendras saber que estaras partiendo a los pobres tu pan la sed de todos los hombres sin luz la pena y el triste llorar el odio de los que mueren sin fe cansados de tanto luchar en la patena de nuestra oblacion acepta la vida senor"
+    "searchPool": "saber que vendras canto joven en este mundo que cristo nos da hacemos la ofrenda del pan el pan de nuestro trabajo sin fin el vino de nuestro cantar traigo ante ti nuestra justa inquietud amar la justicia y la paz saber que vendras saber que estaras partiendo a los pobres tu pan saber que vendras saber que estaras partiendo a los pobres tu pan la sed de todos los hombres sin luz la pena y el triste llorar el odio de los que mueren sin fe cansados de tanto luchar en la patena de nuestra oblacion acepta la vida senor saber que vendras saber que estaras partiendo a los pobres tu pan saber que vendras saber que estaras partiendo a los pobres tu pan"
   },
   {
     "id": "venvensenornotardes",
@@ -8095,7 +8099,7 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/venSeñornotardes.mp3",
     "sourceBook": "joven",
-    "searchPool": "ven ven senor no tardes ven ven que te esperamos ven ven senor no tardes ven pronto senor el mundo muere de frio el alma perdio el calor los hombres no son hermanos al mundo le falta amor envuelto en sombria noche el mundo sin fe no ve buscando va una esperanza buscando senor tu fe al mundo le falta vida al mundo le falta luz al mundo le falta el cielo al mundo le faltas tu cesareo gabarain"
+    "searchPool": "ven ven senor no tardes cesareo gabarain ven ven senor no tardes ven ven que te esperamos ven ven senor no tardes ven pronto senor el mundo muere de frio el alma perdio el calor los hombres no son hermanos al mundo le falta amor ven ven senor no tardes re 12 ven ven que te esperamos ven ven senor no tardes ven pronto senor envuelto en sombria noche el mundo sin fe no ve buscando va una esperanza buscando senor tu fe ven ven senor no tardes re 12 ven ven que te esperamos ven ven senor no tardes ven pronto senor al mundo le falta vida al mundo le falta luz al mundo le falta el cielo al mundo le faltas tu ven ven senor no tardes ven ven que te esperamos ven ven senor no tardes ven pronto senor"
   },
   {
     "id": "iluminamesenor",
@@ -8112,6 +8116,525 @@
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/iluminameSeñorcontuespiritu.mp3",
     "sourceBook": "joven",
-    "searchPool": "iluminame senor con tu espiritu transformame senor con tu espiritu iluminame senor con tu espiritu iluminame y transformame senor y dejame sentir el fuego de tu amor aqui en mi corazon senor resucitame senor con tu espiritu convierteme senor con tu espiritu resucitame senor con tu espiritu resucitame y convierteme senor fortaleceme senor con tu espiritu consuelame senor con tu espiritu fortaleceme senor con tu espiritu fortaleceme y consuelame senor martin verde barajas iluminame senor con tu espiritu"
+    "searchPool": "iluminame senor martin verde barajas iluminame senor con tu espiritu transformame senor con tu espiritu iluminame senor con tu espiritu iluminame y transformame senor y dejame sentir el fuego de tu amor aqui en mi corazon senor y dejame sentir el fuego de tu amor aqui en mi corazon senor resucitame senor con tu espiritu convierteme senor con tu espiritu resucitame senor con tu espiritu resucitame y convierteme senor y dejame sentir el fuego de tu amor sol m 50 re m 260 aqui en mi corazon senor y dejame sentir el fuego de tu amor aqui en mi corazon senor fortaleceme senor con tu espiritu consuelame senor con tu espiritu fortaleceme senor con tu espiritu fortaleceme y consuelame senor y dejame sentir el fuego de tu amor aqui en mi corazon senor y dejame sentir el fuego de tu amor aqui en mi corazon senor"
+  },
+  {
+    "id": "alegriaalegriaalegria",
+    "title": "Alegría, alegría, alegría",
+    "subtitle": "Villancico tradicional",
+    "category": [
+      "Católicos",
+      "Navidad"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "105",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/alegriaalegriaalegria.mp3",
+    "sourceBook": "joven",
+    "searchPool": "alegria alegria alegria villancico tradicional hacia belen se encamina maria con su amante esposo llevando en su compania a todo un dios poderoso alegria alegria alegria alegria alegria y placer que esta noche nace el nino en el portal de belen en cuanto a belen llegaron posada al punto pidieron y viendo que eran tan pobres ninguno se la dio luego alegria alegria alegria re 0 la 180 alegria alegria y placer que esta noche nace el nino en el portal de belen a la medianoche en punto la virgen tuvo a su nino y en un pesebre lo puso entre la paja y el lirio alegria alegria alegria alegria alegria y placer que esta noche nace el nino en el portal de belen"
+  },
+  {
+    "id": "amaos",
+    "title": "Amaos",
+    "subtitle": "Kairoi",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "106",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/amaos.mp3",
+    "sourceBook": "joven",
+    "searchPool": "amaos kairoi como el padre me amo yo os he amado permaneced en mi amor permaneced en mi amor si guardais mis mandamientos permanecereis en mi amor como yo he guardado los mandamientos de mi padre y permanezco en su amor amaos amaos unos a otros como yo os he amado amaos amaos unos a otros como yo os he amado nadie tiene mayor amor que quien da la vida por sus amigos vosotros sois mis amigos si haceis lo que os mando ya no os llamo siervos sino amigos porque todo lo que he oido de mi padre os lo he dado a conocer amaos amaos unos a otros como yo os he amado amaos amaos unos a otros como yo os he amado"
+  },
+  {
+    "id": "avemariadefatima",
+    "title": "Ave María de Fátima",
+    "subtitle": "Canto mariano",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "107",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/avemariadefatima.mp3",
+    "sourceBook": "joven",
+    "searchPool": "ave maria de fatima canto mariano el trece de mayo la virgen maria bajo de los cielos a cova de iria a a ve a a ve a a ve ma ri a a a ve a a ve a a ve ma ri a a tres pastorcitos la madre de dios descubre el misterio de su corazon a a ve a a ve a a ve ma ri a do 0 mi m 80 la m 150 a a ve a a ve a a ve ma ri a el santo rosario constantes rezad y la paz del mundo el senor dara a a ve a a ve a a ve ma ri a do 0 mi m 80 la m 150 a a ve a a ve a a ve ma ri a haced penitencia haced oracion por los pecadores implorad perdon a a ve a a ve a a ve ma ri a a a ve a a ve a a ve ma ri a"
+  },
+  {
+    "id": "aydelchiquirritin",
+    "title": "Ay del Chiquirritín",
+    "subtitle": "Villancico tradicional",
+    "category": [
+      "Católicos",
+      "Navidad"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "108",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/aydelchiquirritin.mp3",
+    "sourceBook": "joven",
+    "searchPool": "ay del chiquirritin villancico tradicional ay del chiquirritin chiquirriquitin metidito entre pajas ay del chiquirritin chiquirriquitin queridin queridito del alma por debajo del arco del portalico se descubre a maria jose y al nino ay del chiquirritin mi 0 si 7 150 chiquirriquitin metidito entre pajas ay del chiquirritin chiquirriquitin queridin queridito del alma no me mires tan fiero que soy chiquito y me asustan los ojos que me has echado ay del chiquirritin mi 0 si 7 150 chiquirriquitin metidito entre pajas ay del chiquirritin chiquirriquitin queridin queridito del alma entre un buey y una mula dios ha nacido y en un pobre pesebre lo han recogido ay del chiquirritin chiquirriquitin metidito entre pajas ay del chiquirritin chiquirriquitin queridin queridito del alma"
+  },
+  {
+    "id": "bendigamosalsenor",
+    "title": "Bendigamos al Señor",
+    "subtitle": "Canto Joven",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "109",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/bendigamosalsenor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "bendigamos al senor canto joven bendigamos al senor dios de toda la creacion por habernos regalado su amor bendigamos al senor dios de toda la creacion por habernos regalado su amor por las mananas las aves cantan alabanzas a dios creador y por las tardes las flores cantan alabanzas a dios creador bendigamos al senor sol 0 mi m 150 dios de toda la creacion por habernos regalado su amor y por las noches la luna canta alabanzas a dios creador y de madrugada la selva canta alabanzas a dios creador bendigamos al senor dios de toda la creacion por habernos regalado su amor"
+  },
+  {
+    "id": "campanasobrecampana",
+    "title": "Campana sobre campana",
+    "subtitle": "Villancico",
+    "category": [
+      "Católicos",
+      "Navidad"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "103",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/campanasobrecampana.mp3",
+    "sourceBook": "joven",
+    "searchPool": "campana sobre campana villancico campana sobre campana y sobre campana una asomate a la ventana veras al nino en la cuna belen campanas de belen que los angeles tocan que buenas me traeis recogido tu rebano a donde vas pastorcillo voy a llevar al portal requeson manteca y vino belen campanas de belen do 0 fa 50 sol 100 do 140 fa 180 que los angeles tocan que buenas me traeis campana sobre campana y sobre campanas dos asomate a la ventana veras al nino de dios belen campanas de belen do 0 fa 50 sol 100 do 140 fa 180 que los angeles tocan que buenas me traeis campana sobre campana y sobre campana tres asomate a la ventana veras al nino nacer belen campanas de belen que los angeles tocan que buenas me traeis belen campanas de belen que los angeles tocan que buenas me traeis"
+  },
+  {
+    "id": "corderodediosv1",
+    "title": "Cordero de Dios v1",
+    "subtitle": "Ordinario de la Misa",
+    "category": [
+      "Católicos",
+      "Cordero"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "110",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/corderodediosv1.mp3",
+    "sourceBook": "joven",
+    "searchPool": "cordero de dios v1 ordinario de la misa cordero de dios que quitas el pecado del mundo ten piedad de nosotros ten piedad de nosotros cordero de dios que quitas el pecado del mundo ten piedad de nosotros ten piedad de nosotros cordero de dios que quitas el pecado del mundo danos la paz danos la paz"
+  },
+  {
+    "id": "cristotenecesitaparaamar",
+    "title": "Cristo te necesita para amar",
+    "subtitle": "Cesáreo Gabaráin",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Lam",
+    "dbno": "111",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/cristotenecesitaparaamar.mp3",
+    "sourceBook": "joven",
+    "searchPool": "cristo te necesita para amar cesareo gabarain cristo te necesita para amar para amar cristo te necesita para amar no te importen las razas ni el color de la piel ama a todos como hermanos y haz el bien al que sufre y al triste dale amor dale amor al humilde y al pobre dale amor al que vive a tu lado dale amor dale amor al que viene de lejos dale amor al que no te saluda dale amor dale amor al que piensa distinto dale amor cristo te necesita para amar para amar cristo te necesita para amar"
+  },
+  {
+    "id": "dimeninodequieneres",
+    "title": "Dime niño de quién eres",
+    "subtitle": "Villancico tradicional",
+    "category": [
+      "Católicos",
+      "Navidad"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "112",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/dimeninodequieneres.mp3",
+    "sourceBook": "joven",
+    "searchPool": "dime nino de quien eres villancico tradicional dime nino de quien eres todo vestido de blanco soy de la virgen maria y del espiritu santo resuenen con alegria los canticos de mi tierra y viva el nino de dios que ha nacido en nochebuena la nochebuena se viene la nochebuena se va y nosotros nos iremos y no volveremos mas dime nino de quien eres y si te llamas jesus soy amor en el pesebre y sufrimiento en la cruz resuenen con alegria re 7 0 sol 180 los canticos de mi tierra y viva el nino de dios que ha nacido en nochebuena dime nino de quien eres todo vestido de blanco soy de la virgen maria y del espiritu santo resuenen con alegria los canticos de mi tierra y viva el nino de dios que ha nacido en nochebuena"
+  },
+  {
+    "id": "diosestaaqui",
+    "title": "Dios está aquí",
+    "subtitle": "Javier Gacías",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "113",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/diosestaaqui.mp3",
+    "sourceBook": "joven",
+    "searchPool": "dios esta aqui javier gacias dios esta aqui tan cierto como el aire que respiro tan cierto como la manana se levanta tan cierto como que este canto lo puedes oir lo puedes sentir moviendose entre las montanas lo puedes oir cantando con nosotros aqui lo puedes llevar cuando por esa puerta salgas lo puedes guardar muy dentro de tu corazon dios esta aqui do 0 sol 90 la m 130 tan cierto como el aire que respiro tan cierto como la manana se levanta tan cierto como que este canto lo puedes oir lo puedes notar a tu lado en este mismo instante no seas ya mas de los que no le quieren ver le puedes contar ese problema que tu tienes jesus esta aqui si quieres le puedes seguir dios esta aqui tan cierto como el aire que respiro tan cierto como la manana se levanta tan cierto como que este canto lo puedes oir"
+  },
+  {
+    "id": "ensumesahayamor",
+    "title": "En su mesa hay amor",
+    "subtitle": "Kairoi",
+    "category": [
+      "Católicos",
+      "Comunión"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "114",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/ensumesahayamor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "en su mesa hay amor kairoi el senor nos ha reunido junto a el el senor nos ha invitado a estar con el en su mesa hay amor la promesa del perdon y en el vino y pan su corazon cuando senor tu voz llega en silencio a mi y mis hermanos me hablan de ti se que a mi lado estas te sientas junto a mi acoges mi vida y mi oracion el senor nos ha reunido junto a el el senor nos ha invitado a estar con el en su mesa hay amor la promesa del perdon y en el vino y pan su corazon"
+  },
+  {
+    "id": "esmicuerpo",
+    "title": "Es mi cuerpo",
+    "subtitle": "Canto de comunión",
+    "category": [
+      "Católicos",
+      "Comunión"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "115",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/esmicuerpo.mp3",
+    "sourceBook": "joven",
+    "searchPool": "es mi cuerpo canto de comunion siempre nos ama el senor como nadie nos amo el nos guia sin cesar por las sendas de la luz en su pan al compartir nos entrega asi su amor es el pan de la unidad el pan de dios es mi cuerpo coman todos de el es mi sangre que doy a beber porque soy la vida porque soy amor oh senor haz que vivamos en tu amor siempre nos ama el senor como nadie nos amo para la gente del pueblo era el hijo de jose como lo hacen sus amigos con sus manos trabajo el conoce del obrero su dolor es mi cuerpo coman todos de el do 0 mi m 80 fa 170 sol 220 es mi sangre que doy a beber porque soy la vida porque soy amor oh senor haz que vivamos en tu amor siempre nos ama el senor como nadie nos amo al hambriento le da el pan al cautivo libertad a los ciegos da la luz al sediento de beber soy el dios que de los pobres me acorde siempre nos ama el senor como nadie nos amo tan sublime era su amor que murio sobre la cruz esta prueba de un amor que nadie nunca nos dio es del hombre que al morir fue vencedor siempre nos ama el senor como nadie nos amo nos entrega por amor y nos hace renacer los cristianos de este mundo de su cuerpo miembros son nadie puede separarnos de su amor"
+  },
+  {
+    "id": "feliznavidad",
+    "title": "Feliz Navidad",
+    "subtitle": "José Feliciano",
+    "category": [
+      "Católicos",
+      "Navidad"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "116",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/feliznavidad.mp3",
+    "sourceBook": "joven",
+    "searchPool": "feliz navidad jose feliciano feliz navidad feliz navidad feliz navidad prospero ano y felicidad feliz navidad feliz navidad feliz navidad prospero ano y felicidad i want to wish you a merry christmas i want to wish you a merry christmas i want to wish you a merry christmas from the bottom of my heart i want to wish you a merry christmas i want to wish you a merry christmas i want to wish you a merry christmas from the bottom of my heart feliz navidad feliz navidad feliz navidad prospero ano y felicidad"
+  },
+  {
+    "id": "gloria",
+    "title": "Gloria",
+    "subtitle": "F. Palazón",
+    "category": [
+      "Católicos",
+      "Gloria"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "117",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/gloriafpalazon.mp3",
+    "sourceBook": "joven",
+    "searchPool": "gloria f palazon gloria a dios en el cielo y en la tierra paz a los hombres que ama el senor por tu inmensa gloria te alabamos te bendecimos te adoramos te glorificamos te damos gracias senor dios rey celestial dios padre todopoderoso senor hijo unico jesucristo senor dios cordero de dios hijo del padre tu que quitas el pecado del mundo ten piedad de nosotros tu que quitas el pecado del mundo atiende nuestra suplica tu que estas sentado a la derecha del padre ten piedad de nosotros porque solo tu eres santo solo tu senor solo tu altisimo jesucristo con el espiritu santo en la gloria de dios padre amen"
+  },
+  {
+    "id": "gloriafpalazon",
+    "title": "Gloria",
+    "subtitle": "F. Palazón",
+    "category": [
+      "Católicos",
+      "Gloria"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "117",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/gloriafpalazon.mp3",
+    "sourceBook": "joven",
+    "searchPool": "gloria f palazon gloria a dios en el cielo y en la tierra paz a los hombres que ama el senor por tu inmensa gloria te alabamos te bendecimos te adoramos te glorificamos te damos gracias senor dios rey celestial dios padre todopoderoso senor hijo unico jesucristo senor dios cordero de dios hijo del padre tu que quitas el pecado del mundo ten piedad de nosotros tu que quitas el pecado del mundo atiende nuestra suplica tu que estas sentado a la derecha del padre ten piedad de nosotros porque solo tu eres santo solo tu senor solo tu altisimo jesucristo con el espiritu santo en la gloria de dios padre amen"
+  },
+  {
+    "id": "haciabelenvaunaburra",
+    "title": "Hacia Belén va una burra",
+    "subtitle": "Villancico tradicional",
+    "category": [
+      "Católicos",
+      "Navidad"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "118",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/haciabelenvaunaburra.mp3",
+    "sourceBook": "joven",
+    "searchPool": "hacia belen va una burra villancico tradicional hacia belen va una burra rin rin yo me remendaba yo me remende yo me eche un remiendo yo me lo quite cargada de chocolate lleva su chocolatera rin rin yo me remendaba yo me remende yo me eche un remiendo yo me lo quite su molinillo y su anafre maria maria ven aca corriendo que el chocolatillo se lo estan comiendo maria maria ven aca volando que el chocolatillo se lo estan llevando en el portal de belen rin rin yo me remendaba han entrado los ratones y al pobre de san jose rin rin yo me remendaba le han roido los calzones maria maria ven aca corriendo que el chocolatillo se lo estan comiendo"
+  },
+  {
+    "id": "hoyjesusvendrasami",
+    "title": "Hoy Jesús vendrás a mí",
+    "subtitle": "Toño Casado & Juan Peris",
+    "category": [
+      "Católicos",
+      "Comunión"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "119",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/hoyjesusvendrasami.mp3",
+    "sourceBook": "joven",
+    "searchPool": "hoy jesus vendras a mi tono casado juan peris mi casa esta preparada para que vengas jesus abrigo le da a un trozo de pan pan roto que ahora eres tu camino por esta vida sabiendo que estas en mi y estamos los dos en un corazon que se debe compartir hoy jesus vendras a mi me iluminara tu luz tu ya sabes como soy lo que tengo te lo doy hoy jesus estas en mi mis ojos seran tus ojos que al mundo saben mirar mirar con amor sentir su dolor mirada para curar mis manos seran tus manos que abrazan y dan la paz dispuestas estan para trabajar mis manos para salvar y te digo muy bajito gracias por venir a mi a veces senor me pierde el temor y no se por donde ir hoy jesus vendras a mi me iluminara tu luz tu ya sabes como soy lo que tengo te lo doy hoy jesus estas en mi"
+  },
+  {
+    "id": "jesusestaentrenosotros",
+    "title": "Jesús está entre nosotros",
+    "subtitle": "Kairoi",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "120",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/jesusestaentrenosotros.mp3",
+    "sourceBook": "joven",
+    "searchPool": "jesus esta entre nosotros kairoi jesus esta entre nosotros el vive hoy y su espiritu a todos da jesus razon de nuestra vida es el senor nos reune en pueblo de amor cambia nuestras vidas con tu fuerza guardanos por siempre en tu presencia tu eres verdad tu eres la paz jesus esta entre nosotros sol 0 re 70 el vive hoy y su espiritu a todos da jesus razon de nuestra vida es el senor nos reune en pueblo de amor rompe las cadenas que nos atan llenanos de gracia en tu palabra gracias senor gracias salvador nuestras existencias hoy te alaban nuestros corazones te dan gracias tu eres amor tu eres cancion jesus esta entre nosotros el vive hoy y su espiritu a todos da"
+  },
+  {
+    "id": "juntoatimaria",
+    "title": "Madre (Junto a ti María)",
+    "subtitle": "Kairoi",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "123",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/juntoatimaria.mp3",
+    "sourceBook": "joven",
+    "searchPool": "madre junto a ti maria kairoi junto a ti maria como nino quiero estar tomame en tus brazos guiame en mi caminar quiero que me eduques que me ensenes a rezar hazme transparente llename de paz madre madre madre madre madre madre madre madre gracias madre mia por llevarnos a jesus haznos mas humildes tan sencillos como tu gracias madre mia por abrir tu corazon porque nos congregas y nos das tu amor madre madre madre madre madre madre madre madre"
+  },
+  {
+    "id": "lamarimorena",
+    "title": "La marimorena",
+    "subtitle": "Villancico tradicional",
+    "category": [
+      "Católicos",
+      "Navidad"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "121",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/lamarimorena.mp3",
+    "sourceBook": "joven",
+    "searchPool": "la marimorena villancico tradicional ande ande ande la marimorena ande ande ande que es la nochebuena en el portal de belen hay estrellas sol y luna la virgen y san jose y el nino que esta en la cuna en el portal de belen han entrado los ratones y al bueno de san jose le han roido los calzones ande ande ande la marimorena la 0 mi 210 ande ande ande que es la nochebuena en el portal de belen hacen lumbre los pastores para calentar al nino que ha nacido entre las flores una estrella se ha perdido y en el cielo no aparece se ha metido en el portal y en su rostro resplandece ande ande ande la marimorena ande ande ande que es la nochebuena"
+  },
+  {
+    "id": "losninoshebreos",
+    "title": "Los niños hebreos",
+    "subtitle": "Francisco Palazón",
+    "category": [
+      "Católicos",
+      "Domingo de Ramos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mim",
+    "dbno": "122",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/losninoshebreos.mp3",
+    "sourceBook": "joven",
+    "searchPool": "los ninos hebreos francisco palazon los ninos hebreos llevando ramos de olivo salieron al encuentro del senor aclamando hosanna en el cielo hosanna en el cielo hosanna en el cie e lo portones abrid los dinteles que se alcen las puertas eternas va a entrar el rey de la gloria el valeroso y dios de israel hosanna en el cielo hosanna en el cielo hosanna en el cie e lo"
+  },
+  {
+    "id": "mariaestapasandoporaqui",
+    "title": "María está pasando por aquí",
+    "subtitle": "Canto Joven",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "124",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/mariaestapasandoporaqui.mp3",
+    "sourceBook": "joven",
+    "searchPool": "maria esta pasando por aqui canto joven maria esta pasando por aqui maria esta pasando por aqui y cuando pasa todo se transforma la alegria viene la tristeza va y cuando pasa todo se transforma la alegria viene la tristeza va su amor esta pasando por aqui su amor esta pasando por aqui y cuando pasa todo se transforma la alegria viene la tristeza va su luz esta pasando por aqui su luz esta pasando por aqui y cuando pasa todo se transforma la alegria viene la tristeza va jesus esta pasando por aqui jesus esta pasando por aqui y cuando pasa todo se transforma la alegria viene la tristeza va"
+  },
+  {
+    "id": "marialamadrebuena",
+    "title": "María, la madre buena",
+    "subtitle": "Kairoi",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Lam",
+    "dbno": "125",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/marialamadrebuena.mp3",
+    "sourceBook": "joven",
+    "searchPool": "maria la madre buena kairoi tantas cosas en la vida nos ofrecen plenitud y no son mas que mentiras que desgastan la inquietud tu has llenado mi existencia al quererme de verdad yo quisiera madre buena amarte mas en silencio escuchabas la palabra de jesus y la hacias pan de vida meditando en tu interior la semilla que ha caido ya germina y esta en flor con el corazon en fiesta cantare ave maria ave maria ave maria ave maria desde que yo era un nino has estado junto a mi y guiado de tu mano aprendi a decir que si al calor de la esperanza nunca se enfrio mi fe y en la noche mas oscura fuiste luz no me dejes madre mia ven conmigo al caminar quiero compartir mi vida y crear fraternidad muchas cosas en nosotros son el fruto de tu amor la plegaria mas sencilla cantare ave maria ave maria ave maria ave maria"
+  },
+  {
+    "id": "midiosestavivo",
+    "title": "Mi Dios está vivo",
+    "subtitle": "Alonso-Pagan",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "126",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/midiosestavivo.mp3",
+    "sourceBook": "joven",
+    "searchPool": "mi dios esta vivo alonso pagan mi dios esta vivo el no esta muerto mi dios esta vivo en mi corazon mi dios esta vivo ha resucitado lo siento en mis manos lo siento en mis pies lo siento en mi alma y en mi ser oh oh oh oh hay que nacer del agua oh oh oh oh hay que nacer del espiritu de dios oh oh oh oh hay que nacer del agua y del espiritu de dios hay que nacer del senor preparate para que sientas preparate para que sientas preparate para que sientas el espiritu de dios dejalo que se mueva dejalo que se mueva dejalo que se mueva dentro de tu corazon oh oh oh oh hay que nacer del agua y del espiritu de dios hay que nacer del senor"
+  },
+  {
+    "id": "mueveteenmi",
+    "title": "Muévete en Mí",
+    "subtitle": "Canto al Espíritu Santo",
+    "category": [
+      "Católicos",
+      "Espíritu Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "127",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/mueveteenmi.mp3",
+    "sourceBook": "joven",
+    "searchPool": "muevete en mi canto al espiritu santo el espiritu de dios esta en este lugar el espiritu de dios se mueve en este lugar esta aqui para consolar esta aqui para liberar esta aqui para guiar el espiritu de dios esta aqui muevete en mi muevete en mi toca mi mente y mi corazon llena mi vida de tu amor muevete en mi dios espiritu muevete en mi"
+  },
+  {
+    "id": "santobeatles",
+    "title": "Santo (Beatles)",
+    "subtitle": "Ordinario de la Misa",
+    "category": [
+      "Católicos",
+      "Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "128",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/santobeatles.mp3",
+    "sourceBook": "joven",
+    "searchPool": "santo beatles ordinario de la misa santo santo santo santo santo es el senor llenos estan el cielo y tierra de tu amor bendito el que viene en el nombre el que viene en el nombre del senor del senor santo santo santo santo santo es el senor llenos estan el cielo y tierra de tu amor"
+  },
+  {
+    "id": "santocarismatico",
+    "title": "Santo (carismático)",
+    "subtitle": "Ordinario de la Misa",
+    "category": [
+      "Católicos",
+      "Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mim",
+    "dbno": "129",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/santocarismatico.mp3",
+    "sourceBook": "joven",
+    "searchPool": "santo carismatico ordinario de la misa santo santo santo los cielos te proclaman santo santo santo es nuestro rey yahveh santo santo santo es el que nos redime porque mi dios es santo y la tierra llena de su gloria es porque mi dios es santo y la tierra llena de su gloria es cielo y tierra pasaran mas tus palabras no pasaran cielo y tierra pasaran mas tus palabras no pasaran no no no pasaran no no no no no no pasaran bendito el que viene en nombre del senor da gloria a jesucristo el hijo de david hosanna en las alturas a nuestro salvador bendito el que viene en el nombre del senor bendito el que viene en el nombre del senor cielo y tierra pasaran mas tus palabras no pasaran cielo y tierra pasaran mas tus palabras no pasaran no no no pasaran no no no no no no pasaran"
+  },
+  {
+    "id": "tancercademi",
+    "title": "Tan cerca de mí",
+    "subtitle": "Cesáreo Gabaráin",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "130",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/tancercademi.mp3",
+    "sourceBook": "joven",
+    "searchPool": "tan cerca de mi cesareo gabarain tan cerca de mi tan cerca de mi que hasta lo puedo tocar jesus esta aqui 1 le hablare sin miedo al oido le contare las cosas que hay en mi y que solo a el le interesaran el es un amigo para mi 2 miralo a tu lado caminando paseando entre la multitud muchos no lo ven porque ciegos van ocupados sin saber mirar tan cerca de mi do 0 sol 70 tan cerca de mi que hasta lo puedo tocar jesus esta aqui 3 no busques a cristo en lo alto ni lo busques en la oscuridad muy cerca de ti en tu corazon puedes adorar a tu senor 4 ya no busco a cristo en las alturas ni le buscare en la oscuridad dentro de mi ser en mi corazon siento que jesus conmigo esta 5 yo le contare lo que me pasa como a mis amigos le hablare yo no se si es el quien habita en mi o si soy yo quien habita en el"
+  },
+  {
+    "id": "venespiritudedios",
+    "title": "Ven Espíritu de Dios",
+    "subtitle": "Kairoi",
+    "category": [
+      "Católicos",
+      "Espíritu Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "131",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/venespiritudedios.mp3",
+    "sourceBook": "joven",
+    "searchPool": "ven espiritu de dios kairoi ven espiritu de dios sobre mi me abro a tu presencia cambiaras mi corazon ven espiritu de dios sobre mi me abro a tu presencia cambiaras mi corazon toca mi debilidad toma todo lo que soy pongo mi vida en tus manos y mi ser poco a poco llegaras a inundarme de tu luz tu cambiaras mi pasado cantare ven espiritu de dios re 0 si m 80 sobre mi me abro a tu presencia cambiaras mi corazon quiero ser signo de paz quiero compartir mi ser yo necesito tu fuerza tu valor quiero proclamarte a ti ser testigo de tu amor entra y transforma mi vida ven a mi ven espiritu de dios sobre mi me abro a tu presencia cambiaras mi corazon"
+  },
+  {
+    "id": "nadieteamacomoyo",
+    "title": "Nadie te ama como Yo",
+    "subtitle": "Martín Valverde",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "132",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/nadieteamacomoyo.mp3",
+    "sourceBook": "joven",
+    "searchPool": "nadie te ama como yo martin valverde cuanto he esperado este momento cuanto he esperado que estuvieras asi cuanto he esperado que me hablaras cuanto he esperado que vinieras a mi yo se bien lo que has vivido yo se bien porque has llorado yo se bien lo que has sufrido pues de tu lado no me he ido pues nadie te ama como yo pues nadie te ama como yo mira la cruz esa es mi mas grande prueba nadie te ama como yo pues nadie te ama como yo pues nadie te ama como yo mira la cruz fue por ti fue porque te amo nadie te ama como yo como yo como yo yo se bien lo que me dices aunque a veces no me hables yo se bien lo que en ti sientes aunque nunca lo compartas yo a tu lado he caminado junto a ti yo siempre he ido aun a veces te he cargado yo he sido tu mejor amigo"
+  },
+  {
+    "id": "ofrendadeamor",
+    "title": "Ofrenda de amor",
+    "subtitle": "Gregorio Fernández",
+    "category": [
+      "Católicos",
+      "Ofertorio"
+    ],
+    "stage": "Católicos",
+    "cejilla": "1",
+    "acorde": "La",
+    "dbno": "133",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/ofrendadeamor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "ofrenda de amor gregorio fernandez por los ninos que empiezan la vida por los hombres sin techo ni hogar por los pueblos que sufren la guerra te ofrecemos el vino y el pan pan y vino sobre el altar son ofrenda de amor pan y vino seran despues tu cuerpo y sangre senor por los hombres que viven unidos por los hombres que buscan la paz por los pueblos que no te conocen te ofrecemos el vino y el pan por aquellos a quienes queremos por nosotros y nuestra amistad por los vivos y por los difuntos te ofrecemos el vino y el pan pan y vino sobre el altar son ofrenda de amor pan y vino seran despues tu cuerpo y sangre senor"
   }
 ]

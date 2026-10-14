@@ -1,0 +1,179 @@
+{
+  "id": "amaos",
+  "tt": "Amaos",
+  "title": "Amaos",
+  "subtitle": "Kairoi",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "106",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/amaos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=alegriaalegriaalegria",
+  "sig": "/src/index.html?canto=avemariadefatima",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como el Padre me amó, (Do,,0)(Sol,,150)",
+      "sC": "tc"
+    },
+    {
+      "line": "yo os he amado. (La,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "Permaneced en mi amor, (Fa,,0)(Re,m,150)",
+      "sC": ""
+    },
+    {
+      "line": "permaneced en mi amor. (Sol,,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si guardáis mis mandamientos, (Do,,0)(Sol,,180)",
+      "sC": ""
+    },
+    {
+      "line": "permaneceréis en mi amor, (La,m,170)",
+      "sC": ""
+    },
+    {
+      "line": "como yo he guardado (Fa,,0)",
+      "sC": ""
+    },
+    {
+      "line": "los mandamientos de mi Padre, (Re,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "y permanezco en su amor. (Sol,,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMAOS, AMAOS (Do,,0)(Mi,m,110)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNOS A OTROS, (La,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO OS HE AMADO. (Fa,,10)(Re,m,90)(Sol,,150)",
+      "sC": "as"
+    },
+    {
+      "line": "AMAOS, AMAOS (Do,,10)(Mi,m,110)",
+      "sC": "as"
+    },
+    {
+      "line": "UNOS A OTROS, (La,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO OS HE AMADO. (Fa,,10)(Sol,,80)(Do,,140)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nadie tiene mayor amor (Do,,0)(Sol,,150)",
+      "sC": "tc"
+    },
+    {
+      "line": "que quien da la vida por sus amigos. (La,m,210)",
+      "sC": ""
+    },
+    {
+      "line": "Vosotros sois mis amigos, (Fa,,0)(Re,m,160)",
+      "sC": ""
+    },
+    {
+      "line": "si hacéis lo que os mando. (Sol,,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ya no os llamo siervos, (Do,,0)(Sol,,150)",
+      "sC": ""
+    },
+    {
+      "line": "sino amigos, (La,m,80)",
+      "sC": ""
+    },
+    {
+      "line": "porque todo lo que he oído de mi Padre (Fa,,0)(Re,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "os lo he dado a conocer. (Sol,,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "AMAOS, AMAOS (Do,,0)(Mi,m,110)",
+      "sC": "ta as"
+    },
+    {
+      "line": "UNOS A OTROS, (La,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO OS HE AMADO. (Fa,,10)(Re,m,90)(Sol,,150)",
+      "sC": "as"
+    },
+    {
+      "line": "AMAOS, AMAOS (Do,,10)(Mi,m,110)",
+      "sC": "as"
+    },
+    {
+      "line": "UNOS A OTROS, (La,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO YO OS HE AMADO. (Fa,,10)(Sol,,80)(Do,,140)",
+      "sC": "as"
+    }
+  ]
+}

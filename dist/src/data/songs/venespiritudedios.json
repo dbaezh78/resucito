@@ -1,0 +1,197 @@
+{
+  "id": "venespiritudedios",
+  "tt": "Ven Espíritu de Dios",
+  "title": "Ven Espíritu de Dios",
+  "subtitle": "Kairoi",
+  "category": [
+    "Católicos",
+    "Espíritu Santo"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "131",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/venespiritudedios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=tancercademi",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VEN, ESPÍRITU DE DIOS, (Re,,0)(Si,m,80)(Re,,140)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SOBRE MÍ, (La,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "ME ABRO A TU PRESENCIA, (Sol,,10)(Si,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,90)(La,,140)(Fa#,7,180)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN, ESPÍRITU DE DIOS, (Si,m,10)(Re,,80)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE MÍ, (sobre mí) (La,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "ME ABRO A TU PRESENCIA, (Sol,,10)(Si,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,80)(La,,120)(Re,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Toca mi debilidad, (Si,m,0)(La,,110)",
+      "sC": "tc"
+    },
+    {
+      "line": "toma todo lo que soy. (Mi,m,0)(Si,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "Pongo mi vida en tus manos (Sol,,0)(Fa#,7,120)(Re,,170)",
+      "sC": ""
+    },
+    {
+      "line": "y mi ser. (La,,0)(Mi,m,50)(La,,90)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Poco a poco llegarás (Si,m,0)(La,,110)",
+      "sC": "tc"
+    },
+    {
+      "line": "a inundarme de tu luz. (Mi,m,0)(Si,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "Tú cambiarás mi pasado. (Sol,,0)(Fa#,7,120)(Re,,170)",
+      "sC": ""
+    },
+    {
+      "line": "Cantaré. (La,,0)(Mi,m,50)(La,,90)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_venespiritu_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU DE DIOS... (Re,,0)(Si,m,80)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SOBRE MÍ, ME ABRO A TU PRESENCIA, (La,,10)(Sol,,110)(Si,m,170)",
+          "sC": "as"
+        },
+        {
+          "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,80)(La,,120)(Re,,160)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Quiero ser signo de paz, (Si,m,0)(La,,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "quiero compartir mi ser, (Mi,m,0)(Si,m,120)",
+      "sC": ""
+    },
+    {
+      "line": "yo necesito tu fuerza, (Sol,,0)(Fa#,7,120)(Re,,170)",
+      "sC": ""
+    },
+    {
+      "line": "tu valor. (La,,0)(Mi,m,50)(La,,90)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Quiero proclamarte a Ti, (Si,m,0)(La,,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "ser testigo de tu amor, (Mi,m,0)(Si,m,120)",
+      "sC": ""
+    },
+    {
+      "line": "entra y transforma mi vida, (Sol,,0)(Fa#,7,130)(Re,,180)",
+      "sC": ""
+    },
+    {
+      "line": "ven a mí. (La,,0)(Mi,m,50)(La,,90)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VEN, ESPÍRITU DE DIOS, (Re,,0)(Si,m,80)(Re,,140)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SOBRE MÍ, (La,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "ME ABRO A TU PRESENCIA, (Sol,,10)(Si,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,80)(La,,120)(Re,,160)",
+      "sC": "as"
+    }
+  ]
+}

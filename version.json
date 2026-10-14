@@ -1,11 +1,13 @@
 {
-  "latestVersion": "2.1.39",
+  "latestVersion": "2.1.40",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.39)",
-  "updateMessage": "Nueva sección y carpeta de cantos para Canto Joven con el nuevo canto 'El agua del Señor'.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.40)",
+  "updateMessage": "Colección completa de Canto Joven incorporada con letras, acordes interactivos y soporte de audios.",
   "releaseNotes": [
-    "Incorporación de la carpeta dedicada data/joven para todos los cantos de Canto Joven.",
-    "Añadido nuevo canto 'El agua del Señor' transcrito con letra y acordes interactivos.",
-    "Soporte de caché persistente y búsqueda para cantos de Canto Joven."
+    "Incorporación de la colección completa de Canto Joven en data/joven y data/songs.",
+    "Transcripción fiel de todos los cantos y villancicos desde las imágenes originales con acordes interactivos.",
+    "Actualización de 'Los peces en el río' con estribillo en recuadro y repeticiones asamblearias.",
+    "Actualización de 'Alma misionera' y 'Campana sobre campana' en sus tonalidades correctas.",
+    "Registro completo en índice general, motor de búsqueda y configuración de scroll."
   ]
 }

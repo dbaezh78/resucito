@@ -1,0 +1,156 @@
+{
+  "id": "gloria",
+  "tt": "Gloria a Dios en el Cielo",
+  "title": "Gloria",
+  "subtitle": "F. Palazón",
+  "category": [
+    "Católicos",
+    "Gloria"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "La",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "117",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/gloriafpalazon.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=feliznavidad",
+  "sig": "/src/index.html?canto=haciabelenvaunaburra",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA A DIOS EN EL CIELO, (Mi,7,0)(La,,80)(Do#,m,160)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Y EN LA TIERRA PAZ A LOS (Si,m,10)(Mi,,120)",
+      "sC": "as"
+    },
+    {
+      "line": "HOMBRES QUE AMA EL SEÑOR. (La,,10)(Fa#,m,60)(Si,m,100)(Re,,130)(Mi,,160)(La,,190)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por tu inmensa gloria te alabamos, (La,,0)(Re,,180)(La,,210)",
+      "sC": "tc"
+    },
+    {
+      "line": "te bendecimos, te adoramos, (Si,m,0)(Mi,,130)(La,,160)",
+      "sC": ""
+    },
+    {
+      "line": "te glorificamos, (Do#,m,0)",
+      "sC": ""
+    },
+    {
+      "line": "te damos gracias. (La,,0)(Si,,60)(Mi,,110)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor Dios, Rey celestial, (La,,0)(Re,,160)(La,,190)",
+      "sC": ""
+    },
+    {
+      "line": "Dios Padre todopoderoso. ",
+      "sC": ""
+    },
+    {
+      "line": "Señor, Hijo único, Jesucristo. (Si,m,0)(Mi,,140)(La,,170)",
+      "sC": ""
+    },
+    {
+      "line": "Señor Dios, Cordero de Dios, (Do#,m,0)",
+      "sC": ""
+    },
+    {
+      "line": "Hijo del Padre. (La,,0)(Si,,50)(Mi,,100)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que quitas el pecado del mundo, (La,,0)(Re,,190)(La,,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "ten piedad de nosotros; ",
+      "sC": ""
+    },
+    {
+      "line": "tú que quitas el pecado del mundo, (Si,m,0)(Mi,,180)(La,,210)",
+      "sC": ""
+    },
+    {
+      "line": "atiende nuestra súplica; ",
+      "sC": ""
+    },
+    {
+      "line": "tú que estás sentado a la derecha del Padre, (Do#,m,0)",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de nosotros. (La,,0)(Si,,60)(Mi,,110)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque sólo tú eres Santo, (La,,0)(Re,,150)(La,,180)",
+      "sC": ""
+    },
+    {
+      "line": "sólo tú Señor, ",
+      "sC": ""
+    },
+    {
+      "line": "sólo tú Altísimo, Jesucristo, (Si,m,0)(Mi,,140)(La,,170)",
+      "sC": ""
+    },
+    {
+      "line": "con el Espíritu Santo (Do#,m,0)",
+      "sC": ""
+    },
+    {
+      "line": "en la gloria de Dios Padre. (La,,0)(Si,,70)(Mi,,130)",
+      "sC": ""
+    },
+    {
+      "line": "Amén. (Re,,0)(Mi,,40)(La,,70)",
+      "sC": ""
+    }
+  ]
+}

@@ -2,7 +2,455 @@
  * Módulo de gestión de velocidad de scroll individual por canto y dispositivo.
  */
 
-export const defaultScrollConfigs = {
+export const defaultScrollConfigs = {  "ofrendadeamor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "nadieteamacomoyo": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "venespiritudedios": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "tancercademi": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "santocarismatico": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "santobeatles": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "mueveteenmi": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "midiosestavivo": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "marialamadrebuena": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "mariaestapasandoporaqui": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "losninoshebreos": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "lamarimorena": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "juntoatimaria": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "jesusestaentrenosotros": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "hoyjesusvendrasami": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "haciabelenvaunaburra": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "gloriafpalazon": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "gloria": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "feliznavidad": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "esmicuerpo": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ensumesahayamor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "diosestaaqui": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "dimeninodequieneres": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "cristotenecesitaparaamar": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "corderodediosv1": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "campanasobrecampana": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "bendigamosalsenor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "aydelchiquirritin": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "avemariadefatima": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "amaos": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "almamisionera": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "alegriaalegriaalegria": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+
   "abbapadre": {
     "mobile": {
       "v": 123,

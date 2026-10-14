@@ -1,0 +1,185 @@
+{
+  "id": "esmicuerpo",
+  "tt": "Es mi cuerpo",
+  "title": "Es mi cuerpo",
+  "subtitle": "Canto de comunión",
+  "category": [
+    "Católicos",
+    "Comunión"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "115",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/esmicuerpo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=ensumesahayamor",
+  "sig": "/src/index.html?canto=feliznavidad",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Siempre nos ama el Señor, como nadie nos amó. (Do,,0)(Sol,,220)(Do,,320)",
+      "sC": "tc"
+    },
+    {
+      "line": "Él nos guía sin cesar por las sendas de la luz. (Do,,0)(Fa,,180)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "En su pan al compartir, nos entrega así su amor. (Do,,0)(Sol,,210)(Do,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Es el pan de la unidad, el pan de Dios. (Fa,,0)(Do,,130)(Sol,,200)(Do,,240)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ES MI CUERPO, COMAN TODOS DE ÉL. (Do,,0)(Mi,m,80)(Fa,,170)(Sol,,220)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ES MI SANGRE, QUE DOY A BEBER. (Do,,10)(Mi,m,80)(Fa,,170)(Sol,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "PORQUE SOY LA VIDA, PORQUE SOY AMOR. (Do,,10)(Mi,m,120)(Fa,,200)(Sol,,240)",
+      "sC": "as"
+    },
+    {
+      "line": "¡OH, SEÑOR! HAZ QUE VIVAMOS EN TU AMOR. (Do,,10)(Fa,,140)(Do,,190)(Sol,,230)(Do,,260)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Siempre nos ama el Señor, como nadie nos amó. (Do,,0)(Sol,,220)(Do,,320)",
+      "sC": "tc"
+    },
+    {
+      "line": "Para la gente del pueblo era el hijo de José. (Do,,0)(Fa,,180)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "Como lo hacen sus amigos, con sus manos trabajó. (Do,,0)(Sol,,210)(Do,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Él conoce del obrero su dolor. (Fa,,0)(Do,,130)(Sol,,200)(Do,,240)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_esmicuerpo_1",
+      "initialState": "collapsed",
+      "triggerLine": "ES MI CUERPO, COMAN TODOS DE ÉL... (Do,,0)(Mi,m,80)(Fa,,170)(Sol,,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ES MI SANGRE, QUE DOY A BEBER. (Do,,10)(Mi,m,80)(Fa,,170)(Sol,,220)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE SOY LA VIDA, PORQUE SOY AMOR. (Do,,10)(Mi,m,120)(Fa,,200)(Sol,,240)",
+          "sC": "as"
+        },
+        {
+          "line": "¡OH, SEÑOR! HAZ QUE VIVAMOS EN TU AMOR. (Do,,10)(Fa,,140)(Do,,190)(Sol,,230)(Do,,260)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Siempre nos ama el Señor, como nadie nos amó. (Do,,0)(Sol,,220)(Do,,320)",
+      "sC": "tc"
+    },
+    {
+      "line": "Al hambriento le da el pan, al cautivo, libertad; (Do,,0)(Fa,,180)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "a los ciegos da la luz, al sediento de beber. (Do,,0)(Sol,,210)(Do,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Soy el Dios que de los pobres me acordé. (Fa,,0)(Do,,130)(Sol,,200)(Do,,240)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Siempre nos ama el Señor, como nadie nos amó. (Do,,0)(Sol,,220)(Do,,320)",
+      "sC": "tc"
+    },
+    {
+      "line": "Tan sublime era su amor, que murió sobre la cruz. (Do,,0)(Fa,,180)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "Esta prueba de un amor que nadie nunca nos dio, (Do,,0)(Sol,,210)(Do,,320)",
+      "sC": ""
+    },
+    {
+      "line": "es del hombre, que al morir, fue vencedor. (Fa,,0)(Do,,130)(Sol,,200)(Do,,240)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Siempre nos ama el Señor, como nadie nos amó. (Do,,0)(Sol,,220)(Do,,320)",
+      "sC": "tc"
+    },
+    {
+      "line": "Nos entrega por amor y nos hace renacer. (Do,,0)(Fa,,180)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "Los cristianos de este mundo de su Cuerpo miembros son, (Do,,0)(Sol,,210)(Do,,320)",
+      "sC": ""
+    },
+    {
+      "line": "nadie puede separarnos de su amor. (Fa,,0)(Do,,130)(Sol,,200)(Do,,240)",
+      "sC": ""
+    }
+  ]
+}

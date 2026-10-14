@@ -1,0 +1,202 @@
+{
+  "id": "avemariadefatima",
+  "tt": "Ave María de Fátima",
+  "title": "Ave María de Fátima",
+  "subtitle": "Canto mariano",
+  "category": [
+    "Católicos",
+    "Virgen María"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "107",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/avemariadefatima.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=amaos",
+  "sig": "/src/index.html?canto=aydelchiquirritin",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El trece de mayo (Do,,0)(Mi,m,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "la Virgen María, (La,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "bajó de los cielos (Fa,,0)(Sol,7,120)",
+      "sC": ""
+    },
+    {
+      "line": "a Cova de Iría. (Do,,100)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A-A-VE, A-A-VE, (Do,,0)(Mi,m,80)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A-A-VE MA-RÍ-A. (La,m,80)",
+      "sC": "as"
+    },
+    {
+      "line": "A-A-VE, A-A-VE, (Fa,,10)(Do,,70)(Re,m,120)",
+      "sC": "as"
+    },
+    {
+      "line": "A-A-VE MA-RÍ-A. (Sol,7,10)(Do,,80)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A tres pastorcitos (Do,,0)(Mi,m,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "la Madre de Dios, (La,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "descubre el misterio (Fa,,0)(Sol,7,130)",
+      "sC": ""
+    },
+    {
+      "line": "de su corazón. (Do,,100)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_fatima_1",
+      "initialState": "collapsed",
+      "triggerLine": "A-A-VE, A-A-VE, A-A-VE MA-RÍ-A... (Do,,0)(Mi,m,80)(La,m,150)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A-A-VE, A-A-VE, (Fa,,10)(Do,,70)(Re,m,120)",
+          "sC": "as"
+        },
+        {
+          "line": "A-A-VE MA-RÍ-A. (Sol,7,10)(Do,,80)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Santo Rosario (Do,,0)(Mi,m,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "constantes rezad, (La,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "y la paz del mundo (Fa,,0)(Sol,7,130)",
+      "sC": ""
+    },
+    {
+      "line": "el Señor dará. (Do,,100)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_fatima_2",
+      "initialState": "collapsed",
+      "triggerLine": "A-A-VE, A-A-VE, A-A-VE MA-RÍ-A... (Do,,0)(Mi,m,80)(La,m,150)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "A-A-VE, A-A-VE, (Fa,,10)(Do,,70)(Re,m,120)",
+          "sC": "as"
+        },
+        {
+          "line": "A-A-VE MA-RÍ-A. (Sol,7,10)(Do,,80)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Haced penitencia, (Do,,0)(Mi,m,120)",
+      "sC": "tc"
+    },
+    {
+      "line": "haced oración, (La,m,100)",
+      "sC": ""
+    },
+    {
+      "line": "por los pecadores (Fa,,0)(Sol,7,120)",
+      "sC": ""
+    },
+    {
+      "line": "implorad perdón. (Do,,100)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A-A-VE, A-A-VE, (Do,,0)(Mi,m,80)",
+      "sC": "ta as"
+    },
+    {
+      "line": "A-A-VE MA-RÍ-A. (La,m,80)",
+      "sC": "as"
+    },
+    {
+      "line": "A-A-VE, A-A-VE, (Fa,,10)(Do,,70)(Re,m,120)",
+      "sC": "as"
+    },
+    {
+      "line": "A-A-VE MA-RÍ-A. (Sol,7,10)(Do,,80)",
+      "sC": "as"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "bendigamosalsenor",
+  "tt": "Bendigamos al Señor",
+  "title": "Bendigamos al Señor",
+  "subtitle": "Canto Joven",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "109",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/bendigamosalsenor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aydelchiquirritin",
+  "sig": "/src/index.html?canto=corderodediosv1",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BENDIGAMOS AL SEÑOR, (Sol,,0)(Mi,m,150)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DIOS DE TODA LA CREACIÓN, (Do,,10)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "POR HABERNOS REGALADO SU AMOR. (Re,,10)(Sol,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "BENDIGAMOS AL SEÑOR, (Sol,,10)(Mi,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "DIOS DE TODA LA CREACIÓN, (Do,,10)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "POR HABERNOS REGALADO SU AMOR. (Re,,10)(Sol,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por las mañanas las aves cantan (Sol,,0)(Si,m,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "alabanzas a Dios Creador, (Do,,150)",
+      "sC": ""
+    },
+    {
+      "line": "y por las tardes las flores cantan (Sol,,0)(Si,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "alabanzas a Dios Creador. (Re,,150)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_bendigamos_1",
+      "initialState": "collapsed",
+      "triggerLine": "BENDIGAMOS AL SEÑOR... (Sol,,0)(Mi,m,150)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DIOS DE TODA LA CREACIÓN, (Do,,10)(La,m,150)",
+          "sC": "as"
+        },
+        {
+          "line": "POR HABERNOS REGALADO SU AMOR. (Re,,10)(Sol,,180)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y por las noches la luna canta (Sol,,0)(Si,m,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "alabanzas a Dios Creador, (Do,,150)",
+      "sC": ""
+    },
+    {
+      "line": "y de madrugada la selva canta (Sol,,0)(Si,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "alabanzas a Dios Creador. (Re,,150)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "BENDIGAMOS AL SEÑOR, (Sol,,0)(Mi,m,150)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DIOS DE TODA LA CREACIÓN, (Do,,10)(La,m,150)",
+      "sC": "as"
+    },
+    {
+      "line": "POR HABERNOS REGALADO SU AMOR. (Re,,10)(Sol,,180)",
+      "sC": "as"
+    }
+  ]
+}
