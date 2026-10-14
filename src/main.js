@@ -1368,9 +1368,21 @@ async function loadSongView(songId) {
     
     // Configurar audio
     if (currentCanto.audioSrc) {
-      viewerAudioPlayer.src = currentCanto.audioSrc;
+      if (viewerAudioPlayer.crossOrigin !== 'anonymous') {
+        viewerAudioPlayer.crossOrigin = 'anonymous';
+      }
+      let safeSrc = currentCanto.audioSrc;
+      try {
+        safeSrc = encodeURI(decodeURI(safeSrc));
+      } catch (e) {
+        safeSrc = encodeURI(safeSrc);
+      }
+      if (viewerAudioPlayer.src !== safeSrc) {
+        viewerAudioPlayer.src = safeSrc;
+      }
       if (audioPlayBtn) audioPlayBtn.style.display = 'flex';
     } else {
+      viewerAudioPlayer.removeAttribute('src');
       viewerAudioPlayer.src = '';
       if (audioPlayBtn) audioPlayBtn.style.display = 'none';
     }
@@ -6275,7 +6287,12 @@ function setupEventListeners() {
   if (audioPlayBtn) {
     audioPlayBtn.addEventListener('click', () => {
       if (viewerAudioPlayer && viewerAudioPlayer.paused) {
-        viewerAudioPlayer.play();
+        const playPromise = viewerAudioPlayer.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(err => {
+            console.warn('⚠️ No se pudo reproducir el audio:', err);
+          });
+        }
       } else if (viewerAudioPlayer) {
         viewerAudioPlayer.pause();
       }

@@ -1381,8 +1381,10 @@ window.initAjustes = async function() {
       window.eqTrebleFilter.type = 'highshelf';
       window.eqTrebleFilter.frequency.value = 4000;
       
-      // Permitir CORS dinámicamente
-      playerEl.crossOrigin = 'anonymous';
+      // Permitir CORS dinámicamente si no está presente
+      if (playerEl.crossOrigin !== 'anonymous') {
+        playerEl.crossOrigin = 'anonymous';
+      }
       
       // Crear fuente y conectar
       window.eqSource = window.eqCtx.createMediaElementSource(playerEl);

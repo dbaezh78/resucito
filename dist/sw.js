@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v377'; // v2.1.41 Lote 2 Canto Joven
+const CACHE_NAME = 'resucito-cache-v378'; // v2.1.42 Audio CORS & URL Encoding
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

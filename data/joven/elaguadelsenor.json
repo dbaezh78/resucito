@@ -14,7 +14,7 @@
   "dbno": "103",
   "notes": "",
   "mant": "Si",
-  "audioSrc": "https://audio.resucito.do/catolico/elaguadelSeñor.mp3",
+  "audioSrc": "https://audio.resucito.do/catolico/elaguadelSe%C3%B1or.mp3",
   "scrollConfig": {
     "mobile": {
       "velocidad": 6,
@@ -274,7 +274,6 @@
         }
       ]
     }
-
   ],
   "sourceBook": "joven"
 }
