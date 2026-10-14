@@ -1,0 +1,116 @@
+{
+  "id": "santodehaendel",
+  "tt": "Santo de Haendel",
+  "title": "Santo de Haendel",
+  "subtitle": "G. F. Haendel",
+  "category": [
+    "Católicos",
+    "Santo"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Lam",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "141",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Santo de Haendel.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santamariadelcamino",
+  "sig": "/src/index.html?canto=santohillsong",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Santo, santo, santo es el Señor (La,m,0)(Re,m,70)(Sol,7,130)(Do,,180)(Fa,,220)(Re,m,260)",
+      "sC": "tc"
+    },
+    {
+      "line": "Dios del universo. (Mi,7,0)(La,m,80)",
+      "sC": ""
+    },
+    {
+      "line": "Llenos están el cielo y la tierra (La,m,0)(Re,m,90)(Sol,7,160)(Do,,230)",
+      "sC": ""
+    },
+    {
+      "line": "De tu gloria, hosanna. (Fa,,0)(Re,m,60)(Mi,7,110)(La,m,150)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (La,7,0)(Re,m,70)(Sol,7,140)(Do,,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA, EN EL CIELO. (Fa,,10)(Re,m,70)(Mi,7,120)(La,m,160)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (La,7,10)(Re,m,70)(Sol,7,140)(Do,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, EN EL CIELO. (Fa,,10)(Re,m,70)(Mi,7,120)(La,m,160)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito el que viene (La,m,0)(Re,m,130)",
+      "sC": "tc"
+    },
+    {
+      "line": "en nombre del Señor, (Sol,7,0)(Do,,90)",
+      "sC": ""
+    },
+    {
+      "line": "hosanna en el cielo, hosanna. (Fa,,0)(Re,m,70)(Mi,7,120)(La,m,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (La,7,0)(Re,m,70)(Sol,7,140)(Do,,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA, EN EL CIELO. (Fa,,10)(Re,m,70)(Mi,7,120)(La,m,160)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (La,7,10)(Re,m,70)(Sol,7,140)(Do,,180)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, EN EL CIELO. (Fa,,10)(Re,m,70)(Mi,7,120)(La,m,160)",
+      "sC": "as"
+    }
+  ]
+}

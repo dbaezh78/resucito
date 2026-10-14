@@ -2,7 +2,189 @@
  * Módulo de gestión de velocidad de scroll individual por canto y dispositivo.
  */
 
-export const defaultScrollConfigs = {  "ofrendadeamor": {
+export const defaultScrollConfigs = {  "tepresentamos": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "solodiosesgrande": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "sienverdaddiosteama": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "santohillsong": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "santodehaendel": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "santoafricano": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "santamariadelcamino": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "reginacoeli": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "quealegriacuandomedijeron": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "pescadordehombres": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "perdonaatupueblosenor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "pazsenor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "padrenuestrov1": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ofrendadeamor": {
     "mobile": {
       "v": 6,
       "i": 3

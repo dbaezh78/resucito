@@ -1,0 +1,144 @@
+{
+  "id": "santoafricano",
+  "tt": "Santo africano (Zaireño)",
+  "title": "Santo africano - zaireño",
+  "subtitle": "Misa Luba / Zaireño",
+  "category": [
+    "Católicos",
+    "Santo"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mi",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "143",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Santo africano - zaireño.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santohillsong",
+  "sig": "/src/index.html?canto=sienverdaddiosteama",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Santo, santo, Hosanna. (Mi,,0)(La,,70)(Si,7,140)(Mi,,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "(Bis)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA EH, HOSANNA EH (Mi,,0)(La,,100)(Mi,,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA, CRISTO JESÚS. (La,,10)(Si,7,70)(Mi,,130)",
+      "sC": "as"
+    },
+    {
+      "line": "(Bis)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los cielos y la tierra están llenos (Mi,,0)(La,,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "de tu Gloria Señor. (Si,7,0)(Mi,,80)",
+      "sC": ""
+    },
+    {
+      "line": "(Bis)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA EH, HOSANNA EH (Mi,,0)(La,,100)(Mi,,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA, CRISTO JESÚS. (La,,10)(Si,7,70)(Mi,,130)",
+      "sC": "as"
+    },
+    {
+      "line": "(Bis)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito el que viene en el nombre, (Mi,,0)(La,,230)",
+      "sC": "tc"
+    },
+    {
+      "line": "en el nombre tuyo Señor. (Si,7,0)(Mi,,90)",
+      "sC": ""
+    },
+    {
+      "line": "(Bis)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA EH, HOSANNA EH (Mi,,0)(La,,100)(Mi,,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA, CRISTO JESÚS. (La,,10)(Si,7,70)(Mi,,130)",
+      "sC": "as"
+    },
+    {
+      "line": "(Bis)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Santo, santo, Hosanna. (Mi,,0)(La,,70)(Si,7,140)(Mi,,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "(Bis)",
+      "sC": ""
+    }
+  ]
+}

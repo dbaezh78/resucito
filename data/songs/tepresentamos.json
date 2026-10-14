@@ -1,0 +1,168 @@
+{
+  "id": "tepresentamos",
+  "tt": "Te presentamos",
+  "title": "Te presentamos",
+  "subtitle": "Ofertorio",
+  "category": [
+    "Católicos",
+    "Ofertorio"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "146",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/te presentamos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=solodiosesgrande",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te presentamos el vino y el pan, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "como señal de que nos entregamos, (Mi,m,120)",
+      "sC": ""
+    },
+    {
+      "line": "tu cuerpo y sangre quiere que comamos (Do,,120)",
+      "sC": ""
+    },
+    {
+      "line": "y así llenar nuestras vidas ansiosas de ti. (Re,7,130)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te presentamos el vino y el pan, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "hechos de frutas y trigo maduro; (Mi,m,120)",
+      "sC": ""
+    },
+    {
+      "line": "esta es la ofrenda que te presentamos, (Do,,120)",
+      "sC": ""
+    },
+    {
+      "line": "que será cuerpo y sangre de ti, oh Señor. (Re,7,130)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PAN Y VINO, PAN Y VINO, (Sol,,0)(Mi,m,100)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TU CUERPO Y SANGRE QUE HOY OFRECEMOS. (Do,,10)(Re,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "PAN Y VINO, PAN Y VINO, (Sol,,10)(Mi,m,100)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE COMPARTIMOS A CADA MOMENTO. (Do,,10)(Re,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "(2X)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te presentamos el vino y el pan, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "para que Tú lo bendigas y partas, (Mi,m,120)",
+      "sC": ""
+    },
+    {
+      "line": "y así con fe comulguemos con ellos (Do,,120)",
+      "sC": ""
+    },
+    {
+      "line": "y llenar nuestras vidas de ti, oh Señor. (Re,7,130)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te presentamos el vino y el pan, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "hechos de frutas y trigo maduro; (Mi,m,120)",
+      "sC": ""
+    },
+    {
+      "line": "esta es la ofrenda que te presentamos, (Do,,120)",
+      "sC": ""
+    },
+    {
+      "line": "que será cuerpo y sangre de ti, oh Señor. (Re,7,130)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PAN Y VINO, PAN Y VINO, (Sol,,0)(Mi,m,100)",
+      "sC": "ta as"
+    },
+    {
+      "line": "TU CUERPO Y SANGRE QUE HOY OFRECEMOS. (Do,,10)(Re,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "PAN Y VINO, PAN Y VINO, (Sol,,10)(Mi,m,100)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE COMPARTIMOS A CADA MOMENTO. (Do,,10)(Re,7,110)",
+      "sC": "as"
+    },
+    {
+      "line": "(2X)",
+      "sC": "as"
+    }
+  ]
+}

@@ -8567,7 +8567,7 @@
     "acorde": "Mim",
     "dbno": "129",
     "hasAudio": true,
-    "audioSrc": "https://audio.resucito.do/catolico/santocarismatico.mp3",
+    "audioSrc": "https://audio.resucito.do/catolico/Santo Carismático.mp3",
     "sourceBook": "joven",
     "searchPool": "santo carismatico ordinario de la misa santo santo santo los cielos te proclaman santo santo santo es nuestro rey yahveh santo santo santo es el que nos redime porque mi dios es santo y la tierra llena de su gloria es porque mi dios es santo y la tierra llena de su gloria es cielo y tierra pasaran mas tus palabras no pasaran cielo y tierra pasaran mas tus palabras no pasaran no no no pasaran no no no no no no pasaran bendito el que viene en nombre del senor da gloria a jesucristo el hijo de david hosanna en las alturas a nuestro salvador bendito el que viene en el nombre del senor bendito el que viene en el nombre del senor cielo y tierra pasaran mas tus palabras no pasaran cielo y tierra pasaran mas tus palabras no pasaran no no no pasaran no no no no no no pasaran"
   },
@@ -8616,7 +8616,7 @@
     "acorde": "Do",
     "dbno": "132",
     "hasAudio": true,
-    "audioSrc": "https://audio.resucito.do/catolico/nadieteamacomoyo.mp3",
+    "audioSrc": "https://audio.resucito.do/catolico/Nadie te ama como Yo.mp3",
     "sourceBook": "joven",
     "searchPool": "nadie te ama como yo martin valverde cuanto he esperado este momento cuanto he esperado que estuvieras asi cuanto he esperado que me hablaras cuanto he esperado que vinieras a mi yo se bien lo que has vivido yo se bien porque has llorado yo se bien lo que has sufrido pues de tu lado no me he ido pues nadie te ama como yo pues nadie te ama como yo mira la cruz esa es mi mas grande prueba nadie te ama como yo pues nadie te ama como yo pues nadie te ama como yo mira la cruz fue por ti fue porque te amo nadie te ama como yo como yo como yo yo se bien lo que me dices aunque a veces no me hables yo se bien lo que en ti sientes aunque nunca lo compartas yo a tu lado he caminado junto a ti yo siempre he ido aun a veces te he cargado yo he sido tu mejor amigo"
   },
@@ -8633,8 +8633,229 @@
     "acorde": "La",
     "dbno": "133",
     "hasAudio": true,
-    "audioSrc": "https://audio.resucito.do/catolico/ofrendadeamor.mp3",
+    "audioSrc": "https://audio.resucito.do/catolico/Ofrenda de amor.mp3",
     "sourceBook": "joven",
     "searchPool": "ofrenda de amor gregorio fernandez por los ninos que empiezan la vida por los hombres sin techo ni hogar por los pueblos que sufren la guerra te ofrecemos el vino y el pan pan y vino sobre el altar son ofrenda de amor pan y vino seran despues tu cuerpo y sangre senor por los hombres que viven unidos por los hombres que buscan la paz por los pueblos que no te conocen te ofrecemos el vino y el pan por aquellos a quienes queremos por nosotros y nuestra amistad por los vivos y por los difuntos te ofrecemos el vino y el pan pan y vino sobre el altar son ofrenda de amor pan y vino seran despues tu cuerpo y sangre senor"
+  },
+  {
+    "id": "padrenuestrov1",
+    "title": "Padrenuestro v1",
+    "subtitle": "Simon & Garfunkel",
+    "category": [
+      "Católicos",
+      "Padrenuestro"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Lam",
+    "dbno": "135",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Padrenuestro v1.mp3",
+    "sourceBook": "joven",
+    "searchPool": "padrenuestro v1 simon garfunkel padre nuestro tu que estas en los que aman la verdad haz que el reino que por ti se dio llegue pronto a nuestro corazon y el amor que tu hijo nos dejo el amor habite en nosotros y en el pan de la unidad cristo danos tu la paz y olvidate de nuestro mal si olvidamos el de los demas no permitas que caigamos en tentacion oh senor y ten piedad del mundo y en el pan de la unidad cristo danos tu la paz y olvidate de nuestro mal si olvidamos el de los demas no permitas que caigamos en tentacion oh senor y ten piedad del mundo"
+  },
+  {
+    "id": "pazsenor",
+    "title": "Paz, Señor",
+    "subtitle": "Canto de paz",
+    "category": [
+      "Católicos",
+      "Paz"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "137",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Paz, Señor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "paz senor canto de paz paz senor en el cielo y la tierra paz senor en las olas del mar paz senor en las flores que mueve sin saberlo la brisa al pasar tu que has hecho las cosas tan bellas y les das una vida fugaz pon senor tu mirada sobre ellas y devuelve a los hombres la paz paz paz paz senor paz paz paz y amor hoy he visto volar sobre el cielo suspendidas de un rayo de luz dos palomas que alzaron el vuelo con sus alas en forma de cruz haz que vuelvan de nuevo a la tierra las palomas que huyeron senor y la llama que enciende la guerra se transforme en la paz y el amor paz paz paz senor paz paz paz y amor"
+  },
+  {
+    "id": "perdonaatupueblosenor",
+    "title": "Perdona a tu pueblo, Señor",
+    "subtitle": "Bernardo Velado Graña, Antonio Alcalde",
+    "category": [
+      "Católicos",
+      "Cuaresma",
+      "Penitencial"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mim",
+    "dbno": "136",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Perdona a tu puebo, Señor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "perdona a tu pueblo senor bernardo velado grana antonio alcalde perdona a tu pueblo senor perdona a tu pueblo perdonale senor no estes eternamente enojado no estes eternamente enojado perdonale senor por las heridas de pies y manos por los azotes tan inhumanos perdonale senor por tus profundas llagas crueles por tus afrentas y por tus hieles perdonale senor por los tres clavos que te clavaron y las espinas que te punzaron perdonale senor por la abertura de tu costado no estes eternamente enojado perdonale senor no estes eternamente enojado no estes eternamente enojado perdonale senor perdona a tu pueblo senor perdona a tu pueblo perdonale senor"
+  },
+  {
+    "id": "pescadordehombres",
+    "title": "Pescador de hombres",
+    "subtitle": "Cesáreo Gabaráin",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "134",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Pescador de hombres.mp3",
+    "sourceBook": "joven",
+    "searchPool": "pescador de hombres cesareo gabarain tu has venido a la orilla no has buscado ni a sabios ni a ricos tan solo quieres que yo te siga senor me has mirado a los ojos sonriendo has dicho mi nombre en la arena he dejado mi barca junto a ti buscare otro mar tu sabes bien lo que tengo en mi barca no hay oro ni espadas tan solo redes y mi trabajo senor me has mirado a los ojos re 0 mi 60 sonriendo has dicho mi nombre en la arena he dejado mi barca junto a ti buscare otro mar tu necesitas mis manos mi trabajo que a otros descanse amor que quiera seguir amando senor me has mirado a los ojos re 0 mi 60 sonriendo has dicho mi nombre en la arena he dejado mi barca junto a ti buscare otro mar tu pescador de otros lagos ansia eterna de almas que esperan amigo bueno que asi me llamas senor me has mirado a los ojos sonriendo has dicho mi nombre en la arena he dejado mi barca junto a ti buscare otro mar"
+  },
+  {
+    "id": "quealegriacuandomedijeron",
+    "title": "Qué alegría cuando me dijeron",
+    "subtitle": "Salmo 121 (122)",
+    "category": [
+      "Católicos",
+      "Entrada"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "138",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Qué alegría cuando me dijeron.mp3",
+    "sourceBook": "joven",
+    "searchPool": "que alegria cuando me dijeron salmo 121 122 que alegria cuando me dijeron vamos a la casa del senor ya estan pisando nuestros pies tus umbrales jerusalen jerusalen esta fundada como ciudad bien compacta alla suben las tribus las tribus del senor segun la costumbre de israel a celebrar el nombre del senor en ella estan los tribunales de justicia en el palacio de david que alegria cuando me dijeron re 0 si m 180 vamos a la casa del senor ya estan pisando nuestros pies tus umbrales jerusalen desead la paz a jerusalen vivan seguros los que te aman haya paz dentro de tus muros en tus palacios seguridad por mis hermanos y companeros voy a decir la paz contigo por la casa del senor nuestro dios te deseo todo bien que alegria cuando me dijeron vamos a la casa del senor ya estan pisando nuestros pies tus umbrales jerusalen"
+  },
+  {
+    "id": "reginacoeli",
+    "title": "Regina Coeli",
+    "subtitle": "Antífona mariana pascual",
+    "category": [
+      "Católicos",
+      "Virgen María",
+      "Pascua"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "139",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Regina Coeli.mp3",
+    "sourceBook": "joven",
+    "searchPool": "regina coeli antifona mariana pascual regina caeli laetare alleluia quia quem meruisti portare alleluia resurrexit sicut dixit alleluia ora pro nobis deum alleluia traduccion v reina del cielo alegrate r aleluya v porque el senor a quien mereciste llevar r aleluya v ha resucitado como lo habia dicho r aleluya v ruega al senor por nosotros r aleluya v goza y alegrate virgen maria aleluya r porque verdaderamente ha resucitado el senor aleluya"
+  },
+  {
+    "id": "santamariadelcamino",
+    "title": "Santa María del Camino",
+    "subtitle": "Juan Antonio Espinosa",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "140",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Santa María del Camino.mp3",
+    "sourceBook": "joven",
+    "searchPool": "santa maria del camino juan antonio espinosa mientras recorres la vida tu nunca solo estas contigo por el camino santa maria va ven con nosotros al caminar santa maria ven ven con nosotros al caminar santa maria ven aunque te digan algunos que nada puede cambiar lucha por un mundo nuevo lucha por la verdad ven con nosotros al caminar santa maria ven ven con nosotros al caminar santa maria ven"
+  },
+  {
+    "id": "santoafricano",
+    "title": "Santo africano - zaireño",
+    "subtitle": "Misa Luba / Zaireño",
+    "category": [
+      "Católicos",
+      "Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "143",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Santo africano - zaireño.mp3",
+    "sourceBook": "joven",
+    "searchPool": "santo africano zaireno misa luba zaireno santo santo hosanna hosanna eh hosanna eh hosanna cristo jesus los cielos y la tierra estan llenos de tu gloria senor hosanna eh hosanna eh hosanna cristo jesus bendito el que viene en el nombre en el nombre tuyo senor hosanna eh hosanna eh hosanna cristo jesus santo santo hosanna"
+  },
+  {
+    "id": "santodehaendel",
+    "title": "Santo de Haendel",
+    "subtitle": "G. F. Haendel",
+    "category": [
+      "Católicos",
+      "Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Lam",
+    "dbno": "141",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Santo de Haendel.mp3",
+    "sourceBook": "joven",
+    "searchPool": "santo de haendel g f haendel santo santo santo es el senor dios del universo llenos estan el cielo y la tierra de tu gloria hosanna hosanna hosanna hosanna en el cielo hosanna hosanna hosanna en el cielo bendito el que viene en nombre del senor hosanna en el cielo hosanna hosanna hosanna hosanna en el cielo hosanna hosanna hosanna en el cielo"
+  },
+  {
+    "id": "santohillsong",
+    "title": "Santo Hillsong (Hosanna)",
+    "subtitle": "Hillsong (Adap: M. Hens, C. Gómez)",
+    "category": [
+      "Católicos",
+      "Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "142",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Santo Hillsong (Hosanna).mp3",
+    "sourceBook": "joven",
+    "searchPool": "santo hillsong hosanna hillsong adap m hens c gomez santo santo santo santo es el senor lleno esta cielo y tierra de su amor hosanna hosanna hosanna en el cielo hosanna hosanna hosanna a nuestro redentor bendito es el que viene en nombre del senor lleno esta cielo y tierra de su amor hosanna hosanna hosanna en el cielo hosanna hosanna hosanna a nuestro redentor"
+  },
+  {
+    "id": "sienverdaddiosteama",
+    "title": "Si en verdad Dios te ama",
+    "subtitle": "Canto dinámico",
+    "category": [
+      "Católicos",
+      "Niños"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "144",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Si en verdad Dios te ama.mp3",
+    "sourceBook": "joven",
+    "searchPool": "si en verdad dios te ama canto dinamico si en verdad dios te ama da las palmas si en verdad dios te ama demuestralo en tu vida si en verdad dios te ama da las palmas si en verdad dios te ama di jesus si en verdad dios te ama di amen si en verdad dios te ama taconea si en verdad dios te ama da las cuatro si en verdad dios te ama da las palmas si en verdad dios te ama demuestralo en tu vida si en verdad dios te ama da las palmas"
+  },
+  {
+    "id": "solodiosesgrande",
+    "title": "Sólo Dios es grande",
+    "subtitle": "Cesáreo Gabaráin",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "145",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Sólo Dios es grande.mp3",
+    "sourceBook": "joven",
+    "searchPool": "solo dios es grande cesareo gabarain yo pensaba que el hombre era grande por su poder grande por su saber grande por su valor yo pensaba que el hombre era grande y me equivoque pues grande solo es dios sube hasta el cielo y lo veras que pequenito el mundo es sube hasta el cielo y lo veras como un juguete de cristal que con carino hay que cuidar sube hasta el cielo y lo veras sube hasta el cielo y lo veras que pequenito el mundo es sube hasta el cielo y lo veras"
+  },
+  {
+    "id": "tepresentamos",
+    "title": "Te presentamos",
+    "subtitle": "Ofertorio",
+    "category": [
+      "Católicos",
+      "Ofertorio"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "146",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/te presentamos.mp3",
+    "sourceBook": "joven",
+    "searchPool": "te presentamos ofertorio te presentamos el vino y el pan como senal de que nos entregamos tu cuerpo y sangre quiere que comamos y asi llenar nuestras vidas ansiosas de ti te presentamos el vino y el pan hechos de frutas y trigo maduro esta es la ofrenda que te presentamos que sera cuerpo y sangre de ti oh senor pan y vino pan y vino tu cuerpo y sangre que hoy ofrecemos pan y vino pan y vino que compartimos a cada momento te presentamos el vino y el pan para que tu lo bendigas y partas y asi con fe comulguemos con ellos y llenar nuestras vidas de ti oh senor te presentamos el vino y el pan hechos de frutas y trigo maduro esta es la ofrenda que te presentamos que sera cuerpo y sangre de ti oh senor pan y vino pan y vino tu cuerpo y sangre que hoy ofrecemos pan y vino pan y vino que compartimos a cada momento"
   }
 ]

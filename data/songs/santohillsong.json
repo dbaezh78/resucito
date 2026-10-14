@@ -1,0 +1,120 @@
+{
+  "id": "santohillsong",
+  "tt": "Santo Hillsong (Hosanna)",
+  "title": "Santo Hillsong (Hosanna)",
+  "subtitle": "Hillsong (Adap: M. Hens, C. Gómez)",
+  "category": [
+    "Católicos",
+    "Santo"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "142",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Santo Hillsong (Hosanna).mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=santodehaendel",
+  "sig": "/src/index.html?canto=santoafricano",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Santo, Santo, Santo, (Re,,0)(Si,m,160)",
+      "sC": "tc"
+    },
+    {
+      "line": "Santo es el Señor. (Re,,0)(Si,m,150)",
+      "sC": ""
+    },
+    {
+      "line": "Lleno está cielo y tierra (Sol,,0)(La,,140)",
+      "sC": ""
+    },
+    {
+      "line": "de su amor. (Re,,70)(BIS)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Re,,0)(Sol,,70)(La,,120)(Si,m,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA EN EL CIELO. (Sol,,10)(La,,110)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Re,,10)(Sol,,70)(La,,120)(Si,m,170)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA A NUESTRO REDENTOR. (Sol,,10)(La,,110)(Re,,170)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito es el que viene (Re,,0)(Si,m,160)",
+      "sC": "tc"
+    },
+    {
+      "line": "en nombre del Señor. (Re,,0)(Si,m,150)",
+      "sC": ""
+    },
+    {
+      "line": "Lleno está cielo y tierra (Sol,,0)(La,,140)",
+      "sC": ""
+    },
+    {
+      "line": "de su amor. (Re,,70)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Re,,0)(Sol,,70)(La,,120)(Si,m,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "HOSANNA EN EL CIELO. (Sol,,10)(La,,110)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, (Re,,10)(Sol,,70)(La,,120)(Si,m,170)",
+      "sC": "as"
+    },
+    {
+      "line": "HOSANNA A NUESTRO REDENTOR. (Sol,,10)(La,,110)(Re,,170)",
+      "sC": "as"
+    }
+  ]
+}

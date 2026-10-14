@@ -1,0 +1,109 @@
+{
+  "id": "reginacoeli",
+  "tt": "Regina Coeli",
+  "title": "Regina Coeli",
+  "subtitle": "Antífona mariana pascual",
+  "category": [
+    "Católicos",
+    "Virgen María",
+    "Pascua"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "139",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Regina Coeli.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=quealegriacuandomedijeron",
+  "sig": "/src/index.html?canto=santamariadelcamino",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Regina caeli, laetare, alleluia. (Re,,0)(Sol,,90)(La,,150)(Si,m,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "Quia quem meruisti portare, alleluia. (Re,,0)(Sol,,80)(Si,m,150)(Mi,m,210)(La,7,250)(Re,,280)",
+      "sC": ""
+    },
+    {
+      "line": "Resurrexit, sicut dixit, alleluia. (Re,,0)(Sol,,60)(Re,,90)(Si,m,130)(Re,,180)(La,7,230)",
+      "sC": ""
+    },
+    {
+      "line": "Ora pro nobis Deum, alleluia. (Mi,m,0)(La,7,60)(Si,m,120)(Mi,m,160)(La,7,190)(Re,,230)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Traducción:",
+      "sC": "tc"
+    },
+    {
+      "line": "V. Reina del cielo, alégrate. ",
+      "sC": ""
+    },
+    {
+      "line": "R. Aleluya. ",
+      "sC": ""
+    },
+    {
+      "line": "V. Porque el Señor, a quien mereciste llevar. ",
+      "sC": ""
+    },
+    {
+      "line": "R. Aleluya. ",
+      "sC": ""
+    },
+    {
+      "line": "V. Ha resucitado, como lo había dicho. ",
+      "sC": ""
+    },
+    {
+      "line": "R. Aleluya. ",
+      "sC": ""
+    },
+    {
+      "line": "V. Ruega al Señor por nosotros. ",
+      "sC": ""
+    },
+    {
+      "line": "R. Aleluya. ",
+      "sC": ""
+    },
+    {
+      "line": "V. Goza y alégrate, Virgen María. Aleluya. ",
+      "sC": ""
+    },
+    {
+      "line": "R. Porque verdaderamente ha resucitado el Señor. Aleluya. ",
+      "sC": ""
+    }
+  ]
+}

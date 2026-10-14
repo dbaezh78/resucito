@@ -1,0 +1,181 @@
+{
+  "id": "quealegriacuandomedijeron",
+  "tt": "Qué alegría cuando me dijeron",
+  "title": "Qué alegría cuando me dijeron",
+  "subtitle": "Salmo 121 (122)",
+  "category": [
+    "Católicos",
+    "Entrada"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "138",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Qué alegría cuando me dijeron.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=pazsenor",
+  "sig": "/src/index.html?canto=reginacoeli",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE ALEGRÍA CUANDO ME DIJERON: (Re,,0)(Si,m,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "“¡VAMOS A LA CASA DEL SEÑOR!” (Mi,m,10)(La,7,170)",
+      "sC": "as"
+    },
+    {
+      "line": "YA ESTÁN PISANDO NUESTROS PIES (Re,,10)(Sol,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "TUS UMBRALES JERUSALÉN. (Re,,10)(La,7,80)(Re,,130)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Jerusalén está fundada (Si,m,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "como ciudad bien compacta. (Mi,m,70)(La,7,150)",
+      "sC": ""
+    },
+    {
+      "line": "Allá suben las tribus, (Re,,40)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "las tribus del Señor. (Re,,60)(La,7,110)(Re,,140)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Según la costumbre de Israel, (Si,m,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "a celebrar el nombre del Señor (Mi,m,70)(La,7,150)",
+      "sC": ""
+    },
+    {
+      "line": "en ella están los tribunales de justicia, (Re,,40)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "en el palacio de David. (Re,,60)(La,7,110)(Re,,140)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_quealegria_1",
+      "initialState": "collapsed",
+      "triggerLine": "QUE ALEGRÍA CUANDO ME DIJERON... (Re,,0)(Si,m,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "“¡VAMOS A LA CASA DEL SEÑOR!” (Mi,m,10)(La,7,170)",
+          "sC": "as"
+        },
+        {
+          "line": "YA ESTÁN PISANDO NUESTROS PIES TUS UMBRALES JERUSALÉN. (Re,,10)(Sol,,120)(Re,,170)(La,7,210)(Re,,240)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Desead la paz a Jerusalén: (Si,m,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "“Vivan seguros los que te aman, (Mi,m,70)(La,7,150)",
+      "sC": ""
+    },
+    {
+      "line": "haya paz dentro de tus muros, (Re,,40)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "en tus palacios seguridad” (Re,,60)(La,7,110)(Re,,140)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por mis hermanos y compañeros, (Si,m,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "voy a decir: “La paz contigo” (Mi,m,70)(La,7,150)",
+      "sC": ""
+    },
+    {
+      "line": "Por la casa del Señor, nuestro Dios, (Re,,40)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "te deseo todo bien. (Re,,60)(La,7,110)(Re,,140)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "QUE ALEGRÍA CUANDO ME DIJERON: (Re,,0)(Si,m,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "“¡VAMOS A LA CASA DEL SEÑOR!” (Mi,m,10)(La,7,170)",
+      "sC": "as"
+    },
+    {
+      "line": "YA ESTÁN PISANDO NUESTROS PIES (Re,,10)(Sol,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "TUS UMBRALES JERUSALÉN. (Re,,10)(La,7,80)(Re,,130)",
+      "sC": "as"
+    }
+  ]
+}

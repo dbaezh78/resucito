@@ -1,0 +1,120 @@
+{
+  "id": "santamariadelcamino",
+  "tt": "Santa María del Camino",
+  "title": "Santa María del Camino",
+  "subtitle": "Juan Antonio Espinosa",
+  "category": [
+    "Católicos",
+    "Virgen María"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "La",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "140",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Santa María del Camino.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=reginacoeli",
+  "sig": "/src/index.html?canto=santodehaendel",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mientras recorres la vida, (La,,0)(Fa#,m,130)(Re,,180)(La,,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "tú nunca solo estás, (Mi,,0)(Re,,90)(La,,140)",
+      "sC": ""
+    },
+    {
+      "line": "contigo por el camino: (Re,,0)(Mi,,90)(La,,140)(Do#,m,170)(Fa#,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "Santa María va. (Si,,0)(Mi,,80)(La,,140)(La,7,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VEN CON NOSOTROS AL CAMINAR, (Re,,0)(Mi,,120)(La,,180)(Fa#,m,230)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTA MARÍA, VEN. (Mi,,10)(La,,90)(La,7,130)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN CON NOSOTROS AL CAMINAR, (Re,,10)(Mi,,120)(La,,180)(Fa#,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTA MARÍA, VEN. (Mi,,10)(Re,,80)(La,,120)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aunque te digan algunos (La,,0)(Fa#,m,130)(Re,,180)(La,,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "que nada puede cambiar, (Mi,,0)(Re,,90)(La,,140)",
+      "sC": ""
+    },
+    {
+      "line": "Lucha por un mundo nuevo, (Re,,0)(Mi,,90)(La,,140)(Do#,m,170)(Fa#,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "lucha por la verdad. (Si,,0)(Mi,,80)(La,,140)(La,7,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VEN CON NOSOTROS AL CAMINAR, (Re,,0)(Mi,,120)(La,,180)(Fa#,m,230)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANTA MARÍA, VEN. (Mi,,10)(La,,90)(La,7,130)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN CON NOSOTROS AL CAMINAR, (Re,,10)(Mi,,120)(La,,180)(Fa#,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "SANTA MARÍA, VEN. (Mi,,10)(Re,,80)(La,,120)",
+      "sC": "as"
+    }
+  ]
+}
