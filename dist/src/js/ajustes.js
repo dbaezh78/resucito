@@ -2157,7 +2157,7 @@ window.initAjustes = async function() {
   // --- MÓDULO ESTADO RESUCITÓ ---
   async function loadResourceIntoCache(url, preOpened = null) {
     try {
-      const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/');
+      const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/') || url.includes('data/joven/');
       let cache;
       if (preOpened) {
         cache = isSong ? preOpened.songsCache : preOpened.appCache;
@@ -2445,7 +2445,7 @@ window.initAjustes = async function() {
       .filter(s => s && s.id && !s.id.startsWith('seu'))
       .map(s => {
         const id = s.id;
-        const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+        const folder = id.startsWith('aet') ? 'data/songs-ae' : (s.sourceBook === 'joven' ? 'data/joven' : 'data/songs');
         return { url: `${folder}/${id}.json?offline=true` };
       });
 
@@ -2754,7 +2754,7 @@ window.initAjustes = async function() {
             const batch = uniqueUrls.slice(i, i + batchSize);
             await Promise.all(batch.map(async (url) => {
               try {
-                const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/');
+                const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/') || url.includes('data/joven/');
                 const targetCache = isSong ? songsCache : appCache;
                 const existing = await targetCache.match(url);
                 if (existing) {
@@ -2807,8 +2807,9 @@ window.initAjustes = async function() {
             const songIds = songs.map(s => s.id);
             let deleted = 0;
             
-            for (const id of songIds) {
-              const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+            for (const s of songs) {
+              const id = s.id;
+              const folder = id.startsWith('aet') ? 'data/songs-ae' : (s.sourceBook === 'joven' ? 'data/joven' : 'data/songs');
               const url = `${folder}/${id}.json?offline=true`;
               await songsCache.delete(url);
               await songsCache.delete(`${folder}/${id}.json`);

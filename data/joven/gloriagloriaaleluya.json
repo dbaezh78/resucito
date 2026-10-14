@@ -1,0 +1,282 @@
+{
+  "id": "gloriagloriaaleluya",
+  "tt": "Gloria, Gloria Aleluya",
+  "title": "Gloria, Gloria Aleluya",
+  "subtitle": "Canto Joven",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mi",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "105",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Gloria, Gloria Aleluya.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=venalafiesta",
+  "sig": "/src/index.html?canto=saberquevendras",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA, GLORIA, ALELUYA, (Mi,,12)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GLORIA, GLORIA, ALELUYA, (La,,12)(Mi,,230)",
+      "sC": "as"
+    },
+    {
+      "line": "GLORIA, GLORIA, ALELUYA (Mi,,12)",
+      "sC": "as"
+    },
+    {
+      "line": "EN NOMBRE DEL SEÑOR. (La,,30)(Si,7,140)(Mi,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuando sientas que tu hermano (Mi,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "necesita de tu amor,",
+      "sC": ""
+    },
+    {
+      "line": "no le cierres las entrañas (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "ni el calor del corazón. (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "Busca pronto en tu recuerdo (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "la Palabra del Señor: (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "«Mi Ley es el Amor». (La,,12)(Si,7,120)(Mi,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_gloriaaleluya_1",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, ALELUYA, (Mi,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA, ALELUYA, (La,,12)(Mi,,230)",
+          "sC": "as"
+        },
+        {
+          "line": "GLORIA, GLORIA, ALELUYA (Mi,,12)",
+          "sC": "as"
+        },
+        {
+          "line": "EN NOMBRE DEL SEÑOR. (La,,30)(Si,7,140)(Mi,,220)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo dijo que quien llore (Mi,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "su consuelo encontrará,",
+      "sC": ""
+    },
+    {
+      "line": "quien es pobre, quien es limpio, (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "será libre y tendrá paz. (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "Rompe pronto tus cadenas, (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "eres libre de verdad, (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "empieza a caminar. (La,,12)(Si,7,120)(Mi,,200)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_gloriaaleluya_2",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, ALELUYA, (Mi,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA, ALELUYA, (La,,12)(Mi,,230)",
+          "sC": "as"
+        },
+        {
+          "line": "GLORIA, GLORIA, ALELUYA (Mi,,12)",
+          "sC": "as"
+        },
+        {
+          "line": "EN NOMBRE DEL SEÑOR. (La,,30)(Si,7,140)(Mi,,220)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Si el camino se hace largo, (Mi,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "si te cansas bajo el sol,",
+      "sC": ""
+    },
+    {
+      "line": "si en tus campos no ha nacido (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "ni la más pequeña flor, (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "coge mi mano y cantemos, (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "unidos por el amor (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "en nombre del Señor. (La,,12)(Si,7,120)(Mi,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_gloriaaleluya_3",
+      "initialState": "collapsed",
+      "triggerLine": "GLORIA, GLORIA, ALELUYA, (Mi,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "GLORIA, GLORIA, ALELUYA, (La,,12)(Mi,,230)",
+          "sC": "as"
+        },
+        {
+          "line": "GLORIA, GLORIA, ALELUYA (Mi,,12)",
+          "sC": "as"
+        },
+        {
+          "line": "EN NOMBRE DEL SEÑOR. (La,,30)(Si,7,140)(Mi,,220)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Caminemos siempre unidos (Mi,,12)",
+      "sC": "tc"
+    },
+    {
+      "line": "en la fe y en el amor,",
+      "sC": ""
+    },
+    {
+      "line": "anunciemos por doquiera (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "su mensaje salvador; (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "implantemos por el mundo (Mi,,12)",
+      "sC": ""
+    },
+    {
+      "line": "la justicia y el amor, (La,,12)",
+      "sC": ""
+    },
+    {
+      "line": "en nombre del Señor. (La,,12)(Si,7,120)(Mi,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA, GLORIA, ALELUYA, (Mi,,12)",
+      "sC": "ta as"
+    },
+    {
+      "line": "GLORIA, GLORIA, ALELUYA, (La,,12)(Mi,,230)",
+      "sC": "as"
+    },
+    {
+      "line": "GLORIA, GLORIA, ALELUYA (Mi,,12)",
+      "sC": "as"
+    },
+    {
+      "line": "EN NOMBRE DEL SEÑOR. (La,,30)(Si,7,140)(Mi,,220)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "joven"
+}

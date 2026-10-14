@@ -848,7 +848,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
                   const slice = songs.slice(i, i + 15);
                   await Promise.all(slice.map(async s => {
                     if (!s || !s.id || s.id.startsWith('seu')) return;
-                    const folder = s.id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+                    const folder = s.id.startsWith('aet') ? 'data/songs-ae' : (s.sourceBook === 'joven' ? 'data/joven' : 'data/songs');
                     const u = `${folder}/${s.id}.json?offline=true`;
                     if (await songsCache.match(u)) return; // Ya en caché, omitir
                     try {

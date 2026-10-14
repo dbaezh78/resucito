@@ -7821,18 +7821,20 @@
   {
     "id": "lospecesenelrio",
     "title": "Los peces en el río",
-    "subtitle": "Villancicos",
+    "subtitle": "Villancico",
     "category": [
-      "Católicos"
+      "Católicos",
+      "Navidad",
+      "Villancicos"
     ],
     "stage": "Católicos",
     "cejilla": "",
     "acorde": "La",
     "dbno": "302",
     "hasAudio": true,
-    "audioSrc": "/audio/lospecesenelrio.mp3",
+    "audioSrc": "https://audio.resucito.do/catolico/Los Peces en el Rio.mp3",
     "sourceBook": "joven",
-    "searchPool": "los peces en el rio villancicos pero mira como beben por ver al dios nacido beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen esta lavando y tendiendo en el romero los pajarillos cantando y el romero floreciendo pero mira como beben por ver al dios nacido beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen se esta peinando entre cortina y cortina sus cabellos son de oro el peine de plata fina pero mira como beben por ver al dios nacido beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen esta lavando con un poco de jabon se le picaron las manos manos de mi corazon pero mira como beben por ver al dios nacido beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen va caminando por entre aquellas palmeras el nino mira en sus ojos el color de la vereda pero mira como beben por ver al dios nacido beben y beben y vuelven a beber los peces en el rio por ver a dios nacer"
+    "searchPool": "pero mira como beben los peces en el rio pero mira como beben por ver a dios nacio beben y beben y vuelven a beber los peces en el rio por ver a dios nacer la virgen se esta peinando entre cortina y cortina los cabellos son de oro y el peine de plata fina la virgen se esta lavando y tendiendo en el romero los angelitos cantando y el romero floreciendo la virgen se esta lavando con un cachito jabon se le picaron las manos manos de mi corazon la virgen lleva una rosa en su divina pechera que se la dio san jose el dia de nochebuena los peces en el rio"
   },
   {
     "id": "conmiburritosabanero",
@@ -7998,7 +8000,7 @@
     "sourceBook": "salmodias",
     "searchPool": "salmodias cantico angustia de un moribundo y alegria de la curacion is 38 1014 1720 yo pense en medio de mis dias tengo que marchar hacia las puertas del abismo me privan del resto de mis anos yo pense ya no vere mas al senor en la tierra de los vivos ya no mirare a los hombres entre los habitantes del mundo levantan y enrollan mi vida como una tienda de pastores como un tejedor devanaba yo mi vida y me cortan la trama dia y noche me estas acabando sollozo hasta el amanecer me quiebras los huesos como un leon dia y noche me estas acabando estoy piando como una golondrina gimo como una paloma mis ojos mirando al cielo se consumen senor que me oprimen sal fiador por mi me has curado me has hecho revivir la amargura se me volvio paz cuando detuviste mi alma ante la tumba vacia y volviste la espalda a todos mis pecados el abismo no te da gracias ni la muerte te alaba ni esperan en tu fidelidad los que bajan a la fosa los vivos los vivos son quienes te alaban como yo ahora el padre ensena a sus hijos tu fidelidad salvame senor y tocaremos nuestras arpas todos nuestros dias en la casa del senor gloria al padre y al hijo y al espiritu santo como era en el principio ahora y siempre por los siglos de los siglos amen"
   },
-    {
+  {
     "id": "almamisionera",
     "title": "Alma Misionera",
     "subtitle": "Cantos Catolicos",
@@ -8013,5 +8015,103 @@
     "audioSrc": "https://audio.resucito.do/almamisionera.mp3",
     "sourceBook": "joven",
     "searchPool": "Señor Toma mi vida nueva Antes de que la espera Desgaste años en mí Estoy Dispuesto a lo que quieras No importa lo que sea Tú llámame a servir Llévame donde los hombres Necesiten Tus palabras Necesiten Tus ganas de vivir Donde falte la esperanza Donde falte la alegría Simplemente Por no saber de ti Te doy Mi corazón sincero Para gritar sin miedo Lo hermoso que es Tu amor Señor Tengo alma misionera Condúceme a la tierra Que tenga sed de Dios Y así En marcha iré cantando Por pueblos predicando Tu grandeza, Señor Tendré Mis brazos sin cansancio Tu historia entre mis labios Y fuerza en la oración Simplemente Por no saber de ti"
+  },
+  {
+    "id": "elaguadelsenor",
+    "title": "El agua del Señor",
+    "subtitle": "Cantos Católicos",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "103",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/elaguadelSeñor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "el agua del senor sano mi enfermedad el agua del senor jesus el que quiera y tenga sed que venga y beba gratis el que quiera y tenga sed beba el agua de la vida el que beba de esta agua jamas tendra sed sobre ti derramare el agua que es mi vida y tu corazon de piedra en amor transformare el que crea en mi palabra y se abra a mi fuerza de su seno brotaran torrentes de agua viva el agua del señor"
+  },
+  {
+    "id": "venalafiesta",
+    "title": "Ven a la fiesta",
+    "subtitle": "Canto Joven",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "104",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/venalafiesta-cantojoven.mp3",
+    "sourceBook": "joven",
+    "searchPool": "ven a la fiesta ven tu podras es el momento de rezar y de cantar cantar vamos a la fiesta hoy celebramos jesus esta que en nuestras vidas dios viviendo siempre esta ven a la fiesta a participar nos hace falta tu calor jesus te invita para celebrar su amor atento tu estaras a responder por eso ven a la fiesta para recordar milagros que renacen hoy jesus hoy viene para con todos estar y su vida y su cruz es nuestra luz por eso un cielo nuevo hoy vamos a hacer amigos comunidad puertas abiertas queremos siempre tener todos pueden entrar a compartir por eso"
+  },
+  {
+    "id": "gloriagloriaaleluya",
+    "title": "Gloria, Gloria Aleluya",
+    "subtitle": "Canto Joven",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "105",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Gloria, Gloria Aleluya.mp3",
+    "sourceBook": "joven",
+    "searchPool": "gloria gloria aleluya gloria gloria aleluya gloria gloria aleluya en nombre del senor cuando sientas que tu hermano necesita de tu amor no le cierres las entranas ni el calor del corazon busca pronto en tu recuerdo la palabra del senor mi ley es el amor cristo dijo que quien llore su consuelo encontrara quien es pobre quien es limpio sera libre y tendra paz rompe pronto tus cadenas eres libre de verdad empieza a caminar si el camino se hace largo si te cansas bajo el sol si en tus campos no ha nacido ni la mas pequena flor coge mi mano y cantemos unidos por el amor en nombre del senor caminemos siempre unidos en la fe y en el amor anunciemos por doquiera su mensaje salvador implantemos por el mundo la justicia y el amor en nombre del senor"
+  },
+  {
+    "id": "saberquevendras",
+    "title": "Saber que vendrás",
+    "subtitle": "Canto Joven",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "106",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Saber que vendrás.mp3",
+    "sourceBook": "joven",
+    "searchPool": "en este mundo que cristo nos da hacemos la ofrenda del pan el pan de nuestro trabajo sin fin el vino de nuestro cantar traigo ante ti nuestra justa inquietud amar la justicia y la paz saber que vendras saber que estaras partiendo a los pobres tu pan la sed de todos los hombres sin luz la pena y el triste llorar el odio de los que mueren sin fe cansados de tanto luchar en la patena de nuestra oblacion acepta la vida senor"
+  },
+  {
+    "id": "venvensenornotardes",
+    "title": "Ven, ven, Señor, no tardes",
+    "subtitle": "Cesáreo Gabaráin",
+    "category": [
+      "Católicos",
+      "Adviento"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "107",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/venSeñornotardes.mp3",
+    "sourceBook": "joven",
+    "searchPool": "ven ven senor no tardes ven ven que te esperamos ven ven senor no tardes ven pronto senor el mundo muere de frio el alma perdio el calor los hombres no son hermanos al mundo le falta amor envuelto en sombria noche el mundo sin fe no ve buscando va una esperanza buscando senor tu fe al mundo le falta vida al mundo le falta luz al mundo le falta el cielo al mundo le faltas tu cesareo gabarain"
+  },
+  {
+    "id": "iluminamesenor",
+    "title": "Ilumíname, Señor",
+    "subtitle": "Martín Verde Barajas",
+    "category": [
+      "Católicos",
+      "Espíritu Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "108",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/iluminameSeñorcontuespiritu.mp3",
+    "sourceBook": "joven",
+    "searchPool": "iluminame senor con tu espiritu transformame senor con tu espiritu iluminame senor con tu espiritu iluminame y transformame senor y dejame sentir el fuego de tu amor aqui en mi corazon senor resucitame senor con tu espiritu convierteme senor con tu espiritu resucitame senor con tu espiritu resucitame y convierteme senor fortaleceme senor con tu espiritu consuelame senor con tu espiritu fortaleceme senor con tu espiritu fortaleceme y consuelame senor martin verde barajas iluminame senor con tu espiritu"
   }
 ]

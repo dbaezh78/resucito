@@ -5631,6 +5631,90 @@ export const defaultScrollConfigs = {
       "i": 1
     }
   },
+  "elaguadelsenor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "venalafiesta": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "gloriagloriaaleluya": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "saberquevendras": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "venvensenornotardes": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "iluminamesenor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
   "queestupendoquealegria": {
     "mobile": {
       "v": 123,

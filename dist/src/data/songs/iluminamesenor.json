@@ -1,0 +1,165 @@
+{
+  "id": "iluminamesenor",
+  "tt": "Ilumíname, Señor",
+  "title": "Ilumíname, Señor",
+  "subtitle": "Martín Verde Barajas",
+  "category": [
+    "Católicos",
+    "Espíritu Santo"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "108",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/iluminameSeñorcontuespiritu.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=venvensenornotardes",
+  "sig": "/src/index.html?canto=almamisionera",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ilumíname, Señor, con tu Espíritu. (Re,m,12)(La,,280)",
+      "sC": "tc"
+    },
+    {
+      "line": "Transfórmame, Señor, con tu Espíritu. (La,7,120)(Re,m,290)",
+      "sC": ""
+    },
+    {
+      "line": "Ilumíname, Señor, con tu Espíritu. (La,,270)",
+      "sC": ""
+    },
+    {
+      "line": "Ilumíname y transfórmame, Señor. (La,7,50)(Re,m,250)(Re,7,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y DÉJAME SENTIR EL FUEGO DE TU AMOR (Sol,m,50)(Re,m,260)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (La,7,12)(Re,m,210)(Re,7,280)",
+      "sC": "as"
+    },
+    {
+      "line": "Y DÉJAME SENTIR EL FUEGO DE TU AMOR (Sol,m,50)(Re,m,260)",
+      "sC": "as"
+    },
+    {
+      "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (La,7,12)(Re,m,210)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Resucítame Señor con tu Espíritu, (Re,m,12)(La,,280)",
+      "sC": "tc"
+    },
+    {
+      "line": "Conviérteme Señor con tu Espíritu. (La,7,120)(Re,m,290)",
+      "sC": ""
+    },
+    {
+      "line": "Resucítame Señor con tu Espíritu, (La,,270)",
+      "sC": ""
+    },
+    {
+      "line": "resucítame y conviérteme Señor. (La,7,50)(Re,m,250)(Re,7,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_iluminame_1",
+      "initialState": "collapsed",
+      "triggerLine": "Y DÉJAME SENTIR EL FUEGO DE TU AMOR (Sol,m,50)(Re,m,260)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (La,7,12)(Re,m,210)(Re,7,280)",
+          "sC": "as"
+        },
+        {
+          "line": "Y DÉJAME SENTIR EL FUEGO DE TU AMOR (Sol,m,50)(Re,m,260)",
+          "sC": "as"
+        },
+        {
+          "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (La,7,12)(Re,m,210)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Fortaléceme Señor con tu Espíritu, (Re,m,12)(La,,280)",
+      "sC": "tc"
+    },
+    {
+      "line": "Consuélame Señor con tu Espíritu. (La,7,120)(Re,m,290)",
+      "sC": ""
+    },
+    {
+      "line": "Fortaléceme Señor con tu Espíritu, (La,,270)",
+      "sC": ""
+    },
+    {
+      "line": "Fortaléceme y consuélame Señor. (La,7,50)(Re,m,250)(Re,7,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y DÉJAME SENTIR EL FUEGO DE TU AMOR (Sol,m,50)(Re,m,260)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (La,7,12)(Re,m,210)(Re,7,280)",
+      "sC": "as"
+    },
+    {
+      "line": "Y DÉJAME SENTIR EL FUEGO DE TU AMOR (Sol,m,50)(Re,m,260)",
+      "sC": "as"
+    },
+    {
+      "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (La,7,12)(Re,m,210)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "joven"
+}

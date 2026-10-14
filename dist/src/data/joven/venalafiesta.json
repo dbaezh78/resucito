@@ -1,0 +1,261 @@
+{
+  "id": "venalafiesta",
+  "tt": "Ven a la fiesta",
+  "title": "Ven a la fiesta",
+  "subtitle": "Canto Joven",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "104",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/venalafiesta-cantojoven.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=somosunpuebloquecamina",
+  "sig": "/src/index.html?canto=gloriagloriaaleluya",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VEN A LA FIESTA, (Re,,12)(La,,140)(Si,m,230)",
+      "sC": "ta as"
+    },
+    {
+      "line": "(ven tú, podrás)",
+      "sC": ""
+    },
+    {
+      "line": "ES EL MOMENTO DE REZAR Y DE CANTAR. (Sol,,12)(Mi,m,170)(La,,290)",
+      "sC": "as"
+    },
+    {
+      "line": "(cantar)     (vamos a la fiesta)",
+      "sC": ""
+    },
+    {
+      "line": "HOY CELEBRAMOS (Re,,12)(La,,140)(Si,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "(Jesús está)",
+      "sC": ""
+    },
+    {
+      "line": "QUE EN NUESTRAS VIDAS (Sol,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "DIOS VIVIENDO SIEMPRE ESTÁ. (La,,120)(Re,,230)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven a la fiesta a participar; (Sol,,12)(La,,170)(Re,,280)(Si,m,350)",
+      "sC": "tc"
+    },
+    {
+      "line": "(uh, uh, ah, gua, gua)",
+      "sC": ""
+    },
+    {
+      "line": "Nos hace falta tu calor. (Sol,,12)(La,,170)(Si,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "(uh, uh, nos hace falta tu calo-or ah, gua, gua)",
+      "sC": ""
+    },
+    {
+      "line": "Jesús te invita para celebrar su amor. (Re,,12)(La,,160)(Si,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "Atento tú estarás a responder, por eso... (Do,,12)(La,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_venalafiesta_1",
+      "initialState": "collapsed",
+      "triggerLine": "VEN A LA FIESTA, (Re,,12)(La,,140)(Si,m,230)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "(ven tú, podrás)",
+          "sC": ""
+        },
+        {
+          "line": "ES EL MOMENTO DE REZAR Y DE CANTAR. (Sol,,12)(Mi,m,170)(La,,290)",
+          "sC": "as"
+        },
+        {
+          "line": "(cantar)     (vamos a la fiesta)",
+          "sC": ""
+        },
+        {
+          "line": "HOY CELEBRAMOS (Re,,12)(La,,140)(Si,m,230)",
+          "sC": "as"
+        },
+        {
+          "line": "(Jesús está)",
+          "sC": ""
+        },
+        {
+          "line": "QUE EN NUESTRAS VIDAS (Sol,,160)",
+          "sC": "as"
+        },
+        {
+          "line": "DIOS VIVIENDO SIEMPRE ESTÁ. (La,,120)(Re,,230)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven a la fiesta para recordar (Sol,,12)(La,,170)(Re,,280)(Si,m,350)",
+      "sC": "tc"
+    },
+    {
+      "line": "Milagros que renacen hoy: (Sol,,12)(La,,170)(Si,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "Jesús hoy viene para con todos estar (Re,,12)(La,,160)(Si,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "Y su vida y su cruz es nuestra luz, por eso... (Do,,12)(La,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_venalafiesta_2",
+      "initialState": "collapsed",
+      "triggerLine": "VEN A LA FIESTA, (Re,,12)(La,,140)(Si,m,230)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "(ven tú, podrás)",
+          "sC": ""
+        },
+        {
+          "line": "ES EL MOMENTO DE REZAR Y DE CANTAR. (Sol,,12)(Mi,m,170)(La,,290)",
+          "sC": "as"
+        },
+        {
+          "line": "(cantar)     (vamos a la fiesta)",
+          "sC": ""
+        },
+        {
+          "line": "HOY CELEBRAMOS (Re,,12)(La,,140)(Si,m,230)",
+          "sC": "as"
+        },
+        {
+          "line": "(Jesús está)",
+          "sC": ""
+        },
+        {
+          "line": "QUE EN NUESTRAS VIDAS (Sol,,160)",
+          "sC": "as"
+        },
+        {
+          "line": "DIOS VIVIENDO SIEMPRE ESTÁ. (La,,120)(Re,,230)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Un cielo nuevo hoy vamos a hacer: (Sol,,12)(La,,170)(Re,,280)(Si,m,350)",
+      "sC": "tc"
+    },
+    {
+      "line": "amigos, comunidad. (Sol,,12)(La,,130)(Si,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "Puertas abiertas queremos siempre tener. (Re,,12)(La,,160)(Si,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "Todos pueden entrar a compartir, por eso... (Do,,12)(La,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "VEN A LA FIESTA, (Re,,12)(La,,140)(Si,m,230)",
+      "sC": "ta as"
+    },
+    {
+      "line": "(ven tú, podrás)",
+      "sC": ""
+    },
+    {
+      "line": "ES EL MOMENTO DE REZAR Y DE CANTAR. (Sol,,12)(Mi,m,170)(La,,290)",
+      "sC": "as"
+    },
+    {
+      "line": "(cantar)     (vamos a la fiesta)",
+      "sC": ""
+    },
+    {
+      "line": "HOY CELEBRAMOS (Re,,12)(La,,140)(Si,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "(Jesús está)",
+      "sC": ""
+    },
+    {
+      "line": "QUE EN NUESTRAS VIDAS (Sol,,160)",
+      "sC": "as"
+    },
+    {
+      "line": "DIOS VIVIENDO SIEMPRE ESTÁ. (La,,120)(Re,,230)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "joven"
+}

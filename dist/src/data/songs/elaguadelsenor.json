@@ -1,0 +1,280 @@
+{
+  "id": "elaguadelsenor",
+  "tt": "El agua del Señor",
+  "title": "El agua del Señor",
+  "subtitle": "Cantos Católicos",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mi",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "103",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/elaguadelSeñor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=conmiburritosabanero",
+  "sig": "/src/index.html?canto=hablame",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "EL AGUA DEL SEÑOR, (Mi,,12)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+      "sC": "as"
+    },
+    {
+      "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,260)",
+      "sC": "as"
+    },
+    {
+      "line": "EL AGUA DEL SEÑOR, (Mi,,40)",
+      "sC": "as"
+    },
+    {
+      "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+      "sC": "as"
+    },
+    {
+      "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,160)(Mi,,260)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El que quiera y tenga sed,, (La,,110)(Mi,,260)",
+      "sC": "tc"
+    },
+    {
+      "line": "que venga y beba gratis., (Si,7,110)(Mi,,175)(Mi,7,240)",
+      "sC": ""
+    },
+    {
+      "line": "El que quiera y tenga sed,, (La,,90)(Mi,,250)",
+      "sC": ""
+    },
+    {
+      "line": "beba el agua de la vida., (Si,7,130)(Mi,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_elaguadelsenor_1",
+      "initialState": "collapsed",
+      "triggerLine": "EL AGUA DEL SEÑOR, (Mi,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,260)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR, (Mi,,40)",
+          "sC": "as"
+        },
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,160)(Mi,,260)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El que beba de esta agua,, (La,,110)(Mi,,260)",
+      "sC": "tc"
+    },
+    {
+      "line": "jamás tendrá sed., (Si,7,60)(Mi,,140)(Mi,7,180)",
+      "sC": ""
+    },
+    {
+      "line": "El que beba de esta agua,, (La,,90)(Mi,,250)",
+      "sC": ""
+    },
+    {
+      "line": "jamás tendrá sed., (Si,7,60)(Mi,,140)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_elaguadelsenor_2",
+      "initialState": "collapsed",
+      "triggerLine": "EL AGUA DEL SEÑOR, (Mi,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,260)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR, (Mi,,40)",
+          "sC": "as"
+        },
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,160)(Mi,,260)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sobre ti derramaré, (La,,80)(Mi,,220)",
+      "sC": "tc"
+    },
+    {
+      "line": "el agua que es mi vida., (Si,7,100)(Mi,,180)(Mi,7,235)",
+      "sC": ""
+    },
+    {
+      "line": "Y tu corazón de piedra,, (La,,80)(Mi,,240)",
+      "sC": ""
+    },
+    {
+      "line": "en amor transformaré., (Si,7,80)(Mi,,210)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_elaguadelsenor_3",
+      "initialState": "collapsed",
+      "triggerLine": "EL AGUA DEL SEÑOR, (Mi,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,260)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR, (Mi,,40)",
+          "sC": "as"
+        },
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,160)(Mi,,260)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "4. El que crea en mi palabra, (La,,80)(Mi,,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "y se abra a mi fuerza,, (Si,7,80)(Mi,,175)(Mi,7,225)",
+      "sC": ""
+    },
+    {
+      "line": "de su seno brotarán, (La,,80)(Mi,,220)",
+      "sC": ""
+    },
+    {
+      "line": "torrentes de agua viva., (Si,7,90)(Mi,,225)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_elaguadelsenor_3",
+      "initialState": "collapsed",
+      "triggerLine": "EL AGUA DEL SEÑOR, (Mi,,12)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,260)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR, (Mi,,40)",
+          "sC": "as"
+        },
+        {
+          "line": "SANÓ MI ENFERMEDAD,, (Do#,m,160)",
+          "sC": "as"
+        },
+        {
+          "line": "EL AGUA DEL SEÑOR JESÚS., (La,,40)(Si,7,160)(Mi,,260)",
+          "sC": "as"
+        }
+      ]
+    }
+
+  ],
+  "sourceBook": "joven"
+}

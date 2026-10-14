@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v374'; // v2.1.38 Ciclo en subtítulo (Ciclo en negro y letra en rojo)
+const CACHE_NAME = 'resucito-cache-v375'; // v2.1.39 Carpeta data/joven y canto El agua del Señor
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
@@ -81,7 +81,8 @@ self.addEventListener('activate', event => {
               const isSong = 
                 reqUrl.pathname.includes('/data/songs/') || 
                 reqUrl.pathname.includes('/data/songs-ae/') || 
-                reqUrl.pathname.includes('/data/seucaristia/');
+                reqUrl.pathname.includes('/data/seucaristia/') ||
+                reqUrl.pathname.includes('/data/joven/');
               if (isSong) {
                 const response = await oldCache.match(req);
                 if (response) {
@@ -122,7 +123,8 @@ self.addEventListener('fetch', event => {
   const isSongResource = 
     url.pathname.includes('/data/songs/') || 
     url.pathname.includes('/data/songs-ae/') || 
-    url.pathname.includes('/data/seucaristia/');
+    url.pathname.includes('/data/seucaristia/') ||
+    url.pathname.includes('/data/joven/');
 
   if (isSongResource) {
     // ESTRATEGIA: Cache-First con almacenamiento persistente en SONGS_CACHE_NAME

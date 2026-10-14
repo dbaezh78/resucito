@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.38",
+  "latestVersion": "2.1.39",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.38)",
-  "updateMessage": "Subtítulo litúrgico con indicador de Ciclo destacado (Ciclo en negro y letra en rojo).",
+  "updateTitle": "Nueva Versión Disponible (v2.1.39)",
+  "updateMessage": "Nueva sección y carpeta de cantos para Canto Joven con el nuevo canto 'El agua del Señor'.",
   "releaseNotes": [
-    "Subtítulo de Salmo Eucaristía y Aclamaciones actualizado con el ciclo litúrgico destacado: palabra 'Ciclo' en negro y letra del ciclo en rojo.",
-    "Sincronización visual en el visor principal, carrusel de cantos, tarjetas del índice y vista previa de Salmo Eucarístico.",
-    "Optimización continua de caché y rendimiento."
+    "Incorporación de la carpeta dedicada data/joven para todos los cantos de Canto Joven.",
+    "Añadido nuevo canto 'El agua del Señor' transcrito con letra y acordes interactivos.",
+    "Soporte de caché persistente y búsqueda para cantos de Canto Joven."
   ]
 }

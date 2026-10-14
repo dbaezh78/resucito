@@ -1058,10 +1058,21 @@ async function loadSongView(songId) {
       }
 
       if (!songData) {
-        const folder = songId.startsWith('aet') ? 'data/songs-ae' : (songId.startsWith('seu') ? 'data/seucaristia' : 'data/songs');
+        const songMeta = allSongs ? allSongs.find(s => s.id === songId) : null;
+        let folder = 'data/songs';
+        if (songId.startsWith('aet') || (songMeta && songMeta.sourceBook === 'aclamaciones')) {
+          folder = 'data/songs-ae';
+        } else if (songId.startsWith('seu') || (songMeta && songMeta.sourceBook === 'eucaristia')) {
+          folder = 'data/seucaristia';
+        } else if (songMeta && songMeta.sourceBook === 'joven') {
+          folder = 'data/joven';
+        }
         const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
-        const response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`);
-        if (!response.ok) throw new Error('Canto no encontrado');
+        let response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`).catch(() => null);
+        if ((!response || !response.ok) && folder === 'data/joven') {
+          response = await fetch(`data/songs/${songId}.json?offline=${isOffline}`).catch(() => null);
+        }
+        if (!response || !response.ok) throw new Error('Canto no encontrado');
         songData = await response.json();
         loadedSongsCache[songId] = songData;
       }
@@ -4940,10 +4951,21 @@ async function obtenerCantoCompleto(songId) {
     return loadedSongsCache[songId];
   }
   try {
-    const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+    const songMeta = allSongs ? allSongs.find(s => s.id === songId) : null;
+    let folder = 'data/songs';
+    if (songId.startsWith('aet') || (songMeta && songMeta.sourceBook === 'aclamaciones')) {
+      folder = 'data/songs-ae';
+    } else if (songId.startsWith('seu') || (songMeta && songMeta.sourceBook === 'eucaristia')) {
+      folder = 'data/seucaristia';
+    } else if (songMeta && songMeta.sourceBook === 'joven') {
+      folder = 'data/joven';
+    }
     const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
-    const response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`);
-    if (response.ok) {
+    let response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`).catch(() => null);
+    if ((!response || !response.ok) && folder === 'data/joven') {
+      response = await fetch(`data/songs/${songId}.json?offline=${isOffline}`).catch(() => null);
+    }
+    if (response && response.ok) {
       const songData = await response.json();
       loadedSongsCache[songId] = songData;
       return songData;
