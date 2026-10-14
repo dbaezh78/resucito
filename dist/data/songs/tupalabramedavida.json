@@ -1,0 +1,100 @@
+{
+  "id": "tupalabramedavida",
+  "tt": "Tu Palabra me da vida",
+  "title": "Tu Palabra me da vida",
+  "subtitle": "Juan Antonio Espinosa",
+  "category": [
+    "Católicos",
+    "Palabra",
+    "Salmos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "dbno": "149",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Tu%20Palabra%20me%20da%20vida.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=vienenconalegria",
+  "sig": "/src/index.html?canto=tufidelidad",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TU PALABRA ME DA VIDA, (Re,,12)(Sol,,180)(Re,,240)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CONFÍO EN TI, SEÑOR. (La,7,12)",
+      "sC": "as"
+    },
+    {
+      "line": "TU PALABRA ES ETERNA; (Re,,12)(Sol,,180)(Re,,240)",
+      "sC": "as"
+    },
+    {
+      "line": "EN ELLA ESPERARÉ. (Sol,,12)(La,,120)(Re,,200)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dichoso el que con vida intachable (Sol,,210)(Re,,290)",
+      "sC": "tc"
+    },
+    {
+      "line": "camina en la ley del Señor. (La,,12)(Re,,170)",
+      "sC": ""
+    },
+    {
+      "line": "Dichoso el que guardando sus preceptos (Sol,,230)(Re,,310)",
+      "sC": ""
+    },
+    {
+      "line": "lo busca de todo corazón. (La,,12)(Re,,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TU PALABRA ME DA VIDA, (Re,,12)(Sol,,180)(Re,,240)",
+      "sC": "ta as"
+    },
+    {
+      "line": "CONFÍO EN TI, SEÑOR. (La,7,12)",
+      "sC": "as"
+    },
+    {
+      "line": "TU PALABRA ES ETERNA; (Re,,12)(Sol,,180)(Re,,240)",
+      "sC": "as"
+    },
+    {
+      "line": "EN ELLA ESPERARÉ. (Sol,,12)(La,,120)(Re,,200)",
+      "sC": "as"
+    }
+  ],
+  "sourceBook": "joven",
+  "searchPool": "tu palabra me da vida juan antonio espinosa tu palabra me da vida confio en ti senor tu palabra es eterna en ella esperare dichoso el que con vida intachable camina en la ley del senor dichoso el que guardando sus preceptos lo busca de todo corazon"
+}

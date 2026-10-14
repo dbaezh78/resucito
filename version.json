@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.42",
+  "latestVersion": "2.1.43",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.42)",
-  "updateMessage": "Corrección de compatibilidad en el reproductor de audio y codificación de URLs de cantos.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.43)",
+  "updateMessage": "Nuevos cantos de Canto Joven añadidos: Toma mi vida, Vienen con alegría, Tu Palabra me da vida y Tu fidelidad.",
   "releaseNotes": [
-    "Corregida la reproducción de audio en cantos con espacios o caracteres especiales en el enlace (incluido 'Los peces en el río').",
-    "Configurado el modo CORS anónimo permanente en el reproductor para evitar interrupciones de reproducción en navegadores modernos.",
-    "Manejo seguro de promesas de reproducción de audio para evitar excepciones de fuentes no soportadas."
+    "Añadidos nuevos cantos de Canto Joven: 'Toma mi vida', 'Vienen con alegría', 'Tu Palabra me da vida' y 'Tu fidelidad'.",
+    "Acordes y estructura litúrgica completa para cada canto.",
+    "Enlaces de audio codificados y configurados para reproducción continua."
   ]
 }

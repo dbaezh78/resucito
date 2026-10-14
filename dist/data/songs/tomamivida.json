@@ -1,0 +1,172 @@
+{
+  "id": "tomamivida",
+  "tt": "Toma mi vida",
+  "title": "Toma mi vida",
+  "subtitle": "Eduardo Ortiz",
+  "category": [
+    "Católicos",
+    "Ofertorio"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "dbno": "147",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Toma%20mi%20vida.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=tepresentamos",
+  "sig": "/src/index.html?canto=vienenconalegria",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Esto que te doy es vino y pan Señor, (Do,,12)(Sol,,240)(Fa,,320)(Sol,,400)",
+      "sC": "tc"
+    },
+    {
+      "line": "esto que te doy es mi trabajo; (Fa,,12)(Do,,180)(Sol,,280)",
+      "sC": ""
+    },
+    {
+      "line": "es mi corazón, mi alma, (Fa,,12)(Sol,,220)",
+      "sC": ""
+    },
+    {
+      "line": "es mi tiempo mi razón, (Do,,12)(La,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "el esfuerzo de mi caminar. (Fa,,12)(Sol,,160)(Do,,280)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Esto que te doy, mi vida es Señor. (Do,,12)(Sol,,240)(Fa,,320)(Sol,,400)",
+      "sC": "tc"
+    },
+    {
+      "line": "Es mi amor también es mi dolor. (Fa,,12)(Do,,180)(Sol,,280)",
+      "sC": ""
+    },
+    {
+      "line": "Es la ilusión; mis sueños. (Fa,,12)(Sol,,220)",
+      "sC": ""
+    },
+    {
+      "line": "Es mi gozo y mi llorar (Do,,12)(La,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "Es mi canto y mi oración. (Fa,,12)(Sol,,160)(Do,,280)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "TOMA MI VIDA, PONLA EN TU CORAZÓN. (Do,,12)(Sol,,220)(Fa,,310)(Sol,,410)",
+      "sC": "ta as"
+    },
+    {
+      "line": "DAME TU MANO Y LLÉVAME. (Do,,12)(Sol,,200)(Fa,,290)(Sol,,380)",
+      "sC": "as"
+    },
+    {
+      "line": "CAMBIA MI PAN EN TU CARNE (Fa,,12)(Sol,,240)",
+      "sC": "as"
+    },
+    {
+      "line": "Y MI VINO EN TU SANGRE, (Do,,12)(La,m,200)",
+      "sC": "as"
+    },
+    {
+      "line": "Y A MÍ, SEÑOR, RENUÉVAME, (Fa,,12)(Sol,,190)(Do,7,320)",
+      "sC": "as"
+    },
+    {
+      "line": "LÍMPIAME Y SÁLVAME. (Fa,,12)(Sol,,170)(Do,,280)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y esto que te doy, no solo yo Señor. (Do,,12)(Sol,,240)(Fa,,320)(Sol,,400)",
+      "sC": "tc"
+    },
+    {
+      "line": "Esta voz también es de mi hermano. (Fa,,12)(Do,,180)(Sol,,280)",
+      "sC": ""
+    },
+    {
+      "line": "Es la unión, la paz, el orden, (Fa,,12)(Sol,,220)",
+      "sC": ""
+    },
+    {
+      "line": "la armonía y felicidad, (Do,,12)(La,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "es un canto en comunidad. (Fa,,12)(Sol,,160)(Do,,280)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_tomamivida_1",
+      "initialState": "collapsed",
+      "triggerLine": "TOMA MI VIDA, PONLA EN TU CORAZÓN. (Do,,12)(Sol,,220)(Fa,,310)(Sol,,410)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "DAME TU MANO Y LLÉVAME. (Do,,12)(Sol,,200)(Fa,,290)(Sol,,380)",
+          "sC": "as"
+        },
+        {
+          "line": "CAMBIA MI PAN EN TU CARNE (Fa,,12)(Sol,,240)",
+          "sC": "as"
+        },
+        {
+          "line": "Y MI VINO EN TU SANGRE, (Do,,12)(La,m,200)",
+          "sC": "as"
+        },
+        {
+          "line": "Y A MÍ, SEÑOR, RENUÉVAME, (Fa,,12)(Sol,,190)(Do,7,320)",
+          "sC": "as"
+        },
+        {
+          "line": "LÍMPIAME Y SÁLVAME. (Fa,,12)(Sol,,170)(Do,,280)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "joven",
+  "searchPool": "toma mi vida eduardo ortiz esto que te doy es vino y pan senor esto que te doy es mi trabajo es mi corazon mi alma es mi tiempo mi razon el esfuerzo de mi caminar esto que te doy mi vida es senor es mi amor tambien es mi dolor es la ilusion mis suenos es mi gozo y mi llorar es mi canto y mi oracion toma mi vida ponla en tu corazon dame tu mano y llevame cambia mi pan en tu carne y mi vino en tu sangre y a mi senor renuevame limpiame y salvame y esto que te doy no solo yo senor esta voz tambien es de mi hermano es la union la paz el orden la armonia y felicidad es un canto en comunidad"
+}

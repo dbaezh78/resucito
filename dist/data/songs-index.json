@@ -8857,5 +8857,74 @@
     "audioSrc": "https://audio.resucito.do/catolico/te%20presentamos.mp3",
     "sourceBook": "joven",
     "searchPool": "te presentamos ofertorio te presentamos el vino y el pan como senal de que nos entregamos tu cuerpo y sangre quiere que comamos y asi llenar nuestras vidas ansiosas de ti te presentamos el vino y el pan hechos de frutas y trigo maduro esta es la ofrenda que te presentamos que sera cuerpo y sangre de ti oh senor pan y vino pan y vino tu cuerpo y sangre que hoy ofrecemos pan y vino pan y vino que compartimos a cada momento te presentamos el vino y el pan para que tu lo bendigas y partas y asi con fe comulguemos con ellos y llenar nuestras vidas de ti oh senor te presentamos el vino y el pan hechos de frutas y trigo maduro esta es la ofrenda que te presentamos que sera cuerpo y sangre de ti oh senor pan y vino pan y vino tu cuerpo y sangre que hoy ofrecemos pan y vino pan y vino que compartimos a cada momento"
+  },
+  {
+    "id": "tomamivida",
+    "title": "Toma mi vida",
+    "subtitle": "Eduardo Ortiz",
+    "category": [
+      "Católicos",
+      "Ofertorio"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "147",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Toma%20mi%20vida.mp3",
+    "sourceBook": "joven",
+    "searchPool": "toma mi vida eduardo ortiz esto que te doy es vino y pan senor esto que te doy es mi trabajo es mi corazon mi alma es mi tiempo mi razon el esfuerzo de mi caminar esto que te doy mi vida es senor es mi amor tambien es mi dolor es la ilusion mis suenos es mi gozo y mi llorar es mi canto y mi oracion toma mi vida ponla en tu corazon dame tu mano y llevame cambia mi pan en tu carne y mi vino en tu sangre y a mi senor renuevame limpiame y salvame y esto que te doy no solo yo senor esta voz tambien es de mi hermano es la union la paz el orden la armonia y felicidad es un canto en comunidad"
+  },
+  {
+    "id": "vienenconalegria",
+    "title": "Vienen con alegría",
+    "subtitle": "Cesáreo Gabaráin",
+    "category": [
+      "Católicos",
+      "Entrada"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "148",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Vienen%20con%20alegr%C3%ADa.mp3",
+    "sourceBook": "joven",
+    "searchPool": "vienen con alegria senor cesareo gabarain vienen con alegria senor cantando vienen con alegria senor los que caminan por la vida senor sembrando tu paz y amor vienen trayendo la esperanza a un mundo cargado de ansiedad un mundo que busca y que no alcanza caminos de amor y de amistad vienen trayendo entre sus manos esfuerzos de hermanos por la paz deseos de un mundo mas humano que nacen del bien y la verdad"
+  },
+  {
+    "id": "tupalabramedavida",
+    "title": "Tu Palabra me da vida",
+    "subtitle": "Juan Antonio Espinosa",
+    "category": [
+      "Católicos",
+      "Palabra",
+      "Salmos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "149",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Tu%20Palabra%20me%20da%20vida.mp3",
+    "sourceBook": "joven",
+    "searchPool": "tu palabra me da vida juan antonio espinosa tu palabra me da vida confio en ti senor tu palabra es eterna en ella esperare dichoso el que con vida intachable camina en la ley del senor dichoso el que guardando sus preceptos lo busca de todo corazon"
+  },
+  {
+    "id": "tufidelidad",
+    "title": "Tu fidelidad",
+    "subtitle": "Marcos Witt",
+    "category": [
+      "Católicos",
+      "Adoración"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "150",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Tu%20fidelidad.mp3",
+    "sourceBook": "joven",
+    "searchPool": "tu fidelidad marcos witt tu fidelidad es grande tu fidelidad incomparable es nadie como tu bendito dios grande es tu fidelidad"
   }
 ]
