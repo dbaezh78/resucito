@@ -2,7 +2,50 @@
  * Módulo de gestión de velocidad de scroll individual por canto y dispositivo.
  */
 
-export const defaultScrollConfigs = {  "tepresentamos": {
+export const defaultScrollConfigs = {
+  "cantoasanjose": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "jesusesmisenor": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "estamosdefiestaconjesus": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "tepresentamos": {
     "mobile": {
       "v": 6,
       "i": 3

@@ -1,10 +1,12 @@
 {
-  "latestVersion": "2.1.46",
+  "latestVersion": "2.1.47",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.46)",
-  "updateMessage": "Corrección de inicialización segura en el submódulo de Estado Resucitó y Control de Acceso.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.47)",
+  "updateMessage": "Nuevos cantos agregados: Canto a San José, Jesús es mi señor, Estamos de fiesta con Jesús y actualización de Amaos.",
   "releaseNotes": [
-    "Corregido error de ejecución al inicializar el módulo de LOG y conmutar submódulos de Estado Resucitó.",
-    "Comprobación de existencia de funciones en tiempo de ejecución para evitar excepciones no capturadas al evaluar permisos."
+    "Agregado el canto 'Canto a San José' con acordes interactivos y cejilla al II.",
+    "Agregado el canto dinámico 'Jesús es mi señor'.",
+    "Agregado el canto 'Estamos de fiesta con Jesús' con estribillos de asamblea interactivos.",
+    "Actualizado 'Amaos' con nueva letra, acordes y bloques plegables en estribillos sucesivos."
   ]
 }

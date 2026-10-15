@@ -45,6 +45,10 @@ export function normalizeChord(chordName) {
 export function transposeNote(originalNote, semitoneShift) {
     if (!originalNote) return '';
     const cleanNote = originalNote.trim();
+    if (cleanNote.includes('/')) {
+        const parts = cleanNote.split('/');
+        return parts.map(p => transposeNote(p, semitoneShift)).join('/');
+    }
     const semitone = CHORD_TO_SEMITONE[cleanNote];
     if (semitone === undefined) {
         return originalNote; // Retornar tal cual si no se reconoce (ej: notas de paso o texto)

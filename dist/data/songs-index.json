@@ -8144,12 +8144,12 @@
     ],
     "stage": "Católicos",
     "cejilla": "",
-    "acorde": "Do",
+    "acorde": "Mi",
     "dbno": "106",
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/amaos.mp3",
     "sourceBook": "joven",
-    "searchPool": "amaos kairoi como el padre me amo yo os he amado permaneced en mi amor permaneced en mi amor si guardais mis mandamientos permanecereis en mi amor como yo he guardado los mandamientos de mi padre y permanezco en su amor amaos amaos unos a otros como yo os he amado amaos amaos unos a otros como yo os he amado nadie tiene mayor amor que quien da la vida por sus amigos vosotros sois mis amigos si haceis lo que os mando ya no os llamo siervos sino amigos porque todo lo que he oido de mi padre os lo he dado a conocer amaos amaos unos a otros como yo os he amado amaos amaos unos a otros como yo os he amado"
+    "searchPool": "amaos kairoi como el padre me amo yo os he amado permaneced en mi amor permaneced en mi amor si guardais mis palabras y como hermanos os amais compartireis con alegria el don de la fraternidad si os poneis en camino sirviendo siempre la verdad frutos dareis en abundancia mi amor se manifestara no vereis amor tan grande como aquel que os mostre yo doy la vida por vosotros amad como yo os ame si haceis lo que os mando y os quereis de corazon compartireis mi pleno gozo de amar como el me amo"
   },
   {
     "id": "avemariadefatima",
@@ -8926,5 +8926,53 @@
     "audioSrc": "https://audio.resucito.do/catolico/Tu%20fidelidad.mp3",
     "sourceBook": "joven",
     "searchPool": "tu fidelidad marcos witt tu fidelidad es grande tu fidelidad incomparable es nadie como tu bendito dios grande es tu fidelidad"
+  },
+  {
+    "id": "cantoasanjose",
+    "title": "Canto a San José",
+    "subtitle": "Canto Joven",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "2",
+    "acorde": "Re",
+    "dbno": "151",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Canto%20a%20San%20Jos%C3%A9.mp3",
+    "sourceBook": "joven",
+    "searchPool": "canto a san jose canto joven humilde jose siervo obediente y fiel ruega por nosotros que nunca nos falte el amor y la fe como en nazaret en aquel humilde taller con amor cuidaste a la virgen maria y al hijo de dios glorioso san jose esposo de la virgen maria custodio de la familia de nazaret senor san jose que buscaste al nino jesus buscame tambien si acaso me pierdo de la vista de dios ruega por el mundo y por las familias que estan en dificultades para que rencuentren el amor y la paz"
+  },
+  {
+    "id": "jesusesmisenor",
+    "title": "Jesús es mi señor",
+    "subtitle": "Canto dinámico",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "152",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Jesús es mi señor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "jesus es mi senor canto dinamico jesus es mi senor alabalo que el vive alabalo alabalo alabalo que el vive oh oh oh oh hay que nacer del agua oh oh oh oh hay que nacer del espiritu de dios oh oh oh oh hay que nacer del agua y del espiritu de dios hay que nacer del amor preparate para que sientas preparate para que sientas preparate para que sientas el espiritu de dios dejalo que se mueva dejalo que se mueva dejalo que se mueva dentro de tu corazon"
+  },
+  {
+    "id": "estamosdefiestaconjesus",
+    "title": "Estamos de fiesta con Jesús",
+    "subtitle": "Canto dinámico",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "153",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/Estamos%20de%20fiesta%20con%20Jes%C3%BAs.mp3",
+    "sourceBook": "joven",
+    "searchPool": "estamos de fiesta con jesus canto dinamico estamos de fiesta con jesus al cielo queremos ir estamos reunidos en la mesa el es cristo quien va a servir poderoso es nuestro dios poderoso es nuestro dios el sana el salva poderoso es nuestro dios bautiza el viene poderoso es nuestro dios el padre el hijo poderoso es nuestro dios espiritu santo poderoso es nuestro dios"
   }
 ]

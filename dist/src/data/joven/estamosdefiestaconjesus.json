@@ -1,0 +1,129 @@
+{
+  "id": "estamosdefiestaconjesus",
+  "tt": "Estamos de fiesta con Jesús",
+  "title": "Estamos de fiesta con Jesús",
+  "subtitle": "Canto dinámico",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "153",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Estamos%20de%20fiesta%20con%20Jes%C3%BAs.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=jesusesmisenor",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Estamos de fiesta con Jesús (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "al cielo queremos ir, (Re,,100)",
+      "sC": ""
+    },
+    {
+      "line": "estamos reunidos en la mesa, (Re,,0)",
+      "sC": ""
+    },
+    {
+      "line": "él es Cristo quien va a servir. (Re,,90)(Sol,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "PODEROSO ES NUESTRO DIOS, PODEROSO ES NUESTRO DIOS. (Sol,,0)(Re,,140)(Re,,200)(Sol,,310)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PODEROSO ES NUESTRO DIOS, PODEROSO ES NUESTRO DIOS. (Sol,,0)(Re,,140)(Re,,200)(Sol,,310)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Él sana, Él salva, poderoso es nuestro Dios. (Sol,,0)(Do,,80)(Re,,140)(Sol,,270)",
+      "sC": "tc"
+    },
+    {
+      "line": "Bautiza, Él viene, poderoso es nuestro Dios. (Sol,,0)(Do,,80)(Re,,140)(Sol,,270)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_estamosdefiesta_1",
+      "initialState": "collapsed",
+      "triggerLine": "PODEROSO ES NUESTRO DIOS, PODEROSO ES NUESTRO DIOS. (Sol,,0)(Re,,140)(Re,,200)(Sol,,310)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PODEROSO ES NUESTRO DIOS, PODEROSO ES NUESTRO DIOS. (Sol,,0)(Re,,140)(Re,,200)(Sol,,310)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Padre, El Hijo, poderoso es nuestro Dios. (Sol,,0)(Do,,80)(Re,,140)(Sol,,270)",
+      "sC": ""
+    },
+    {
+      "line": "Espíritu Santo, poderoso es nuestro Dios. (Sol,,0)(Do,,80)(Re,,140)(Sol,,270)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_estamosdefiesta_2",
+      "initialState": "collapsed",
+      "triggerLine": "PODEROSO ES NUESTRO DIOS, PODEROSO ES NUESTRO DIOS. (Sol,,0)(Re,,140)(Re,,200)(Sol,,310)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PODEROSO ES NUESTRO DIOS, PODEROSO ES NUESTRO DIOS. (Sol,,0)(Re,,140)(Re,,200)(Sol,,310)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "(se asciende 1 tono)",
+      "sC": "nb"
+    }
+  ]
+}

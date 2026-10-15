@@ -8,7 +8,7 @@
   ],
   "catCanto": "Católicos",
   "cejilla": "",
-  "acorde": "Do",
+  "acorde": "Mi",
   "nCan": "",
   "nCanURL": "",
   "dbno": "106",
@@ -34,117 +34,114 @@
   "sourceBook": "joven",
   "lizq": [
     {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Como el Padre me amó, (Do,,0)(Sol,,150)",
-      "sC": "tc"
-    },
-    {
-      "line": "yo os he amado. (La,m,110)",
-      "sC": ""
-    },
-    {
-      "line": "Permaneced en mi amor, (Fa,,0)(Re,m,150)",
-      "sC": ""
-    },
-    {
-      "line": "permaneced en mi amor. (Sol,,160)",
-      "sC": ""
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Si guardáis mis mandamientos, (Do,,0)(Sol,,180)",
-      "sC": ""
-    },
-    {
-      "line": "permaneceréis en mi amor, (La,m,170)",
-      "sC": ""
-    },
-    {
-      "line": "como yo he guardado (Fa,,0)",
-      "sC": ""
-    },
-    {
-      "line": "los mandamientos de mi Padre, (Re,m,180)",
-      "sC": ""
-    },
-    {
-      "line": "y permanezco en su amor. (Sol,,170)",
-      "sC": ""
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "AMAOS, AMAOS (Do,,0)(Mi,m,110)",
+      "line": "COMO EL PADRE ME AMÓ (Mi,,0)(Si/Re#,,80)(Do#,m,160)",
       "sC": "ta as"
     },
     {
-      "line": "UNOS A OTROS, (La,m,90)",
+      "line": "YO OS HE AMADO, (La,,0)(Fa#,m,60)(Si,,110)",
       "sC": "as"
     },
     {
-      "line": "COMO YO OS HE AMADO. (Fa,,10)(Re,m,90)(Sol,,150)",
+      "line": "PERMANECED EN MI AMOR, (Mi,,0)(Si/Re#,,80)(Do#,m,160)(Si,,210)",
       "sC": "as"
     },
     {
-      "line": "AMAOS, AMAOS (Do,,10)(Mi,m,110)",
+      "line": "PERMANECED EN MI AMOR. (La,,0)(Si,,80)(Mi,,140)",
       "sC": "as"
     },
     {
-      "line": "UNOS A OTROS, (La,m,90)",
-      "sC": "as"
+      "line": "",
+      "sC": "adb1"
     },
     {
-      "line": "COMO YO OS HE AMADO. (Fa,,10)(Sol,,80)(Do,,140)",
-      "sC": "as"
+      "line": "Si guardáis mis palabras (Do#,m,0)(Mi,,170)",
+      "sC": "tc"
+    },
+    {
+      "line": "y como hermanos os amáis, (La,,0)(Si,,70)(Mi,,150)",
+      "sC": ""
+    },
+    {
+      "line": "compartiréis con alegría (Sol#,m,0)(Do#,m,170)",
+      "sC": ""
+    },
+    {
+      "line": "el don de la fraternidad. (La,,0)(Fa#,m,60)(Si,,120)",
+      "sC": ""
+    },
+    {
+      "line": "Si os ponéis en camino, (Do#,m,0)(Mi,,160)",
+      "sC": ""
+    },
+    {
+      "line": "sirviendo siempre la verdad, (La,,0)(Si,,80)(Mi,,160)",
+      "sC": ""
+    },
+    {
+      "line": "frutos daréis en abundancia (Sol#,m,0)(Do#,m,170)",
+      "sC": ""
+    },
+    {
+      "line": "mi amor se manifestará. (La,,0)(Fa#,m,60)(Si,,120)",
+      "sC": ""
     }
   ],
   "lder": [
     {
+      "type": "collapsible-block",
+      "id": "asamblea_amaos_1",
+      "initialState": "collapsed",
+      "triggerLine": "COMO EL PADRE ME AMÓ (Mi,,0)(Si/Re#,,80)(Do#,m,160)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "YO OS HE AMADO, (La,,0)(Fa#,m,60)(Si,,110)",
+          "sC": "as"
+        },
+        {
+          "line": "PERMANECED EN MI AMOR, (Mi,,0)(Si/Re#,,80)(Do#,m,160)(Si,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "PERMANECED EN MI AMOR. (La,,0)(Si,,80)(Mi,,140)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Nadie tiene mayor amor (Do,,0)(Sol,,150)",
+      "line": "No veréis amor tan grande (Do#,m,0)(Mi,,170)",
       "sC": "tc"
     },
     {
-      "line": "que quien da la vida por sus amigos. (La,m,210)",
+      "line": "como aquel que os mostré (La,,0)(Si,,70)(Mi,,140)",
       "sC": ""
     },
     {
-      "line": "Vosotros sois mis amigos, (Fa,,0)(Re,m,160)",
+      "line": "Yo doy la vida por vosotros (Sol#,m,0)(Do#,m,170)",
       "sC": ""
     },
     {
-      "line": "si hacéis lo que os mando. (Sol,,170)",
+      "line": "amad como yo os amé. (La,,0)(Fa#,m,60)(Si,,120)",
       "sC": ""
     },
     {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Ya no os llamo siervos, (Do,,0)(Sol,,150)",
+      "line": "Si hacéis lo que os mando (Do#,m,0)(Mi,,160)",
       "sC": ""
     },
     {
-      "line": "sino amigos, (La,m,80)",
+      "line": "y os queréis de corazón (La,,0)(Si,,80)(Mi,,160)",
       "sC": ""
     },
     {
-      "line": "porque todo lo que he oído de mi Padre (Fa,,0)(Re,m,230)",
+      "line": "Compartiréis mi pleno gozo (Sol#,m,0)(Do#,m,170)",
       "sC": ""
     },
     {
-      "line": "os lo he dado a conocer. (Sol,,160)",
+      "line": "de amar como El me amó. (La,,0)(Fa#,m,60)(Si,,120)",
       "sC": ""
     },
     {
@@ -152,28 +149,25 @@
       "sC": "adb1"
     },
     {
-      "line": "AMAOS, AMAOS (Do,,0)(Mi,m,110)",
-      "sC": "ta as"
-    },
-    {
-      "line": "UNOS A OTROS, (La,m,90)",
-      "sC": "as"
-    },
-    {
-      "line": "COMO YO OS HE AMADO. (Fa,,10)(Re,m,90)(Sol,,150)",
-      "sC": "as"
-    },
-    {
-      "line": "AMAOS, AMAOS (Do,,10)(Mi,m,110)",
-      "sC": "as"
-    },
-    {
-      "line": "UNOS A OTROS, (La,m,90)",
-      "sC": "as"
-    },
-    {
-      "line": "COMO YO OS HE AMADO. (Fa,,10)(Sol,,80)(Do,,140)",
-      "sC": "as"
+      "type": "collapsible-block",
+      "id": "asamblea_amaos_2",
+      "initialState": "collapsed",
+      "triggerLine": "COMO EL PADRE ME AMÓ (Mi,,0)(Si/Re#,,80)(Do#,m,160)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "YO OS HE AMADO, (La,,0)(Fa#,m,60)(Si,,110)",
+          "sC": "as"
+        },
+        {
+          "line": "PERMANECED EN MI AMOR, (Mi,,0)(Si/Re#,,80)(Do#,m,160)(Si,,210)",
+          "sC": "as"
+        },
+        {
+          "line": "PERMANECED EN MI AMOR. (La,,0)(Si,,80)(Mi,,140)",
+          "sC": "as"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,99 @@
+{
+  "id": "jesusesmisenor",
+  "tt": "Jesús es mi señor",
+  "title": "Jesús es mi señor",
+  "subtitle": "Canto dinámico",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "152",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Jesús es mi señor.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cantoasanjose",
+  "sig": "/src/index.html?canto=estamosdefiestaconjesus",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Jesús es mi Señor, alábalo que Él vive (bis) (Do,,0)(Fa,,60)(Sol,,110)(Do,,170)",
+      "sC": "tc"
+    },
+    {
+      "line": "Alábalo, alábalo, alábalo que él vive (bis). (Fa,,0)(Do,,60)(Sol,,110)(Do,,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh, oh, oh, oh, hay que nacer del agua (Sol,,70)(Do,,180)",
+      "sC": ""
+    },
+    {
+      "line": "Oh, oh, oh, oh, hay que nacer del Espíritu de Dios (Sol,,70)(Do,,180)(Do,7,240)",
+      "sC": ""
+    },
+    {
+      "line": "Oh, oh, oh, oh, hay que nacer del agua y del Espíritu de Dios. (Fa,,0)(Sol,,60)(Do,,160)(La,m,210)(Fa,,280)",
+      "sC": ""
+    },
+    {
+      "line": "Hay que nacer del Amor (bis) (Sol,,0)(Do,,80)(Do,7,140)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Prepárate para que sientas (Do,,0)(Sol,,90)",
+      "sC": "tc"
+    },
+    {
+      "line": "Prepárate para que sientas (Sol,,0)(Do,,90)",
+      "sC": ""
+    },
+    {
+      "line": "Prepárate para que sientas el Espíritu de Dios, (Sol,,90)(Do,,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Déjalo que se mueva (Sol,,70)",
+      "sC": ""
+    },
+    {
+      "line": "Déjalo que se mueva (Do,,70)",
+      "sC": ""
+    },
+    {
+      "line": "Déjalo que se mueva (Sol,,70)",
+      "sC": ""
+    },
+    {
+      "line": "Dentro de tu corazón (Do,,70)",
+      "sC": ""
+    }
+  ]
+}

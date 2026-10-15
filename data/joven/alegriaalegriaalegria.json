@@ -43,7 +43,7 @@
       "sC": "tc"
     },
     {
-      "line": "María con su amante esposo, (La,,180)",
+      "line": "María con su casto esposo, (La,,180)",
       "sC": ""
     },
     {
@@ -67,39 +67,35 @@
       "sC": "as"
     },
     {
-      "line": "QUE ESTA NOCHE NACE EL NIÑO (La,,10)(La,7,190)",
+      "line": "QUE LA VIRGEN VA DE PASO (La,,10)(La,7,190)",
       "sC": "as"
     },
     {
-      "line": "EN EL PORTAL DE BELÉN. (Re,,10)(La,,90)(Mi,,140)(La,,190)",
+      "line": "CON SU ESPOSO HACIA BELÉN (Re,,10)(La,,90)(Mi,,140)(La,,190)",
       "sC": "as"
     },
-    {
+
+        {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "En cuanto a Belén llegaron (La,,0)(Mi,,170)",
+      "line": "Los pajarillos del monte  (La,,0)(Mi,,170)",
       "sC": "tc"
     },
     {
-      "line": "posada al punto pidieron, (La,,170)",
+      "line": "al ver pasar los esposos, (La,,170)",
       "sC": ""
     },
     {
-      "line": "y viendo que eran tan pobres (La,,0)(Mi,,180)",
+      "line": "cantan dulces melodia (La,,0)(Mi,,180)",
       "sC": ""
     },
     {
-      "line": "ninguno se la dio luego. (La,,160)(La,7,210)",
+      "line": "con sus trinos almoniosos. (La,,160)(La,7,210)",
       "sC": ""
-    }
-  ],
-  "lder": [
-    {
-      "line": "",
-      "sC": "adb1"
     },
+    
     {
       "type": "collapsible-block",
       "id": "asamblea_alegria_1",
@@ -112,11 +108,54 @@
           "sC": "as"
         },
         {
-          "line": "QUE ESTA NOCHE NACE EL NIÑO (La,,10)(La,7,190)",
+          "line": "QUE LA VIRGEN VA DE PASO (La,,10)(La,7,190)",
           "sC": "as"
         },
         {
-          "line": "EN EL PORTAL DE BELÉN. (Re,,10)(La,,90)(Mi,,140)(La,,190)",
+          "line": "CON SU ESPOSO HACIA BELÉN. (Re,,10)(La,,90)(Mi,,140)(La,,190)",
+          "sC": "as"
+        }
+      ]
+    }
+
+
+  ],
+  "lder": [
+
+        {
+      "line": "En cuanto a Belén llegaron (La,,0)(Mi,,170)",
+      "sC": "tc"
+    },
+    {
+      "line": "posada al punto pidieron, (La,,170)",
+      "sC": ""
+    },
+    {
+      "line": "nadie los quizo albergar (La,,0)(Mi,,180)",
+      "sC": ""
+    },
+    {
+      "line": "porque tan pobre los vieron. (La,,160)(La,7,210)",
+      "sC": ""
+    },
+  
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_alegria_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA! (Re,,0)(La,,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡ALEGRÍA, ALEGRÍA Y PLACER! (Mi,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE LA VIRGEN VA DE PASO (La,,10)(La,7,190)",
+          "sC": "as"
+        },
+        {
+          "line": "CON SU ESPOSO HACIA BELÉN. (Re,,10)(La,,90)(Mi,,140)(La,,190)",
           "sC": "as"
         }
       ]
@@ -138,28 +177,33 @@
       "sC": ""
     },
     {
-      "line": "entre la paja y el lirio. (La,,160)(La,7,210)",
+      "line": "entre pajas y lirios. (La,,160)(La,7,210)",
       "sC": ""
     },
     {
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA! (Re,,0)(La,,180)",
-      "sC": "ta as"
-    },
-    {
-      "line": "¡ALEGRÍA, ALEGRÍA Y PLACER! (Mi,,10)",
-      "sC": "as"
-    },
-    {
-      "line": "QUE ESTA NOCHE NACE EL NIÑO (La,,10)(La,7,190)",
-      "sC": "as"
-    },
-    {
-      "line": "EN EL PORTAL DE BELÉN. (Re,,10)(La,,90)(Mi,,140)(La,,190)",
-      "sC": "as"
+        {
+      "type": "collapsible-block",
+      "id": "asamblea_alegria_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA! (Re,,0)(La,,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "¡ALEGRÍA, ALEGRÍA Y PLACER! (Mi,,10)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE LA VIRGEN VA DE PASO (La,,10)(La,7,190)",
+          "sC": "as"
+        },
+        {
+          "line": "CON SU ESPOSO HACIA BELÉN. (Re,,10)(La,,90)(Mi,,140)(La,,190)",
+          "sC": "as"
+        }
+      ]
     }
   ]
 }

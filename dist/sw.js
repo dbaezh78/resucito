@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v382'; // v2.1.46 Fix switchLogSubmodule safe check
+const CACHE_NAME = 'resucito-cache-v383'; // v2.1.47 Add youth songs & update Amaos
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
