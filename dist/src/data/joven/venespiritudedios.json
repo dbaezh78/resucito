@@ -59,7 +59,7 @@
       "sC": "as"
     },
     {
-      "line": "SOBRE MÍ, (sobre mí) (La,,10)",
+      "line": "SOBRE MÍ, sobre mí, (La,,10)",
       "sC": "as"
     },
     {
@@ -120,17 +120,38 @@
       "type": "collapsible-block",
       "id": "asamblea_venespiritu_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU DE DIOS... (Re,,0)(Si,m,80)",
+      "triggerLine": "VEN, ESPÍRITU DE DIOS (Re,,0)(Si,m,80)(Re,,140)",
       "sC": "ta as",
       "lines": [
-        {
-          "line": "SOBRE MÍ, ME ABRO A TU PRESENCIA, (La,,10)(Sol,,110)(Si,m,170)",
-          "sC": "as"
-        },
-        {
-          "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,80)(La,,120)(Re,,160)",
-          "sC": "as"
-        }
+            {
+      "line": "SOBRE MÍ, (La,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "ME ABRO A TU PRESENCIA, (Sol,,10)(Si,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,90)(La,,140)(Fa#,7,180)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN, ESPÍRITU DE DIOS, (Si,m,10)(Re,,80)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE MÍ, sobre mí, (La,,10)",
+      "sC": "as"
+    },
+    {
+      "line": "ME ABRO A TU PRESENCIA, (Sol,,10)(Si,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,80)(La,,120)(Re,,160)",
+      "sC": "as"
+    }
+
       ]
     },
     {
@@ -178,11 +199,30 @@
       "sC": "adb1"
     },
     {
-      "line": "VEN, ESPÍRITU DE DIOS, (Re,,0)(Si,m,80)(Re,,140)",
-      "sC": "ta as"
+      "type": "collapsible-block",
+      "id": "asamblea_venespiritu_2",
+      "initialState": "collapsed",
+      "triggerLine": "VEN, ESPÍRITU DE DIOS (Re,,0)(Si,m,80)(Re,,140)",
+      "sC": "ta as",
+      "lines": [
+            {
+      "line": "SOBRE MÍ, (La,,10)",
+      "sC": "as"
     },
     {
-      "line": "SOBRE MÍ, (La,,10)",
+      "line": "ME ABRO A TU PRESENCIA, (Sol,,10)(Si,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,90)(La,,140)(Fa#,7,180)",
+      "sC": "as"
+    },
+    {
+      "line": "VEN, ESPÍRITU DE DIOS, (Si,m,10)(Re,,80)",
+      "sC": "as"
+    },
+    {
+      "line": "SOBRE MÍ, sobre mí, (La,,10)",
       "sC": "as"
     },
     {
@@ -192,6 +232,9 @@
     {
       "line": "CAMBIARÁS MI CORAZÓN. (Sol,,10)(Re,,80)(La,,120)(Re,,160)",
       "sC": "as"
+    }
+
+      ]
     }
   ]
 }

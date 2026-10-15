@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v379'; // v2.1.43 Lote 3 Canto Joven
+const CACHE_NAME = 'resucito-cache-v380'; // v2.1.44 Modular Access Control Fix
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

@@ -141,8 +141,6 @@ export const DEFAULT_GUEST_PERMISSIONS = [
   PERMISSIONS.BOOK_SALMODIAS,
   PERMISSIONS.BOOK_CATEQUESIS,
   PERMISSIONS.BOOK_FAVORITOS,
-  PERMISSIONS.CONTROL_CANTO,
-  PERMISSIONS.EDIT_CHORDS,
   PERMISSIONS.VIEW_SETTINGS_GENERAL,
   "view_general_comun",
   "view_general_cloud",
@@ -211,13 +209,14 @@ export function initAccessControl() {
       if (Array.isArray(parsed.bannedUsers)) {
         accessControlState.bannedUsers = new Set(parsed.bannedUsers);
       }
-      // Asegurar que el grupo de invitados tenga todos sus permisos indispensables y remover páginas restringidas
-      if (accessControlState.groups['invitados']) {
-        DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
-        accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
-      }
-      if (accessControlState.groups['cantores']) {
-        accessControlState.groups['cantores'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
+      // Migración única: limpiar permisos de edición de acordes para invitados heredados de versiones previas
+      if (!localStorage.getItem("resucito_guest_chords_purged_v1")) {
+        if (accessControlState.groups['invitados']) {
+          accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.CONTROL_CANTO);
+          accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.EDIT_CHORDS);
+          saveAccessControl();
+        }
+        localStorage.setItem("resucito_guest_chords_purged_v1", "true");
       }
       return;
     } catch (e) {
@@ -230,7 +229,9 @@ export function initAccessControl() {
   
   // Crear Grupo de Cantores
   createGroup("cantores", "Grupo General de Cantores", [
-    ...DEFAULT_GUEST_PERMISSIONS
+    ...DEFAULT_GUEST_PERMISSIONS,
+    PERMISSIONS.CONTROL_CANTO,
+    PERMISSIONS.EDIT_CHORDS
   ], "Cantores registrados en la comunidad");
 
   // Crear Grupo de Invitados
@@ -356,12 +357,16 @@ export function listenToGroupConfigFromFirebase() {
               accessControlState.groups[gid].subgroupIds = new Set(gData.subgroupIds || []);
             }
           });
-          if (accessControlState.groups['invitados']) {
-            DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
-            accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
-          }
-          if (accessControlState.groups['cantores']) {
-            accessControlState.groups['cantores'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
+          // Migración única en la nube para invitados si aún arrastra permisos de edición
+          if (!localStorage.getItem("resucito_cloud_guest_chords_migrated_v1")) {
+            if (accessControlState.groups['invitados']) {
+              accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.CONTROL_CANTO);
+              accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.EDIT_CHORDS);
+              localStorage.setItem("resucito_cloud_guest_chords_migrated_v1", "true");
+              if (isCurrentUserAdmin()) {
+                saveGroupConfigToCloud();
+              }
+            }
           }
           saveAccessControl();
           // Actualización silenciosa de visibilidad de libros y ajustes en la ventana principal
@@ -455,13 +460,6 @@ export async function syncAllAccessControlFromFirebase() {
             accessControlState.groups[gid].subgroupIds = new Set(gData.subgroupIds || []);
           }
         });
-        if (accessControlState.groups['invitados']) {
-          DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
-          accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
-        }
-        if (accessControlState.groups['cantores']) {
-          accessControlState.groups['cantores'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
-        }
       }
     }
   } catch (err) {
@@ -507,6 +505,14 @@ export async function trackLoggedInUser(user) {
   if (email === 'dbaezh78@gmail.com') {
     assignedGroup = 'administradores';
     setUserPrimaryGroup(email, 'administradores');
+    if (!localStorage.getItem("resucito_cloud_guest_chords_migrated_v1")) {
+      if (accessControlState.groups['invitados']) {
+        accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.CONTROL_CANTO);
+        accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.EDIT_CHORDS);
+        saveGroupConfigToCloud();
+      }
+      localStorage.setItem("resucito_cloud_guest_chords_migrated_v1", "true");
+    }
   } else {
     const userGroups = accessControlState.userDirectGroups[email];
     if (!userGroups || userGroups.size === 0) {
@@ -932,9 +938,10 @@ export function getGuestEffectivePermissions() {
         subGroup.permissions.forEach(p => effectivePermissions.add(p));
       }
     });
+  } else {
+    // Si aún no se ha inicializado el grupo invitados, recurrir a los permisos base por defecto
+    DEFAULT_GUEST_PERMISSIONS.forEach(p => effectivePermissions.add(p));
   }
-  // Garantizar que todos los permisos esenciales de invitado siempre estén disponibles
-  DEFAULT_GUEST_PERMISSIONS.forEach(p => effectivePermissions.add(p));
   return effectivePermissions;
 }
 
