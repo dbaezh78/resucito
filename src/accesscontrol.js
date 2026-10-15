@@ -879,6 +879,9 @@ export function togglePermissionForGroup(groupId, permissionKey) {
   if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
     window.updateBookTabsVisibility();
   }
+  if (typeof window !== 'undefined' && window.updateAccessControlVisibility) {
+    window.updateAccessControlVisibility();
+  }
 }
 
 /**
@@ -1005,6 +1008,10 @@ export function canAccessBook(bookId) {
 
   if (isCurrentUserAdmin()) {
     return true;
+  }
+
+  if (!hasPermission(PERMISSIONS.VIEW_BOOKS)) {
+    return false;
   }
 
   if (bookId === 'extras') {

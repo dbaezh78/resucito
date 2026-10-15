@@ -1853,12 +1853,96 @@ window.initAjustes = async function() {
     const canViewSongStages = isAdmin || hasPermission('edit_song_stages');
     const canViewAccessSection = isAdmin || hasPermission('manage_access') || canViewMembers || canViewGroups || canViewInternalMembers || canViewPermissions || canViewInspector || canViewSongStages;
 
+    // 1. Subpestañas de General (Común y Cloud)
+    const generalSubtabComunBtn = document.getElementById('general-subtab-comun-btn');
+    const generalSubtabCloudBtn = document.getElementById('general-subtab-cloud-btn');
     const canViewGeneralComun = isAdmin || hasPermission('view_general_comun');
     const canViewGeneralCloud = isAdmin || hasPermission('view_general_cloud');
+
+    if (generalSubtabComunBtn) generalSubtabComunBtn.style.display = canViewGeneralComun ? 'inline-flex' : 'none';
+    if (generalSubtabCloudBtn) generalSubtabCloudBtn.style.display = canViewGeneralCloud ? 'inline-flex' : 'none';
+
+    // Redirección si el submódulo activo de General ya no está disponible
+    const activeGeneralSubtab = document.querySelector('.general-subtab-btn.active');
+    if (activeGeneralSubtab && activeGeneralSubtab.style.display === 'none') {
+      const firstAvailableGeneralBtn = [generalSubtabComunBtn, generalSubtabCloudBtn].find(b => b && b.style.display !== 'none');
+      if (firstAvailableGeneralBtn) {
+        firstAvailableGeneralBtn.click();
+      }
+    }
+
+    // 2. Subpestañas de Tema (Visual, Inicio, Preparación y Perfil)
+    const themeSubtabVisualBtn = document.getElementById('theme-subtab-visual-btn');
+    const themeSubtabInicioBtn = document.getElementById('theme-subtab-inicio-btn');
+    const themeSubtabPrepararBtn = document.getElementById('theme-subtab-preparar-btn');
+    const themeSubtabPerfilBtn = document.getElementById('theme-subtab-perfil-btn');
+
     const canViewThemeVisual = isAdmin || hasPermission('view_theme_visual');
     const canViewThemeInicio = isAdmin || hasPermission('view_theme_inicio');
     const canViewThemePreparacion = isAdmin || hasPermission('view_theme_preparacion');
     const canViewThemePerfil = isAdmin || hasPermission('view_theme_perfil');
+
+    if (themeSubtabVisualBtn) themeSubtabVisualBtn.style.display = canViewThemeVisual ? 'inline-flex' : 'none';
+    if (themeSubtabInicioBtn) themeSubtabInicioBtn.style.display = canViewThemeInicio ? 'inline-flex' : 'none';
+    if (themeSubtabPrepararBtn) themeSubtabPrepararBtn.style.display = canViewThemePreparacion ? 'inline-flex' : 'none';
+    if (themeSubtabPerfilBtn) themeSubtabPerfilBtn.style.display = canViewThemePerfil ? 'inline-flex' : 'none';
+
+    // Redirección si el submódulo activo de Tema ya no está disponible
+    const activeThemeSubtab = document.querySelector('.theme-subtab-btn.active');
+    if (activeThemeSubtab && activeThemeSubtab.style.display === 'none') {
+      const firstAvailableThemeBtn = [themeSubtabVisualBtn, themeSubtabInicioBtn, themeSubtabPrepararBtn, themeSubtabPerfilBtn].find(b => b && b.style.display !== 'none');
+      if (firstAvailableThemeBtn) {
+        firstAvailableThemeBtn.click();
+      }
+    }
+
+    // 3. Botones de funciones de Tema Visual (Barra, Libro, Canto, Etapa, Botones, Navegador)
+    const funcSubtabToolbarBtn = document.getElementById('func-subtab-toolbar-btn');
+    const funcSubtabBookBtn = document.getElementById('func-subtab-book-btn');
+    const funcSubtabCantoBtn = document.getElementById('func-subtab-canto-btn');
+    const funcSubtabEtapasBtn = document.getElementById('func-subtab-etapas-btn');
+    const funcSubtabBotonesBtn = document.getElementById('func-subtab-botones-btn');
+    const funcSubtabNavegadorBtn = document.getElementById('func-subtab-navegador-btn');
+
+    const canViewFuncBarra = isAdmin || hasPermission('view_theme_func_barra');
+    const canViewFuncLibro = isAdmin || hasPermission('view_theme_func_libro');
+    const canViewFuncCanto = isAdmin || hasPermission('view_theme_func_canto');
+    const canViewFuncEtapa = isAdmin || hasPermission('view_theme_func_etapa');
+    const canViewFuncBotones = isAdmin || hasPermission('view_theme_func_botones');
+    const canViewFuncNavegador = isAdmin || hasPermission('view_theme_func_navegador');
+
+    if (funcSubtabToolbarBtn) funcSubtabToolbarBtn.style.display = canViewFuncBarra ? 'inline-flex' : 'none';
+    if (funcSubtabBookBtn) funcSubtabBookBtn.style.display = canViewFuncLibro ? 'inline-flex' : 'none';
+    if (funcSubtabCantoBtn) funcSubtabCantoBtn.style.display = canViewFuncCanto ? 'inline-flex' : 'none';
+    if (funcSubtabEtapasBtn) funcSubtabEtapasBtn.style.display = canViewFuncEtapa ? 'inline-flex' : 'none';
+    if (funcSubtabBotonesBtn) funcSubtabBotonesBtn.style.display = canViewFuncBotones ? 'inline-flex' : 'none';
+    if (funcSubtabNavegadorBtn) funcSubtabNavegadorBtn.style.display = canViewFuncNavegador ? 'inline-flex' : 'none';
+
+    // Redirección si la función activa de Tema Visual ya no está disponible
+    const activeFuncSubtabBtn = document.querySelector('.func-subtab-btn.active');
+    if (activeFuncSubtabBtn && activeFuncSubtabBtn.style.display === 'none') {
+      const firstAvailableFuncBtn = [funcSubtabToolbarBtn, funcSubtabBookBtn, funcSubtabCantoBtn, funcSubtabEtapasBtn, funcSubtabBotonesBtn, funcSubtabNavegadorBtn].find(b => b && b.style.display !== 'none');
+      if (firstAvailableFuncBtn) {
+        firstAvailableFuncBtn.click();
+      }
+    }
+
+    // 4. Control de edición de acordes
+    const chordEditSettingRow = document.getElementById('chord-edit-setting-row');
+    const toolbarChordEditBtn = document.getElementById('toolbar-chord-edit-btn');
+    const toolbarSaveChordBtn = document.getElementById('toolbar-save-chord-btn');
+    const canEditChordsPermission = typeof window.canEditChords === 'function' ? window.canEditChords() : (isAdmin || (hasPermission('control_canto') && hasPermission('edit_chords')));
+
+    if (chordEditSettingRow) chordEditSettingRow.style.display = canEditChordsPermission ? 'flex' : 'none';
+    if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = canEditChordsPermission ? 'inline-flex' : 'none';
+    if (toolbarSaveChordBtn && !canEditChordsPermission) toolbarSaveChordBtn.style.display = 'none';
+
+    if (!canEditChordsPermission && typeof window.isChordEditMode !== 'undefined' && window.isChordEditMode) {
+      window.isChordEditMode = false;
+      if (typeof window.updateChordEditUI === 'function') window.updateChordEditUI();
+    }
+
+    // 5. Permisos de Usuario y Log
     const canViewUserCuenta = isAdmin || hasPermission('view_user_cuenta');
     const canViewUsage = isAdmin || hasPermission('view_usage');
     const canViewLogs = isAdmin || hasPermission('view_logs');
@@ -1867,9 +1951,9 @@ window.initAjustes = async function() {
     const canViewSongCanto = isAdmin || hasPermission('view_song_canto');
     const canViewSongJsonChords = isAdmin || hasPermission('view_song_json_chords');
     const canViewSongLiturgia = isAdmin || hasPermission('view_song_liturgia');
-    // Si el usuario no tiene permiso para ver Libro Catequesis, tampoco debe ver Ajustes > Canto > Catequesis
     const hasBookCatequesis = isAdmin || hasPermission('book_catequesis');
     const canViewSongCatequesis = hasBookCatequesis && (isAdmin || hasPermission('view_song_catequesis'));
+    const canViewSongEucaristia = isAdmin || hasPermission('book_eucaristia');
 
     // Visibilidad de fila "Acordes en JSON" dentro de Ajustes > Canto > Canto
     const jsonChordsRow = document.getElementById('json-chords-setting-row');
@@ -1877,19 +1961,23 @@ window.initAjustes = async function() {
       jsonChordsRow.style.display = canViewSongJsonChords ? 'flex' : 'none';
     }
 
-    // Visibilidad de tarjeta "Respaldo del Sistema" en Ajustes > Páginas
-    const cardRespaldo = document.getElementById('card-setting-respaldo');
-    if (cardRespaldo) {
-      const canViewRespaldo = isAdmin || hasPermission('page_respaldo');
-      cardRespaldo.style.display = canViewRespaldo ? 'flex' : 'none';
-    }
-
-    // Visibilidad de tarjeta "Consumo de Firebase" en Ajustes > Páginas
+    // Tarjetas dentro de Ajustes > Páginas
     const cardFirebase = document.getElementById('card-setting-firebase');
-    if (cardFirebase) {
-      const canViewFirebase = isAdmin || hasPermission('page_firebase');
-      cardFirebase.style.display = canViewFirebase ? 'flex' : 'none';
-    }
+    const cardExpancion = document.getElementById('card-setting-expancion');
+    const cardCliturgico = document.getElementById('card-setting-cliturgico');
+    const cardBitacora = document.getElementById('card-setting-bitacora');
+    const cardMantcantos = document.getElementById('card-setting-mantcantos');
+    const cardRespaldo = document.getElementById('card-setting-respaldo');
+    const cardChat = document.getElementById('card-setting-chat');
+
+    const canViewOpcionesPaginas = isAdmin || hasPermission('page_opciones_paginas');
+    if (cardFirebase) cardFirebase.style.display = (isAdmin || hasPermission('page_firebase')) ? 'flex' : 'none';
+    if (cardExpancion) cardExpancion.style.display = canViewOpcionesPaginas ? 'flex' : 'none';
+    if (cardCliturgico) cardCliturgico.style.display = canViewOpcionesPaginas ? 'flex' : 'none';
+    if (cardBitacora) cardBitacora.style.display = (isAdmin || hasPermission('page_bitacora')) ? 'flex' : 'none';
+    if (cardMantcantos) cardMantcantos.style.display = (isAdmin || hasPermission('page_mantcantos')) ? 'flex' : 'none';
+    if (cardRespaldo) cardRespaldo.style.display = (isAdmin || hasPermission('page_respaldo')) ? 'flex' : 'none';
+    if (cardChat) cardChat.style.display = (isAdmin || hasPermission('page_chat')) ? 'flex' : 'none';
 
     // Visibilidad de subpestañas dentro de Canto
     const cantoSubtabCantoBtn = document.getElementById('canto-subtab-canto-btn');
@@ -1900,7 +1988,7 @@ window.initAjustes = async function() {
     if (cantoSubtabCantoBtn) cantoSubtabCantoBtn.style.display = canViewSongCanto ? 'inline-flex' : 'none';
     if (cantoSubtabLiturgiaBtn) cantoSubtabLiturgiaBtn.style.display = canViewSongLiturgia ? 'inline-flex' : 'none';
     if (cantoSubtabCatequesisBtn) cantoSubtabCatequesisBtn.style.display = canViewSongCatequesis ? 'inline-flex' : 'none';
-    if (cantoSubtabEucaristiaBtn) cantoSubtabEucaristiaBtn.style.display = 'inline-flex';
+    if (cantoSubtabEucaristiaBtn) cantoSubtabEucaristiaBtn.style.display = canViewSongEucaristia ? 'inline-flex' : 'none';
 
     // Si el submódulo activo de Canto ya no está disponible, seleccionar el primero disponible
     const activeCantoSubtab = document.querySelector('.canto-subtab-btn.active');
@@ -1953,6 +2041,15 @@ window.initAjustes = async function() {
     if (accessSubtabInspector) accessSubtabInspector.style.display = (isAdmin || canViewInspector) ? 'inline-block' : 'none';
     if (accessSubtabSongStages) accessSubtabSongStages.style.display = (isAdmin || canViewSongStages) ? 'inline-block' : 'none';
 
+    // Redirección si la subpestaña activa de Acceso está oculta
+    const activeAccessSubtab = document.querySelector('.access-subtab-btn.active');
+    if (activeAccessSubtab && activeAccessSubtab.style.display === 'none') {
+      const firstAvailableAccessBtn = [accessSubtabMembers, accessSubtabGroups, accessSubtabInternalMembers, accessSubtabPermissions, accessSubtabInspector, accessSubtabSongStages].find(b => b && b.style.display !== 'none');
+      if (firstAvailableAccessBtn && typeof window.switchAccessSubtab === 'function') {
+        window.switchAccessSubtab(firstAvailableAccessBtn.dataset.subtab);
+      }
+    }
+
     // Subpestañas de LOG (Console, Status y Manejo)
     const logSubtabConsoleBtn = document.getElementById('log-subtab-console-btn');
     const logSubtabStatusBtn = document.getElementById('log-subtab-status-btn');
@@ -1961,6 +2058,15 @@ window.initAjustes = async function() {
     if (logSubtabConsoleBtn) logSubtabConsoleBtn.style.display = (isAdmin || canViewLogs) ? 'flex' : 'none';
     if (logSubtabStatusBtn) logSubtabStatusBtn.style.display = (isAdmin || canViewStatus) ? 'flex' : 'none';
     if (logSubtabManejoBtn) logSubtabManejoBtn.style.display = (isAdmin || canManageInspection) ? 'flex' : 'none';
+
+    // Redirección si el submódulo activo de LOG ya no está disponible
+    const activeLogSubtab = document.querySelector('.log-subtab-btn.active');
+    if (activeLogSubtab && activeLogSubtab.style.display === 'none') {
+      const firstAvailableLogBtn = [logSubtabConsoleBtn, logSubtabStatusBtn, logSubtabManejoBtn].find(b => b && b.style.display !== 'none');
+      if (firstAvailableLogBtn && typeof window.switchLogSubmodule === 'function') {
+        window.switchLogSubmodule(firstAvailableLogBtn.dataset.subtab);
+      }
+    }
 
     // Pestañas principales
     const settingsTabGeneral = document.querySelector('.settings-tab-btn[data-tab="general"]');
@@ -1976,7 +2082,7 @@ window.initAjustes = async function() {
     const canViewSong = isAdmin || hasPermission('view_settings_song') || canViewSongCanto || canViewSongLiturgia || canViewSongCatequesis;
     const canViewUser = isAdmin || hasPermission('view_settings_user') || canViewUserCuenta || canViewAccessSection || canViewUsage;
     const canViewData = isAdmin || hasPermission('view_settings_data');
-    const canViewPaginas = isAdmin || hasPermission('page_opciones_paginas');
+    const canViewPaginas = isAdmin || hasPermission('view_settings_paginas') || hasPermission('page_opciones_paginas') || hasPermission('page_firebase') || hasPermission('page_bitacora') || hasPermission('page_mantcantos') || hasPermission('page_respaldo') || hasPermission('page_chat');
     const canViewLogSection = isAdmin || hasPermission('view_settings_log') || canViewLogs || canViewStatus || canManageInspection;
 
     if (settingsTabGeneral) settingsTabGeneral.style.display = canViewGeneral ? 'flex' : 'none';

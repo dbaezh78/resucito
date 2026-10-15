@@ -1095,8 +1095,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       const canMantcantos = isAdmin || hasPermission('page_mantcantos');
       const canRespaldo = isAdmin || hasPermission('page_respaldo');
       const canSeucaristico = isAdmin || hasPermission('page_seucaristico');
-      const user = getCurrentUser() || window.firebaseAPI?.getCurrentUser?.();
-      const canChat = isAdmin || (Boolean(user) && hasPermission('page_chat'));
+      const canChat = isAdmin || hasPermission('page_chat');
 
       // Botón Inicio en barra inferior
       const btnInicio = document.getElementById('btn-nav-inicio');

@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.44",
+  "latestVersion": "2.1.45",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.44)",
-  "updateMessage": "Corrección modular en Control de Acceso: permisos de edición protegidos para invitados y persistencia de cambios.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.45)",
+  "updateMessage": "Sincronización dinámica y en tiempo real de todos los permisos del árbol de Control de Acceso con sus elementos visuales.",
   "releaseNotes": [
-    "Modularizado el sistema de permisos para invitados: se eliminaron sobreescrituras forzadas en tiempo de ejecución.",
-    "Los usuarios no autenticados (invitados) ya no tienen permiso de editar acordes por defecto.",
-    "Ahora los administradores pueden desmarcar y personalizar libremente los permisos del grupo invitados sin que se restauren automáticamente."
+    "Conectados todos los 39 permisos del árbol de control de acceso directamente a sus subpestañas, botones, tarjetas y libros correspondientes.",
+    "Al marcar o desmarcar cualquier permiso en el panel de control de acceso, los elementos de la interfaz se muestran u ocultan dinámicamente en tiempo real.",
+    "Protegida la edición de acordes para requerir estrictamente los permisos correspondientes."
   ]
 }

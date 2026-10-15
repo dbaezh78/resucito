@@ -372,6 +372,50 @@ export function updateAccessControlVisibility() {
     }
   }
 
+  // --- CANTO SUBTABS ---
+  const cantoSubtabCantoBtn = document.getElementById('canto-subtab-canto-btn');
+  const cantoSubtabLiturgiaBtn = document.getElementById('canto-subtab-liturgia-btn');
+  const cantoSubtabCatequesisBtn = document.getElementById('canto-subtab-catequesis-btn');
+  const cantoSubtabEucaristiaBtn = document.getElementById('canto-subtab-eucaristia-btn');
+
+  const canViewSongCanto = isCurrentUserAdmin() || hasPermission('view_song_canto');
+  const canViewSongLiturgia = isCurrentUserAdmin() || hasPermission('view_song_liturgia');
+  const hasBookCatequesis = isCurrentUserAdmin() || hasPermission('book_catequesis');
+  const canViewSongCatequesis = hasBookCatequesis && (isCurrentUserAdmin() || hasPermission('view_song_catequesis'));
+  const canViewSongEucaristia = isCurrentUserAdmin() || hasPermission('book_eucaristia');
+
+  if (cantoSubtabCantoBtn) cantoSubtabCantoBtn.style.display = canViewSongCanto ? 'inline-flex' : 'none';
+  if (cantoSubtabLiturgiaBtn) cantoSubtabLiturgiaBtn.style.display = canViewSongLiturgia ? 'inline-flex' : 'none';
+  if (cantoSubtabCatequesisBtn) cantoSubtabCatequesisBtn.style.display = canViewSongCatequesis ? 'inline-flex' : 'none';
+  if (cantoSubtabEucaristiaBtn) cantoSubtabEucaristiaBtn.style.display = canViewSongEucaristia ? 'inline-flex' : 'none';
+
+  // Redirección Canto Subtabs
+  const activeCantoSubtab = document.querySelector('.canto-subtab-btn.active');
+  if (activeCantoSubtab && activeCantoSubtab.style.display === 'none') {
+    const firstAvailableCantoBtn = [cantoSubtabCantoBtn, cantoSubtabLiturgiaBtn, cantoSubtabCatequesisBtn, cantoSubtabEucaristiaBtn].find(b => b && b.style.display !== 'none');
+    if (firstAvailableCantoBtn) {
+      firstAvailableCantoBtn.click();
+    }
+  }
+
+  // --- TARJETAS EN AJUSTES > PÁGINAS ---
+  const cardFirebase = document.getElementById('card-setting-firebase');
+  const cardExpancion = document.getElementById('card-setting-expancion');
+  const cardCliturgico = document.getElementById('card-setting-cliturgico');
+  const cardBitacora = document.getElementById('card-setting-bitacora');
+  const cardMantcantos = document.getElementById('card-setting-mantcantos');
+  const cardRespaldo = document.getElementById('card-setting-respaldo');
+  const cardChat = document.getElementById('card-setting-chat');
+
+  const canViewOpcionesPaginas = isCurrentUserAdmin() || hasPermission('page_opciones_paginas');
+  if (cardFirebase) cardFirebase.style.display = (isCurrentUserAdmin() || hasPermission('page_firebase')) ? 'flex' : 'none';
+  if (cardExpancion) cardExpancion.style.display = canViewOpcionesPaginas ? 'flex' : 'none';
+  if (cardCliturgico) cardCliturgico.style.display = canViewOpcionesPaginas ? 'flex' : 'none';
+  if (cardBitacora) cardBitacora.style.display = (isCurrentUserAdmin() || hasPermission('page_bitacora')) ? 'flex' : 'none';
+  if (cardMantcantos) cardMantcantos.style.display = (isCurrentUserAdmin() || hasPermission('page_mantcantos')) ? 'flex' : 'none';
+  if (cardRespaldo) cardRespaldo.style.display = (isCurrentUserAdmin() || hasPermission('page_respaldo')) ? 'flex' : 'none';
+  if (cardChat) cardChat.style.display = (isCurrentUserAdmin() || hasPermission('page_chat')) ? 'flex' : 'none';
+
   // --- LOG SUBTABS ---
   const logSubtabConsoleBtn = document.getElementById('log-subtab-console-btn');
   const logSubtabStatusBtn = document.getElementById('log-subtab-status-btn');
@@ -412,10 +456,10 @@ export function updateAccessControlVisibility() {
 
   const canViewGeneral = isCurrentUserAdmin() || hasPermission('view_settings_general') || canViewGeneralComun || canViewGeneralCloud;
   const canViewTheme = isCurrentUserAdmin() || hasPermission('view_settings_theme') || canViewThemeVisual || canViewThemeInicio || canViewThemePreparacion || canViewThemePerfil;
-  const canViewSong = isCurrentUserAdmin() || hasPermission('view_settings_song');
+  const canViewSong = isCurrentUserAdmin() || hasPermission('view_settings_song') || canViewSongCanto || canViewSongLiturgia || canViewSongCatequesis;
   const canViewUser = isCurrentUserAdmin() || hasPermission('view_settings_user') || canViewUserCuenta || canViewAccessSection || canViewUsage;
   const canViewData = isCurrentUserAdmin() || hasPermission('view_settings_data');
-  const canViewPaginas = isCurrentUserAdmin() || hasPermission('view_settings_paginas');
+  const canViewPaginas = isCurrentUserAdmin() || hasPermission('view_settings_paginas') || hasPermission('page_opciones_paginas') || hasPermission('page_firebase') || hasPermission('page_bitacora') || hasPermission('page_mantcantos') || hasPermission('page_respaldo') || hasPermission('page_chat');
   const canViewLogSection = isCurrentUserAdmin() || hasPermission('view_settings_log') || canViewLogs || canViewStatus || canManageInspection;
 
   if (settingsTabGeneral) settingsTabGeneral.style.display = canViewGeneral ? 'flex' : 'none';
@@ -461,9 +505,16 @@ export function updateAccessControlVisibility() {
   // Actualizar visibilidad de controles de edición de acordes en base a permisos
   const chordEditSettingRow = document.getElementById('chord-edit-setting-row');
   const toolbarChordEditBtn = document.getElementById('toolbar-chord-edit-btn');
+  const toolbarSaveChordBtn = document.getElementById('toolbar-save-chord-btn');
   const showChordEditing = canEditChords();
   if (chordEditSettingRow) chordEditSettingRow.style.display = showChordEditing ? 'flex' : 'none';
   if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = showChordEditing ? 'inline-flex' : 'none';
+  if (toolbarSaveChordBtn && !showChordEditing) toolbarSaveChordBtn.style.display = 'none';
+
+  if (!showChordEditing && typeof isChordEditMode !== 'undefined' && isChordEditMode) {
+    isChordEditMode = false;
+    if (typeof updateChordEditUI === 'function') updateChordEditUI();
+  }
 
   // Actualizar visibilidad de "Acordes en JSON" (exclusivo admin / permiso view_song_json_chords)
   const canViewJsonChords = isCurrentUserAdmin() || hasPermission('view_song_json_chords');
@@ -471,10 +522,20 @@ export function updateAccessControlVisibility() {
   if (jsonChordsRow) {
     jsonChordsRow.style.display = canViewJsonChords ? 'flex' : 'none';
   }
+
+  if (typeof window.updateNavPagesVisibility === 'function') {
+    window.updateNavPagesVisibility();
+  }
 }
 window.updateAccessControlVisibility = updateAccessControlVisibility;
 
 export function updateBookTabsVisibility() {
+  const canViewAnyBook = isCurrentUserAdmin() || hasPermission('view_books');
+  const bookTabsContainer = document.querySelector('.book-tabs');
+  if (bookTabsContainer) {
+    bookTabsContainer.style.display = canViewAnyBook ? 'flex' : 'none';
+  }
+
   document.querySelectorAll('.book-tab').forEach(tab => {
     const bookId = tab.dataset.book;
     if (bookId) {
@@ -484,14 +545,15 @@ export function updateBookTabsVisibility() {
   });
 
   if (!canAccessBook(currentBook)) {
-    currentBook = 'resucito';
-    document.querySelectorAll('.book-tab').forEach(t => {
-      t.classList.toggle('active', t.dataset.book === 'resucito');
-    });
-    handleSearchAndFilters();
+    const firstAvailable = Array.from(document.querySelectorAll('.book-tab')).find(t => t.style.display !== 'none');
+    if (firstAvailable && firstAvailable.dataset.book) {
+      currentBook = firstAvailable.dataset.book;
+      document.querySelectorAll('.book-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.book === currentBook);
+      });
+      handleSearchAndFilters();
+    }
   }
-
-  updateAccessControlVisibility();
 }
 
 export const updateExtrasTabVisibility = updateBookTabsVisibility;
@@ -2506,7 +2568,8 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
 }
 
 export function canEditChords() {
-  return isCurrentUserAdmin() || hasPermission('edit_chords');
+  if (isCurrentUserAdmin()) return true;
+  return hasPermission('control_canto') && hasPermission('edit_chords');
 }
 window.canEditChords = canEditChords;
 
