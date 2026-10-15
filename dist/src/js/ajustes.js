@@ -1593,7 +1593,9 @@ window.initAjustes = async function() {
     }
 
     if (subtab === 'status') {
-      window.recalcularEstadoRecursos();
+      if (typeof window.recalcularEstadoRecursos === 'function') {
+        window.recalcularEstadoRecursos();
+      }
     } else if (subtab === 'manejo') {
       if (typeof window.initManejoInspeccionSettings === 'function') {
         window.initManejoInspeccionSettings();
@@ -2310,7 +2312,7 @@ window.initAjustes = async function() {
         btn.textContent = 'Cargando...';
         const success = await loadResourceIntoCache(url);
         if (success) {
-          window.recalcularEstadoRecursos();
+          if (typeof window.recalcularEstadoRecursos === 'function') window.recalcularEstadoRecursos();
         } else {
           btn.disabled = false;
           btn.textContent = 'Reintentar';
@@ -2342,7 +2344,7 @@ window.initAjustes = async function() {
           if (success) loaded++;
         }
         
-        window.recalcularEstadoRecursos();
+        if (typeof window.recalcularEstadoRecursos === 'function') window.recalcularEstadoRecursos();
       });
     });
   }
@@ -2391,7 +2393,7 @@ window.initAjustes = async function() {
         if (progressPercent) progressPercent.textContent = '0%';
         btn.disabled = false;
         btn.textContent = 'Cargar todos los faltantes';
-        window.recalcularEstadoRecursos();
+        if (typeof window.recalcularEstadoRecursos === 'function') window.recalcularEstadoRecursos();
       }, 1800);
     }
   });
@@ -4646,4 +4648,7 @@ window.initAjustes = async function() {
   window.switchThemeFunctionModule('toolbar');
   window.switchGeneralSubmodule('comun');
   window.switchCantoSubmodule('canto');
+
+  // Aplicar control de acceso y visibilidad respetando permisos
+  updateAccessControlVisibilityInternal();
 };

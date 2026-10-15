@@ -1,11 +1,10 @@
 {
-  "latestVersion": "2.1.45",
+  "latestVersion": "2.1.46",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.45)",
-  "updateMessage": "Sincronización dinámica y en tiempo real de todos los permisos del árbol de Control de Acceso con sus elementos visuales.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.46)",
+  "updateMessage": "Corrección de inicialización segura en el submódulo de Estado Resucitó y Control de Acceso.",
   "releaseNotes": [
-    "Conectados todos los 39 permisos del árbol de control de acceso directamente a sus subpestañas, botones, tarjetas y libros correspondientes.",
-    "Al marcar o desmarcar cualquier permiso en el panel de control de acceso, los elementos de la interfaz se muestran u ocultan dinámicamente en tiempo real.",
-    "Protegida la edición de acordes para requerir estrictamente los permisos correspondientes."
+    "Corregido error de ejecución al inicializar el módulo de LOG y conmutar submódulos de Estado Resucitó.",
+    "Comprobación de existencia de funciones en tiempo de ejecución para evitar excepciones no capturadas al evaluar permisos."
   ]
 }
