@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.47",
+  "latestVersion": "2.1.48",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.47)",
-  "updateMessage": "Nuevos cantos agregados: Canto a San José, Jesús es mi señor, Estamos de fiesta con Jesús y actualización de Amaos.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.48)",
+  "updateMessage": "Nuevos cantos agregados: El Espíritu de Dios está en este lugar, Bautízame señor con tu Espíritu, El señor nos ha amado, Si conocieras como te amo, Medley alabare y Pan y vino.",
   "releaseNotes": [
-    "Agregado el canto 'Canto a San José' con acordes interactivos y cejilla al II.",
-    "Agregado el canto dinámico 'Jesús es mi señor'.",
-    "Agregado el canto 'Estamos de fiesta con Jesús' con estribillos de asamblea interactivos.",
-    "Actualizado 'Amaos' con nueva letra, acordes y bloques plegables en estribillos sucesivos."
+    "Agregados 6 nuevos cantos católicos con acordes interactivos.",
+    "Soporte para indicador de repetición BIS mediante estilo 'bisa'.",
+    "Estribillos y bloques plegables interactivos para cantos de asamblea.",
+    "Actualización de audios y navegación."
   ]
 }

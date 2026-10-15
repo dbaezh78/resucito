@@ -3,6 +3,90 @@
  */
 
 export const defaultScrollConfigs = {
+  "elespiritudediosestaenestelugar": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "bautizamesenorcontuespiritu": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "elsenornohaamado": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "siconocierascomoteamo": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "medleyalabare": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "panyvino": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
   "cantoasanjose": {
     "mobile": {
       "v": 6,

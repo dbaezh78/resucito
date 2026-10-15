@@ -84,9 +84,11 @@
     {
       "line": "mi amor se manifestará. (La,,0)(Fa#,m,60)(Si,,120)",
       "sC": ""
-    }
-  ],
-  "lder": [
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
     {
       "type": "collapsible-block",
       "id": "asamblea_amaos_1",
@@ -107,11 +109,9 @@
           "sC": "as"
         }
       ]
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
+    }
+  ],
+  "lder": [
     {
       "line": "No veréis amor tan grande (Do#,m,0)(Mi,,170)",
       "sC": "tc"

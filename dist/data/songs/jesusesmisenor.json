@@ -34,45 +34,45 @@
   "sourceBook": "joven",
   "lizq": [
     {
-      "line": "Jesús es mi Señor, alábalo que Él vive (bis) (Do,,0)(Fa,,60)(Sol,,110)(Do,,170)",
-      "sC": "tc"
+      "line": "Jesús es mi Señor, alábalo que Él vive (Sol,,0)(Re,,110)(Sol,,170)",
+      "sC": "tc bisa"
     },
     {
-      "line": "Alábalo, alábalo, alábalo que él vive (bis). (Fa,,0)(Do,,60)(Sol,,110)(Do,,170)",
-      "sC": ""
+      "line": "Alábalo, alábalo, alábalo que él vive. (Do,,0)(Sol,,60)(Re,,110)(Sol,,170)",
+      "sC": "bisa"
     },
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Oh, oh, oh, oh, hay que nacer del agua (Sol,,70)(Do,,180)",
+      "line": "Oh, oh, oh, oh, hay que nacer del agua (Re,,70)(Sol,,180)",
       "sC": ""
     },
     {
-      "line": "Oh, oh, oh, oh, hay que nacer del Espíritu de Dios (Sol,,70)(Do,,180)(Do,7,240)",
+      "line": "Oh, oh, oh, oh, hay que nacer del Espíritu de Dios (Re,,70)(Sol,,180)",
       "sC": ""
     },
     {
-      "line": "Oh, oh, oh, oh, hay que nacer del agua y del Espíritu de Dios. (Fa,,0)(Sol,,60)(Do,,160)(La,m,210)(Fa,,280)",
+      "line": "Oh, oh, oh, oh, hay que nacer del agua y del Espíritu de Dios. (Do,,0)(Do,m,60)(Sol,,160)(Mi,m,210)(La,m,280)",
       "sC": ""
     },
     {
-      "line": "Hay que nacer del Amor (bis) (Sol,,0)(Do,,80)(Do,7,140)",
-      "sC": ""
+      "line": "Hay que nacer del Señor (Re,,0)(Sol,,140)",
+      "sC": "bisa"
     }
   ],
   "lder": [
     {
-      "line": "Prepárate para que sientas (Do,,0)(Sol,,90)",
+      "line": "Prepárate para que sientas (Sol,,0)(Re,,90)",
       "sC": "tc"
     },
     {
-      "line": "Prepárate para que sientas (Sol,,0)(Do,,90)",
+      "line": "Prepárate para que sientas (Sol,,0)(Re,,90)",
       "sC": ""
     },
     {
-      "line": "Prepárate para que sientas el Espíritu de Dios, (Sol,,90)(Do,,180)",
+      "line": "Prepárate para que sientas el Espíritu de Dios, (Re,,90)(Sol,,180)",
       "sC": ""
     },
     {
@@ -80,11 +80,7 @@
       "sC": "adb1"
     },
     {
-      "line": "Déjalo que se mueva (Sol,,70)",
-      "sC": ""
-    },
-    {
-      "line": "Déjalo que se mueva (Do,,70)",
+      "line": "Déjalo que se mueva (Re,,70)",
       "sC": ""
     },
     {
@@ -92,7 +88,11 @@
       "sC": ""
     },
     {
-      "line": "Dentro de tu corazón (Do,,70)",
+      "line": "Déjalo que se mueva (Re,,70)",
+      "sC": ""
+    },
+    {
+      "line": "Dentro de tu corazón (Sol,,70)",
       "sC": ""
     }
   ]

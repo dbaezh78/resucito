@@ -1,0 +1,164 @@
+{
+  "id": "bautizamesenorcontuespiritu",
+  "tt": "Bautízame señor con tu Espíritu",
+  "title": "Bautízame señor con tu Espíritu",
+  "subtitle": "Canto al Espíritu Santo",
+  "category": [
+    "Católicos",
+    "Espíritu Santo"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mim",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "155",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Baut%C3%ADzame%20se%C3%B1or%20con%20tu%20Esp%C3%ADritu.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=elespiritudediosestaenestelugar",
+  "sig": "/src/index.html?canto=elsenornohaamado",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Inúndame Señor con tu Espíritu (Mi,m,0)(Si,,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "Inúndame Señor con tu Espíritu (Mi,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "Inúndame Señor con tu Espíritu (Si,,190)",
+      "sC": ""
+    },
+    {
+      "line": "Inúndame Señor con tu Espíritu. (Mi,m,180)(Mi,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y DÉJAME SENTIR, EL FUEGO DE TU AMOR, (La,m,0)(Mi,m,180)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (Si,,0)(Mi,m,110)(Mi,,150)",
+      "sC": "as bisa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bautízame Señor con tu Espíritu. (4) (Mi,m,0)(Si,,190)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_bautizame_1",
+      "initialState": "collapsed",
+      "triggerLine": "Y DÉJAME SENTIR, EL FUEGO DE TU AMOR, (La,m,0)(Mi,m,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (Si,,0)(Mi,m,110)(Mi,,150)",
+          "sC": "as bisa"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Transfórmame Señor con tu Espíritu. (4) (Mi,m,0)(Si,,190)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_bautizame_2",
+      "initialState": "collapsed",
+      "triggerLine": "Y DÉJAME SENTIR, EL FUEGO DE TU AMOR, (La,m,0)(Mi,m,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (Si,,0)(Mi,m,110)(Mi,,150)",
+          "sC": "as bisa"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Lávame Señor con tu Espíritu. (4) (Mi,m,0)(Si,,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_bautizame_3",
+      "initialState": "collapsed",
+      "triggerLine": "Y DÉJAME SENTIR, EL FUEGO DE TU AMOR, (La,m,0)(Mi,m,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (Si,,0)(Mi,m,110)(Mi,,150)",
+          "sC": "as bisa"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Renuévame Señor con tu Espíritu. (4) (Mi,m,0)(Si,,190)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_bautizame_4",
+      "initialState": "collapsed",
+      "triggerLine": "Y DÉJAME SENTIR, EL FUEGO DE TU AMOR, (La,m,0)(Mi,m,180)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AQUÍ EN MI CORAZÓN, SEÑOR. (Si,,0)(Mi,m,110)(Mi,,150)",
+          "sC": "as bisa"
+        }
+      ]
+    }
+  ]
+}

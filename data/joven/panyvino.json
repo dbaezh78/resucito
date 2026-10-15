@@ -1,0 +1,157 @@
+{
+  "id": "panyvino",
+  "tt": "Pan y vino",
+  "title": "Pan y vino",
+  "subtitle": "L. Bohórquez",
+  "category": [
+    "Católicos",
+    "Ofertorio"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Do",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "159",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/Pan%20y%20vino.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=medleyalabare",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Ya no eres pan y vino (Do,,0)(Fa,,70)(Do,,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "ahora que eres cuerpo y sangre “Vives en mí”, (Fa,,40)(Do,,120)(Sol,,240)",
+      "sC": ""
+    },
+    {
+      "line": "y de rodillas yo caigo al contemplar tu bondad (Fa,,0)(Do,,230)",
+      "sC": ""
+    },
+    {
+      "line": "¿Cómo no te voy a adorar? (La,m,0)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mientras te pierdes en mis labios (Do,,0)(Fa,,120)(Do,,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "tu gracia va inundando todo mi corazón, (Fa,,40)(Do,,140)(Sol,,240)",
+      "sC": ""
+    },
+    {
+      "line": "por esa paz que me llena de alegría mi ser (Fa,,0)(Do,,230)",
+      "sC": ""
+    },
+    {
+      "line": "¿Cómo no te voy a adorar? (La,m,0)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "SEÑOR JESÚS, MI SALVADOR, (Do,,30)(Do,,130)",
+      "sC": "ta as"
+    },
+    {
+      "line": "AMOR ETERNO, AMOR DIVINO, (Fa,,20)(Do,,140)",
+      "sC": "as"
+    },
+    {
+      "line": "YA NO FALTA NADA, LO TENGO TODO, TE TENGO A TI, (Fa,,0)(Do,,100)(Sol,,230)(Do,,320)",
+      "sC": "as"
+    },
+    {
+      "line": "YA NO FALTA NADA, LO TENGO TODO, TE TENGO A TI. (Fa,,0)(Do,,100)(Sol,,230)(Do,,320)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Dueño y rey del universo (Do,,0)(Fa,,100)(Do,,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "¿cómo puede ser posible que busques mi amor? (Fa,,40)(Do,,160)(Sol,,260)",
+      "sC": ""
+    },
+    {
+      "line": "Tú tan grande y yo pequeña y te fijas en mí (Fa,,0)(Do,,230)",
+      "sC": ""
+    },
+    {
+      "line": "¿Cómo no te voy a adorar? (La,m,0)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "De rodillas yo te pido (Do,,0)(Fa,,100)(Do,,180)",
+      "sC": "tc"
+    },
+    {
+      "line": "que el día cuando tú me llames, sea como hoy, (Fa,,40)(Do,,160)(Sol,,260)",
+      "sC": ""
+    },
+    {
+      "line": "para mirarte a los ojos y poderte decir (Fa,,0)(Do,,230)",
+      "sC": ""
+    },
+    {
+      "line": "que: ¿cómo no te voy a adorar? (La,m,0)(Sol,,120)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_panyvino_1",
+      "initialState": "collapsed",
+      "triggerLine": "SEÑOR JESÚS, MI SALVADOR, (Do,,30)(Do,,130)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "AMOR ETERNO, AMOR DIVINO, (Fa,,20)(Do,,140)",
+          "sC": "as"
+        },
+        {
+          "line": "YA NO FALTA NADA, LO TENGO TODO, TE TENGO A TI, (Fa,,0)(Do,,100)(Sol,,230)(Do,,320)",
+          "sC": "as"
+        },
+        {
+          "line": "YA NO FALTA NADA, LO TENGO TODO, TE TENGO A TI. (Fa,,0)(Do,,100)(Sol,,230)(Do,,320)",
+          "sC": "as bisa"
+        }
+      ]
+    }
+  ]
+}

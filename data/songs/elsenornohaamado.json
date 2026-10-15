@@ -1,0 +1,191 @@
+{
+  "id": "elsenornohaamado",
+  "tt": "El señor nos ha amado",
+  "title": "El señor nos ha amado",
+  "subtitle": "Comunión",
+  "category": [
+    "Católicos",
+    "Comunión"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mi",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "156",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/El%20Se%C3%B1or%20nos%20ha%20amado.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=bautizamesenorcontuespiritu",
+  "sig": "/src/index.html?canto=siconocierascomoteamo",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": "tc"
+    },
+    {
+      "line": "Él nos guía cada día, con su fuerza y con su luz. (Mi,,0)(Do#,m,80)(Fa#,,140)(Si,,200)",
+      "sC": ""
+    },
+    {
+      "line": "Él nos llena de su amor, cuando partimos el pan (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": ""
+    },
+    {
+      "line": "Es el pan de la amistad, el pan de Dios. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
+      "sC": "ta as"
+    },
+    {
+      "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": "tc"
+    },
+    {
+      "line": "Fue un pobre carpintero para los de Nazareth, (Mi,,0)(Do#,m,80)(Fa#,,140)(Si,,200)",
+      "sC": ""
+    },
+    {
+      "line": "Con sus manos trabajó dando ejemplo de bondad (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": ""
+    },
+    {
+      "line": "El trabajo y sufrimiento conoció. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_elsenornohaamado_1",
+      "initialState": "collapsed",
+      "triggerLine": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
+          "sC": "as"
+        },
+        {
+          "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": "tc"
+    },
+    {
+      "line": "Su amor era tan grande que en la cruz llegó a morir, (Mi,,0)(Do#,m,80)(Fa#,,140)(Si,,200)",
+      "sC": ""
+    },
+    {
+      "line": "Su amor era tan fuerte que de la muerte venció (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": ""
+    },
+    {
+      "line": "De los muertos, vencedor, resucitó. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_elsenornohaamado_2",
+      "initialState": "collapsed",
+      "triggerLine": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
+          "sC": "as"
+        },
+        {
+          "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": ""
+    },
+    {
+      "line": "El reúne a sus amigos en la mesa del amor (Mi,,0)(Do#,m,80)(Fa#,,140)(Si,,200)",
+      "sC": ""
+    },
+    {
+      "line": "En el mundo todos son cuerpo y sangre del Señor (Mi,,0)(La,,180)(Mi,,280)",
+      "sC": ""
+    },
+    {
+      "line": "Nada puede separarnos de su amor. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_elsenornohaamado_3",
+      "initialState": "collapsed",
+      "triggerLine": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
+          "sC": "as"
+        },
+        {
+          "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
+          "sC": "as"
+        }
+      ]
+    }
+  ]
+}

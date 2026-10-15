@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v383'; // v2.1.47 Add youth songs & update Amaos
+const CACHE_NAME = 'resucito-cache-v384'; // v2.1.48 Add 6 new youth songs with bisa support
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
