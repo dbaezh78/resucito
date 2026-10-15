@@ -1,0 +1,122 @@
+{
+  "id": "mariamirame",
+  "tt": "María mírame",
+  "title": "María mírame",
+  "subtitle": "Betsaida",
+  "category": [
+    "Católicos",
+    "Virgen María"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mi",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "163",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/mariamirame.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=himnoalamor",
+  "sig": "/src/index.html?canto=hoyhevuelto",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "MARÍA MÍRAME, MARÍA MÍRAME, (Si,7,0)(Mi,,50)(Si,,110)(Do#,m,160)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SI TÚ ME MIRAS, ÉL TAMBIÉN ME MIRARÁ. (La,,0)(Mi,,70)(La,,130)(Si,,190)",
+      "sC": "as"
+    },
+    {
+      "line": "MADRE MÍA, MÍRAME, DE LA MANO LLÉVAME, (Mi,,70)(La,,130)(Mi,,210)",
+      "sC": "as"
+    },
+    {
+      "line": "MUY CERCA DE ÉL, QUE AHÍ ME QUIERO QUEDAR. (La,,0)(Mi,,70)(Si,,140)(Mi,,210)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "María cúbreme con tu manto, que tengo miedo, no sé rezar, (Si,7,0)(Mi,,40)(Si,,80)(Do#,m,160)(Sol#,m,200)(La,,250)(Si,,290)(Mi,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Que, por tus ojos misericordiosos, tendré la fuerza, tendré la paz. (La,,70)(Si,,100)(Mi,,120)(Si,,140)(Do#,m,160)(La,,250)(Si,,290)(Mi,,330)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MARÍA MÍRAME, MARÍA MÍRAME,",
+      "sC": "as"
+    },
+    {
+      "line": "SI TÚ ME MIRAS, ÉL TAMBIÉN ME MIRARÁ.",
+      "sC": "as"
+    },
+    {
+      "line": "MADRE MÍA, MÍRAME, DE LA MANO LLÉVAME,",
+      "sC": "as"
+    },
+    {
+      "line": "MUY CERCA DE ÉL, QUE AHÍ ME QUIERO QUEDAR.",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Madre, consuélame de mis penas, es que no quiero ofenderle más, (Si,7,0)(Mi,,40)(Si,,80)(Do#,m,160)(Sol#,m,200)(La,,250)(Si,,290)(Mi,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Que, por tus ojos misericordiosos, quiero ir al cielo, ¡y verlos ya! (La,,70)(Si,,100)(Mi,,120)(Si,,140)(Do#,m,160)(La,,250)(Si,,290)(Mi,,330)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "MARÍA MÍRAME, MARÍA MÍRAME,",
+      "sC": "as"
+    },
+    {
+      "line": "SI TÚ ME MIRAS, ÉL TAMBIÉN ME MIRARÁ.",
+      "sC": "as"
+    },
+    {
+      "line": "MADRE MÍA, MÍRAME, DE LA MANO LLÉVAME,",
+      "sC": "as"
+    },
+    {
+      "line": "MUY CERCA DE ÉL, QUE AHÍ ME QUIERO QUEDAR.",
+      "sC": "as"
+    },
+    {
+      "line": "EN TUS BRAZOS QUIERO DESCANSAR. (La,,0)(Mi,,70)(Si,,120)(La,,160)(La,m,190)(Mi,,220)",
+      "sC": "as"
+    }
+  ]
+}

@@ -9074,5 +9074,88 @@
     "audioSrc": "https://audio.resucito.do/catolico/Pan%20y%20vino.mp3",
     "sourceBook": "joven",
     "searchPool": "pan y vino l bohorquez ya no eres pan y vino ahora que eres cuerpo y sangre vives en mi y de rodillas yo caigo al contemplar tu bondad como no te voy a adorar mientras te pierdes en mis labios tu gracia va inundando todo mi corazon por esa paz que me llena de alegria mi ser senor jesus mi salvador amor eterno amor divino ya no falta nada lo tengo todo te tengo a ti dueno y rey del universo como puede ser posible que busques mi amor tu tan grande y yo pequena y te fijas en mi de rodillas yo te pido que el dia cuando tu me llames sea como hoy para mirarte a los ojos y poderte decir que como no te voy a adorar"
+  },
+  {
+    "id": "almadecristo",
+    "title": "Alma de Cristo",
+    "subtitle": "Oración de San Ignacio",
+    "category": [
+      "Católicos",
+      "Comunión"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "160",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/almadecristo.mp3",
+    "sourceBook": "joven",
+    "searchPool": "alma de cristo oracion de san ignacio santificame cuerpo de cristo salvame sangre de cristo embriagame agua del costado de cristo lavame pasion de cristo confortame oh buen jesus oyeme y dentro de tus llagas escondeme no permitas que me aparte de ti del enemigo defiendeme en la hora de mi muerte llamame y mandame ir a ti para con tus santos te alabe por los siglos de los siglos amen"
+  },
+  {
+    "id": "estoypensandoendios",
+    "title": "Estoy pensando en Dios",
+    "subtitle": "P. Zezinho",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "161",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/estoypensandoendios.mp3",
+    "sourceBook": "joven",
+    "searchPool": "estoy pensando en dios p zezinho estoy pensando en dios estoy pensando en su amor olvida el hombre a su senor y poco a poco se desvia y entre angustia y cobardia va perdiendose el amor dios le habla como amigo huye el hombre de su voz yo siento angustia cuando veo que despues de dos mil anos y entre tantos desenganos pocos viven por amor muchos hablan de esperanza mas se alejan del senor todo podria ser mejor si mi pueblo procurase caminar sin alejarse del camino del senor pero el hombre no hace suyos los senderos del amor todo podria ir mejor si en fervor y en alegria fuesen las madres maria y los padres san jose y sus hijos imitasen a jesus de nazaret"
+  },
+  {
+    "id": "himnoalamor",
+    "title": "Himno al amor",
+    "subtitle": "1 Corintios 13",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "162",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/himnoalamor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "himno al amor 1 corintios 13 aunque hablara lengua de hombres y de angeles y tuviera fe para trasladar montanas y conociera los misterios y las ciencias y no tuviera amor no seria nada el amor todo lo excusa todo lo cree todo lo espera y soporta la caridad es paciente y servicial no es envidiosa y no toma en cuenta el mal"
+  },
+  {
+    "id": "mariamirame",
+    "title": "María mírame",
+    "subtitle": "Betsaida",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "163",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/mariamirame.mp3",
+    "sourceBook": "joven",
+    "searchPool": "maria mirame betsaida virgen maria si tu me miras el tambien me mirara madre mia mirame de la mano llevame muy cerca de el que ahi me quiero quedar maria cubreme con tu manto que tengo miedo no se rezar que por tus ojos misericordiosos tendre la fuerza tendre la paz madre consuelame de mis penas es que no quiero ofenderle mas que por tus ojos misericordiosos quiero ir al cielo y verlos ya en tus brazos quiero descansar"
+  },
+  {
+    "id": "hoyhevuelto",
+    "title": "Hoy he vuelto",
+    "subtitle": "C. Erdozáin",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "164",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/hoyhevuelto.mp3",
+    "sourceBook": "joven",
+    "searchPool": "hoy he vuelto c erdozain virgen maria cuantas veces siendo nino te rece con mis besos te decia que te amaba poco a poco con el tiempo alejandome de ti por caminos que se alejan me perdi hoy he vuelto madre a recordar cuantas cosas dije ante tu altar y al rezarte puedo comprender que una madre no se cansa de esperar al regreso me encendias una luz sonriendo desde lejos me esperabas en la mesa la comida aun caliente y el mantel y tu abrazo en la alegria de volver aunque el hijo se alejara del hogar una madre siempre espera su regreso que el regalo mas hermoso que a los hijos da el senor es su madre y el regalo de su amor"
   }
 ]

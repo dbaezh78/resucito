@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.48",
+  "latestVersion": "2.1.49",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.48)",
-  "updateMessage": "Nuevos cantos agregados: El Espíritu de Dios está en este lugar, Bautízame señor con tu Espíritu, El señor nos ha amado, Si conocieras como te amo, Medley alabare y Pan y vino.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.49)",
+  "updateMessage": "Nuevos cantos agregados: Alma de Cristo, Estoy pensando en Dios, Himno al amor, María mírame y Hoy he vuelto.",
   "releaseNotes": [
-    "Agregados 6 nuevos cantos católicos con acordes interactivos.",
-    "Soporte para indicador de repetición BIS mediante estilo 'bisa'.",
-    "Estribillos y bloques plegables interactivos para cantos de asamblea.",
-    "Actualización de audios y navegación."
+    "Agregados 5 nuevos cantos católicos con acordes interactivos.",
+    "Formato visual de repetición BIS mediante estilo 'bisa'.",
+    "Audios sincronizados y enlazados.",
+    "Navegación y catálogo de cantos actualizado."
   ]
 }

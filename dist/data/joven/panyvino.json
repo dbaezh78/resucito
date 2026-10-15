@@ -15,7 +15,7 @@
   "dbno": "159",
   "notes": "",
   "mant": "Si",
-  "audioSrc": "https://audio.resucito.do/catolico/Pan%20y%20vino.mp3",
+  "audioSrc": "https://audio.resucito.do/catolico/Pan y vino.mp3",
   "scrollConfig": {
     "mobile": {
       "velocidad": 6,
@@ -31,7 +31,7 @@
     }
   },
   "ant": "/src/index.html?canto=medleyalabare",
-  "sig": "/src/index.html?canto=venalafiesta",
+  "sig": "/src/index.html?canto=almadecristo",
   "sourceBook": "joven",
   "lizq": [
     {

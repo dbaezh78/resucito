@@ -1,0 +1,109 @@
+{
+  "id": "estoypensandoendios",
+  "tt": "Estoy pensando en Dios",
+  "title": "Estoy pensando en Dios",
+  "subtitle": "P. Zezinho",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "161",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/estoypensandoendios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=almadecristo",
+  "sig": "/src/index.html?canto=himnoalamor",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "ESTOY PENSANDO EN DIOS, (Re,,0)(La,,170)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ESTOY PENSANDO EN SU AMOR. (Sol,,0)(La,,60)(Re,,170)",
+      "sC": "as bisa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Olvida el hombre a su Señor y poco a poco se desvía, (Re,,0)",
+      "sC": ""
+    },
+    {
+      "line": "y entre angustia y cobardía va perdiéndose el amor; (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Dios le habla como amigo, huye el hombre de su voz. (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo siento angustia cuando veo que después de dos mil años (Re,,0)",
+      "sC": ""
+    },
+    {
+      "line": "y entre tantos desengaños pocos viven por amor; (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    },
+    {
+      "line": "muchos hablan de esperanza, mas se alejan del Señor. (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Todo podría ser mejor si mi pueblo procurase (Re,,0)",
+      "sC": ""
+    },
+    {
+      "line": "caminar sin alejarse del camino del Señor. (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Pero el hombre no hace suyos los senderos del amor. (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Todo podría ir mejor si en fervor y en alegría (Re,,0)",
+      "sC": ""
+    },
+    {
+      "line": "fuesen las madres María y los Padres san José (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    },
+    {
+      "line": "y sus hijos imitasen a Jesús de Nazaret. (Sol,,0)(Re,,140)(La,,220)(Re,,320)",
+      "sC": ""
+    }
+  ]
+}
