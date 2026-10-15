@@ -1,0 +1,71 @@
+{
+  "id": "corderodediostrote",
+  "tt": "Cordero de Dios (Trote)",
+  "title": "Cordero de Dios (Trote)",
+  "subtitle": "Fracción del pan",
+  "category": [
+    "Católicos",
+    "Fracción del pan",
+    "Cordero de Dios"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mim",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "169",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/corderodediostrote.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=corderodediossolemne",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Cordero de Dios, que quitas el pecado del mundo (Mi,m,0)(Re,,40)(Mi,m,70)(Sol,,160)(Re,,250)(Sol,,310)",
+      "sC": "tc"
+    },
+    {
+      "line": "Ten piedad de nosotros. (Do,,0)(La,m,40)(Re,,80)(Si,,120)(Mi,m,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios, que quitas el pecado del mundo (Mi,m,0)(Re,,40)(Mi,m,70)(Sol,,160)(Re,,250)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "Ten piedad de nosotros. (Do,,0)(La,m,40)(Re,,80)(Si,,120)(Mi,m,160)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios, que quitas el pecado del mundo (Mi,m,0)(Re,,40)(Mi,m,70)(Sol,,160)(Re,,250)(Sol,,310)",
+      "sC": ""
+    },
+    {
+      "line": "Danos la paz, danos la paz. (Do,,0)(La,m,30)(Re,,70)(Si,,100)(Mi,m,130)(Do,,160)(La,m,190)(Re,,230)(Si,,260)(Mi,m,290)",
+      "sC": ""
+    }
+  ]
+}

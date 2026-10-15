@@ -1,8 +1,8 @@
 {
-  "latestVersion": "2.1.49",
+  "latestVersion": "2.1.50",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.49)",
-  "updateMessage": "Nuevos cantos agregados: Alma de Cristo, Estoy pensando en Dios, Himno al amor, María mírame y Hoy he vuelto.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.50)",
+  "updateMessage": "Nuevos cantos agregados: María de mi niñez, Cordero de Dios (Lento), Cordero de Dios (Alejandro Mejía), Cordero de Dios (Solemne) y Cordero de Dios (Trote).",
   "releaseNotes": [
     "Agregados 5 nuevos cantos católicos con acordes interactivos.",
     "Formato visual de repetición BIS mediante estilo 'bisa'.",

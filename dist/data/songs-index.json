@@ -9157,5 +9157,94 @@
     "audioSrc": "https://audio.resucito.do/catolico/hoyhevuelto.mp3",
     "sourceBook": "joven",
     "searchPool": "hoy he vuelto c erdozain virgen maria cuantas veces siendo nino te rece con mis besos te decia que te amaba poco a poco con el tiempo alejandome de ti por caminos que se alejan me perdi hoy he vuelto madre a recordar cuantas cosas dije ante tu altar y al rezarte puedo comprender que una madre no se cansa de esperar al regreso me encendias una luz sonriendo desde lejos me esperabas en la mesa la comida aun caliente y el mantel y tu abrazo en la alegria de volver aunque el hijo se alejara del hogar una madre siempre espera su regreso que el regalo mas hermoso que a los hijos da el senor es su madre y el regalo de su amor"
+  },
+  {
+    "id": "mariademininez",
+    "title": "María de mi niñez",
+    "subtitle": "Canto Mariano",
+    "category": [
+      "Católicos",
+      "Virgen María"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "165",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/mariademininez.mp3",
+    "sourceBook": "joven",
+    "searchPool": "maria de mi ninez canto mariano virgen maria cuando era pequeno muy pequeno recuerdo que siempre junto a mi cama juntaba las manos y de prisa rezaba mas rezaba como quien amaba las aves marias yo rezaba y siempre comia unas palabras a veces cansado me quedaba dormido mas dormia como quien amaba ave maria de mi senor el tiempo pasa no vuelve atras siento nostalgia de aquellos dias cuando dormia pensando en ti ave maria madre de dios despues fui creciendo fui creciendo y eche en el olvido mis oraciones llegaba a mi casa disgustado y cansado y de hablarte nunca me acordaba anduve dudando hoy me acuerdo de cosas divinas que me ensenaban en mi estaba muerto aquel nino inocente mis caminos de ti se alejaban tu amor es muy grande no se acaba la madre no olvida al que se marcha hoy llego a mi casa disgustado y cansado pero rezo como ayer rezaba las mismas palabras que ahora rezo a veces me olvido y hasta me duermo no importa dormirse sin rezar lo debido pues esta mi corazon contigo"
+  },
+  {
+    "id": "corderodedioslento",
+    "title": "Cordero de Dios (Lento)",
+    "subtitle": "Fracción del pan",
+    "category": [
+      "Católicos",
+      "Fracción del pan",
+      "Cordero de Dios"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Do",
+    "dbno": "166",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/corderodedioslento.mp3",
+    "sourceBook": "joven",
+    "searchPool": "cordero de dios lento fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad de nosotros danos la paz"
+  },
+  {
+    "id": "corderodediosalejandromejia",
+    "title": "Cordero de Dios, Alejandro Mejía",
+    "subtitle": "Alejandro Mejía (Misa Melódica, 1988)",
+    "category": [
+      "Católicos",
+      "Fracción del pan",
+      "Cordero de Dios"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mim",
+    "dbno": "167",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/corderodediosalejandromejia.mp3",
+    "sourceBook": "joven",
+    "searchPool": "cordero de dios alejandro mejia produccion misa melodica ano 1988 fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad de nosotros danos la paz"
+  },
+  {
+    "id": "corderodediossolemne",
+    "title": "Cordero de Dios (Solemne)",
+    "subtitle": "Fracción del pan",
+    "category": [
+      "Católicos",
+      "Fracción del pan",
+      "Cordero de Dios"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mi",
+    "dbno": "168",
+    "hasAudio": false,
+    "audioSrc": "",
+    "sourceBook": "joven",
+    "searchPool": "cordero de dios solemne fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad ten piedad ten piedad de nosotros danos danos danos la paz"
+  },
+  {
+    "id": "corderodediostrote",
+    "title": "Cordero de Dios (Trote)",
+    "subtitle": "Fracción del pan",
+    "category": [
+      "Católicos",
+      "Fracción del pan",
+      "Cordero de Dios"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mim",
+    "dbno": "169",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/corderodediostrote.mp3",
+    "sourceBook": "joven",
+    "searchPool": "cordero de dios trote fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad de nosotros danos la paz"
   }
 ]

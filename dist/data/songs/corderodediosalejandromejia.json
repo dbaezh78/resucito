@@ -1,0 +1,79 @@
+{
+  "id": "corderodediosalejandromejia",
+  "tt": "Cordero de Dios, Alejandro Mejía",
+  "title": "Cordero de Dios, Alejandro Mejía",
+  "subtitle": "Alejandro Mejía (Misa Melódica, 1988)",
+  "category": [
+    "Católicos",
+    "Fracción del pan",
+    "Cordero de Dios"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Mim",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "167",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/corderodediosalejandromejia.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=corderodedioslento",
+  "sig": "/src/index.html?canto=corderodediossolemne",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Cordero de Dios que quitas el pecado del mundo, (Mi,m,0)(La,7,210)(Do,,260)(Re,,290)(Mi,m,350)",
+      "sC": "tc"
+    },
+    {
+      "line": "ten piedad de noso--tros, ten piedad de nosotros. (La,m,0)(Re,,50)(Sol,,150)(Do,,180)(La,m,210)(Si,7,260)(Mi,m,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios que quitas el pecado del mundo, (Mi,m,0)(La,7,210)(Do,,260)(Re,,290)(Mi,m,350)",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de noso--tros, ten piedad de nosotros. (La,m,0)(Re,,50)(Sol,,150)(Do,,180)(La,m,210)(Si,7,260)(Mi,m,320)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios que quitas el pecado del mundo (Mi,m,0)(La,7,210)(Do,,260)(Re,,290)(Mi,m,350)",
+      "sC": ""
+    },
+    {
+      "line": "danos la paz, danos la paz, (Do,,0)(La,m,80)(Re,,130)(Sol,,200)",
+      "sC": ""
+    },
+    {
+      "line": "da--nos, da--nos, da--nos la paz, (La,m,0)(Re,,50)(Sol,,100)(Do,,130)(La,m,160)(Si,7,210)(Mi,m,260)",
+      "sC": ""
+    },
+    {
+      "line": "da--nos, da--nos, da--nos la paz. (La,m,0)(Re,,50)(Sol,,100)(Do,,130)(La,m,160)(Si,7,210)(Mi,,260)",
+      "sC": ""
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v385'; // v2.1.49 Add 5 new youth songs
+const CACHE_NAME = 'resucito-cache-v386'; // v2.1.50 Add Maria de mi ninez and 4 Corderos
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
