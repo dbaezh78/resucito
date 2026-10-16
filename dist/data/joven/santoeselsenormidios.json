@@ -1,0 +1,74 @@
+{
+  "id": "santoeselsenormidios",
+  "tt": "Santo es el señor mi Dios",
+  "title": "Santo es el señor mi Dios",
+  "subtitle": "Santo",
+  "category": [
+    "Católicos",
+    "Santo"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Lam",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "173",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/santoeselsenormidios.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=gloriafpalazon",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Santo es el señor mi Dios, digno de alabanza (La,m,0)(Sol,,110)(Fa,,220)(Mi,,310)",
+      "sC": "tc"
+    },
+    {
+      "line": "A él, el poder el honor y la gloria. (La,m,0)(Sol,,40)(Fa,,110)(Mi,,180)",
+      "sC": "bisa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, HOSANNA OH SEÑOR. (La,m,0)(Sol,,100)(Fa,,180)(Mi,,280)",
+      "sC": "ta as bisa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito el que viene en el nombre del señor (La,m,0)(Sol,,120)(Fa,,210)(Mi,,320)",
+      "sC": ""
+    },
+    {
+      "line": "Con todos los santos cantamos para ti. (La,m,0)(Sol,,90)(Fa,,160)(Mi,,250)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "HOSANNA, HOSANNA, HOSANNA OH SEÑOR. (La,m,0)(Sol,,100)(Fa,,180)(Mi,,280)",
+      "sC": "as bisa"
+    }
+  ]
+}

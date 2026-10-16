@@ -1,0 +1,118 @@
+{
+  "id": "gloriajesed",
+  "tt": "Gloria (JESED)",
+  "title": "Gloria (JESED)",
+  "subtitle": "Jésed",
+  "category": [
+    "Católicos",
+    "Gloria"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "171",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/gloriajesed.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=denalsenor",
+  "sig": "/src/index.html?canto=gloriaadiosgloriaalpadre",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "GLORIA A DIOS EN EL CIELO Y EN LA TIERRA A LOS HOMBRES PAZ. (Sol,,0)(Fa,,40)(Sol,,100)(Fa,,120)(Sol,,140)(Fa,,160)(Sol,,310)(Fa,,340)",
+      "sC": "ta as bisa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te alabamos, te bendecimos, te adoramos, te glorificamos. (La#,,0)(Sol,,110)(La#,,210)(Sol,,290)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te damos gracias por tu inmensa gloria (Sol,,0)(Fa,,80)(Sol,,180)(Fa,,260)",
+      "sC": ""
+    },
+    {
+      "line": "Señor, Dios rey celestial. (Sol,,0)(Fa,,60)(Sol,,140)(Fa,,170)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dios Padre todopoderoso, Señor hijo único Jesucristo, (Sol,,40)(Fa,,110)(Sol,,190)(Fa,,270)",
+      "sC": ""
+    },
+    {
+      "line": "Señor Dios cordero de Dios, Hijo del Padre. (Sol,,0)(Fa,,120)(Sol,,200)(Fa,,230)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que quitas el pecado del mundo, ten piedad de nosotros. (Sol,m,0)(Fa,,120)(Do,,230)(Sol,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "Tú que quitas el pecado del mundo, atiende nuestras súplicas. (Sol,m,0)(Fa,,120)(Do,,230)(Sol,m,310)",
+      "sC": ""
+    },
+    {
+      "line": "Tú que estás a la derecha del Padre, ten piedad de nosotros. (La#,,0)(Fa,,120)(Do,,230)(Re,,310)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque solamente tú eres santo, sólo tú altísimo Jesucristo, (Sol,,50)(Fa,,130)(Sol,,210)(Fa,,290)",
+      "sC": ""
+    },
+    {
+      "line": "Con el espíritu santo, en la gloria del Padre. (Sol,,0)(Fa,,100)(Sol,,230)(Fa,,260)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA A DIOS EN EL CIELO Y EN LA TIERRA A LOS HOMBRES PAZ. (Sol,,0)(Fa,,40)(Sol,,100)(Fa,,120)(Sol,,140)(Fa,,160)(Sol,,310)(Fa,,340)",
+      "sC": "as bisa"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Amén. (Sol,,0)(Fa,,30)(Sol,,60)",
+      "sC": ""
+    }
+  ]
+}

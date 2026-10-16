@@ -1,15 +1,15 @@
 {
   "id": "gloriafpalazon",
-  "tt": "Gloria a Dios en el Cielo",
-  "title": "Gloria",
-  "subtitle": "F. Palazón",
+  "tt": "Gloria a Dios (Francisco Palazón)",
+  "title": "Gloria a Dios (Francisco Palazón)",
+  "subtitle": "Francisco Palazón",
   "category": [
     "Católicos",
     "Gloria"
   ],
   "catCanto": "Católicos",
   "cejilla": "",
-  "acorde": "La",
+  "acorde": "Do",
   "nCan": "",
   "nCanURL": "",
   "dbno": "117",
@@ -30,24 +30,16 @@
       "incremento": 1
     }
   },
-  "ant": "/src/index.html?canto=feliznavidad",
-  "sig": "/src/index.html?canto=haciabelenvaunaburra",
+  "ant": "/src/index.html?canto=gloriagloriaaleluya",
+  "sig": "/src/index.html?canto=santoeselsenormidios",
   "sourceBook": "joven",
   "lizq": [
     {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "GLORIA A DIOS EN EL CIELO, (Mi,7,0)(La,,80)(Do#,m,160)",
+      "line": "GLORIA A DIOS EN EL CIELO, (Do,,0)(Mi,m,130)",
       "sC": "ta as"
     },
     {
-      "line": "Y EN LA TIERRA PAZ A LOS (Si,m,10)(Mi,,120)",
-      "sC": "as"
-    },
-    {
-      "line": "HOMBRES QUE AMA EL SEÑOR. (La,,10)(Fa#,m,60)(Si,m,100)(Re,,130)(Mi,,160)(La,,190)",
+      "line": "Y EN LA TIERRA PAZ A LOS HOMBRES QUE AMA EL SEÑOR. (Re,m,0)(Sol,,90)(Do,,140)(La,m,170)(Re,m/Fa,230)(Sol,,280)(Do,,310)",
       "sC": "as"
     },
     {
@@ -55,19 +47,15 @@
       "sC": "adb1"
     },
     {
-      "line": "Por tu inmensa gloria te alabamos, (La,,0)(Re,,180)(La,,210)",
-      "sC": "tc"
-    },
-    {
-      "line": "te bendecimos, te adoramos, (Si,m,0)(Mi,,130)(La,,160)",
+      "line": "Por tu inmensa gloria te alabamos, (Do,,0)(Fa,,160)(Do,,190)",
       "sC": ""
     },
     {
-      "line": "te glorificamos, (Do#,m,0)",
+      "line": "Te bendecimos, te adoramos, (Re,m,0)(Sol,,130)(Do,,160)",
       "sC": ""
     },
     {
-      "line": "te damos gracias. (La,,0)(Si,,60)(Mi,,110)",
+      "line": "Te glorificamos, te damos gracias. (Mi,m,0)(Do,,110)(Re,,140)(Sol,,170)",
       "sC": ""
     },
     {
@@ -75,53 +63,27 @@
       "sC": "adb1"
     },
     {
-      "line": "Señor Dios, Rey celestial, (La,,0)(Re,,160)(La,,190)",
-      "sC": ""
+      "line": "GLORIA A DIOS EN EL CIELO,",
+      "sC": "as"
     },
     {
-      "line": "Dios Padre todopoderoso. ",
-      "sC": ""
+      "line": "Y EN LA TIERRA PAZ A LOS HOMBRES QUE AMA EL SEÑOR.",
+      "sC": "as"
     },
-    {
-      "line": "Señor, Hijo único, Jesucristo. (Si,m,0)(Mi,,140)(La,,170)",
-      "sC": ""
-    },
-    {
-      "line": "Señor Dios, Cordero de Dios, (Do#,m,0)",
-      "sC": ""
-    },
-    {
-      "line": "Hijo del Padre. (La,,0)(Si,,50)(Mi,,100)",
-      "sC": ""
-    }
-  ],
-  "lder": [
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Tú que quitas el pecado del mundo, (La,,0)(Re,,190)(La,,220)",
-      "sC": "tc"
-    },
-    {
-      "line": "ten piedad de nosotros; ",
+      "line": "Señor Dios, Rey celestial, Dios Padre todopoderoso (Do,,0)",
       "sC": ""
     },
     {
-      "line": "tú que quitas el pecado del mundo, (Si,m,0)(Mi,,180)(La,,210)",
+      "line": "Señor, Hijo único, Jesucristo.",
       "sC": ""
     },
     {
-      "line": "atiende nuestra súplica; ",
-      "sC": ""
-    },
-    {
-      "line": "tú que estás sentado a la derecha del Padre, (Do#,m,0)",
-      "sC": ""
-    },
-    {
-      "line": "ten piedad de nosotros. (La,,0)(Si,,60)(Mi,,110)",
+      "line": "Señor Dios, Cordero de Dios, Hijo del Padre.",
       "sC": ""
     },
     {
@@ -129,27 +91,63 @@
       "sC": "adb1"
     },
     {
-      "line": "Porque sólo tú eres Santo, (La,,0)(Re,,150)(La,,180)",
+      "line": "GLORIA A DIOS EN EL CIELO,",
+      "sC": "as"
+    },
+    {
+      "line": "Y EN LA TIERRA PAZ A LOS HOMBRES QUE AMA EL SEÑOR.",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú que quitas el pecado del mundo, ten piedad de nosotros; (Do,,0)",
       "sC": ""
     },
     {
-      "line": "sólo tú Señor, ",
+      "line": "Tú que quitas el pecado del mundo, atiende nuestra súplica;",
       "sC": ""
     },
     {
-      "line": "sólo tú Altísimo, Jesucristo, (Si,m,0)(Mi,,140)(La,,170)",
+      "line": "Tú que estás sentado a la derecha del Padre, ten piedad de nosotros;",
       "sC": ""
     },
     {
-      "line": "con el Espíritu Santo (Do#,m,0)",
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "GLORIA A DIOS EN EL CIELO,",
+      "sC": "as"
+    },
+    {
+      "line": "Y EN LA TIERRA PAZ A LOS HOMBRES QUE AMA EL SEÑOR.",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque sólo tú eres Santo, sólo tú Señor, (Do,,0)",
       "sC": ""
     },
     {
-      "line": "en la gloria de Dios Padre. (La,,0)(Si,,70)(Mi,,130)",
+      "line": "Sólo tú Altísimo, Jesucristo,",
       "sC": ""
     },
     {
-      "line": "Amén. (Re,,0)(Mi,,40)(La,,70)",
+      "line": "Con el Espíritu Santo en la gloria de Dios Padre.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Amén. (Fa,,0)(Sol,,30)(Do,,60)",
       "sC": ""
     }
   ]

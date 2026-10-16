@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.50",
+  "latestVersion": "2.1.51",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.50)",
-  "updateMessage": "Nuevos cantos agregados: María de mi niñez, Cordero de Dios (Lento), Cordero de Dios (Alejandro Mejía), Cordero de Dios (Solemne) y Cordero de Dios (Trote).",
+  "updateTitle": "Nueva Versión Disponible (v2.1.51)",
+  "updateMessage": "Nuevos cantos y actualizaciones: Den al señor, Gloria (JESED), Gloria a Dios, Gloria al Padre, Gloria, gloria, aleluya, Gloria a Dios (Francisco Palazón) y Santo es el señor mi Dios.",
   "releaseNotes": [
-    "Agregados 5 nuevos cantos católicos con acordes interactivos.",
-    "Formato visual de repetición BIS mediante estilo 'bisa'.",
-    "Audios sincronizados y enlazados.",
-    "Navegación y catálogo de cantos actualizado."
+    "Agregados y actualizados 6 cantos católicos con acordes interactivos.",
+    "Soporte de repetición BIS mediante estilo visual 'bisa'.",
+    "Audios sincronizados y actualizados en alta calidad.",
+    "Navegación secuencial de cantos optimizada."
   ]
 }

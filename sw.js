@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v386'; // v2.1.50 Add Maria de mi ninez and 4 Corderos
+const CACHE_NAME = 'resucito-cache-v387'; // v2.1.51 Add Den al senor, Glorias and Santo
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

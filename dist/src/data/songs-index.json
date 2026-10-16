@@ -8054,19 +8054,20 @@
   },
   {
     "id": "gloriagloriaaleluya",
-    "title": "Gloria, Gloria Aleluya",
+    "title": "Gloria, gloria, aleluya",
     "subtitle": "Canto Joven",
     "category": [
-      "Católicos"
+      "Católicos",
+      "Gloria"
     ],
     "stage": "Católicos",
     "cejilla": "",
-    "acorde": "Mi",
+    "acorde": "Sol",
     "dbno": "105",
     "hasAudio": true,
-    "audioSrc": "https://audio.resucito.do/catolico/Gloria,%20Gloria%20Aleluya.mp3",
+    "audioSrc": "https://audio.resucito.do/catolico/gloriagloriaaleluya.mp3",
     "sourceBook": "joven",
-    "searchPool": "gloria gloria aleluya canto joven gloria gloria aleluya gloria gloria aleluya gloria gloria aleluya en nombre del senor cuando sientas que tu hermano necesita de tu amor no le cierres las entranas ni el calor del corazon busca pronto en tu recuerdo la palabra del senor mi ley es el amor gloria gloria aleluya mi 12 gloria gloria aleluya gloria gloria aleluya en nombre del senor cristo dijo que quien llore su consuelo encontrara quien es pobre quien es limpio sera libre y tendra paz rompe pronto tus cadenas eres libre de verdad empieza a caminar gloria gloria aleluya mi 12 gloria gloria aleluya gloria gloria aleluya en nombre del senor si el camino se hace largo si te cansas bajo el sol si en tus campos no ha nacido ni la mas pequena flor coge mi mano y cantemos unidos por el amor en nombre del senor gloria gloria aleluya mi 12 gloria gloria aleluya gloria gloria aleluya en nombre del senor caminemos siempre unidos en la fe y en el amor anunciemos por doquiera su mensaje salvador implantemos por el mundo la justicia y el amor en nombre del senor gloria gloria aleluya gloria gloria aleluya gloria gloria aleluya en nombre del senor"
+    "searchPool": "gloria gloria aleluya canto joven gloria gloria aleluya en nombre del senor gloria al padre que ha creado todo el mundo por amor gloria al hijo que ha venido por salvarnos del dolor gloria demos al espiritu divino del amor cantemos al senor cuando sientas que tu hermano necesita de tu amor no le cierres las entranas ni el calor del corazon busca pronto en tu recuerdo la palabra del senor mi ley es el amor cristo dijo que quien llora su consuelo encontrara quien es pobre quien es limpio sera libre y tendra paz rompe pronto tus cadenas eres libre de verdad empieza a caminar si el camino se hace largo si te cansas bajo el sol si en tus campos no ha nacido ni la mas pequena flor coge mi mano y cantemos unidos por el amor en nombre del senor"
   },
   {
     "id": "saberquevendras",
@@ -8354,20 +8355,20 @@
   },
   {
     "id": "gloriafpalazon",
-    "title": "Gloria",
-    "subtitle": "F. Palazón",
+    "title": "Gloria a Dios (Francisco Palazón)",
+    "subtitle": "Francisco Palazón",
     "category": [
       "Católicos",
       "Gloria"
     ],
     "stage": "Católicos",
     "cejilla": "",
-    "acorde": "La",
+    "acorde": "Do",
     "dbno": "117",
     "hasAudio": true,
     "audioSrc": "https://audio.resucito.do/catolico/gloriafpalazon.mp3",
     "sourceBook": "joven",
-    "searchPool": "gloria f palazon gloria a dios en el cielo y en la tierra paz a los hombres que ama el senor por tu inmensa gloria te alabamos te bendecimos te adoramos te glorificamos te damos gracias senor dios rey celestial dios padre todopoderoso senor hijo unico jesucristo senor dios cordero de dios hijo del padre tu que quitas el pecado del mundo ten piedad de nosotros tu que quitas el pecado del mundo atiende nuestra suplica tu que estas sentado a la derecha del padre ten piedad de nosotros porque solo tu eres santo solo tu senor solo tu altisimo jesucristo con el espiritu santo en la gloria de dios padre amen"
+    "searchPool": "gloria a dios francisco palazon gloria a dios en el cielo y en la tierra paz a los hombres que ama el senor por tu inmensa gloria te alabamos te bendecimos te adoramos te glorificamos te damos gracias senor dios rey celestial dios padre todopoderoso senor hijo unico jesucristo senor dios cordero de dios hijo del padre tu que quitas el pecado del mundo ten piedad de nosotros tu que quitas el pecado del mundo atiende nuestra suplica tu que estas sentado a la derecha del padre ten piedad de nosotros porque solo tu eres santo solo tu senor solo tu altisimo jesucristo con el espiritu santo en la gloria de dios padre amen"
   },
   {
     "id": "haciabelenvaunaburra",
@@ -9246,5 +9247,72 @@
     "audioSrc": "https://audio.resucito.do/catolico/corderodediostrote.mp3",
     "sourceBook": "joven",
     "searchPool": "cordero de dios trote fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad de nosotros danos la paz"
+  },
+  {
+    "id": "denalsenor",
+    "title": "Den al señor",
+    "subtitle": "Canto de Alabanza",
+    "category": [
+      "Católicos"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "170",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/denalsenor.mp3",
+    "sourceBook": "joven",
+    "searchPool": "den al senor sus alabanzas denle poder honor y gloria a una voz canten un himno al senor en siete dias dios creo al mundo adan peco y perdio el cielo jesus vino para redimirnos murio en la cruz y nos salvo dios dijo a moises haz mi pueblo libre yo sere tu guia siempre sigueme salidos ya de egipto y el mar pasado cantaron y bailaron se llenaron de jubilo jesus dijo a pedro ven te llamo el camino es duro mas ire contigo pedro respondio soy un pecador tiro sus redes y hacia el senor corrio entregate hermano al senor jesus el te ama aunque seas pecador el pago el precio de tu salvacion y ahora eres una nueva creacion"
+  },
+  {
+    "id": "gloriajesed",
+    "title": "Gloria (JESED)",
+    "subtitle": "Jésed",
+    "category": [
+      "Católicos",
+      "Gloria"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "171",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/gloriajesed.mp3",
+    "sourceBook": "joven",
+    "searchPool": "gloria jesed gloria a dios en el cielo y en la tierra a los hombres paz te alabamos te bendecimos te adoramos te glorificamos te damos gracias por tu inmensa gloria senor dios rey celestial dios padre todopoderoso senor hijo unico jesucristo senor dios cordero de dios hijo del padre tu que quitas el pecado del mundo ten piedad de nosotros tu que quitas el pecado del mundo atiende nuestras suplicas tu que estas a la derecha del padre ten piedad de nosotros porque solamente tu eres santo solo tu altisimo jesucristo con el espiritu santo en la gloria del padre amen"
+  },
+  {
+    "id": "gloriaadiosgloriaalpadre",
+    "title": "Gloria a Dios, Gloria al Padre",
+    "subtitle": "Trinitario",
+    "category": [
+      "Católicos",
+      "Gloria"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Mim",
+    "dbno": "172",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/gloriaadiosgloriaalpadre.mp3",
+    "sourceBook": "joven",
+    "searchPool": "gloria a dios gloria al padre trinitario gloria a dios gloria a dios gloria al padre a el sea la gloria aleluya amen gloria a dios gloria a dios gloria al hijo espiritu santo"
+  },
+  {
+    "id": "santoeselsenormidios",
+    "title": "Santo es el señor mi Dios",
+    "subtitle": "Santo",
+    "category": [
+      "Católicos",
+      "Santo"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Lam",
+    "dbno": "173",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/santoeselsenormidios.mp3",
+    "sourceBook": "joven",
+    "searchPool": "santo es el senor mi dios digno de alabanza a el el poder el honor y la gloria hosanna hosanna hosanna oh senor bendito el que viene en el nombre del senor con todos los santos cantamos para ti"
   }
 ]
