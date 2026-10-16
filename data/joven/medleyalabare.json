@@ -33,46 +33,45 @@
   "sig": "/src/index.html?canto=panyvino",
   "sourceBook": "joven",
   "lizq": [
-    {
-      "line": "ALABARE, ALABARE, ALABARE, ALABARE, ALABARE A MI SEÑOR. (3) (Mi,,0)(Do#,m,140)(La,,200)(Si,7,240)(Mi,,270)",
-      "sC": "ta as"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Juan vio el número de los redimidos y todos alababan al señor, (Mi,,0)(Si,7,270)",
-      "sC": "tc"
-    },
-    {
-      "line": "unos cantaban, otros oraban, y todos alababan al señor. (Mi,,0)(Mi,,250)",
-      "sC": ""
-    },
+    {"line": "EN DESARROLLO","sC": "", "color": "red"},
+
+
+
+    {"line": "ALABARE, ALABARE, ALABARE, ALABARE, (Mi,,0)","sC": "ta as"},
+    {"line": "ALABARE A MI SEÑOR. (Do#,m,0)(La,,130)(Si,7,175)(Mi,,240)","sC": "as bisa"},
+
     {
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "ALABARE, ALABARE, ALABARE, ALABARE, ALABARE A MI SEÑOR. (Mi,,0)(Do#,m,140)(La,,200)(Si,7,240)(Mi,,270)",
-      "sC": "ta as bisa"
-    },
+
+    {"line": "Juan vio el número de los redimidos, (Mi,,0)(Si,7,270)","sC": "tc"},
+    {"line": "y todos alababan al Señor, (Mi,,0)(Si,7,270)","sC": ""},
+
+    {"line": "unos cantaban, otros oraban, (Mi,,0)(Mi,,250)","sC": ""},
+    {"line": "y todos alababan al Señor. (Mi,,0)(Mi,,250)","sC": ""},
+
     {
       "line": "",
       "sC": "adb1"
     },
+
+    {"line": "ALABARE, ALABARE, ALABARE, ALABARE, (Mi,,0)","sC": "ta as"},
+    {"line": "ALABARE A MI SEÑOR. (Do#,m,0)(La,,130)(Si,7,175)(Mi,,240)","sC": "as bisa"},
+    
     {
-      "line": "Vienen con alegría señor, cantando vienen con alegría señor. (Mi,,0)",
-      "sC": "tc"
+      "line": "",
+      "sC": "adb1"
     },
-    {
-      "line": "Los que caminan por la vida señor, sembrando tu paz y amor. (La,,0)(Si,7,170)(Mi,,230)(Do#,m,260)(Fa#,,280)(Si,7,300)",
-      "sC": ""
-    },
-    {
-      "line": "Los que caminan por la vida señor, sembrando tu paz y amor. (La,,0)(Si,7,170)(Mi,,230)(Do#,m,260)(La,,280)(Si,7,300)(Mi,,320)",
-      "sC": ""
-    }
+    {"line": "Vienen con alegría Señor, (Mi,,0)","sC": "tc"},
+    {"line": "cantando vienen con alegría Señor. (Mi,,0)","sC": ""},
+
+    {"line": "Los que caminan por la vida Señor, (La,,0)(Si,7,170)(Mi,,230)(Do#,m,260)(Fa#,,280)","sC": ""},
+    {"line": "sembrando tu paz y amor. (La,,0)(Si,7,170)","sC": ""},
+
+
+    {"line": "Los que caminan por la vida Señor, (La,,0)(Si,7,170)(Mi,,230)(Do#,m,260)(Fa#,,280)","sC": ""},
+    {"line": "sembrando tu paz y amor. (La,,0)(Si,7,170)","sC": ""}
   ],
   "lder": [
     {
@@ -92,17 +91,18 @@
       "sC": ""
     },
     {
-      "line": "Vienen con alegría señor...",
+      "line": "Vienen con alegría Señor...",
       "sC": ""
     },
     {
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "ALABARE, ALABARE, ALABARE, ALABARE, ALABARE A MI SEÑOR. (Mi,,0)(Do#,m,140)(La,,200)(Si,7,240)(Mi,,270)",
-      "sC": "ta as bisa"
-    },
+
+    {"line": "ALABARE, ALABARE, ALABARE, ALABARE, (Mi,,0)","sC": "ta as"},
+    {"line": "ALABARE A MI SEÑOR. (Do#,m,0)(La,,130)(Si,7,175)(Mi,,240)","sC": "as bisa"},
+
+
     {
       "line": "",
       "sC": "adb1"
@@ -112,16 +112,14 @@
       "sC": "tc"
     },
     {
-      "line": "vamos caminando al encuentro del señor. (Mi,,0)(Mi,7,80)(La,,140)(La,m,180)(Mi,,210)(Si,7,240)(Mi,,270)",
+      "line": "vamos caminando al encuentro del Señor. (Mi,,0)(Mi,7,80)(La,,140)(La,m,180)(Mi,,210)(Si,7,240)(Mi,,270)",
       "sC": "bisa"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "adb10"
     },
-    {
-      "line": "ALABARE, ALABARE, ALABARE, ALABARE, ALABARE A MI SEÑOR. (3) (Mi,,0)(Do#,m,140)(La,,200)(Si,7,240)(Mi,,270)",
-      "sC": "ta as"
-    }
+    {"line": "ALABARE, ALABARE, ALABARE, ALABARE, (Mi,,0)","sC": "ta as"},
+    {"line": "ALABARE A MI SEÑOR. (Do#,m,0)(La,,130)(Si,7,175)(Mi,,240)","sC": "as bisa"}
   ]
 }

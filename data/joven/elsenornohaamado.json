@@ -15,7 +15,7 @@
   "dbno": "156",
   "notes": "",
   "mant": "Si",
-  "audioSrc": "https://audio.resucito.do/catolico/El Señor nos ha amado.mp3",
+  "audioSrc": "https://audio.resucito.do/catolico/El%20Se%C3%B1or%20nos%20ha%20amado.mp3",
   "scrollConfig": {
     "mobile": {
       "velocidad": 6,
@@ -54,18 +54,11 @@
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
-      "sC": "ta as"
-    },
-    {
-      "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
-      "sC": "as"
-    },
-    {
-      "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
-      "sC": "as"
-    },
+    {"line": "ES MI CUERPO QUE DOY A COMER, (Mi,,0)(La,,250)","sC": "ta as"},
+    {"line": "ES MI SANGRE QUE DOY A BEBER, (Mi,,60)","sC": "ta as"},
+    {"line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)","sC": "as"},
+    {"line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)","sC": "as"},
+
     {
       "line": "",
       "sC": "adb1"
@@ -94,17 +87,13 @@
       "type": "collapsible-block",
       "id": "asamblea_elsenornohaamado_1",
       "initialState": "collapsed",
-      "triggerLine": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
+      "triggerLine": "ES MI CUERPO QUE DOY A COMER, (Mi,,0)(La,,250)",
       "sC": "ta as",
       "lines": [
-        {
-          "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
-          "sC": "as"
-        },
-        {
-          "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
-          "sC": "as"
-        }
+    {"line": "ES MI SANGRE QUE DOY A BEBER, (Mi,,60)","sC": "ta as"},
+    {"line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)","sC": "as"},
+    {"line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)","sC": "as"}
+
       ]
     }
   ],
@@ -131,19 +120,15 @@
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_elsenornohaamado_2",
+      "id": "asamblea_elsenornohaamado_1",
       "initialState": "collapsed",
-      "triggerLine": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
+      "triggerLine": "ES MI CUERPO QUE DOY A COMER, (Mi,,0)(La,,250)",
       "sC": "ta as",
       "lines": [
-        {
-          "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
-          "sC": "as"
-        },
-        {
-          "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
-          "sC": "as"
-        }
+    {"line": "ES MI SANGRE QUE DOY A BEBER, (Mi,,60)","sC": "ta as"},
+    {"line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)","sC": "as"},
+    {"line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)","sC": "as"}
+
       ]
     },
     {
@@ -172,19 +157,15 @@
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_elsenornohaamado_3",
+      "id": "asamblea_elsenornohaamado_1",
       "initialState": "collapsed",
-      "triggerLine": "ES MI CUERPO QUE DOY A COMER, ES MI SANGRE QUE DOY A BEBER, (Mi,,0)(La,,250)(Mi,,360)",
+      "triggerLine": "ES MI CUERPO QUE DOY A COMER, (Mi,,0)(La,,250)",
       "sC": "ta as",
       "lines": [
-        {
-          "line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)",
-          "sC": "as"
-        },
-        {
-          "line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)",
-          "sC": "as"
-        }
+    {"line": "ES MI SANGRE QUE DOY A BEBER, (Mi,,60)","sC": "ta as"},
+    {"line": "PORQUE SOY LA VIDA Y SOY EL AMOR (Mi,,0)(Do#,m,80)(Fa#,,150)(Si,,220)","sC": "as"},
+    {"line": "OH SEÑOR CONDÚCENOS EN TU AMOR. (Mi,,0)(Si,,100)(Mi,,170)(La,,200)(Mi,,230)","sC": "as"}
+
       ]
     }
   ]
