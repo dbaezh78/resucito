@@ -1,7 +1,7 @@
 {
   "id": "elsenornohaamado",
-  "tt": "El señor nos ha amado",
-  "title": "El señor nos ha amado",
+  "tt": "El Señor nos ha amado",
+  "title": "El Señor nos ha amado",
   "subtitle": "Comunión",
   "category": [
     "Católicos",
@@ -15,7 +15,7 @@
   "dbno": "156",
   "notes": "",
   "mant": "Si",
-  "audioSrc": "https://audio.resucito.do/catolico/El%20Se%C3%B1or%20nos%20ha%20amado.mp3",
+  "audioSrc": "https://audio.resucito.do/catolico/El Señor nos ha amado.mp3",
   "scrollConfig": {
     "mobile": {
       "velocidad": 6,
@@ -35,7 +35,7 @@
   "sourceBook": "joven",
   "lizq": [
     {
-      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "line": "El Señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
       "sC": "tc"
     },
     {
@@ -71,7 +71,7 @@
       "sC": "adb1"
     },
     {
-      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "line": "El Señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
       "sC": "tc"
     },
     {
@@ -110,7 +110,7 @@
   ],
   "lder": [
     {
-      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "line": "El Señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
       "sC": "tc"
     },
     {
@@ -151,7 +151,7 @@
       "sC": "adb1"
     },
     {
-      "line": "El señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
+      "line": "El Señor nos ha amado, como nunca nadie amó (Mi,,0)(La,,180)(Mi,,280)",
       "sC": ""
     },
     {
