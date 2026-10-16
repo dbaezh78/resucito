@@ -1,0 +1,72 @@
+{
+  "id": "corderodediosjoven",
+  "tt": "Cordero de Dios (Joven)",
+  "title": "Cordero de Dios (Joven)",
+  "subtitle": "Fracción del pan",
+  "category": [
+    "Católicos",
+    "Fracción del pan",
+    "Cordero de Dios"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "175",
+  "notes": "",
+  "mant": "Si",
+  "hasAudio": true,
+  "audioSrc": "https://audio.resucito.do/catolico/corderodediosjoven.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=corderodedios2",
+  "sig": "/src/index.html?canto=venalafiesta",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Cordero de Dios, que quitas el pecado del mundo, (Re,,0)(Si,m,110)(Sol,,160)(La,,200)(Re,,290)(Si,m,400)",
+      "sC": "tc"
+    },
+    {
+      "line": "Ten piedad de nosotros, ten piedad de nosotros. (Sol,,0)(La,,50)(Re,,140)(Si,m,165)(Sol,,210)(La,,260)(Re,,340)(Si,m,365)(Sol,,410)(La,,440)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios, que quitas el pecado del mundo, (Re,,0)(Si,m,110)(Sol,,160)(La,,200)(Re,,290)(Si,m,400)",
+      "sC": ""
+    },
+    {
+      "line": "Ten piedad de nosotros, ten piedad de nosotros. (Sol,,0)(La,,50)(Re,,140)(Si,m,165)(Sol,,210)(La,,260)(Re,,340)(Si,m,365)(Sol,,410)(La,,440)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cordero de Dios, que quitas el pecado del mundo, (Re,,0)(Si,m,110)(Sol,,160)(La,,200)(Re,,290)(Si,m,400)",
+      "sC": ""
+    },
+    {
+      "line": "Ven y danos la paz, ven y danos la paz. (Sol,,0)(La,,50)(Re,,140)(Si,m,165)(Sol,,210)(La,,260)(Re,,340)(Si,m,365)(Sol,,410)(La,,440)",
+      "sC": ""
+    }
+  ]
+}

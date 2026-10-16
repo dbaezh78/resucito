@@ -16,7 +16,7 @@
   "dbno": "168",
   "notes": "",
   "mant": "Si",
-  "audioSrc": "",
+  "audioSrc": "https://audio.resucito.do/catolico/corderodediossolemne.mp3",
   "scrollConfig": {
     "mobile": {
       "velocidad": 6,
@@ -40,7 +40,7 @@
       "sC": "tc"
     },
     {
-      "line": "Ten piedad, (ten piedad), ten piedad de nosotros. (Si,,0)(Mi,,280)",
+      "line": "Ten piedad, [ten piedad], ten piedad de nosotros. (Si,,0)(Mi,,280)",
       "sC": "bisa"
     },
     {
@@ -52,8 +52,9 @@
       "sC": ""
     },
     {
-      "line": "Danos, (danos), danos la paz. (Si,,0)(Mi,,180)",
+      "line": "Danos, [danos], danos la paz. (Si,,0)(Mi,,180)",
       "sC": ""
     }
-  ]
+  ],
+  "hasAudio": true
 }

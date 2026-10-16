@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.51",
+  "latestVersion": "2.1.52",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.51)",
-  "updateMessage": "Nuevos cantos y actualizaciones: Den al señor, Gloria (JESED), Gloria a Dios, Gloria al Padre, Gloria, gloria, aleluya, Gloria a Dios (Francisco Palazón) y Santo es el señor mi Dios.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.52)",
+  "updateMessage": "Nuevos cantos agregados: Cordero de Dios y Cordero de Dios (Joven), y actualización de audio en Cordero de Dios (Solemne).",
   "releaseNotes": [
-    "Agregados y actualizados 6 cantos católicos con acordes interactivos.",
+    "Agregados cantos Cordero de Dios y Cordero de Dios (Joven) con acordes interactivos.",
     "Soporte de repetición BIS mediante estilo visual 'bisa'.",
-    "Audios sincronizados y actualizados en alta calidad.",
+    "Audios sincronizados y enlazados.",
     "Navegación secuencial de cantos optimizada."
   ]
 }

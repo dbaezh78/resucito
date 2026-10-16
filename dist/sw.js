@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v387'; // v2.1.51 Add Den al senor, Glorias and Santo
+const CACHE_NAME = 'resucito-cache-v388'; // v2.1.52 Add 2 new Corderos and update Solemne audio
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

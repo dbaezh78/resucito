@@ -9225,8 +9225,8 @@
     "cejilla": "",
     "acorde": "Mi",
     "dbno": "168",
-    "hasAudio": false,
-    "audioSrc": "",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/corderodediossolemne.mp3",
     "sourceBook": "joven",
     "searchPool": "cordero de dios solemne fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad ten piedad ten piedad de nosotros danos danos danos la paz"
   },
@@ -9314,5 +9314,41 @@
     "audioSrc": "https://audio.resucito.do/catolico/santoeselsenormidios.mp3",
     "sourceBook": "joven",
     "searchPool": "santo es el senor mi dios digno de alabanza a el el poder el honor y la gloria hosanna hosanna hosanna oh senor bendito el que viene en el nombre del senor con todos los santos cantamos para ti"
+  },
+  {
+    "id": "corderodedios2",
+    "title": "Cordero de Dios",
+    "subtitle": "Fracción del pan",
+    "category": [
+      "Católicos",
+      "Fracción del pan",
+      "Cordero de Dios"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "La",
+    "dbno": "174",
+    "hasAudio": false,
+    "audioSrc": "",
+    "sourceBook": "joven",
+    "searchPool": "cordero de dios fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad ten piedad de nosotros danos la paz"
+  },
+  {
+    "id": "corderodediosjoven",
+    "title": "Cordero de Dios (Joven)",
+    "subtitle": "Fracción del pan",
+    "category": [
+      "Católicos",
+      "Fracción del pan",
+      "Cordero de Dios"
+    ],
+    "stage": "Católicos",
+    "cejilla": "",
+    "acorde": "Re",
+    "dbno": "175",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/catolico/corderodediosjoven.mp3",
+    "sourceBook": "joven",
+    "searchPool": "cordero de dios joven fraccion del pan cordero de dios que quitas el pecado del mundo ten piedad de nosotros ven y danos la paz"
   }
 ]

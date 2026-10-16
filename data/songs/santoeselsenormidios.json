@@ -1,7 +1,7 @@
 {
   "id": "santoeselsenormidios",
-  "tt": "Santo es el señor mi Dios",
-  "title": "Santo es el señor mi Dios",
+  "tt": "Santo es el Señor mi Dios",
+  "title": "Santo es el Señor mi Dios",
   "subtitle": "Santo",
   "category": [
     "Católicos",
@@ -31,11 +31,11 @@
     }
   },
   "ant": "/src/index.html?canto=gloriafpalazon",
-  "sig": "/src/index.html?canto=venalafiesta",
+  "sig": "/src/index.html?canto=corderodedios2",
   "sourceBook": "joven",
   "lizq": [
     {
-      "line": "Santo es el señor mi Dios, digno de alabanza (La,m,0)(Sol,,110)(Fa,,220)(Mi,,310)",
+      "line": "Santo es el Señor mi Dios, digno de alabanza (La,m,0)(Sol,,110)(Fa,,220)(Mi,,310)",
       "sC": "tc"
     },
     {
@@ -55,7 +55,7 @@
       "sC": "adb1"
     },
     {
-      "line": "Bendito el que viene en el nombre del señor (La,m,0)(Sol,,120)(Fa,,210)(Mi,,320)",
+      "line": "Bendito el que viene en el nombre del Señor (La,m,0)(Sol,,120)(Fa,,210)(Mi,,320)",
       "sC": ""
     },
     {
