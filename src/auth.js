@@ -3,6 +3,7 @@
 import { 
   auth, 
   googleProvider, 
+  browserPopupRedirectResolver,
   signInWithPopup, 
   signOut, 
   onAuthStateChanged as onFirebaseAuthStateChanged 
@@ -270,7 +271,9 @@ function notifyListeners() {
 export async function loginConGoogle() {
   try {
     explicitLogoutInProgress = false;
-    const result = await signInWithPopup(auth, googleProvider);
+    const result = browserPopupRedirectResolver
+      ? await signInWithPopup(auth, googleProvider, browserPopupRedirectResolver)
+      : await signInWithPopup(auth, googleProvider);
     if (result && result.user) {
       currentUser = result.user;
       saveCachedAuthUser(result.user);

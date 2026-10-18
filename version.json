@@ -1,10 +1,10 @@
 {
-  "latestVersion": "2.1.59",
+  "latestVersion": "2.1.60",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.59)",
-  "updateMessage": "Persistencia total de la sesión de usuario al recargar un canto desde cero, limpiar caché o actualizar la aplicación.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.60)",
+  "updateMessage": "Corrección de inicio de sesión con Google (browserPopupRedirectResolver) y persistencia de sesión.",
   "releaseNotes": [
-    "La sesión del usuario iniciado ahora se conserva permanentemente (localStorage, sessionStorage, cookie e IndexedDB) al pulsar 'Cargar Canto desde Cero', 'Limpiar Caché' o 'Actualizar App', sin cerrar sesión nunca salvo que el usuario pulse 'Cerrar Sesión'.",
-    "Lectura directa de archivos individuales (ej. seua_73.json) y sincronización automática de estrofas con 'lizq'."
+    "Solucionado el error auth/argument-error al iniciar sesión con Google incluyendo browserPopupRedirectResolver en getAuth y signInWithPopup.",
+    "La sesión del usuario iniciado se conserva permanentemente al pulsar 'Cargar Canto desde Cero', 'Limpiar Caché' o 'Actualizar App'."
   ]
 }
