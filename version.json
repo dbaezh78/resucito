@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.53",
+  "latestVersion": "2.1.54",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.53)",
-  "updateMessage": "Corrección en la visualización de acordes al contraer o expandir los bloques de la asamblea con el botón de vista.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.54)",
+  "updateMessage": "Nueva página Reproductor (play.html) para crear listas de reproducción personalizadas con cantos del Camino y Cantos Joven.",
   "releaseNotes": [
-    "Corregido error donde el acorde se mezclaba con el texto al usar el botón del ojo (Alternar Asamblea).",
-    "Sincronización entre el botón general de asamblea y el colapso individual de cada bloque.",
-    "Agregados cantos Cordero de Dios y Cordero de Dios (Joven) con acordes interactivos."
+    "Nueva página Reproductor (play.html): crea, edita y organiza listas de reproducción personalizadas.",
+    "Catálogo integrado con todos los Cantos del Camino y Cantos Joven, filtros por etapa y buscador instantáneo.",
+    "Controles completos de reproducción (aleatorio, repetir lista/canto, velocidad 0.85x–1.25x, sincronización en la nube) y protección permanente del colapso de asamblea."
   ]
 }

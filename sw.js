@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v389'; // v2.1.53 Fix chord rendering on asamblea toggle
+const CACHE_NAME = 'resucito-cache-v390'; // v2.1.54 Add Reproductor page (play.html) and protect collapsible block fix
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
@@ -6,6 +6,7 @@ const STATIC_ASSETS = [
   'index.html',
   'perfil.html',
   'preparar.html',
+  'play.html',
   'parroquia.html',
   'datosparroquia.html',
   'expancion.html',
@@ -23,6 +24,8 @@ const STATIC_ASSETS = [
   'src/navegador.js',
   'src/css/chat.css',
   'src/js/chat.js',
+  'src/css/play.css',
+  'src/js/play.js',
   'src/css/parroquia.css',
   'src/js/parroquia.js',
   'src/css/datosparroquia.css',

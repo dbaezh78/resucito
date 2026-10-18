@@ -2066,6 +2066,10 @@ function renderSection(container, lines, side) {
         }
       }
       
+      // IMPORTANTE (NO MODIFICAR NI DAÑAR):
+      // NUNCA sobrescribir triggerLetra.textContent al expandir/contraer porque .letra contiene
+      // los spans posicionados de los acordes (.chord-anchor-wrapper / .nota-posicionada).
+      // Siempre manipular únicamente el nodo hijo .collapsible-dots-indicator.
       const setExpandedState = (expand) => {
         if (expand) {
           contentDiv.style.display = 'block';
@@ -6334,6 +6338,9 @@ function setupEventListeners() {
         iconSpan.textContent = allAsambleaExpanded ? 'visibility' : 'visibility_off';
       }
 
+      // IMPORTANTE (NO MODIFICAR NI DAÑAR):
+      // NUNCA asignar letraSpan.textContent directamente porque destruye el HTML de los acordes
+      // (.chord-anchor-wrapper / .nota-posicionada) haciendo que el acorde aparezca dentro del texto.
       document.querySelectorAll('.collapsible-block-container').forEach(container => {
         if (typeof container.__setExpandedState === 'function') {
           container.__setExpandedState(allAsambleaExpanded);
