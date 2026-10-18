@@ -1,10 +1,10 @@
 {
-  "latestVersion": "2.1.60",
+  "latestVersion": "2.1.61",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.60)",
-  "updateMessage": "Corrección de inicio de sesión con Google (browserPopupRedirectResolver) y persistencia de sesión.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.61)",
+  "updateMessage": "Persistencia total del canto recargado al usar F5 o Ctrl+R sin ser sobrescrito por el paquete en caché.",
   "releaseNotes": [
-    "Solucionado el error auth/argument-error al iniciar sesión con Google incluyendo browserPopupRedirectResolver en getAuth y signInWithPopup.",
-    "La sesión del usuario iniciado se conserva permanentemente al pulsar 'Cargar Canto desde Cero', 'Limpiar Caché' o 'Actualizar App'."
+    "Evitado que cargarSalmosEucaristia() sobrescriba en memoria los salmos individuales con datos viejos de paquetes al pulsar F5 o Ctrl+R.",
+    "El canto recargado con 'Cargar Canto desde Cero' ahora se persiste en localStorage y en todas las variantes de URL de resucito-cantos-cache para conservar los cambios tras recargar la página."
   ]
 }

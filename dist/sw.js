@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v396'; // v2.1.60 Fix Google signInWithPopup auth/argument-error with browserPopupRedirectResolver
+const CACHE_NAME = 'resucito-cache-v397'; // v2.1.61 Persist reloaded song across F5/Ctrl+R without bulk cache overwrite
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
@@ -136,10 +136,10 @@ self.addEventListener('fetch', event => {
       (async () => {
         const songsCache = await caches.open(SONGS_CACHE_NAME);
         const forceNoCache = url.search.includes('nocache=');
+        const cleanUrl = url.origin + url.pathname;
 
         if (forceNoCache) {
           try {
-            const cleanUrl = url.origin + url.pathname;
             await songsCache.delete(event.request);
             await songsCache.delete(cleanUrl);
             await songsCache.delete(`${cleanUrl}?offline=true`);
@@ -147,6 +147,8 @@ self.addEventListener('fetch', event => {
             const networkResponse = await fetch(event.request, { cache: 'no-store' });
             if (networkResponse && networkResponse.status === 200) {
               await songsCache.put(cleanUrl, networkResponse.clone());
+              await songsCache.put(`${cleanUrl}?offline=false`, networkResponse.clone());
+              await songsCache.put(`${cleanUrl}?offline=true`, networkResponse.clone());
             }
             return networkResponse;
           } catch (err) {
@@ -157,20 +159,24 @@ self.addEventListener('fetch', event => {
         // Buscar coincidencia exacta o normalizada
         let cachedResponse = await songsCache.match(event.request);
         if (!cachedResponse) {
-          const cleanUrl = url.origin + url.pathname;
           cachedResponse = await songsCache.match(cleanUrl);
         }
-        if (!cachedResponse && !url.search.includes('offline=true')) {
-          cachedResponse = await songsCache.match(`${url.origin}${url.pathname}?offline=true`);
+        if (!cachedResponse) {
+          cachedResponse = await songsCache.match(`${cleanUrl}?offline=false`);
+        }
+        if (!cachedResponse) {
+          cachedResponse = await songsCache.match(`${cleanUrl}?offline=true`);
         }
 
         // Si ya está en la caché de cantos, servirlo inmediatamente
         if (cachedResponse) {
-          // Si hay conexión a internet y no se fuerza sólo offline, refrescar en background de forma silenciosa
+          // Si hay conexión a internet, refrescar en background evitando la caché HTTP del navegador
           if (navigator.onLine) {
-            fetch(event.request).then(networkResponse => {
+            fetch(cleanUrl, { cache: 'no-cache' }).then(async networkResponse => {
               if (networkResponse && networkResponse.status === 200) {
-                songsCache.put(event.request, networkResponse);
+                await songsCache.put(cleanUrl, networkResponse.clone());
+                await songsCache.put(`${cleanUrl}?offline=false`, networkResponse.clone());
+                await songsCache.put(`${cleanUrl}?offline=true`, networkResponse.clone());
               }
             }).catch(() => {});
           }
@@ -179,10 +185,11 @@ self.addEventListener('fetch', event => {
 
         // Si no está en la caché de cantos, ir a la red y guardarlo AUTOMÁTICAMENTE para siempre
         try {
-          const networkResponse = await fetch(event.request);
+          const networkResponse = await fetch(event.request, { cache: 'no-cache' });
           if (networkResponse && networkResponse.status === 200) {
-            const responseToCache = networkResponse.clone();
-            songsCache.put(event.request, responseToCache);
+            await songsCache.put(cleanUrl, networkResponse.clone());
+            await songsCache.put(`${cleanUrl}?offline=false`, networkResponse.clone());
+            await songsCache.put(`${cleanUrl}?offline=true`, networkResponse.clone());
           }
           return networkResponse;
         } catch (netErr) {
