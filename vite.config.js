@@ -30,7 +30,8 @@ export default defineConfig({
         parroquia: path.resolve(__dirname, 'parroquia.html'),
         datosparroquia: path.resolve(__dirname, 'datosparroquia.html'),
         seucaristico: path.resolve(__dirname, 'seucaristico.html'),
-        play: path.resolve(__dirname, 'play.html')
+        play: path.resolve(__dirname, 'play.html'),
+        cliturgico: path.resolve(__dirname, 'cliturgico.html')
       }
     }
   },

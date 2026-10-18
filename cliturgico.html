@@ -1,270 +1,568 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Calendario y Esquema Litúrgico - Aclamaciones</title>
-  <link rel="icon" href="img/ico.ico" type="image/x-icon">
-  <link rel="stylesheet" href="src/style.css?v=137">
-  <link rel="stylesheet" href="src/navegador.css?v=141">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Resucitó - Formulario del Tiempo Litúrgico Anual</title>
+  <link rel="icon" type="image/png" href="/ logoresucito.png" />
+
+  <!-- Fuentes y Estilos Globales -->
+  <link rel="stylesheet" href="src/fonts/fonts.css">
+  <link rel="stylesheet" href="src/style.css?v=119">
+  <link rel="stylesheet" href="src/navegador.css?v=119">
+  <script type="module" src="src/navegador.js?v=143"></script>
+
   <style>
     body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color, #f8fafc);
+      color: var(--text-color, #1e293b);
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      background: var(--bg-color, #f8fafc);
-      color: var(--text-color, #1e293b);
     }
+
     .liturgia-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 24px 16px 80px 16px;
+      max-width: 1280px;
+      margin: 82px auto 50px auto;
+      padding: 0 18px;
     }
+
     .liturgia-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 2px solid var(--panel-border, #e2e8f0);
-      padding-bottom: 16px;
-      margin-bottom: 24px;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--panel-border, #e2e8f0);
     }
+
     .liturgia-title {
       display: flex;
       align-items: center;
       gap: 12px;
     }
+
     .liturgia-title h1 {
-      margin: 0;
-      font-size: 1.6rem;
+      font-family: 'Neuland', 'Montserrat', sans-serif;
+      font-size: 1.75rem;
       color: var(--accent-color, #d01212);
-      font-weight: 800;
+      margin: 0;
+      letter-spacing: 0.5px;
     }
-    .btn-back {
+
+    .liturgia-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted, #64748b);
+      margin: 2px 0 0 0;
+      font-weight: 500;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-action {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 16px;
-      background: var(--accent-color, #d01212);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      transition: opacity 0.2s;
-    }
-    .btn-back:hover {
-      opacity: 0.9;
-    }
-    .season-card {
+      padding: 9px 15px;
       background: var(--panel-bg, #ffffff);
-      border: 1px solid var(--panel-border, #e2e8f0);
-      border-radius: 14px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      color: var(--text-color, #1e293b);
+      border: 1.5px solid var(--panel-border, #cbd5e1);
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
     }
-    .season-header {
+
+    .btn-action:hover {
+      border-color: var(--accent-color, #d01212);
+      color: var(--accent-color, #d01212);
+      transform: translateY(-1px);
+    }
+
+    .btn-action.primary {
+      background: var(--accent-color, #d01212);
+      color: #ffffff;
+      border-color: var(--accent-color, #d01212);
+      box-shadow: 0 3px 10px rgba(208, 18, 18, 0.25);
+    }
+
+    .btn-action.primary:hover {
+      background: #b91c1c;
+      color: #ffffff;
+    }
+
+    /* Tarjeta de Hoy y Semana Actual */
+    .today-hero-card {
+      background: linear-gradient(135deg, rgba(254, 249, 195, 0.65) 0%, var(--panel-bg, #ffffff) 65%);
+      border: 2px solid #eab308;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(234, 179, 8, 0.14);
+    }
+
+    .today-hero-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .today-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #eab308, #ca8a04);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .today-main-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin: 0 0 4px 0;
+      color: var(--text-color, #0f172a);
+    }
+
+    .today-meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 11px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: rgba(0, 0, 0, 0.05);
+      color: var(--text-color, #334155);
+    }
+
+    .meta-pill.ciclo-dom { background: #e0f2fe; color: #0369a1; }
+    .meta-pill.ciclo-feria { background: #f3e8ff; color: #7e22ce; }
+    .meta-pill.tiempo-pill { background: #dcfce7; color: #15803d; }
+
+    .today-links-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .today-song-card {
+      background: var(--panel-bg, #ffffff);
+      border: 1.5px solid var(--panel-border, #e2e8f0);
+      border-radius: 12px;
+      padding: 10px 14px;
+      min-width: 240px;
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1.5px solid var(--panel-border, #e2e8f0);
-      padding-bottom: 10px;
-      margin-bottom: 14px;
-    }
-    .season-title {
-      margin: 0;
-      font-size: 1.25rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .season-badge {
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 20px;
-      color: #fff;
-    }
-    .badge-adviento { background: #6b21a8; }
-    .badge-navidad { background: #eab308; color: #000; }
-    .badge-cuaresma { background: #7e22ce; }
-    .badge-pascua { background: #ea580c; }
-    .badge-ordinario { background: #16a34a; }
-    .badge-fiestas { background: #dc2626; }
-
-    .weeks-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 10px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
     }
-    .week-item {
-      padding: 10px 14px;
-      background: var(--input-bg, #f8fafc);
-      border: 1px solid var(--panel-border, #e2e8f0);
-      border-radius: 8px;
+
+    .today-song-card:hover {
+      border-color: #eab308;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .today-song-card small {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #b45309;
+      margin-bottom: 2px;
+    }
+
+    .today-song-card strong {
+      font-size: 0.9rem;
+      color: var(--text-color, #1e293b);
+      display: block;
+    }
+
+    /* Tira de los 7 días de la semana actual */
+    .week-days-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 10px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(202, 138, 4, 0.35);
+    }
+
+    .day-strip-item {
+      background: var(--panel-bg, #ffffff);
+      border: 1.5px solid var(--panel-border, #e2e8f0);
+      border-radius: 10px;
+      padding: 10px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.18s ease;
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
-    .week-name {
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: var(--text-color, #0f172a);
+
+    .day-strip-item:hover {
+      border-color: var(--accent-color, #d01212);
+      transform: translateY(-1px);
     }
-    .week-cycles {
+
+    .day-strip-item.is-today {
+      border: 2px solid #eab308;
+      background: linear-gradient(180deg, rgba(254, 240, 138, 0.35), var(--panel-bg, #ffffff));
+      box-shadow: 0 3px 10px rgba(234, 179, 8, 0.18);
+    }
+
+    .day-strip-header {
       display: flex;
-      gap: 6px;
-      font-size: 0.75rem;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--text-muted, #64748b);
     }
-    .cycle-tag {
-      padding: 2px 6px;
-      border-radius: 4px;
-      background: #e2e8f0;
+
+    .day-strip-item.is-today .day-strip-header {
+      color: #a16207;
+    }
+
+    .day-strip-title {
+      font-size: 0.8rem;
       font-weight: 700;
-      color: #334155;
+      color: var(--text-color, #1e293b);
+      line-height: 1.25;
     }
-    .cycle-a { background: #dbeafe; color: #1d4ed8; }
-    .cycle-b { background: #dcfce7; color: #15803d; }
-    .cycle-c { background: #fef3c7; color: #b45309; }
+
+    .day-strip-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted, #64748b);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Barra de herramientas del Formulario Anual */
+    .form-toolbar {
+      background: var(--panel-bg, #ffffff);
+      border: 1px solid var(--panel-border, #e2e8f0);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .toolbar-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .form-control-inline {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .form-control-inline label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted, #64748b);
+    }
+
+    .lit-input, .lit-select {
+      padding: 8px 11px;
+      border-radius: 8px;
+      border: 1.5px solid var(--panel-border, #cbd5e1);
+      background: var(--input-bg, #ffffff);
+      color: var(--text-color, #1e293b);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-sizing: border-box;
+    }
+
+    .lit-input:focus, .lit-select:focus {
+      outline: none;
+      border-color: var(--accent-color, #d01212);
+    }
+
+    /* Tabla Editable del Año Completo */
+    .table-card {
+      background: var(--panel-bg, #ffffff);
+      border: 1px solid var(--panel-border, #e2e8f0);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    }
+
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .liturgia-form-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 980px;
+      font-size: 0.84rem;
+    }
+
+    .liturgia-form-table th {
+      background: rgba(0, 0, 0, 0.03);
+      color: var(--text-color, #334155);
+      font-weight: 800;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      padding: 12px 10px;
+      text-align: left;
+      border-bottom: 2px solid var(--panel-border, #e2e8f0);
+    }
+
+    .liturgia-form-table td {
+      padding: 8px 8px;
+      border-bottom: 1px solid var(--panel-border, #f1f5f9);
+      vertical-align: middle;
+    }
+
+    .liturgia-form-table tr:hover td {
+      background: rgba(0, 0, 0, 0.015);
+    }
+
+    .liturgia-form-table tr.row-current-week td {
+      background: rgba(254, 240, 138, 0.35);
+      border-top: 2px solid #eab308;
+      border-bottom: 2px solid #eab308;
+    }
+
+    .liturgia-form-table td input,
+    .liturgia-form-table td select {
+      width: 100%;
+      padding: 6px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--panel-border, #cbd5e1);
+      background: var(--input-bg, #ffffff);
+      color: var(--text-color, #1e293b);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      box-sizing: border-box;
+    }
+
+    .row-actions {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    .btn-row-icon {
+      border: 1px solid var(--panel-border, #cbd5e1);
+      background: var(--panel-bg, #ffffff);
+      color: var(--text-color, #334155);
+      border-radius: 6px;
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-row-icon:hover {
+      border-color: var(--accent-color, #d01212);
+      color: var(--accent-color, #d01212);
+    }
+
+    .status-banner {
+      display: none;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.86rem;
+      margin-bottom: 16px;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .liturgia-title h1 {
+        font-size: 1.35rem;
+      }
+      .today-hero-card {
+        padding: 14px;
+      }
+    }
   </style>
 </head>
-<body class="theme-light">
+<body>
+
   <div class="liturgia-container">
     <div class="liturgia-header">
       <div class="liturgia-title">
-        <span class="material-symbols-outlined" style="font-size: 2.2rem; color: #d01212;">church</span>
+        <span class="material-symbols-outlined" style="font-size: 2.3rem; color: var(--accent-color, #d01212);">calendar_month</span>
         <div>
-          <h1>Esquema del Calendario Litúrgico</h1>
-          <p style="margin: 2px 0 0 0; font-size: 0.85rem; color: #64748b;">Estructura de Ciclos A, B, C y Tiempos para Aclamaciones</p>
+          <h1>Formulario del Tiempo Litúrgico Anual</h1>
+          <p class="liturgia-subtitle">Configuración de las 52 semanas del año para Aclamaciones y Salmos Diarios de Eucaristía</p>
         </div>
       </div>
-      <a href="index.html#aclamaciones" class="btn-back">
-        <span class="material-symbols-outlined">arrow_back</span>
-        Volver a Aclamaciones
-      </a>
-    </div>
-
-    <!-- 1. Adviento -->
-    <div class="season-card">
-      <div class="season-header">
-        <h2 class="season-title" style="color: #6b21a8;">
-          <span class="material-symbols-outlined">candle</span>
-          1. Tiempo de Adviento
-        </h2>
-        <span class="season-badge badge-adviento">4 Semanas</span>
-      </div>
-      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Comienza el domingo más cercano al 30 de noviembre y dura 4 semanas hasta la víspera de Navidad.</p>
-      <div class="weeks-grid">
-        <div class="week-item">
-          <span class="week-name">Domingo I de Adviento</span>
-          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
-        </div>
-        <div class="week-item">
-          <span class="week-name">Domingo II de Adviento</span>
-          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
-        </div>
-        <div class="week-item">
-          <span class="week-name">Domingo III de Adviento (Gaudete)</span>
-          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
-        </div>
-        <div class="week-item">
-          <span class="week-name">Domingo IV de Adviento</span>
-          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
-        </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn-action">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">arrow_back</span>
+          Volver al Inicio
+        </a>
+        <button id="btn-scroll-current-week" class="btn-action" title="Ir a la semana actual en la tabla">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem; color: #ca8a04;">my_location</span>
+          Semana Actual
+        </button>
+        <button id="btn-save-full-year" class="btn-action primary">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">cloud_upload</span>
+          Guardar Calendario Anual
+        </button>
       </div>
     </div>
 
-    <!-- 2. Navidad -->
-    <div class="season-card">
-      <div class="season-header">
-        <h2 class="season-title" style="color: #ca8a04;">
-          <span class="material-symbols-outlined">star</span>
-          2. Tiempo de Navidad
-        </h2>
-        <span class="season-badge badge-navidad">2 Semanas y Fiestas</span>
+    <div id="liturgia-alert-banner" class="status-banner"></div>
+
+    <!-- Tarjeta Resumen de Hoy y los 7 Días de la Semana Actual -->
+    <div class="today-hero-card">
+      <div class="today-hero-top">
+        <div>
+          <span class="today-badge">
+            <span class="material-symbols-outlined" style="font-size: 1rem;">auto_awesome</span>
+            Liturgia del Día Actual
+          </span>
+          <h2 class="today-main-title" id="hero-today-title">Cargando fecha litúrgica...</h2>
+          <div class="today-meta-pills" id="hero-today-pills"></div>
+        </div>
+        <div class="today-links-box" id="hero-today-links"></div>
       </div>
-      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Desde la Vigilia de Navidad (24 dic) hasta el Bautismo del Señor.</p>
-      <div class="weeks-grid">
-        <div class="week-item"><span class="week-name">25 Dic - Misa de la Vigilia</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">25 Dic - Misa de Medianoche</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">25 Dic - Misa de la Aurora</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">25 Dic - Misa del Día</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">Sagrada Familia</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Santa María Madre de Dios (1 Ene)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">Epifanía del Señor (6 Ene)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+
+      <div style="font-size: 0.78rem; font-weight: 800; color: #854d0e; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px;">
+        Salmos Responsoriales de Esta Semana (Domingo a Sábado)
+      </div>
+      <div class="week-days-strip" id="hero-week-strip"></div>
+    </div>
+
+    <!-- Barra de Controles del Formulario del Año Completo -->
+    <div class="form-toolbar">
+      <div class="toolbar-group">
+        <div class="form-control-inline">
+          <label for="select-lit-year">Año Civil</label>
+          <select id="select-lit-year" class="lit-select">
+            <option value="2025">2025</option>
+            <option value="2026" selected>2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+        </div>
+
+        <div class="form-control-inline">
+          <label for="filter-lit-tiempo">Filtrar Tiempo</label>
+          <select id="filter-lit-tiempo" class="lit-select">
+            <option value="Todos">Todos los Tiempos</option>
+            <option value="Adviento">Adviento</option>
+            <option value="Navidad">Navidad</option>
+            <option value="Tiempo Ordinario">Tiempo Ordinario</option>
+            <option value="Cuaresma">Cuaresma</option>
+            <option value="Pascua">Pascua</option>
+            <option value="Solemnidades y Fiestas">Solemnidades y Fiestas</option>
+          </select>
+        </div>
+
+        <div class="form-control-inline">
+          <label for="search-lit-week">Buscar Semana o Fecha</label>
+          <input type="text" id="search-lit-week" class="lit-input" placeholder="Ej: Semana 29, 2026-10-18..." style="min-width: 210px;">
+        </div>
+      </div>
+
+      <div class="toolbar-group">
+        <button id="btn-add-week-row" class="btn-action" title="Añadir una nueva fila de semana al calendario">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">add_circle</span>
+          + Añadir Semana
+        </button>
+        <button id="btn-recalc-year" class="btn-action" title="Recalcular automáticamente todas las semanas del año seleccionado">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">autorenew</span>
+          Autogenerar Año
+        </button>
+        <button id="btn-export-lit-json" class="btn-action" title="Descargar archivo JSON del calendario anual">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">download</span>
+          Exportar
+        </button>
+        <button id="btn-import-lit-json" class="btn-action" title="Importar archivo JSON del calendario anual">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">upload_file</span>
+          Importar
+        </button>
+        <input type="file" id="input-import-lit-file" accept=".json" style="display: none;">
       </div>
     </div>
 
-    <!-- 3. Cuaresma -->
-    <div class="season-card">
-      <div class="season-header">
-        <h2 class="season-title" style="color: #7e22ce;">
-          <span class="material-symbols-outlined">cross</span>
-          3. Tiempo de Cuaresma y Semana Santa
-        </h2>
-        <span class="season-badge badge-cuaresma">6 Semanas</span>
-      </div>
-      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Desde el Miércoles de Ceniza hasta el Triduo Pascual.</p>
-      <div class="weeks-grid">
-        <div class="week-item"><span class="week-name">Miércoles de Ceniza</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo I de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo II de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo III de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo IV de Cuaresma (Laetare)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo V de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo de Ramos</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Jueves Santo (Cena del Señor)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">Viernes Santo (Pasión del Señor)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-        <div class="week-item"><span class="week-name">Sábado Santo</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
-      </div>
-    </div>
-
-    <!-- 4. Pascua -->
-    <div class="season-card">
-      <div class="season-header">
-        <h2 class="season-title" style="color: #ea580c;">
-          <span class="material-symbols-outlined">wb_sunny</span>
-          4. Tiempo de Pascua
-        </h2>
-        <span class="season-badge badge-pascua">7 Semanas y Pentecostés</span>
-      </div>
-      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">50 días de gozo desde la Vigilia Pascual hasta Pentecostés.</p>
-      <div class="weeks-grid">
-        <div class="week-item"><span class="week-name">Domingo de Pascua (Resurrección)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo II de Pascua (Divina Misericordia)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo III de Pascua</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo IV de Pascua (Buen Pastor)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo V de Pascua</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo VI de Pascua</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Ascensión del Señor</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo de Pentecostés</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-      </div>
-    </div>
-
-    <!-- 5. Tiempo Ordinario -->
-    <div class="season-card">
-      <div class="season-header">
-        <h2 class="season-title" style="color: #16a34a;">
-          <span class="material-symbols-outlined">calendar_today</span>
-          5. Tiempo Ordinario
-        </h2>
-        <span class="season-badge badge-ordinario">34 Semanas</span>
-      </div>
-      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Dividido en dos etapas (tras Navidad y tras Pentecostés) hasta Cristo Rey (Semana 34).</p>
-      <div class="weeks-grid">
-        <div class="week-item"><span class="week-name">Bautismo del Señor (Domingo I)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Domingo II al XXXIII del T. Ordinario</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Santísima Trinidad</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Corpus Christi</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Sagrado Corazón de Jesús</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
-        <div class="week-item"><span class="week-name">Jesucristo Rey del Universo (Semana XXXIV)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+    <!-- Tabla Formulario del Año Completo -->
+    <div class="table-card">
+      <div class="table-responsive">
+        <table class="liturgia-form-table">
+          <thead>
+            <tr>
+              <th style="width: 65px;">Sem.</th>
+              <th style="width: 132px;">Inicio (Dom)</th>
+              <th style="width: 132px;">Fin (Sáb)</th>
+              <th style="width: 165px;">Tiempo Litúrgico</th>
+              <th style="width: 75px;">Nº Sem.</th>
+              <th>Celebración / Descripción</th>
+              <th style="width: 110px;">Ciclo Dom.</th>
+              <th style="width: 115px;">Ciclo Feria</th>
+              <th style="width: 115px;">ID Aclamación</th>
+              <th style="width: 110px;">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="liturgia-year-tbody">
+            <tr>
+              <td colspan="10" style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                Generando calendario litúrgico del año...
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  <script type="module" src="src/navegador.js?v=141"></script>
+
+  <script type="module" src="src/js/cliturgico.js"></script>
 </body>
 </html>

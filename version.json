@@ -1,11 +1,12 @@
 {
-  "latestVersion": "2.1.55",
+  "latestVersion": "2.1.56",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.55)",
-  "updateMessage": "Agregado canto Aleluya Interleccional (180) en Resucitó, optimizado el catálogo del Reproductor y organizados los cantos Católicos en data/joven.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.56)",
+  "updateMessage": "Reordenamiento arrastrando en el Reproductor, Salmo del Día destacado en Eucaristía, Formulario del Tiempo Litúrgico Anual y mejoras en notificaciones de actualización.",
   "releaseNotes": [
-    "Agregado el canto Aleluya Interleccional (nº 180, Modelos I, II y III) en el libro Resucitó y en el Reproductor.",
-    "Excluidas las aclamaciones dominicales repetidas del Reproductor (play.html), dejando únicamente el canto Aleluya Interleccional.",
-    "Movidos almadecristo.json y todos los cantos con categoría 'Católicos' exclusivamente a la carpeta data/joven/."
+    "Reproductor (play.html): Ahora puedes arrastrar y soltar los cantos de arriba a abajo para cambiarlos de posición en la lista.",
+    "Eucaristía: Se muestra en primer lugar el Salmo Responsorial correspondiente al día actual de la semana litúrgica (Domingo, Lunes, Martes, etc.).",
+    "Formulario del Tiempo Litúrgico Anual (cliturgico.html): Gestión interactiva de todas las semanas y tiempos litúrgicos del año completo.",
+    "Eliminada la ventana emergente automática de 'Actualizando App'; ahora la revisión es silenciosa y el usuario decide cuándo actualizar desde la notificación."
   ]
 }

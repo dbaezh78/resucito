@@ -1,0 +1,210 @@
+{
+  "id": "aleluyainterleccional",
+  "tt": "Aleluya Interleccional",
+  "title": "Aleluya Interleccional",
+  "subtitle": "Modelo I, II, III",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "acorde": "Sol",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "180",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyainterleccional.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aclamacionesalaoraciondelosfieles",
+  "sig": "/src/index.html?canto=aleluyapascual",
+  "lizq": [
+    {
+      "line": "Modelo I",
+      "sC": "as",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aleluya, aleluya, aleluya, aleluya., (Sol,,14)(Do,,205)(Re,,235)(Sol,,320)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,14)(Do,,215)(Re,,240)(Sol,,325)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy la vid, vosotros los sarmientos., (Mi,m,14)(Re,,80)(Mi,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "El que permanece en mí y yo en él,, (Re,,228)(Mi,m,317)",
+      "sC": ""
+    },
+    {
+      "line": "ése da fruto abundante., (Re,,14)(Mi,m,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aleluyai_1",
+      "initialState": "collapsed",
+      "triggerLine": "ALELUYA, (Sol,,14)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,105)(Re,,135)(Sol,,220)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Modelo II",
+      "sC": "as",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Con la música del «Aleluya, ya llegó el Reino».",
+      "sC": "fsize",
+      "color": "var(--Referencia-Texto)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,14)(Mi,,130)(La,m,230)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,14)(Mi,,130)(La,m,230)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy la vid, vosotros los sarmientos., (Do,,14)(Mi,,80)(La,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "El que permanece en mí y yo en él,, (Do,,14)(Mi,,317)",
+      "sC": ""
+    },
+    {
+      "line": "ése da fruto abundante., (La,m,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aleluyai_2",
+      "initialState": "collapsed",
+      "triggerLine": "ALELUYA, (Do,,14)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ALELUYA, ALELUYA., (Mi,,30)(La,m,130)",
+          "sC": "as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,14)(Mi,,130)(La,m,230)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "lder": [
+    {
+      "line": "Modelo III",
+      "sC": "as",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aleluya, aleluya, aleluya., (Mi,m,14)(Re,,120)(Mi,m,225)",
+      "sC": "tc"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,125)(Mi,m,225)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo soy la vid, vosotros los sarmientos., (Mi,m,14)(La,m,80)(Mi,m,250)",
+      "sC": "tc"
+    },
+    {
+      "line": "El que permanece en mí y yo en él,, (La,m,317)",
+      "sC": ""
+    },
+    {
+      "line": "ése da fruto abundante., (Mi,m,184)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_aleluyai_3",
+      "initialState": "collapsed",
+      "triggerLine": "ALELUYA, (Mi,m,14)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ALELUYA, ALELUYA., (Re,,30)(Mi,m,130)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

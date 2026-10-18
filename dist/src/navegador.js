@@ -70,6 +70,11 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
               <span>Preparar Cantos</span>
             </button>
 
+            <button class="account-action-item" id="account-action-play">
+              <span class="material-symbols-outlined">play_circle</span>
+              <span>Reproductor</span>
+            </button>
+
             <button class="account-action-item" id="account-action-perfil">
               <span class="material-symbols-outlined">badge</span>
               <span>Perfil Cuenta</span>
@@ -167,6 +172,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
             <a href="#" id="nav-resucito-camino"><span class="material-symbols-outlined arrow-icon">home</span> Inicio</a>
             <a href="perfil.html" id="nav-resucito-perfil"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
             <a href="preparar.html" id="nav-resucito-preparar"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
+            <a href="play.html" id="nav-resucito-play"><span class="material-symbols-outlined arrow-icon">play_circle</span> Reproductor</a>
             <a href="parroquia.html" id="nav-resucito-parroquia"><span class="material-symbols-outlined arrow-icon">church</span> Cantos Eucaristía</a>
             <a href="bitacora.html" id="nav-resucito-bitacora"><span class="material-symbols-outlined arrow-icon">history</span> Bitácora</a>
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
@@ -181,6 +187,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           <span>Formulario</span>
           <div class="nav-submenu" id="nav-submenu-formulario">
             <a href="datosparroquia.html" id="nav-formulario-datosparroquia" style="display: none;"><span class="material-symbols-outlined arrow-icon">edit_location_alt</span> Formulario Parroquia</a>
+            <a href="cliturgico.html" id="nav-formulario-cliturgico"><span class="material-symbols-outlined arrow-icon">calendar_month</span> Tiempo Litúrgico</a>
             <a href="mantcantos.html" id="nav-formulario-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
             <a href="respaldo.html" id="nav-formulario-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
             <a href="seucaristico.html" id="nav-formulario-seucaristico"><span class="material-symbols-outlined arrow-icon">local_bar</span> Salmo Eucarístico</a>
@@ -678,6 +685,14 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       });
     }
 
+    const playBtn = document.getElementById('account-action-play');
+    if (playBtn) {
+      playBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.location.href = isUnderSrc ? '../play.html' : 'play.html';
+      });
+    }
+
     const bitacoraBtn = document.getElementById('account-action-bitacora');
     if (bitacoraBtn) {
       bitacoraBtn.addEventListener('click', (e) => {
@@ -874,6 +889,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           }
 
           // 3. Notificar al Service Worker para tomar los archivos nuevos
+          window._userTriggeredAppUpdate = true;
           if ('serviceWorker' in navigator) {
             try {
               const reg = await navigator.serviceWorker.getRegistration();

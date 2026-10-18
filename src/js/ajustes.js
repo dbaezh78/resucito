@@ -4634,6 +4634,15 @@ window.initAjustes = async function() {
             localStorage.removeItem('liturgia_override');
           }
         }
+
+        const snapAnual = await getDoc(doc(db, 'config', 'calendario_liturgico_anual'));
+        if (snapAnual && snapAnual.exists()) {
+          const dataAnual = snapAnual.data();
+          if (dataAnual && Array.isArray(dataAnual.semanas)) {
+            localStorage.setItem('resucito_calendario_liturgico_anual', JSON.stringify(dataAnual));
+            if (typeof window.handleSearchAndFilters === 'function') window.handleSearchAndFilters();
+          }
+        }
       }
     } catch (e) {
       // Silencioso si no hay permisos en Firestore

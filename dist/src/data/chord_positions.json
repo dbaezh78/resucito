@@ -85233,5 +85233,339 @@
         ]
       }
     ]
+  },
+  "aleluyainterleccional": {
+    "lizq": [
+      [],
+      [],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 51
+        },
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 59.5
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 80
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 51.5
+        },
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 59.5
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 80.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 21.5
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 72.5
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 59
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 83.5
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 57
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_aleluyai_1",
+        "triggerLine": [
+          {
+            "name": "Sol",
+            "type": "",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Do",
+              "type": "",
+              "pos": 34
+            },
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 44.5
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 72
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 36.5
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 70.5
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 36.5
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 70.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 21.5
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 72.5
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 91.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 57
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_aleluyai_2",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 9
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 56
+            }
+          ],
+          [
+            {
+              "name": "Do",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 36.5
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 70.5
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": [
+      [],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 39.5
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 72.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 39.5
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 72.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 21.5
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 72.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 83.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 57
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_aleluyai_3",
+        "triggerLine": [
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 14
+            },
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 58
+            }
+          ]
+        ]
+      }
+    ]
   }
 }

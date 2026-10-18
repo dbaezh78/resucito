@@ -1,5 +1,7 @@
 /**
- * Registro del Service Worker para soporte sin conexión (PWA) con recarga automática en actualizaciones.
+ * Registro del Service Worker para soporte sin conexión (PWA).
+ * Las actualizaciones se verifican ligeramente mediante version.json y solo se instalan
+ * cuando el usuario lo solicita desde la notificación o el menú.
  */
 
 export function registerServiceWorker() {
@@ -8,39 +10,16 @@ export function registerServiceWorker() {
             navigator.serviceWorker.register('sw.js')
                 .then(registration => {
                     console.log('Service Worker registrado con éxito. Scope:', registration.scope);
-                    
-                    // Si ya hay un SW esperando activación, forzar skipWaiting
-                    if (registration.waiting) {
-                        registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-                    }
-                    
-                    // Si se encuentra una nueva versión instalándose
-                    registration.addEventListener('updatefound', () => {
-                        const newWorker = registration.installing;
-                        if (window.mostrarProgreso) {
-                            window.mostrarProgreso({
-                                titulo: 'Actualizando App',
-                                mensaje: 'Instalando la nueva versión en segundo plano...',
-                                icono: 'sync'
-                            });
-                        }
-                        newWorker.addEventListener('statechange', () => {
-                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                // Enviar señal para omitir la espera e instalar la nueva versión de inmediato
-                                newWorker.postMessage({ type: 'SKIP_WAITING' });
-                            }
-                        });
-                    });
                 })
                 .catch(error => {
                     console.error('Error al registrar el Service Worker:', error);
                 });
         });
 
-        // Escuchar el cambio de controlador para recargar la página inmediatamente
+        // Solo recargar automáticamente si el usuario inició la actualización explícitamente
         let refreshing = false;
         navigator.serviceWorker.addEventListener('controllerchange', () => {
-            if (!refreshing) {
+            if (!refreshing && window._userTriggeredAppUpdate) {
                 refreshing = true;
                 window.location.reload();
             }

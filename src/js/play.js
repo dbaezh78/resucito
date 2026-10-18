@@ -542,13 +542,20 @@ function renderActiveQueueSection() {
     return;
   }
 
+  const canDrag = isCustom && !filterNorm && songsInPl.length > 1;
+
   activeQueueContainer.innerHTML = filtered.map(({ song, idx }) => {
     const isCurrentPlaying = currentSong && currentSong.id === song.id;
     const bookBadgeText = song.bookGroup === 'joven' ? 'Joven' : 'Camino';
     const numberPrefix = song.dbno ? `#${song.dbno} • ` : '';
 
     return `
-      <div class="play-song-row ${isCurrentPlaying ? 'playing' : ''}" data-song-id="${escapeHtml(song.id)}" data-queue-idx="${idx}">
+      <div class="play-song-row ${isCurrentPlaying ? 'playing' : ''} ${canDrag ? 'is-draggable' : ''}" data-song-id="${escapeHtml(song.id)}" data-queue-idx="${idx}" ${canDrag ? 'draggable="true"' : ''}>
+        ${canDrag ? `
+          <div class="play-drag-handle" title="Arrastrar arriba o abajo para cambiar de posición">
+            <span class="material-symbols-outlined">drag_indicator</span>
+          </div>
+        ` : ''}
         <div class="play-song-left" data-action="play-queue-song" data-idx="${idx}">
           <div class="play-song-index-badge">
             ${isCurrentPlaying && isPlaying
@@ -1008,15 +1015,18 @@ function toggleSongInTargetPlaylist(songId) {
 }
 
 function moveSongInActivePlaylist(index, direction) {
+  reorderSongInActivePlaylist(index, index + direction);
+}
+
+function reorderSongInActivePlaylist(fromIdx, toIdx) {
   const pl = customPlaylists.find(p => p.id === activePlaylistId);
   if (!pl || !Array.isArray(pl.songIds)) return;
+  if (fromIdx === toIdx) return;
+  if (fromIdx < 0 || fromIdx >= pl.songIds.length) return;
+  if (toIdx < 0 || toIdx >= pl.songIds.length) return;
 
-  const targetIdx = index + direction;
-  if (targetIdx < 0 || targetIdx >= pl.songIds.length) return;
-
-  const temp = pl.songIds[index];
-  pl.songIds[index] = pl.songIds[targetIdx];
-  pl.songIds[targetIdx] = temp;
+  const [movedItem] = pl.songIds.splice(fromIdx, 1);
+  pl.songIds.splice(toIdx, 0, movedItem);
   pl.updatedAt = Date.now();
 
   saveLocalPlaylists();
@@ -1157,7 +1167,9 @@ function setupEventListeners() {
     }
   });
 
-  // Interacciones en la Cola Activa
+  // Interacciones en la Cola Activa (Clic + Arrastrar y Soltar Desktop y Táctil)
+  let draggedQueueIdx = null;
+
   activeQueueContainer?.addEventListener('click', (e) => {
     const actionEl = e.target.closest('[data-action]');
     if (!actionEl) return;
@@ -1175,6 +1187,131 @@ function setupEventListeners() {
       moveSongInActivePlaylist(idx, 1);
     } else if (action === 'remove-from-playlist') {
       removeSongAtIndexFromActivePlaylist(idx);
+    }
+  });
+
+  // HTML5 Drag & Drop para reordenar cantos de arriba a abajo
+  activeQueueContainer?.addEventListener('dragstart', (e) => {
+    const row = e.target.closest('.play-song-row.is-draggable');
+    if (!row) return;
+    draggedQueueIdx = parseInt(row.dataset.queueIdx, 10);
+    row.classList.add('dragging');
+    if (e.dataTransfer) {
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', String(draggedQueueIdx));
+    }
+  });
+
+  activeQueueContainer?.addEventListener('dragover', (e) => {
+    if (draggedQueueIdx === null) return;
+    const row = e.target.closest('.play-song-row.is-draggable');
+    if (!row) return;
+    e.preventDefault();
+    if (e.dataTransfer) e.dataTransfer.dropEffect = 'move';
+
+    activeQueueContainer.querySelectorAll('.play-song-row').forEach(r => {
+      r.classList.remove('drag-over-top', 'drag-over-bottom');
+    });
+
+    const targetIdx = parseInt(row.dataset.queueIdx, 10);
+    if (targetIdx === draggedQueueIdx) return;
+
+    const rect = row.getBoundingClientRect();
+    const isAfter = (e.clientY - rect.top) > (rect.height / 2);
+    row.classList.add(isAfter ? 'drag-over-bottom' : 'drag-over-top');
+  });
+
+  activeQueueContainer?.addEventListener('dragleave', (e) => {
+    const row = e.target.closest('.play-song-row.is-draggable');
+    if (row && !row.contains(e.relatedTarget)) {
+      row.classList.remove('drag-over-top', 'drag-over-bottom');
+    }
+  });
+
+  activeQueueContainer?.addEventListener('drop', (e) => {
+    if (draggedQueueIdx === null) return;
+    e.preventDefault();
+    const row = e.target.closest('.play-song-row.is-draggable');
+    activeQueueContainer.querySelectorAll('.play-song-row').forEach(r => {
+      r.classList.remove('dragging', 'drag-over-top', 'drag-over-bottom');
+    });
+    if (!row) {
+      draggedQueueIdx = null;
+      return;
+    }
+
+    let targetIdx = parseInt(row.dataset.queueIdx, 10);
+    const rect = row.getBoundingClientRect();
+    const isAfter = (e.clientY - rect.top) > (rect.height / 2);
+    if (isAfter && targetIdx > draggedQueueIdx) {
+      // mantener targetIdx
+    } else if (!isAfter && targetIdx > draggedQueueIdx) {
+      targetIdx -= 1;
+    } else if (isAfter && targetIdx < draggedQueueIdx) {
+      targetIdx += 1;
+    }
+
+    const fromIdx = draggedQueueIdx;
+    draggedQueueIdx = null;
+    if (!isNaN(fromIdx) && !isNaN(targetIdx) && fromIdx !== targetIdx) {
+      reorderSongInActivePlaylist(fromIdx, targetIdx);
+    }
+  });
+
+  activeQueueContainer?.addEventListener('dragend', () => {
+    draggedQueueIdx = null;
+    activeQueueContainer.querySelectorAll('.play-song-row').forEach(r => {
+      r.classList.remove('dragging', 'drag-over-top', 'drag-over-bottom');
+    });
+  });
+
+  // Soporte táctil (móvil/tablet) arrastrando desde el icono drag_indicator (.play-drag-handle)
+  let touchDragIdx = null;
+  let touchTargetIdx = null;
+
+  activeQueueContainer?.addEventListener('touchstart', (e) => {
+    const handle = e.target.closest('.play-drag-handle');
+    if (!handle) return;
+    const row = handle.closest('.play-song-row.is-draggable');
+    if (!row) return;
+    touchDragIdx = parseInt(row.dataset.queueIdx, 10);
+    touchTargetIdx = touchDragIdx;
+    row.classList.add('dragging');
+  }, { passive: true });
+
+  activeQueueContainer?.addEventListener('touchmove', (e) => {
+    if (touchDragIdx === null) return;
+    if (e.cancelable) e.preventDefault();
+    const touch = e.touches[0];
+    if (!touch) return;
+
+    const elUnder = document.elementFromPoint(touch.clientX, touch.clientY);
+    const overRow = elUnder ? elUnder.closest('.play-song-row.is-draggable') : null;
+
+    activeQueueContainer.querySelectorAll('.play-song-row').forEach(r => {
+      r.classList.remove('drag-over-top', 'drag-over-bottom');
+    });
+
+    if (overRow) {
+      const overIdx = parseInt(overRow.dataset.queueIdx, 10);
+      if (!isNaN(overIdx) && overIdx !== touchDragIdx) {
+        touchTargetIdx = overIdx;
+        overRow.classList.add(overIdx > touchDragIdx ? 'drag-over-bottom' : 'drag-over-top');
+      }
+    }
+  }, { passive: false });
+
+  activeQueueContainer?.addEventListener('touchend', () => {
+    if (touchDragIdx === null) return;
+    const fromIdx = touchDragIdx;
+    const toIdx = touchTargetIdx;
+    touchDragIdx = null;
+    touchTargetIdx = null;
+    activeQueueContainer.querySelectorAll('.play-song-row').forEach(r => {
+      r.classList.remove('dragging', 'drag-over-top', 'drag-over-bottom');
+    });
+    if (fromIdx !== null && toIdx !== null && fromIdx !== toIdx) {
+      reorderSongInActivePlaylist(fromIdx, toIdx);
     }
   });
 

@@ -3399,6 +3399,22 @@
     "searchPool": "aclamaciones a la oracion de los fieles respuestas a las oraciones de los fieles modelo i ii iii iv modelo i te lo pedimos senor te lo pedimos senor modelo ii escuchanos oh senor modelo iii misma musica modelo i acuerdate de nosotros ahora que estas en tu reino modelo iv oye padre el grito de tu pueblo"
   },
   {
+    "id": "aleluyainterleccional",
+    "title": "Aleluya Interleccional",
+    "subtitle": "Modelo I, II, III",
+    "category": [
+      "Liturgia"
+    ],
+    "stage": "Liturgia",
+    "cejilla": "",
+    "acorde": "Sol",
+    "dbno": "180",
+    "hasAudio": true,
+    "audioSrc": "https://audio.resucito.do/aleluyainterleccional.mp3",
+    "sourceBook": "resucito",
+    "searchPool": "aleluya interleccional modelo i ii iii modelo i aleluya aleluya aleluya aleluya yo soy la vid vosotros los sarmientos el que permanece en mi y yo en el ese da fruto abundante modelo ii con la musica del aleluya ya llego el reino aleluya aleluya aleluya modelo iii aleluya aleluya aleluya"
+  },
+  {
     "id": "aleluyapascual",
     "title": "Aleluya Pascual",
     "subtitle": "Apropiado para el tiempo Pascual",
@@ -7790,12 +7806,12 @@
     "title": "Que detalle Señor has tenico conmigo",
     "subtitle": "Brotes de Olivo",
     "category": [
-      "Precatecumenado",
+      "Católicos",
       "Pascua",
       "Pentecostés",
       "Nuevo Testamento"
     ],
-    "stage": "Precatecumenado",
+    "stage": "Católicos",
     "cejilla": "",
     "acorde": "Sol",
     "dbno": "120",
@@ -7844,13 +7860,12 @@
     "title": "Con Mi Burrito Sabanero",
     "subtitle": "Villancicos",
     "category": [
-      "Precatecumenado",
+      "Católicos",
       "Adviento",
       "Navidad",
-      "Catolicos",
       "Villancicos"
     ],
-    "stage": "Precatecumenado",
+    "stage": "Católicos",
     "cejilla": "",
     "acorde": "Sol",
     "dbno": "303",

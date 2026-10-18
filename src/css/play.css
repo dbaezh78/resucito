@@ -995,6 +995,51 @@
   line-height: 1.45;
 }
 
+/* Drag & Drop de Cantos en la Lista Activa */
+.play-song-row.is-draggable {
+  cursor: grab;
+}
+
+.play-song-row.is-draggable:active {
+  cursor: grabbing;
+}
+
+.play-drag-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted, #94a3b8);
+  cursor: grab;
+  padding: 4px 2px;
+  margin-right: -2px;
+  user-select: none;
+  touch-action: none;
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+}
+
+.play-drag-handle:hover {
+  color: var(--accent-color, #d01212);
+}
+
+.play-drag-handle .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.play-song-row.dragging {
+  opacity: 0.45;
+  border: 1.5px dashed var(--accent-color, #d01212);
+  background: rgba(208, 18, 18, 0.05);
+}
+
+.play-song-row.drag-over-top {
+  border-top: 3px solid var(--accent-color, #d01212) !important;
+}
+
+.play-song-row.drag-over-bottom {
+  border-bottom: 3px solid var(--accent-color, #d01212) !important;
+}
+
 /* Responsivo para Tablets y Móviles */
 @media (max-width: 920px) {
   .play-workspace-grid {

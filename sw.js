@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v391'; // v2.1.55 Add Aleluya Interleccional (180), exclude aclamaciones from play.html, move Católicos to data/joven
+const CACHE_NAME = 'resucito-cache-v392'; // v2.1.56 Drag-and-drop in play.html, daily psalm in Eucaristía, full-year liturgical form, silent update check
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
@@ -26,6 +26,7 @@ const STATIC_ASSETS = [
   'src/js/chat.js',
   'src/css/play.css',
   'src/js/play.js',
+  'src/js/cliturgico.js',
   'src/css/parroquia.css',
   'src/js/parroquia.js',
   'src/css/datosparroquia.css',

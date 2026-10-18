@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.52",
+  "latestVersion": "2.1.56",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.52)",
-  "updateMessage": "Nuevos cantos agregados: Cordero de Dios y Cordero de Dios (Joven), y actualización de audio en Cordero de Dios (Solemne).",
+  "updateTitle": "Nueva Versión Disponible (v2.1.56)",
+  "updateMessage": "Reordenamiento arrastrando en el Reproductor, Salmo del Día destacado en Eucaristía, Formulario del Tiempo Litúrgico Anual y mejoras en notificaciones de actualización.",
   "releaseNotes": [
-    "Agregados cantos Cordero de Dios y Cordero de Dios (Joven) con acordes interactivos.",
-    "Soporte de repetición BIS mediante estilo visual 'bisa'.",
-    "Audios sincronizados y enlazados.",
-    "Navegación secuencial de cantos optimizada."
+    "Reproductor (play.html): Ahora puedes arrastrar y soltar los cantos de arriba a abajo para cambiarlos de posición en la lista.",
+    "Eucaristía: Se muestra en primer lugar el Salmo Responsorial correspondiente al día actual de la semana litúrgica (Domingo, Lunes, Martes, etc.).",
+    "Formulario del Tiempo Litúrgico Anual (cliturgico.html): Gestión interactiva de todas las semanas y tiempos litúrgicos del año completo.",
+    "Eliminada la ventana emergente automática de 'Actualizando App'; ahora la revisión es silenciosa y el usuario decide cuándo actualizar desde la notificación."
   ]
 }
