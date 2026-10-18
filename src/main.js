@@ -1063,7 +1063,7 @@ window.registrarUsoCanto = function(songId, tipo, detalle) {
 };
 
 // --- Carga de Detalles de Canción ---
-async function loadSongView(songId) {
+async function loadSongView(songId, forceReload = false) {
   try {
     const initPrev = document.getElementById('canto-slide-prev');
     const initNext = document.getElementById('canto-slide-next');
@@ -1084,9 +1084,9 @@ async function loadSongView(songId) {
     window.registrarUsoCanto(songId, 'view', 'Vista de canto');
     
     let songData;
-    if (loadedSongsCache[songId]) {
+    if (!forceReload && loadedSongsCache[songId]) {
       songData = loadedSongsCache[songId];
-    } else if (salmosEucaristiaList && salmosEucaristiaList.length > 0) {
+    } else if (!forceReload && salmosEucaristiaList && salmosEucaristiaList.length > 0) {
       const found = salmosEucaristiaList.find(s => s.id === songId);
       if (found) {
         songData = found;
@@ -1119,6 +1119,14 @@ async function loadSongView(songId) {
         }
       }
 
+      if (!songData && songId.startsWith('seu') && salmosEucaristiaList && salmosEucaristiaList.length > 0) {
+        const found = salmosEucaristiaList.find(s => s.id === songId);
+        if (found) {
+          songData = found;
+          loadedSongsCache[songId] = songData;
+        }
+      }
+
       if (!songData) {
         const songMeta = allSongs ? allSongs.find(s => s.id === songId) : null;
         let folder = 'data/songs';
@@ -1130,11 +1138,13 @@ async function loadSongView(songId) {
           folder = 'data/joven';
         }
         const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
-        let response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`).catch(() => null);
+        const querySuffix = forceReload ? `?nocache=${Date.now()}` : `?offline=${isOffline}`;
+        const fetchOpts = forceReload ? { cache: 'reload' } : undefined;
+        let response = await fetch(`${folder}/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
         if ((!response || !response.ok) && folder === 'data/joven') {
-          response = await fetch(`data/songs/${songId}.json?offline=${isOffline}`).catch(() => null);
+          response = await fetch(`data/songs/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
         } else if ((!response || !response.ok) && folder === 'data/songs') {
-          response = await fetch(`data/joven/${songId}.json?offline=${isOffline}`).catch(() => null);
+          response = await fetch(`data/joven/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
         }
         if (!response || !response.ok) throw new Error('Canto no encontrado');
         songData = await response.json();
@@ -7196,6 +7206,21 @@ function setupEventListeners() {
 
   // Sincronizar los toggles de Cantos > Canto (BIS, Contracción/Expansión y Acordes en JSON) con el canto actual
   function populateBisSongList() {
+    const reloadDesc = document.getElementById('reload-song-from-scratch-desc');
+    const reloadBtn = document.getElementById('btn-reload-song-from-scratch');
+    if (reloadDesc) {
+      if (currentCanto && currentCanto.id) {
+        const cTitle = currentCanto.celebracion || currentCanto.title || currentCanto.tt || currentCanto.id;
+        reloadDesc.textContent = `Limpia caché y recarga únicamente: "${cTitle}"`;
+      } else {
+        reloadDesc.textContent = 'Abre un canto primero para poder limpiarlo de caché y recargarlo desde cero';
+      }
+    }
+    if (reloadBtn) {
+      reloadBtn.disabled = !(currentCanto && currentCanto.id);
+      reloadBtn.style.opacity = (currentCanto && currentCanto.id) ? '1' : '0.5';
+    }
+
     const bisToggle = document.getElementById('bis-toggle');
     if (bisToggle) {
       bisToggle.checked = currentCanto ? isBisEnabled(currentCanto.id) : false;
@@ -7210,6 +7235,98 @@ function setupEventListeners() {
     }
   }
   window.populateBisSongList = populateBisSongList;
+
+  // Función para limpiar toda la caché de un único canto y volverlo a cargar desde cero
+  window.recargarCantoActualDesdeCero = async function() {
+    if (!currentCanto || !currentCanto.id) {
+      if (window.showToast) {
+        window.showToast('Primero entra en un canto para poder recargarlo desde cero.');
+      } else {
+        alert('Primero entra en un canto para poder recargarlo desde cero.');
+      }
+      return;
+    }
+
+    const songId = currentCanto.id;
+    const songTitle = currentCanto.celebracion || currentCanto.title || currentCanto.tt || songId;
+    const btn = document.getElementById('btn-reload-song-from-scratch');
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1.1rem;">sync</span> Cargando...`;
+    }
+
+    try {
+      // 1. Limpiar datos en localStorage exclusivos de este canto
+      localStorage.removeItem(`custom-positions-${songId}`);
+      localStorage.removeItem(`canto-config-${songId}`);
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith(`resucito_variant_${songId}_`)) {
+          localStorage.removeItem(k);
+        }
+      }
+
+      // 2. Limpiar cachés en memoria exclusivas de este canto
+      delete loadedSongsCache[songId];
+      if (defaultChordPositions && defaultChordPositions[songId]) {
+        delete defaultChordPositions[songId];
+      }
+      if (window.globalPositionsCache && window.globalPositionsCache[songId]) {
+        delete window.globalPositionsCache[songId];
+        try {
+          localStorage.setItem('resucito_global_positions_cache', JSON.stringify(window.globalPositionsCache));
+        } catch (e) {}
+      }
+
+      // 3. Limpiar del CacheStorage del Service Worker únicamente los archivos de este canto
+      if ('caches' in window) {
+        const cacheNames = await caches.keys();
+        for (const name of cacheNames) {
+          const cache = await caches.open(name);
+          const requests = await cache.keys();
+          for (const req of requests) {
+            if (req.url.includes(`/${songId}.json`)) {
+              await cache.delete(req);
+            }
+          }
+        }
+      }
+
+      // 4. Recargar desde red las posiciones por defecto de chord_positions.json para este canto si existieran
+      try {
+        const posRes = await fetch(`data/chord_positions.json?nocache=${Date.now()}`, { cache: 'reload' });
+        if (posRes.ok) {
+          const allPos = await posRes.json();
+          if (!defaultChordPositions) defaultChordPositions = {};
+          if (allPos && allPos[songId]) {
+            defaultChordPositions[songId] = allPos[songId];
+          }
+        }
+      } catch (e) {}
+
+      // 5. Volver a cargar el canto actual desde cero forzando red
+      await loadSongView(songId, true);
+
+      // 6. Cerrar el modal de Ajustes y avisar al usuario
+      const modal = document.getElementById('settings-modal');
+      if (modal) modal.style.display = 'none';
+
+      if (window.showToast) {
+        window.showToast(`✅ Canto "${songTitle}" recargado desde cero sin caché`);
+      }
+    } catch (err) {
+      console.error('Error al recargar el canto desde cero:', err);
+      if (window.showToast) {
+        window.showToast('Error al recargar el canto desde cero.');
+      }
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1.1rem;">refresh</span> Cargar`;
+      }
+      populateBisSongList();
+    }
+  };
 
   // Listener del toggle BIS
   const bisToggleInput = document.getElementById('bis-toggle');

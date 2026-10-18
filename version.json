@@ -1,12 +1,11 @@
 {
-  "latestVersion": "2.1.56",
+  "latestVersion": "2.1.57",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.56)",
-  "updateMessage": "Reordenamiento arrastrando en el Reproductor, Salmo del Día destacado en Eucaristía, Formulario del Tiempo Litúrgico Anual y mejoras en notificaciones de actualización.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.57)",
+  "updateMessage": "Añadida opción 'Cargar Canto desde Cero' en Ajustes > Cantos > Canto para limpiar la caché y recargar únicamente el canto actual.",
   "releaseNotes": [
-    "Reproductor (play.html): Ahora puedes arrastrar y soltar los cantos de arriba a abajo para cambiarlos de posición en la lista.",
-    "Eucaristía: Se muestra en primer lugar el Salmo Responsorial correspondiente al día actual de la semana litúrgica (Domingo, Lunes, Martes, etc.).",
-    "Formulario del Tiempo Litúrgico Anual (cliturgico.html): Gestión interactiva de todas las semanas y tiempos litúrgicos del año completo.",
-    "Eliminada la ventana emergente automática de 'Actualizando App'; ahora la revisión es silenciosa y el usuario decide cuándo actualizar desde la notificación."
+    "Ajustes > Cantos > Canto: Nueva opción 'Cargar Canto desde Cero' (arriba de Indicador BIS) que limpia la caché y los datos almacenados exclusivamente del canto abierto y lo vuelve a cargar al instante.",
+    "Reproductor (play.html): Arrastrar y soltar cantos de arriba a abajo en las listas.",
+    "Eucaristía y Formulario Litúrgico Anual: Salmo del Día destacado en primera posición."
   ]
 }

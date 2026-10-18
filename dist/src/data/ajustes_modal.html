@@ -1266,6 +1266,20 @@
 
           <!-- Contenido Submódulo: Canto -->
           <div id="canto-submodule-canto-content" class="canto-submodule-panel" style="display: block;">
+            <!-- Fila Cargar Canto desde Cero (arriba de Indicador BIS) -->
+            <div class="setting-row" id="reload-song-from-scratch-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
+              <div class="setting-label">
+                <h4>Cargar Canto desde Cero</h4>
+                <p id="reload-song-from-scratch-desc" style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Limpia la caché y vuelve a cargar únicamente el canto en el que estás</p>
+              </div>
+              <div class="setting-control">
+                <button type="button" id="btn-reload-song-from-scratch" class="btn theme-btn" onclick="if(window.recargarCantoActualDesdeCero) window.recargarCantoActualDesdeCero();" style="padding: 7px 14px; font-size: 0.82rem; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; background: var(--accent-color, #d01212); color: #ffffff; border: none;">
+                  <span class="material-symbols-outlined" style="font-size: 1.1rem;">refresh</span>
+                  Cargar
+                </button>
+              </div>
+            </div>
+
             <!-- Fila Indicador BIS (arriba) -->
             <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
               <div class="setting-label">

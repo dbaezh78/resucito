@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v392'; // v2.1.56 Drag-and-drop in play.html, daily psalm in Eucaristía, full-year liturgical form, silent update check
+const CACHE_NAME = 'resucito-cache-v393'; // v2.1.57 Add Cargar Canto desde Cero before Indicador BIS
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
@@ -135,6 +135,24 @@ self.addEventListener('fetch', event => {
     event.respondWith(
       (async () => {
         const songsCache = await caches.open(SONGS_CACHE_NAME);
+        const forceNoCache = url.search.includes('nocache=');
+
+        if (forceNoCache) {
+          try {
+            const cleanUrl = url.origin + url.pathname;
+            await songsCache.delete(event.request);
+            await songsCache.delete(cleanUrl);
+            await songsCache.delete(`${cleanUrl}?offline=true`);
+            await songsCache.delete(`${cleanUrl}?offline=false`);
+            const networkResponse = await fetch(event.request, { cache: 'no-store' });
+            if (networkResponse && networkResponse.status === 200) {
+              await songsCache.put(cleanUrl, networkResponse.clone());
+            }
+            return networkResponse;
+          } catch (err) {
+            // Si está sin conexión al forzar recarga, caer a caché si quedara algo
+          }
+        }
 
         // Buscar coincidencia exacta o normalizada
         let cachedResponse = await songsCache.match(event.request);
