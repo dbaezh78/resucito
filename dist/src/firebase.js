@@ -3,6 +3,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { 
   getAuth, 
+  initializeAuth,
+  browserLocalPersistence,
+  indexedDBLocalPersistence,
+  setPersistence,
   GoogleAuthProvider, 
   signInWithPopup, 
   signOut, 
@@ -41,11 +45,46 @@ const firebaseConfig = {
   measurementId: "G-ETSQBMPBEE"
 };
 
+// Restaurar respaldo de sesión de usuario antes de inicializar Firebase Auth si se limpió el almacenamiento
+try {
+  if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+    const fbKeyPrefix = `firebase:authUser:${firebaseConfig.apiKey}:`;
+    let hasFbAuthInLocal = false;
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k && k.startsWith(fbKeyPrefix)) {
+        hasFbAuthInLocal = true;
+        break;
+      }
+    }
+    if (!hasFbAuthInLocal && typeof sessionStorage !== 'undefined') {
+      const backupEntryStr = sessionStorage.getItem('resucito_fb_auth_entry');
+      if (backupEntryStr) {
+        const parsed = JSON.parse(backupEntryStr);
+        if (parsed && parsed.key && parsed.value) {
+          localStorage.setItem(parsed.key, parsed.value);
+        }
+      }
+    }
+  }
+} catch (e) {}
+
 // Inicializar la aplicación Firebase
 const app = initializeApp(firebaseConfig);
 
-// Obtener e inicializar Auth
-export const auth = getAuth(app);
+// Obtener e inicializar Auth con persistencia en localStorage e IndexedDB para mantener siempre la sesión iniciada
+let authInstance;
+try {
+  authInstance = initializeAuth(app, {
+    persistence: [browserLocalPersistence, indexedDBLocalPersistence]
+  });
+} catch (e) {
+  authInstance = getAuth(app);
+  try {
+    setPersistence(authInstance, browserLocalPersistence).catch(() => {});
+  } catch (err) {}
+}
+export const auth = authInstance;
 export const googleProvider = new GoogleAuthProvider();
 
 // Configurar e inicializar Firestore con caché persistente y soporte para navegadores con bloqueadores (Brave Shields)

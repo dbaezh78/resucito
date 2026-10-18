@@ -2217,6 +2217,7 @@ window.initAjustes = async function() {
           return;
         }
         try {
+          const authSnap = typeof window.preservarSesionUsuario === 'function' ? window.preservarSesionUsuario() : null;
           if (window.mostrarProgreso) {
             window.mostrarProgreso({
               titulo: 'Actualizando App',
@@ -2245,6 +2246,9 @@ window.initAjustes = async function() {
           }
 
           localStorage.removeItem('resucito_update_available');
+          if (typeof window.restaurarSesionUsuario === 'function') {
+            window.restaurarSesionUsuario(authSnap);
+          }
           setTimeout(() => {
             window.location.reload(true);
           }, 600);
@@ -3069,6 +3073,7 @@ window.initAjustes = async function() {
       
       const doClear = async () => {
         btnClearCache.disabled = true;
+        const authSnap = typeof window.preservarSesionUsuario === 'function' ? window.preservarSesionUsuario() : null;
         try {
           updateCloudProgress("Eliminando caché de la aplicación...", 20);
           const keys = await caches.keys();
@@ -3084,6 +3089,10 @@ window.initAjustes = async function() {
           
           if (window.loadedSongsCache) {
             window.loadedSongsCache = {};
+          }
+
+          if (typeof window.restaurarSesionUsuario === 'function') {
+            window.restaurarSesionUsuario(authSnap);
           }
           
           updateCloudProgress("¡Caché de app limpiada con éxito! (Tus cantos siguen guardados). Recargando...", 100);

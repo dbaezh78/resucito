@@ -1,10 +1,10 @@
 {
-  "latestVersion": "2.1.58",
+  "latestVersion": "2.1.59",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.58)",
-  "updateMessage": "Lectura directa de archivos individuales (ej. seua_73.json) y sincronización automática de estrofas al usar Cargar Canto desde Cero.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.59)",
+  "updateMessage": "Persistencia total de la sesión de usuario al recargar un canto desde cero, limpiar caché o actualizar la aplicación.",
   "releaseNotes": [
-    "Al usar 'Cargar Canto desde Cero' (y al abrir cantos de Eucaristía), ahora se lee directamente el archivo JSON individual del canto (ej. seua_73.json) y se sincronizan automáticamente los cambios realizados en 'estrofas' hacia 'lizq'.",
-    "Actualizado el texto de seua_73.json ('Pues los dioses de los gentiles no son nada,')."
+    "La sesión del usuario iniciado ahora se conserva permanentemente (localStorage, sessionStorage, cookie e IndexedDB) al pulsar 'Cargar Canto desde Cero', 'Limpiar Caché' o 'Actualizar App', sin cerrar sesión nunca salvo que el usuario pulse 'Cerrar Sesión'.",
+    "Lectura directa de archivos individuales (ej. seua_73.json) y sincronización automática de estrofas con 'lizq'."
   ]
 }

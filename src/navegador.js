@@ -787,6 +787,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
         textoSi: 'Sí, Actualizar',
         textoNo: 'Cancelar',
         onConfirm: async () => {
+          const authSnap = typeof window.preservarSesionUsuario === 'function' ? window.preservarSesionUsuario() : null;
           // Lista de archivos críticos que se van a verificar/descargar con barra de progreso
           const archivosAActualizar = [
             'version.json',
@@ -903,6 +904,10 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           // 4. Guardar registro de la versión instalada para que se actualice la vista
           if (window._latestRemoteVersion) {
             localStorage.setItem('resucito_installed_version', window._latestRemoteVersion);
+          }
+
+          if (authSnap && typeof window.restaurarSesionUsuario === 'function') {
+            window.restaurarSesionUsuario(authSnap);
           }
 
           window.mostrarProgreso({

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v394'; // v2.1.58 Direct individual JSON load & estrofas-to-lizq sync on Cargar Canto desde Cero
+const CACHE_NAME = 'resucito-cache-v395'; // v2.1.59 Keep user session active across song reloads, cache clears and updates
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

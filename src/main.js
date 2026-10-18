@@ -7321,6 +7321,7 @@ function setupEventListeners() {
       return;
     }
 
+    const authSnap = typeof window.preservarSesionUsuario === 'function' ? window.preservarSesionUsuario() : null;
     const songId = currentCanto.id;
     const songTitle = currentCanto.celebracion || currentCanto.title || currentCanto.tt || songId;
     const btn = document.getElementById('btn-reload-song-from-scratch');
@@ -7330,7 +7331,7 @@ function setupEventListeners() {
     }
 
     try {
-      // 1. Limpiar datos en localStorage exclusivos de este canto
+      // 1. Limpiar datos en localStorage exclusivos de este canto (manteniendo intacto el usuario iniciado)
       localStorage.removeItem(`custom-positions-${songId}`);
       localStorage.removeItem(`canto-config-${songId}`);
       for (let i = localStorage.length - 1; i >= 0; i--) {
@@ -7366,6 +7367,11 @@ function setupEventListeners() {
         }
       }
 
+      // Asegurar que la sesión del usuario siga iniciada tras limpiar caché
+      if (typeof window.restaurarSesionUsuario === 'function') {
+        window.restaurarSesionUsuario(authSnap);
+      }
+
       // 4. Recargar desde red las posiciones por defecto de chord_positions.json para este canto si existieran
       try {
         const posRes = await fetch(`data/chord_positions.json?nocache=${Date.now()}`, { cache: 'reload' });
@@ -7394,6 +7400,9 @@ function setupEventListeners() {
         window.showToast('Error al recargar el canto desde cero.');
       }
     } finally {
+      if (typeof window.restaurarSesionUsuario === 'function') {
+        window.restaurarSesionUsuario(authSnap);
+      }
       if (btn) {
         btn.disabled = false;
         btn.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1.1rem;">refresh</span> Cargar`;
@@ -8084,6 +8093,7 @@ function setupEventListeners() {
         return;
       }
       try {
+        const authSnap = typeof window.preservarSesionUsuario === 'function' ? window.preservarSesionUsuario() : null;
         if (window.mostrarProgreso) {
           window.mostrarProgreso({
             titulo: 'Actualizando App',
@@ -8114,11 +8124,16 @@ function setupEventListeners() {
           );
           console.log('[App] Service Workers desregistrados.');
         }
+
+        if (typeof window.restaurarSesionUsuario === 'function') {
+          window.restaurarSesionUsuario(authSnap);
+        }
         
-        // 3. Forzar recarga con timestamp de ruptura de caché (equivalente a Ctrl + Shift + R)
+        // 3. Forzar recarga con timestamp de ruptura de caché (equivalente a Ctrl + Shift + R) manteniendo hash y usuario
         setTimeout(() => {
           const cleanUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
-          window.location.href = cleanUrl + '?nocache=' + Date.now();
+          const currentHash = window.location.hash || '';
+          window.location.href = cleanUrl + '?nocache=' + Date.now() + currentHash;
         }, 800);
       } catch (err) {
         if (window.ocultarProgreso) window.ocultarProgreso();

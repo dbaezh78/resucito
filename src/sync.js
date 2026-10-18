@@ -1,13 +1,16 @@
 // src/sync.js - Sincronización de configuraciones personales y globales con Firestore
 
 import { db, auth, doc, setDoc, getDoc, collection, getDocs, query, orderBy, limit, onSnapshot } from "./firebase.js";
+import { getCurrentUser } from "./auth.js";
 import { transposeNote, normalizeChord } from "./chords.js";
 
-
+function getActiveUser() {
+  return auth.currentUser || (typeof getCurrentUser === 'function' ? getCurrentUser() : null);
+}
 
 // Sincroniza la nota personal del cantor
 export async function guardarNotaEnNube(cantoId, notaPersonal) {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
   
   try {
@@ -60,7 +63,7 @@ export async function guardarNotaEnNube(cantoId, notaPersonal) {
 
 // Carga la nota personal del cantor
 export async function cargarNotaDesdeNube(cantoId) {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return null;
   
   try {
@@ -115,7 +118,7 @@ export async function publicarPosicionesGlobales(cantoId, posiciones) {
 
 // Guarda posiciones de acordes directamente en global_positions (ÚNICA FUENTE DE VERDAD)
 export async function guardarPosicionesEnNube(cantoId, posiciones) {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
   // Ahora todas las posiciones de acordes se guardan directamente en global_positions
   await publicarPosicionesGlobales(cantoId, posiciones);
@@ -129,7 +132,7 @@ export async function cargarPosicionesDesdeNube(cantoId) {
 
 // Descarga y respalda todas las posiciones de /usuarios/{uid}/posiciones/ en chord_positions-backup.json
 export async function respaldarPosicionesUsuario() {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) {
     throw new Error("Debes iniciar sesión para acceder a las posiciones de tu usuario en Firebase.");
   }
@@ -248,7 +251,7 @@ export async function cargarPosicionesGlobales(cantoId) {
 
 // Sincroniza todos los ajustes de la aplicación con Firestore
 export async function guardarFavoritosEnNube(favoritosArray) {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
 
   try {
@@ -274,7 +277,7 @@ export async function guardarFavoritosEnNube(favoritosArray) {
 }
 
 export async function cargarFavoritosDesdeNube() {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
 
   try {
@@ -318,7 +321,7 @@ export async function cargarFavoritosDesdeNube() {
 
 // Sincroniza todos los ajustes de la aplicación con Firestore
 export async function guardarAjustesEnNube() {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
 
   try {
@@ -354,7 +357,7 @@ export async function guardarAjustesEnNube() {
 
 // Carga los ajustes de la aplicación desde Firestore
 export async function cargarAjustesDesdeNube() {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
 
   try {
@@ -398,7 +401,7 @@ export async function cargarAjustesDesdeNube() {
 
 // Sincroniza la cejilla y el acorde en la colección 'historial' de cada canto y en la raíz dbdata
 export async function guardarHistorialCantoEnNube(cantoId, acordeOffset, cejillaValue) {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
 
   try {
@@ -436,7 +439,7 @@ export async function guardarHistorialCantoEnNube(cantoId, acordeOffset, cejilla
 
 // Descarga la configuración guardada de cejilla, acorde, nota y valoración del canto
 export async function cargarHistorialCantoDesdeNube(cantoId) {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return null;
 
   try {
@@ -486,7 +489,7 @@ export async function cargarHistorialCantoDesdeNube(cantoId) {
 
 // Sincroniza zooms personalizados de cantos por dispositivo en Firestore
 export async function guardarZoomCantoEnNube(songId, zoomData) {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
   try {
     const docRef = doc(db, "usuarios", user.uid, "configuracion", "song_zooms");
@@ -506,7 +509,7 @@ export async function guardarZoomCantoEnNube(songId, zoomData) {
 }
 
 export async function cargarZoomsDesdeNube() {
-  const user = auth.currentUser;
+  const user = getActiveUser();
   if (!user) return;
   try {
     const docRef = doc(db, "usuarios", user.uid, "configuracion", "song_zooms");
@@ -532,7 +535,7 @@ export async function cargarZoomsDesdeNube() {
 // 2. Ajustes generales, favoritos y zooms (/usuarios/{uid}/configuracion/...)
 // 3. Colección completa de cantos personalizados (/usuarios/{uid}/dbdata)
 export async function cargarTodoElUsuarioDesdeNube(userParam) {
-  const user = userParam || auth.currentUser;
+  const user = userParam || getActiveUser();
   if (!user) return;
 
   console.log(`📥 [Firebase] Iniciando sincronización integral de datos para usuario: ${user.email || user.uid}`);
