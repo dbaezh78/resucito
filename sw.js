@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v388'; // v2.1.52 Add 2 new Corderos and update Solemne audio
+const CACHE_NAME = 'resucito-cache-v389'; // v2.1.53 Fix chord rendering on asamblea toggle
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
