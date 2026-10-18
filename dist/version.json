@@ -1,11 +1,10 @@
 {
-  "latestVersion": "2.1.57",
+  "latestVersion": "2.1.58",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.57)",
-  "updateMessage": "Añadida opción 'Cargar Canto desde Cero' en Ajustes > Cantos > Canto para limpiar la caché y recargar únicamente el canto actual.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.58)",
+  "updateMessage": "Lectura directa de archivos individuales (ej. seua_73.json) y sincronización automática de estrofas al usar Cargar Canto desde Cero.",
   "releaseNotes": [
-    "Ajustes > Cantos > Canto: Nueva opción 'Cargar Canto desde Cero' (arriba de Indicador BIS) que limpia la caché y los datos almacenados exclusivamente del canto abierto y lo vuelve a cargar al instante.",
-    "Reproductor (play.html): Arrastrar y soltar cantos de arriba a abajo en las listas.",
-    "Eucaristía y Formulario Litúrgico Anual: Salmo del Día destacado en primera posición."
+    "Al usar 'Cargar Canto desde Cero' (y al abrir cantos de Eucaristía), ahora se lee directamente el archivo JSON individual del canto (ej. seua_73.json) y se sincronizan automáticamente los cambios realizados en 'estrofas' hacia 'lizq'.",
+    "Actualizado el texto de seua_73.json ('Pues los dioses de los gentiles no son nada,')."
   ]
 }

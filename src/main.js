@@ -1062,6 +1062,77 @@ window.registrarUsoCanto = function(songId, tipo, detalle) {
   localStorage.setItem(key, JSON.stringify(data));
 };
 
+// Sincroniza el arreglo 'estrofas' (y 'respuesta') hacia 'lizq' en los salmos eucarísticos
+// para que cualquier cambio hecho en 'estrofas' dentro de seua_XX.json se refleje al instante en pantalla.
+function sincronizarEstrofasEnLizq(songData) {
+  if (!songData || !Array.isArray(songData.estrofas) || songData.estrofas.length === 0) {
+    return songData;
+  }
+
+  const normalizedStanzas = songData.estrofas.map(st => {
+    if (Array.isArray(st)) return st.map(l => String(l));
+    if (typeof st === 'string') return st.split(/\r?\n/);
+    return [String(st)];
+  });
+  songData.estrofas = normalizedStanzas;
+
+  const flatVerses = normalizedStanzas.flat();
+
+  if (Array.isArray(songData.lizq) && songData.lizq.length > 0) {
+    // Actualizar línea de respuesta principal si existe
+    if (songData.respuesta) {
+      const respItem = songData.lizq.find(item => item && typeof item.sC === 'string' && item.sC.includes('salmo-respuesta') && !item.sC.includes('salmo-respuesta-opc'));
+      if (respItem) {
+        respItem.line = songData.respuesta;
+      }
+    }
+
+    const verseItems = songData.lizq.filter(item => item && typeof item.sC === 'string' && item.sC.includes('salmo-verso'));
+    if (verseItems.length === flatVerses.length) {
+      verseItems.forEach((vItem, idx) => {
+        vItem.line = flatVerses[idx];
+      });
+      songData.textoCompleto = normalizedStanzas.map(st => st.join('\n')).join('\n\n');
+      return songData;
+    }
+  }
+
+  // Si no había lizq o cambió la cantidad de versos/estrofas, reconstruir lizq desde estrofas
+  const nuevoLizq = [];
+  if (songData.respuesta) {
+    nuevoLizq.push({
+      sC: 'salmo-linea salmo-respuesta',
+      line: songData.respuesta
+    });
+  }
+  if (songData.respuestaOpcional) {
+    nuevoLizq.push({
+      sC: 'salmo-linea salmo-respuesta-opc',
+      line: songData.respuestaOpcional.startsWith('O bien:') ? songData.respuestaOpcional : `O bien: ${songData.respuestaOpcional}`
+    });
+  }
+
+  normalizedStanzas.forEach(stanza => {
+    nuevoLizq.push({ line: '', sC: 'salmo-espacio' });
+    stanza.forEach((verso, vIdx) => {
+      let clase = 'salmo-linea salmo-verso salmo-sangria';
+      if (vIdx === 0) {
+        clase = 'salmo-linea salmo-verso salmo-verso-primero';
+      } else if (vIdx === stanza.length - 1) {
+        clase = 'salmo-linea salmo-verso salmo-sangria salmo-verso-fin';
+      }
+      nuevoLizq.push({
+        line: verso,
+        sC: clase
+      });
+    });
+  });
+
+  songData.lizq = nuevoLizq;
+  songData.textoCompleto = normalizedStanzas.map(st => st.join('\n')).join('\n\n');
+  return songData;
+}
+
 // --- Carga de Detalles de Canción ---
 async function loadSongView(songId, forceReload = false) {
   try {
@@ -1083,33 +1154,61 @@ async function loadSongView(songId, forceReload = false) {
     // Registrar apertura/uso del canto para el historial del calendario
     window.registrarUsoCanto(songId, 'view', 'Vista de canto');
     
-    let songData;
+    let songData = null;
     if (!forceReload && loadedSongsCache[songId]) {
       songData = loadedSongsCache[songId];
-    } else if (!forceReload && salmosEucaristiaList && salmosEucaristiaList.length > 0) {
-      const found = salmosEucaristiaList.find(s => s.id === songId);
-      if (found) {
-        songData = found;
+    }
+
+    // 1. Intentar cargar siempre desde el archivo JSON individual del canto (data/songs, data/joven, data/songs-ae o data/seucaristia)
+    // De esta forma, si el usuario edita seua_73.json (o cualquier otro canto) y le da a "Cargar Canto desde Cero", lee directo el archivo.
+    if (!songData) {
+      const songMeta = allSongs ? allSongs.find(s => s.id === songId) : null;
+      let folder = 'data/songs';
+      if (songId.startsWith('aet') || (songMeta && songMeta.sourceBook === 'aclamaciones')) {
+        folder = 'data/songs-ae';
+      } else if (songId.startsWith('seu') || (songMeta && songMeta.sourceBook === 'eucaristia')) {
+        folder = 'data/seucaristia';
+      } else if (songMeta && songMeta.sourceBook === 'joven') {
+        folder = 'data/joven';
+      }
+      const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
+      const querySuffix = forceReload ? `?nocache=${Date.now()}` : `?offline=${isOffline}`;
+      const fetchOpts = forceReload ? { cache: 'no-store' } : undefined;
+
+      let response = await fetch(`${folder}/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
+      if ((!response || !response.ok) && folder === 'data/joven') {
+        response = await fetch(`data/songs/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
+      } else if ((!response || !response.ok) && folder === 'data/songs') {
+        response = await fetch(`data/joven/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
+      }
+      if (response && response.ok) {
+        songData = await response.json();
+        sincronizarEstrofasEnLizq(songData);
         loadedSongsCache[songId] = songData;
+        if (songId.startsWith('seu') && Array.isArray(salmosEucaristiaList)) {
+          const idx = salmosEucaristiaList.findIndex(s => s.id === songId);
+          if (idx !== -1) salmosEucaristiaList[idx] = songData;
+        }
       }
     }
-    
-    if (!songData) {
-      if (songId.startsWith('seu') && (typeof navigator === 'undefined' || navigator.onLine !== false)) {
+
+    // 2. Fallback para salmos eucarísticos si no existiera el archivo individual local
+    if (!songData && songId.startsWith('seu')) {
+      if (salmosEucaristiaList && salmosEucaristiaList.length > 0) {
+        const found = salmosEucaristiaList.find(s => s.id === songId);
+        if (found) {
+          songData = sincronizarEstrofasEnLizq({ ...found });
+          loadedSongsCache[songId] = songData;
+        }
+      }
+      if (!songData && (typeof navigator === 'undefined' || navigator.onLine !== false)) {
         try {
           const isLocalOnly = (typeof localStorage !== 'undefined') && localStorage.getItem('resucito_eucaristia_source') === 'local_only';
           if (!isLocalOnly) {
             const { db, doc, getDoc } = await import('./firebase.js');
             const dSnap = await getDoc(doc(db, 'salmos_eucaristia', songId));
             if (dSnap.exists()) {
-              const data = { id: dSnap.id, ...dSnap.data() };
-              if (Array.isArray(data.estrofas)) {
-                data.estrofas = data.estrofas.map(st => {
-                  if (Array.isArray(st)) return st;
-                  if (typeof st === 'string') return st.split(/\r?\n/);
-                  return [String(st)];
-                });
-              }
+              const data = sincronizarEstrofasEnLizq({ id: dSnap.id, ...dSnap.data() });
               songData = data;
               loadedSongsCache[songId] = songData;
             }
@@ -1118,39 +1217,13 @@ async function loadSongView(songId, forceReload = false) {
           console.debug('Fallback local para salmo eucarístico individual:', songId);
         }
       }
-
-      if (!songData && songId.startsWith('seu') && salmosEucaristiaList && salmosEucaristiaList.length > 0) {
-        const found = salmosEucaristiaList.find(s => s.id === songId);
-        if (found) {
-          songData = found;
-          loadedSongsCache[songId] = songData;
-        }
-      }
-
-      if (!songData) {
-        const songMeta = allSongs ? allSongs.find(s => s.id === songId) : null;
-        let folder = 'data/songs';
-        if (songId.startsWith('aet') || (songMeta && songMeta.sourceBook === 'aclamaciones')) {
-          folder = 'data/songs-ae';
-        } else if (songId.startsWith('seu') || (songMeta && songMeta.sourceBook === 'eucaristia')) {
-          folder = 'data/seucaristia';
-        } else if (songMeta && songMeta.sourceBook === 'joven') {
-          folder = 'data/joven';
-        }
-        const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
-        const querySuffix = forceReload ? `?nocache=${Date.now()}` : `?offline=${isOffline}`;
-        const fetchOpts = forceReload ? { cache: 'reload' } : undefined;
-        let response = await fetch(`${folder}/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
-        if ((!response || !response.ok) && folder === 'data/joven') {
-          response = await fetch(`data/songs/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
-        } else if ((!response || !response.ok) && folder === 'data/songs') {
-          response = await fetch(`data/joven/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
-        }
-        if (!response || !response.ok) throw new Error('Canto no encontrado');
-        songData = await response.json();
-        loadedSongsCache[songId] = songData;
-      }
     }
+
+    if (!songData) {
+      throw new Error('Canto no encontrado');
+    }
+
+    sincronizarEstrofasEnLizq(songData);
     currentCanto = songData;
     window.currentCanto = currentCanto;
     
@@ -5382,6 +5455,7 @@ async function obtenerCantoCompleto(songId) {
     }
     if (response && response.ok) {
       const songData = await response.json();
+      sincronizarEstrofasEnLizq(songData);
       loadedSongsCache[songId] = songData;
       return songData;
     }
