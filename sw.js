@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v397'; // v2.1.61 Persist reloaded song across F5/Ctrl+R without bulk cache overwrite
+const CACHE_NAME = 'resucito-cache-v398'; // v2.1.62 Pure Cache-First for songs + targeted reload via Cargar Canto desde Cero
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [
@@ -168,18 +168,8 @@ self.addEventListener('fetch', event => {
           cachedResponse = await songsCache.match(`${cleanUrl}?offline=true`);
         }
 
-        // Si ya está en la caché de cantos, servirlo inmediatamente
+        // Si ya está en la caché permanente de cantos, servirlo inmediatamente sin volver a descargarlo
         if (cachedResponse) {
-          // Si hay conexión a internet, refrescar en background evitando la caché HTTP del navegador
-          if (navigator.onLine) {
-            fetch(cleanUrl, { cache: 'no-cache' }).then(async networkResponse => {
-              if (networkResponse && networkResponse.status === 200) {
-                await songsCache.put(cleanUrl, networkResponse.clone());
-                await songsCache.put(`${cleanUrl}?offline=false`, networkResponse.clone());
-                await songsCache.put(`${cleanUrl}?offline=true`, networkResponse.clone());
-              }
-            }).catch(() => {});
-          }
           return cachedResponse;
         }
 

@@ -650,8 +650,7 @@ export async function cargarSalmosEucaristia() {
             seen.add(rawItem.id);
             const item = normalizePsalm(rawItem);
             combined.push(item);
-            // NO pre-llenar loadedSongsCache[item.id] con el paquete masivo,
-            // para que al abrir un salmo (o dar F5/Ctrl+R) siempre lea su archivo individual (ej. seua_73.json).
+            loadedSongsCache[item.id] = item;
           }
         });
       }
@@ -713,6 +712,7 @@ export async function cargarSalmosEucaristia() {
             seen.add(rawItem.id);
             const item = normalizePsalm(rawItem);
             combined.push(item);
+            loadedSongsCache[item.id] = item;
           }
         });
         salmosEucaristiaList = combined;
@@ -1181,7 +1181,7 @@ async function loadSongView(songId, forceReload = false) {
       }
       const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
       const querySuffix = forceReload ? `?nocache=${Date.now()}` : `?offline=${isOffline}`;
-      const fetchOpts = forceReload ? { cache: 'no-store' } : (navigator.onLine ? { cache: 'no-cache' } : undefined);
+      const fetchOpts = forceReload ? { cache: 'no-store' } : undefined;
 
       let targetFolder = folder;
       let response = await fetch(`${targetFolder}/${songId}.json${querySuffix}`, fetchOpts).catch(() => null);
@@ -1217,6 +1217,25 @@ async function loadSongView(songId, forceReload = false) {
               await songsCache.put(basePath, new Response(serializedSong, { status: 200, headers }));
               await songsCache.put(`${basePath}?offline=false`, new Response(serializedSong, { status: 200, headers }));
               await songsCache.put(`${basePath}?offline=true`, new Response(serializedSong, { status: 200, headers }));
+
+              // Si es un salmo eucarístico (seu*), actualizar también su entrada dentro del paquete de ciclo en caché
+              if (songId.startsWith('seu')) {
+                const cycleFiles = ['cicloa.json', 'ciclob.json', 'cicloc.json', 'anopar.json', 'anoimpar.json', 'ferias.json', 'santos.json'];
+                for (const cf of cycleFiles) {
+                  const cfUrl = `data/seucaristia/${cf}`;
+                  const cachedCf = await songsCache.match(cfUrl);
+                  if (cachedCf) {
+                    const cfList = await cachedCf.json().catch(() => null);
+                    if (Array.isArray(cfList)) {
+                      const cfIdx = cfList.findIndex(item => item && item.id === songId);
+                      if (cfIdx !== -1) {
+                        cfList[cfIdx] = songData;
+                        await songsCache.put(cfUrl, new Response(JSON.stringify(cfList), { status: 200, headers }));
+                      }
+                    }
+                  }
+                }
+              }
             } catch (cacheErr) {}
           }
         }

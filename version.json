@@ -1,10 +1,10 @@
 {
-  "latestVersion": "2.1.61",
+  "latestVersion": "2.1.62",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.61)",
-  "updateMessage": "Persistencia total del canto recargado al usar F5 o Ctrl+R sin ser sobrescrito por el paquete en caché.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.62)",
+  "updateMessage": "Caché permanente de cantos sin re-descargas + recarga individual desde cero persistente.",
   "releaseNotes": [
-    "Evitado que cargarSalmosEucaristia() sobrescriba en memoria los salmos individuales con datos viejos de paquetes al pulsar F5 o Ctrl+R.",
-    "El canto recargado con 'Cargar Canto desde Cero' ahora se persiste en localStorage y en todas las variantes de URL de resucito-cantos-cache para conservar los cambios tras recargar la página."
+    "Los +1400 cantos y salmos se sirven 100% desde resucito-cantos-cache sin volver a descargarse al abrir cantos, limpiar caché de la app o actualizar.",
+    "Al pulsar 'Cargar Canto desde Cero', se actualiza únicamente ese canto en la caché permanente (incluyendo su paquete de ciclo eucarístico y localStorage), manteniéndose fijo tras F5 o Ctrl+R."
   ]
 }
