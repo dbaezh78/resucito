@@ -772,9 +772,10 @@
     // Helper: Determinar si el canto está en cache de SW
     function isSongInSWCache(songId) {
       if (!songId) return false;
-      const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+      const songObj = allSongs ? allSongs.find(s => s.id === songId) : null;
+      const folder = songId.startsWith('aet') ? 'data/songs-ae' : (songObj && (songObj.sourceBook === 'joven' || songObj.stage === 'Católicos') ? 'data/joven' : 'data/songs');
       const path1 = `${folder}/${songId}.json`;
-      return cachedUrlsSet.has(path1);
+      return cachedUrlsSet.has(path1) || cachedUrlsSet.has(`data/joven/${songId}.json`) || cachedUrlsSet.has(`data/songs/${songId}.json`);
     }
 
     // Helper: Obtener notas del canto

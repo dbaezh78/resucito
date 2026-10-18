@@ -808,7 +808,8 @@
                 const chunk = indexList.slice(i, i + batchSize);
                 await Promise.all(chunk.map(async (item) => {
                   if (item && item.id) {
-                    const songPath = `data/songs/${item.id}.json`;
+                    const folder = item.id.startsWith('aet') ? 'data/songs-ae' : ((item.sourceBook === 'joven' || item.stage === 'Católicos') ? 'data/joven' : 'data/songs');
+                    const songPath = `${folder}/${item.id}.json`;
                     const sContent = await fetchAsset(songPath);
                     if (sContent !== null) {
                       zip.file(songPath, sContent);

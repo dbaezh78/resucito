@@ -4,13 +4,12 @@
   "title": "Con Mi Burrito Sabanero",
   "subtitle": "Villancicos",
   "category": [
-    "Precatecumenado",
+    "Católicos",
     "Adviento",
     "Navidad",
-    "Catolicos",
     "Villancicos"
   ],
-  "catCanto": "Precatecumenado",
+  "catCanto": "Católicos",
   "cejilla": "",
   "acorde": "Sol",
   "nCan": "",
@@ -35,6 +34,7 @@
   },
   "ant": "/resucito/src/index.html?canto=tuqueeresfiel",
   "sig": "/resucito/src/index.html?canto=unagransenal",
+  "sourceBook": "joven",
   "lizq": [
     {
       "line": "Con mi burrito sabanero voy camino de Belén,, (Sol,m,25)(Do,m,200)(Re,m,300)(Sol,m,428)",

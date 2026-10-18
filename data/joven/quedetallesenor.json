@@ -4,12 +4,12 @@
   "title": "Que detalle Señor has tenico conmigo",
   "subtitle": "Brotes de Olivo",
   "category": [
-    "Precatecumenado",
+    "Católicos",
     "Pascua",
     "Pentecostés",
     "Nuevo Testamento"
   ],
-  "catCanto": "Precatecumenado",
+  "catCanto": "Católicos",
   "cejilla": "",
   "acorde": "Sol",
   "nCan": "",
@@ -34,6 +34,7 @@
   },
   "ant": "/src/index.html?canto=muchomehanperseguido",
   "sig": "/src/index.html?canto=nohayenelparecer",
+  "sourceBook": "joven",
   "lizq": [
     {
       "line": "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)",

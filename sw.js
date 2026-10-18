@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v390'; // v2.1.54 Add Reproductor page (play.html) and protect collapsible block fix
+const CACHE_NAME = 'resucito-cache-v391'; // v2.1.55 Add Aleluya Interleccional (180), exclude aclamaciones from play.html, move Católicos to data/joven
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

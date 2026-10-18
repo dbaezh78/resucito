@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.54",
+  "latestVersion": "2.1.55",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.54)",
-  "updateMessage": "Nueva página Reproductor (play.html) para crear listas de reproducción personalizadas con cantos del Camino y Cantos Joven.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.55)",
+  "updateMessage": "Agregado canto Aleluya Interleccional (180) en Resucitó, optimizado el catálogo del Reproductor y organizados los cantos Católicos en data/joven.",
   "releaseNotes": [
-    "Nueva página Reproductor (play.html): crea, edita y organiza listas de reproducción personalizadas.",
-    "Catálogo integrado con todos los Cantos del Camino y Cantos Joven, filtros por etapa y buscador instantáneo.",
-    "Controles completos de reproducción (aleatorio, repetir lista/canto, velocidad 0.85x–1.25x, sincronización en la nube) y protección permanente del colapso de asamblea."
+    "Agregado el canto Aleluya Interleccional (nº 180, Modelos I, II y III) en el libro Resucitó y en el Reproductor.",
+    "Excluidas las aclamaciones dominicales repetidas del Reproductor (play.html), dejando únicamente el canto Aleluya Interleccional.",
+    "Movidos almadecristo.json y todos los cantos con categoría 'Católicos' exclusivamente a la carpeta data/joven/."
   ]
 }

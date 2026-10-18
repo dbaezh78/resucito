@@ -171,7 +171,10 @@ try {
         });
         
         // Guardar detalle de canción
-        const songDetailPath = path.join(TARGET_SONGS_DIR, `${song.id}.json`);
+        const isJovenOrCatolico = song.sourceBook === 'joven' || song.catCanto === 'Católicos';
+        const targetDir = isJovenOrCatolico ? path.resolve(TARGET_DATA_DIR, 'joven') : TARGET_SONGS_DIR;
+        if (!fs.existsSync(targetDir)) fs.mkdirSync(targetDir, { recursive: true });
+        const songDetailPath = path.join(targetDir, `${song.id}.json`);
         fs.writeFileSync(songDetailPath, JSON.stringify(song, null, 2), 'utf8');
     }
     

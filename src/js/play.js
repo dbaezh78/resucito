@@ -218,10 +218,10 @@ async function loadCatalogSongs() {
     });
   }
 
-  const excludedIds = new Set(['cancionero', 'aleluyainterleccional', 'Salmodias']);
+  const excludedIds = new Set(['cancionero', 'Salmodias']);
 
   allCatalogSongs = rawList
-    .filter(s => s && s.id && s.visible !== 'index' && !excludedIds.has(String(s.id)))
+    .filter(s => s && s.id && s.visible !== 'index' && !excludedIds.has(String(s.id)) && s.sourceBook !== 'aclamaciones' && !String(s.id).startsWith('aet'))
     .map(s => {
       const id = String(s.id);
       const title = s.title || s.tt || id;

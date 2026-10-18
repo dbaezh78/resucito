@@ -1133,6 +1133,8 @@ async function loadSongView(songId) {
         let response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`).catch(() => null);
         if ((!response || !response.ok) && folder === 'data/joven') {
           response = await fetch(`data/songs/${songId}.json?offline=${isOffline}`).catch(() => null);
+        } else if ((!response || !response.ok) && folder === 'data/songs') {
+          response = await fetch(`data/joven/${songId}.json?offline=${isOffline}`).catch(() => null);
         }
         if (!response || !response.ok) throw new Error('Canto no encontrado');
         songData = await response.json();
@@ -5054,6 +5056,8 @@ async function obtenerCantoCompleto(songId) {
     let response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`).catch(() => null);
     if ((!response || !response.ok) && folder === 'data/joven') {
       response = await fetch(`data/songs/${songId}.json?offline=${isOffline}`).catch(() => null);
+    } else if ((!response || !response.ok) && folder === 'data/songs') {
+      response = await fetch(`data/joven/${songId}.json?offline=${isOffline}`).catch(() => null);
     }
     if (response && response.ok) {
       const songData = await response.json();
