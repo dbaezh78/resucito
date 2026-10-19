@@ -4247,7 +4247,7 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
       background: white;
 }
 
-.songs-grid.style-simple .song-card-title {font-size: 3vw;
+.songs-grid.style-simple .song-card-title {font-size: unset;
 
 }
 
