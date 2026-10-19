@@ -37,7 +37,7 @@
   "sig": "",
   "lizq": [
     {
-      "line": "Yo te llevo, desde niño muy adentro,, (Mi,m,0)(Si,7,9)(Mi,m,32)",
+      "line": "Yo te llevo, desde niño muy adentro,, (Mi,m,0)(Si,7,19)(Mi,m,30)",
       "sC": ""
     },
     {
@@ -73,7 +73,7 @@
       "sC": "adb1"
     },
     {
-      "line": "COMO NO CREER EN DIOS,, (Mi,,0)(Si,7,17)",
+      "line": "COMO NO CREER EN DIOS,, (Mi,7,0)(La,m,17)",
       "sC": "ta as"
     },
     {
@@ -89,19 +89,19 @@
       "sC": "as"
     },
     {
-      "line": "COMO NO CREER EN DIOS,, (Mi,7,1)(La,m,18)",
+      "line": "COMO NO CREER EN DIOS,, (Mi,7,0)(La,m,18)",
       "sC": "as"
     },
     {
-      "line": "SI LO SIENTO EN MI PECHO A CADA INSTANTE, (Re,,0)(Sol,,15)",
+      "line": "SI LO SIENTO EN MI PECHO A CADA INSTANTE, (Re,,20)(Sol,,34)",
       "sC": "as"
     },
     {
-      "line": "EN LA RISA DE UN NIÑO POR LA CALLE, (La,m,0)(Mi,m,17)",
+      "line": "EN LA RISA DE UN NIÑO POR LA CALLE, (La,m,6)(Mi,m,29)",
       "sC": "as"
     },
     {
-      "line": "O EN LA TIERNA CARICIA DE UNA MADRE, (Si,7,0)(Mi,m,15)",
+      "line": "O EN LA TIERNA CARICIA DE UNA MADRE, (Si,7,30)",
       "sC": "as"
     },
     {
@@ -113,11 +113,11 @@
       "sC": "adb1"
     },
     {
-      "line": "COMO NO CREER EN DIOS, (Mi,m,0)(Si,7,8)",
+      "line": "COMO NO CREER EN DIOS, (Mi,m,0)(Si,7,17)",
       "sC": "ta as"
     },
     {
-      "line": "Si está en las viñas y en el manso trigo, (Mi,m,0)",
+      "line": "Si está en las viñas y en el manso trigo, (Mi,m,35)",
       "sC": ""
     },
     {
@@ -125,7 +125,7 @@
       "sC": "ta as"
     },
     {
-      "line": "Si me dio la mano abierta de un amigo, (Mi,m,0)",
+      "line": "Si me dio la mano abierta de un amigo, (Mi,m,32)",
       "sC": ""
     },
     {
@@ -133,19 +133,19 @@
       "sC": "ta as"
     },
     {
-      "line": "Si me ha dado la tristeza y la alegria,, (Mi,m,0)",
+      "line": "Si me ha dado la tristeza y la alegria,, (Mi,m,31)",
       "sC": "tc"
     },
     {
-      "line": "De saber que hay un mañana cada dia,, (Si,7,0)",
+      "line": "De saber que hay un mañana cada dia,, (Si,7,32)",
       "sC": ""
     },
     {
-      "line": "Por la fe por la esperanza y el amor,, (Mi,m,0)",
+      "line": "Por la fe por la esperanza y el amor,, (Mi,m,32)",
       "sC": ""
     },
     {
-      "line": "COMO NO..., (Si,7,5)",
+      "line": "COMO NO..., (Si,7,0)",
       "sC": "ta as"
     },
     {
@@ -153,25 +153,25 @@
       "sC": "adb1"
     },
     {
-      "line": "LA LA LA LA LA LA LA, (Mi,m,0)(Si,7,15)",
+      "line": "LA LA LA LA LA LA LA, (Mi,m,0)(Si,7,13)",
       "sC": "as"
     }
   ],
   "lder": [
     {
-      "line": "COMO NO CREER EN DIOS, (Mi,m,0)(Si,7,10)",
+      "line": "COMO NO CREER EN DIOS, (Mi,m,0)(Si,7,17)",
       "sC": "ta as"
     },
     {
-      "line": "Si me ha dado la tristeza y la alegría,, (Mi,m,0)",
+      "line": "Si me ha dado la tristeza y la alegría,, (Mi,m,31)",
       "sC": ""
     },
     {
-      "line": "de saber que hay un mañana cada día, (Si,7,0)",
+      "line": "de saber que hay un mañana cada día, (Si,7,33)",
       "sC": ""
     },
     {
-      "line": "por la fe por la esperanza y el amor, (Mi,m,0)",
+      "line": "por la fe por la esperanza y el amor, (Mi,m,32)",
       "sC": ""
     },
     {
@@ -187,7 +187,7 @@
       "sC": "adb1"
     },
     {
-      "line": "si me ha dado los hijos y la vida, (Mi,m,0)",
+      "line": "si me ha dado los hijos y la vida, (Mi,m,29)",
       "sC": ""
     },
     {
@@ -203,7 +203,7 @@
       "sC": "adb1"
     },
     {
-      "line": "si me ha dado la mujer querida, (Mi,m,0)",
+      "line": "si me ha dado la mujer querida, (Mi,m,23)",
       "sC": ""
     },
     {
@@ -213,45 +213,55 @@
     {
       "type": "collapsible-block",
       "id": "t1",
+      "keepTriggerVisible": true,
       "initialState": "collapsed",
-      "triggerLine": "COMO NO CREER EN DIOS, (Mi,7,0)(La,m,9)",
-      "sC": "ta as t1",
+      "triggerLine": "COMO NO CREER EN DIOS, (Mi,7,0)(La,m,17)",
+      "sC": "ta as",
       "lines": [
         {
-          "line": "SI ESTÁ EN LAS VIÑAS Y EN EL MANZO TRIGO, (Re,,0)(Sol,,15)",
-          "sC": "as t1a"
+          "id": "t1a",
+          "line": "SI ESTÁ EN LAS VIÑAS Y EN EL MANZO TRIGO, (Re,,15)(Sol,,35)",
+          "sC": "as"
         },
         {
-          "line": "COMO NO CREER EN DIOS, (La,m,0)",
-          "sC": "as t1b"
+          "id": "t1b",
+          "line": "COMO NO CREER EN DIOS, (La,m,17)",
+          "sC": "as"
         },
         {
-          "line": "SI ME DIO LA MANO ABIERTA DE UN AMIGO, (Mi,m,0)",
-          "sC": "as t1c"
+          "id": "t1c",
+          "line": "SI ME DIO LA MANO ABIERTA DE UN AMIGO, (Mi,m,32)",
+          "sC": "as"
         },
         {
-          "line": "COMO NO CREER EN DIOS, (Si,7,0)",
-          "sC": "as t1d"
+          "id": "t1d",
+          "line": "COMO NO CREER EN DIOS, (Si,7,17)",
+          "sC": "as"
         },
         {
-          "line": "SI ME HA DADO LOS HIJOS Y LA VIDA, (Mi,m,0)",
-          "sC": "as t1e"
+          "id": "t1e",
+          "line": "SI ME HA DADO LOS HIJOS Y LA VIDA, (Mi,m,29)",
+          "sC": "as"
         },
         {
-          "line": "COMO NO CREER EN DIOS, (Si,7,0)",
-          "sC": "as t1f"
+          "id": "t1f",
+          "line": "COMO NO CREER EN DIOS, (Si,7,17)",
+          "sC": "as"
         },
         {
-          "line": "SI ME HA DADO LA MUJER QUERIDA, (Mi,m,0)",
-          "sC": "as t1g"
+          "id": "t1g",
+          "line": "SI ME HA DADO LA MUJER QUERIDA, (Mi,m,25)",
+          "sC": "as"
         },
         {
-          "line": "COMO NO CREER EN DIOS, (Si,7,0)",
-          "sC": "as t1h"
+          "id": "t1h",
+          "line": "COMO NO CREER EN DIOS, (Si,7,17)",
+          "sC": "as"
         },
         {
-          "line": "SI ESTÁ EN LAS VIÑAS Y EN EL MANZO TRIGO, (Mi,m,0)",
-          "sC": "as t1i"
+          "id": "t1i",
+          "line": "SI ESTÁ EN LAS VIÑAS Y EN EL MANZO TRIGO, (Mi,m,35)",
+          "sC": "as"
         }
       ]
     },
@@ -260,7 +270,7 @@
       "sC": "adb1"
     },
     {
-      "line": "COMO NO CREER, (Si,7,0)(Mi,m,5)",
+      "line": "COMO NO CREER, (Si,7,0)(Mi,m,8)",
       "sC": "ta as"
     }
   ]

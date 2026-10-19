@@ -21242,12 +21242,12 @@
         {
           "name": "Si",
           "type": "7",
-          "pos": 9
+          "pos": 19
         },
         {
           "name": "Mi",
           "type": "m",
-          "pos": 32
+          "pos": 30
         }
       ],
       [
@@ -21358,12 +21358,12 @@
       [
         {
           "name": "Mi",
-          "type": "",
+          "type": "7",
           "pos": 0
         },
         {
-          "name": "Si",
-          "type": "7",
+          "name": "La",
+          "type": "m",
           "pos": 17
         }
       ],
@@ -21392,7 +21392,7 @@
         {
           "name": "Mi",
           "type": "7",
-          "pos": 1
+          "pos": 0
         },
         {
           "name": "La",
@@ -21404,36 +21404,100 @@
         {
           "name": "Re",
           "type": "",
-          "pos": 0
+          "pos": 20
         },
         {
           "name": "Sol",
           "type": "",
-          "pos": 15
+          "pos": 34
         }
       ],
       [
         {
           "name": "La",
           "type": "m",
-          "pos": 0
+          "pos": 6
         },
         {
           "name": "Mi",
           "type": "m",
+          "pos": 29
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "7",
           "pos": 17
         }
       ],
       [
         {
+          "name": "Mi",
+          "type": "m",
+          "pos": 35
+        }
+      ],
+      [
+        {
           "name": "Si",
           "type": "7",
           "pos": 0
-        },
+        }
+      ],
+      [
         {
           "name": "Mi",
           "type": "m",
-          "pos": 15
+          "pos": 32
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 31
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 32
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 32
         }
       ],
       [
@@ -21453,76 +21517,7 @@
         {
           "name": "Si",
           "type": "7",
-          "pos": 8
-        }
-      ],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 5
-        }
-      ],
-      [],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 15
+          "pos": 13
         }
       ]
     ],
@@ -21536,44 +21531,28 @@
         {
           "name": "Si",
           "type": "7",
-          "pos": 10
+          "pos": 17
         }
       ],
       [
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 31
         }
       ],
       [
         {
           "name": "Si",
           "type": "7",
-          "pos": 0
+          "pos": 33
         }
       ],
       [
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
-        }
-      ],
-      [],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 0
-        }
-      ],
-      [],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
+          "pos": 32
         }
       ],
       [],
@@ -21589,7 +21568,23 @@
         {
           "name": "Mi",
           "type": "m",
+          "pos": 29
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
           "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 23
         }
       ],
       [],
@@ -21605,7 +21600,7 @@
           {
             "name": "La",
             "type": "m",
-            "pos": 9
+            "pos": 17
           }
         ],
         "lines": [
@@ -21613,68 +21608,68 @@
             {
               "name": "Re",
               "type": "",
-              "pos": 0
+              "pos": 15
             },
             {
               "name": "Sol",
               "type": "",
-              "pos": 15
+              "pos": 35
             }
           ],
           [
             {
               "name": "La",
               "type": "m",
-              "pos": 0
+              "pos": 17
             }
           ],
           [
             {
               "name": "Mi",
               "type": "m",
-              "pos": 0
+              "pos": 32
             }
           ],
           [
             {
               "name": "Si",
               "type": "7",
-              "pos": 0
+              "pos": 17
             }
           ],
           [
             {
               "name": "Mi",
               "type": "m",
-              "pos": 0
+              "pos": 29
             }
           ],
           [
             {
               "name": "Si",
               "type": "7",
-              "pos": 0
+              "pos": 17
             }
           ],
           [
             {
               "name": "Mi",
               "type": "m",
-              "pos": 0
+              "pos": 25
             }
           ],
           [
             {
               "name": "Si",
               "type": "7",
-              "pos": 0
+              "pos": 17
             }
           ],
           [
             {
               "name": "Mi",
               "type": "m",
-              "pos": 0
+              "pos": 35
             }
           ]
         ]
@@ -21689,7 +21684,7 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 5
+          "pos": 8
         }
       ]
     ]
