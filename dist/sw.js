@@ -1,5 +1,6 @@
 const CACHE_NAME = 'resucito-cache-v398'; // v2.1.62 Pure Cache-First for songs + targeted reload via Cargar Canto desde Cero
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
+const AUDIO_OFFLINE_CACHE = 'resucito-audio-offline-cache'; // Caché persistente para audios descargados manualmente por el usuario
 
 const STATIC_ASSETS = [
   './',
@@ -74,8 +75,8 @@ self.addEventListener('activate', event => {
       const songsCache = await caches.open(SONGS_CACHE_NAME);
 
       for (const cache of cacheNames) {
-        // Nunca eliminar la caché actual ni la caché de cantos
-        if (cache !== CACHE_NAME && cache !== SONGS_CACHE_NAME) {
+        // Nunca eliminar la caché actual, la caché de cantos ni los audios offline descargados
+        if (cache !== CACHE_NAME && cache !== SONGS_CACHE_NAME && cache !== AUDIO_OFFLINE_CACHE) {
           // Migrar/rescatar cualquier canto o salmo de la caché antigua antes de eliminarla
           try {
             const oldCache = await caches.open(cache);
@@ -117,6 +118,46 @@ self.addEventListener('message', event => {
 // Interceptar peticiones
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
+
+  // 0. AUDIOS OFFLINE DESCARGADOS POR EL USUARIO
+  if (url.hostname.includes('audio.resucito.do')) {
+    event.respondWith(
+      (async () => {
+        try {
+          const audioCache = await caches.open(AUDIO_OFFLINE_CACHE);
+          const cleanUrl = url.origin + url.pathname;
+          let match = await audioCache.match(cleanUrl);
+          if (!match) match = await audioCache.match(event.request);
+          if (!match) match = await audioCache.match(event.request.url);
+          if (match) {
+            const rangeHeader = event.request.headers.get('range');
+            if (rangeHeader) {
+              const arrayBuffer = await match.arrayBuffer();
+              const bytesMatch = rangeHeader.match(/bytes=(\d+)-(\d+)?/);
+              if (bytesMatch) {
+                const start = parseInt(bytesMatch[1], 10);
+                const end = bytesMatch[2] ? parseInt(bytesMatch[2], 10) : arrayBuffer.byteLength - 1;
+                const sliced = arrayBuffer.slice(start, end + 1);
+                return new Response(sliced, {
+                  status: 206,
+                  statusText: 'Partial Content',
+                  headers: {
+                    'Content-Type': match.headers.get('Content-Type') || 'audio/mpeg',
+                    'Content-Range': `bytes ${start}-${end}/${arrayBuffer.byteLength}`,
+                    'Content-Length': sliced.byteLength,
+                    'Accept-Ranges': 'bytes'
+                  }
+                });
+              }
+            }
+            return match;
+          }
+        } catch (e) {}
+        return fetch(event.request);
+      })()
+    );
+    return;
+  }
 
   // Evitar interceptar llamadas de APIs externas o de Firebase Auth
   if (url.origin !== self.location.origin) {

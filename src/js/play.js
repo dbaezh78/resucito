@@ -3,6 +3,7 @@
 import { auth, db, doc, setDoc, deleteDoc, collection, getDocs, onSnapshot } from '../firebase.js';
 import { onAuthStateChanged } from '../auth.js';
 import { songs as fallbackSongsData } from '../songs-data.js';
+import { offlineAudio } from './offlineAudio.js';
 
 const STORAGE_KEY_PLAYLISTS = 'resucito_reproductor_listas_v1';
 const STORAGE_KEY_ACTIVE_PLAYLIST = 'resucito_reproductor_activa_v1';
@@ -503,6 +504,35 @@ function renderPlaylistsSection() {
   }
 }
 
+function renderOfflineAudioBtn(song) {
+  if (!song || !song.audioSrc) return '';
+  const songId = String(song.id);
+  const isDownloaded = offlineAudio.isDownloaded(songId);
+  const isDownloading = offlineAudio.isDownloading(songId);
+
+  if (isDownloading) {
+    return `
+      <button type="button" class="song-row-btn offline-audio-btn downloading" data-action="offline-audio" data-song-id="${escapeHtml(songId)}" title="Descargando audio para escuchar sin internet...">
+        <span class="material-symbols-outlined spinner">progress_activity</span>
+      </button>
+    `;
+  }
+
+  if (isDownloaded) {
+    return `
+      <button type="button" class="song-row-btn offline-audio-btn downloaded" data-action="offline-audio" data-song-id="${escapeHtml(songId)}" title="Audio guardado en este equipo (Mantén presionado para liberar)">
+        <span class="material-symbols-outlined">download_done</span>
+      </button>
+    `;
+  }
+
+  return `
+    <button type="button" class="song-row-btn offline-audio-btn" data-action="offline-audio" data-song-id="${escapeHtml(songId)}" title="Descargar audio para escuchar sin internet">
+      <span class="material-symbols-outlined">download</span>
+    </button>
+  `;
+}
+
 function renderActiveQueueSection() {
   const activePl = getPlaylistById(activePlaylistId);
   if (!activePl || !activeQueueContainer) return;
@@ -574,6 +604,7 @@ function renderActiveQueueSection() {
         </div>
 
         <div class="play-song-actions">
+          ${renderOfflineAudioBtn(song)}
           <a href="./index.html#canto=${encodeURIComponent(song.id)}" class="song-row-btn" title="Ver letra y acordes">
             <span class="material-symbols-outlined">menu_book</span>
           </a>
@@ -649,6 +680,7 @@ function renderCatalogSection() {
         </div>
 
         <div class="play-song-actions">
+          ${renderOfflineAudioBtn(song)}
           <a href="./index.html#canto=${encodeURIComponent(song.id)}" class="song-row-btn" title="Ver letra y acordes">
             <span class="material-symbols-outlined">menu_book</span>
           </a>
@@ -739,7 +771,7 @@ function updateMediaSessionMetadata() {
   } catch (e) {}
 }
 
-function playSongAtIndex(index, customQueue = null, playlistLabel = null) {
+async function playSongAtIndex(index, customQueue = null, playlistLabel = null) {
   if (Array.isArray(customQueue)) {
     currentQueue = customQueue.slice();
   } else if (currentQueue.length === 0) {
@@ -772,7 +804,12 @@ function playSongAtIndex(index, customQueue = null, playlistLabel = null) {
     safeSrc = encodeURI(safeSrc);
   }
 
-  audioEl.src = safeSrc;
+  try {
+    const playableUrl = await offlineAudio.getPlayableAudioUrl(safeSrc);
+    audioEl.src = playableUrl;
+  } catch (e) {
+    audioEl.src = safeSrc;
+  }
   audioEl.playbackRate = parseFloat(playerSpeedSelect?.value || '1') || 1;
 
   const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
@@ -782,7 +819,7 @@ function playSongAtIndex(index, customQueue = null, playlistLabel = null) {
     renderActiveQueueSection();
     renderCatalogSection();
     window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
-      playSongAtIndex(index, list, listName);
+      playSongAtIndex(index, customQueue, playlistLabel);
     });
     return;
   }
@@ -1568,6 +1605,230 @@ function setupEventListeners() {
   }
 }
 
+// --- GESTIÓN DE AUDIOS OFFLINE (DESCARGA LOCAL Y LIBERACIÓN) ---
+let activeOfflinePopover = null;
+let activeOfflineOverlay = null;
+
+function closeLiberarPopover() {
+  if (activeOfflinePopover && activeOfflinePopover.parentNode) {
+    activeOfflinePopover.parentNode.removeChild(activeOfflinePopover);
+  }
+  if (activeOfflineOverlay && activeOfflineOverlay.parentNode) {
+    activeOfflineOverlay.parentNode.removeChild(activeOfflineOverlay);
+  }
+  activeOfflinePopover = null;
+  activeOfflineOverlay = null;
+}
+
+function openLiberarPopover(targetBtn, song) {
+  if (!targetBtn || !song) return;
+  closeLiberarPopover();
+
+  const regItem = offlineAudio.registry[String(song.id)];
+  let sizeText = 'Guardado localmente en este equipo';
+  if (regItem && regItem.sizeBytes > 0) {
+    const mb = (regItem.sizeBytes / (1024 * 1024)).toFixed(1);
+    sizeText = `${mb} MB · Guardado en este equipo`;
+  }
+
+  const overlay = document.createElement('div');
+  overlay.className = 'offline-audio-popover-overlay';
+  overlay.addEventListener('click', closeLiberarPopover);
+
+  const popover = document.createElement('div');
+  popover.className = 'offline-audio-popover';
+  popover.innerHTML = `
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px;">
+      <div class="popover-header">
+        <span class="material-symbols-outlined" style="font-size: 18px;">download_done</span>
+        <span>Audio Descargado</span>
+      </div>
+      <button type="button" class="btn-close-popover" style="background: none; border: none; padding: 2px; cursor: pointer; color: var(--text-muted, #94a3b8); display: flex; align-items: center;" title="Cerrar">
+        <span class="material-symbols-outlined" style="font-size: 18px;">close</span>
+      </button>
+    </div>
+    <div class="popover-canto-name" title="${escapeHtml(song.title)}">${escapeHtml(song.title)}</div>
+    <div style="font-size: 0.72rem; color: var(--text-muted, #64748b); margin-top: 3px;">${escapeHtml(sizeText)}</div>
+    <div class="popover-divider"></div>
+    <button type="button" class="btn-popover-liberar" data-action="confirm-liberar-audio">
+      <span class="material-symbols-outlined" style="font-size: 19px;">delete_outline</span>
+      <span>Liberar (Escuchar solo online)</span>
+    </button>
+    <div class="popover-hint">Al liberar se borra el archivo del equipo. Si quieres, podrás volver a descargarlo en cualquier momento.</div>
+  `;
+
+  popover.querySelector('.btn-close-popover')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeLiberarPopover();
+  });
+
+  const btnLiberar = popover.querySelector('[data-action="confirm-liberar-audio"]');
+  btnLiberar?.addEventListener('click', async (e) => {
+    e.stopPropagation();
+    closeLiberarPopover();
+    try {
+      await offlineAudio.deleteAudio(song.id);
+      showPlayToast(`Audio de "${song.title}" liberado del equipo. Ahora se reproducirá online.`);
+    } catch (err) {
+      console.warn('Error al liberar audio offline:', err);
+      showPlayToast(`No se pudo liberar el audio: ${err.message}`, true);
+    } finally {
+      renderActiveQueueSection();
+      renderCatalogSection();
+    }
+  });
+
+  document.body.appendChild(overlay);
+  document.body.appendChild(popover);
+
+  activeOfflineOverlay = overlay;
+  activeOfflinePopover = popover;
+
+  // Posicionamiento flotante automático
+  const rect = targetBtn.getBoundingClientRect();
+  const popRect = popover.getBoundingClientRect();
+  let left = rect.right - popRect.width;
+  if (left < 12) left = 12;
+  if (left + popRect.width > window.innerWidth - 12) {
+    left = window.innerWidth - popRect.width - 12;
+  }
+
+  let top = rect.bottom + 6;
+  if (top + popRect.height > window.innerHeight - 12) {
+    top = rect.top - popRect.height - 6;
+  }
+  if (top < 12) top = 12;
+
+  popover.style.left = `${Math.round(left)}px`;
+  popover.style.top = `${Math.round(top)}px`;
+}
+
+let longPressTimer = null;
+let longPressTriggered = false;
+let startPointerX = 0;
+let startPointerY = 0;
+
+function setupOfflineAudioGlobalListeners() {
+  // Detección de mantener presionado (Long press) para desktop y dispositivos móviles táctiles
+  document.addEventListener('pointerdown', (e) => {
+    const btn = e.target.closest('.offline-audio-btn');
+    if (!btn) return;
+
+    const songId = btn.getAttribute('data-song-id');
+    if (!songId) return;
+
+    longPressTriggered = false;
+    startPointerX = e.clientX;
+    startPointerY = e.clientY;
+
+    if (longPressTimer) {
+      clearTimeout(longPressTimer);
+    }
+
+    longPressTimer = setTimeout(() => {
+      longPressTriggered = true;
+      try {
+        navigator.vibrate?.(45);
+      } catch (err) {}
+
+      const song = allCatalogSongs.find(s => String(s.id) === String(songId));
+      if (song) {
+        if (offlineAudio.isDownloaded(songId)) {
+          openLiberarPopover(btn, song);
+        } else {
+          showPlayToast(`Pulsa el botón de descarga para guardar "${song.title}" sin conexión.`);
+        }
+      }
+    }, 450);
+  }, { passive: true });
+
+  const clearLongPress = () => {
+    if (longPressTimer) {
+      clearTimeout(longPressTimer);
+      longPressTimer = null;
+    }
+  };
+
+  document.addEventListener('pointermove', (e) => {
+    if (!longPressTimer) return;
+    const dx = Math.abs(e.clientX - startPointerX);
+    const dy = Math.abs(e.clientY - startPointerY);
+    if (dx > 10 || dy > 10) {
+      clearLongPress();
+    }
+  }, { passive: true });
+
+  document.addEventListener('pointerup', clearLongPress, { passive: true });
+  document.addEventListener('pointercancel', clearLongPress, { passive: true });
+
+  // Menú contextual (clic derecho) para desktop
+  document.addEventListener('contextmenu', (e) => {
+    const btn = e.target.closest('.offline-audio-btn');
+    if (!btn) return;
+    e.preventDefault();
+    const songId = btn.getAttribute('data-song-id');
+    const song = allCatalogSongs.find(s => String(s.id) === String(songId));
+    if (song && offlineAudio.isDownloaded(songId)) {
+      openLiberarPopover(btn, song);
+    }
+  });
+
+  // Clic en el botón verde de descarga
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.offline-audio-btn');
+    if (!btn) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Si ya se abrió mediante pulsación prolongada, no ejecutar el clic
+    if (longPressTriggered) {
+      longPressTriggered = false;
+      return;
+    }
+
+    const songId = btn.getAttribute('data-song-id');
+    if (!songId) return;
+    const song = allCatalogSongs.find(s => String(s.id) === String(songId));
+    if (!song) return;
+
+    if (offlineAudio.isDownloading(songId)) {
+      showPlayToast(`El audio de "${song.title}" se está descargando...`);
+      return;
+    }
+
+    // Si ya está descargado, al hacer clic también se despliega la opción de liberar
+    if (offlineAudio.isDownloaded(songId)) {
+      openLiberarPopover(btn, song);
+      return;
+    }
+
+    // Si no está descargado, se descarga al hacer clic
+    try {
+      showPlayToast(`Descargando audio de "${song.title}"...`);
+      renderActiveQueueSection();
+      renderCatalogSection();
+
+      const ok = await offlineAudio.downloadAudio(song);
+      if (ok) {
+        showPlayToast(`¡Audio de "${song.title}" guardado! Ya puedes escucharlo sin conexión.`);
+      }
+    } catch (err) {
+      console.warn('Error al descargar audio offline:', err);
+      showPlayToast(`No se pudo descargar el audio: ${err.message || 'Verifica tu conexión'}`, true);
+    } finally {
+      renderActiveQueueSection();
+      renderCatalogSection();
+    }
+  });
+
+  // Sincronizar automáticamente la vista cuando cambien las descargas offline
+  window.addEventListener('resucito_offline_audio_changed', () => {
+    renderActiveQueueSection();
+    renderCatalogSection();
+  });
+}
+
 // --- REPRODUCTOR PEGAJOSO COMPACTO (AL HACER SCROLL HACIA ABAJO) ---
 function setupStickyPlayer() {
   const playerCard = document.getElementById('player-master-card');
@@ -1800,6 +2061,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadCatalogSongs();
   loadLocalPlaylists();
   setupEventListeners();
+  setupOfflineAudioGlobalListeners();
   setupStickyPlayer();
   restorePlayerState();
   renderAll();

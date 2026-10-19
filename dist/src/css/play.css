@@ -1593,3 +1593,145 @@ body.theme-dark .playlist-form-field input {
   border-color: rgba(148, 163, 184, 0.25);
   color: #f8fafc;
 }
+
+/* --- BOTÓN DE AUDIO OFFLINE (DESCARGA Y LIBERACIÓN LOCAL) --- */
+.song-row-btn.offline-audio-btn {
+  color: #16a34a;
+  background: rgba(22, 163, 74, 0.12);
+  border: 1px solid rgba(22, 163, 74, 0.32);
+  position: relative;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.song-row-btn.offline-audio-btn:hover {
+  background: rgba(22, 163, 74, 0.22);
+  border-color: #16a34a;
+  transform: scale(1.05);
+}
+
+.song-row-btn.offline-audio-btn.downloaded {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  border-color: #15803d !important;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.4);
+}
+
+.song-row-btn.offline-audio-btn.downloaded:hover {
+  background: #15803d !important;
+}
+
+.song-row-btn.offline-audio-btn.downloading {
+  pointer-events: none;
+  background: rgba(22, 163, 74, 0.08);
+  opacity: 0.85;
+}
+
+.song-row-btn.offline-audio-btn .spinner {
+  animation: playSpinAnim 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes playSpinAnim {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Popover flotante para opciones de audio offline (Liberar) */
+.offline-audio-popover-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999998;
+  background: transparent;
+}
+
+.offline-audio-popover {
+  position: fixed;
+  background: var(--panel-bg, #ffffff);
+  color: var(--text-color, #1e293b);
+  border: 1px solid var(--panel-border, #e2e8f0);
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  z-index: 999999;
+  min-width: 230px;
+  max-width: 290px;
+  font-family: inherit;
+  animation: popoverFadeAnim 0.18s ease-out forwards;
+}
+
+body.theme-dark .offline-audio-popover {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+}
+
+@keyframes popoverFadeAnim {
+  from { opacity: 0; transform: translateY(-6px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.offline-audio-popover .popover-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.offline-audio-popover .popover-canto-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.offline-audio-popover .popover-divider {
+  height: 1px;
+  background: var(--panel-border, #e2e8f0);
+  margin: 10px 0;
+}
+
+body.theme-dark .offline-audio-popover .popover-divider {
+  background: #334155;
+}
+
+.offline-audio-popover .btn-popover-liberar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.28);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.offline-audio-popover .btn-popover-liberar:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.offline-audio-popover .btn-popover-liberar:hover .material-symbols-outlined {
+  color: #ffffff !important;
+}
+
+.offline-audio-popover .popover-hint {
+  font-size: 0.72rem;
+  color: var(--text-muted, #94a3b8);
+  margin-top: 8px;
+  line-height: 1.35;
+  text-align: center;
+}

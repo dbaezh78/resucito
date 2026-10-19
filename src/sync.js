@@ -5,7 +5,10 @@ import { getCurrentUser } from "./auth.js";
 import { transposeNote, normalizeChord } from "./chords.js";
 
 function getActiveUser() {
-  return auth.currentUser || (typeof getCurrentUser === 'function' ? getCurrentUser() : null);
+  if (auth && auth.currentUser) {
+    return auth.currentUser;
+  }
+  return null;
 }
 
 // Sincroniza la nota personal del cantor
@@ -535,8 +538,8 @@ export async function cargarZoomsDesdeNube() {
 // 2. Ajustes generales, favoritos y zooms (/usuarios/{uid}/configuracion/...)
 // 3. Colección completa de cantos personalizados (/usuarios/{uid}/dbdata)
 export async function cargarTodoElUsuarioDesdeNube(userParam) {
-  const user = userParam || getActiveUser();
-  if (!user) return;
+  const user = (auth && auth.currentUser) ? auth.currentUser : userParam;
+  if (!user || !auth?.currentUser) return;
 
   console.log(`📥 [Firebase] Iniciando sincronización integral de datos para usuario: ${user.email || user.uid}`);
 

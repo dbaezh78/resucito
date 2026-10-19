@@ -13,8 +13,19 @@ service cloud.firestore {
     }
 
     // 2. Colección de usuarios (PRIVADA - Sincroniza tonos, notas y posiciones personales)
-    match /usuarios/{userId}/{document=**} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
+    match /usuarios/{userId} {
+      allow read, write: if request.auth != null && (
+        request.auth.uid == userId || 
+        request.auth.token.email == 'dbaezh78@gmail.com'
+      );
+
+      // Subcolecciones de usuario (config_cantos, dbdata, configuracion, perfil, etc.)
+      match /{document=**} {
+        allow read, write: if request.auth != null && (
+          request.auth.uid == userId || 
+          request.auth.token.email == 'dbaezh78@gmail.com'
+        );
+      }
     }
 
     // 3. Posiciones globales de acordes (Lectura y escritura pública para sincronización inmediata de cantos)
@@ -27,10 +38,9 @@ service cloud.firestore {
       allow read, write: if true;
     }
 
-    // 4. Colección de usuarios registrados para Control de Acceso (Lectura pública para selectores, escritura para autenticados)
+    // 4. Colección de usuarios registrados para Control de Acceso (Lectura y registro sin bloqueos de permisos)
     match /registered_users/{userDoc} {
-      allow read: if true;
-      allow write: if request.auth != null;
+      allow read, write: if true;
     }
 
     // 5. Configuración de permisos y grupos del sistema (Lectura PÚBLICA para Invitados, escritura para Administrador/Autenticado)
@@ -66,19 +76,11 @@ service cloud.firestore {
 
     // 10. Colección de ASISTENCIA Y CHAT EN VIVO (Soporte WhatsApp Web)
     match /support_chats/{chatId} {
-      allow read, write: if request.auth != null && (
-        request.auth.token.email == 'dbaezh78@gmail.com' || 
-        request.auth.uid == chatId || 
-        (resource != null && resource.data.userId == request.auth.uid) ||
-        (request.resource != null && request.resource.data.userId == request.auth.uid)
-      );
+      allow read, write: if true;
 
       // Subcolección de mensajes del chat
       match /messages/{messageId} {
-        allow read, write: if request.auth != null && (
-          request.auth.token.email == 'dbaezh78@gmail.com' || 
-          request.auth.uid == chatId
-        );
+        allow read, write: if true;
       }
     }
 

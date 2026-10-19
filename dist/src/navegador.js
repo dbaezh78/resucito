@@ -1,6 +1,6 @@
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, isAuthInitialized, getCurrentUser } from './auth.js';
 import { hasPermission } from './accesscontrol.js';
-import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './firebase.js';
+import { db, auth, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './firebase.js';
 
 (function () {
   // Evitar inyecciones duplicadas
@@ -1594,6 +1594,9 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       let lastKnownAdminMsgTime = Date.now();
 
       if (isAdmin) {
+        if (!auth?.currentUser) {
+          return;
+        }
         try {
           unsubscribeChatBadges = onSnapshot(collection(db, 'support_chats'), (snapshot) => {
             let totalUnread = 0;

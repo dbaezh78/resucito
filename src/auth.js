@@ -199,29 +199,27 @@ if (typeof window !== 'undefined') {
 // Inicializar inmediatamente desde la sesión guardada para que el usuario nunca aparezca desconectado al recargar o limpiar caché
 let currentUser = loadCachedAuthUser();
 const authStateListeners = [];
-let authInitialized = Boolean(currentUser);
+let authInitialized = false;
 
 // Escuchar cambios reales de Firebase Auth
 onFirebaseAuthStateChanged(auth, (user) => {
+  authInitialized = true;
   if (user) {
     explicitLogoutInProgress = false;
     currentUser = user;
     saveCachedAuthUser(user);
-    authInitialized = true;
-    notifyListeners();
+    notifyListeners(user);
   } else {
     if (!explicitLogoutInProgress) {
       const cached = loadCachedAuthUser();
       if (cached && (cached.uid || cached.email)) {
         currentUser = cached;
-        authInitialized = true;
-        notifyListeners();
+        notifyListeners(auth?.currentUser || null);
         return;
       }
     }
     currentUser = null;
-    authInitialized = true;
-    notifyListeners();
+    notifyListeners(null);
   }
 });
 
@@ -230,7 +228,7 @@ export function isAuthInitialized() {
 }
 
 export function getCurrentUser() {
-  return currentUser || auth?.currentUser || loadCachedAuthUser();
+  return auth?.currentUser || currentUser || loadCachedAuthUser();
 }
 
 export function isCurrentUserAdmin() {
@@ -243,19 +241,18 @@ export function onAuthStateChanged(authOrCallback, maybeCallback) {
   const callback = typeof authOrCallback === 'function' ? authOrCallback : maybeCallback;
   if (typeof callback !== 'function') return;
   authStateListeners.push(callback);
-  // Si auth ya fue inicializado o hay sesión guardada, llamar inmediatamente con el estado actual
-  const activeUser = getCurrentUser();
-  if (authInitialized || activeUser) {
+  // Si Firebase Auth ya terminó de inicializar o ya tiene sesión activa real, notificar de inmediato
+  if (authInitialized && auth?.currentUser) {
     try {
-      callback(activeUser);
+      callback(auth.currentUser);
     } catch (e) {
       console.warn("Error en auth listener callback:", e);
     }
   }
 }
 
-function notifyListeners() {
-  const activeUser = getCurrentUser();
+function notifyListeners(userToNotify) {
+  const activeUser = (userToNotify !== undefined) ? userToNotify : (auth?.currentUser || null);
   authStateListeners.forEach(callback => {
     if (typeof callback === 'function') {
       try {
