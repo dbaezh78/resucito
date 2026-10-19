@@ -37,6 +37,7 @@ let currentQueue = []; // Array de objetos song actualmente en cola
 let currentTrackIndex = -1;
 let currentSong = null;
 let isPlaying = false;
+let hasUserStartedPlayback = false;
 let isShuffle = false;
 let repeatMode = 'all'; // 'off' | 'all' | 'one'
 let unsubscribeCloudPlaylists = null;
@@ -677,16 +678,21 @@ function updatePlayerUI() {
   }
 
   if (!currentSong) {
-    if (playerTrackTitle) playerTrackTitle.textContent = 'Ningún canto en reproducción';
+    if (playerTrackTitle) {
+      playerTrackTitle.textContent = 'Ningún canto en reproducción';
+      playerTrackTitle.removeAttribute('title');
+    }
     if (playerTrackSubtitle) playerTrackSubtitle.textContent = 'Elige un canto de tu lista o del catálogo para comenzar';
     if (playerBookBadge) playerBookBadge.style.display = 'none';
     if (playerStageBadge) playerStageBadge.style.display = 'none';
     if (playerOpenLyricsBtn) playerOpenLyricsBtn.style.display = 'none';
+    window._updateStickyPlayer?.();
     return;
   }
 
   if (playerTrackTitle) {
     playerTrackTitle.textContent = currentSong.title;
+    playerTrackTitle.title = currentSong.title;
   }
   if (playerTrackSubtitle) {
     const numStr = currentSong.dbno ? `#${currentSong.dbno} • ` : '';
@@ -716,6 +722,7 @@ function updatePlayerUI() {
   }
 
   updateMediaSessionMetadata();
+  window._updateStickyPlayer?.();
 }
 
 function updateMediaSessionMetadata() {
@@ -754,6 +761,7 @@ function playSongAtIndex(index, customQueue = null, playlistLabel = null) {
 
   currentTrackIndex = index;
   currentSong = currentQueue[currentTrackIndex];
+  hasUserStartedPlayback = true;
 
   if (!audioEl || !currentSong) return;
 
@@ -772,9 +780,11 @@ function playSongAtIndex(index, customQueue = null, playlistLabel = null) {
     playPromise
       .then(() => {
         isPlaying = true;
+        hasUserStartedPlayback = true;
         updatePlayerUI();
         renderActiveQueueSection();
         renderCatalogSection();
+        savePlayerState();
       })
       .catch(err => {
         console.warn('Error al reproducir audio:', err);
@@ -799,12 +809,15 @@ function togglePlayPause() {
     return;
   }
 
+  hasUserStartedPlayback = true;
   if (audioEl.paused) {
     audioEl.play().then(() => {
       isPlaying = true;
+      hasUserStartedPlayback = true;
       updatePlayerUI();
       renderActiveQueueSection();
       renderCatalogSection();
+      savePlayerState();
     }).catch(err => {
       console.warn('No se pudo reanudar el audio:', err);
     });
@@ -814,6 +827,7 @@ function togglePlayPause() {
     updatePlayerUI();
     renderActiveQueueSection();
     renderCatalogSection();
+    savePlayerState();
   }
 }
 
@@ -1434,12 +1448,17 @@ function setupEventListeners() {
 
   // Eventos del elemento <audio>
   if (audioEl) {
+    let lastSavedTime = 0;
     audioEl.addEventListener('timeupdate', () => {
       if (!Number.isFinite(audioEl.duration) || audioEl.duration <= 0) return;
       if (playerTimeCurrent) playerTimeCurrent.textContent = formatSeconds(audioEl.currentTime);
       if (playerTimeTotal) playerTimeTotal.textContent = formatSeconds(audioEl.duration);
       if (playerSeekSlider) {
         playerSeekSlider.value = String((audioEl.currentTime / audioEl.duration) * 100);
+      }
+      if (Math.abs(audioEl.currentTime - lastSavedTime) > 3) {
+        lastSavedTime = audioEl.currentTime;
+        savePlayerState();
       }
     });
 
@@ -1453,12 +1472,17 @@ function setupEventListeners() {
 
     audioEl.addEventListener('play', () => {
       isPlaying = true;
+      hasUserStartedPlayback = true;
       updatePlayerUI();
+      savePlayerState();
+      window._updateStickyPlayer?.();
     });
 
     audioEl.addEventListener('pause', () => {
       isPlaying = false;
       updatePlayerUI();
+      savePlayerState();
+      window._updateStickyPlayer?.();
     });
 
     audioEl.addEventListener('error', () => {
@@ -1510,11 +1534,234 @@ function setupEventListeners() {
   }
 }
 
+// --- REPRODUCTOR PEGAJOSO COMPACTO (AL HACER SCROLL HACIA ABAJO) ---
+function setupStickyPlayer() {
+  const playerCard = document.getElementById('player-master-card');
+  const playerWrapper = document.getElementById('player-master-card-wrapper');
+  if (!playerCard) return;
+
+  const updateStickyState = () => {
+    // Si ha hecho scroll hacia abajo y hay un canto activo
+    const isScrolledDown = window.scrollY > 75;
+    const isPlaybackActive = (currentSong !== null);
+
+    if (isScrolledDown && isPlaybackActive) {
+      if (!playerCard.classList.contains('is-sticky-compact')) {
+        if (playerWrapper) {
+          playerWrapper.style.minHeight = `${playerCard.offsetHeight}px`;
+        }
+        playerCard.classList.add('is-sticky-compact');
+      }
+    } else {
+      if (playerCard.classList.contains('is-sticky-compact')) {
+        playerCard.classList.remove('is-sticky-compact');
+        if (playerWrapper) {
+          playerWrapper.style.minHeight = '';
+        }
+      }
+    }
+  };
+
+  window.addEventListener('scroll', updateStickyState, { passive: true });
+  window.addEventListener('resize', updateStickyState, { passive: true });
+  window._updateStickyPlayer = updateStickyState;
+}
+
+// --- PERSISTENCIA DEL ESTADO DEL REPRODUCTOR ---
+function savePlayerState() {
+  if (!currentSong) return;
+  try {
+    const state = {
+      songId: currentSong.id,
+      songTitle: currentSong.title,
+      songSubtitle: (currentSong.dbno ? `#${currentSong.dbno} • ` : '') + (currentSong.subtitle || currentSong.stageLabel || ''),
+      audioSrc: currentSong.audioSrc,
+      stageColor: currentSong.stageColor || '#d01212',
+      bookGroup: currentSong.bookGroup || 'camino',
+      playlistId: activePlaylistId,
+      currentTime: audioEl?.currentTime || 0,
+      duration: audioEl?.duration || 0,
+      isPlaying: isPlaying && !audioEl?.paused,
+      repeatMode,
+      isShuffle,
+      queue: currentQueue.map(s => ({
+        id: s.id,
+        title: s.title,
+        subtitle: (s.dbno ? `#${s.dbno} • ` : '') + (s.subtitle || s.stageLabel || ''),
+        audioSrc: s.audioSrc,
+        stageColor: s.stageColor || '#d01212',
+        bookGroup: s.bookGroup || 'camino'
+      })),
+      trackIndex: currentTrackIndex,
+      updatedAt: Date.now()
+    };
+    localStorage.setItem(STORAGE_KEY_PLAYER_STATE, JSON.stringify(state));
+  } catch (e) {}
+}
+
+window.addEventListener('beforeunload', () => savePlayerState());
+window.addEventListener('pagehide', () => savePlayerState());
+
+function restorePlayerState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_PLAYER_STATE);
+    if (!raw) return;
+    const state = JSON.parse(raw);
+    if (!state || !state.songId) return;
+
+    const song = allCatalogSongs.find(s => s.id === state.songId);
+    if (!song) return;
+
+    currentSong = song;
+    if (state.playlistId) {
+      const pl = getPlaylistById(state.playlistId);
+      if (pl) {
+        currentQueue = getSongsForPlaylist(pl);
+        currentTrackIndex = currentQueue.findIndex(s => s.id === song.id);
+      }
+    }
+    if (currentQueue.length === 0) {
+      currentQueue = [song];
+      currentTrackIndex = 0;
+    }
+
+    if (audioEl) {
+      let safeSrc = song.audioSrc;
+      try {
+        safeSrc = encodeURI(decodeURI(safeSrc));
+      } catch (e) {
+        safeSrc = encodeURI(safeSrc);
+      }
+      audioEl.src = safeSrc;
+      if (state.currentTime && Number.isFinite(state.currentTime)) {
+        audioEl.currentTime = state.currentTime;
+      }
+      if (state.isPlaying) {
+        hasUserStartedPlayback = true;
+        audioEl.play().then(() => {
+          isPlaying = true;
+          updatePlayerUI();
+        }).catch(() => {
+          isPlaying = false;
+          updatePlayerUI();
+        });
+      }
+    }
+
+    if (state.repeatMode) {
+      repeatMode = state.repeatMode;
+      if (btnPlayerRepeat && iconPlayerRepeat) {
+        btnPlayerRepeat.classList.toggle('active', repeatMode !== 'off');
+        iconPlayerRepeat.textContent = repeatMode === 'one' ? 'repeat_one' : 'repeat';
+      }
+    }
+
+    if (typeof state.isShuffle === 'boolean') {
+      isShuffle = state.isShuffle;
+      btnPlayerShuffle?.classList.toggle('active', isShuffle);
+    }
+
+    updatePlayerUI();
+    if (state.currentTime && playerTimeCurrent) {
+      playerTimeCurrent.textContent = formatSeconds(state.currentTime);
+    }
+    if (state.duration && playerTimeTotal) {
+      playerTimeTotal.textContent = formatSeconds(state.duration);
+    }
+    if (state.currentTime && state.duration && playerSeekSlider) {
+      playerSeekSlider.value = String((state.currentTime / state.duration) * 100);
+    }
+  } catch (e) {
+    console.warn('Error al restaurar estado del reproductor:', e);
+  }
+}
+
+// --- PANELES COLAPSABLES (MIS LISTAS, LISTA ACTIVA, CATÁLOGO) ---
+const STORAGE_KEY_PLAY_COLLAPSE = 'resucito_reproductor_colapso_v1';
+
+function setupCollapsibleCards() {
+  const cards = [
+    { cardId: 'card-mis-listas', headerId: 'header-mis-listas', key: 'misListas' },
+    { cardId: 'card-active-queue', headerId: 'header-active-queue', key: 'activeQueue' },
+    { cardId: 'card-catalog', headerId: 'header-catalog', key: 'catalog' }
+  ];
+
+  let collapsedState = {};
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_PLAY_COLLAPSE);
+    if (raw) collapsedState = JSON.parse(raw);
+  } catch (e) {}
+
+  cards.forEach(({ cardId, headerId, key }) => {
+    const cardEl = document.getElementById(cardId);
+    const headerEl = document.getElementById(headerId);
+    if (!cardEl || !headerEl) return;
+
+    if (collapsedState[key]) {
+      cardEl.classList.add('is-collapsed');
+    }
+
+    headerEl.addEventListener('click', (e) => {
+      // Evitar que el clic en botones dentro del header (como Reproducir, Aleatorio, Vaciar) dispare el colapso
+      if (e.target.closest('button, a, input, select')) return;
+
+      const isNowCollapsed = cardEl.classList.toggle('is-collapsed');
+      collapsedState[key] = isNowCollapsed;
+      try {
+        localStorage.setItem(STORAGE_KEY_PLAY_COLLAPSE, JSON.stringify(collapsedState));
+      } catch (err) {}
+    });
+  });
+}
+
+// --- MODO OSCURO EXCLUSIVO PARA EL REPRODUCTOR ---
+const STORAGE_KEY_PLAY_THEME = 'resucito_play_dark_mode';
+
+function applyPlayTheme(isDark) {
+  const btnToggleDark = document.getElementById('btn-toggle-play-dark-mode');
+  const iconToggleDark = document.getElementById('icon-play-dark-mode');
+
+  if (isDark) {
+    document.documentElement.classList.add('theme-dark');
+    document.body.classList.add('theme-dark');
+    if (btnToggleDark) btnToggleDark.classList.add('active');
+    if (iconToggleDark) iconToggleDark.textContent = 'light_mode';
+    if (btnToggleDark) btnToggleDark.title = 'Cambiar a modo claro en el reproductor';
+  } else {
+    document.documentElement.classList.remove('theme-dark');
+    document.body.classList.remove('theme-dark');
+    if (btnToggleDark) btnToggleDark.classList.remove('active');
+    if (iconToggleDark) iconToggleDark.textContent = 'dark_mode';
+    if (btnToggleDark) btnToggleDark.title = 'Cambiar a modo oscuro en el reproductor';
+  }
+}
+
+function initPlayTheme() {
+  const btnToggleDark = document.getElementById('btn-toggle-play-dark-mode');
+  const globalTheme = localStorage.getItem('theme'); // 'dark' | 'light' | 'sepia'
+  const playTheme = localStorage.getItem(STORAGE_KEY_PLAY_THEME); // 'dark' | 'light'
+
+  // Si se activó modo oscuro para el reproductor, o el tema global de settings es 'dark' y no se forzó 'light' en el reproductor
+  const isDark = playTheme === 'dark' || (playTheme !== 'light' && globalTheme === 'dark');
+  applyPlayTheme(isDark);
+
+  btnToggleDark?.addEventListener('click', () => {
+    const isCurrentlyDark = document.body.classList.contains('theme-dark');
+    const nextDark = !isCurrentlyDark;
+    localStorage.setItem(STORAGE_KEY_PLAY_THEME, nextDark ? 'dark' : 'light');
+    applyPlayTheme(nextDark);
+  });
+}
+
 // --- INICIALIZACIÓN ---
 document.addEventListener('DOMContentLoaded', async () => {
+  initPlayTheme();
+  setupCollapsibleCards();
   await loadCatalogSongs();
   loadLocalPlaylists();
   setupEventListeners();
+  setupStickyPlayer();
+  restorePlayerState();
   renderAll();
 
   onAuthStateChanged((user) => {

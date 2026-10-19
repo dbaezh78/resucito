@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Crear Canto - Formulario de Cantos - Resucitó</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#d01212">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/navegador.css">
+  <link rel="stylesheet" href="src/css/frmcanto.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+  <main class="frmcanto-container">
+
+    <!-- Header Principal -->
+    <header class="frmcanto-header">
+      <div class="frmcanto-header-left">
+        <a href="index.html" class="frmcanto-back-btn" title="Volver a Inicio">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+        <div class="frmcanto-title-group">
+          <h1>
+            <span class="material-symbols-outlined" style="color: var(--frm-accent); font-size: 28px;">post_add</span>
+            Crear Canto
+          </h1>
+          <p>Editor interactivo de letra, acordes posicionables, roles A/C/B y guardado en Firebase</p>
+        </div>
+      </div>
+
+      <div class="frmcanto-header-actions">
+        <!-- 1. Botón Guardar en Firebase -->
+        <button type="button" class="btn-frm btn-frm-primary" id="btn-save-firebase" title="Guardar canto en Firebase y sincronizar">
+          <span class="material-symbols-outlined">cloud_upload</span>
+          <span>Guardar</span>
+        </button>
+
+        <!-- 2. Botón Lista (Índice songs-index.json) -->
+        <button type="button" class="btn-frm btn-frm-info" id="btn-open-list" title="Gestionar y actualizar en el índice de cantos">
+          <span class="material-symbols-outlined">format_list_bulleted</span>
+          <span>Lista</span>
+        </button>
+
+        <!-- 3. Botón Descargar Canto (.json) -->
+        <button type="button" class="btn-frm btn-frm-success" id="btn-download-canto" title="Descargar archivo .json oficial para colocar en data/songs/">
+          <span class="material-symbols-outlined">download</span>
+          <span>Descargar (.json)</span>
+        </button>
+
+        <!-- 4. Botón Probar / Vista Previa -->
+        <button type="button" class="btn-frm btn-frm-secondary" id="btn-preview-canto" title="Vista previa en vivo del canto">
+          <span class="material-symbols-outlined">visibility</span>
+          <span>Probar</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Tarjeta 1: Información y Metadatos del Canto -->
+    <section class="frm-card">
+      <div class="frm-card-header">
+        <h2 class="frm-card-title">
+          <span class="material-symbols-outlined">tune</span>
+          Metadatos del Canto
+        </h2>
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--frm-muted);">
+          <span>Etapa:</span>
+          <span id="stage-color-pill" style="width: 14px; height: 14px; border-radius: 50%; background: #F8D147; display: inline-block; border: 1px solid rgba(0,0,0,0.2);"></span>
+          <span>Carpeta: <strong id="target-folder-hint" style="color: var(--frm-text);">data/songs</strong></span>
+        </div>
+      </div>
+
+      <div class="frm-grid">
+        <!-- Título -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-title">Título del Canto *</label>
+          <input type="text" id="frm-title" class="frm-input" placeholder="Ej: Tú eres mi esperanza, Señor" required autocomplete="off">
+        </div>
+
+        <!-- Subtítulo / Cita Bíblica -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-subtitle">Subtítulo / Cita Bíblica</label>
+          <input type="text" id="frm-subtitle" class="frm-input" placeholder="Ej: Salmo 71 (70)" autocomplete="off">
+        </div>
+
+        <!-- ID / Archivo JSON -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-id">ID / Nombre de Archivo</label>
+          <input type="text" id="frm-id" class="frm-input" placeholder="Ej: tueresmiesperanzasenor" autocomplete="off">
+        </div>
+
+        <!-- Selección de Libro / Colección -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-book">Libro / Colección *</label>
+          <select id="frm-book" class="frm-select">
+            <option value="resucito" selected>Resucitó (data/songs)</option>
+            <option value="joven">Canto Joven (data/joven)</option>
+            <option value="aclamaciones">Aclamaciones (data/songs-ae)</option>
+            <option value="eucaristia">Eucaristía / Salmos (data/seucaristia)</option>
+            <option value="salmodias">Salmodias (data/songs)</option>
+          </select>
+        </div>
+
+        <!-- Etapa del Canto -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-stage">Etapa Litúrgica</label>
+          <select id="frm-stage" class="frm-select">
+            <option value="Precatecumenado" selected>Precatecumenado (Amarillo)</option>
+            <option value="Liturgia">Liturgia (Verde)</option>
+            <option value="Catecumenado">Catecumenado (Azul)</option>
+            <option value="Elección">Elección (Blanco)</option>
+            <option value="Salmodias">Salmodias</option>
+          </select>
+        </div>
+
+        <!-- Tono / Acorde Base -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-acorde">Tono / Acorde Base</label>
+          <select id="frm-acorde" class="frm-select">
+            <option value="Do">Do</option>
+            <option value="Do#">Do#</option>
+            <option value="Re">Re</option>
+            <option value="Re#">Re#</option>
+            <option value="Mi">Mi</option>
+            <option value="Fa">Fa</option>
+            <option value="Fa#">Fa#</option>
+            <option value="Sol">Sol</option>
+            <option value="Sol#">Sol#</option>
+            <option value="La" selected>La</option>
+            <option value="Si♭">Si♭</option>
+            <option value="Si">Si</option>
+          </select>
+        </div>
+
+        <!-- Cejilla -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-cejilla">Cejilla (Capo)</label>
+          <select id="frm-cejilla" class="frm-select">
+            <option value="" selected>Sin cejilla (0)</option>
+            <option value="1">1º Traste</option>
+            <option value="2">2º Traste</option>
+            <option value="3">3º Traste</option>
+            <option value="4">4º Traste</option>
+            <option value="5">5º Traste</option>
+            <option value="6">6º Traste</option>
+            <option value="7">7º Traste</option>
+            <option value="8">8º Traste</option>
+            <option value="9">9º Traste</option>
+          </select>
+        </div>
+
+        <!-- Número de Canto (dbno) -->
+        <div class="frm-field">
+          <label class="frm-label" for="frm-dbno">Número de Canto (Opcional)</label>
+          <input type="text" id="frm-dbno" class="frm-input" placeholder="Ej: 350" autocomplete="off">
+        </div>
+
+        <!-- Audio URL -->
+        <div class="frm-field" style="grid-column: 1 / -1;">
+          <label class="frm-label" for="frm-audio">Enlace de Audio MP3 (Opcional)</label>
+          <input type="url" id="frm-audio" class="frm-input" placeholder="https://audio.resucito.do/tueresmiesperanzasenor.mp3" autocomplete="off">
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarjeta 2: Entrada Rápida de Texto Completo -->
+    <section class="frm-card">
+      <div class="frm-card-header">
+        <h2 class="frm-card-title">
+          <span class="material-symbols-outlined">text_fields</span>
+          Texto Completo del Canto
+        </h2>
+        <button type="button" class="btn-frm btn-frm-secondary" id="btn-load-example" title="Cargar texto de ejemplo">
+          <span class="material-symbols-outlined">description</span>
+          Cargar Canto de Ejemplo
+        </button>
+      </div>
+
+      <div class="raw-lyrics-wrapper">
+        <textarea id="raw-lyrics-input" class="raw-lyrics-textarea" placeholder="Pega aquí el texto completo del canto...
+
+Ejemplo:
+A la victima pascual
+ofrecemos hoy
+el sacrificio de alabanza,
+el cordero ha redimido el rebaño.
+
+PORQUE CRISTO, MI ESPERANZA
+¡HA RESUCITADO!"></textarea>
+
+        <div class="raw-lyrics-actions">
+          <span style="font-size: 0.8rem; color: var(--frm-muted);">
+            💡 Separa las estrofas con una línea vacía. Al pulsar el botón, cada línea pasará al editor interactivo.
+          </span>
+          <button type="button" class="btn-frm btn-frm-primary" id="btn-parse-raw">
+            <span class="material-symbols-outlined">arrow_downward</span>
+            Cargar en Editor de Líneas
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarjeta 3: Editor Interactivo de Líneas, Acordes y Roles (A / C / B) -->
+    <section class="frm-card">
+      <div class="frm-card-header">
+        <h2 class="frm-card-title">
+          <span class="material-symbols-outlined">queue_music</span>
+          Editor de Acordes y Estrofas
+        </h2>
+        <div class="editor-legend">
+          <span class="legend-badge asamblea"><span>A</span> Asamblea</span>
+          <span class="legend-badge cantor"><span>C</span> Cantor</span>
+          <span class="legend-badge bis"><span>B</span> BIS (Móvil)</span>
+          <span class="legend-badge negrita"><span>N</span> Negrita</span>
+          <span class="legend-badge" style="background: rgba(245, 158, 11, 0.12); color: #d97706; border: 1px solid rgba(245, 158, 11, 0.35);"><span style="background: #f59e0b; color: #fff;">T1</span> Título Expandible</span>
+          <span class="legend-badge" style="background: rgba(245, 158, 11, 0.08); color: #b45309; border: 1px solid rgba(245, 158, 11, 0.25);"><span style="background: #fef3c7; color: #b45309; border: 1px solid rgba(245,158,11,0.4);">t1a</span> Verso Anidado</span>
+        </div>
+      </div>
+
+      <!-- Barra de Ayuda del Editor -->
+      <div class="editor-toolbar">
+        <div class="editor-toolbar-hint">
+          <span class="material-symbols-outlined">mouse</span>
+          <span><strong>Clic derecho</strong> en la pista superior para insertar acordes y <strong>arrástralos</strong> con el ratón sobre cualquier palabra.</span>
+        </div>
+        <div class="editor-toolbar-hint">
+          <span class="material-symbols-outlined">touch_app</span>
+          <span>Pulsa el botón de letra a la izquierda para alternar: <strong>A</strong> (Asamblea) ➔ <strong>C</strong> (Cantor) ➔ <strong>B</strong> (BIS) ➔ <strong>N</strong> (Negrita).</span>
+        </div>
+        <div class="editor-toolbar-hint">
+          <span class="material-symbols-outlined">unfold_more</span>
+          <span>Pulsa <strong>Título Expandible (T1)</strong> para convertir una línea en título principal y anida sus versos (<strong>t1a</strong>, <strong>t1b</strong>, etc.). Puedes reordenarlos arrastrándolos con el ratón.</span>
+        </div>
+      </div>
+
+      <!-- Contenedor Dinámico de Líneas -->
+      <div class="staves-container" id="staves-container">
+        <!-- Generado dinámicamente por frmcanto.js -->
+      </div>
+
+      <!-- Botones para Añadir Más Líneas -->
+      <div class="staves-add-buttons">
+        <button type="button" class="btn-frm btn-frm-secondary" id="btn-add-line">
+          <span class="material-symbols-outlined">add</span>
+          Añadir Línea
+        </button>
+        <button type="button" class="btn-frm btn-frm-secondary" id="btn-add-separator">
+          <span class="material-symbols-outlined">space_bar</span>
+          Añadir Separador de Estrofa
+        </button>
+        <button type="button" class="btn-frm btn-frm-info" id="btn-add-col-break" title="Añadir separador para iniciar la columna del lado derecho">
+          <span class="material-symbols-outlined">view_column</span>
+          Separador Lado Derecho
+        </button>
+      </div>
+    </section>
+
+    <!-- Tarjeta 4: Historial de Cantos Creados -->
+    <section class="frm-card">
+      <div class="frm-card-header">
+        <h2 class="frm-card-title">
+          <span class="material-symbols-outlined">history</span>
+          Cantos Creados Recientemente
+        </h2>
+      </div>
+      <ul id="created-songs-list" style="list-style: none; margin: 0; padding: 0;">
+        <!-- Poblado por frmcanto.js -->
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MENÚ CONTEXTUAL FLOTANTE DE ACORDES (Right Click)
+       ========================================================================= -->
+  <div id="chord-context-menu" class="chord-context-menu" style="display: none;">
+    <div class="chord-menu-header">
+      <span class="chord-menu-title">
+        <span class="material-symbols-outlined">music_note</span>
+        Seleccionar Acorde
+      </span>
+      <button type="button" class="chord-menu-close" id="chord-menu-close">&times;</button>
+    </div>
+
+    <!-- Rejilla de Acordes Rápidos de Resucitó -->
+    <div class="chord-quick-grid" id="chord-quick-grid"></div>
+
+    <!-- Constructor Personalizado de Acordes -->
+    <div class="chord-builder-row">
+      <select id="chord-builder-root" class="chord-builder-select">
+        <option value="Do">Do</option>
+        <option value="Do#">Do#</option>
+        <option value="Re">Re</option>
+        <option value="Re#">Re#</option>
+        <option value="Mi">Mi</option>
+        <option value="Fa">Fa</option>
+        <option value="Fa#">Fa#</option>
+        <option value="Sol">Sol</option>
+        <option value="Sol#">Sol#</option>
+        <option value="La">La</option>
+        <option value="Si♭">Si♭</option>
+        <option value="Si">Si</option>
+      </select>
+
+      <select id="chord-builder-suffix" class="chord-builder-select">
+        <option value="">Mayor ( )</option>
+        <option value="m">Menor (m)</option>
+        <option value="7">Séptima (7)</option>
+        <option value="m7">Menor 7 (m7)</option>
+        <option value="4">Sus 4 (4)</option>
+        <option value="+">Aumentado (+)</option>
+        <option value="dim">Disminuido (dim)</option>
+        <option value="6">Sexta (6)</option>
+        <option value="9">Novena (9)</option>
+      </select>
+
+      <button type="button" class="btn-frm btn-frm-primary" id="btn-apply-custom-chord" style="padding: 6px 10px; font-size: 0.78rem;">
+        Aplicar
+      </button>
+    </div>
+
+    <!-- Acción para Iniciar Lado Derecho desde este punto -->
+    <button type="button" class="btn-chord-menu-action" id="btn-menu-insert-col-break" title="Iniciar Columna Derecha a partir de esta línea">
+      <span class="material-symbols-outlined">view_column</span>
+      <span>Iniciar Lado Derecho (Columna Derecha)</span>
+    </button>
+
+    <!-- Acciones Inferiores del Menú -->
+    <div class="chord-menu-actions">
+      <button type="button" class="btn-frm btn-frm-secondary delete" id="btn-menu-delete-chord" style="color: #dc2626; font-size: 0.78rem; display: none;">
+        <span class="material-symbols-outlined" style="font-size: 16px;">delete</span>
+        Eliminar
+      </button>
+      <span style="font-size: 0.7rem; color: var(--frm-muted); margin-left: auto;">Arrastra el acorde para moverlo</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL DE LISTA E ÍNDICE (songs-index.json)
+       ========================================================================= -->
+  <div id="modal-lista" class="frm-modal-backdrop" style="display: none;">
+    <div class="frm-modal-content">
+      <div class="frm-modal-header">
+        <h3>
+          <span class="material-symbols-outlined" style="color: #0284c7;">format_list_bulleted</span>
+          Registro en Índice (songs-index.json)
+        </h3>
+        <button type="button" class="chord-menu-close" onclick="document.getElementById('modal-lista').style.display='none'">&times;</button>
+      </div>
+      <div class="frm-modal-body">
+        <p style="margin-top: 0; font-size: 0.88rem; color: var(--frm-muted);">
+          Esta es la entrada estructurada para el archivo <code>data/songs-index.json</code>. Puedes actualizarlo directamente o descargar la entrada.
+        </p>
+        <pre id="index-entry-preview" style="background: rgba(0,0,0,0.04); padding: 14px; border-radius: 10px; font-size: 0.82rem; overflow-x: auto; max-height: 260px; border: 1px solid var(--frm-border);"></pre>
+      </div>
+      <div class="frm-modal-footer">
+        <button type="button" class="btn-frm btn-frm-secondary" onclick="document.getElementById('modal-lista').style.display='none'">Cerrar</button>
+        <button type="button" class="btn-frm btn-frm-primary" id="btn-add-to-index-file">
+          <span class="material-symbols-outlined">playlist_add_check</span>
+          Añadir a songs-index.json
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL DE VISTA PREVIA DEL CANTO
+       ========================================================================= -->
+  <div id="modal-preview" class="frm-modal-backdrop" style="display: none;">
+    <div class="frm-modal-content" style="max-width: 800px;">
+      <div class="frm-modal-header">
+        <div>
+          <h3 id="preview-song-title" style="margin: 0; font-size: 1.2rem;">Título del Canto</h3>
+          <small id="preview-song-sub" style="color: var(--frm-muted);"></small>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span id="preview-song-stage-badge" style="font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; color: #1e293b;"></span>
+          <button type="button" class="chord-menu-close" onclick="document.getElementById('modal-preview').style.display='none'">&times;</button>
+        </div>
+      </div>
+      <div class="frm-modal-body" id="preview-song-body" style="padding: 24px; background: var(--frm-bg); min-height: 280px;">
+        <!-- Se inserta estrofa con acordes arriba y letra -->
+      </div>
+      <div class="frm-modal-footer">
+        <button type="button" class="btn-frm btn-frm-secondary" onclick="document.getElementById('modal-preview').style.display='none'">Cerrar</button>
+        <button type="button" class="btn-frm btn-frm-primary" id="preview-btn-open-viewer">
+          <span class="material-symbols-outlined">open_in_new</span>
+          Abrir en Visor Completo
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { initFrmCanto } from './src/js/frmcanto.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initFrmCanto();
+    });
+  </script>
+  <script type="module" src="src/navegador.js"></script>
+</body>
+</html>

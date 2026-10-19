@@ -31,7 +31,8 @@ export default defineConfig({
         datosparroquia: path.resolve(__dirname, 'datosparroquia.html'),
         seucaristico: path.resolve(__dirname, 'seucaristico.html'),
         play: path.resolve(__dirname, 'play.html'),
-        cliturgico: path.resolve(__dirname, 'cliturgico.html')
+        cliturgico: path.resolve(__dirname, 'cliturgico.html'),
+        frmcanto: path.resolve(__dirname, 'frmcanto.html')
       }
     }
   },
@@ -40,7 +41,67 @@ export default defineConfig({
       name: 'save-chord-positions-middleware',
       configureServer(server) {
         server.middlewares.use(async (req, res, next) => {
-          if (req.url === '/api/save-positions' && req.method === 'POST') {
+          if (req.url === '/api/save-canto' && req.method === 'POST') {
+            let body = '';
+            req.on('data', chunk => { body += chunk; });
+            req.on('end', () => {
+              try {
+                const data = JSON.parse(body);
+                const { songId, targetFolder, songData } = data;
+                if (!songId || !songData) {
+                  res.statusCode = 400;
+                  res.end(JSON.stringify({ error: 'Missing songId or songData' }));
+                  return;
+                }
+                const folder = targetFolder || 'data/songs';
+                const folderPath = path.resolve(__dirname, folder);
+                if (!fs.existsSync(folderPath)) {
+                  fs.mkdirSync(folderPath, { recursive: true });
+                }
+                const filePath = path.join(folderPath, `${songId}.json`);
+                fs.writeFileSync(filePath, JSON.stringify(songData, null, 2), 'utf8');
+                console.log(`[Server] Guardado canto en archivo: ${filePath}`);
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ success: true, path: filePath }));
+              } catch (e) {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ error: e.message }));
+              }
+            });
+          } else if (req.url === '/api/save-index-entry' && req.method === 'POST') {
+            let body = '';
+            req.on('data', chunk => { body += chunk; });
+            req.on('end', () => {
+              try {
+                const entry = JSON.parse(body);
+                if (!entry || !entry.id) {
+                  res.statusCode = 400;
+                  res.end(JSON.stringify({ error: 'Missing entry id' }));
+                  return;
+                }
+                const indexPath = path.resolve(__dirname, 'data', 'songs-index.json');
+                let indexList = [];
+                if (fs.existsSync(indexPath)) {
+                  indexList = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+                }
+                const existingIdx = indexList.findIndex(item => item && item.id === entry.id);
+                if (existingIdx !== -1) {
+                  indexList[existingIdx] = { ...indexList[existingIdx], ...entry };
+                } else {
+                  indexList.push(entry);
+                }
+                fs.writeFileSync(indexPath, JSON.stringify(indexList, null, 2), 'utf8');
+                console.log(`[Server] Actualizado índice en: ${indexPath} para canto ${entry.id}`);
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ success: true, count: indexList.length }));
+              } catch (e) {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ error: e.message }));
+              }
+            });
+          } else if (req.url === '/api/save-positions' && req.method === 'POST') {
             let body = '';
             req.on('data', chunk => {
               body += chunk;

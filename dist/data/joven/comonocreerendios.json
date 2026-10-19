@@ -1,0 +1,178 @@
+{
+  "id": "comonocreerendios",
+  "tt": "Como no creer en Dios",
+  "title": "Como no creer en Dios",
+  "subtitle": "Wilkins 1984",
+  "category": [
+    "Católicos",
+    "Entrada"
+  ],
+  "catCanto": "Católicos",
+  "stage": "Católicos",
+  "cejilla": "",
+  "acorde": "Mi",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/comonocreerenDios.mp3",
+  "sourceBook": "joven",
+  "expansion": false,
+  "scrollConfig": {
+    "mobile": {
+      "v": 25,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "",
+  "sig": "",
+  "lizq": [
+    {
+      "line": "Yo te llevo, desde niño muy adentro,, (Mi,m,0)(Si,7,9)(Mi,m,32)",
+      "sC": ""
+    },
+    {
+      "line": "te encontraba en el pajaro y la flor,, (Sol,,8)(Re,,20)(Sol,,32)",
+      "sC": ""
+    },
+    {
+      "line": "en la lluvia, en la tierra y el silencio,, (Si,7,7)(Mi,m,36)",
+      "sC": ""
+    },
+    {
+      "line": "y en mis sueños cada noche estabas tu., (La,m,10)(Si,7,21)(Mi,m,35)",
+      "sC": ""
+    },
+    {
+      "line": "Desde entonces quiero darte siempre gracias,, (Mi,m,7)(Si,7,10)(Mi,m,35)",
+      "sC": ""
+    },
+    {
+      "line": "por que puedo darme cuenta de tu amor,, (Sol,,8)(Re,,20)(Sol,,33)",
+      "sC": ""
+    },
+    {
+      "line": "beberé de tu cuerpo y de tu sangre,, (Si,7,3)(Mi,m,28)",
+      "sC": ""
+    },
+    {
+      "line": "y por siempre te dare...... mi corazon., (La,m,7)(Si,7,18)(Mi,,35)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "COMO NO CREER EN DIOS,, (Mi,,0)(Si,7,17)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SI ME HA DADO LOS HIJOS Y LA VIDA,, (Mi,m,29)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO NO CREER EN DIOS,, (Si,7,17)",
+      "sC": "as"
+    },
+    {
+      "line": "SI ME HA DADO LA MUJER QUERIDA,, (Mi,m,26)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO NO CREER EN DIOS,, (Mi,7,1)(La,m,18)",
+      "sC": "as"
+    },
+    {
+      "line": "SI ME HA DADO LA TRISTEZA Y LA ALEGRIA,, (Mi,m,34)",
+      "sC": "as"
+    },
+    {
+      "line": "DE SABER QUE HAY UN MAÑANA CADA DIA,, (Si,7,32)",
+      "sC": "as"
+    },
+    {
+      "line": "POR LA FE POR LA ESPERANZA Y EL AMOR,, (Mi,m,32)",
+      "sC": "as"
+    },
+    {
+      "line": "COMO NO..., (Si,7,5)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LA LA LA LA LA LA LA, (Mi,m,0)(Si,7,15)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "COMO NO CREER..., (Mi,m,0)(Si,7,10)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "si me ha dado los hijos y la vida, (Mi,m,29)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "COMO NO CREER..., (Si,7,10)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "si me ha dado la mujer querida, (Mi,m,27)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "COMO NO CREER EN DIOS, (Mi,7,0)(La,m,17)",
+      "sC": "ta as"
+    },
+    {
+      "line": "SI ME HA DADO LA TRISTEZA Y LA ALEGRIA,, (Mi,m,33)",
+      "sC": "as"
+    },
+    {
+      "line": "DE SABER QUE HAY UN MAÑANA CADA DIA,, (Si,7,36)",
+      "sC": "as"
+    },
+    {
+      "line": "POR LA FE POR LA ESPERANZA Y EL AMOR,, (Mi,m,32)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "COMO NO...., (Si,7,4)(Mi,m,9)",
+      "sC": "ta as"
+    }
+  ]
+}

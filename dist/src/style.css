@@ -1109,6 +1109,8 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
 
 .linea-canto {
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
   font-family: var(--font-family-lyrics);
   font-weight: 400;
   font-size: calc(1.4rem * var(--font-zoom));
@@ -1120,7 +1122,6 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
-
 }
 
 /* Negrita para las partes de la asamblea */
@@ -1325,6 +1326,36 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
 
 .collapsible-block-container.has-sub .collapsible-content {
   cursor: pointer;
+}
+
+/* Títulos principales expandibles (cabeza de grupo siempre visible) */
+.collapsible-block-container.keep-trigger-visible {
+  display: block !important;
+  width: 100%;
+  clear: both;
+  margin: 0 !important;
+}
+
+.collapsible-block-container.keep-trigger-visible .linea-canto,
+.collapsible-block-container.keep-trigger-visible .collapsible-trigger {
+  cursor: pointer;
+  user-select: none;
+  display: block !important;
+  width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.collapsible-block-container.keep-trigger-visible .collapsible-content {
+  cursor: default;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  border-left: none !important;
+  margin-top: 0 !important;
+}
+
+.collapsible-block-container.keep-trigger-visible .collapsible-content .linea-canto {
+  cursor: default;
 }
 
 /* Acordes posicionados (Anclados con precisión de caracteres) */
@@ -4502,7 +4533,19 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
 
 
 .adb1 {
-  margin-top: -20px;
+  margin-top: 0;
+}
+
+.linea-canto.adb1,
+.linea-canto.linea-separador-estrofa {
+  min-height: calc(1.8rem * var(--font-zoom, 1)) !important;
+  height: calc(1.8rem * var(--font-zoom, 1)) !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  pointer-events: none;
+  display: block !important;
+  clear: both !important;
 }
 
 

@@ -71,9 +71,9 @@
 .vhhb5 {margin-top: -48px;left: 235px;}
 .vhhb6 {margin-top: -48px;left: 279px;}
 
-.t0 {margin-top: -20px;}
-.t1 {margin-top: -29px;}
-.t2 {margin-top: -74px;}
+.linea-canto.t0:not(.collapsible-trigger) {margin-top: -20px;}
+.linea-canto.t1:not(.collapsible-trigger) {margin-top: -29px;}
+.linea-canto.t2:not(.collapsible-trigger) {margin-top: -74px;}
 
 .b1 {margin-top: -24px;}
 

@@ -165,6 +165,19 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           </div>
         </button>
 
+        <button class="nav-item" id="btn-nav-formulario">
+          <span class="material-symbols-outlined arrow-icon">edit_note</span>
+          <span>Formulario</span>
+          <div class="nav-submenu" id="nav-submenu-formulario">
+            <a href="datosparroquia.html" id="nav-formulario-datosparroquia" style="display: none;"><span class="material-symbols-outlined arrow-icon">edit_location_alt</span> Formulario Parroquia</a>
+            <a href="frmcanto.html" id="nav-formulario-frmcanto" style="display: none;"><span class="material-symbols-outlined arrow-icon">post_add</span> Formulario Canto</a>
+            <a href="cliturgico.html" id="nav-formulario-cliturgico"><span class="material-symbols-outlined arrow-icon">calendar_month</span> Tiempo Litúrgico</a>
+            <a href="mantcantos.html" id="nav-formulario-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
+            <a href="respaldo.html" id="nav-formulario-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
+            <a href="seucaristico.html" id="nav-formulario-seucaristico"><span class="material-symbols-outlined arrow-icon">local_bar</span> Salmo Eucarístico</a>
+          </div>
+        </button>
+
         <button class="nav-item" id="btn-nav-resucito">
           <span class="material-symbols-outlined arrow-icon">menu_book</span>
           <span>Resucitó</span>
@@ -172,25 +185,13 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
             <a href="#" id="nav-resucito-camino"><span class="material-symbols-outlined arrow-icon">home</span> Inicio</a>
             <a href="perfil.html" id="nav-resucito-perfil"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
             <a href="preparar.html" id="nav-resucito-preparar"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
-            <a href="play.html" id="nav-resucito-play"><span class="material-symbols-outlined arrow-icon">play_circle</span> Reproductor</a>
             <a href="parroquia.html" id="nav-resucito-parroquia"><span class="material-symbols-outlined arrow-icon">church</span> Cantos Eucaristía</a>
+            <a href="play.html" id="nav-resucito-play"><span class="material-symbols-outlined arrow-icon">play_circle</span> Reproductor</a>
             <a href="bitacora.html" id="nav-resucito-bitacora"><span class="material-symbols-outlined arrow-icon">history</span> Bitácora</a>
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
             <a href="chat.html" id="nav-resucito-chat"><span class="material-symbols-outlined arrow-icon">chat</span> <span style="flex: 1;">Asistencia y Chat</span><span id="badge-chat-nav-submenu" class="badge-unread-chat-popup" style="display: none; margin-left: auto; background-color: #25d366; color: #000000; font-size: 0.75rem; font-weight: 900; min-width: 20px; height: 20px; line-height: 20px; border-radius: 9999px; padding: 0 6px; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.35); flex-shrink: 0; border: 1.5px solid #ffffff; box-sizing: border-box;">0</span></a>
             <a href="privacidad.html" id="nav-resucito-privacidad"><span class="material-symbols-outlined arrow-icon">policy</span> Política de Privacidad</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
-          </div>
-        </button>
-
-        <button class="nav-item" id="btn-nav-formulario">
-          <span class="material-symbols-outlined arrow-icon">edit_note</span>
-          <span>Formulario</span>
-          <div class="nav-submenu" id="nav-submenu-formulario">
-            <a href="datosparroquia.html" id="nav-formulario-datosparroquia" style="display: none;"><span class="material-symbols-outlined arrow-icon">edit_location_alt</span> Formulario Parroquia</a>
-            <a href="cliturgico.html" id="nav-formulario-cliturgico"><span class="material-symbols-outlined arrow-icon">calendar_month</span> Tiempo Litúrgico</a>
-            <a href="mantcantos.html" id="nav-formulario-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
-            <a href="respaldo.html" id="nav-formulario-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
-            <a href="seucaristico.html" id="nav-formulario-seucaristico"><span class="material-symbols-outlined arrow-icon">local_bar</span> Salmo Eucarístico</a>
           </div>
         </button>
 
@@ -512,6 +513,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       document.body.insertAdjacentHTML('beforeend', customProgressModalHTML);
     }
     setupNavListeners();
+    initGlobalFloatingPlayer();
   };
 
   if (document.readyState === 'loading') {
@@ -1142,16 +1144,20 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       // Botón y Enlaces en Submenú Formulario
       const btnNavFormulario = document.getElementById('btn-nav-formulario');
       const navFormularioDatosparroquia = document.getElementById('nav-formulario-datosparroquia');
+      const navFormularioFrmcanto = document.getElementById('nav-formulario-frmcanto');
       const navFormularioMantcantos = document.getElementById('nav-formulario-mantcantos');
       const navFormularioRespaldo = document.getElementById('nav-formulario-respaldo');
       const navFormularioSeucaristico = document.getElementById('nav-formulario-seucaristico');
 
+      const canFrmcanto = isAdmin || hasPermission('page_frmcanto') || hasPermission('page_mantcantos');
+
       if (navFormularioDatosparroquia) navFormularioDatosparroquia.style.display = isAdmin ? 'flex' : 'none';
+      if (navFormularioFrmcanto) navFormularioFrmcanto.style.display = canFrmcanto ? 'flex' : 'none';
       if (navFormularioMantcantos) navFormularioMantcantos.style.display = canMantcantos ? 'flex' : 'none';
       if (navFormularioRespaldo) navFormularioRespaldo.style.display = canRespaldo ? 'flex' : 'none';
       if (navFormularioSeucaristico) navFormularioSeucaristico.style.display = canSeucaristico ? 'flex' : 'none';
 
-      const canFormulario = isAdmin || canMantcantos || canRespaldo || canSeucaristico;
+      const canFormulario = isAdmin || canMantcantos || canRespaldo || canSeucaristico || canFrmcanto;
       if (btnNavFormulario) btnNavFormulario.style.display = canFormulario ? 'flex' : 'none';
 
       // Acciones en Popup de Cuenta
@@ -1893,4 +1899,627 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
   }
 
   window.applyNavTheme = applyNavTheme;
+
+  // 11. REPRODUCTOR FLOTANTE GLOBAL (Persistente arriba en toda la app)
+  function initGlobalFloatingPlayer() {
+    // Si estamos en la página del reproductor (play.html), play.js maneja su propio reproductor maestro
+    const currentPath = window.location.pathname.toLowerCase();
+    if (currentPath.endsWith('play.html') || currentPath.endsWith('/play')) {
+      return;
+    }
+
+    const STORAGE_KEY = 'resucito_reproductor_estado_v1';
+    let rawState = null;
+    try {
+      rawState = localStorage.getItem(STORAGE_KEY);
+    } catch (e) {}
+
+    if (!rawState) return;
+    let state = null;
+    try {
+      state = JSON.parse(rawState);
+    } catch (e) {
+      return;
+    }
+
+    if (!state || !state.songId || !state.audioSrc) return;
+
+    // Evitar inyección duplicada
+    let playerEl = document.getElementById('global-floating-player');
+    if (playerEl) return;
+
+    const escapeHtml = (str) => {
+      if (!str) return '';
+      return String(str).replace(/[&<>"']/g, (m) => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[m]));
+    };
+
+    const formatTime = (secs) => {
+      if (!Number.isFinite(secs) || secs < 0) return '0:00';
+      const m = Math.floor(secs / 60);
+      const s = Math.floor(secs % 60);
+      return `${m}:${s < 10 ? '0' : ''}${s}`;
+    };
+
+    const isInitialPlaying = !!state.isPlaying;
+
+    const html = `
+      <div id="global-floating-player" class="global-floating-player">
+        <div class="global-player-progress-section">
+          <span class="global-player-time" id="global-player-time-current">${formatTime(state.currentTime || 0)}</span>
+          <div class="global-player-range-wrapper">
+            <input type="range" id="global-player-seek-slider" class="global-player-seek-slider" min="0" max="100" value="${state.duration > 0 ? ((state.currentTime || 0) / state.duration) * 100 : 0}" step="0.1">
+          </div>
+          <span class="global-player-time" id="global-player-time-total">${formatTime(state.duration || 0)}</span>
+        </div>
+
+        <div class="global-player-controls-row">
+          <div class="global-player-transport-controls">
+            <button id="global-player-btn-prev" class="global-player-ctrl-btn" title="Canto anterior">
+              <span class="material-symbols-outlined">skip_previous</span>
+            </button>
+
+            <button id="global-player-btn-play-main" class="global-player-play-main-btn" title="${isInitialPlaying ? 'Pausar' : 'Reproducir'}">
+              <span class="material-symbols-outlined" id="global-player-icon-play">${isInitialPlaying ? 'pause' : 'play_arrow'}</span>
+            </button>
+
+            <button id="global-player-btn-next" class="global-player-ctrl-btn" title="Canto siguiente">
+              <span class="material-symbols-outlined">skip_next</span>
+            </button>
+
+            <button id="global-player-btn-repeat" class="global-player-ctrl-btn ${state.repeatMode !== 'off' ? 'active' : ''}" title="Repetición">
+              <span class="material-symbols-outlined" id="global-player-icon-repeat">${state.repeatMode === 'one' ? 'repeat_one' : 'repeat'}</span>
+            </button>
+
+            <button id="global-player-btn-mute" class="global-player-ctrl-btn" title="Silenciar / Sonido">
+              <span class="material-symbols-outlined" id="global-player-icon-volume">volume_up</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="global-player-top-row">
+          <div class="global-player-cover" id="global-player-cover" style="background: ${state.stageColor || '#d01212'};">
+            <div class="global-player-wave-bars ${isInitialPlaying ? '' : 'paused'}" id="global-player-wave-bars">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="global-player-track-info">
+            <h3 class="global-player-track-title" id="global-player-track-title" title="${escapeHtml(state.songTitle || '')}">${escapeHtml(state.songTitle || 'Canto')}</h3>
+            <p class="global-player-track-subtitle" id="global-player-track-subtitle">${escapeHtml(state.songSubtitle || '')}</p>
+          </div>
+
+          <div class="global-player-quick-links">
+            <!-- 1. Botón de Lista en Reproducción -->
+            <button id="global-player-btn-queue" class="global-player-action-btn" title="Lista de reproducción">
+              <span class="material-symbols-outlined">format_list_bulleted</span>
+            </button>
+
+            <!-- 2. Botón Ver Canto -->
+            <a href="#" id="global-player-open-lyrics-btn" class="global-player-btn-lyrics" title="Abrir letra y acordes del canto">
+              <span class="material-symbols-outlined">menu_book</span>
+              <span>Ver Canto</span>
+            </a>
+
+            <!-- 3. Botón para Ocultar / Minimizar en pestaña de esquina -->
+            <button id="global-player-btn-collapse" class="global-player-action-btn" title="Ocultar reproductor">
+              <span class="material-symbols-outlined">expand_less</span>
+            </button>
+
+            <!-- 4. Botón para ir a la página del Reproductor (play.html) -->
+            <a href="./play.html" id="global-player-btn-go-play" class="global-player-action-btn" title="Ir al Reproductor">
+              <span class="material-symbols-outlined">playlist_play</span>
+            </a>
+
+            <!-- 5. Botón Cerrar / Descartar completamente -->
+            <button id="global-player-btn-close" class="global-player-btn-close" title="Cerrar reproductor">&times;</button>
+          </div>
+        </div>
+
+        <!-- DROPDOWN DE LISTA EN REPRODUCCIÓN (Hijo directo de global-floating-player) -->
+        <div id="global-player-queue-dropdown" class="global-player-queue-dropdown hidden">
+          <div class="global-queue-header">
+            <div class="global-queue-title-line">
+              <span class="material-symbols-outlined">queue_music</span>
+              <span>Lista en Reproducción</span>
+              <span id="global-queue-count" class="global-queue-count-badge">0 cantos</span>
+            </div>
+            <button id="global-queue-close-btn" class="global-queue-close-btn" title="Cerrar lista">&times;</button>
+          </div>
+          <ul id="global-queue-list" class="global-queue-list"></ul>
+        </div>
+
+        <audio id="global-floating-audio" preload="metadata" crossorigin="anonymous"></audio>
+      </div>
+
+      <!-- PESTAÑITA FLOTANTE EN LA ESQUINA CUANDO ESTÁ OCULTO O EN PAUSA -->
+      <div id="global-floating-tab" class="global-floating-tab hidden" title="Reproductor en segundo plano">
+        <button id="global-tab-btn-expand" class="global-tab-ctrl-btn" title="Bajar / Mostrar reproductor">
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </button>
+        <button id="global-tab-btn-play" class="global-tab-ctrl-btn play-btn" title="Reproducir / Pausar">
+          <span class="material-symbols-outlined" id="global-tab-icon-play">${isInitialPlaying ? 'pause' : 'play_arrow'}</span>
+        </button>
+        <div class="global-tab-info" id="global-tab-info" title="Mostrar reproductor">
+          <span class="global-tab-dot" id="global-tab-dot" style="background: ${state.stageColor || '#d01212'};"></span>
+          <span class="global-tab-title" id="global-tab-title">${escapeHtml(state.songTitle || 'Canto')}</span>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('afterbegin', html);
+    document.body.classList.add('has-global-floating-player');
+
+    playerEl = document.getElementById('global-floating-player');
+    const tabEl = document.getElementById('global-floating-tab');
+    const audioEl = document.getElementById('global-floating-audio');
+    const timeCurrent = document.getElementById('global-player-time-current');
+    const timeTotal = document.getElementById('global-player-time-total');
+    const seekSlider = document.getElementById('global-player-seek-slider');
+    const btnPlay = document.getElementById('global-player-btn-play-main');
+    const iconPlay = document.getElementById('global-player-icon-play');
+    const btnPrev = document.getElementById('global-player-btn-prev');
+    const btnNext = document.getElementById('global-player-btn-next');
+    const btnRepeat = document.getElementById('global-player-btn-repeat');
+    const iconRepeat = document.getElementById('global-player-icon-repeat');
+    const btnMute = document.getElementById('global-player-btn-mute');
+    const iconMute = document.getElementById('global-player-icon-volume');
+    const waveBars = document.getElementById('global-player-wave-bars');
+    const coverEl = document.getElementById('global-player-cover');
+    const trackTitle = document.getElementById('global-player-track-title');
+    const trackSubtitle = document.getElementById('global-player-track-subtitle');
+    const btnQueue = document.getElementById('global-player-btn-queue');
+    const btnLyrics = document.getElementById('global-player-open-lyrics-btn');
+    const btnCollapse = document.getElementById('global-player-btn-collapse');
+    const btnGoPlay = document.getElementById('global-player-btn-go-play');
+    const btnClose = document.getElementById('global-player-btn-close');
+
+    const tabBtnExpand = document.getElementById('global-tab-btn-expand');
+    const tabBtnPlay = document.getElementById('global-tab-btn-play');
+    const tabIconPlay = document.getElementById('global-tab-icon-play');
+    const tabInfo = document.getElementById('global-tab-info');
+    const tabTitle = document.getElementById('global-tab-title');
+    const tabDot = document.getElementById('global-tab-dot');
+
+    const queueDropdown = document.getElementById('global-player-queue-dropdown');
+    const queueList = document.getElementById('global-queue-list');
+    const queueCount = document.getElementById('global-queue-count');
+    const queueCloseBtn = document.getElementById('global-queue-close-btn');
+
+    const saveState = () => {
+      if (!state || !state.songId) return;
+      try {
+        state.currentTime = audioEl?.currentTime || state.currentTime || 0;
+        state.duration = audioEl?.duration || state.duration || 0;
+        state.isPlaying = !!(audioEl && !audioEl.paused);
+        state.updatedAt = Date.now();
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {}
+    };
+
+    const updateUI = (playing) => {
+      if (iconPlay) iconPlay.textContent = playing ? 'pause' : 'play_arrow';
+      if (btnPlay) btnPlay.title = playing ? 'Pausar' : 'Reproducir';
+      if (tabIconPlay) tabIconPlay.textContent = playing ? 'pause' : 'play_arrow';
+      if (waveBars) waveBars.classList.toggle('paused', !playing);
+    };
+
+    // Funciones para colapsar en la pestaña o expandir el reproductor
+    const collapseToTab = () => {
+      if (!playerEl || !tabEl) return;
+      playerEl.classList.add('is-collapsed');
+      playerEl.classList.remove('is-queue-open');
+      if (queueDropdown) queueDropdown.classList.add('hidden');
+      if (btnQueue) btnQueue.classList.remove('active');
+      tabEl.classList.remove('hidden');
+      document.body.classList.add('is-player-collapsed');
+      if (tabIconPlay) {
+        tabIconPlay.textContent = (audioEl && !audioEl.paused) ? 'pause' : 'play_arrow';
+      }
+    };
+
+    const expandFromTab = () => {
+      if (!playerEl || !tabEl) return;
+      playerEl.classList.remove('is-collapsed');
+      tabEl.classList.add('hidden');
+      document.body.classList.remove('is-player-collapsed');
+      if (iconPlay) {
+        iconPlay.textContent = (audioEl && !audioEl.paused) ? 'pause' : 'play_arrow';
+      }
+    };
+
+    const renderQueueList = () => {
+      if (!queueList) return;
+      let q = Array.isArray(state.queue) && state.queue.length > 0 ? state.queue : [];
+      if (q.length === 0 && state.songId) {
+        q = [{
+          id: state.songId,
+          title: state.songTitle || 'Canto actual',
+          subtitle: state.songSubtitle || '',
+          audioSrc: state.audioSrc,
+          stageColor: state.stageColor || '#d01212',
+          bookGroup: state.bookGroup || 'camino'
+        }];
+        state.queue = q;
+        state.trackIndex = 0;
+      }
+      if (queueCount) queueCount.textContent = `${q.length} ${q.length === 1 ? 'canto' : 'cantos'}`;
+      if (q.length === 0) {
+        queueList.innerHTML = '<li style="padding: 14px; text-align: center; color: var(--text-muted); font-size: 0.8rem;">No hay cantos en la lista</li>';
+        return;
+      }
+      queueList.innerHTML = q.map((song, idx) => {
+        const isCur = idx === state.trackIndex || String(song.id) === String(state.songId);
+        return `
+          <li class="global-queue-item ${isCur ? 'active' : ''}" data-queue-idx="${idx}">
+            <div class="global-queue-item-idx">
+              ${isCur && audioEl && !audioEl.paused ? '<span class="material-symbols-outlined" style="font-size: 16px; color: var(--accent-color, #d01212);">equalizer</span>' : (idx + 1)}
+            </div>
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: ${song.stageColor || '#d01212'}; flex-shrink: 0;"></span>
+            <div class="global-queue-item-info">
+              <div class="global-queue-item-title">${escapeHtml(song.title)}</div>
+              ${song.subtitle ? `<div class="global-queue-item-sub">${escapeHtml(song.subtitle)}</div>` : ''}
+            </div>
+          </li>
+        `;
+      }).join('');
+    };
+
+    const loadTrack = (idx, autoPlay = true) => {
+      if (!state.queue || state.queue.length === 0) return;
+      if (idx < 0) idx = state.queue.length - 1;
+      if (idx >= state.queue.length) idx = 0;
+
+      state.trackIndex = idx;
+      const song = state.queue[idx];
+      state.songId = song.id;
+      state.songTitle = song.title;
+      state.songSubtitle = song.subtitle || '';
+      state.audioSrc = song.audioSrc;
+      state.stageColor = song.stageColor || '#d01212';
+      state.bookGroup = song.bookGroup || 'camino';
+      state.currentTime = 0;
+
+      if (trackTitle) {
+        trackTitle.textContent = state.songTitle;
+        trackTitle.title = state.songTitle;
+      }
+      if (trackSubtitle) trackSubtitle.textContent = state.songSubtitle;
+      if (coverEl) coverEl.style.background = state.stageColor;
+      if (tabTitle) tabTitle.textContent = state.songTitle;
+      if (tabDot) tabDot.style.background = state.stageColor;
+
+      let safeSrc = state.audioSrc;
+      try {
+        safeSrc = encodeURI(decodeURI(safeSrc));
+      } catch (e) {
+        safeSrc = encodeURI(safeSrc);
+      }
+      audioEl.src = safeSrc;
+      audioEl.currentTime = 0;
+
+      if (autoPlay) {
+        audioEl.play().then(() => {
+          expandFromTab();
+          renderQueueList();
+        }).catch(() => {
+          updateUI(false);
+          saveState();
+        });
+      }
+    };
+
+    // Configurar audio source
+    let safeSrc = state.audioSrc;
+    try {
+      safeSrc = encodeURI(decodeURI(safeSrc));
+    } catch (e) {
+      safeSrc = encodeURI(safeSrc);
+    }
+    audioEl.src = safeSrc;
+
+    if (state.currentTime && Number.isFinite(state.currentTime)) {
+      audioEl.currentTime = state.currentTime;
+    }
+
+    if (isInitialPlaying) {
+      expandFromTab();
+      const playPromise = audioEl.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          updateUI(true);
+          saveState();
+        }).catch((err) => {
+          console.log('Autoplay en espera de interacción:', err);
+          updateUI(false);
+          collapseToTab();
+          const resumeOnFirstInteraction = () => {
+            audioEl.play().then(() => {
+              updateUI(true);
+              expandFromTab();
+              saveState();
+            }).catch(() => {});
+            window.removeEventListener('click', resumeOnFirstInteraction);
+            window.removeEventListener('touchstart', resumeOnFirstInteraction);
+            window.removeEventListener('keydown', resumeOnFirstInteraction);
+          };
+          window.addEventListener('click', resumeOnFirstInteraction, { once: true });
+          window.addEventListener('touchstart', resumeOnFirstInteraction, { once: true });
+          window.addEventListener('keydown', resumeOnFirstInteraction, { once: true });
+        });
+      }
+    } else {
+      // Si no estaba reproduciéndose, comenzar oculto en la pestañita
+      collapseToTab();
+    }
+
+    // Eventos del elemento <audio>
+    let lastSavedTime = 0;
+    audioEl.addEventListener('timeupdate', () => {
+      if (!Number.isFinite(audioEl.duration) || audioEl.duration <= 0) return;
+      if (timeCurrent) timeCurrent.textContent = formatTime(audioEl.currentTime);
+      if (timeTotal) timeTotal.textContent = formatTime(audioEl.duration);
+      if (seekSlider) {
+        seekSlider.value = String((audioEl.currentTime / audioEl.duration) * 100);
+      }
+      if (Math.abs(audioEl.currentTime - lastSavedTime) > 3) {
+        lastSavedTime = audioEl.currentTime;
+        saveState();
+      }
+    });
+
+    audioEl.addEventListener('loadedmetadata', () => {
+      if (timeTotal) timeTotal.textContent = formatTime(audioEl.duration);
+    });
+
+    audioEl.addEventListener('play', () => {
+      updateUI(true);
+      expandFromTab();
+      saveState();
+      renderQueueList();
+      // Pausar cualquier reproductor de audio local en el visor de cantos si está sonando
+      const localViewerAudio = document.getElementById('viewer-audio-player');
+      if (localViewerAudio && !localViewerAudio.paused) {
+        localViewerAudio.pause();
+      }
+    });
+
+    audioEl.addEventListener('pause', () => {
+      updateUI(false);
+      collapseToTab();
+      saveState();
+      renderQueueList();
+    });
+
+    audioEl.addEventListener('ended', () => {
+      if (state.repeatMode === 'one') {
+        audioEl.currentTime = 0;
+        audioEl.play().catch(() => {});
+      } else if (state.queue && state.queue.length > 1) {
+        const nextIdx = (typeof state.trackIndex === 'number' ? state.trackIndex : 0) + 1;
+        if (nextIdx < state.queue.length) {
+          loadTrack(nextIdx, true);
+        } else if (state.repeatMode === 'all') {
+          loadTrack(0, true);
+        } else {
+          audioEl.pause();
+          updateUI(false);
+          collapseToTab();
+          saveState();
+        }
+      } else if (state.repeatMode === 'all') {
+        audioEl.currentTime = 0;
+        audioEl.play().catch(() => {});
+      } else {
+        updateUI(false);
+        collapseToTab();
+        saveState();
+      }
+    });
+
+    // Control de Slider de búsqueda
+    seekSlider?.addEventListener('input', () => {
+      if (!audioEl || !Number.isFinite(audioEl.duration) || audioEl.duration <= 0) return;
+      const pct = parseFloat(seekSlider.value) || 0;
+      audioEl.currentTime = (pct / 100) * audioEl.duration;
+      if (timeCurrent) timeCurrent.textContent = formatTime(audioEl.currentTime);
+      saveState();
+    });
+
+    // Botón Play / Pause en el reproductor principal
+    btnPlay?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (audioEl.paused) {
+        audioEl.play().then(() => {
+          updateUI(true);
+          expandFromTab();
+          saveState();
+        }).catch(() => {});
+      } else {
+        audioEl.pause();
+        updateUI(false);
+        collapseToTab();
+        saveState();
+      }
+    });
+
+    // Botones Siguiente y Anterior
+    btnNext?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!state.queue || state.queue.length <= 1) {
+        audioEl.currentTime = 0;
+        return;
+      }
+      const curIdx = typeof state.trackIndex === 'number' ? state.trackIndex : 0;
+      loadTrack(curIdx + 1, true);
+    });
+
+    btnPrev?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (audioEl.currentTime > 3 || !state.queue || state.queue.length <= 1) {
+        audioEl.currentTime = 0;
+        return;
+      }
+      const curIdx = typeof state.trackIndex === 'number' ? state.trackIndex : 0;
+      loadTrack(curIdx - 1, true);
+    });
+
+    // Botón Repetir
+    btnRepeat?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (state.repeatMode === 'all') {
+        state.repeatMode = 'one';
+        btnRepeat.classList.add('active');
+        if (iconRepeat) iconRepeat.textContent = 'repeat_one';
+        btnRepeat.title = 'Modo repetición: Repetir canto actual';
+      } else if (state.repeatMode === 'one') {
+        state.repeatMode = 'off';
+        btnRepeat.classList.remove('active');
+        if (iconRepeat) iconRepeat.textContent = 'repeat';
+        btnRepeat.title = 'Modo repetición: Desactivado';
+      } else {
+        state.repeatMode = 'all';
+        btnRepeat.classList.add('active');
+        if (iconRepeat) iconRepeat.textContent = 'repeat';
+        btnRepeat.title = 'Modo repetición: Repetir lista';
+      }
+      saveState();
+    });
+
+    // Botón Mute / Sonido
+    btnMute?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      audioEl.muted = !audioEl.muted;
+      if (iconMute) {
+        iconMute.textContent = audioEl.muted ? 'volume_off' : 'volume_up';
+      }
+    });
+
+    // Botón Lista de Reproducción (Toggle Dropdown)
+    btnQueue?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = queueDropdown.classList.contains('hidden');
+      if (isHidden) {
+        renderQueueList();
+        queueDropdown.classList.remove('hidden');
+        playerEl.classList.add('is-queue-open');
+        btnQueue.classList.add('active');
+      } else {
+        queueDropdown.classList.add('hidden');
+        playerEl.classList.remove('is-queue-open');
+        btnQueue.classList.remove('active');
+      }
+    });
+
+    // Clic en ítems de la lista para reproducirlos directamente
+    queueList?.addEventListener('click', (e) => {
+      const item = e.target.closest('[data-queue-idx]');
+      if (!item) return;
+      const idx = parseInt(item.dataset.queueIdx, 10);
+      if (!isNaN(idx)) {
+        loadTrack(idx, true);
+      }
+    });
+
+    // Cerrar dropdown de la lista
+    queueCloseBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      queueDropdown.classList.add('hidden');
+      playerEl.classList.remove('is-queue-open');
+      btnQueue.classList.remove('active');
+    });
+
+    // Cerrar dropdown si se hace clic fuera
+    document.addEventListener('click', (e) => {
+      if (!playerEl.contains(e.target)) {
+        queueDropdown.classList.add('hidden');
+        playerEl.classList.remove('is-queue-open');
+        btnQueue.classList.remove('active');
+      }
+    });
+
+    // Botón Ver Canto
+    btnLyrics?.addEventListener('click', (e) => {
+      const isIndex = currentPath.endsWith('index.html') || currentPath.endsWith('/') || !currentPath.includes('.html');
+      if (isIndex) {
+        e.preventDefault();
+        window.location.hash = `canto=${encodeURIComponent(state.songId)}`;
+      } else {
+        btnLyrics.href = `./index.html#canto=${encodeURIComponent(state.songId)}`;
+      }
+    });
+
+    // Botón Ocultar en la pestaña
+    btnCollapse?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      collapseToTab();
+    });
+
+    // Botón Ir al Reproductor (play.html)
+    btnGoPlay?.addEventListener('click', () => {
+      saveState();
+    });
+
+    // Botón Cerrar / Descartar completamente
+    btnClose?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      audioEl.pause();
+      state.isPlaying = false;
+      saveState();
+      playerEl.remove();
+      tabEl.remove();
+      document.body.classList.remove('has-global-floating-player', 'is-player-collapsed');
+    });
+
+    // Interacciones con la Pestañita en la esquina (tab)
+    tabBtnExpand?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      expandFromTab();
+    });
+
+    tabInfo?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      expandFromTab();
+    });
+
+    tabBtnPlay?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (audioEl.paused) {
+        audioEl.play().then(() => {
+          updateUI(true);
+          expandFromTab();
+          saveState();
+        }).catch(() => {});
+      } else {
+        audioEl.pause();
+        updateUI(false);
+        saveState();
+      }
+    });
+
+    // Pausar global si el reproductor local del visor de cantos en index.html se activa
+    const localViewerAudio = document.getElementById('viewer-audio-player');
+    if (localViewerAudio) {
+      localViewerAudio.addEventListener('play', () => {
+        if (!audioEl.paused) {
+          audioEl.pause();
+        }
+      });
+    }
+
+    // Persistir estado exacto al cerrar o salir de la pestaña/página
+    window.addEventListener('beforeunload', saveState);
+    window.addEventListener('pagehide', saveState);
+  }
+
+  window.initGlobalFloatingPlayer = initGlobalFloatingPlayer;
+
+  window.addEventListener('storage', (e) => {
+    if (e.key === 'resucito_reproductor_estado_v1') {
+      if (!document.getElementById('global-floating-player')) {
+        initGlobalFloatingPlayer();
+      }
+    }
+  });
 })();

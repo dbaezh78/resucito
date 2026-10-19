@@ -27,6 +27,9 @@
       </div>
 
       <div class="play-header-actions">
+        <button id="btn-toggle-play-dark-mode" class="btn-play-icon" title="Modo oscuro del reproductor">
+          <span class="material-symbols-outlined" id="icon-play-dark-mode">dark_mode</span>
+        </button>
         <button id="btn-open-new-playlist" class="btn-play-primary" title="Crear nueva lista de reproducción">
           <span class="material-symbols-outlined">playlist_add</span>
           <span>Nueva Lista</span>
@@ -35,7 +38,8 @@
     </header>
 
     <!-- TARJETA DEL REPRODUCTOR PRINCIPAL -->
-    <section class="player-master-card" id="player-master-card">
+    <div class="player-master-card-wrapper" id="player-master-card-wrapper">
+      <section class="player-master-card" id="player-master-card">
       <div class="player-top-row">
         <div class="player-cover" id="player-cover">
           <span class="material-symbols-outlined" id="player-cover-icon">music_note</span>
@@ -119,6 +123,7 @@
 
       <audio id="play-audio-element" preload="metadata" crossorigin="anonymous"></audio>
     </section>
+    </div>
 
     <!-- FORMULARIO DESPLEGABLE PARA CREAR / RENOMBRAR LISTA -->
     <section class="playlist-form-card" id="playlist-form-card" style="display: none;">
@@ -152,23 +157,28 @@
       <!-- PANEL IZQUIERDO: MIS LISTAS Y COLA DE LA LISTA ACTIVA -->
       <div class="play-panel play-playlists-panel">
         <!-- Mis Listas -->
-        <div class="play-subcard">
-          <div class="play-subcard-header">
+        <div class="play-subcard" id="card-mis-listas">
+          <div class="play-subcard-header" id="header-mis-listas" role="button" tabindex="0" title="Plegar / Desplegar Mis Listas">
             <h3>
               <span class="material-symbols-outlined">library_music</span>
               Mis Listas de Reproducción
             </h3>
-            <span class="play-count-pill" id="playlists-total-badge">0 listas</span>
+            <div class="play-header-right-meta">
+              <span class="play-count-pill" id="playlists-total-badge">0 listas</span>
+              <span class="material-symbols-outlined play-collapse-icon" id="collapse-icon-mis-listas">expand_less</span>
+            </div>
           </div>
 
-          <div class="playlists-horizontal-scroll" id="playlists-list-container">
-            <!-- Renderizado dinámico de listas -->
+          <div class="play-subcard-body" id="body-mis-listas">
+            <div class="playlists-horizontal-scroll" id="playlists-list-container">
+              <!-- Renderizado dinámico de listas -->
+            </div>
           </div>
         </div>
 
         <!-- Canciones de la Lista Seleccionada -->
-        <div class="play-subcard play-active-queue-card">
-          <div class="play-subcard-header queue-header-wrap">
+        <div class="play-subcard play-active-queue-card" id="card-active-queue">
+          <div class="play-subcard-header queue-header-wrap" id="header-active-queue" role="button" tabindex="0" title="Plegar / Desplegar Lista Activa">
             <div>
               <h3 id="active-playlist-heading">
                 <span class="material-symbols-outlined">queue_music</span>
@@ -189,28 +199,31 @@
               <button id="btn-clear-active-playlist" class="btn-play-danger small" style="display: none;" title="Vaciar cantos de esta lista">
                 <span class="material-symbols-outlined">delete_sweep</span>
               </button>
+              <span class="material-symbols-outlined play-collapse-icon" id="collapse-icon-active-queue">expand_less</span>
             </div>
           </div>
 
-          <!-- Buscador interno de la cola activa -->
-          <div class="play-search-box compact">
-            <span class="material-symbols-outlined search-icon">search</span>
-            <input type="text" id="input-search-queue" placeholder="Filtrar dentro de esta lista...">
-            <button id="btn-clear-search-queue" class="btn-clear-input" style="display: none;">
-              <span class="material-symbols-outlined">close</span>
-            </button>
-          </div>
+          <div class="play-subcard-body" id="body-active-queue">
+            <!-- Buscador interno de la cola activa -->
+            <div class="play-search-box compact">
+              <span class="material-symbols-outlined search-icon">search</span>
+              <input type="text" id="input-search-queue" placeholder="Filtrar dentro de esta lista...">
+              <button id="btn-clear-search-queue" class="btn-clear-input" style="display: none;">
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </div>
 
-          <div class="active-queue-list" id="active-queue-container">
-            <!-- Canciones de la lista activa -->
+            <div class="active-queue-list" id="active-queue-container">
+              <!-- Canciones de la lista activa -->
+            </div>
           </div>
         </div>
       </div>
 
       <!-- PANEL DERECHO: CATÁLOGO DE CANTOS PARA AGREGAR -->
       <div class="play-panel play-catalog-panel">
-        <div class="play-subcard play-catalog-card">
-          <div class="play-subcard-header catalog-header-wrap">
+        <div class="play-subcard play-catalog-card" id="card-catalog">
+          <div class="play-subcard-header catalog-header-wrap" id="header-catalog" role="button" tabindex="0" title="Plegar / Desplegar Catálogo">
             <div>
               <h3>
                 <span class="material-symbols-outlined">add_circle</span>
@@ -220,47 +233,52 @@
                 Agregando a: <strong id="catalog-target-playlist-name">Mi Lista</strong>
               </p>
             </div>
-            <span class="play-count-pill" id="catalog-count-badge">0 cantos</span>
+            <div class="play-header-right-meta">
+              <span class="play-count-pill" id="catalog-count-badge">0 cantos</span>
+              <span class="material-symbols-outlined play-collapse-icon" id="collapse-icon-catalog">expand_less</span>
+            </div>
           </div>
 
-          <!-- Pestañas de Libro: Todos / Cantos del Camino / Cantos Joven -->
-          <div class="catalog-book-tabs" id="catalog-book-tabs">
-            <button class="catalog-book-tab active" data-book="all">
-              <span class="material-symbols-outlined">library_music</span>
-              Todos
-            </button>
-            <button class="catalog-book-tab" data-book="camino">
-              <span class="material-symbols-outlined">menu_book</span>
-              Cantos del Camino
-            </button>
-            <button class="catalog-book-tab" data-book="joven">
-              <span class="material-symbols-outlined">music_note</span>
-              Cantos Joven
-            </button>
-          </div>
+          <div class="play-subcard-body" id="body-catalog">
+            <!-- Pestañas de Libro: Todos / Cantos del Camino / Cantos Joven -->
+            <div class="catalog-book-tabs" id="catalog-book-tabs">
+              <button class="catalog-book-tab active" data-book="all">
+                <span class="material-symbols-outlined">library_music</span>
+                Todos
+              </button>
+              <button class="catalog-book-tab" data-book="camino">
+                <span class="material-symbols-outlined">menu_book</span>
+                Cantos del Camino
+              </button>
+              <button class="catalog-book-tab" data-book="joven">
+                <span class="material-symbols-outlined">music_note</span>
+                Cantos Joven
+              </button>
+            </div>
 
-          <!-- Filtros de Etapa -->
-          <div class="catalog-stage-pills" id="catalog-stage-pills">
-            <button class="catalog-stage-pill active" data-stage="all">Todas las etapas</button>
-            <button class="catalog-stage-pill stage-pre" data-stage="precatecumenado">Precatecumenado</button>
-            <button class="catalog-stage-pill stage-cate" data-stage="catecumenado">Catecumenado</button>
-            <button class="catalog-stage-pill stage-ele" data-stage="eleccion">Elección</button>
-            <button class="catalog-stage-pill stage-lit" data-stage="liturgia">Liturgia</button>
-            <button class="catalog-stage-pill stage-cat" data-stage="catolicos">Otros Católicos</button>
-          </div>
+            <!-- Filtros de Etapa -->
+            <div class="catalog-stage-pills" id="catalog-stage-pills">
+              <button class="catalog-stage-pill active" data-stage="all">Todas las etapas</button>
+              <button class="catalog-stage-pill stage-pre" data-stage="precatecumenado">Precatecumenado</button>
+              <button class="catalog-stage-pill stage-cate" data-stage="catecumenado">Catecumenado</button>
+              <button class="catalog-stage-pill stage-ele" data-stage="eleccion">Elección</button>
+              <button class="catalog-stage-pill stage-lit" data-stage="liturgia">Liturgia</button>
+              <button class="catalog-stage-pill stage-cat" data-stage="catolicos">Otros Católicos</button>
+            </div>
 
-          <!-- Buscador del Catálogo -->
-          <div class="play-search-box">
-            <span class="material-symbols-outlined search-icon">search</span>
-            <input type="text" id="input-search-catalog" placeholder="Buscar canto por título, número o letra...">
-            <button id="btn-clear-search-catalog" class="btn-clear-input" style="display: none;">
-              <span class="material-symbols-outlined">close</span>
-            </button>
-          </div>
+            <!-- Buscador del Catálogo -->
+            <div class="play-search-box">
+              <span class="material-symbols-outlined search-icon">search</span>
+              <input type="text" id="input-search-catalog" placeholder="Buscar canto por título, número o letra...">
+              <button id="btn-clear-search-catalog" class="btn-clear-input" style="display: none;">
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </div>
 
-          <!-- Lista del Catálogo -->
-          <div class="catalog-songs-list" id="catalog-songs-container">
-            <div class="play-empty-state">Cargando catálogo de cantos...</div>
+            <!-- Lista del Catálogo -->
+            <div class="catalog-songs-list" id="catalog-songs-container">
+              <div class="play-empty-state">Cargando catálogo de cantos...</div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,1151 @@
+/* src/css/frmcanto.css - Estilos del Formulario de Creación de Cantos */
+
+:root {
+  --frm-accent: var(--accent-color, #d01212);
+  --frm-bg: var(--bg-color, #f4f6f8);
+  --frm-panel: var(--panel-bg, #ffffff);
+  --frm-border: var(--panel-border, #e2e8f0);
+  --frm-text: var(--text-color, #1e293b);
+  --frm-muted: var(--text-muted, #64748b);
+  --frm-chord: #0284c7;
+  --frm-asamblea: #dc2626;
+  --frm-cantor: #d97706;
+  --frm-bis: #7c3aed;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--frm-bg);
+  color: var(--frm-text);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 95px; /* Espacio para barra de navegación inferior */
+  overflow-x: hidden;
+}
+
+.frmcanto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+/* Header Principal */
+.frmcanto-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--frm-panel);
+  border: 1px solid var(--frm-border);
+  border-radius: 16px;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  flex-wrap: wrap;
+}
+
+.frmcanto-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.frmcanto-back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--frm-text);
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid var(--frm-border);
+  transition: all 0.15s ease;
+}
+
+.frmcanto-back-btn:hover {
+  background: var(--frm-accent);
+  color: #ffffff;
+  border-color: var(--frm-accent);
+}
+
+.frmcanto-title-group h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--frm-text);
+}
+
+.frmcanto-title-group p {
+  margin: 2px 0 0 0;
+  font-size: 0.82rem;
+  color: var(--frm-muted);
+}
+
+.frmcanto-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Botones de Acción Superior */
+.btn-frm {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-frm .material-symbols-outlined {
+  font-size: 19px;
+}
+
+.btn-frm-primary {
+  background: var(--frm-accent);
+  color: #ffffff;
+  border-color: var(--frm-accent);
+  box-shadow: 0 2px 8px rgba(208, 18, 18, 0.25);
+}
+
+.btn-frm-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-frm-secondary {
+  background: var(--frm-panel);
+  color: var(--frm-text);
+  border-color: var(--frm-border);
+}
+
+.btn-frm-secondary:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: #94a3b8;
+}
+
+.btn-frm-success {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.btn-frm-success:hover {
+  background: #059669;
+}
+
+.btn-frm-info {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.btn-frm-info:hover {
+  background: #0369a1;
+}
+
+/* Tarjetas de Sección */
+.frm-card {
+  background: var(--frm-panel);
+  border: 1px solid var(--frm-border);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.frm-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--frm-border);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.frm-card-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--frm-text);
+}
+
+.frm-card-title .material-symbols-outlined {
+  color: var(--frm-accent);
+  font-size: 22px;
+}
+
+/* Grid de Formulario de Metadatos */
+.frm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.frm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.frm-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--frm-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.frm-input,
+.frm-select {
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--frm-border);
+  background: var(--frm-bg);
+  color: var(--frm-text);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  font-family: inherit;
+}
+
+.frm-input:focus,
+.frm-select:focus {
+  border-color: var(--frm-accent);
+  box-shadow: 0 0 0 3px rgba(208, 18, 18, 0.12);
+}
+
+/* Sección de Entrada de Texto Completo */
+.raw-lyrics-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.raw-lyrics-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 160px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid var(--frm-border);
+  background: var(--frm-bg);
+  color: var(--frm-text);
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  outline: none;
+}
+
+.raw-lyrics-textarea:focus {
+  border-color: var(--frm-accent);
+  box-shadow: 0 0 0 3px rgba(208, 18, 18, 0.12);
+}
+
+.raw-lyrics-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Barra de Herramientas del Editor Interactivo */
+.editor-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--frm-border);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.editor-toolbar-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--frm-muted);
+}
+
+.editor-toolbar-hint .material-symbols-outlined {
+  font-size: 18px;
+  color: var(--frm-chord);
+}
+
+.editor-legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.legend-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-badge span {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.legend-badge.asamblea span { background: var(--frm-asamblea); }
+.legend-badge.cantor span { background: var(--frm-cantor); }
+.legend-badge.bis span { background: var(--frm-bis); }
+.legend-badge.negrita span { background: #0f172a; }
+
+/* Contenedor de Líneas del Editor Interactivo */
+.staves-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Fila de cada línea del canto */
+.stave-line-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--frm-panel);
+  border: 1.5px solid var(--frm-border);
+  border-radius: 12px;
+  padding: 8px 12px;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.stave-line-row:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.stave-line-row.is-empty-line {
+  background: rgba(0, 0, 0, 0.015);
+  border-style: dashed;
+  min-height: 38px;
+  padding: 4px 12px;
+  align-items: center;
+}
+
+.stave-line-idx {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--frm-muted);
+  width: 24px;
+  text-align: right;
+  padding-top: 14px;
+  user-select: none;
+}
+
+/* Botón de Rol (A / C / B) */
+.btn-role-toggle {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1.5px solid var(--frm-border);
+  background: var(--frm-bg);
+  color: var(--frm-muted);
+  font-weight: 900;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.btn-role-toggle:hover {
+  transform: scale(1.05);
+}
+
+.btn-role-toggle.role-a {
+  background: var(--frm-asamblea);
+  color: #ffffff;
+  border-color: var(--frm-asamblea);
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.3);
+}
+
+.btn-role-toggle.role-c {
+  background: var(--frm-cantor);
+  color: #ffffff;
+  border-color: var(--frm-cantor);
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.3);
+}
+
+.btn-role-toggle.role-b {
+  background: var(--frm-bis);
+  color: #ffffff;
+  border-color: var(--frm-bis);
+  box-shadow: 0 2px 6px rgba(124, 58, 237, 0.3);
+}
+
+.btn-role-toggle.role-n {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.35);
+}
+
+/* Cuerpo de la línea: Acordes arriba, Letra abajo */
+.stave-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Pista de Acordes Superior */
+.chord-track {
+  height: 28px;
+  background: rgba(2, 132, 199, 0.04);
+  border: 1px dashed rgba(2, 132, 199, 0.3);
+  border-radius: 6px;
+  position: relative;
+  cursor: crosshair;
+  user-select: none;
+  overflow: visible;
+  transition: background 0.15s ease;
+}
+
+.chord-track:hover {
+  background: rgba(2, 132, 199, 0.08);
+}
+
+.chord-track-empty-hint {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  font-size: 0.72rem;
+  color: #0284c7;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Chip/Píldora del Acorde Arrastrable */
+.chord-chip {
+  position: absolute;
+  top: 2px;
+  height: 22px;
+  padding: 0 1px;
+  background: #0284c7;
+  color: #ffffff;
+  font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic', Arial;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  box-shadow: 0 2px 5px rgba(2, 132, 199, 0.35);
+  transform: translateX(0);
+  user-select: none;
+  z-index: 5;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.chord-chip:active {
+  cursor: grabbing;
+  background: #0369a1;
+  z-index: 10;
+}
+
+.chord-chip .chord-delete-quick {
+  margin-left: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+}
+
+.chord-chip .chord-delete-quick:hover {
+  opacity: 1;
+}
+
+/* Pista de Letra Inferior */
+.lyrics-track-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lyrics-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  background: #e2e8f0; /*transparent;*/
+  color: var(--frm-text);
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: normal;
+  outline: none;
+  border-radius: 6px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.lyrics-input:focus {
+  background: var(--frm-bg);
+  border-color: var(--frm-border);
+}
+
+/* Estilos de Letra según Rol Activo */
+.stave-line-row.role-a .lyrics-input,
+.stave-line-row.role-n .lyrics-input {
+  font-weight: 800;
+  color: var(--frm-text);
+}
+
+.stave-line-row.role-c .lyrics-input {
+  font-style: italic;
+}
+
+/* Píldora Desplazable de BIS */
+.bis-movable-pill {
+  position: absolute;
+  top: 4px;
+  height: 24px;
+  padding: 0 10px;
+  background: var(--frm-bis);
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: grab;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.4);
+  user-select: none;
+  z-index: 6;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.bis-movable-pill:active {
+  cursor: grabbing;
+  transform: translateX(-50%) scale(1.06);
+}
+
+.bis-movable-pill .material-symbols-outlined {
+  font-size: 14px;
+}
+
+/* Manija de Arrastre con el Mouse */
+.stave-drag-handle {
+  cursor: grab;
+  color: var(--frm-muted);
+  width: 22px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-size: 20px;
+  opacity: 0.45;
+  transition: opacity 0.15s, color 0.15s;
+  flex-shrink: 0;
+  margin-top: 12px;
+}
+
+.stave-drag-handle:hover {
+  opacity: 1;
+  color: var(--frm-accent);
+}
+
+.stave-drag-handle:active {
+  cursor: grabbing;
+}
+
+.stave-line-row.is-dragging {
+  opacity: 0.35;
+  border: 2px dashed #0284c7;
+  transform: scale(0.99);
+}
+
+.stave-line-row.drag-over {
+  border-top: 3px solid #0284c7 !important;
+  background: rgba(2, 132, 199, 0.08);
+}
+
+.column-separator-card.is-dragging {
+  opacity: 0.35;
+  border: 2px dashed #6366f1;
+}
+
+.column-separator-card.drag-over {
+  border-top: 3px solid #6366f1 !important;
+}
+
+/* Controles de Línea a la Derecha */
+.stave-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-top: 10px;
+  user-select: none;
+}
+
+.btn-stave-ctrl {
+  background: transparent;
+  border: none;
+  color: var(--frm-muted);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-stave-ctrl:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--frm-text);
+}
+
+.btn-stave-ctrl.delete:hover {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.btn-stave-ctrl .material-symbols-outlined {
+  font-size: 18px;
+}
+
+/* Botones para Agregar Nuevas Líneas */
+.staves-add-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+/* Menú Contextual Flotante de Acordes (Right Click) */
+.chord-context-menu {
+  position: fixed;
+  z-index: 100000;
+  background: var(--frm-panel);
+  border: 1.5px solid var(--frm-chord);
+  border-radius: 14px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+  padding: 12px;
+  width: 320px;
+  max-width: 90vw;
+  animation: contextFadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+@keyframes contextFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.chord-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--frm-border);
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.chord-menu-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--frm-chord);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chord-menu-close {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: var(--frm-muted);
+  cursor: pointer;
+}
+
+.chord-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.btn-chord-quick {
+  background: var(--frm-bg);
+  border: 1px solid var(--frm-border);
+  border-radius: 8px;
+  padding: 6px 0;
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: var(--frm-text);
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.btn-chord-quick:hover {
+  background: var(--frm-chord);
+  color: #fff;
+  border-color: var(--frm-chord);
+}
+
+.chord-builder-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.chord-builder-select {
+  flex: 1;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--frm-border);
+  background: var(--frm-bg);
+  color: var(--frm-text);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.chord-menu-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid var(--frm-border);
+  padding-top: 8px;
+}
+
+/* Modales (Lista, Vista Previa) */
+.frm-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 100010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+.frm-modal-content {
+  background: var(--frm-panel);
+  border: 1px solid var(--frm-border);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 720px;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.frm-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--frm-border);
+}
+
+.frm-modal-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--frm-text);
+}
+
+.frm-modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.frm-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--frm-border);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Toast Notificaciones Flotantes */
+.frm-toast {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #111b21;
+  color: #ffffff;
+  border-left: 4px solid var(--frm-accent);
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 100020;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsividad en Teléfonos */
+@media (max-width: 680px) {
+  .frmcanto-container {
+    padding: 10px 12px;
+  }
+  .frmcanto-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .frmcanto-header-actions {
+    justify-content: flex-start;
+  }
+  .stave-line-row {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  .stave-line-idx {
+    display: none;
+  }
+  .btn-role-toggle {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+  .lyrics-input {
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================================
+   SEPARADOR DE COLUMNAS (LADO IZQUIERDO Y LADO DERECHO)
+   ========================================================================== */
+.column-separator-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(90deg, rgba(14, 165, 233, 0.08) 0%, rgba(99, 102, 241, 0.12) 100%);
+  border: 2px dashed #6366f1;
+  border-radius: 12px;
+  padding: 10px 16px;
+  margin: 14px 0;
+  user-select: none;
+  animation: fadeIn 0.2s ease;
+}
+
+.col-sep-line {
+  flex: 1;
+  height: 2px;
+  background: rgba(99, 102, 241, 0.3);
+}
+
+.col-sep-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #6366f1;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+}
+
+.col-sep-badge .material-symbols-outlined {
+  font-size: 19px;
+}
+
+.btn-col-sep-delete {
+  background: transparent;
+  border: none;
+  color: #6366f1;
+  font-size: 20px;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.btn-col-sep-delete:hover {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+/* Indicador de Columna por Línea (IZQ / DER) */
+.stave-side-indicator {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-top: 14px;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.stave-side-indicator.side-izq {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--frm-muted);
+}
+
+.stave-side-indicator.side-der {
+  background: rgba(99, 102, 241, 0.15);
+  color: #4f46e5;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Botón de acción en el menú contextual de acordes */
+.btn-chord-menu-action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid #6366f1;
+  background: rgba(99, 102, 241, 0.08);
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 0.78rem;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: all 0.15s ease;
+}
+
+.btn-chord-menu-action:hover {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+/* Vista previa de dos columnas */
+.preview-columns-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 680px) {
+  .preview-columns-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* =========================================================================
+   TÍTULOS EXPANDIBLES (t1, t2...) Y VERSOS ANIDADOS (t1a, t1b...)
+   ========================================================================= */
+
+/* Fila de Título Principal Expandible (Padre - T1, T2...) */
+.stave-line-row.is-parent-title {
+  border-left: 4px solid #f59e0b !important;
+  background: rgba(245, 158, 11, 0.05);
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.08);
+}
+
+.parent-title-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #f59e0b;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-top: 10px;
+  user-select: none;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(245, 158, 11, 0.35);
+}
+
+/* Fila de Verso Anidado (Hijo - t1a, t1b, t1c...) */
+.stave-line-row.is-child-line {
+  margin-left: 32px;
+  border-left: 3px solid rgba(245, 158, 11, 0.5) !important;
+  background: rgba(245, 158, 11, 0.02);
+  position: relative;
+}
+
+.stave-line-row.is-child-line::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 24px;
+  width: 20px;
+  height: 2px;
+  background: rgba(245, 158, 11, 0.45);
+}
+
+.child-title-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-top: 10px;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.child-title-badge .material-symbols-outlined {
+  font-size: 13px;
+}
+
+/* Botones de control para Título Expandible y Anidado */
+.btn-stave-ctrl.btn-toggle-parent {
+  color: #d97706;
+}
+
+.btn-stave-ctrl.btn-toggle-parent.active {
+  background: #f59e0b;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.35);
+}
+
+.btn-stave-ctrl.btn-toggle-parent:hover {
+  background: rgba(245, 158, 11, 0.15);
+  color: #b45309;
+}
+
+.btn-stave-ctrl.indent-ctrl {
+  color: #0284c7;
+}
+
+.btn-stave-ctrl.indent-ctrl:hover {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0369a1;
+}
+
+.btn-stave-ctrl.outdent-ctrl {
+  color: #ea580c;
+}
+
+.btn-stave-ctrl.outdent-ctrl:hover {
+  background: rgba(234, 88, 12, 0.12);
+  color: #c2410c;
+}
+
+/* Bloque colapsable interactivo en la Vista Previa */
+.preview-collapsible-block {
+  margin: 14px 0;
+  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: rgba(245, 158, 11, 0.03);
+  transition: all 0.2s ease;
+}
+
+.preview-collapsible-trigger {
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  user-select: none;
+}
+
+.preview-collapsible-trigger:hover .collapsible-dots-indicator {
+  transform: scale(1.15);
+}
+
+.preview-parent-badge {
+  background: #f59e0b;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 2px 7px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.preview-child-badge {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.preview-collapsible-content {
+  margin-top: 12px;
+  padding-left: 0;
+  border-left: none;
+}
+

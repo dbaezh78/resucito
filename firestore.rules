@@ -17,10 +17,14 @@ service cloud.firestore {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
 
-    // 3. Posiciones globales de acordes (Lectura pública, escritura solo para el administrador)
+    // 3. Posiciones globales de acordes (Lectura y escritura pública para sincronización inmediata de cantos)
     match /global_positions/{cantoId} {
-      allow read: if true;
-      allow write: if request.auth != null && request.auth.token.email == 'dbaezh78@gmail.com';
+      allow read, write: if true;
+    }
+
+    // 3b. Colección de Cantos Creados desde el Formulario (Lectura y creación/edición sin restricciones de permisos)
+    match /cantos_creados/{cantoId} {
+      allow read, write: if true;
     }
 
     // 4. Colección de usuarios registrados para Control de Acceso (Lectura pública para selectores, escritura para autenticados)

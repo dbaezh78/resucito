@@ -2129,8 +2129,13 @@ function renderSection(container, lines, side) {
                                        ? window.isSongExpansionEnabled(currentCanto.id) 
                                        : (currentCanto && currentCanto.expansion === true);
       const hasSub = isConfiguredForExpansion && item.lines && item.lines.length > 0;
+      const keepTrigger = Boolean(item.keepTriggerVisible === true || (item.id && /^t\d+/i.test(item.id)) || (item.sC && /\bt\d+\b/.test(item.sC)));
+
       if (hasSub) {
         containerDiv.classList.add('has-sub');
+      }
+      if (keepTrigger) {
+        containerDiv.classList.add('keep-trigger-visible');
       }
       
       const linesWrapper = document.createElement('div');
@@ -2151,7 +2156,7 @@ function renderSection(container, lines, side) {
       let firstSubLineEl = null;
       item.lines.forEach((subLine, subLineIdx) => {
         let subSC = (typeof subLine === 'object' && subLine.sC) ? subLine.sC : '';
-        if (hasSub && subLineIdx === 0 && triggerHasBisa && !subSC.includes('bis')) {
+        if (hasSub && !keepTrigger && subLineIdx === 0 && triggerHasBisa && !subSC.includes('bis')) {
           const bisClasses = item.sC.split(' ').filter(c => c.includes('bis')).join(' ');
           subSC = (subSC + ' ' + bisClasses).trim();
         }
@@ -2159,7 +2164,7 @@ function renderSection(container, lines, side) {
         if (hasSub && subLineIdx === 0) {
           firstSubLineEl = subLineEl;
         }
-        if (hasSub && subLineIdx === 0 && triggerHasTa && !subLineEl.classList.contains('ta')) {
+        if (hasSub && !keepTrigger && subLineIdx === 0 && triggerHasTa && !subLineEl.classList.contains('ta')) {
           subLineEl.classList.add('ta');
         }
         contentDiv.appendChild(subLineEl);
@@ -2183,8 +2188,10 @@ function renderSection(container, lines, side) {
       // Manejar estado inicial de colapso
       const isExpanded = allAsambleaExpanded || item.initialState === 'expanded';
       contentDiv.style.display = isExpanded ? 'block' : 'none';
-      if (hasSub) {
+      if (hasSub && !keepTrigger) {
         triggerLine.style.display = isExpanded ? 'none' : 'block';
+      } else {
+        triggerLine.style.display = 'block';
       }
       if (hasHbisAuto) {
         updateCollapsibleBisAutoHeight();
@@ -2208,18 +2215,22 @@ function renderSection(container, lines, side) {
       const setExpandedState = (expand) => {
         if (expand) {
           contentDiv.style.display = 'block';
-          if (hasSub) {
+          if (hasSub && !keepTrigger) {
             triggerLine.style.display = 'none';
+          } else {
+            triggerLine.style.display = 'block';
           }
           if (triggerLetra) {
             const existingDots = triggerLetra.querySelector('.collapsible-dots-indicator');
             if (existingDots) existingDots.remove();
           }
+          if (typeof window.repositionChords === 'function') {
+            setTimeout(() => window.repositionChords(), 20);
+          }
+          window.dispatchEvent(new Event('resize'));
         } else {
           contentDiv.style.display = 'none';
-          if (hasSub) {
-            triggerLine.style.display = 'block';
-          }
+          triggerLine.style.display = 'block';
           if (triggerLetra && !triggerLetra.querySelector('.collapsible-dots-indicator')) {
             if (!dotsSpan) {
               dotsSpan = document.createElement('span');
@@ -2242,7 +2253,7 @@ function renderSection(container, lines, side) {
       
       triggerLine.addEventListener('click', toggleCollapse);
       contentDiv.addEventListener('click', (e) => {
-        if (!isChordEditMode && hasSub) {
+        if (!isChordEditMode && hasSub && !keepTrigger) {
           toggleCollapse();
         }
       });
@@ -2473,7 +2484,10 @@ function renderLine(lineItem, side, lineIdx, subLineIdx, customSC) {
   if (matches.length === 0) {
     const letraSpan = document.createElement('span');
     letraSpan.className = 'letra';
-    if (sectionClass && sectionClass.includes('salmo-')) {
+    if (!cleanLetra || cleanLetra.trim() === '') {
+      letraSpan.innerHTML = '&nbsp;';
+      lineDiv.classList.add('linea-separador-estrofa');
+    } else if (sectionClass && sectionClass.includes('salmo-')) {
       letraSpan.innerHTML = formatSalmoLineHtml(cleanLetra, sectionClass);
     } else {
       letraSpan.textContent = cleanLetra;
@@ -5613,7 +5627,8 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
                                      : (song && song.expansion === true);
     const hasSub = isConfiguredForExpansion && lineItem.lines && lineItem.lines.length > 0;
     const isExpanded = allAsambleaExpanded || lineItem.initialState === 'expanded';
-    const triggerDisplayStyle = (hasSub && isExpanded) ? 'display: none;' : '';
+    const keepTrigger = Boolean(lineItem.keepTriggerVisible === true || (lineItem.id && /^t\d+/i.test(lineItem.id)) || (lineItem.sC && /\bt\d+\b/.test(lineItem.sC)));
+    const triggerDisplayStyle = (hasSub && isExpanded && !keepTrigger) ? 'display: none;' : '';
     const contentDisplayStyle = isExpanded ? 'block' : 'none';
 
     const triggerHtml = generarHtmlLineaItem(song, lineItem.triggerLine, side, lineIdx, -1, keyOffset, 'collapsible-trigger ' + (lineItem.sC || ''), triggerDisplayStyle);
@@ -5621,24 +5636,26 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
 
     const subLinesHtml = lineItem.lines.map((l, subIdx) => {
       let extraClass = '';
-      if (hasSub && subIdx === 0 && triggerHasTa && !(typeof l === 'object' && l.sC?.includes('ta'))) {
+      if (hasSub && !keepTrigger && subIdx === 0 && triggerHasTa && !(typeof l === 'object' && l.sC?.includes('ta'))) {
         extraClass = 'ta';
       }
       return generarHtmlLineaItem(song, l, side, lineIdx, subIdx, keyOffset, extraClass);
     }).join('');
     
+    const showBisSide = !keepTrigger && typeof isBisEnabled === 'function' && isBisEnabled(song?.id);
     return `
-      <div class="collapsible-block-container ${hasSub ? 'has-sub' : ''}">
+      <div class="collapsible-block-container ${hasSub ? 'has-sub' : ''} ${keepTrigger ? 'keep-trigger-visible' : ''}">
         <div class="collapsible-lines-wrapper">
           ${triggerHtml}
           <div class="collapsible-content" style="display: ${contentDisplayStyle};">
             ${subLinesHtml}
           </div>
         </div>
+        ${showBisSide ? `
         <div class="collapsible-bis-side">
           <div class="bis-line"></div>
           <div class="bis-text">BIS A.</div>
-        </div>
+        </div>` : ''}
       </div>
     `;
   } else if (lineItem.type === "variant-group") {
@@ -5730,10 +5747,12 @@ function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffs
   
   if (matches.length === 0) {
     const textColorAttr = textColor ? `style="color: ${textColor};"` : '';
+    const isBlank = !cleanLetra || cleanLetra.trim() === '';
     const innerContent = (sectionClass && sectionClass.includes('salmo-'))
       ? formatSalmoLineHtml(cleanLetra, sectionClass)
-      : escapeHtml(cleanLetra);
-    return `<div class="linea-canto ${sectionClass}" ${styleAttr}><span class="letra" ${textColorAttr}>${innerContent}</span></div>`;
+      : (isBlank ? '&nbsp;' : escapeHtml(cleanLetra));
+    const sepClass = isBlank ? ' linea-separador-estrofa' : '';
+    return `<div class="linea-canto ${sectionClass}${sepClass}" ${styleAttr}><span class="letra" ${textColorAttr}>${innerContent}</span></div>`;
   }
   
   let spansHtml = '';
@@ -6812,9 +6831,12 @@ function setupEventListeners() {
         if (content) {
           content.style.display = allAsambleaExpanded ? 'block' : 'none';
         }
+        const isKeepTrigger = container.classList.contains('keep-trigger-visible');
         if (trigger) {
-          if (hasSub) {
+          if (hasSub && !isKeepTrigger) {
             trigger.style.display = allAsambleaExpanded ? 'none' : 'block';
+          } else {
+            trigger.style.display = 'block';
           }
           const letraSpan = trigger.querySelector('.letra');
           if (letraSpan) {
