@@ -4344,6 +4344,9 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
   top: 0px;
   z-index: 1;
 }
+
+.songs-grid.style-simple .song-card-title {font-size: unset;}
+
     
 } /* Fin de 992ppx*/
 
