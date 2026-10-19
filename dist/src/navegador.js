@@ -836,7 +836,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           // 2. FASE FINAL: Cargar absolutamente todos los recursos y cantos faltantes con el motor de Ajustes
           try {
             window.mostrarProgreso({
-              titulo: 'Sincronizando Todo el Cancionero',
+              titulo: 'Sincronizando Cantos',
               mensaje: 'Analizando y descargando todos los recursos faltantes...',
               icono: 'sync',
               porcentaje: 35

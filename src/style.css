@@ -79,7 +79,7 @@
 
 @media (min-width: 384px) {.songs-grid.style-simple .song-card-title {font-size: 1.1rem;}}
 @media (min-width: 411px) {.songs-grid.style-simple .song-card-title {font-size: 1.1rem;}}
-@media (min-width: 768px) {.songs-grid.style-simple .song-card-title {font-size: smaller;}}
+@media (min-width: 768px) {.songs-grid.style-simple .song-card-title {font-size: 2.5vw;}}
 @media (min-width: 992px) {.songs-grid.style-simple .song-card-title {font-size: smaller;}}
 
 
