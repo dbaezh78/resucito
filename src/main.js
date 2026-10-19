@@ -6858,6 +6858,14 @@ function setupEventListeners() {
   if (audioPlayBtn) {
     audioPlayBtn.addEventListener('click', () => {
       if (viewerAudioPlayer && viewerAudioPlayer.paused) {
+        const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(viewerAudioPlayer) : { isPlaying: false };
+        if (other.isPlaying) {
+          window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+            viewerAudioPlayer.play().catch(() => {});
+          });
+          return;
+        }
+
         const playPromise = viewerAudioPlayer.play();
         if (playPromise !== undefined) {
           playPromise.catch(err => {
@@ -6872,6 +6880,17 @@ function setupEventListeners() {
   
   if (viewerAudioPlayer) {
     viewerAudioPlayer.addEventListener('play', () => {
+      const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(viewerAudioPlayer) : { isPlaying: false };
+      if (other.isPlaying) {
+        viewerAudioPlayer.pause();
+        window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+          viewerAudioPlayer.play().catch(() => {});
+        });
+        return;
+      }
+
+      window.ResucitoAudioSync?.registerPlaying(viewerAudioPlayer, currentCanto?.title || currentCanto?.tt || '');
+
       // Aplicar preferencias de bucle y ecualizador al reproducir
       viewerAudioPlayer.loop = localStorage.getItem('audioLoopEnabled') === 'true';
       if (typeof window.initAudioEqualizer === 'function') {
@@ -6890,6 +6909,7 @@ function setupEventListeners() {
     });
     
     viewerAudioPlayer.addEventListener('pause', () => {
+      window.ResucitoAudioSync?.registerPaused(viewerAudioPlayer);
       if (viewerAudioContainer) viewerAudioContainer.classList.remove('open');
       if (audioPlayBtn) {
         audioPlayBtn.classList.remove('active');
@@ -6899,6 +6919,7 @@ function setupEventListeners() {
     });
     
     viewerAudioPlayer.addEventListener('ended', () => {
+      window.ResucitoAudioSync?.registerPaused(viewerAudioPlayer);
       if (viewerAudioContainer) viewerAudioContainer.classList.remove('open');
       if (audioPlayBtn) {
         audioPlayBtn.classList.remove('active');

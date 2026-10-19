@@ -33,125 +33,176 @@
   "sig": "/src/index.html?canto=gloriajesed",
   "sourceBook": "joven",
   "lizq": [
-    {
-      "line": "DEN AL SEÑOR SUS ALABANZAS, DENLE PODER, HONOR Y GLORIA (Sol,,0)(Mi,m,190)",
-      "sC": "ta as"
-    },
-    {
-      "line": "A UNA VOZ, CANTEN UN HIMNO AL SEÑOR. (Do,,0)(La,m,50)(Re,,170)",
-      "sC": "as"
-    },
+    {"line": "DEN AL SEÑOR SUS ALABANZAS,(Sol,,0)","sC": "ta as"},
+    {"line": "DENLE PODER, HONOR Y GLORIA (Mi,m,0)","sC": "as"},
+    {"line": "A UNA VOZ, CANTEN UN HIMNO AL SEÑOR. (Do,,0)(La,m,115)(Re,,275)","sC": "as"},
+
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "En siete días Dios creó al mundo. (Sol,,0)(Mi,m,160)",
+      "line": "En siete días Dios creó al mundo. (Sol,,30)(Mi,m,220)",
       "sC": ""
     },
     {
-      "line": "Adán pecó y perdió el cielo. (Sol,,0)(Mi,m,150)",
+      "line": "Adán pecó y perdió el cielo. (Sol,,10)(Mi,m,145)",
       "sC": ""
     },
     {
-      "line": "Jesús vino para redimirnos, (Sol,,0)(Mi,m,150)",
+      "line": "Jesús vino para redimirnos, (Sol,,20)(Mi,m,165)",
       "sC": ""
     },
     {
-      "line": "Murió en la cruz y nos salvó. (Do,,0)(Re,,140)",
+      "line": "Murió en la cruz y nos salvó. (Do,,20)(Re,,190)",
       "sC": ""
     },
     {
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "DEN AL SEÑOR SUS ALABANZAS...",
-      "sC": "as"
+
+   {
+      "type": "collapsible-block",
+      "id": "asamblea_dimenino_1",
+      "initialState": "collapsed",
+      "triggerLine": "DEN AL SEÑOR SUS ALABANZAS,(Sol,,0)",
+      "sC": "ta as",
+      "lines": [
+        {"line": "DENLE PODER, HONOR Y GLORIA (Mi,m,0)",
+        "sC": "as"
+        },
+
+        {"line": "A UNA VOZ, CANTEN UN HIMNO AL SEÑOR. (Do,,0)(La,m,115)(Re,,275)",
+        "sC": "as"
+        }
+      ]
     },
+
+
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Dios dijo a Moisés: haz mi pueblo libre. (La,,0)(Fa#,m,190)",
+      "line": "Dios dijo a Moisés: haz mi pueblo libre. (La,,0)(Fa#,m,340)",
       "sC": ""
     },
     {
-      "line": "Yo seré tu guía, siempre sígueme. (La,,0)(Fa#,m,160)",
+      "line": "Yo seré tu guía, siempre sígueme. (La,,35)(Fa#,m,270)",
       "sC": ""
     },
     {
-      "line": "Salidos ya de Egipto y el mar pasado (La,,0)(Fa#,m,190)",
+      "line": "Salidos ya de Egipto y el mar pasado (La,,30)(Fa#,m,320)",
       "sC": ""
     },
     {
-      "line": "Cantaron y bailaron, se llenaron de júbilo. (Re,,0)(Mi,,90)(La,,180)",
-      "sC": ""
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "DEN AL SEÑOR SUS ALABANZAS...",
-      "sC": "as"
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Jesús dijo a Pedro: ven te llamo, (La,,0)(Fa#,m,170)",
-      "sC": ""
-    },
-    {
-      "line": "El camino es duro más iré contigo. (Re,,0)(Si,m,170)",
-      "sC": ""
-    },
-    {
-      "line": "Pedro respondió soy un pecador, (La,,0)(Fa#,m,170)",
-      "sC": ""
-    },
-    {
-      "line": "Tiró sus redes y hacia el señor corrió. (Re,,0)(Mi,,90)(La,,170)",
+      "line": "Cantaron y bailaron, se llenaron de júbilo. (Re,,30)(Mi,,135)(La,,295)",
       "sC": ""
     },
     {
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "DEN AL SEÑOR SUS ALABANZAS...",
-      "sC": "as"
+
+   {
+      "type": "collapsible-block",
+      "id": "asamblea_dimenino_1",
+      "initialState": "collapsed",
+      "triggerLine": "DEN AL SEÑOR SUS ALABANZAS,(Sol,,0)",
+      "sC": "ta as",
+      "lines": [
+        {"line": "DENLE PODER, HONOR Y GLORIA (Mi,m,0)",
+        "sC": "as"
+        },
+
+        {"line": "A UNA VOZ, CANTEN UN HIMNO AL SEÑOR. (Do,,0)(La,m,115)(Re,,275)",
+        "sC": "as"
+        }
+      ]
     },
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Entrégate hermano al señor Jesús. (La,,0)(Fa#,m,190)",
+      "line": "Jesús dijo a Pedro: ven te llamo, (La,,0)(Fa#,m,300)",
       "sC": ""
     },
     {
-      "line": "Él te ama, aunque seas pecador, (Re,,0)(Si,m,170)",
+      "line": "El camino es duro más iré contigo. (Re,,50)(Si,m,290)",
       "sC": ""
     },
     {
-      "line": "El pagó el precio de tu salvación (La,,0)(Fa#,m,170)",
+      "line": "Pedro respondió soy un pecador, (La,,0)(Fa#,m,250)",
       "sC": ""
     },
     {
-      "line": "Y ahora eres una nueva creación. (Re,,0)(Mi,,90)(La,,170)",
+      "line": "Tiró sus redes y hacia el señor corrió. (Re,,25)(Mi,,280)(La,,340)",
       "sC": ""
     },
     {
       "line": "",
       "sC": "adb1"
     },
+
     {
-      "line": "DEN AL SEÑOR SUS ALABANZAS...",
-      "sC": "as"
+      "type": "collapsible-block",
+      "id": "asamblea_dimenino_1",
+      "initialState": "collapsed",
+      "triggerLine": "DEN AL SEÑOR SUS ALABANZAS,(Sol,,0)",
+      "sC": "ta as",
+      "lines": [
+        {"line": "DENLE PODER, HONOR Y GLORIA (Mi,m,0)",
+        "sC": "as"
+        },
+
+        {"line": "A UNA VOZ, CANTEN UN HIMNO AL SEÑOR. (Do,,0)(La,m,115)(Re,,275)",
+        "sC": "as"
+        }
+      ]
+    },
+
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Entrégate hermano al señor Jesús. (La,,0)(Fa#,m,290)",
+      "sC": ""
+    },
+    {
+      "line": "Él te ama, aunque seas pecador, (Re,,60)(Si,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "El pagó el precio de tu salvación (La,,0)(Fa#,m,265)",
+      "sC": ""
+    },
+    {
+      "line": "Y ahora eres una nueva creación. (Re,,30)(Mi,,170)(La,,270)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_dimenino_1",
+      "initialState": "collapsed",
+      "triggerLine": "DEN AL SEÑOR SUS ALABANZAS,(Sol,,0)",
+      "sC": "ta as",
+      "lines": [
+        {"line": "DENLE PODER, HONOR Y GLORIA (Mi,m,0)",
+        "sC": "as"
+        },
+
+        {"line": "A UNA VOZ, CANTEN UN HIMNO AL SEÑOR. (Do,,0)(La,m,115)(Re,,275)",
+        "sC": "as"
+        }
+      ]
     }
   ]
 }

@@ -1900,6 +1900,251 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
 
   window.applyNavTheme = applyNavTheme;
 
+  // 10.5 COORDINADOR DE AUDIO ENTRE VENTANAS Y REPRODUCTORES (AudioSync)
+  if (!window.ResucitoAudioSync) {
+    let currentTabId = null;
+    try {
+      currentTabId = sessionStorage.getItem('resucito_audio_tab_id');
+      if (!currentTabId) {
+        currentTabId = 'tab_' + Math.random().toString(36).substring(2, 9) + '_' + Date.now();
+        sessionStorage.setItem('resucito_audio_tab_id', currentTabId);
+      }
+    } catch (e) {
+      currentTabId = 'tab_' + Math.random().toString(36).substring(2, 9) + '_' + Date.now();
+    }
+
+    const STORAGE_KEY_PLAYING = 'resucito_active_audio_playing';
+    const channel = typeof BroadcastChannel !== 'undefined' ? new BroadcastChannel('resucito_audio_sync_channel') : null;
+    let heartbeatInterval = null;
+    let activeAudioElement = null;
+
+    if (channel) {
+      channel.onmessage = (event) => {
+        const msg = event?.data;
+        if (!msg) return;
+        if (msg.type === 'STOP_OTHER_PLAYERS' && msg.exceptTabId !== currentTabId) {
+          document.querySelectorAll('audio').forEach((a) => {
+            if (!a.paused) {
+              a.pause();
+            }
+          });
+        }
+      };
+    }
+
+    const isOtherAudioPlaying = (currentAudioEl = null) => {
+      // 1. Verificar otros elementos <audio> en el mismo DOM
+      const audios = document.querySelectorAll('audio');
+      for (const a of audios) {
+        if (a !== currentAudioEl && !a.paused && !a.ended && a.currentTime > 0) {
+          return {
+            isPlaying: true,
+            isLocal: true,
+            songTitle: a.dataset?.songTitle || ''
+          };
+        }
+      }
+
+      // 2. Verificar en localStorage si otra pestaña/ventana está reproduciendo activamente
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY_PLAYING);
+        if (raw) {
+          const data = JSON.parse(raw);
+          const now = Date.now();
+          if (data && data.isPlaying && data.tabId !== currentTabId && (now - (data.timestamp || 0)) < 3500) {
+            return {
+              isPlaying: true,
+              isLocal: false,
+              tabId: data.tabId,
+              songTitle: data.songTitle || ''
+            };
+          }
+        }
+      } catch (e) {}
+
+      return { isPlaying: false };
+    };
+
+    const registerPlaying = (audioEl, songTitle = '') => {
+      activeAudioElement = audioEl;
+      if (audioEl) {
+        audioEl.dataset.songTitle = songTitle || '';
+      }
+
+      const updatePayload = () => {
+        try {
+          localStorage.setItem(STORAGE_KEY_PLAYING, JSON.stringify({
+            tabId: currentTabId,
+            songTitle: songTitle || '',
+            isPlaying: true,
+            timestamp: Date.now()
+          }));
+        } catch (e) {}
+      };
+
+      updatePayload();
+      clearInterval(heartbeatInterval);
+      heartbeatInterval = setInterval(() => {
+        if (audioEl && !audioEl.paused && !audioEl.ended) {
+          updatePayload();
+        } else {
+          clearInterval(heartbeatInterval);
+        }
+      }, 1200);
+    };
+
+    const registerPaused = (audioEl) => {
+      clearInterval(heartbeatInterval);
+      if (activeAudioElement === audioEl) {
+        activeAudioElement = null;
+      }
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY_PLAYING);
+        if (raw) {
+          const data = JSON.parse(raw);
+          if (data && data.tabId === currentTabId) {
+            localStorage.setItem(STORAGE_KEY_PLAYING, JSON.stringify({
+              tabId: currentTabId,
+              songTitle: '',
+              isPlaying: false,
+              timestamp: Date.now()
+            }));
+          }
+        }
+      } catch (e) {}
+    };
+
+    const requestStopOtherTabs = () => {
+      if (channel) {
+        try {
+          channel.postMessage({ type: 'STOP_OTHER_PLAYERS', exceptTabId: currentTabId });
+        } catch (e) {}
+      }
+      try {
+        localStorage.setItem(STORAGE_KEY_PLAYING, JSON.stringify({
+          tabId: currentTabId,
+          songTitle: '',
+          isPlaying: false,
+          timestamp: Date.now()
+        }));
+      } catch (e) {}
+    };
+
+    const showAudioConflictToast = (songTitle = '', onForcePlay = null) => {
+      let existing = document.getElementById('resucito-audio-conflict-toast');
+      if (existing) existing.remove();
+
+      const toast = document.createElement('div');
+      toast.id = 'resucito-audio-conflict-toast';
+      toast.style.cssText = `
+        position: fixed;
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #1e293b;
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 999px;
+        padding: 9px 18px;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        z-index: 100000;
+        font-family: inherit;
+        font-size: 0.86rem;
+        max-width: 92vw;
+        box-sizing: border-box;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      `;
+
+      const titleText = songTitle ? ` ("${songTitle}")` : '';
+      toast.innerHTML = `
+        <span class="material-symbols-outlined" style="font-size: 20px; color: #f59e0b; flex-shrink: 0;">volume_up</span>
+        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 300px;">
+          Ya hay un canto sonando en otra ventana${titleText}
+        </span>
+        ${onForcePlay ? `
+          <button id="btn-force-play-here" style="
+            background: var(--accent-color, #d01212);
+            color: white;
+            border: none;
+            border-radius: 999px;
+            padding: 5px 12px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: opacity 0.2s;
+          ">Reproducir aquí</button>
+        ` : ''}
+        <button id="btn-close-audio-toast" style="
+          background: transparent;
+          border: none;
+          color: #94a3b8;
+          font-size: 18px;
+          cursor: pointer;
+          padding: 0 4px;
+          line-height: 1;
+          display: flex;
+          align-items: center;
+        ">&times;</button>
+      `;
+
+      document.body.appendChild(toast);
+
+      const forceBtn = toast.querySelector('#btn-force-play-here');
+      if (forceBtn && onForcePlay) {
+        forceBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toast.remove();
+          requestStopOtherTabs();
+          setTimeout(() => {
+            onForcePlay();
+          }, 80);
+        });
+      }
+
+      const closeBtn = toast.querySelector('#btn-close-audio-toast');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toast.remove();
+        });
+      }
+
+      setTimeout(() => {
+        if (toast.parentNode) {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateX(-50%) translateY(-10px)';
+          setTimeout(() => toast.remove(), 320);
+        }
+      }, 4200);
+    };
+
+    window.addEventListener('beforeunload', () => {
+      clearInterval(heartbeatInterval);
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY_PLAYING);
+        if (raw) {
+          const data = JSON.parse(raw);
+          if (data && data.tabId === currentTabId) {
+            localStorage.removeItem(STORAGE_KEY_PLAYING);
+          }
+        }
+      } catch (e) {}
+    });
+
+    window.ResucitoAudioSync = {
+      getTabId: () => currentTabId,
+      isOtherAudioPlaying,
+      registerPlaying,
+      registerPaused,
+      requestStopOtherTabs,
+      showAudioConflictToast
+    };
+  }
+
   // 11. REPRODUCTOR FLOTANTE GLOBAL (Persistente arriba en toda la app)
   function initGlobalFloatingPlayer() {
     // Si estamos en la página del reproductor (play.html), play.js maneja su propio reproductor maestro
@@ -1942,7 +2187,8 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       return `${m}:${s < 10 ? '0' : ''}${s}`;
     };
 
-    const isInitialPlaying = !!state.isPlaying;
+    const otherInitial = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying() : { isPlaying: false };
+    const isInitialPlaying = !!state.isPlaying && !otherInitial.isPlaying;
 
     const html = `
       <div id="global-floating-player" class="global-floating-player">
@@ -2200,6 +2446,20 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       audioEl.currentTime = 0;
 
       if (autoPlay) {
+        const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+        if (other.isPlaying) {
+          updateUI(false);
+          collapseToTab();
+          saveState();
+          window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+            audioEl.play().then(() => {
+              expandFromTab();
+              renderQueueList();
+            }).catch(() => {});
+          });
+          return;
+        }
+
         audioEl.play().then(() => {
           expandFromTab();
           renderQueueList();
@@ -2274,6 +2534,18 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
     });
 
     audioEl.addEventListener('play', () => {
+      const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+      if (other.isPlaying) {
+        audioEl.pause();
+        updateUI(false);
+        collapseToTab();
+        window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+          audioEl.play().catch(() => {});
+        });
+        return;
+      }
+
+      window.ResucitoAudioSync?.registerPlaying(audioEl, state.songTitle);
       updateUI(true);
       expandFromTab();
       saveState();
@@ -2286,6 +2558,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
     });
 
     audioEl.addEventListener('pause', () => {
+      window.ResucitoAudioSync?.registerPaused(audioEl);
       updateUI(false);
       collapseToTab();
       saveState();
@@ -2293,6 +2566,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
     });
 
     audioEl.addEventListener('ended', () => {
+      window.ResucitoAudioSync?.registerPaused(audioEl);
       if (state.repeatMode === 'one') {
         audioEl.currentTime = 0;
         audioEl.play().catch(() => {});
@@ -2331,6 +2605,18 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
     btnPlay?.addEventListener('click', (e) => {
       e.stopPropagation();
       if (audioEl.paused) {
+        const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+        if (other.isPlaying) {
+          window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+            audioEl.play().then(() => {
+              updateUI(true);
+              expandFromTab();
+              saveState();
+            }).catch(() => {});
+          });
+          return;
+        }
+
         audioEl.play().then(() => {
           updateUI(true);
           expandFromTab();
@@ -2486,6 +2772,18 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
     tabBtnPlay?.addEventListener('click', (e) => {
       e.stopPropagation();
       if (audioEl.paused) {
+        const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+        if (other.isPlaying) {
+          window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+            audioEl.play().then(() => {
+              updateUI(true);
+              expandFromTab();
+              saveState();
+            }).catch(() => {});
+          });
+          return;
+        }
+
         audioEl.play().then(() => {
           updateUI(true);
           expandFromTab();

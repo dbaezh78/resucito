@@ -75,6 +75,14 @@
   --color-pre-active: #edf3f7;
 
 }
+/*Titulo del indice*/
+
+@media (min-width: 992px) {
+  .songs-grid.style-simple .song-card-title {font-size: 1.1rem;}
+
+}
+.songs-grid.style-simple .song-card-title {font-size: smaller !important;}
+
 
 /* --- Variantes de Temas --- */
 .theme-light {
@@ -1109,7 +1117,7 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
 
 .linea-canto {
   position: relative;
-  width: 100%;
+  width: max-content;
   box-sizing: border-box;
   font-family: var(--font-family-lyrics);
   font-weight: 400;
@@ -3050,7 +3058,6 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
 }
 .songs-grid.style-simple .song-card-title {
   margin-bottom: 0;
-  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -3943,7 +3950,6 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
 .dashboard-top-flex {padding-bottom: 5px;}
 
 .songs-grid.style-simple .song-card {padding: 14px 10px;}
-.songs-grid.style-simple .song-card-title {font-size: medium;}
 
 
 .stp {
@@ -4247,8 +4253,6 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
       background: white;
 }
 
-
-
 }
 
 @media (min-width: 992px) {
@@ -4344,6 +4348,7 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
   top: 0px;
   z-index: 1;
 }
+
     
 } /* Fin de 992ppx*/
 

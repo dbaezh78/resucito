@@ -21242,12 +21242,12 @@
         {
           "name": "Si",
           "type": "7",
-          "pos": 9
+          "pos": 19
         },
         {
           "name": "Mi",
           "type": "m",
-          "pos": 32
+          "pos": 30
         }
       ],
       [
@@ -21297,11 +21297,6 @@
         }
       ],
       [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 7
-        },
         {
           "name": "Si",
           "type": "7",
@@ -21363,12 +21358,12 @@
       [
         {
           "name": "Mi",
-          "type": "",
+          "type": "7",
           "pos": 0
         },
         {
-          "name": "Si",
-          "type": "7",
+          "name": "La",
+          "type": "m",
           "pos": 17
         }
       ],
@@ -21397,7 +21392,7 @@
         {
           "name": "Mi",
           "type": "7",
-          "pos": 1
+          "pos": 0
         },
         {
           "name": "La",
@@ -21407,30 +21402,40 @@
       ],
       [
         {
-          "name": "Mi",
-          "type": "m",
+          "name": "Re",
+          "type": "",
+          "pos": 20
+        },
+        {
+          "name": "Sol",
+          "type": "",
           "pos": 34
         }
       ],
       [
         {
-          "name": "Si",
-          "type": "7",
-          "pos": 32
-        }
-      ],
-      [
+          "name": "La",
+          "type": "m",
+          "pos": 6
+        },
         {
           "name": "Mi",
           "type": "m",
-          "pos": 32
+          "pos": 29
         }
       ],
       [
         {
           "name": "Si",
           "type": "7",
-          "pos": 5
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
         }
       ],
       [],
@@ -21443,7 +21448,76 @@
         {
           "name": "Si",
           "type": "7",
-          "pos": 15
+          "pos": 17
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 35
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 32
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 31
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 32
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 32
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 13
         }
       ]
     ],
@@ -21457,7 +21531,36 @@
         {
           "name": "Si",
           "type": "7",
-          "pos": 10
+          "pos": 17
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 31
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 33
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 32
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
         }
       ],
       [],
@@ -21473,7 +21576,7 @@
         {
           "name": "Si",
           "type": "7",
-          "pos": 10
+          "pos": 0
         }
       ],
       [],
@@ -21481,54 +21584,107 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 27
+          "pos": 23
         }
       ],
       [],
+      {
+        "type": "collapsible-block",
+        "id": "t1",
+        "triggerLine": [
+          {
+            "name": "Mi",
+            "type": "7",
+            "pos": 0
+          },
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 17
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 15
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 35
+            }
+          ],
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 17
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 32
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 17
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 29
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 17
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 25
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 17
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 35
+            }
+          ]
+        ]
+      },
+      [],
       [
         {
-          "name": "Mi",
+          "name": "Si",
           "type": "7",
           "pos": 0
         },
         {
-          "name": "La",
-          "type": "m",
-          "pos": 17
-        }
-      ],
-      [
-        {
           "name": "Mi",
           "type": "m",
-          "pos": 33
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 36
-        }
-      ],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 32
-        }
-      ],
-      [],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 4
-        },
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 9
+          "pos": 8
         }
       ]
     ]

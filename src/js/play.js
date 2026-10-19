@@ -775,6 +775,18 @@ function playSongAtIndex(index, customQueue = null, playlistLabel = null) {
   audioEl.src = safeSrc;
   audioEl.playbackRate = parseFloat(playerSpeedSelect?.value || '1') || 1;
 
+  const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+  if (other.isPlaying) {
+    isPlaying = false;
+    updatePlayerUI();
+    renderActiveQueueSection();
+    renderCatalogSection();
+    window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+      playSongAtIndex(index, list, listName);
+    });
+    return;
+  }
+
   const playPromise = audioEl.play();
   if (playPromise !== undefined) {
     playPromise
@@ -811,6 +823,14 @@ function togglePlayPause() {
 
   hasUserStartedPlayback = true;
   if (audioEl.paused) {
+    const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+    if (other.isPlaying) {
+      window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+        togglePlayPause();
+      });
+      return;
+    }
+
     audioEl.play().then(() => {
       isPlaying = true;
       hasUserStartedPlayback = true;
@@ -1467,10 +1487,23 @@ function setupEventListeners() {
     });
 
     audioEl.addEventListener('ended', () => {
+      window.ResucitoAudioSync?.registerPaused(audioEl);
       playNextTrack(true);
     });
 
     audioEl.addEventListener('play', () => {
+      const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+      if (other.isPlaying) {
+        audioEl.pause();
+        isPlaying = false;
+        updatePlayerUI();
+        window.ResucitoAudioSync?.showAudioConflictToast(other.songTitle, () => {
+          audioEl.play().catch(() => {});
+        });
+        return;
+      }
+
+      window.ResucitoAudioSync?.registerPlaying(audioEl, currentSong?.title);
       isPlaying = true;
       hasUserStartedPlayback = true;
       updatePlayerUI();
@@ -1479,6 +1512,7 @@ function setupEventListeners() {
     });
 
     audioEl.addEventListener('pause', () => {
+      window.ResucitoAudioSync?.registerPaused(audioEl);
       isPlaying = false;
       updatePlayerUI();
       savePlayerState();
@@ -1637,14 +1671,20 @@ function restorePlayerState() {
         audioEl.currentTime = state.currentTime;
       }
       if (state.isPlaying) {
-        hasUserStartedPlayback = true;
-        audioEl.play().then(() => {
-          isPlaying = true;
-          updatePlayerUI();
-        }).catch(() => {
+        const other = window.ResucitoAudioSync ? window.ResucitoAudioSync.isOtherAudioPlaying(audioEl) : { isPlaying: false };
+        if (other.isPlaying) {
           isPlaying = false;
           updatePlayerUI();
-        });
+        } else {
+          hasUserStartedPlayback = true;
+          audioEl.play().then(() => {
+            isPlaying = true;
+            updatePlayerUI();
+          }).catch(() => {
+            isPlaying = false;
+            updatePlayerUI();
+          });
+        }
       }
     }
 
