@@ -3943,7 +3943,7 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
 .dashboard-top-flex {padding-bottom: 5px;}
 
 .songs-grid.style-simple .song-card {padding: 14px 10px;}
-.songs-grid.style-simple .song-card-title {font-size: medium;}
+.songs-grid.style-simple .song-card-title {font-size: 4vw;}
 
 
 .stp {
@@ -4247,7 +4247,7 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
       background: white;
 }
 
-
+.songs-grid.style-simple .song-card-title {font-size: 3vw;
 
 }
 
