@@ -4,7 +4,7 @@ import { auth, db } from '../firebase.js';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-export const BUILTIN_TIPOS = ["Eucaristía", "Celebración", "Convivencia", "Pasos", "Otros"];
+export const BUILTIN_TIPOS = ["Celebración", "Eucaristía", "Convivencia", "Pasos", "Otros"];
 const STORAGE_KEY = 'cache_tipos_celebracion';
 
 /**
@@ -22,6 +22,9 @@ export function obtenerTiposCelebracion() {
             combinados.push(t);
           }
         });
+        if (parsed[0] !== combinados[0]) {
+          try { localStorage.setItem(STORAGE_KEY, JSON.stringify(combinados)); } catch (err) {}
+        }
         return combinados;
       }
     }

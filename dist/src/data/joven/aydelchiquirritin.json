@@ -39,33 +39,29 @@
       "sC": "adb1"
     },
     {
-      "line": "¡AY, DEL CHIQUIRRITÍN! (Mi,,0)(Si,7,150)",
+      "line": "¡AY, DEL CHIQUIRRITÍN! (La,,0)",
       "sC": "ta as"
     },
     {
-      "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
+      "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,7,330)",
       "sC": "as"
     },
     {
-      "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
+      "line": "¡AY, DEL CHIQUIRRITÍN, CHIQUIRRIQUITÍN!",
       "sC": "as"
     },
     {
-      "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
+      "line": "QUERIDÍN, QUERIDITO DEL ALMA. (La,,250)",
       "sC": "as"
     },
     {
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "Por debajo del arco del portalico (Mi,,0)(Si,7,210)",
-      "sC": "tc"
-    },
-    {
-      "line": "se descubre a María, José y al Niño. (Mi,,210)",
-      "sC": ""
-    },
+
+    {"line": "Por debajo del arco del portalito (La,,0)(Mi,7,75)(La,,160)(Mi,7,310)","sC": "tc"},
+    {"line": "se descubre a María, José y el Niño. (La,,320)","sC": ""},
+
     {
       "line": "",
       "sC": "adb1"
@@ -74,58 +70,88 @@
       "type": "collapsible-block",
       "id": "asamblea_chiquirritin_1",
       "initialState": "collapsed",
-      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! ... (Mi,,0)(Si,7,150)",
+      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! (La,,0)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
+          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,7,330)",
           "sC": "as"
         },
         {
-          "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
+          "line": "¡AY, DEL CHIQUIRRITÍN, CHIQUIRRIQUITÍN!",
           "sC": "as"
         },
         {
-          "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
+          "line": "QUERIDÍN, QUERIDITO DEL ALMA. (La,,250)",
           "sC": "as"
         }
       ]
-    }
-  ],
-  "lder": [
+    },
     {
       "line": "",
       "sC": "adb1"
     },
+
     {
-      "line": "No me mires tan fiero que soy chiquito, (Mi,,0)(Si,7,220)",
+      "line": "Entre un buey y una mula Dios ha nacido, (La,,0)(Mi,7,100)(La,,205)(Mi,7,350)",
       "sC": "tc"
     },
     {
-      "line": "y me asustan los ojos que me has echado. (Mi,,220)",
+      "line": "y en un pobre pesebre le han recogido. (La,,315)",
       "sC": ""
+    }
+          ],"lder": [
+    
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_chiquirritin_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! (La,,0)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,7,330)",
+          "sC": "as"
+        },
+        {
+          "line": "¡AY, DEL CHIQUIRRITÍN, CHIQUIRRIQUITÍN!",
+          "sC": "as"
+        },
+        {
+          "line": "QUERIDÍN, QUERIDITO DEL ALMA. (La,,250)",
+          "sC": "as"
+        }
+      ]
     },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+
+    {"line": "No me mires airado hijito mio, (La,,0)(Mi,7,70)(La,,145)(Mi,7,255)","sC": "tc"},
+    {"line": "mirame con los ojos que yo te miro. (La,,305)","sC": ""},
+
     {
       "line": "",
       "sC": "adb1"
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_chiquirritin_2",
+      "id": "asamblea_chiquirritin_1",
       "initialState": "collapsed",
-      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! ... (Mi,,0)(Si,7,150)",
+      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! (La,,0)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
+          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,7,330)",
           "sC": "as"
         },
         {
-          "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
+          "line": "¡AY, DEL CHIQUIRRITÍN, CHIQUIRRIQUITÍN!",
           "sC": "as"
         },
         {
-          "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
+          "line": "QUERIDÍN, QUERIDITO DEL ALMA. (La,,250)",
           "sC": "as"
         }
       ]
@@ -134,33 +160,34 @@
       "line": "",
       "sC": "adb1"
     },
-    {
-      "line": "Entre un buey y una mula Dios ha nacido, (Mi,,0)(Si,7,220)",
-      "sC": "tc"
-    },
-    {
-      "line": "y en un pobre pesebre lo han recogido. (Mi,,210)",
-      "sC": ""
-    },
+
+    {"line": "Jesucito querido, dicen que comes, (La,,0)(Mi,7,115)(La,,190)(Mi,7,305)","sC": "tc"},
+    {"line": "corazones partidos de pecadores. (La,,260)","sC": ""},
+
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "¡AY, DEL CHIQUIRRITÍN! (Mi,,0)(Si,7,150)",
-      "sC": "ta as"
-    },
-    {
-      "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,,250)",
-      "sC": "as"
-    },
-    {
-      "line": "¡AY, DEL CHIQUIRRITÍN! (Si,7,140)",
-      "sC": "as"
-    },
-    {
-      "line": "CHIQUIRRIQUITÍN, QUERIDÍN, QUERIDITO DEL ALMA. (Mi,,300)",
-      "sC": "as"
+      "type": "collapsible-block",
+      "id": "asamblea_chiquirritin_1",
+      "initialState": "collapsed",
+      "triggerLine": "¡AY, DEL CHIQUIRRITÍN! (La,,0)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "CHIQUIRRIQUITÍN, METIDITO ENTRE PAJAS; (Mi,7,330)",
+          "sC": "as"
+        },
+        {
+          "line": "¡AY, DEL CHIQUIRRITÍN, CHIQUIRRIQUITÍN!",
+          "sC": "as"
+        },
+        {
+          "line": "QUERIDÍN, QUERIDITO DEL ALMA. (La,,250)",
+          "sC": "as"
+        }
+      ]
     }
   ]
 }

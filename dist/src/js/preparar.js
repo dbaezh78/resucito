@@ -1425,7 +1425,7 @@ window.guardarListaFirebase = async (btn) => {
     const nombreInput = document.getElementById('nombreLista');
     const tipoSelect = document.getElementById('tipoCelebracion');
     const nombre = nombreInput ? nombreInput.value.trim() : '';
-    const categoria = tipoSelect ? tipoSelect.value : 'Eucaristía';
+    const categoria = tipoSelect ? tipoSelect.value : 'Celebración';
     const user = auth.currentUser;
 
     if (!nombre) {
