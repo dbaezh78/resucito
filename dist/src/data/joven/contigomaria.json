@@ -1,0 +1,204 @@
+{
+  "id": "contigomaria",
+  "tt": "Contigo, María",
+  "title": "Contigo, María",
+  "subtitle": "Atheok",
+  "category": [
+    "Católicos",
+    "Virgen María"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "",
+  "acorde": "Re",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/contigomaria.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=conmiburritosabanero",
+  "sig": "/src/index.html?canto=corderodedios2",
+  "sourceBook": "joven",
+  "lizq": [
+    {
+      "line": "Intro: Re - Sol - Re - Sol (Re,,50)(Sol,,100)(Re,,150)(Sol,,200)",
+      "sC": "nb"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Quiero caminar contigo, María (Re,,0)(Sol,,240)",
+      "sC": "tc"
+    },
+    {
+      "line": "Pues tú eres mi Madre eres mi guía (Re,,0)(Sol,,250)",
+      "sC": ""
+    },
+    {
+      "line": "Tú eres para mí el más grande ejemplo (La,,0)(Sol,,250)",
+      "sC": ""
+    },
+    {
+      "line": "de santidad, de humildad. (Re,,100)(La,,180)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Quiero caminar contigo, María (Re,,0)(Sol,,240)",
+      "sC": ""
+    },
+    {
+      "line": "No sólo un momento, todos los días (Re,,0)(Sol,,250)",
+      "sC": ""
+    },
+    {
+      "line": "Necesito tu amor de Madre (La,,0)(Sol,,200)",
+      "sC": ""
+    },
+    {
+      "line": "Tu intercesión ante el Señor (Re,,120)(La,,200)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Guía mis pasos, Llévame al cielo (Re,,0)(Sol,,160)(Re,,240)(La,,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Bajo tu manto, No tengo miedo (Si,m,80)(Sol,,140)(La,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "Llena de gracia, Ave María (Re,,0)(Sol,,160)(Re,,210)(La,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "Hoy yo te ofrezco toda mi vida (Si,m,0)(La,,160)(Re,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Quiero caminar contigo, María (Re,,0)(Sol,,240)",
+      "sC": ""
+    },
+    {
+      "line": "Madre en el dolor y en la alegría (Re,,0)(Sol,,250)",
+      "sC": ""
+    },
+    {
+      "line": "Tú que fuiste fiel hasta el extremo (La,,0)(Sol,,250)",
+      "sC": ""
+    },
+    {
+      "line": "Fiel en la cruz, fiel a Jesús (Re,,120)(La,,200)",
+      "sC": ""
+    }
+  ],
+  "lder": [
+    {
+      "line": "Guía mis pasos, Llévame al cielo (Re,,0)(Sol,,160)(Re,,240)(La,,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Bajo tu manto, No tengo miedo (Si,m,80)(Sol,,140)(La,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "Llena de gracia, Ave María (Re,,0)(Sol,,160)(Re,,210)(La,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "Hoy yo te ofrezco toda mi vida (Si,m,0)(La,,160)(Re,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Celestial princesa (Mi,m,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "mírame con compasión (Si,m,40)(La,,190)",
+      "sC": ""
+    },
+    {
+      "line": "Hoy te doy mi alma vida y corazón (Sol,,0)(La,,220)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Guía mis pasos, Llévame al cielo (Re,,0)(Sol,,160)(Re,,240)(La,,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Bajo tu manto, No tengo miedo (Si,m,80)(Sol,,140)(La,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "Llena de gracia, Ave María (Re,,0)(Sol,,160)(Re,,210)(La,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "Hoy yo te ofrezco toda mi vida (Si,m,0)(La,,160)(Re,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Guía mis pasos, Llévame al cielo (Re,,0)(Sol,,160)(Re,,240)(La,,280)",
+      "sC": "ta as"
+    },
+    {
+      "line": "Bajo tu manto, No tengo miedo (Si,m,80)(Sol,,140)(La,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "Llena de gracia, Ave María (Re,,0)(Sol,,160)(Re,,210)(La,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "Hoy yo te ofrezco toda mi vida (Si,m,0)(La,,160)(Re,,220)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Outro: Re - Sol (Re,,50)(Sol,,120)",
+      "sC": "nb"
+    }
+  ]
+}
