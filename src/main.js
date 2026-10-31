@@ -2489,6 +2489,13 @@ function renderLine(lineItem, side, lineIdx, subLineIdx, customSC) {
       lineDiv.classList.add('linea-separador-estrofa');
     } else if (sectionClass && sectionClass.includes('salmo-')) {
       letraSpan.innerHTML = formatSalmoLineHtml(cleanLetra, sectionClass);
+    } else if (/\s+R\.?$/.test(cleanLetra)) {
+      const m = cleanLetra.match(/^(.*?)(?:\s+)(R\.?)$/);
+      if (m) {
+        letraSpan.innerHTML = escapeHtml(m[1].trimEnd()) + ` <span class="salmo-r">${escapeHtml(m[2])}</span>`;
+      } else {
+        letraSpan.textContent = cleanLetra;
+      }
     } else {
       letraSpan.textContent = cleanLetra;
     }
@@ -2606,8 +2613,20 @@ function renderLine(lineItem, side, lineIdx, subLineIdx, customSC) {
   
   // Agregar resto del texto
   if (lastIndex < cleanLetra.length) {
-    const remainingText = document.createTextNode(cleanLetra.substring(lastIndex));
-    letraSpan.appendChild(remainingText);
+    const remStr = cleanLetra.substring(lastIndex);
+    const mR = remStr.match(/^(.*?)(?:\s+)(R\.?)(\s*)$/);
+    if (mR) {
+      if (mR[1]) letraSpan.appendChild(document.createTextNode(mR[1] + ' '));
+      else letraSpan.appendChild(document.createTextNode(' '));
+      const rSpan = document.createElement('span');
+      rSpan.className = 'salmo-r';
+      rSpan.textContent = mR[2];
+      letraSpan.appendChild(rSpan);
+      if (mR[3]) letraSpan.appendChild(document.createTextNode(mR[3]));
+    } else {
+      const remainingText = document.createTextNode(remStr);
+      letraSpan.appendChild(remainingText);
+    }
   }
   
   lineDiv.appendChild(letraSpan);
@@ -3640,7 +3659,8 @@ export function clasificarAclamacion(item) {
   const tit = (item.title || '').toLowerCase();
   
   let ciclo = 'Común';
-  if (id.endsWith('a') || sub.includes('año a') || sub.includes('ciclo a')) ciclo = 'Ciclo A';
+  if (id === 'aetfs1s' || tit.includes('todos los santos') || item.ciclo === 'Santo') ciclo = 'Santo';
+  else if (id.endsWith('a') || sub.includes('año a') || sub.includes('ciclo a')) ciclo = 'Ciclo A';
   else if (id.endsWith('b') || sub.includes('año b') || sub.includes('ciclo b')) ciclo = 'Ciclo B';
   else if (id.endsWith('c') || sub.includes('año c') || sub.includes('ciclo c')) ciclo = 'Ciclo C';
   else if (id.endsWith('s')) ciclo = 'Solemnidades';
@@ -3651,8 +3671,16 @@ export function clasificarAclamacion(item) {
   let semana = '';
   let celebracion = item.title;
 
+  // Santo / Todos los Santos
+  if (ciclo === 'Santo') {
+    tiempo = 'Solemnidades y Fiestas';
+    tiempoOrden = 6;
+    semana = item.title;
+    celebracion = item.title;
+    orden = 601;
+  }
   // Adviento (4 semanas)
-  if (id.startsWith('aetas') || tit.includes('adviento') || sub.includes('adviento')) {
+  else if (id.startsWith('aetas') || tit.includes('adviento') || sub.includes('adviento')) {
     tiempo = 'Adviento';
     tiempoOrden = 1;
     const m = id.match(/aetas(\d+)/) || tit.match(/domingo\s+([ivx]+)/i);
@@ -5279,8 +5307,12 @@ async function handleSearchAndFilters() {
       });
     }
 
-    // Filtrar por Tiempo Litúrgico
-    if (activeAclamacionTiempo !== 'Todos') {
+    // Filtrar por Tiempo Litúrgico (no aplicar filtro de tiempo cuando la clasificación es 'Santo')
+    const aclamTiemposGroup = document.getElementById('aclamaciones-tiempos-group');
+    if (aclamTiemposGroup) {
+      aclamTiemposGroup.style.display = (activeAclamacionCiclo === 'Santo') ? 'none' : 'flex';
+    }
+    if (activeAclamacionCiclo !== 'Santo' && activeAclamacionTiempo !== 'Todos') {
       aclamacionesList = aclamacionesList.filter(song => {
         const info = clasificarAclamacion(song);
         return info.tiempo === activeAclamacionTiempo;
