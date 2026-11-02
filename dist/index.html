@@ -6,7 +6,7 @@
   <title>RESUCITÓ - Cantos Neocatecumenales</title>
   <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
   <link rel="manifest" href="./assets/manifest-Dpg-bcG-.json">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#000000">
   <script type="module" crossorigin src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
   <script type="module" crossorigin src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
   <script type="module" crossorigin src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
@@ -20,7 +20,7 @@
   <script type="module" crossorigin src="./assets/chords-B5HSM6Zi.js"></script>
   <script type="module" crossorigin src="./assets/songs-data-DaWIZ2u7.js"></script>
   <script type="module" crossorigin src="./assets/sync-DL3K871D.js"></script>
-  <script type="module" crossorigin src="./assets/main-D6EtFxNs.js"></script>
+  <script type="module" crossorigin src="./assets/main-Crogxvgk.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-Dg1V-Ogs.css">
   <link rel="stylesheet" crossorigin href="./assets/navegador-CkCAJxYn.css">
 </head>
@@ -92,9 +92,10 @@
               <button class="btn filter-pill aclamaciones-pill active" data-ciclo="Ciclo A">Ciclo A</button>
               <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo B">Ciclo B</button>
               <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo C">Ciclo C</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Santo">Santo</button>
             </div>
           </div>
-          <div class="aclamaciones-filter-group">
+          <div class="aclamaciones-filter-group" id="aclamaciones-tiempos-group">
             <span class="aclamaciones-filter-label">Tiempo:</span>
             <div class="aclamaciones-pills" id="aclamaciones-tiempos-container">
               <button class="btn filter-pill aclamaciones-pill" data-tiempo="Todos">Todos</button>
@@ -674,6 +675,6 @@
 
   <!-- MODAL: AJUSTES -->
   <!-- AJUSTES MODAL: Cargado dinámicamente desde data/ajustes_modal.html -->
-  <!-- SCRIPT PRINCIPAL -->
+  <!-- SCRIPT PRINCIPAL -->
 </body>
 </html>

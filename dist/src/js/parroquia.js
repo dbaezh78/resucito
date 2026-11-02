@@ -1721,17 +1721,45 @@ window.copiarCodigo16 = () => {
     });
 };
 
-window.compartirCodigoWhatsApp = () => {
+function obtenerUrlParroquia() {
+    const origin = (typeof window !== 'undefined' && window.location && window.location.origin) ? window.location.origin : '';
+    if (origin && origin.startsWith('http') && !origin.includes('localhost') && !origin.includes('127.0.0.1') && !origin.includes('laantillana.com')) {
+        return `${origin}/parroquia.html`;
+    }
+    return 'https://resucito.do/parroquia.html';
+}
+
+function obtenerUrlPreparacion(prepId) {
+    const base = obtenerUrlParroquia();
+    return prepId ? `${base}?prepId=${encodeURIComponent(prepId)}` : base;
+}
+
+window.compartirCodigoWhatsApp = async () => {
     if (!parroquiaActiva || !parroquiaActiva.codigoAcceso) return;
     if (!esAdminOEncargado()) {
         mostrarAlerta(`Solo el Cantor Encargado y el Administrador principal pueden compartir el código de 16 caracteres.`, "Acceso Restringido", "lock");
         return;
     }
-    const mensaje = `🕊️ *Acceso a la Parroquia ${parroquiaActiva.nombre}*\n\n` +
+    const urlParroquia = obtenerUrlParroquia();
+    const textoSinUrl = `🕊️ *Acceso a la Parroquia ${parroquiaActiva.nombre}*\n\n` +
         `Para unirte a las preparaciones de cantos de nuestra comunidad en la app Resucitó, ingresa este código de 16 caracteres:\n\n` +
         `🔑 *${parroquiaActiva.codigoAcceso}*\n\n` +
-        `Entra aquí: https://es.laantillana.com/parroquia.html`;
-    
+        `Entra aquí:`;
+
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: `Acceso a la Parroquia ${parroquiaActiva.nombre}`,
+                text: textoSinUrl,
+                url: urlParroquia
+            });
+            return;
+        } catch (err) {
+            if (err && err.name === 'AbortError') return;
+        }
+    }
+
+    const mensaje = `${textoSinUrl} ${urlParroquia}`;
     const url = `https://wa.me/?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
 };
@@ -3240,8 +3268,11 @@ function renderizarListaPreparaciones(filtro = '') {
                         <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Ver en Visor" onclick="window.abrirPreparacionEnVisor('${prep.id}')">
                             <span class="material-symbols-outlined" style="font-size: 16px;">visibility</span>
                         </button>
-                        <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Compartir en WhatsApp" onclick="window.compartirPreparacionWhatsApp('${prep.id}')">
+                        <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Compartir preparación" onclick="window.compartirPreparacionWhatsApp('${prep.id}')">
                             <span class="material-symbols-outlined" style="font-size: 16px;">share</span>
+                        </button>
+                        <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Copiar enlace del listado" onclick="window.copiarEnlacePreparacion('${prep.id}')">
+                            <span class="material-symbols-outlined" style="font-size: 16px;">link</span>
                         </button>
                         ${puedeEditar ? `
                         <button class="btn-parroquia-top" style="padding: 6px 10px; color: #b91c1c;" title="Eliminar preparación" onclick="window.eliminarPreparacion('${prep.id}', '${prep.nombre}')">
@@ -3328,6 +3359,10 @@ function renderizarListaPreparaciones(filtro = '') {
                 window.expandirSeccionPrepForm();
                 window.cargarPreparacionParaEditar(editarPrepId);
             } else if (prepId) {
+                const contentLista = document.getElementById('content-lista-prep');
+                const wrapperLista = document.getElementById('wrapper-lista-prep');
+                if (contentLista) contentLista.classList.remove('cfg-close');
+                if (wrapperLista) wrapperLista.classList.remove('collapsed');
                 const detalle = document.getElementById(`detalle-prep-${prepId}`);
                 if (detalle) detalle.style.display = 'block';
                 const tarjeta = document.getElementById(`prep-tarjeta-${prepId}`);
@@ -3801,8 +3836,8 @@ window.abrirCantoEnVisor = (cantoId) => {
     }
 };
 
-// Compartir preparación por WhatsApp
-window.compartirPreparacionWhatsApp = (prepId) => {
+// Compartir preparación mediante el selector nativo del dispositivo (o WhatsApp como respaldo)
+window.compartirPreparacionWhatsApp = async (prepId) => {
     const prep = preparacionesParroquia.find(p => p.id === prepId);
     if (!prep) return;
 
@@ -3821,10 +3856,43 @@ window.compartirPreparacionWhatsApp = (prepId) => {
         texto += `• [${item.etiqueta}] ${titulo} — ${cantor} ${tono}\n`;
     });
 
-    texto += `\n📖 Cancionero Resucitó: https://es.laantillana.com/parroquia.html`;
+    const urlPrep = obtenerUrlPreparacion(prep.id);
+    const textoConLink = `${texto}\n📖 Cancionero Resucitó: ${urlPrep}`;
 
-    const url = `https://wa.me/?text=${encodeURIComponent(texto)}`;
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: `Preparación: ${prep.nombre}`,
+                text: `${texto}\n📖 Cancionero Resucitó:`,
+                url: urlPrep
+            });
+            return;
+        } catch (err) {
+            if (err && err.name === 'AbortError') return;
+        }
+    }
+
+    const url = `https://wa.me/?text=${encodeURIComponent(textoConLink)}`;
     window.open(url, '_blank');
+};
+window.compartirPreparacion = window.compartirPreparacionWhatsApp;
+
+// Copiar enlace directo del listado de preparación al portapapeles
+window.copiarEnlacePreparacion = async (prepId) => {
+    const prep = preparacionesParroquia.find(p => p.id === prepId);
+    if (!prep) return;
+
+    const urlPrep = obtenerUrlPreparacion(prep.id);
+    try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(urlPrep);
+            mostrarToastVerde("Enlace del listado copiado al portapapeles");
+        } else {
+            prompt("Copia el enlace del listado:", urlPrep);
+        }
+    } catch (err) {
+        prompt("Copia el enlace del listado:", urlPrep);
+    }
 };
 
 // --- UTILIDADES DE INTERFAZ Y COLAPSO ---

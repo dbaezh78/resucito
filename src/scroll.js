@@ -1390,6 +1390,20 @@ export const defaultScrollConfigs = {
       "i": 1
     }
   },
+  "aetfs1s": {
+    "mobile": {
+      "v": 6,
+      "i": 3
+    },
+    "tablet": {
+      "v": 7,
+      "i": 1
+    },
+    "desktop": {
+      "v": 7,
+      "i": 1
+    }
+  },
   "aetn1ea": {
     "mobile": {
       "v": 6,
