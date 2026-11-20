@@ -69,7 +69,7 @@ Object.defineProperty(window, 'songListStyle', {
 
 window.getDeviceCategory = function() {
   const w = window.innerWidth;
-  if (w <= 768) return 'mobile';
+  if (w < 768) return 'mobile';
   if (w <= 1024) return 'tablet';
   return 'pc';
 };
@@ -1829,7 +1829,7 @@ window.initAjustes = async function() {
       let badgeColor = '#2563eb';
       let bgBadge = 'rgba(37, 99, 235, 0.12)';
 
-      if (w <= 768) {
+      if (w < 768) {
         tipoDispositivo = 'Celular / Teléfono';
         iconDispositivo = 'smartphone';
         badgeColor = '#16a34a';

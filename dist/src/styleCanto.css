@@ -3,7 +3,7 @@
     left: 237px;
 }
 
-@media (min-width: 384px){
+@media (min-width: 320px){
  .srtp{
     margin-top: -43px;
     left: 178px;
@@ -110,7 +110,7 @@
 }
 
 
-@media (min-width: 384px){
+@media (min-width: 320px){
     .sn1, .sn2, .sn3 {margin-top: -36px;}
     .sn1{left: 92px;}
     .sn2{left: 108px;}

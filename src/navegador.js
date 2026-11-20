@@ -547,6 +547,7 @@ import { db, auth, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from '
       if (dashboardView && songView) {
         songView.style.display = 'none';
         dashboardView.style.display = 'block';
+        document.body.classList.remove('is-in-song-viewer');
         window.location.hash = '';
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
@@ -2807,6 +2808,34 @@ import { db, auth, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from '
           audioEl.pause();
         }
       });
+    }
+
+    // Control de visibilidad en el visor de cantos: no mostrar el reproductor en cantos
+    const syncFloatingPlayerWithSongView = () => {
+      const songViewer = document.getElementById('song-viewer-view');
+      const isSongOpen = window.location.hash.startsWith('#canto=') ||
+                         (songViewer && songViewer.style.display !== 'none');
+      if (isSongOpen) {
+        document.body.classList.add('is-in-song-viewer');
+        if (audioEl && !audioEl.paused) {
+          audioEl.pause();
+          updateUI(false);
+          saveState();
+        }
+      } else {
+        document.body.classList.remove('is-in-song-viewer');
+      }
+    };
+
+    window.addEventListener('hashchange', syncFloatingPlayerWithSongView);
+    syncFloatingPlayerWithSongView();
+
+    const songViewerEl = document.getElementById('song-viewer-view');
+    if (songViewerEl && window.MutationObserver) {
+      const songObserver = new MutationObserver(() => {
+        syncFloatingPlayerWithSongView();
+      });
+      songObserver.observe(songViewerEl, { attributes: true, attributeFilter: ['style', 'class'] });
     }
 
     // Persistir estado exacto al cerrar o salir de la pestaña/página

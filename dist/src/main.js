@@ -888,6 +888,7 @@ function routeSPA() {
     }
     songViewerView.style.display = 'none';
     dashboardView.style.display = 'flex';
+    document.body.classList.remove('is-in-song-viewer');
     document.title = "RESUCITÓ - Cantos Neocatecumenales";
     
     // Detener audio al volver al buscador
@@ -1618,6 +1619,11 @@ async function loadSongView(songId, forceReload = false) {
     // Mostrar visor
     dashboardView.style.display = 'none';
     songViewerView.style.display = 'flex';
+    document.body.classList.add('is-in-song-viewer');
+    const globalFloatingAudio = document.getElementById('global-floating-audio');
+    if (globalFloatingAudio && !globalFloatingAudio.paused) {
+      globalFloatingAudio.pause();
+    }
     window.scrollTo(0, 0);
     
     // Restablecer el contenedor deslizante a su posición central por defecto
@@ -1744,6 +1750,7 @@ function setupViewerSongFooter(songId) {
           if (dashboardView && songViewerView) {
             songViewerView.style.display = 'none';
             dashboardView.style.display = 'flex';
+            document.body.classList.remove('is-in-song-viewer');
             window.location.hash = '';
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
@@ -1764,6 +1771,7 @@ function setupViewerSongFooter(songId) {
           if (dashboardView && songViewerView) {
             songViewerView.style.display = 'none';
             dashboardView.style.display = 'flex';
+            document.body.classList.remove('is-in-song-viewer');
             window.location.hash = '';
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
@@ -1796,6 +1804,7 @@ function setupViewerSongFooter(songId) {
         if (dashboardView && songViewerView) {
           songViewerView.style.display = 'none';
           dashboardView.style.display = 'flex';
+          document.body.classList.remove('is-in-song-viewer');
           window.location.hash = '';
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -2401,17 +2410,17 @@ function renderLine(lineItem, side, lineIdx, subLineIdx, customSC) {
         if (lMatch) {
           const lVal = parseInt(lMatch[1], 10);
           lineDiv.style.setProperty('--bis-left-base', `${lVal}px`);
-          // En pantallas de celular (base estándar de 384px de ancho de pantalla):
-          // Se calcula la medida proporcional exacta con base en la pantalla móvil de 384px.
-          // Para que lbis428 resulte en 400px en celular (428 * (384 / 410.88) = 400px),
-          // cualquier otra medida (ej: 250, 300, 360) se adapta con la misma base: lVal * (384 / 410.88) ≈ lVal * (400 / 428)
-          const lMobileVal = Math.round(lVal * (384 / 410.88));
+          // En pantallas de celular:
+          // Se calcula la medida proporcional exacta con base en el ancho de pantalla móvil (soporta 360px, 384px, etc.)
+          const screenMobileWidth = Math.min(window.innerWidth || 360, 384);
+          const lMobileVal = Math.round(lVal * (screenMobileWidth / 410.88));
           lineDiv.style.setProperty('--bis-left-mobile', `calc(${lMobileVal}px * var(--font-zoom, 1))`);
           lineDiv.style.setProperty('--bis-left', `calc(${lMatch[1]}px * var(--font-zoom, 1))`);
           
-          // Si en móvil el lbis es grande (ej: > 310px) y no cabe horizontal (" BIS A." mide ~55-65px, 310+65 = 375px),
+          // Si en móvil el lbis es grande y no cabe horizontal (" BIS A." mide ~55-65px),
           // marcar la línea con clase bis-vertical para que solo en móvil se muestre vertical
-          if (lVal > 310) {
+          const bisThreshold = (window.innerWidth || 360) < 384 ? 270 : 310;
+          if (lVal > bisThreshold) {
             lineDiv.classList.add('bis-overflow-vertical');
           }
         }
@@ -8743,8 +8752,8 @@ function setupEventListeners() {
   function adjustToolbarForScreenSize() {
     const screenWidth = window.innerWidth;
     let device = 'pc';
-    if (screenWidth < 600) device = 'mobile';
-    else if (screenWidth <= 992) device = 'tablet';
+    if (screenWidth < 768) device = 'mobile';
+    else if (screenWidth <= 1024) device = 'tablet';
 
     const items = getToolbarIconConfig()[device] || DEFAULT_TOOLBAR_CONFIG[device];
     const dropdownContent = document.getElementById('toolbar-dropdown-content');

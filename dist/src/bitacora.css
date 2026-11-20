@@ -314,7 +314,7 @@ body.dark-mode {
   width: 100%;
 }
   
-@media (min-width: 384px) {.events-card, .calendar-card {width: 100%;}}
+@media (min-width: 320px) {.events-card, .calendar-card {width: 100%;}}
 @media (min-width: 768px) {.events-card, .calendar-card {width: 100%;}}
 
 
