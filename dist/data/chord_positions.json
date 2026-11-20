@@ -27233,6 +27233,261 @@
       }
     ]
   },
+  "denalsenor": {
+    "lizq": [
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 11.5
+        },
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 27.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 3
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 22
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 1
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 14.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 2
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 16.5
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 2
+        },
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 19
+        }
+      ],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "m",
+          "pos": 34
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 3.5
+        },
+        {
+          "name": "Fa#",
+          "type": "m",
+          "pos": 27
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 3
+        },
+        {
+          "name": "Fa#",
+          "type": "m",
+          "pos": 32
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 3
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 13.5
+        },
+        {
+          "name": "La",
+          "type": "",
+          "pos": 29.5
+        }
+      ],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "m",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 5
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 29
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "m",
+          "pos": 25
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 2.5
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 28
+        },
+        {
+          "name": "La",
+          "type": "",
+          "pos": 34
+        }
+      ],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "m",
+          "pos": 29
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 6
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 25
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "m",
+          "pos": 26.5
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 3
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 17
+        },
+        {
+          "name": "La",
+          "type": "",
+          "pos": 27
+        }
+      ],
+      [],
+      []
+    ],
+    "lder": []
+  },
   "deprofundis": {
     "lizq": [
       [
@@ -44034,7 +44289,7 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 26.5
+          "pos": 16
         }
       ],
       [
@@ -44086,7 +44341,7 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 26.5
+          "pos": 16
         }
       ],
       [

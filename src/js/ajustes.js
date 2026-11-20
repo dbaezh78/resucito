@@ -704,8 +704,9 @@ window.openSettingsTab = function(tabName = 'general') {
   if (tabName === 'datos' && window.renderDatosModule) {
     window.renderDatosModule();
   }
-  if (tabName === 'paginas' && window.initBitacoraSettings) {
-    window.initBitacoraSettings();
+  if (tabName === 'paginas') {
+    if (window.initBitacoraSettings) window.initBitacoraSettings();
+    if (window.initMedirPantallaSettings) window.initMedirPantallaSettings();
   }
 };
 
@@ -1806,6 +1807,92 @@ window.initAjustes = async function() {
         }
       };
     }
+  };
+
+  window.initMedirPantallaSettings = function() {
+    const btnMedir = document.getElementById('btn-medir-pantalla');
+    const contenedorRes = document.getElementById('pantalla-medida-resultado');
+    if (!btnMedir) return;
+
+    const actualizarMedicion = () => {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      const sw = window.screen.width;
+      const sh = window.screen.height;
+      const dpr = (window.devicePixelRatio || 1).toFixed(2);
+      const orientacion = (screen.orientation && screen.orientation.type)
+        ? (screen.orientation.type.includes('portrait') ? 'Vertical (Portrait)' : 'Horizontal (Landscape)')
+        : (h >= w ? 'Vertical (Portrait)' : 'Horizontal (Landscape)');
+
+      let tipoDispositivo = 'PC / Computadora';
+      let iconDispositivo = 'desktop_windows';
+      let badgeColor = '#2563eb';
+      let bgBadge = 'rgba(37, 99, 235, 0.12)';
+
+      if (w <= 768) {
+        tipoDispositivo = 'Celular / Teléfono';
+        iconDispositivo = 'smartphone';
+        badgeColor = '#16a34a';
+        bgBadge = 'rgba(22, 163, 74, 0.12)';
+      } else if (w <= 1024) {
+        tipoDispositivo = 'Tablet / iPad';
+        iconDispositivo = 'tablet';
+        badgeColor = '#ea580c';
+        bgBadge = 'rgba(234, 88, 12, 0.12)';
+      }
+
+      const html = `
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="material-symbols-outlined" style="color: ${badgeColor}; font-size: 1.4rem;">${iconDispositivo}</span>
+              <strong style="color: var(--text-color); font-size: 0.95rem;">${tipoDispositivo}</strong>
+            </div>
+            <span style="font-size: 0.78rem; font-weight: 700; color: ${badgeColor}; background: ${bgBadge}; padding: 3px 10px; border-radius: 999px;">
+              ${orientacion}
+            </span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; font-size: 0.8rem;">
+            <div style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px;">
+              <div style="color: var(--text-muted); font-size: 0.72rem;">Ventana / Viewport</div>
+              <strong style="color: var(--text-color); font-size: 0.95rem;">${w} × ${h} px</strong>
+            </div>
+            <div style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px;">
+              <div style="color: var(--text-muted); font-size: 0.72rem;">Pantalla Total</div>
+              <strong style="color: var(--text-color); font-size: 0.95rem;">${sw} × ${sh} px</strong>
+            </div>
+            <div style="background: rgba(0,0,0,0.03); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px;">
+              <div style="color: var(--text-muted); font-size: 0.72rem;">Escala (DPR)</div>
+              <strong style="color: var(--text-color); font-size: 0.95rem;">${dpr}x</strong>
+            </div>
+          </div>
+        </div>
+      `;
+
+      if (contenedorRes) {
+        contenedorRes.innerHTML = html;
+        contenedorRes.style.display = 'block';
+      }
+
+      // Si existe modal de confirmación/alerta, podemos también notificar o mostrarlo
+      if (typeof window.mostrarConfirmacion === 'function') {
+        window.mostrarConfirmacion({
+          titulo: `Tamaño de Pantalla (${tipoDispositivo})`,
+          mensaje: `Ventana: ${w} × ${h} px\nPantalla Total: ${sw} × ${sh} px\nDispositivo: ${tipoDispositivo}\nOrientación: ${orientacion} (DPR: ${dpr}x)`,
+          icono: iconDispositivo,
+          iconoColor: badgeColor,
+          iconoBg: bgBadge,
+          textoSi: 'Entendido',
+          textoNo: ''
+        });
+      }
+    };
+
+    btnMedir.onclick = (e) => {
+      e.preventDefault();
+      actualizarMedicion();
+    };
   };
 
   window.initManejoInspeccionSettings = function() {

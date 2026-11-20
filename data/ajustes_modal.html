@@ -51,6 +51,25 @@
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 12px;">
+            <!-- Tarjeta para Medir Tamaño de Pantalla -->
+            <div id="card-setting-pantalla-medida" style="display: flex; flex-direction: column; padding: 14px 16px; background: rgba(0,0,0,0.02); border: 1px solid var(--panel-border); border-radius: 12px; gap: 12px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="material-symbols-outlined" style="font-size: 1.8rem; color: #0284c7;">aspect_ratio</span>
+                  <div>
+                    <h5 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Tamaño de Pantalla</h5>
+                    <p style="margin: 2px 0 0 0; font-size: 0.78rem; color: var(--text-muted);">Mide la resolución, viewport y clasificación de tu dispositivo (celular, tablet o PC).</p>
+                  </div>
+                </div>
+                <button type="button" id="btn-medir-pantalla" class="btn theme-btn" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; cursor: pointer;">
+                  <span class="material-symbols-outlined" style="font-size: 1.1rem;">straighten</span>
+                  Medir Pantalla
+                </button>
+              </div>
+
+              <!-- Resultado visual de la medición -->
+              <div id="pantalla-medida-resultado" style="display: none; padding-top: 10px; border-top: 1px dashed var(--panel-border);"></div>
+            </div>
             <!-- Tarjeta para firebase.html (Consumo de Firebase) -->
             <div id="card-setting-firebase" style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: rgba(0,0,0,0.02); border: 1px solid var(--panel-border); border-radius: 12px; gap: 12px; flex-wrap: wrap;">
               <div style="display: flex; align-items: center; gap: 12px;">
